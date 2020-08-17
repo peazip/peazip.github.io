@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://giorgiotani.github.io/PeaZip/sitemap.xml
+Sitemap: https://peazip.github.io/sitemap.xml
