@@ -1,0 +1,1195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
+  <meta name="DESCRIPTION"
+ content="What are file format limitations for 7Z RAR TAR ZIP archives. Maximum total archive size limit, max input file size, largest number of files per archive. FAT, ISO, NTFS specs.">
+  <meta name="KEYWORDS"
+ content="maximum, size, max, limit, 7Z, RAR, TAR, ZIP, file, format, limitations, archives, fat, ntfs, iso, udf, archive, input, files, large, standard, specs, specifications, number, total">
+  <meta name="ROBOTS" content="all">
+  <title>7Z RAR TAR ZIP archive format max file size limitations</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="peazip-software.css">
+  <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
+</head>
+<body>
+<div style="text-align: center;">
+<table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);">
+      <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr align="center">
+            <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr align="center">
+                  <td
+ style="vertical-align: top; background-color: rgb(236, 235, 234);">
+                  <table style="text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"> <img
+ title="What are file format limitations for 7Z RAR TAR ZIP archives, largest size, biggest file number"
+ alt="7Z RAR TAR ZIP max file size limitations" src="peazip_ico24.png"
+ style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="index.html">DOWNLOAD
+PEAZIP FREE ARCHIVER</a> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="donations.html">DONATE</a> </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><img
+ alt="maximum size for 7z rar zip files" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="maximum size of rar tar zip files" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="how many files can contain a 7z rar zip archive"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><img
+ alt="largest 7z rar zip archive possible" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td
+ style="vertical-align: top; background-color: rgb(51, 102, 255);"><img
+ alt="biggest size of rar tar zip files" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="largest size for 7z rar zip input files"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="largest input file for rar tar zip archive"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="max number of files in a 7z rar tar zip archive"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="max rar zip file size on fat32" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="width: 960px; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="width: 96px; vertical-align: top;">
+                  <div style="text-align: center;"> </div>
+                  <h2 style="text-align: left;"><img
+ title="Maximum total archive size limit for 7z rar tar files"
+ alt="max 7z rar zip file size limit"
+ src="zip-files/extract-rar-files.png"
+ style="border: 0px solid ; width: 64px; height: 64px;" align="top"></h2>
+                  </td>
+                  <td style="vertical-align: middle;">
+                  <p><small><a name="max_7z_rar_tar_zip_file_size_limit"></a>PeaZip
+is a free cross-platform file archiver program that provides an unified
+portable GUI for many Open Source technologies like 7-Zip, FreeArc,
+PAQ, UPX... free alternative to WinRar, WinZip </small><small>and
+similar
+proprietary software</small><small>.<br>
+- Create 7Z, ARC, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ, ZIP
+files<br>
+- Open and extract ACE, ARJ, CAB, DMG, ISO, LHA,
+RAR, UDF, ZIPX files and more,</small><small> over 200 archive types
+supported</small><small><br>
+Features of PeaZip includes: </small><small> </small><small>archives
+opener and extractor tool, </small><small>batch creation and </small><small>extraction
+                  </small><small>of large number of archives at once, </small><small>convert
+files, </small><small>create sfx archives, split and join large files
+in
+smaller volumes,
+strong encryption with two factor authentication, encrypted password
+manager, </small><small>secure delete, </small><small>find
+duplicate files, </small><small>hash and checksum,
+export job definition as script.</small></p>
+                  </td>
+                  <td
+ style="text-align: right; width: 224px; vertical-align: middle;">
+                  <div style="text-align: center;"> </div>
+                  <h3><a href="index.html"><span
+ style="text-decoration: underline;"><img
+ alt="free 7z rar tar zip program"
+ title="Download PeaZip free 7z rar tar zip files software"
+ src="free-rar/extract-zip.png"
+ style="border: 0px solid ; width: 200px; height: 48px;" align="middle"></span></a></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255);"><small><a
+ href="peazip-help-faq.html">FAQ,
+HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-more.html">REPORT ISSUES</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                  </small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><a
+ href="changelog.html"><small>CHANGELOG<br>
+                  </small></a></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: left;"> </div>
+      <table
+ style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+            <h1 style="text-align: center;"><big><big><big><a
+ name="maximum_archive_size_limit"></a>7Z RAR TAR ZIP archive format
+max file size limitations<br>
+            </big></big></big></h1>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);"><br>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1"
+ style="width: 50%; vertical-align: middle; background-color: rgb(255, 255, 255);">
+            <div> </div>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;">
+                  <ul>
+                    <li>
+                      <p><a href="#maximum_7z_rar_tar_zip_file_size">MAX
+FILE SIZE AND INPUT FILES NUMBER LIMIT FOR 7Z RAR TAR ZIP ARCHIVES<br>
+                      </a></p>
+                    </li>
+                  </ul>
+                  </td>
+                  <td style="vertical-align: top; width: 128px;">
+                  <h2><img
+ title="Largest input file size, max number of files per 7z rar tar zip archive"
+ alt="max rar tar zip input file size limitation"
+ src="file-format/archive-manager.png"
+ style="width: 96px; height: 96px;" align="right"></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a
+ name="maximum_7z_rar_tar_zip_file_size"></a><a
+ href="#maximum_archive_size_limit">Max file size and input files
+number limit for 7Z RAR TAR ZIP archives</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            <a name="what_are_limitations_of_7z_rar_tar_zip_formats"></a>With
+ever increasing size of disks and ever increasing number (and size) of
+files, some archiving formats specs hit built-in standard limitations,
+when
+16 bit or 32 bit variables where used by some designs for indexing
+archive content (number of files inside the archive, total archive
+size) or the compressed or uncompressed size of single input files.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Maximum size limitations for 7z rar tar zip archives"
+ alt="maximum rar tar zip archive size" src="file-format/quotes.png"
+ style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;"><a
+ name="maximum_number_of_files_in_7z_rar_tar_zip_archive"></a>2^16
+files (64 K, or 32 K for bogus implementations using a signed short
+integer) specification was common for variables representing maximum
+number of files contained in the archive, i.e. in
+ZIP format, with most standards recently switching to 2^32 (4 billions
+files, 2 billions for implementations using a signed integer), i.e.
+ZIP64 revision, exceeding needs of most personal and professional users.<br>
+                  <a name="maximum_size_of_7z_rar_tar_zip_files"></a>With
+2^32 bytes variables, 4 GB (2 GB for implementations using a signed
+integer) was a common limit for maximum filesize, both size of single
+input files (compressed, uncompressed size fields) and for total size
+of the archive, as the 4 GB limit was a builtin restriction in most
+common contemporary filesystems (like FAT32, and ISO).</td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img
+ title="Max size of rar zip files in FAT32, exFAT, and NTFS filesystems"
+ alt="maximum number of files in 7z rar zip archive"
+ src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <a name="max_4gb_size_limit"></a>With increasing demand for
+larger multimedia and database files, and 32 bit size limitations being
+removed in modern filesystems revisions, most archive formats
+specifications switched
+to 64 bit size variables for filesizes, allowing (theoretically) up to
+16 EB (exabyte) -sized files / archives, 8 exabyte for implementation
+using a signed 64 bit integer, exceeding foreseeable needs of personal
+and professional users, and exceeding capabilities of most of current
+operating systems and filesystem standards (or software
+implementations).<br>
+            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 10%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <span style="font-weight: normal;">Format</span> </td>
+                  <td
+ style="vertical-align: top; width: 30%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <h3>Maximum
+number of files per archive</h3>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 30%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <h3>Maximum
+size of each input file</h3>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 30%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <h3>Maximum
+total size of the entire archive</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">7Z
+                  <br>
+                  <small style="font-weight: normal;">7-Zip</small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+max 4 billions files per 7z archive</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 EB for each input file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+16 EB as max 7z file size limit<br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <span style="font-weight: normal;">ARC</span> <br>
+                  <small><span style="font-weight: normal;">FreeArc</span></small>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^31,
+max 2 billions files per archive</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^63,
+maximum 8 EB for each input file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^63,
+8 EB maximum archive size</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">CAB
+                  <br>
+                  <small><span style="font-weight: normal;">Microsoft</span></small>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>-<br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^31,
+maximum 2 GB for each input file<br>
+                  <small>* file/archive size limits of Microsoft CAB
+format
+were removed in new WIM Windows imaging format specs</small><br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^31,
+size up to 2 GB per part; multipart cab files allows up to 2^16 64K
+parts</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <span style="font-weight: normal;">PEA</span> <br>
+                  <small><span style="font-weight: normal;">current
+format rev. PEA1.1</span></small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>no
+max input files number limit by design</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 exabyte per each file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>no
+maximum archive size limit by design</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">RAR
+                  <br>
+                  <small><span style="font-weight: normal;">current
+specs revision RAR5</span></small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^31,
+max 2 billions files per rar archive </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^63,
+maximum 8 EB for each input file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^63,
+8 EB maximum rar file size limit<br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">TAR&nbsp;
+                  <br>
+                  <small style="font-weight: normal;">current specs
+revision POSIX.1 2001</small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>-<br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>-<br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>No tar file size limit under current POSIX.1 2001
+revision specifications <br>
+                  <small>**8 GB maximum tar archive size for older
+POSIX.1 1988 standard<br>
+                  </small></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">ZIP
+                  <br>
+                  <small><span style="font-weight: normal;">original
+PKZIP file format specs</span></small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^16, max 64 K files in a single zip archive<br>
+                  <small>** 2^15 32 K files number limit for some bogus
+software implementations of zip format specs</small><br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+maximum 4 GB for each input file<br>
+                  <small>** 2^31 2 GB input file size limit in some
+bogus implementations of zip specifications</small><br>
+                  </p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^32, 4 GB max zip file size limit<br>
+                  <small>** 2^31 2 GB zip archive size limit in some
+bogus
+software implementations</small><br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">ZIP64
+                  <br>
+                  <small style="font-weight: normal;">PKWARE extension
+of zip format specs</small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^32, max 4 billions files in zip archive</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 EB for each input file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+16 EB max zip archive size limit</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">ZIPX
+                  <br>
+                  <small><span style="font-weight: normal;">WINZIP
+revision of zip standard</span></small> </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+max 4 billions files in zipx archive</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 EB for each input file</p>
+                  </td>
+                  <td
+ style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+16 EB max zipx archive size limit</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <small>Table1: comparison of known maximum file size and
+maximum file
+number limitations of
+common archive formats</small><br>
+            <br>
+            <a name="filesystem_max_file_size_limitations"></a>To work
+with very large files as allowed by modern archive formats
+specification, it needs the underlying operating system and filesystem
+to support same or
+higher limitations.<br>
+            <a name="fat_max_file_size_limit"></a>With modern
+filesystems designs, usually allowing theoretical 64 bit file
+size (16 exabyte), the limitation is often in software implementation
+of max file size and max volume size rather than in format design
+itself - but unlike older 32 bit variables based designs, filesystem
+limitations usually exceeds user's needs.<br>
+            <a name="ntfs_maximum_filesize_limit"></a>Common filesystem
+are for example NTFS, default for modern Microsoft
+Windows systems, FAT32 for legacy Windows systems, exFAT for USB flash
+drives and SD cards (FAT32 and exFAT are popular on media that needs to
+be shared between Windows, Linux, and Apple operating systems), ISO and
+UDF for CD, DVD, Blu-Ray and other disk formats.<br>
+            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 10%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <span style="font-weight: normal;">Format</span> </td>
+                  <td
+ style="vertical-align: top; width: 45%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <h3>Maximum supported file size<br>
+                  </h3>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 45%; background-color: rgb(255, 204, 0); font-weight: bold;">
+                  <h4>Maximum allowed volume size<br>
+                  </h4>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <h3>exFAT</h3>
+                  <small style="font-weight: normal;">Microsoft</small><br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^64, theoretically 16 EB, practically 128 PB in
+current exFAT implementations<br>
+                  </p>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>128 PB limit by format design, max 512 TB
+recommended for exFAT volumes<br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <h3>FAT32</h3>
+                  <small style="font-weight: normal;">Microsoft</small><br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+maximum 4 GB file size in FAT32 filesystem<br>
+                  </p>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>up to 2 TB maximum size for FAT32 volumes<br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <h3>ISO</h3>
+                  <small style="font-weight: normal;">ISO 9660</small><br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+maximum 4 GB for each input file<br>
+                  <small>* 2^31 2 GB file size limit in some
+bogus implementations<br>
+                  </small><small>** 8 TB max file size for ISO 9660
+level 3 revision</small></p>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^32,
+4 GB maximum size<br>
+                  <small>* 2^31 2 GB volume size limit in some
+bogus implementations<br>
+** 8 TB max volume size for ISO 9660 level 3 revision<br>
+                  </small> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <h3>NTFS</h3>
+                  <small style="font-weight: normal;">Microsoft</small><br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 EB file size in NTFS filesystem<br>
+                  <small>16 TB max file size on Windows 7 NTFS
+implementation<br>
+256 TB max file size on Windows 8 </small><small>NTFS </small><small>implementation<br>
+8 PB max file size on Windows 10 </small><small>NTFS </small><small>implementation</small></p>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^64 clusters limit by NTFS format design<br>
+                  <small>256 TB max size on Windows 7, 8 and 10 1703
+NTFS implementations</small><small><br>
+8 PB max size on Windows 10 1709 and later NTFS implementations</small><br>
+                  </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
+                  <h4>UDF</h4>
+                  <small style="font-weight: normal;">ISO 13346</small><br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2^64,
+maximum 16 EB file size in UDF filesystem<br>
+                  </p>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 45%; background-color: rgb(255, 255, 204);">
+                  <p>2 TB to 16 TB maximum size (depending on sector
+size) </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <small>Table2: comparison of known file size limitations of
+common filesystems<br>
+            <br>
+            </small>PeaZip free archiver utility read / write ZIP files
+with newer ZIP64 specifications meant to transparently expand zip
+format features, as well as powerful formats like 7Z, PEA, and TAR,
+designed for managing large files compression and archiving.<br>
+PeaZip also supports extraction of RAR and ZIPX formats, which are
+equally desiged to work on large files (over 2^32 4 GB / 2GB limit).<br>
+In any case handling such large files with any software utility, and
+under any Operating System, requires working on a suitable filesystem,
+like as NTFS or exFAT.<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <p> </p>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+ style="color: rgb(253, 253, 253);">RELATED &amp; SIMILAR PAGES</span> </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="zipx-file-format.html">ZIPX FILE FORMAT LIMITS</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="cab-files-utility.html">MICROSOFT CAB FILES</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="arc-file-format.html">FREEARC ARC FILE FORMAT</a><a
+ href="self-extracting-archives.html"><br>
+                  </a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small>&nbsp;</small></small><br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="7z-file-format.html">7Z FILE FORMAT SPECS</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="what-is-rar-file.html">RAR FILE FORMAT FEATURES</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="ace-file-format.html">ACE FILE FORMAT</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="iso-image-files.html">ISO DMG UDF DISK IMAGE FILES</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="tar-file-format.html">TAR TBZ TGZ TXZ FILE EXTENSIONS</a><br>
+                  </small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small>&nbsp; </small></small> <br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="zip-file-format.html">ZIP FILE FORMAT LIMITATIONS</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="what-is-zip-file.html">WHAT IS A 7Z RAR ZIP ARCHIVE FILE</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="archive-file-formats-comparison.html">COMPARISON OF ARCHIVE
+FORMAT TYPES</a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="convert-files.html">CONVERT FILE FORMAT</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><a href="peazip-help-faq.html">FAQ</a>
+&gt; Archive mnager &gt; What are 7Z RAR TAR ZIP format limitations<br>
+            </p>
+            <a name="max_number_of_files_in_7Z_RAR_TAR_ZIP_archives"></a>Topics
+about what are file format limitations for 7Z RAR TAR ZIP
+archives standards. Maximum
+total archive size limit, max size of single input file, largest number
+of files per
+archive specs, biggest filesize allowed inside FAT / FAT32 / exFAT,
+ISO,
+NTFS, UDF filesystems.
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> what is
+maximums size of zip files<br>
+max allowed size for input files<br>
+input file size limit inside rar archive<br>
+how many files can a 7z contain<br>
+                  <h4>exFAT max file size limitation</h4>
+max number of files in rar archive<br>
+can a zip file be larger than 4 gb<br>
+largest size limit for rar files<br>
+max zip file size limitations<br>
+maximum rar archive size limit </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> what is
+maximum size of rar files
+                  <h4>max size limit in FAT filesystem</h4>
+maximum total size of 7z file<br>
+maximum number of files in a zip<br>
+upper size limit of large ISO files<br>
+FAT32 4 GB limit for biggest files<br>
+can a rar file be larger than 4 gb<br>
+maximum zip archive size<br>
+what are file size limit of zip format<br>
+max input file size limit for zip files </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> what is
+maximum size of tar archive <br>
+how many files a zip can contain<br>
+max file size in UDF disks<br>
+maximum zip archive size limit<br>
+max size of each input file for zip<br>
+what are rar format size limitations<br>
+max allowed size of 7z archives<br>
+FAT32 2 GB size limit<br>
+                  <h4>maximum file size in Windows</h4>
+largest size limit inside zipx files<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> what is
+maximum size of 7z files <br>
+how many files a rar can contain
+                  <h4>NTFS max file size</h4>
+can a zip file be larger than 2 GB<br>
+max total size of zip archive<br>
+max size of single file in a rar<br>
+Windows file size limitations<br>
+zip64 format limitations<br>
+max rar archive size limitation<br>
+what are NTFS filesystem specs<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Tag Cloud<br>
+            <span class="wrd free-rar3" id="rar-format-specs"> <a
+ href="what-is-rar-file.html">RAR format specs</a></span> <span
+ class="wrd free-rar0" id="ace-rar-tar-zip-files-converter"> <a
+ href="convert-files.html">ace rar tar zip files converter</a></span> <span
+ class="wrd free-rar2" id="iso-udf-file-format"> <a
+ href="iso-image-files.html">ISO UDF files</a></span> <span
+ class="wrd free-rar3" id="pea-file-format"> <a
+ href="pea-file-format.html">PEA file format</a></span> <span
+ class="wrd free-rar0" id="file-splitting-utility"> <a
+ href="file-split.html">split file in multiple volumes</a></span> <span
+ class="wrd free-rar3" id="create-rar-files"> <a
+ href="free-rar-create.html">create RAR files</a></span><br>
+            <span class="wrd free-rar4" id="zip-format-specs"> <a
+ href="zip-file-format.html">ZIP format specs</a></span> <span
+ class="wrd free-rar0" id="batch-create-multiple-archives"> <a
+ href="how-to-zip-files-separate-archives.html">batch create multiple
+archives at once</a></span> <span class="wrd free-rar2"
+ id="free-archiver-utility"> <a href="index.html">free archiver utility</a></span>
+            <span class="wrd free-rar0" id="compress-files-folders"> <a
+ href="how-to-compress-files-folders.html">how to compress files and
+folders</a></span> <span class="wrd free-rar2"
+ id="rar-zip-files-maximum-size"> <a
+ href="rar-zip-file-format-size-limitations.html">7Z RAR TAR ZIP max
+file size</a></span> <br>
+            <span class="wrd free-rar2" id="file-compression-software">
+            <a href="index.html">file compression
+software</a></span> <span class="wrd free-rar0"
+ id="extract-rar-zip-archives"> <a
+ href="how-to-extract-rar-zip-archives.html">extract rar tar zip files</a></span>
+            <span class="wrd free-rar4" id="archive-formats-comparison">
+            <a href="archive-file-formats-comparison.html">archive
+formats comparison</a></span> <span class="wrd free-rar1"
+ id="file-archiving-utility"> <a href="peazip-64bit.html">file
+archiving utility</a></span> <span class="wrd free-rar2"
+ id="portable-rar-files-utility"> <a href="peazip-portable.html">portable
+rar tar zip files
+utility</a></span><br>
+            <span class="wrd free-rar0"
+ id="max-file-number-rar-zip-limitation"> <a
+ href="rar-zip-file-format-size-limitations.html">max number of files
+in 7Z RAR TAR ZIP archive</a></span> <span class="wrd free-rar2"
+ id="7zip-7z-format-features"> <a href="7z-file-format.html">7Z format
+features</a></span> <span class="wrd free-rar3"
+ id="what-is-compressed-file"> <a href="what-is-zip-file.html">what is
+a compressed file</a></span> <span class="wrd free-rar2"
+ id="tar-file-format"> <a href="tar-file-format.html">TAR file format</a></span>
+            <span class="wrd free-rar3" id="maximum-size-zip-archive"> <a
+ href="zip-file-format.html">max ZIP archive size</a></span> <br>
+            <span class="wrd free-rar2"
+ id="why-cannot-compress-pdf-avi-mp3-file-types"> <a
+ href="why-can-not-compress-pdf-avi-mp3-files.html">why some files
+cannot be
+reduced in size</a></span> <span class="wrd free-rar4"
+ id="zipx-file-format-specs"> <a href="zipx-file-format.html">ZIPX
+format specs</a></span> <span class="wrd free-rar0"
+ id="compress-virtual-machines"> <a
+ href="optimize-virtual-machines-backup-images.html">reduce
+size of virtual machines disks</a></span> <span class="wrd free-rar1"
+ id="cab-files-extractor"> <a href="cab-files-utility.html">CAB files
+extractor</a></span> <span class="wrd free-rar0" id="7z-files-utility">
+            <a href="7zip-files-utility.html">7Z files utility</a></span><br>
+            <span class="wrd free-rar3" id="free-rar-extractor"> <a
+ href="free-rar.html">free RAR extractor</a></span> <span
+ class="wrd free-rar1" id="windows-tar-files-opener"> <a
+ href="tar-windows.html">TAR files opener</a></span> <span
+ class="wrd free-rar3" id="free-zip-files-software"> <a
+ href="zip-files-utility.html">free ZIP files software</a></span> <span
+ class="wrd free-rar0" id="maximum-input-file-size-for-zip-rar-archives">
+            <a href="rar-zip-file-format-size-limitations.html">max
+input file size for 7Z RAR TAR ZIP archives</a></span> <span
+ class="wrd free-rar2" id="zipx-files-opener"> <a
+ href="zipx-files-software.html">ZIPX files
+opener</a></span> <br>
+            <span class="wrd free-rar3" id="maximum-rar-archive-size"> <a
+ href="what-is-rar-file.html">maximum RAR archive
+size</a></span> <span class="wrd free-rar2"
+ id="open-7z-rar-tar-zip-files"> <a
+ href="how-to-open-rar-tar-zip-files.html">open 7z rar
+tar zip files</a></span><span class="wrd free-rar1"
+ id="linux-file-compression-utility"> <a href="peazip-linux.html">linux
+file compression utility</a></span><span class="wrd free-rar3"
+ id="file-compression-benchmark"> <a
+ href="peazip-compression-benchmark.html">file
+compression benchmark</a></span><br>
+            <span class="wrd free-rar1"
+ id="free-iso-udf-files-extraction"><a href="iso-utility.html">extract
+files from ISO
+UDF disks</a></span> <span class="wrd free-rar0"
+ id="max-rar-zip-files-size-limitation"> <a
+ href="rar-zip-file-format-size-limitations.html">maximum 7Z RAR TAR
+ZIP file size limit</a></span> <span class="wrd free-rar3"
+ id="what-are-rar-zip-format-limitations"> <a
+ href="rar-zip-file-format-size-limitations.html">7Z RAR TAR ZIP format
+limitations</a></span> <span class="wrd free-rar1"
+ id="max-size-limitation-rar-zip-files"> <a
+ href="rar-zip-file-format-size-limitations.html">max size for
+RAR and ZIP files</a></span> <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <table
+ style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 25%;"><small> <img
+ alt="largest zip file possible on Windows" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a name="largest_file_size_in_fat_filesystem"></a>DOWNLOADS<br>
+            <img alt="max total size for rar archiveon NTFS"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="index.html">All
+PeaZip downloads</a><br>
+            <a href="download-installer-p-windows.html">PeaZip for
+Windows 32 bit</a><br>
+            <a href="peazip-64bit.html">PeaZip
+for Windows 64 bit</a><br>
+            <a href="peazip-portable.html">PeaZip
+Portable</a><br>
+            <a href="peazip-linux.html">PeaZip
+Linux/BSD</a><br>
+            </small></td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="largest rar file limit on FAT32" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a name="largest_file_size_for_ntfs_filesystem"></a>SUPPORT<br>
+            <img alt="largest total size for rar file on Windows"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="peazip-help.html">Online
+help</a><br>
+            <a href="peazip-help-faq.html">Frequently
+Asked Questions</a><br>
+            <a href="peazip-free-archiver.html">More
+information</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="max total size for zip files on NTFS" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a style="color: rgb(0, 0, 0);"
+ name="file_size_limitat_of_zip_format"></a>DONATE<br
+ style="font-style: italic;">
+            <img alt="largest input file for rar archive on FAT32"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br style="font-style: italic;">
+Support
+PeaZip
+project,
+or donate to FAO,
+UNICEF and
+UNESCO from <a style="font-style: italic;" href="donations.html">donation
+page</a><br>
+            <br>
+            </small><small>&copy; <a href="peazip-tos-privacy.html"
+ style="font-weight: normal;">PeaZip
+srl: TOS,
+Privacy</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 247px;">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
+ border="0" cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank"
+ href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
+Feed</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="Maximum total archive size limit, max input file size, largest number of files per 7z rar tar zip archive"
+ title="PeaZip releases feed" src="extract-zip/rss16.png"
+ style="width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+Wiki</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ title="PeaZip Wiki online"
+ alt="What are filesystem limitations for FAT, ISO, NTFS largest files."
+ src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
+ align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="maximum zip file size in fat32 filesystem"
+ title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+ style="width: 24px; height: 24px;"><br>
+                  </small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="peazip-more.html">Search knowledge-base</a><br>
+                  </small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="maximum rar file size in fat filesystem"
+ title="Search in PeaZip project domain"
+ src="extract-rar/rar-opener.png"
+ style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

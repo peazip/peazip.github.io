@@ -1,0 +1,905 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
+  <meta name="DESCRIPTION"
+ content="Effects of quantum computing on cryptography: security of AES, Twofish, Serpent. Impact of attacks to break symmetric-key and public-key encryption algorithms.">
+  <meta name="KEYWORDS"
+ content="quantum computing, quantum, encrypt, password, symmetric, key, encryption, AES, Serpent, Twofish, AES256, cryptography, ciphers, qbit">
+  <meta name="ROBOTS" content="all">
+  <title>Post-quantum computing cryptography analysis of PeaZip</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="peazip-software.css">
+  <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
+</head>
+<body>
+<div style="text-align: center;">
+<table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);">
+      <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr align="center">
+            <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr align="center">
+                  <td
+ style="vertical-align: top; background-color: rgb(236, 235, 234);">
+                  <table style="text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"> <img
+ title="Effects of quantum computing on PeaZip cryptography, attacks to AES, Twofish, Serpent algorithms"
+ alt="quantum attacks to symmetric-key encryption algorithms"
+ src="peazip_ico24.png"
+ style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="index.html">DOWNLOAD
+PEAZIP FREE ARCHIVER</a> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="donations.html">DONATE</a> </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><img
+ alt="quantum computing" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="quantum cryptography" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="cryptanalysis" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><img
+ alt="PeaZip encryption methods" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td
+ style="vertical-align: top; background-color: rgb(51, 102, 255);"><img
+ alt="quantum computing attack on symmetric-key encryption algorithms"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="quantum computing attacks on public-key encryption algorithms"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="Grover's algorithm quantum computer attack"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="Shor's algorithm quantum computing attack"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="grover and shor attacks to classic encryption"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="width: 960px; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="width: 96px; vertical-align: top;">
+                  <div style="text-align: center;"> </div>
+                  <h2 style="text-align: left;"><img
+ title="Quantum attacks on symmetric-key and public-key encryption algorithms"
+ alt="quantum computing attacks to aes twofish serpent"
+ src="zip-files/extract-rar-files.png"
+ style="border: 0px solid ; width: 64px; height: 64px;" align="top"></h2>
+                  </td>
+                  <td style="vertical-align: middle;">
+                  <p><small><a
+ name="quantum_computing_cryptography_analysis"></a>PeaZip
+is a free cross-platform archiver and encryption utility that provides
+an unified
+portable GUI for many Open Source technologies like 7-Zip, FreeArc,
+PAQ, UPX... free alternative to WinRar, WinZip </small><small>and
+similar
+proprietary software</small><small>.<br>
+- Create 7Z, ARC, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ, ZIP
+files<br>
+- Open and extract ACE, ARJ, CAB, DMG, ISO, LHA,
+RAR, UDF, ZIPX files and more,</small><small> over 200 archive types
+supported</small><small><br>
+Features of PeaZip includes: </small><small> </small><small>archives
+opener and extractor, </small><small>batch creation and </small><small>extraction
+                  </small><small>of multiple
+archives at once, </small><small>convert files, </small><small>create
+self-extracting archives, strong encryption (AES, Tworfish, Serpent
+ciphers) with two factor authentication, encrypted password
+manager, </small><small>secure deletion, </small><small>find
+duplicate files, </small><small>calculate hash and checksum,
+export job definition as script.</small></p>
+                  </td>
+                  <td
+ style="text-align: right; width: 224px; vertical-align: middle;">
+                  <div style="text-align: center;"> </div>
+                  <h3><a href="index.html"><span
+ style="text-decoration: underline;"><img alt="file encryption software"
+ title="Download PeaZip file encryption tool"
+ src="free-rar/extract-zip.png"
+ style="border: 0px solid ; width: 200px; height: 48px;" align="middle"></span></a></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255);"><small><a
+ href="peazip-help-faq.html">FAQ,
+HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-more.html">REPORT ISSUES</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                  </small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><a
+ href="changelog.html"><small>CHANGELOG<br>
+                  </small></a></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: left;"> </div>
+      <table
+ style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+            <h1 style="text-align: center;"><big><big><big><a
+ name="quantum_computing_encryption_attacks"></a>Post-quantum computing
+cryptography analysis<br>
+            </big></big></big></h1>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);"><br>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1"
+ style="width: 50%; vertical-align: middle; background-color: rgb(255, 255, 255);">
+            <div> </div>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;">
+                  <ul>
+                    <li>
+                      <p><a href="#decryption_with_quantum_computers">POST-QUANTUM
+CRYPTANALYSIS OF PEAZIP ENCRYPTION METHODS<br>
+                      </a></p>
+                    </li>
+                  </ul>
+                  </td>
+                  <td style="vertical-align: top; width: 128px;">
+                  <h2><img
+ alt="effects of quantum computing on encryption"
+ title="How quantum computing affects PeaZip encryption"
+ src="file-format/security.png" style="width: 96px; height: 96px;"
+ align="right"></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a
+ name="decryption_with_quantum_computers"></a><a
+ href="#quantum_computing_encryption_attacks">Post-quantum
+cryptanalysis of PeaZip encryption methods</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+Security of encryption and hashing algorithm rely on computational
+unfeasibility of solving some classes of hard mathematical problems in
+reasonable time and with finite / cost effective computation resources.<br>
+Quantum computing, based on quantum bits (qbits) which can exist in
+superpositions of states, provides breakthrough performances in
+solving some classes of hard mathematical problems over classic
+computing methods, based on binary digital electronic architecture;
+the impact of this performance improvement must be carefully evaluated
+to assess
+security of existing cipher and hash functions in a scenario where
+quantum computers will be available.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Breaking classic encryption with quantum computers"
+ alt="impact of quantum computing on cryptography"
+ src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;">Under
+current understandings, the impact of increasingly more powerful
+quantum computers with increasingly larger number of qbits has very
+different degrees of impact on feasibility to reduce / break security
+of algorithms commonly employed in <span style="font-weight: bold;">symmetric-key</span>
+or <span style="font-weight: bold;">public-key</span> cryptography.</td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img
+ title="Attacks to classic cryptography algorithms with quantum machines"
+ alt="break encryption with quantum computing"
+ src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span style="font-style: italic;"></span><br>
+            <h3><big style="font-weight: bold;">Quantum
+computing and symmetric-key encryption algorithms</big></h3>
+            <br>
+            <a name="symmetric-key_encryption_quantum_computing"></a>To
+preserve data secrecy, symmetric-key cryptography rely on a shared
+secret element (password / passphrase, keyfile, biometric data, or
+combinations of more factors as in two-factor authentication) between
+two or more parties. <br>
+The need to share this element, needed by receiver for decryption, is
+the main
+disadvantage of (secret) symmetric-key cryptography solutions over
+public-key cryptography solutions.<br>
+PeaZip currently supports only <a href="encrypt-files.html">symmetic-key
+encryption</a> mechanisms, using password / passphrase and optionally
+two-factor authentication (password / passphrase + key file), which
+under current understandings are quite
+secure against attacks by
+arbitrarily sized quantum computers.<br>
+Grover's quantum algorithm is the best-possible known attack for most
+of current generation symmetric encryption algorithms (and hash
+functions), providing - for NP-complete problems - a quadratic speed-up
+over a classic computing based brute-force search.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Quantum computing attacks to symmetric-key encryption"
+ alt="quantum computing attacks on encryption"
+ src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;">Consequently,
+as a general rule, doubling the size of a symmetric key
+can
+effectively make up for the increase of efficiency of <span
+ style="font-weight: bold;">Grover's
+algorithm</span> over classic brute-forcing, and defeat the purpose of
+these attacks.</td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img
+ title="Grover's algorithm atack on classical symmetric-key encryption"
+ alt="quantum computing and symmetric key cryptography"
+ src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+In example, under those premises
+AES 256 bit could be considered equivalent in security (when
+arbitrarily large quantum computers are available, using Grover
+algorithm over the 256 bit key space) to AES 128 bit (for
+classic computers, using classic computing brute-force over the 128 bit
+key space).<br>
+Same holds true for other symmetric key ciphers like DES, Blowfish,
+Twofish, and Serpent.<br>
+While a quadratic speed-up (providing a sufficiently powerful quantum
+computer is available) is an huge performance improvement, it is
+nowhere near a complete breakthrough as polynomial time solution
+provided by Shor's algorithm is for public-key encryption systems, so
+post-quantum symmetric
+cryptography is thought to not need to differ significantly from the
+current generation.<br>
+            <a name="grover_algorithm_attack"></a>Learn more: <a
+ href="https://en.wikipedia.org/wiki/Grover%27s_algorithm">Grover's
+algorithm<img title="Grover's quantum algorithm"
+ alt="breaking symmetric key encryption" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"><br>
+            </a> <br>
+            <br>
+            <h3><big style="font-weight: bold;">Quantum
+computing and public-key encryption algorithms</big></h3>
+            <br>
+            <a name="public-key_encryption_quantum_computing"></a>Public-key
+encryption systems are currently extremely popular, as they
+simplify key exchange task: anyone can encrypt a message using a public
+key released by a receiver, but only receiver's private key can decrypt
+messages protected by its public key.<br>
+Unfortunately, most ones of currently popular public-key algorithms are
+susceptible of being efficiently broken by a large enough quantum
+computer.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Quantum computing attacks to public-key encryption"
+ alt="shor algorithm attack" src="file-format/quotes.png"
+ style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;"><span
+ style="font-weight: bold;">Shor's quantum algorithm</span> runs in
+polynomial time to solve hard
+mathematical problems used in most common public-key encryption
+(integer
+factorization problem, discrete logarithm problem, elliptic-curve
+discrete logarithm problem), rather than in exponential or
+sub-exponential time as the best, most efficient classic algorithms.</td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img
+ title="Shor's quantum algorithm attack to classic public-key encryption"
+ alt="break publick-key with quantum computing"
+ src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+Experimenting public-key algorithms relying on problems not efficiently
+simplified by Shor's algorithm or other quantum algorithms, being both
+reasonably safe under classic computing and quantum computing -based
+attacks, is currently an active research topic in cryptography.<br>
+            <span style="font-style: italic;">PeaZip currently does not
+support public-key encryption methods, only
+symmetric (secret) -key encryption - keys (passwords, keyfiles) needs
+to be privately, securely shared with receiver for decryption to take
+place.</span><br>
+            <a name="shor_algorithm_attack"></a>Learn more: <a
+ href="https://en.wikipedia.org/wiki/Shor%27s_algorithm">Shor's
+algorithm<img title="Shor's quantum algorithm"
+ alt="breaking public key encryption" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
+.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="text-align: right; vertical-align: middle; width: 64px;">
+                  <h3><span style="font-weight: bold;"><img
+ title="What is quantum cryptography"
+ alt="quantum cryptography security" src="file-format/information.png"
+ style="width: 48px; height: 48px;"><br>
+                  </span></h3>
+                  </td>
+                  <td
+ style="font-style: italic; vertical-align: middle;"><big><a
+ name="what_is_quantum_cryptography"></a>Please note <a
+ href="https://en.wikipedia.org/wiki/Quantum_cryptography">quantum
+cryptography</a></big><a
+ href="https://en.wikipedia.org/wiki/Quantum_cryptography"><img
+ alt="quantum cryptography" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a><big> is a
+separate topic, studying <span style="font-weight: bold;">how to
+apply quantum phenomena to cryptography</span> in order to achieve
+secrecy and detect
+eavesdropping, rather than analyzing <span style="font-weight: bold;">how
+quantum computers
+characteristics affects safety</span> (in terms of computational
+feasibility
+of attacks or brute-forcing) of encryption / hashing algorithms - the
+topic discussed in this page and properly named <a
+ href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">post-quantum
+cryptography</a></big><a
+ href="https://en.wikipedia.org/wiki/Post-quantum_cryptography"><img
+ alt="post-quantum cryptography" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a></td>
+                </tr>
+              </tbody>
+            </table>
+Read more about symmetic-key encryption algorithms supported by PeaZip:
+Rijndael/<a target="_blank"
+ href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES<img
+ src="free-rar/extractor.png" alt="aes256"
+ title="symmetic-key AES encryption"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
+(implemented as AES128 and AES256 in 7Z, ARC, PEA, and ZIP standards),
+and <a target="_blank" href="https://www.schneier.com/twofish.html">Twofish<img
+ title="Twofish cipher" alt="twofish 256 bit"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
+ target="_blank"
+ href="http://en.wikipedia.org/wiki/Serpent_%28cipher%29">Serpent<img
+ title="Serpent cipher" alt="Serpent 256 bit"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> ciphers
+(implemented for ARC and PEA standards).<br>
+Read more about <a target="_blank"
+ href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographically
+secure hash function<img alt="cryptographically secure hash algorithms"
+ title="Non-invertible hash function" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a><span
+ style="background-color: rgb(255, 238, 221);"></span><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+ style="color: rgb(253, 253, 253);">RELATED &amp; SIMILAR PAGES</span> </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="change-password.html">CHANGE ENCRYPTION PASSWORD</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="encrypt-files.html">ENCRYPT 7Z ARC ZIP FILES<br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="multiple-passwords.html">FILE PROTECTED BY MULTIPLE PASSWORDS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small><small>&nbsp;</small></small></small><br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="extract-encrypted-files.html">OPEN ENCRYPTED ARCHIVES</a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="pea-file-format.html">PEA FORMAT AUTHENTICATED ENCRYPTION</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="protect-files.html">PROTECT FILES FROM UNAUTHORIZED ACCESS</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-password.html">OPEN UNREADABLE FILE</a><br>
+                  </small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h3><a href="peazip-help-faq.html">FAQ</a>
+&gt; Security &gt; Post-quantum computing
+cryptanalysis</h3>
+            <br>
+Topics and search suggestions about effects of quantum computing on
+PeaZip cryptography, security of AES, Twofish, Serpent algorithms,
+impact of quantum-based attacks to try to break symmetric-key and
+public-key encryption algorithms:<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> breaking
+symmetic-key encryption with quantum
+computing,<br>
+break NP-complete problems,<br>
+quadratic improvement,<br>
+impact of quantum computing,<br>
+quantum encryption attacks,<br>
+Grover's algorithm attack,<br>
+how encryption software works<br>
+breaking cryptography,<br>
+what is quantum cryptography,<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> breaking
+public-key encryption with quantum
+computing,<br>
+polynomial time,<br>
+Shor's algorithm attack,<br>
+post-quantum cryptanalysis,<br>
+break cryptographic software,<br>
+attacking cryptography,<br>
+impact of quantum computing attacks on encryption,<br>
+how quantum cryptography works, </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> quantum
+computing,<br>
+aes256 algorithm,<br>
+quantum encryption,<br>
+exponential time solution,<br>
+brute forcing,<br>
+attack file encryption,<br>
+break encryption algorithm,<br>
+impact of quantum computers on cryptography,<br>
+classic cryptography,<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;">NP-hard
+problem,<br>
+breaking encryption with quantum computers,<br>
+decrypt with quantum machine,<br>
+encryption security,<br>
+attack encryption algorithm,<br>
+break encryption with quantum machines,<br>
+quantum cryptanalysis,<br>
+classic vs quantum encryption<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Tag Cloud<br>
+            <span class="wrd free-rar4" id="quantum-cryptography"> <a
+ href="quantum-computing-cryptography.html">post-quantum cryptography</a></span>
+            <span class="wrd free-rar2" id="quantum-computing"> <a
+ href="quantum-computing-cryptography.html">quantum computing</a></span>
+            <span class="wrd free-rar1" id="quantum-cryptanalysis"> <a
+ href="quantum-computing-cryptography.html">quantum cryptanalysis</a></span>
+            <span class="wrd free-rar3" id="AES256"> <a
+ href="encrypt-files.html">AES256</a></span> <span
+ class="wrd free-rar1" id="serpent-algorithm"> <a
+ href="encrypt-files.html">Serpent cipher</a></span> <span
+ class="wrd free-rar2" id="twofish-cipher"> <a
+ href="encrypt-files.html">Twofish cipher</a></span><br>
+            <span class="wrd free-rar3" id="what-is-encryption"> <a
+ href="encrypt-files.html">what is encryption</a></span> <span
+ class="wrd free-rar0" id="file-hashing-checksum-tools"> <a
+ href="verify-checksum-hash.html">checksum hash tool</a></span> <span
+ class="wrd free-rar1" id="convert-rar-zip-archive"> <a
+ href="convert-files.html">convert encrypted files</a></span> <span
+ class="wrd free-rar0" id="free-file-encryption-utility"> <a
+ href="index.html">download
+file encryption utility</a></span> <span class="wrd free-rar2"
+ id="ace-files-extractor-utility"> <a href="ace-files-utility.html">ACE
+files extractor</a></span> <span class="wrd free-rar0"
+ id="work-with-microsoft-cab-files"> <a href="cab-files-utility.html">work
+with Microsoft CAB files</a></span><br>
+            <span class="wrd free-rar2"
+ id="read-encrypted-7z-rar-zip-file"> <a
+ href="extract-encrypted-files.html">read encrypted
+files</a></span> <span class="wrd free-rar1"
+ id="how-to-extract-archives"> <a
+ href="how-to-extract-rar-zip-archives.html">extract RAR TAR ZIP files</a></span>
+            <span class="wrd free-rar4"
+ id="open-source-encryption-software"> <a href="index.html">open
+source
+encryption software</a></span> <span class="wrd free-rar0"
+ id="open-source-encryption-software"> <a href="encrypt-files.html">how
+to encrypt files</a></span> <span class="wrd free-rar1"
+ id="split-file-spanning-how-to"> <a href="file-split.html">how to
+split files</a></span><br>
+            <span class="wrd free-rar2" id="work-with-7z-7zip-files"> <a
+ href="7zip-files-utility.html">work
+with 7Z archives</a></span> <span class="wrd free-rar3"
+ id="open-source-rar-opener"> <a href="free-rar.html">Open Source RAR
+opener</a></span> <span class="wrd free-rar2" id="manage-zip-files"> <a
+ href="zip-files-utility.html">free ZIP utility</a></span><span
+ class="wrd free-rar3" id="what-is-rar-format"> <a
+ href="what-is-rar-file.html">RAR file format</a></span> <span
+ class="wrd free-rar2" id="portable-rar-files-software"> <a
+ href="peazip-portable.html">portable encryption software</a></span> <br>
+            <span class="wrd free-rar1"
+ id="secure-file-deletion-program"> <a href="secure-delete.html">secure
+file delete</a></span> <span class="wrd free-rar0"
+ id="free-zipx-files-software"> <a href="zipx-files-software.html">ZIPX
+files software</a></span> <span class="wrd free-rar3"
+ id="detect-malware-inside-archives"> <a
+ href="antivirus-scan-zipped-files.html">detect malware inside archives</a></span>
+            <span class="wrd free-rar2" id="change-existing-password"> <a
+ href="change-password.html">change password of existing archive</a></span>
+            <span class="wrd free-rar1" id="encrypt-archive-toc"> <a
+ href="encrypt-filenames.html">encrypt archive TOC</a></span><br>
+            <span class="wrd free-rar1" id="multiple-encryption-layers">
+            <a href="multiple-passwords.html">multiple encryption layers</a></span>
+            <span class="wrd free-rar3" id="pea-file-format"> <a
+ href="pea-file-format.html">PEA encrypted file format</a></span> <span
+ class="wrd free-rar1" id="pack-encrypt-authenticate-utility"> <a
+ href="pea-archiving-utility.html">Pack Encrypt Authenticate</a></span>
+            <span class="wrd free-rar2" id="unlock-unreadable-file"> <a
+ href="peazip-password.html">unlock unreadable file</a></span> <span
+ class="wrd free-rar3" id="password-manager"> <a
+ href="protect-files.html">password manager</a></span><br>
+            <span class="wrd free-rar1"
+ id="quantum-computing-cryptography"> <a
+ href="quantum-computing-cryptography.html">quantum computing and
+cryptography</a></span> <span class="wrd free-rar3" id="7z-files"><a
+ href="7z-file-format.html">.7Z format</a></span> <span
+ class="wrd free-rar1" id="cloud-security"> <a
+ href="share-files-sharing.html">cloud security</a></span> <span
+ class="wrd free-rar0" id="create-open-extract-arc-files"><a
+ href="arc-files-utility.html">
+ARC files utility</a></span> <span class="wrd free-rar3"
+ id="linux-file-encryption-software"> <a href="peazip-linux.html">linux
+file encryption utility</a></span> <span class="wrd free-rar1"
+ id="encrypt-files-windows"> <a
+ href="download-installer-p-windows.html">encrypt files on Windows</a></span>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <table
+ style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 25%;"><small> <img
+ alt="qbit" src="titles.png" style="width: 129px; height: 2px;"><br>
+            <a name="quantum_cryptography"></a>DOWNLOADS<br>
+            <img alt="breaking encryption with quantum computiung"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="index.html">All
+PeaZip downloads</a><br>
+            <a href="download-installer-p-windows.html">PeaZip for
+Windows 32 bit</a><br>
+            <a href="peazip-64bit.html">PeaZip
+for Windows 64 bit</a><br>
+            <a href="peazip-portable.html">PeaZip
+Portable</a><br>
+            <a href="peazip-linux.html">PeaZip
+Linux/BSD</a><br>
+            </small></td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="quantum computiung impact on aes" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a name="quantum_cryptography_analysis"></a>SUPPORT<br>
+            <img
+ alt="quantum computiung impact on public-key encryption"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="peazip-help.html">Online
+help</a><br>
+            <a href="peazip-help-faq.html">Frequently
+Asked Questions</a><br>
+            <a href="peazip-free-archiver.html">More
+information</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="quantum computiung impact on symmetric-key encryption"
+ src="titles.png" style="width: 129px; height: 2px;"><br>
+            <a style="color: rgb(0, 0, 0);"
+ name="quantum_computing_cryptography_aes"></a>DONATE<br
+ style="font-style: italic;">
+            <img alt="quantum cryptography"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br style="font-style: italic;">
+Support
+PeaZip
+project,
+or donate to FAO,
+UNICEF and
+UNESCO from <a style="font-style: italic;" href="donations.html">donation
+page</a><br>
+            <br>
+            </small><small>&copy; <a href="peazip-tos-privacy.html"
+ style="font-weight: normal;">PeaZip
+srl: TOS,
+Privacy</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 247px;">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
+ border="0" cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank"
+ href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
+Feed</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="impact of quantum computing attacks to break symmetric-key encryption"
+ title="PeaZip releases feed" src="extract-zip/rss16.png"
+ style="width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+Wiki</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ title="PeaZip Wiki online"
+ alt="effects of quantum computing attacks to break public-key encryption"
+ src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
+ align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="quantum computing attacks to break aes encryption"
+ title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+ style="width: 24px; height: 24px;"><br>
+                  </small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="peazip-more.html">Search knowledge-base</a><br>
+                  </small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="quantum computing attacks to break twofish serpent encryption"
+ title="Search in PeaZip project domain"
+ src="extract-rar/rar-opener.png"
+ style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

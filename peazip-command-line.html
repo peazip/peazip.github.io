@@ -1,0 +1,1082 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
+  <meta name="DESCRIPTION"
+ content="How to use PeaZip programmatically from command line, create CLI scripts, automate schedule compression tasks from GUI. 7Z TAR ZIP syntax console shell examples">
+  <meta name="KEYWORDS"
+ content="peazip, command line, 7zip, 7-zip, winrar, examples, software, automation, schedule tasks, task scheduler, script, GUI, CLI, syntax, programmatically">
+  <meta name="ROBOTS" content="all">
+  <title>PeaZip command line use, program scripting syntax examples</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="peazip-software.css">
+  <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
+</head>
+<body>
+<div style="text-align: center;">
+<table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);">
+      <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr align="center">
+            <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr align="center">
+                  <td
+ style="vertical-align: top; background-color: rgb(236, 235, 234);">
+                  <table style="text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"> <img
+ title="How to use PeaZip programmatically, command line, create CLI scripts, automate &amp; scheduled tasks"
+ alt="command line compression program use scripting syntax examples"
+ src="peazip_ico24.png"
+ style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="index.html">DOWNLOAD
+PEAZIP FREE ARCHIVER</a> </td>
+                        <td style="vertical-align: middle;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                        <td style="vertical-align: top;">&nbsp;
+&nbsp; &nbsp; &nbsp;&nbsp; <br>
+                        </td>
+                        <td style="vertical-align: middle;"><a
+ href="donations.html">DONATE</a> </td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                        <td style="vertical-align: top;"><small><br>
+                        </small></td>
+                      </tr>
+                      <tr>
+                        <td style="vertical-align: top;"><img
+ alt="command line zip program" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="rar from command line" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="programmatically zip files" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"><br>
+                        </td>
+                        <td style="vertical-align: top;"><img
+ alt="rar program syntax" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td
+ style="vertical-align: top; background-color: rgb(51, 102, 255);"><img
+ alt="zip utility syntax" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="unzip syntax examples" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="command line rar program" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="programmatically unzip files" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
+                        <td style="vertical-align: top;"><img
+ alt="command line file compression software"
+ src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="width: 960px; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="width: 96px; vertical-align: top;">
+                  <div style="text-align: center;"> </div>
+                  <h2 style="text-align: left;"><img
+ title="Scripts and command line 7Z TAR ZIP syntax and console shell examples"
+ alt="command line compression program"
+ src="zip-files/extract-rar-files.png"
+ style="border: 0px solid ; width: 64px; height: 64px;" align="top"></h2>
+                  </td>
+                  <td style="vertical-align: middle;">
+                  <p><small><a name="command_line_zip"></a>PeaZip
+is a free cross-platform file archiver utility that provides an unified
+portable GUI for many Open Source technologies like 7-Zip, FreeArc,
+PAQ, UPX... free alternative to WinRar, WinZip </small><small>and
+similar
+proprietary software</small><small>.<br>
+- Create 7Z, ARC, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ, ZIP
+files<br>
+- Open and extract ACE, ARJ, CAB, DMG, ISO, LHA,
+RAR, UDF, ZIPX files and more,</small><small> over 200 archive types
+supported</small><small><br>
+Features of PeaZip includes: </small><small> </small><small>archives
+opener and extractor, </small><small>unace, unrar, batch creation and </small><small>extraction
+                  </small><small>of multiple
+archives at once, </small><small>convert files, </small><small>create
+sfx archives, split and join files,
+strong encryption with two factor authentication, encrypted password
+manager, </small><small>secure deletion, </small><small>find
+duplicate files, </small><small>calculate hash and checksum,
+export job definition as command line or script.</small></p>
+                  </td>
+                  <td
+ style="text-align: right; width: 224px; vertical-align: middle;">
+                  <div style="text-align: center;"> </div>
+                  <h3><a href="index.html"><span
+ style="text-decoration: underline;"><img
+ alt="free file compression program"
+ title="Download PeaZip free compression program"
+ src="free-rar/extract-zip.png"
+ style="border: 0px solid ; width: 200px; height: 48px;" align="middle"></span></a></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255);"><small><a
+ href="peazip-help-faq.html">FAQ,
+HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-more.html">REPORT ISSUES</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                  </small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><a
+ href="changelog.html"><small>CHANGELOG<br>
+                  </small></a></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
+                  <td style="vertical-align: top; text-align: center;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
+ href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: left;"> </div>
+      <table
+ style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+            <h1 style="text-align: center;"><big><big><big><a
+ name="rar_tar_syntax_examples"></a>PeaZip command line use, program
+scripting syntax examples<br>
+            </big></big></big></h1>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(248, 247, 246);"><br>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="1" rowspan="1"
+ style="width: 50%; vertical-align: middle; background-color: rgb(255, 255, 255);">
+            <div> </div>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;">
+                  <ul>
+                    <li>
+                      <p><a
+ href="peazip-command-line.html#RAR_TAR_ZIP_scripting">CREATE COMMAND
+LINE
+SCRIPTS AND SCHEDULED TASKS</a></p>
+                    </li>
+                    <li>
+                      <p><a
+ href="peazip-command-line.html#file_compression_script">HOW TO USE
+PEZIP FROM
+COMMAND LINE</a></p>
+                    </li>
+                  </ul>
+                  </td>
+                  <td style="vertical-align: top; width: 128px;">
+                  <h2><img alt="how to zip from command line"
+ title="Compression commands and scripting"
+ src="file-format/tips-tricks.png" style="width: 96px; height: 96px;"
+ align="right"></h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a name="RAR_TAR_ZIP_scripting"></a><a
+ href="peazip-command-line.html#rar_tar_syntax_examples">Create command
+line scripts and
+scheduled tasks</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+            <a name="peazip_programmatical_usage"></a>PeaZip acts as a
+frontend for many Open Source
+archiving executables (7z / p7zip, FreeArc, unace, PAQ, LPAQ, ZPAQ,
+UPX...): due its frontend architecture most tasks
+possible to be accomplished with PeaZip
+GUI can be converted and exported to command line, and saved as script
+(batch file or
+shell script), using <span style="font-weight: bold;">Save task
+definition</span>
+button in<span style="font-weight: bold;"> Console tab </span>(in
+archiving/conversion and in extraction interfaces), or console button
+in task's
+window.<br>
+            <h2><img title="command line syntax examples"
+ alt="rar command line examples"
+ src="rar-files/console-compression-software.gif"
+ style="width: 16px; height: 16px;" align="middle"></h2>
+            <a name="compose_command_line_tasks"></a>From the Console
+tab the task can be modified and tested, before being saved for future
+programmatical use.<br>
+Exporting GUI-defined jobs as script bridges the gap between GUI and
+command-line software worlds, taking the best of both: users can
+benefit of
+those saved sample scripts (main menu <span style="font-weight: bold;">Tools</span>
+&gt; <span style="font-weight: bold;">Saved task definition scripts</span>
+points
+to the default PeaZip's script directory) that can be used
+programmatically as is, or as examples or building
+blocks to speed
+up
+further scripting, or for learning purpose about the underlying
+executables (in example build examples for backend p7zip / 7-Zip
+command line
+syntax), <span style="font-weight: normal;">or for fine-tuning the
+task beyond the GUI's capabilities.<br>
+Exported tasks are displayed as UTF8 text and can be freely saved, in
+example (but not only) as </span>Bash shell on Unix systems, or .bat
+or .ps1 PowerShell script on Microsoft Windows platform.<br>
+            <br>
+            <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
+ name="batch_encrypt_decrypt_files"></a>If <span
+ style="font-weight: bold;">encryption password</span> is needed to
+complete the task (batch <a href="encrypt-files.html">create an
+encrypted archive of files</a>, or batch <a
+ href="extract-encrypted-files.html">extract a password protected
+archive</a>), it needs to be written in the command line or script,
+otherwise the password will be asked interactively and the task will
+not run unattended - a supervisor will need to enter the password when
+required by the running job.<br>
+Please note very carefully that if the password is saved as plain text
+to a script file, it has to be protected with maximum care.<br>
+                  <br>
+To avoid the password being saved to the .bat script,<br>
+                  <ul>
+                    <li>for archive extraction / backup reatore tasks,
+simply omit to enter the password, it will be asked interactively when
+running the script</li>
+                    <li>for archive creation / backup creation tasks,
+you can delete the password from the
+script prompted in Console tab, before saving it. The password switch
+appear in as "-pthisisthepassword", removing the password part and
+letting the
+switch as "-p" the password will be asked interactively when running
+the
+script</li>
+                  </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span style="font-weight: normal;"><br>
+On </span>Microsoft <span style="font-weight: normal;">Windows Vista
+and newer
+systems</span><span style="font-weight: normal;">, </span><span
+ style="font-weight: normal;"><span style="font-weight: bold;">Schedule
+tab</span> (in archiving/conversion and extraction interfaces) is
+intended as a quick way to schedule (</span><span
+ style="font-weight: normal;">in builtin Windows system's Task
+scheduler) </span><span style="font-weight: normal;">a scripted task
+defined in Console tab,</span><span style="font-weight: normal;"> in
+example
+to automate <a href="backup-files.html">backup or
+restore job</a> launching the saved script file(s) at user-defined
+times,
+or under specific circumstances / events.</span><br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Programmatically compress files"
+ alt="programmatically zip files" src="file-format/quotes.png"
+ style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;"><big><span
+ style="font-weight: normal;"><a name="rar_tar_zip_syntax"></a>Please
+note those command
+lines / scripts are targeted directly to backend archiver /
+compressor utility binaries (7-Zip / p7zip, unace, unrar, Pea,
+FreeArc...) so
+are
+useful for creating examples to understand and experiment the syntax of
+those tools.</span></big></td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img title="Programmatical PeaZip usage"
+ alt="command line zip program" src="file-format/quotes-inverse.png"
+ style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span style="font-weight: normal;">PeaZip provides its
+own command line syntax, in order to simplify
+the task of script creation, offering an unified set of commands using
+underlying functions without having to explicitly use the syntax of
+backend binaries: this is the subject of following section.<br>
+            <br>
+            </span>
+            <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
+ name="batch_compress_extract_absoulte_paths"></a>Please
+note you need to use <span style="font-weight: bold;">absolute paths</span>
+(full qualified paths, also supported in UNC path form) when writing
+command lines or scripts for PeaZip or for backend utilities binaries;
+otherwise,
+you will need to add PeaZip's program's directory to system's paths so
+the OS will be able to find the proper executables to run. For listing
+input and output files / directories it is always recommended to use
+absolute paths.<br>
+Saving, or copy / pasting, task definition from console tab as shown in
+previous chapter can help speed up finding and writing executables,
+input, and output paths in absolute form. Correctness of paths saved in
+scripts will need to be verified, if scripts are used on a different
+machine.<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a name="file_compression_script"></a><a
+ href="peazip-command-line.html#rar_tar_syntax_examples">How to use
+PeaZip from command line</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+            <a name="command_line_archive_management"></a>One of the
+scopes of PeaZip project is offering a simple and
+homogeneous frontend command line interface to mask the complexity and
+the
+differences in CLI syntax of back-end executables, "converting"
+commands into simpler PeaZip's syntax mapping instructions for most
+common compression / extraction tasks.<br>
+Quick access to most used PeaZip&#8217;s functions is provided passing as
+first parameter a constant string value identifying the function;
+those methods can be used invoking PeaZip from scripts or also creating
+a link to PeaZip executable with the desired first parameter.<br>
+            <br>
+            <h3 style="font-weight: bold;">PEAZIP'S COMMANDS SYNTAX</h3>
+            <ul>
+              <li><a name="command_line_compression"></a>-add2archive:
+add to a new archive and open PeaZip
+GUI to set archive&#8217;s
+type and options;</li>
+              <ul>
+                <li>&nbsp;
+-add2archive-add as -add2archive, but add to
+existing archive (if found)</li>
+                <li>&nbsp;
+-add2archive-update as previous, but update older
+files only</li>
+              </ul>
+              <li>-add27z: add to a new .7z archive;</li>
+              <li>-add27zmail: add to a new .7z archive and attach it
+to a mail, requires
+compatible mail client like in exampe Outlook and
+Outlook Express</li>
+              <li>-add2separate7z: add each input to a separate new .7z
+archive;</li>
+              <li>-add2sfx7z: add to a new self extracting 7z archive
+(.exe);</li>
+              <li>-add2sfx7zmail: add to a new self extracting archive
+and attach it to a
+mail, requires
+compatible mail client like in example Outlook and
+Outlook Express</li>
+              <li><a name="zip_file_command"></a>-add2zip: add to a new
+.zip archive;</li>
+              <li>-add2zipmail: add to a new .zip archive and attach it
+to a mail, requires
+compatible mail client like in example Outlook and
+Outlook Express</li>
+              <li>-add2separatezip: add each input to a separate new
+.zip archive;</li>
+              <li>-add2pea: add to a new .pea archive;</li>
+              <li>-add2crypt: add to a new encrypted .pea archive;</li>
+              <li><a name="file_spanning_command"></a>-add2split: raw
+split a single input file;</li>
+            </ul>
+            <ul>
+              <li><a name="secure_file_deletion_command"></a>-add2wipe:
+securely delete selected file(s);</li>
+              <li>-add2compare: byte to byte compare two files;</li>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+              <li><a name="batch_open_archive"></a>-ext2browse: open
+(and browse if applicable) the
+archive(s) in PeaZip file/archive manager GUI;</li>
+              <li>-ext2browsepath: browse the selected folder (or its
+path, if a file is
+selected) in PeaZip;</li>
+            </ul>
+            <ul>
+              <li><a name="interactive_extraction_command"></a>-ext2main:
+open archive in "Archive extraction"
+interface, allowing to specify i/o options, password and keyfile
+(interactively);</li>
+              <li><a name="batch_extraction_command"></a>-ext2here and
+-ext2folder: extract archive(s) to its
+own path, &#8220;folder&#8221; variant creates a new folder named after the archive;</li>
+              <li>-ext2to and -ext2tofolder: extract archive(s)
+interactively asking for output directory;</li>
+              <li>-ext2simple and -ext2simplefolder: simplified
+&#8220;blanket&#8221; extraction command for all backends, allows to specify output
+path as first parameter; <br>
+              </li>
+            </ul>
+            <ul>
+              <li><a name="programmatically_list_archive_file"></a>-ext2list:
+list archive(s) content, to quickly look
+what is in the
+archive;</li>
+              <li><a name="programmatically_test_archive_content"></a>-ext2test:
+test archive(s) content;</li>
+              <li>-ext2openpwtest requires password as paramstr(2)
+(always delimited) and
+archive&#8217;s full name as paramstr(3): try to list the archive and
+terminate with exit code 0 if archive is not encrypted, 1 if it is
+encrypted, 2 if it is non readable (corrupted or with encrypted file
+list), -1 if archive is not found.</li>
+            </ul>
+            <ul>
+              <li>-ext2commandprompt: open the command prompt in the
+selected folder (or
+in its path, if a file is selected)</li>
+              <br>
+              <li>-peazipreset: reset PeaZip configuration, as Options
+&gt; Reset button;
+can resolve unexpected problems with configuration, restarting the
+application with factory settings</li>
+            </ul>
+-add2archive, -ext2main and -ext2browse open the PeaZip GUI,
+to allow
+further user&#8217;s interaction<br>
+            <br>
+Direct batch archiving functions <br>
+-add2pea, -add2crypt, -add27z, -add27zmail, -add2separate7z,
+-add2sfx7z, -add2sfx7zmail, -add2zip, -add2zipmail, -add2separatezip <br>
+and direct batch extraction functions<br>
+-ext2here, -ext2folder, -ext2to, ext2tofolder, -ext2simple,
+-ext2simplefolder<br>
+can delete (asking for confirmation) input files as atomic operation if
+this policy is set in PeaZip - delete after archiving and delete after
+extraction checkboxes in archiving and extraction screens respectively.<br>
+As it could not be handy to have an interactive request prompt in a
+batch script, an alternative version for those actions not applying
+deletion policy after archiving/extraction is available appending &#8220;i&#8221;
+letter to the command: -add2peai, -add2crypti, -add27zi, -add27zmaili,
+-add2separate7zi, -add2sfx7zi, -add2sfx7zmaili, -add2zipi,
+-add2zipmaili, -add2separatezipi, and -ext2herei, -ext2folderi,
+-ext2toi, ext2tofolderi, -ext2simplei, -ext2simplefolderi. <br>
+Using those version of the commands, PeaZip&#8217;s delete after archiving
+and delete after extraction directives are explicitly ignored.<br>
+            <br>
+On MS Windows platforms PeaZip can also send multiple input
+to a single instance using semaphores and temporary files (temp files
+are deleted automatically but in case of any kind of problem there is a
+reset switch in
+Options &gt; Settings first tab to remove any possible leftover), this
+allows the command verb to be used in static registry entries (in
+example in
+Windows systems context menu) to send
+multiple input to a single instance:<br>
+            <ul>
+              <li>-add2multi works like -add2archive</li>
+              <li>-add2multi7z works like -add27z, but stays in the
+archiving interface
+until the user click "Ok" button; it can be modified in
+-add2multi7zfastest, *normal, or *ultra to directly set the compression
+to fastest, normal or ultra levels presets (the compression method used
+is the one defined by the user); *mail send 7z archive by mail;
+*encrypt create encrypted 7z archive<br>
+              </li>
+              <li>-add2multizip works like -add2zip, but stays in the
+archiving interface
+until the user click "Ok" button; likewise the previous switch it can
+be modified to *fastest, *normal, or *ultra compression level; *mail
+send zip archive by mail</li>
+              <li>-add2multisfx works like -add2sfx7z, but stays in the
+archiving
+interface until the user click "Ok" button</li>
+              <li>-ext2multi works like - ext2main</li>
+            </ul>
+While the program's instance accepting files is open, it is possible to
+continue
+adding input from the same directory selecting objects and using
+context menu&#8217;s entry, as an alternative to dragging the object to the
+application window that might be less handy if the workspace is crowded.<br>
+            <br>
+            <h2 style="font-weight: bold;"><big>COMPRESSION &amp;
+EXTRACTION SYNTAX EXAMPLES</big></h2>
+            <ul>
+              <li><span style="font-style: italic;"><a
+ name="compression_script_example"></a>peazip -add2zip
+file1 file2
+directory3</span> will add specified objects (file1 and file2, and all
+content of directory3) to a .zip archive; using <span
+ style="font-style: italic;">-add27z</span> instead of <span
+ style="font-style: italic;">-add2zip</span> will perform the
+same task but will result in a .7z archive (<span
+ style="font-style: italic;">-add2pea</span> will result in a
+.pea archive, <span style="font-style: italic;">-add2sfx7z</span> will
+result in an self extracting executable
+and so on).</li>
+            </ul>
+            <ul>
+              <li><span style="font-style: italic;"><a
+ name="extraction_script_example"></a>peazip -ext2here
+archive1</span> will extract archive1 in its path; using <span
+ style="font-style: italic;">-ext2folder</span>
+archive1 will be extracted to a new folder named "archive1" in the same
+path of archive1 file</li>
+            </ul>
+            <ul>
+              <li><span style="font-style: italic;">peazip -ext2simple
+archive1 somedirectory</span> extract archive1 in "somedirectory" path</li>
+            </ul>
+            <br>
+More information: <a target="_blank"
+ href="http://en.wikipedia.org/wiki/Batch_file">batch file<img
+ alt=".bat file for Microsoft Windows" title="Batch scripting"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
+ target="_blank" href="http://en.wikipedia.org/wiki/Shell_script">shell
+script<img alt="unix shell commands" title="Shell scripting"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
+definitions<br>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+ style="color: rgb(253, 253, 253);">RELATED &amp; SIMILAR PAGES</span> </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="free-rar-create.html">RAR CREATION PROGRAM<br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="how-to-compress-files-folders.html">HOW TO BATCH CREATE NEW
+ARCHIVE</a><a href="free-rar-create.html"><br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="how-to-extract-rar-zip-archives.html">HOW TO BATCH EXTRACT 7Z
+RAR ZIP
+ARCHIVES</a><a href="free-rar-create.html"><br>
+                  </a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small>&nbsp;</small></small><br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="how-to-zip-files-separate-archives.html">HOW TO COMPRESS FILES
+TO SEPARATE ARCHIVES<br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="encrypt-files.html">HOW TO PROGRAMMATICALLY ENCRYPT FILES</a><a
+ href="free-rar-create.html"><br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="extract-encrypted-files.html">BATCH EXTRACT ENCRYPTED
+ARCHIVES</a><a href="free-rar-create.html"><br>
+                  </a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small>&nbsp;</small></small><br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="zip-files-utility.html">FREE ZIP PROGRAM<br>
+                  </a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="backup-files.html">CREATE BACKUP SCRIPTS</a><a
+ href="free-rar-create.html"><br>
+                  </a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><a href="peazip-help-faq.html">FAQ</a>
+&gt; Tips &amp; tricks &gt; Compression from command line, automate
+programmatical use of PeaZip with scripts<br>
+            </p>
+Topics and search suggestions about how to use PeaZip programmatically
+from command line, create CLI
+scripts, automate and schedule batch compression and extraction tasks
+saved from GUI. 7Z, TAR, ZIP
+program syntax console shell usage and examples:
+            <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> how to
+use peazip archiver from command line,<br>
+                  <h4>create file compression scripts,</h4>
+use rar from batch scripts,<br>
+automate archive extraction,<br>
+save compression batch scripts,<br>
+file compression program,<br>
+                  <h4>programmatically zip files,</h4>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;">peazip
+command line syntax,<br>
+rar syntax examples,<br>
+how to zip from command line,<br>
+programmatically unzip,<br>
+schedule zip extraction,<br>
+create compression shell script,<br>
+file archiving program,<br>
+                  <h4>zip from shell,</h4>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;"> save
+task as script,<br>
+export GUI job as command,<br>
+                  <h4>tar syntax example,</h4>
+programmatically extract files,<br>
+automate backup task,<br>
+rar from shell command,<br>
+                  <h4>command line zip,</h4>
+how to zip from batch script,<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; font-style: italic;">export
+task as command line script,<br>
+                  <h4>compress from command line,</h4>
+create batch from gui task,<br>
+programmatically compress files, <br>
+schedule backup script,<br>
+peazip programmatical usage,<br>
+zip from console,<br>
+programmatically archive files, </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">Tag Cloud<big><br>
+            <span class="wrd free-rar0" id="encryption-software"> <a
+ href="encrypt-files.html">apply encryption to archive files</a></span>
+            <span class="wrd free-rar3" id="free-backup-software"> <a
+ href="backup-files.html">free backup utility</a></span> <span
+ class="wrd free-rar0" id="file-hashing-checksum-tools"> <a
+ href="verify-checksum-hash.html">calculate hash
+value</a></span> <span class="wrd free-rar2"
+ id="command-line-compression"> <a href="peazip-command-line.html">command
+line compression</a></span> <span class="wrd free-rar1"
+ id="convert-ace-rar-zip-files"> <a href="convert-files.html">how to
+convert
+existing archive files</a></span><br>
+            <span class="wrd free-rar2" id="create-backup-script"> <a
+ href="peazip-command-line.html">create
+backup script</a></span> <span class="wrd free-rar0"
+ id="find-duplicate-files"> <a href="duplicates-hash-checksum.html">detect
+duplicate files</a></span> <span class="wrd free-rar2"
+ id="free-zip-software-download"> <a href="index.html">download free
+rar tar zip software</a></span> <span class="wrd free-rar1"
+ id="open-extract-7z-files"> <a href="7zip-files-utility.html">extract
+7Z files</a></span> <span class="wrd free-rar1" id="open-arc-files"> <a
+ href="arc-files-utility.html">extract ARC files</a></span> <span
+ class="wrd free-rar3" id="open-rar-files-free"> <a
+ href="free-rar.html">extract RAR files</a></span><br>
+            <span class="wrd free-rar2" id="open-zip-files"> <a
+ href="zip-files-utility.html">how to extract ZIP files</a></span> <span
+ class="wrd free-rar0" id="how-to-extract-file-archives"> <a
+ href="how-to-extract-rar-zip-archives.html">extraction of RAR TAR ZIP
+archives</a></span> <span class="wrd free-rar1" id="file-split-tool"> <a
+ href="file-split.html">file split tool</a></span> <span
+ class="wrd free-rar4" id="free-file-archiver"> <a href="index.html">free
+file archiver</a></span> <span class="wrd free-rar3"
+ id="download-free-rar-software"> <a href="index.html">download free
+RAR utility</a></span> <span class="wrd free-rar1" id="create-gz-files">
+            <a href="gzip-utility.html">create GZ files</a></span><br>
+            <span class="wrd free-rar2" id="open-extract-ace-files"> <a
+ href="ace-files-utility.html">open ACE files</a></span> <span
+ class="wrd free-rar1" id="unzip-cab-files"> <a
+ href="cab-files-utility.html">unzip CAB files</a></span> <span
+ class="wrd free-rar3" id="open-encrypted-files"> <a
+ href="extract-encrypted-files.html">open encrypted files</a></span> <span
+ class="wrd free-rar2" id="open-tar-windows-software"> <a
+ href="tar-windows.html">open TAR files</a></span> <span
+ class="wrd free-rar0" id="create-wim-files"> <a
+ href="wim-utility.html">create
+WIM files</a></span> <span class="wrd free-rar1"
+ id="open-zipx-file-archives"> <a href="zipx-files-software.html">open
+ZIPX files</a></span> <span class="wrd free-rar2"
+ id="portable-rar-file-archiver-software"> <a
+ href="peazip-portable.html">portable
+file archiver utility</a></span><br>
+            <span class="wrd free-rar3" id="what-are-rar-files"> <a
+ href="what-is-rar-file.html">RAR file
+format</a></span> <span class="wrd free-rar0" id="rar-syntax-examples">
+            <a href="peazip-command-line.html">rar command syntax</a></span>
+            <span class="wrd free-rar4" id="iso-file-format"> <a
+ href="iso-image-files.html">.ISO</a></span> <span
+ class="wrd free-rar1" id="secure-file-deletion-utility"> <a
+ href="secure-delete.html">secure
+data deletion</a></span> <span class="wrd free-rar1"
+ id="tar-syntax-examples"> <a href="peazip-command-line.html">tar
+syntax</a></span> <span class="wrd free-rar0"
+ id="sfx-self-extracting-archives"> <a
+ href="self-extracting-archives.html">self extracting archives</a></span>
+            <span class="wrd free-rar2" id="create-bz2-files"> <a
+ href="bzip2-utility.html">create BZ2 files</a></span> <span
+ class="wrd free-rar3" id="wim-microsoft-windows-imaging-format"> <a
+ href="wim-files.html">.WIM</a></span> <span class="wrd free-rar1"
+ id="work-with-iso-files"> <a href="iso-utility.html">work with ISO
+files</a></span><br>
+            <span class="wrd free-rar2" id="zip-files"> <a
+ href="zip-file-format.html">ZIP
+file format</a></span> <span class="wrd free-rar4"
+ id="file-zip-command"> <a href="peazip-command-line.html">zip from
+command line</a></span> <span class="wrd free-rar3"
+ id="batch-create-multiple-archives"> <a
+ href="how-to-zip-files-separate-archives.html">batch create multiple
+archives at once</a></span> <span class="wrd free-rar2"
+ id="how-to-create-rar-files-free"> <a href="free-rar-create.html">how
+to create RAR files</a></span> <br>
+            <span class="wrd free-rar3"
+ id="batch-extract-rar-zip-archives"> <a
+ href="how-to-extract-rar-zip-archives.html">batch extract multiple rar
+tar zip archives at once</a></span><span class="wrd free-rar1"
+ id="how-to-backup-files"> <a href="backup-files.html">how to backup
+files &amp; folders</a></span> <br>
+            </big></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <table
+ style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top; width: 25%;"><small> <img
+ alt="extract rar from command line" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a name="rar_syntax"></a>DOWNLOADS<br>
+            <img alt="create zip from command line"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="index.html">All
+PeaZip downloads</a><br>
+            <a href="download-installer-p-windows.html">PeaZip for
+Windows 32 bit</a><br>
+            <a href="peazip-64bit.html">PeaZip
+for Windows 64 bit</a><br>
+            <a href="peazip-portable.html">PeaZip
+Portable</a><br>
+            <a href="peazip-linux.html">PeaZip
+Linux/BSD</a><br>
+            </small></td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="rar extraction script" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a name="tar_syntax"></a>SUPPORT<br>
+            <img alt="how to work with command line"
+ src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+ vspace="3"><br>
+            <a href="peazip-help.html">Online
+help</a><br>
+            <a href="peazip-help-faq.html">Frequently
+Asked Questions</a><br>
+            <a href="peazip-free-archiver.html">More
+information</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 25%;"><small><img
+ alt="work with scripts" src="titles.png"
+ style="width: 129px; height: 2px;"><br>
+            <a style="color: rgb(0, 0, 0);" name="zip_syntax_examples"></a>DONATE<br
+ style="font-style: italic;">
+            <img alt="create script file" src="free-rar/extract-rar.png"
+ style="width: 1px; height: 1px;" vspace="3"><br
+ style="font-style: italic;">
+Support
+PeaZip
+project,
+or donate to FAO,
+UNICEF and
+UNESCO from <a style="font-style: italic;" href="donations.html">donation
+page</a><br>
+            <br>
+            </small><small>&copy; <a href="peazip-tos-privacy.html"
+ style="font-weight: normal;">PeaZip
+srl: TOS,
+Privacy</a></small><br>
+            </td>
+            <td style="vertical-align: top; width: 247px;">
+            <table
+ style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
+ border="0" cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank"
+ href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
+Feed</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="how to use PeaZip compression programmatically from command line"
+ title="PeaZip releases feed" src="extract-zip/rss16.png"
+ style="width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+Wiki</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ title="PeaZip Wiki online"
+ alt="create CLI scripts for rar zip compression extraction"
+ src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
+ align="middle"></small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="automate &amp; schedule compression tasks from GUI"
+ title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+ style="width: 24px; height: 24px;"><br>
+                  </small></td>
+                </tr>
+                <tr>
+                  <td style="text-align: right; vertical-align: middle;"><small><a
+ href="peazip-more.html">Search knowledge-base</a><br>
+                  </small></td>
+                  <td
+ style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+ alt="programmatical 7Z TAR ZIP syntax console shell examples"
+ title="Search in PeaZip project domain"
+ src="extract-rar/rar-opener.png"
+ style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+</html>
