@@ -13,7 +13,7 @@
 		<State_Province>Italy</State_Province>
 		<Zip_Postal_Code>48015</Zip_Postal_Code>
 		<Country>Italy</Country>
-		<Company_WebSite_URL>https://giorgiotani.github.io/PeaZip/</Company_WebSite_URL>
+		<Company_WebSite_URL>https://peazip.github.io/</Company_WebSite_URL>
 		<Contact_Info>
 			<Author_First_Name>Giorgio</Author_First_Name>
 			<Author_Last_Name>Tani</Author_Last_Name>
@@ -89,14 +89,14 @@ Tasks created in the GUI can be easily saved (and scheduled) as batch scripts, i
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_Info_URL>https://giorgiotani.github.io/PeaZip/</Application_Info_URL>
-			<Application_Order_URL>https://giorgiotani.github.io/PeaZip/</Application_Order_URL>
-			<Application_Screenshot_URL>https://giorgiotani.github.io/PeaZip/peazip-thumb.jpg</Application_Screenshot_URL>
-			<Application_Icon_URL>https://giorgiotani.github.io/PeaZip/peazip_ico32.gif</Application_Icon_URL>
-			<Application_XML_File_URL>https://giorgiotani.github.io/PeaZip/peazip.xml</Application_XML_File_URL>
+			<Application_Info_URL>https://peazip.github.io/</Application_Info_URL>
+			<Application_Order_URL>https://peazip.github.io/</Application_Order_URL>
+			<Application_Screenshot_URL>https://peazip.github.io/peazip-thumb.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL>https://peazip.github.io/peazip_ico32.gif</Application_Icon_URL>
+			<Application_XML_File_URL>https://peazip.github.io/peazip.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/giorgiotani/PeaZip/releases/download/7.3.2/peazip-7.3.2.WINDOWS.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.3.2/peazip-7.3.2.WINDOWS.exe</Primary_Download_URL>
 			<Secondary_Download_URL />
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
