@@ -382,19 +382,26 @@ to competing early ZIP standard limited to 64K maximum files (2^16).<br>
             <br>
             <a name="unrar_rar_file_extension"></a>PeaZip free
 archiver features
-read-only support to <a href="free-rar.html">open and extract RAR files</a>
+read support to <a href="free-rar.html">open and extract RAR files</a>
 through Open Source unrar components from 7z/p7zip, and can convert
 existing
 .rar archives into any write supported archive format, providing an
 Open Source alternative to WinRar for extraction of rar archives.<br>
+Also, PeaZip can <a href="free-rar-create.html">create RAR files</a>
+through WinRar if available on the machine - autonomous support to rar
+compression is not possible due to RarLab's rar format licensing
+limitations.<br>
 Optionally, the program allows managing RAR5 file type with separate <a
  href="peazip-add-ons.html">UNRAR / UNRAR5 Plugin</a> based on RarLab's
 unrar
 code - not mandatory, PeaZip can natively handle RAR5 standard out of
 the box.<br>
-            <h2><img title="Rar format features"
- alt="rar file format limitations" src="extract-archive.png"
+            <h2><img title="Rar format specs"
+ alt="rar format specifications" src="add-to-archive.png"
  style="width: 112px; height: 45px;"></h2>
+            <h3><img title="Rar format features"
+ alt="rar file format limitations" src="extract-archive.png"
+ style="width: 112px; height: 45px;"></h3>
             <br>
 Online resources about rar file type: <a target="_blank"
  href="http://www.rarlabs.com/">WinRar<img title="download rar"
@@ -443,9 +450,10 @@ clause about using sources to create a rar compressor.</span></big></td>
  name="open_source_rar"></a>No Open
 Source RAR implementation (with full read / write support) is
 consequently known to be able to fully replace WinRar. Anyway PeaZip
-can <a href="free-rar-create.html">create RAR files</a> using WinRar
-executable (if installed) without leaving the application - this works
-simply setting rar.exe as custom compressor utility in PeaZip.<br>
+can write to RAR format (create new rar archives, and edit existing
+archives - add, delete, update) using WinRar
+executable, if installed, without leaving the application - this works
+simply setting Rar.exe as custom compressor utility in PeaZip.<br>
             <br>
             <table
  style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"

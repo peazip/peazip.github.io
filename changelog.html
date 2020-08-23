@@ -301,24 +301,24 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.3.2 introduces support for more file types, and adds the
-ability to auto-configure Rar.exe (if available on the system,
-separately installing WinRAR due RarLab's licensing terms) for
-creation of RAR files through PeaZip's GUI choosing "Custom" format.<br>
-7.3 line open by default archives containing non-blocking
-errors, and adds BLAKE2S and BLAKE2B hash
-functions.<br>
-Archive date/time can be
-optionally set equal to most recent file in archive, confirmation for
-deletion can be optionally skipped, new 7z fast and 7z fastest presets
-were added, and both Brotli and Zstandard can now be set to enhance
-compression using more memory (see <a
- href="fast-compression-benchmark-brotli-zstandard.html">fast
-compression benchmark page</a>).<br>
-PeaZip for Windows is now supported from winget package manager, and is
-available as MSIX app package.<br>
-PeaZip for Linux is now available as
-DEB and RPM for generic x86-64 systems.<br>
+PeaZip 7.4.0 introduces GUI refresh and improves working with 7Z, ARC,
+RAR, and ZIPX archive types.<br>
+It is now possible to use new fast compression algorithms in 7Z format:
+Brotli, Fast-LZMA2, Lizard, LZ4, LZ5, and Zstandard are now available,
+providing
+faster-than-Deflate compression with better speed-to-compression-ratio
+efficiency.<br>
+RAR archives are now fully read-write supported from PeaZip if Rar.exe
+is featured
+in the system: it is possible to update, edit, rename, and delete
+files in existing RAR archives, and more RAR-specific options are
+supported (set comment, lock archive, header encryption, set
+recovery records percentage).<br>
+ZIPX archives can now be edited, and
+it is possible to optionally use .zipx extension when creating
+non-Deflate compressed .zip archives.<br>
+It is now possible to repair ARC and RAR files, and even to attempt
+recovery if the archive cannot be opened for browsing.<br>
             <br>
 A total of 210
 file extensions can now be managed by PeaZip.<br>
@@ -334,34 +334,34 @@ for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
 packages in current release</span></h3>
-PeaZip_7.3.2.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-5ABC3978DAE8BC7482C4B91AFDFA142F5AB6098F3BC076479C660F3E6989E551<br>
-peazip_7.3.2.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-5524CE9880B355175263ED3391FA47DB7A2FA4F36C99677056DA6F0413EEC86B<br>
-peazip_portable-7.3.2.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-19B54547AD7EA3B2B0E206E55AE714AD0C12A50A02996FE3DCBE526E083ABD36<br>
-peazip_portable-7.3.2.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-3B45FEFBE0F645EA2934C2AF7F370432B94D57E7B7024BB1FA6AA9554C324811<br>
-peazip_portable-7.3.2.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-1334AF2D448C4B7294BB328650810F652B20004BFA57A0D60FE5378B96469319<br>
-peazip_portable-7.3.2.WIN64.zip&nbsp;&nbsp;&nbsp;
-C645C5329A88E6836A9EB4B1E9525E5FCD352C6012A012E2E9C0174628874454<br>
-peazip_portable-7.3.2.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-45EBCDB9DA9663B4C35107E86668E587F94E973DDE5F04E46A55E52CDC272966<br>
-peazip-7.3.2.about_translations.zip&nbsp;&nbsp;&nbsp;
-86FEAC10DC94558D08148110E1B5C475E08323697AF35B554C6624D1D5A3021E<br>
-peazip-7.3.2.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-8C47D51490CBB02B9A485D9F5B1A15D81B8A0279A63AFB9B8578923A77E90E1D<br>
-peazip-7.3.2.src.zip&nbsp;&nbsp;&nbsp;
-B01E995076F0633E4B221ABC74414D64A01A5E16737C863CF5B47590727B611E<br>
-peazip-7.3.2.WIN64.exe&nbsp;&nbsp;&nbsp;
-F0811DE054B7C36D3A41820F97D20F8561E1FEC74102E82B205C2E0F76A7F8FD<br>
-peazip-7.3.2.WIN64.msi&nbsp;&nbsp;&nbsp;
-F5702C7B921952E30225AE86F0BC51731F1F104FEFD3361770D96403469E0C8C<br>
-peazip-7.3.2.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-E54FD0A6E16BD1D7249BE01EE09960E2BAD8F5D13485D6CB25F753E855122F21<br>
-peazip-7.3.2.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-4528FEC6F8998AC200A94629A77D25159EEDF63E2C651A15CBC6D885410F0F53<br>
+PeaZip_7.4.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+ccc12d7703a0ffa4495d41c47da40fc161d0e373cbc4c6d664cdca9f99e02272<br>
+peazip_7.4.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
+02d9e7b98114a2416657a98c4ff7e0c0a5c4f42b1318053c475cf71d5615ca92<br>
+peazip_portable-7.4.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+c2aa3b81d1e463d6485289f338e3bb63c551c97ec099d1bd14fdb5c2b2e9e661<br>
+peazip_portable-7.4.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
+493c555c5a15264387e2b357c3438719fdad9f22de843ae3e62cf352d58157ae<br>
+peazip_portable-7.4.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+5ee03ff0ecc5566fd752201d90b49df7ae55da091e3b1305a64568c629588765<br>
+peazip_portable-7.4.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+11f0264ade43d3bd468cff6404197e1987b1b7113f6f06cd56044463586046e6<br>
+peazip_portable-7.4.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+7bc8a1a23ef6a9e5ace85e3a502499f70458811a996d5c7ecbe887b38213cfde<br>
+peazip-7.4.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+fa7da8b0b8c1e472eb3e733578675323955ed51749938c60737c5371ae701628<br>
+peazip-7.4.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+3d497a63f33b5ccd989506466cf8ea88846fe89ae2c60e4ccb3b37e070d6d792<br>
+peazip-7.4.0.src.zip&nbsp;&nbsp;&nbsp;
+851567b32f58aec5a29026c638212bd31382874fdb53c1add45097ef7b31b475<br>
+peazip-7.4.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+bd700cfbc7d7e3f696115ea6dda18044bec32e94c34b731eff9190747257fc73<br>
+peazip-7.4.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+7b876a9422697fade652876cf6fff2249d66003982f43c223b7fa114cd201364<br>
+peazip-7.4.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+bf6726cfceda52c60a2ef24affe81e0bc91c0a81fc1ab45a2609284ed2ea59e8<br>
+peazip-7.4.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
+6afc66f60b6ef3f5e893354aa670f3bc6b30cf32bd898c84f876d3eb00606b83<br>
             </td>
           </tr>
         </tbody>
@@ -380,6 +380,105 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2020 08 23<br>
+            <div style="margin-left: 40px;">7.4.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">PEA 0.73<br>
+(Windows) Tino Reichardt (mcmilk) codecs for .7z format v1.4.5r2<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Various fixes<br>
+Online resources pointing to new web space on GitHub<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added shortcuts to set
+archiving/conversion and extraction options, from context menu and from
+Options &gt; Archive manager screen<br>
+Added button to change case on the fly for checksum/hash (when encoded
+hex or lsbhex)<br>
+GUI refresh<br>
+            <div style="margin-left: 40px;">Added main menu shortcuts
+to toggle most common browser's layout options: side bar, tool bar, tab
+browser bar<br>
+Modified aspect of address bar and tab bars<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">7Z<br>
+            <div style="margin-left: 40px;">(Windows) Added support for
+Tino Reichardt (mcmilk) codecs for .7z format<br>
+            </div>
+            <div style="margin-left: 40px;">7Z archives can now be
+created using also Brotli, Fast-LZMA2, Lizard, LZ4, LZ5, and Zstandard
+compression algorithms in addition to traditional ones<br>
+7Z archives created using those extra algorithms can be extracted by
+PeaZip or Reichardt's 7-Zip fork, cannot be extracted by plain 7-Zip or
+p7zip without using Reichardt's codecs<br>
+Compression presets 11 and 12 changed from tar.br and tar.zst to 7z
+format with Brotli and Zstd compression respectively<br>
+            </div>
+ARC<br>
+            <div style="margin-left: 40px;">Added options to add
+recovery records and repair archive, from "Test" dropdown in tool bar
+and in "More" group in context menu<br>
+            </div>
+RAR<br>
+            <div style="margin-left: 40px;">(Windows) Improved creation
+support using Rar.exe, if featured in the system, introduced as
+prototype in previous release <br>
+Other than in WinRar's application path Rar.exe is now searched also in
+PeaZip's directory, in case user wants to copy the exe here for
+portability: it is sufficient to copy Rar.exe from WinRar's path to
+PeaZip or PeaZip Portable application's path, or in said path into res\
+folder, or in a subfolder named res\rar or res\unrar: any of those
+locations is supported<br>
+Add to separate archives and Archive to original path options enabled
+for RAR backend<br>
+New RAR-specific options supported<br>
+            <div style="margin-left: 40px;">RAR archive header
+encryption is now possible<br>
+RAR archives can be locked<br>
+Can now set recovery records percentage<br>
+Can now set archive time to: current system time, original archive
+time, most recent item in archive<br>
+            </div>
+It is now possible to save RAR compression settings in custom
+compression settings profiles<br>
+            <div style="margin-left: 40px;">RAR compression preset is
+now available, it is shown only if Rar.exe is detected<br>
+            </div>
+It is now possible to update, edit, rename, and delete files in
+existing RAR archives<br>
+Application title will now display if archive is RAR4 or RAR5, and if
+it is locked<br>
+Added options to lock archive, add comment, add recovery records,
+repair archive, from "Test" button dropdown in tool bar and in "More"
+group in context menu<br>
+            </div>
+ZIPX<br>
+            <div style="margin-left: 40px;">.zipx archives are now
+write supported and can now be edited (add, delete, rename items in
+existing archives)<br>
+It is now possible to optionally to switch to .zipx extension if a
+method different than Deflate/Deflate64 is set for zip compression,
+accordingly to WinZip's definition of zipx format<br>
+Please note that are currently supported, for reading and writing,
+following compression methods defined in zipx standard: Bzip2, LZMA,
+LZMA2, PPMd; currently WavPack, JPEG and MP3 preprocessors are
+unsupported (both for reading and writing) unless proper codecs are
+separately installed (cannot be added to PeaZip packages due closed
+source nature of those codecs)<br>
+            </div>
+Repair archive function, for RAR and ARC files, is available in
+PeaZip's file manager also before opening the archive, in case the
+specific damage does not allow to successfully browse the archive<br>
+            </div>
+            </div>
+            </div>
+            <br>
 2020 06 23<br>
             <div style="margin-left: 40px;">7.3.2<br>
             <div style="margin-left: 40px;">CODE<br>
@@ -1062,10 +1161,6 @@ Various fixes and removal of legacy code<br>
             </div>
             </td>
           </tr>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
         </tbody>
       </table>
       <table
@@ -1426,12 +1521,7 @@ help</a><br>
             <a href="peazip-help-faq.html">Frequently
 Asked Questions</a><br>
             <a href="peazip-free-archiver.html">More
-information</a><br>
-            </small><small><br>
-            <a href="https://sourceforge.net/p/peazip/"><img
- alt="Download PeaZip"
- src="https://sourceforge.net/sflogo.php?type=11&amp;group_id=178996"></a> <br>
-            </small><br>
+information</a></small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="peazip history" src="titles.png"
@@ -1461,27 +1551,7 @@ Privacy</a></small><br>
               <tbody>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
- href="https://osdn.net/projects/peazip/simple/">OSDN software
-repository<br>
-                  </a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><img
- alt="Change log of PeaZip project software development"
- title="Online software OSDN" src="extract-rar/online-repository.png"
- style="width: 24px; height: 24px;"></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><a
- href="https://sourceforge.net/projects/peazip/"><small>SourceForge
-software repository</small></a><br>
-                  </td>
-                  <td style="text-align: right; vertical-align: middle;"><img
- alt="Changelog of PeaZip development" title="SourceForge software"
- src="extract-zip/sourceforge-software.png"
- style="width: 24px; height: 24px;"></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
+ target="_blank"
  href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
 Feed</a></small></td>
                   <td
@@ -1492,7 +1562,8 @@ Feed</a></small></td>
                 </tr>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
- href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip Wiki</a></small></td>
+ target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+Wiki</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
  title="PeaZip Wiki online" alt="peazip release notes"

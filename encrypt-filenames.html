@@ -377,17 +377,24 @@ different software to list the archive's content.</big></td>
             <a name="prevent_listing_of_archives"></a>Support of file
 names encryption in standards supported by PeaZip:<br>
             <ul>
-              <li><span style="font-weight: bold;">ZIP</span> format
-lacks this feature, meaning this option will have no effect and archive
+              <li><span style="font-weight: bold;">ZIP </span>and <span
+ style="font-weight: bold;">ZIPX</span> formats
+lack this feature, meaning this option will have no effect and archive
 TOC will always be readable before providing the correct password even
 if the data is encrypted</li>
             </ul>
             <ul>
-              <li><span style="font-weight: bold;">7Z</span> and <span
- style="font-weight: bold;">ARC</span> formats support encryption of
+              <li><span style="font-weight: bold;">7Z</span>, <span
+ style="font-weight: bold;">ARC</span>, and <span
+ style="font-weight: bold;">RAR</span> formats support encryption of
 filenames, so if this option is in use the archive content will be
-hidden unless correct password is provided for browsing it<br>
-              </li>
+hidden unless correct password is provided for browsing it</li>
+              <ul>
+                <li>in order to create encrypted RAR files with PeaZip
+WinRar must be installed in the system, autonomous write-support for
+rar format is not possible due to rar licensing limitations<br>
+                </li>
+              </ul>
             </ul>
             <ul>
               <li><span style="font-weight: bold;">PEA</span> and <span

@@ -34,8 +34,8 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip</Program_Name>
-		<Program_Version>7.3.2</Program_Version>
-		<Program_Release_Month>06</Program_Release_Month>
+		<Program_Version>7.4.0</Program_Version>
+		<Program_Release_Month>08</Program_Release_Month>
 		<Program_Release_Day>23</Program_Release_Day>
 		<Program_Release_Year>2020</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Win2000,Win7 x32,Win7 x64,Win98,WinOther,WinServer,WinVista,WinVista x64,WinXP,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Fixes, improved creation of RAR files, more formats supported</Program_Change_Info>
+		<Program_Change_Info>GUI refresh, added support for fast compression algorithms in 7Z format (Brotli, Lizard, Zstandard,...), added full read / write support for RAR if rar.exe is installed, can now optionally create ZIPX files.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements>Any Windows system</Program_System_Requirements>
 		<File_Info>
-			<File_Size_Bytes>8410228</File_Size_Bytes>
-			<File_Size_K>8213</File_Size_K>
-			<File_Size_MB>8.02</File_Size_MB>
+			<File_Size_Bytes>8817856</File_Size_Bytes>
+			<File_Size_K>8611</File_Size_K>
+			<File_Size_MB>8.41</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -80,7 +80,8 @@ Write (create) 7Z, ARC, Brotli, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ
 
 Read (open, extract) RAR, ACE, ARJ, CAB, DEB, DMG, ISO, LHA, RPM, UDF, ZIPX files and more...
 
-PeaZip is localized in over 30 languages and is capable of handling all most popular archive formats (180+ file types), supporting a wide array of advanced file and archive management features (tabbed browsing, search, bookmarks, thumbnail viewer, hashing, find duplicate files, convert archives, edit files in archives, drag and drop extraction...), and it is especially focused on security: strong encryption, two factor authentication, encrypted password manager, secure data delete.
+PeaZip is localized in over 30 languages and is capable of handling all most popular archive formats, supporting a wide array of advanced file and archive management features (tabbed browsing, search, bookmarks, thumbnail viewer, hashing, find duplicate files, convert archives, edit files in archives, drag and drop extraction...), and it is especially focused on security: strong encryption, two factor authentication, encrypted password manager, secure data delete.
+If Rar.exe is featured in the system, PeaZip provides full read and write support for RAR archives.
 
 A distinctive trait of PeaZip is the extremely user-friendly compression/extraction interface, more similar to CD burners GUI rather than to a classic file compressor: this innovative design integrates a full featured file manager component and makes very simple to check/update items set for compression and extraction.
 
@@ -96,7 +97,7 @@ Tasks created in the GUI can be easily saved (and scheduled) as batch scripts, i
 			<Application_XML_File_URL>https://peazip.github.io/peazip.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.3.2/peazip-7.3.2.WINDOWS.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.4.0/peazip-7.4.0.WINDOWS.exe</Primary_Download_URL>
 			<Secondary_Download_URL />
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />

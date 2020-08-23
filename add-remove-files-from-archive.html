@@ -364,13 +364,16 @@ being modified</a></big></big></big></h3>
 cannot be updated or modified (neither adding nor removing
 files) because the archive
 type is read-only supported (solely for
-extraction or browsing operations), so PeaZip lacking the ability (or
-being prohibited by the format licensing terms,
-in the case of RAR files) to modify archive content, data cannot be
+extraction or browsing operations), so PeaZip lacking the ability to
+modify archive content, data cannot be
 neither added nor removed - the entire archive file item can still be
 erased
 from filesystem, but it will be not possible to selectively delete
 compressed files from the archive.<br>
+It is possible to delete files in RAR archives from PeaZip only if
+WinRar is installed in the system, due rar licensing not allowing third
+parts applications to implement functions to modify RAR files
+(including deletion of files in existing RAR archives).<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>

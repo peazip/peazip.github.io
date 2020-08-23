@@ -319,14 +319,19 @@ archive type introduced by <a href="http://www.rarlabs.com/">WinRAR<img
  style="border: 0px solid ; width: 12px; height: 10px;"></a><small> </small>for
 Windows platform. Rar management routines were ported to Linux only for
 extraction (unrar) by the same Author of WinRAR Eugene
-Roshal. Due the huge popularity of the format many free alternatives to
+Roshal. <br>
+Due the huge popularity of the format many free alternatives to
 WinRar were made available to work with rar files for decompression,
 while writing function for compression to RAR format is not allowed to
 third party applications by the original license of the file format.<br>
+PeaZip is able to open and extract RAR archives out-of-the-box, and if
+WinRar is installed on the same machine PeaZip auto-configure itself to
+be able to create (and modify) RAR files, providing read &amp; write
+support for RAR format from a single GUI.<br>
             <br>
             <h2><img
  title="How to open, extract RAR file format free of charge"
- alt="free rar extractor" src="read-only.png"
+ alt="free rar extractor" src="read-write.png"
  style="border: 0px solid ; width: 800px; height: 39px;"></h2>
             <br>
             <a name="free_rar_extractor"></a>Both legacy .rar files (up
@@ -433,11 +438,14 @@ than knowing the password for the archive.<br>
             </big></big></h3>
             <span style="font-weight: bold;">Convert files </span>function
 extracts and then re-pack input archive files into any write-supported
-format (7z, arc, pea, tar, zip...). This tool can i.e. <a
+format (7z, arc, pea, rar, tar, zip...). This tool can i.e. <a
  href="convert-files.html">convert rar
-to zip or 7z</a>, but not the inverse i.e. convert zip to rar; 7z, tar,
-zip archives cannot be converted to rar format which is read-only
-supported rar format, being PeaZip limited to rar opener (reader,
+to zip or 7z</a>, as well as the inverse i.e. convert zip to rar.<br>
+7z, tar,
+zip archives can be converted to rar format if WinRar is installed on
+the same system, which allows PeaZip to fully support rar compression,
+otherwise PeaZip will support rar format rar-only, limited to rar
+opener (reader,
 viewer) and extractor
 operations.
             <h3><img title="Convert rar to zip format"

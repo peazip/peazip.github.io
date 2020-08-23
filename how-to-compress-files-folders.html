@@ -317,12 +317,17 @@ ones adding files and/or directories - for following archive types:<br>
             <ul>
               <li>
                 <p><span style="font-weight: bold;">7Z,
-FreeArc's ARC / WRC, BZ2, </span><span style="font-weight: bold;">BCM
-/ QUAD / BALZ, </span><span style="font-weight: bold;">GZ, *PAQ family
-(ZPAQ, LPAQ, PAQ), PEA, TAR,
-WIM, ZIP</span><span style="font-weight: bold;">creation of plain
-split files .001 (supported by 7-Zip/p7zip, HJSplit, and "split" Unix
-command)</span></p>
+                </span>FreeArc's <span style="font-weight: bold;">ARC
+/ WRC, BZ2, </span><span style="font-weight: bold;">BCM
+/ QUAD / BALZ, </span><span style="font-weight: bold;">GZ, PAQ </span>family
+(ZPAQ, LPAQ, PAQ)<span style="font-weight: bold;">, PEA, RAR</span> (if
+WinRar is installed in the system)<span style="font-weight: bold;">,
+TAR,
+WIM, ZIP</span><span style="font-weight: bold;">, </span>creation of
+plain
+                <span style="font-weight: bold;">split files .001</span>
+(supported by 7-Zip/p7zip, HJSplit, and "split" Unix
+command)</p>
               </li>
               <li>
                 <p><span style="font-weight: bold;"> </span><span
@@ -454,8 +459,6 @@ create encrypted archives under following standards:<br>
               <li>
                 <h4>7Z with 7-Zip AES256 encryption</h4>
               </li>
-              <li>ZIP with WinZip AES256 AE, and ZipCrypto for legacy
-compatibility</li>
               <li>
                 <h4>ARC with FreeARC AES256, Blowfish,
 Twofish256 and
@@ -463,8 +466,12 @@ Serpent256</h4>
               </li>
               <li>
                 <h4>PEA with AES256
-EAX authenticated encryption </h4>
+EAX authenticated encryption</h4>
               </li>
+              <li>RAR4 AES128, and RAR5 AES256</li>
+              <li>ZIP / ZIPX with WinZip AES256 AE, and ZipCrypto for
+legacy
+compatibility</li>
             </ul>
             <table
  style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
