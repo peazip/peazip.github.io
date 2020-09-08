@@ -13,6 +13,9 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
   <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+ data-cbid="3cafd7f9-789f-403b-a7ac-93883bfc39dd"
+ data-blockingmode="auto" type="text/javascript"></script>
 </head>
 <body>
 <div style="text-align: center;">
@@ -266,6 +269,25 @@ HOW TO</a></small></td>
  border="0" cellpadding="24" cellspacing="0">
         <tbody>
           <tr>
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top; text-align: center;">
+            <script async=""
+ src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 728x90 top center leaderboard -->
+            <ins class="adsbygoogle" style="width: 728px; height: 90px;"
+ data-ad-client="ca-pub-9391621538458469" data-ad-slot="8818360162"></ins>
+            <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr>
             <td colspan="1" rowspan="1"
  style="width: 50%; vertical-align: middle; background-color: rgb(255, 255, 255);">
             <table style="width: 100%; text-align: left;" border="0"
@@ -312,7 +334,7 @@ files, format features and specifications</big></big></big><br>
             </div>
             <h3 style="text-align: center; font-style: italic;"><big>PEA
 file
-format specifications version 1.1</big></h3>
+format specifications version 1.3</big></h3>
             </div>
             <br>
             <a name="what_is_pea_file"></a>Pea (.pea file extension),
@@ -354,7 +376,7 @@ associated data (name, size, attributes, date-time);</li>
                 <li>Current implementation allows: <a
  name="pea_integrity_checking"></a>Checksum (Adler32,
 CRC32, CRC64), Hash (MD5, SHA1, RIPEMD-160, SHA256, SHA512, Whirlpool,
-, SHA3-256, SHA3-512)<br>
+SHA3-256, SHA3-512, BLAKE2S, BLAKE2B)<br>
                 </li>
               </ul>
             </ul>
@@ -380,7 +402,9 @@ Hash algorithms featured by Object and Volume levels, plus
 Authenticated encryption schemes: <a
  name="pea_authenticated_encryption"></a>HMAC mode AES128, EAX mode
 AES128,
-AES256, Serpent128, Serpent256, Twofish128, Twofish 256.<br>
+AES256, Serpent128, Serpent256, Twofish128, Twofish 256, triple cascade
+encrypttion combining AES, Twofish, and Serpent each 256 bit in EAX
+mode.<br>
                 </li>
               </ul>
             </ul>
@@ -391,14 +415,14 @@ size, with the only constrain of volumes being at least 10 byte bigger
 than volume control tag to allow passing (through archive's header)
 minimum needed information to the extraction application.<br>
             <br>
-PEA file format standard, as defined in version 1 revision 1
+PEA file format standard, as defined in version 1 revision 3
 specification, can
 store a single stream containing unlimited objects, each up to 2^64
 byte
-in size; current Pea executable supports 1.1 file format
+in size; current Pea executable supports 1.3 file format
 specifications (practically, archives are memory and filesystem-limited
-rather than format limited) and is featured starting from PeaZip 6.0.1
-release, previous PeaZip releases supporting PEA 1.0 format revision.<br>
+rather than format limited) and is backward compatible with previous
+revisions of the format.<br>
             <br>
 PEA 2.0 file format specifications extend the concepts behind PEA 1.x
 file format and can store an unlimited number of stream, but the format
@@ -479,14 +503,14 @@ number</p>
                   <td
  style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
  valign="top" width="252">
-                  <p class="MsoNormal">1.1: single stream;</p>
+                  <p class="MsoNormal">1.3: single stream;</p>
                   <p class="MsoNormal">2.0 unlimited number of
 streams;</p>
                   </td>
                   <td
  style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
  valign="top" width="252">
-                  <p class="MsoNormal">Single stream (1.1 file
+                  <p class="MsoNormal">Single stream (1.3 file
 format)</p>
                   </td>
                 </tr>
@@ -509,7 +533,9 @@ format)</p>
  colspan="2" valign="top" width="504">
                   <p class="MsoNormal">Optional Authenticated
 Encryption, at stream level only. HMAC mode: AES128, EAX mode:
-AES 128 or 256bit, Serpent 128 / 256, Twofish 128 / 256.</p>
+AES 128 or 256bit, Serpent 128 / 256, Twofish 128 / 256, triple cascade
+encrypttion: AES+Twofish+Serpent, Twofish+Serpent+AES,
+Serpent+AES+Twofish each 256 bit in EAX mode</p>
                   </td>
                 </tr>
                 <tr>
@@ -712,14 +738,14 @@ types</p>
                   <td
  style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
  valign="top" width="252">
-                  <p class="MsoNormal">1.1: files and dirs;</p>
+                  <p class="MsoNormal">1.3: files and dirs;</p>
                   <p class="MsoNormal">2.0: files, dirs, metadata
 stored as messages triggers</p>
                   </td>
                   <td
  style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
  valign="top" width="252">
-                  <p class="MsoNormal">Files and dirs (1.1)</p>
+                  <p class="MsoNormal">Files and dirs (1.3)</p>
                   </td>
                 </tr>
                 <tr>
@@ -812,6 +838,106 @@ Microsoft Windows), nothing on *x</p>
               </tbody>
             </table>
             <div style="text-align: center;"> </div>
+            <br>
+            <h3><big><span style="font-weight: bold;">Triple cascade
+encryption: AES, Twofish, Serpent each 256 bit in EAX mode</span></big></h3>
+            <br>
+PEA format revision 1.3 introduced multiple encryption, cascading AES,
+Twofish, and Sepent, 256 bit in EAX mode<br>
+            <ul>
+              <li>Each cipher is separately keyed through PBKDF2,
+following steps are taken to ensure the 3 keys are statistically
+independent after key schedule:</li>
+            </ul>
+            <ul style="margin-left: 40px;">
+              <li>key schedule of each cipher is based on a different
+hash primitive which is run for a different number of iterations:
+Whirlpool x 25000 for AES, SHA512 x 50000 for Twofish, SHA3-512 x 75000
+for Serpent (Whirlpool is significantly slower than SHA512 that is
+slower than SHA3-512)</li>
+              <li>key schedule of each cipher is provided a separate 96
+byte pseudorandom salt</li>
+              <li>password is modified when provided as input for key
+schedule of each cipher; modification are trivial xor with non secret
+values and counters, with the sole purpose to initialize the key
+derivation with different values and be a further factor (alongside
+different salt, and different hash / iteration number) to guarantee
+keys are a statistically independent</li>
+            </ul>
+            <ul>
+              <li>Password verification tag is the xor of the 3
+password verification tags of each encryption function, and is written
+/ verified after all 3 key initialization functions are completed
+before verification</li>
+            </ul>
+            <ul>
+              <li>Each block between password verification tag and
+stream authentication tag is encrypted with all 3 ciphers</li>
+            </ul>
+            <ul>
+              <li>A 1..128 bytes block of random data is added after
+password verification tag in order to mask exact archive size (this is
+the first block to be encrypted/decrypted)<br>
+              </li>
+            </ul>
+            <ul>
+              <li>Each cipher generate its own 128 bit sized stream
+authentication tag, tags are concatenated and hashed with SHA3-384; the
+SHA3-384 value is checked for verification, this requires all the 3
+tags to match to expected values and does not allow ciphers to be
+authenticated separately</li>
+            </ul>
+Multiple encryption, if correctly implemented, is meant under current
+understandings to:<br>
+            <ol>
+              <li>Provide a larger keyspace than each single cipher,
+but smaller than the sum of the lengths of keyspaces due possibility of
+meet-in-the-middle type of attacks. However, such large keyspace may be
+overkilling even in event of
+significant quantum computing advancements: Grover's quantum algorithm
+which is the best-possible known attack for NP-complete problems
+provides a quadratic speed-up over a classic computing. Under those
+assumptions, as a role of thumb, a quantum computer will be able to
+brute force a 256 bit keyspace not faster than a classic machine can
+brute force a 128 bit keyspace, which is currently considered safe by a
+wide margin.</li>
+              <li>provide a security margin even in case all but one of
+the algorithms
+used as cipher (or key schedule hash) is compromised by a breakthrough
+in cryptanalysis, which seems unlike due the amount of theoretical work
+and real life testing behind mainstream primitives available today.</li>
+            </ol>
+Drawbacks of multiple encryption are:<br>
+            <ul>
+              <li>The inherent added complexity makes multiple
+encryption more prone to implementation errors</li>
+              <li>Performing multiple algorithms requires more
+computing power and consequently reduces performances. </li>
+            </ul>
+Performance penalty for cascaded encryption may be decisive for some
+classes of applications, but in case of file archiving as for PeaZip,
+where many other operations (potentially far slower as read / write to
+disk) are involved, the performance hit is quite reasonable: <br>
+            <ul>
+              <li>Test machine: notebook with Intel Core i7-8565U CPU,
+4 physical cores with hyper-threading (8 logical cores), 8 GB RAM, 512
+GB PCIe NVMe SSD, NTFS filesystem</li>
+              <li>Benchmark creation of PEA archive from 100MB input:</li>
+              <ul>
+                <li>7 seconds archive creation, 3 seconds archive
+extraction with AES256
+EAX, deflate compression, CRC32 and SHA3-256 integrity checks</li>
+                <li>8 seconds archive creation, 4 seconds archive
+extraction with Serpent
+256 EAX, deflate compression, CRC32 and SHA3-256 integrity checks
+(slower than AES and Twofish)</li>
+                <li>10 seconds archive creation, 6 seconds archive
+extraction with
+AES+Twofish+Serpent 256 EAX, deflate compression, CRC32 and SHA3-256
+integrity checks &#8211; the purposely slower key schedule, employed at
+startup for multiple encryption modes, also account for the extra time</li>
+              </ul>
+            </ul>
             <br>
             <a name="pea_format_specifications"></a>For a more complete
 explanation and discussion of the pea format
@@ -939,11 +1065,12 @@ large quantities of data in reasonable time.<br>
                         <td
  style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>ADVANCED
 OPTIONS <img alt="pea secure format specs" title="pea format options"
- src="zip-files/star3.png" style="width: 80px; height: 16px;"></big><br>
+ src="zip-files/star4.png" style="width: 80px; height: 16px;"></big><br>
 Pea format lacks some features of competing formats, but
 offers advanced security focused characteristics, as AES-based
 authenticated encryption (can be optionally be replaced by Serpent or
-Twofish EAX mode authenticated encryption).<br>
+Twofish EAX mode authenticated encryption), and triple cascade
+encryption..<br>
                         </td>
                         <td style="vertical-align: top; width: 24px;"><br>
                         </td>
