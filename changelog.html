@@ -323,7 +323,8 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.4.1 introduces GUI refresh and improves working with 7Z, ARC,
+PeaZip 7.4 introduces GUI refresh,
+improves working with 7Z, ARC,
 PEA, RAR, and ZIPX archive types.<br>
 It is now possible to use new fast compression algorithms in 7Z format:
 Brotli, Fast-LZMA2, Lizard, LZ4, LZ5, and Zstandard are now available,
@@ -343,6 +344,9 @@ it is possible to optionally use .zipx extension when creating
 non-Deflate compressed .zip archives.<br>
 It is now possible to repair ARC and RAR files, and even to attempt
 recovery if the archive cannot be opened for browsing.<br>
+7.4.2 update brings FLZMA2,
+LZ4, and Zstd support for 7z archives on Linux, improves file
+management, and provides fixes.<br>
             <br>
 A total of 210
 file extensions can now be managed by PeaZip.<br>
@@ -358,36 +362,34 @@ for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
 packages in current release</span></h3>
-PeaZip_7.4.1.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-17787ccfa95fa3118f4f81291e5a52a04cdf725170950312b7145798d1531bd1<br>
-peazip_7.4.1.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-637057a0dd0d231fb759b7602227ce2898b09076c85732b49c62e13dffbdaf85<br>
-peazip_help.pdf&nbsp;&nbsp;&nbsp;
-340ab31da4384310b1478cdaeed584ed0967c485c20ba7a555c389a91291e7eb<br>
-peazip_portable-7.4.1.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-c28295de0cebe2bb86f9b97c57fd3e8fa10e9d44b488e7ffc7ad45a7879cea94<br>
-peazip_portable-7.4.1.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-14eb0651309050b592f904e8be71a0178e2e6d1079852b941af1bbf5d836cefb<br>
-peazip_portable-7.4.1.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-50e1858206c106bcf43cf93bb9880cb3cb7968ffd0ac429d07799bf9305aef44<br>
-peazip_portable-7.4.1.WIN64.zip&nbsp;&nbsp;&nbsp;
-318e26e6292acf0d7697157477b67ee489a8260224f4f8052408c6ebb67de37e<br>
-peazip_portable-7.4.1.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-e0a717f4593faa764698b109ffc481bd3ec3dbf0a8f8f554c4c565176410495e<br>
-peazip-7.4.1.about_translations.zip&nbsp;&nbsp;&nbsp;
-37c72c7a2996699745071e5ad98a4a2e0e170c7e3a429be34e0466cc764126e2<br>
-peazip-7.4.1.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-2796157036390fbdf507a9bc402ae1e66714e85ab993cb16260404ff233d9866<br>
-peazip-7.4.1.src.zip&nbsp;&nbsp;&nbsp;
-541ba488d4de3033f3b5a8a89b33f9afc07b494470d34adc5bc6b17a4b8d33b6<br>
-peazip-7.4.1.WIN64.exe&nbsp;&nbsp;&nbsp;
-b056e521ebfa54b083806deb44e79ab6d1cf796eb480c44a3235b6d3131a83f4<br>
-peazip-7.4.1.WIN64.msi&nbsp;&nbsp;&nbsp;
-f300e01f1643b8b32785ab8055faf79696c8260bbb5a04001b17ef07e2bd0649<br>
-peazip-7.4.1.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-8a577515b16aac778babf4a0ecd1d3836fa7f6397608acc6835308031fe995b0<br>
-peazip-7.4.1.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-10452e8bcc89821053d2086c04503183f4532df3e871acc5fcf6863dfd25a40d<br>
+PeaZip_7.4.2.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+ebd5c30da3ac51e001381eaff936d67d4a7998d8f3904a5291c50672f636ca47<br>
+peazip_7.4.2.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
+6f9b582f5bd400e50779ce9838ef8daf7efd71e55bbe77e814298e05218ef008<br>
+peazip_portable-7.4.2.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+f36584ab785f1243194fefb478135bc648b3fd2b4dca07733fb60a7c3486d476<br>
+peazip_portable-7.4.2.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
+c703789114da3aa722d4170c8949bfd2b8fb9516f3cdb57d7f20ab177fa76dc0<br>
+peazip_portable-7.4.2.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+7390311b28f3340c37c08fd493b326c7a7c1b09365edef56d403f88720c1be4f<br>
+peazip_portable-7.4.2.WIN64.zip&nbsp;&nbsp;&nbsp;
+069f41a3d241a335e82eac899bc7ad69e0d6139ce4f6f713a3c94ae051263cdb<br>
+peazip_portable-7.4.2.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+1a2b3e998b534455d504c70fd5deebea1b1a751afbea536514f55608d7ff7a3c<br>
+peazip-7.4.2.about_translations.zip&nbsp;&nbsp;&nbsp;
+db9e178c7ccd77ba297d46bb66326d2974edd113ae1f60306fd424dc1998461c<br>
+peazip-7.4.2.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+825d58945f032aa447f1eddf62312df172348cb0b57f48f38a070179206a3f65<br>
+peazip-7.4.2.src.zip&nbsp;&nbsp;&nbsp;
+45455f3f1a7c3be46b7eb7cf65f89883cef6e9c9d986ec93a800095663b6fafe<br>
+peazip-7.4.2.WIN64.exe&nbsp;&nbsp;&nbsp;
+3d24df1c087dceabb74bb51e70b40750cdda9c19dd61efeed2a5c568a8fb0ef0<br>
+peazip-7.4.2.WIN64.msi&nbsp;&nbsp;&nbsp;
+7950dbc21542142db94f60b8ad96766047e42480558baa6e470ef0d13ac40c8e<br>
+peazip-7.4.2.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+c567eae0045d5d0179daa00121e295882562a8e712caecdc2a33d5bbcd8f22ea<br>
+peazip-7.4.2.WINDOWS.msi&nbsp;&nbsp;&nbsp;
+5280f1968a1a24edbc1f54f2a1f6b9045efde1fe1e60bb85f1426149abb17734<br>
             </td>
           </tr>
         </tbody>
@@ -406,6 +408,44 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2020 10 05<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">(Linux) p7zip 16.02
+superseded by sznick/p7zip fork 17.02, not available for legacy 32 bit
+platforms<br>
+            <div style="margin-left: 40px;">added support for FLZMA2,
+LZ4, and Zstd compression algorithms in .7z format<br>
+algorithm selection dropdown is now common to all platforms,
+unsupported algorithms for one platform are preceeded with / (currently
+unsupported /Brotli, /Lizard, and /LZ5 on linux)<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Windows) File manager now
+displays icons for exe files for better usability, using a separate
+thread; previously the feature was enabled only if browser was set to
+show thumbnails<br>
+In-archive "Extract and open with PeaZip" and "Preview with PeaZip" now
+forces trying to open file as archive, as in "Open as archive" menu
+entry<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">(Windows) Drop target
+window is locked, as in WinRar, until drag and drop operation is
+completed<br>
+If password contains characters that can be troublesome if used in
+scripts (i.e. quotes) it is now possible to interactively enter
+password in console to create / extract archive types handled through
+7z/p7zip, ARC, and RAR backends<br>
+            </div>
+            </div>
+            <br>
 2020 09 08<br>
             <div style="margin-left: 40px;">7.4.1<br>
             <div style="margin-left: 40px;">BACKEND<br>
