@@ -203,23 +203,15 @@ export job definition as script.</small></p>
                 <tr>
                   <td
  style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="screenshots-peazip-1.html">FILE MANAGER</a><br>
+ href="screenshots-peazip-1.html">FILE MANAGER, CREATE &amp; EXTRACT
+ARCHIVES</a><br>
                   </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="screenshots-peazip-2.html">ARCHIVING</a> </small></td>
                   <td style="vertical-align: top;"><small><br>
                   </small></td>
                   <td
  style="vertical-align: top; background-color: rgb(204, 224, 255);"><small><a
- href="screenshots-peazip-3.html">DRAG &amp; DROP, MENU</a> </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-screenshots-images.html">OPERATING SYSTEMS</a> </small></td>
+ href="screenshots-peazip-3.html">DRAG &amp; DROP, MENU, OPERATING
+SYSTEMS</a> </small></td>
                 </tr>
               </tbody>
             </table>
@@ -450,8 +442,98 @@ the application in system's menus.<br>
  alt="zip extraction from contextual menu"
  style="border: 0px solid ; width: 578px; height: 504px;"></span></a></h3>
             </div>
+            <div style="text-align: right;"> </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left;">
+            <h2><a href="#drag_to_extract"><big><big><big>Supported
+Operating
+Systems</big></big></big></a></h2>
             <br>
-            <div style="text-align: left;"><br>
+            <a name="windows_file_archiver"></a>PeaZip is a cross
+platform file archiver software, supporting creation and extraction of
+multiple
+archive formats on Linux, Windows and other operating systems /
+architectures combinations supported by Lazarus/FPC IDE.<br>
+When
+compiled for <span style="font-weight: bold;">Win32</span> or <span
+ style="font-weight: bold;">Win64</span>,
+it supports Microsoft Windows
+systems, XP and Vista / 7 / 8.x / 10 family, both 32 bit and 64 bit
+versions (64 bit Windows system can run both native Win64 version, or
+32 bit version through WoW64 subsystem), and API compatible Wine /
+ReactOS platforms.<br>
+The program can also be natively compiled, either with <span
+ style="font-weight: bold;">GTK2</span> or <span
+ style="font-weight: bold;">Qt</span>
+widget set, for <a href="peazip-linux-x86.html">Linux x86</a> and <a
+ href="peazip-linux.html">Linux x86-64</a>, pre-packed as DEB
+(Debian,
+Ubuntu, Knoppix, ...), RPM (Fedora, Mandriva,
+SUSE, Red Hat,
+ArkLinux), TGZ (Slackware), and TAR.GZ (portable, installation not
+required).<br>
+Experimental versions exists
+for <a href="peazip-linux-arm.html">ARM Linux</a> and <a
+ href="peazip-bsd.html">BSD</a>, wrapped application can be
+used on macOS / OSX platform<a name="apple_macos_archiver"></a>.<br>
+            <br>
+            <span style="font-weight: bold;">Portable versions</span>
+of of PeaZip cross-platform file archiver software are available for
+all
+supported platforms, those
+versions does not require installation and can be used simply unzipping
+the program's folder to the desired directory, and starting the
+application clicking on peazip executable.<br>
+            <br>
+            <a name="unace_tool_windows_linux"></a>UNACE Plugin,
+required to open and extract WinAce ACE files, is available for Windows
+and
+Linux platforms, both for installable and portable packages.<br>
+            <a name="unrar_tool_windows_linux"></a>Optional UNRAR5
+Plugin, alternative unrar engine (WinRar RAR5 format extraction is
+supported
+out of the box), based on RarLab's unrar code, is available too for
+Linux and Windows operating systems, both for portable and installable
+packages. <br>
+ACE and RAR compression (creation) is not implemented due to licensing
+limitations
+of those formats.<br>
+Those packages, available for multiple platfroms supported by PeaZip,
+requires separate download as they contains code
+released under licenses not compatible with Open Source LGPLv3: <a
+ href="peazip-add-ons.html">UNACE, UNRAR / UNRAR5 Plugins for Linux and
+Windows</a><br>
+            <br>
+            <a name="linux_file_archiver"></a>Following screenshots are
+taken running PeaZip on multiple patforms: MS Windows XP, Linux
+(Ubuntu) with
+GTK2 and Qt widget sets.<br>
+            <br>
+            <h2><a href="peazip-xp.png" target="_blank"><img
+ title="PeaZip free archiver running on Windows XP"
+ alt="cross platform file archiver for windows xp" src="peazip-xp.png"
+ style="border: 0px solid ; width: 912px; height: 542px;"></a></h2>
+            <br>
+            <h3><a href="peazip-gtk2.png" target="_blank"><img
+ title="PeaZip free archiver running on GTK2 Linux"
+ alt="Ubuntu file archiver screenshots" src="peazip-gtk2.png"
+ style="border: 0px solid ; width: 912px; height: 586px;"></a></h3>
+            <br>
+            <h3><a href="peazip-qt.png" target="_blank"><img
+ title="PeaZip free archiver running on Qt Linux"
+ alt="linux file archiver screenshot" src="peazip-qt.png"
+ style="border: 0px solid ; width: 912px; height: 577px;"></a></h3>
+            <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">
               <tbody>
@@ -644,10 +726,7 @@ rar 7z tar zip software</a></span><br>
 zip files extractor</a></span> <span class="wrd free-rar1"
  id="extract-selected-content-from-archive"> <a
  href="how-to-extract-selected-files-from-archive.html">extract
-selected content from archive</a></span> <span class="wrd free-rar0"
- id="file-compression-decompression-gui"> <a
- href="screenshots-peazip-2.html">file compression and
-decompression GUI</a></span> <br>
+selected content from archive</a></span> <br>
             <span class="wrd free-rar4"
  id="fast-drag-and-drop-extraction"> <a
  href="screenshots-peazip-3.html">fast drag
