@@ -7,7 +7,7 @@
   <meta name="DESCRIPTION"
  content="What is TAR file format, what are TBZ TGZ TXZ files. FAQ about GNU Tar extension, archive types, features and specifications.">
   <meta name="KEYWORDS"
- content="what are, tar, tgz, tbz, txz, what is, file, files, format, archives, type, extension, features, specifications, specs, bz2, gz, xz">
+ content="what are, tar, tgz, tbz, txz, what is, file, files, format, archives, type, extension, features, specifications, specs, bz2, gz, xz, double">
   <meta name="ROBOTS" content="all">
   <title>What is TAR file format, TGZ TBZ TXZ files</title>
   <meta name="viewport" content="width=device-width">
@@ -300,8 +300,10 @@ TBZ TXZ files<br>
                   <ul>
                     <li>
                       <p><a href="#tgz_tbz_txz_format">WHAT ARE TAR
-FILES, TBZ, TGZ, TXZ ARCHIVE FORMATS<br>
-                      </a></p>
+FILES, TBZ, TGZ, TXZ ARCHIVE FORMATS</a></p>
+                    </li>
+                    <li><a href="#double_file_extension">WHAT ARE FILES
+WITH DOUBLE EXTENSION</a><br>
                     </li>
                   </ul>
                   </td>
@@ -370,7 +372,7 @@ tools to reduce archive's size, i.e. for more compact backup, or
 smaller software distribution package.<br>
             <a name="tgz_tbz_extension"></a>Resulting compressed files
 can be found named with single extension, e.g. TGZ, TBZ, TXZ, TZST, or
-with <a href="files-with-double-extension.html">double file extension</a>,
+with <span style="font-weight: bold;">double file extension</span>,
 e.g. <a name="tar.gz_tar.bz_extensions"></a>TAR.GZ, TAR.BR, TAR.BZ2,
 TAR.XZ, TAR.ZST.<br>
 Adding items to a tarball before compression stage is quivalent to
@@ -566,6 +568,187 @@ Tar command.<br>
                 </tr>
               </tbody>
             </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a name="double_file_extension"></a><a
+ href="#.TAR_specifications">What are files with double
+extension</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+            <h3><big>Legitimate use of double file extension</big></h3>
+            <br>
+PeaZip can handle and create files with double
+extension; most common cases for having have a file with two extensions
+are<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="width: 48px; vertical-align: middle;">
+                  <h3><img title="Compressed TAR extensions"
+ alt="what are TAR.GZ, TAR.BZ, TAR.XZ archives"
+ src="file-format/one.png" style="width: 48px; height: 48px;"></h3>
+                  </td>
+                  <td style="vertical-align: middle;">
+                  <h4><span style="font-weight: bold;"></span><big>Compressed
+containers</big></h4>
+                  <a name="two_extensions"></a>When a
+compression only algorithm - most common ones are <a
+ href="gzip-utility.html">GZip Deflate compression</a>, <a
+ href="brotli-compression-utility.html">Brotli compression</a>, <a
+ href="bzip2-utility.html">BZip2 compression</a>, <a
+ href="paq-files-compression-utility.html">LPAQ compression</a>, <a
+ href="zstandard-compression-utility.html">Zstandard compression</a>
+or <a href="7zip-files-utility.html">7-Zip's lzma XZ compression</a> -
+is
+applied to
+multiple files, which consequnetly needs to be
+consolidated into a single archive - most times a TAR file -
+before the compression step (also known as <a
+ href="what-is-solid-compression.html">solid mode compression</a>).<br>
+                  <br>
+This result in the first step archiving extension (e.g. <a
+ href="tar-windows.html">creating a TAR archive file</a>) being
+pre-pended to second step compression extension (e.g. XZ).<br>
+                  <br>
+                  <a name="tar.gz_tar.bz2_extension"></a>Extracting
+compressed tar files
+(TAR.GZ / TAR.BR / TAR.BZ / TAR.LPAQ, TAR.XZ / TAR.ZST) could be
+treated as
+atomic,
+single step operation, but usually (as in PeaZip, 7-Zip and other
+archival utilities) extraction of compressed TAR files is a two step
+process which firstly uncompress the TAR archive, and then unarchive
+the contained files and folder structure.<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 48px; vertical-align: middle;">
+                  <h2><img title="Split file extensions"
+ alt="multiple file extensions" src="file-format/two.png"
+ style="width: 48px; height: 48px;"></h2>
+                  </td>
+                  <td style="vertical-align: middle;">
+                  <h4><big>Spanned multi-volume archives</big></h4>
+                  <a name="double_extension"></a>File spanning is
+applied (often in a single pass) to output archive,
+creating a set of volumes of desired size, with a numerator in the file
+extension to declare what is the first volume and the progressive order
+of data chunks, in example .R01, .Z01, etc<br>
+Some splitting standards adds the numerator information in a separate
+extension, before or after usual archive extension, in example .7Z.001,
+.7Z.002, .7Z.003 etc.<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h3><big>Risks, security issues of "Hide known file
+extensions" option</big></h3>
+            <br>
+A <span style="font-weight: bold;">completely unrelated</span>
+use of double file extension spread after Micorsoft set "<span
+ style="font-weight: bold;">Hide known
+file types extensions</span>" option enabled by default for Windows XP
+and
+newer systems - this is still the default behavior on Vista, 7, 8, 10 -
+opening the ground for attack exploiting hidden files extensions.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="text-align: right; vertical-align: middle; width: 64px;">
+                  <h3><span style="font-weight: bold;"><img
+ title="Hide real file type" alt="tar.gz extension"
+ src="file-format/note.png" style="width: 48px; height: 48px;"><br>
+                  </span></h3>
+                  </td>
+                  <td
+ style="font-style: italic; vertical-align: middle;">
+                  <p><span style="background-color: rgb(255, 238, 221);"><a
+ name="hide_real_file_extension"></a></span>This option allows an
+attacker to trivially add a file extension before
+the true one in order to mask the real nature of the file - being the
+last file extension hidden by default to end users by the system in
+file browser and most applications following system's file browser
+policies.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+In example, an executable virus named attachment.exe can be renamed in
+attachment.doc.exe.<br>
+By deafult, end user would be prompted "attachment.doc" (or any other
+harmless file extension used by the attacker, i.e. .jpeg, .mpg), but
+once clicked the file would be executed as .exe file (true file
+extension) by the system.<br>
+In this way an executable file that should trigger a great level of
+awareness and caution from user (e.g. .exe, .scr, .bat, .vb, .js...)
+can be easily masked as harmless, common, file type to mislead end user.<br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="text-align: right; vertical-align: middle; width: 64px;">
+                  <h3><span style="font-weight: bold;"><img
+ title="Show real file type" alt="tar.bz extension"
+ src="file-format/information.png" style="width: 48px; height: 48px;"><br>
+                  </span></h3>
+                  </td>
+                  <td
+ style="font-style: italic; vertical-align: middle;">
+                  <p><span style="background-color: rgb(255, 238, 221);"><a
+ name="show_real_file_extension"></a>PeaZip
+file and archive browser never hide file extension, avoiding
+this type of forgery.</span><br>
+Moreover PeaZip warns each time an executable or script file is being
+executed from an archive, in this way 1) the user is made aware of the
+potentially harmful nature of the file 2) the user can evaluate to
+extract the whole archive before, as executable and script
+files could need some archived resources (i.e. dll) to be available in
+uncompressed form before properly running.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+Sometimes files with double extension are treated as suspicious ones,
+but if it is the right case for executable ones (exe or script file
+type as last extension), it is definitely NOT the case for archive
+files with double extension, being TAR.something very common file types
+- especially on *x systems.<br>
+            <br>
+Read more about this topic: <a target="_blank"
+ href="https://en.wikipedia.org/wiki/Filename_extension">what are file
+extensions<img title="what is filename extension"
+ alt="file extension wiki" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, list of
+known <a target="_blank"
+ href="https://en.wikipedia.org/wiki/List_of_file_formats">file
+types<img title="file formats wiki list" alt="filename extension"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+ target="_blank" href="http://www.gnu.org/software/tar/">TAR<img
+ title="extract tar.gz files" alt="two file extensions"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> archive
+format, which usually comes with a second extension (tar.gz, tar.bz)
+declaring the compression scheme applied to the tar container.<br>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
             </td>
           </tr>
         </tbody>
