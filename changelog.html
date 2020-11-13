@@ -323,30 +323,23 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.4 introduces GUI refresh,
-improves working with 7Z, ARC,
-PEA, RAR, and ZIPX archive types.<br>
-It is now possible to use new fast compression algorithms in 7Z format:
-Brotli, Fast-LZMA2, Lizard, LZ4, LZ5, and Zstandard are now available,
-providing
-faster-than-Deflate compression with better speed-to-compression-ratio
-efficiency.<br>
-PEA now supports multiple cascade encryption, i.e. AES+Twofish+Serpent,
-each 256 bit in EAX mode. <br>
-RAR archives are now fully read-write supported from PeaZip if Rar.exe
-is featured
-in the system: it is possible to update, edit, rename, and delete
-files in existing RAR archives, and more RAR-specific options are
-supported (set comment, lock archive, header encryption, set
-recovery records percentage).<br>
-ZIPX archives can now be edited, and
-it is possible to optionally use .zipx extension when creating
-non-Deflate compressed .zip archives.<br>
-It is now possible to repair ARC and RAR files, and even to attempt
-recovery if the archive cannot be opened for browsing.<br>
-7.4.2 update brings FLZMA2,
-LZ4, and Zstd support for 7z archives on Linux, improves file
-management, and provides fixes.<br>
+PeaZip 7.5 brings new icons to better distinguish main archive types,
+and several improvements in archive management.<br>
+It is now possible to extract everything in the archive (or in current
+path, or search filter) in order to correctly preview special file
+types (i.e. executables, html files, multi volume spanned archives).<br>
+Test mode was improved, it is now possible to create new
+folders in existing archives, and it is
+available a new option to automatically close PeaZip after extraction
+if no browsing took place - useful in example if the
+user wants to preview a downloaded file before extraction, but wants
+the application to auto close right after.<br>
+Default compression levels were set to fast for ZIP and 7Z formats,
+which runs over 4x faster than at normal compression level with minor
+impact on compression ratio, in order to offer a better
+speed/compression tradeoff for general purpose use - compression levels
+and compression presets works as usual, only the initial default is
+changed.<br>
             <br>
 A total of 210
 file extensions can now be managed by PeaZip.<br>
@@ -361,35 +354,37 @@ directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
-packages in current release</span></h3>
-PeaZip_7.4.2.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-ebd5c30da3ac51e001381eaff936d67d4a7998d8f3904a5291c50672f636ca47<br>
-peazip_7.4.2.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-6f9b582f5bd400e50779ce9838ef8daf7efd71e55bbe77e814298e05218ef008<br>
-peazip_portable-7.4.2.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-f36584ab785f1243194fefb478135bc648b3fd2b4dca07733fb60a7c3486d476<br>
-peazip_portable-7.4.2.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-c703789114da3aa722d4170c8949bfd2b8fb9516f3cdb57d7f20ab177fa76dc0<br>
-peazip_portable-7.4.2.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-7390311b28f3340c37c08fd493b326c7a7c1b09365edef56d403f88720c1be4f<br>
-peazip_portable-7.4.2.WIN64.zip&nbsp;&nbsp;&nbsp;
-069f41a3d241a335e82eac899bc7ad69e0d6139ce4f6f713a3c94ae051263cdb<br>
-peazip_portable-7.4.2.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-1a2b3e998b534455d504c70fd5deebea1b1a751afbea536514f55608d7ff7a3c<br>
-peazip-7.4.2.about_translations.zip&nbsp;&nbsp;&nbsp;
-db9e178c7ccd77ba297d46bb66326d2974edd113ae1f60306fd424dc1998461c<br>
-peazip-7.4.2.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-825d58945f032aa447f1eddf62312df172348cb0b57f48f38a070179206a3f65<br>
-peazip-7.4.2.src.zip&nbsp;&nbsp;&nbsp;
-45455f3f1a7c3be46b7eb7cf65f89883cef6e9c9d986ec93a800095663b6fafe<br>
-peazip-7.4.2.WIN64.exe&nbsp;&nbsp;&nbsp;
-3d24df1c087dceabb74bb51e70b40750cdda9c19dd61efeed2a5c568a8fb0ef0<br>
-peazip-7.4.2.WIN64.msi&nbsp;&nbsp;&nbsp;
-7950dbc21542142db94f60b8ad96766047e42480558baa6e470ef0d13ac40c8e<br>
-peazip-7.4.2.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-c567eae0045d5d0179daa00121e295882562a8e712caecdc2a33d5bbcd8f22ea<br>
-peazip-7.4.2.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-5280f1968a1a24edbc1f54f2a1f6b9045efde1fe1e60bb85f1426149abb17734<br>
+7.5.0 release packages</span></h3>
+PeaZip_7.5.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+22E5B00C8D4F0B7BA0A43C16230083D6ED5061D4D0A2CD5658548C7D763D582D<br>
+peazip_7.5.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
+211EBDDE0D617FA981132D4ACF2907CF559CA66D3564C1F7C12F7888C0E4E714<br>
+peazip_help.pdf&nbsp;&nbsp;&nbsp;
+82A7C540BB49F53C92E3E9237D498F855CC6B3362E41BBEAB800028182E43544<br>
+peazip_portable-7.5.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+1485BC2FE378FC113D6C799B5E27AE1CD9A80FD51A96EC9912B2A60A57C4C835<br>
+peazip_portable-7.5.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
+55C1A02F01DF9882236629ADDDFAC4369F4199F371721DE4E9431E412EF3FD0C<br>
+peazip_portable-7.5.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+F9E87ABB3D292E2DD0EB3CD1092EB4E4E5A14059A6AD654D054EDC0984A54BEA<br>
+peazip_portable-7.5.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+CF452528F0B591E17474B6299CC15D6BFE7B9E5CB6EDBE1F95CCA9B4C996114E<br>
+peazip_portable-7.5.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+A082A291C18C452BA2E3EB682EF3787AEEFF8A74D01B7033D175DFF2B99112FB<br>
+peazip-7.5.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+9F21207AF5206213EB169CB6E36AF9A445AD79C2DAD3BBF41C50309024FDB8C7<br>
+peazip-7.5.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+25C1D5D7ADE605CEA853591ABE5FD0444493DCDE3F9EE50FB7877AC21359DE5A<br>
+peazip-7.5.0.src.zip&nbsp;&nbsp;&nbsp;
+1D17CE032A44D7DC333D78E19EECABB0A3B09ED75548776844FEDB0F8E6DD828<br>
+peazip-7.5.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+4C40B9F3DC56047C13F9B5C983F4B0F0FC5B997597ABBCCA17D0895DB88A557D<br>
+peazip-7.5.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+D1594F81F74FB328AFD5046CD504A92636EF8F52D8B8C7A6BD22C9757E182376<br>
+peazip-7.5.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+DAEEBAF6C26735F4CC2D36F5E0CC8C81C9F47567628ACB210AFE4DEA7FF26240<br>
+peazip-7.5.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
+937E3CD13844CBC706A5ABD9BC8AAFDCF5A508372E572E5F51E3B0004823C6DF<br>
             </td>
           </tr>
         </tbody>
@@ -408,9 +403,94 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2020 11 13<br>
+            <div style="margin-left: 40px;">7.5.0<br>
+            <div style="margin-left: 40px;">CODE<br>
+            </div>
+            <div style="margin-left: 80px;">Various fixes<br>
+            <br>
+            </div>
+            <div style="margin-left: 40px;">FILE MANAGER<br>
+            </div>
+            <div style="margin-left: 80px;"><span
+ style="font-weight: bold;">Create new folder</span> is now also
+available for 7Z/p7Zip and RAR supported archive types<br>
+Improved file renaming routines<br>
+            <div style="margin-left: 40px;">added function to cutting
+file names at specified lengtt<br>
+added function to replace / remove non-ASCII characters<br>
+all quick rename functions (lowercase, replace string, etc...) are now
+also available when browsing 7Z/p7zip and RAR supported archive types<br>
+            </div>
+            <span style="font-weight: bold;">Updated icons</span> in
+embedded theme and added icons to distinguish common archive types<br>
+Updated Ten theme<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
+EXTRACTION and ARCHIVING<br>
+            </div>
+            <div style="margin-left: 80px;">Added "<span
+ style="font-weight: bold;">Extract everything for special file types</span>"
+(to 7Z-supported archive types) to optionally extract the entire
+archive (or current path) to preview special filetypes which usually
+needs external data to properly run, in example .html, .bat, and .exe
+files<br>
+            <div style="margin-left: 40px;">From Options &gt; Settings
+&gt; Archive manager, Extract group is possible to customize "Extract
+everything for..." behavior<br>
+            <div style="margin-left: 40px;">Never use special preview,
+Ask, Always (default)<br>
+Extract entire archive (default) or Extract displayed items only (items
+in current path, or matching search filters) which can be faster than
+extracting the entire archive<br>
+            </div>
+            </div>
+Archive timestamp preservation directive is now also applied to rename
+and delete operations (previously only for add / update)<br>
+Options &gt; Settings &gt; Archive manager, Extract group: added <span
+ style="font-weight: bold;">option to auto close PeaZip after
+extraction if no browsing actions took place</span> (default off),
+useful in example if a downloaded file was opened for quick inspection
+before extraction<br>
+Options &gt; Settings &gt; General (Windows): added options for locking
+or hiding target window during drag and drop operations, by default
+target window is hidden and locked while the operation is running<br>
+Out of the box default compression levels are set to <span
+ style="font-weight: bold;">fast </span>for ZIP and 7Z formats<br>
+            <div style="margin-left: 40px;">compared to previous ZIP
+normal default, ZIP fast is over 400% faster providing 2% worse
+compression ratio, and 7Z fast is 25% faster providing 3% better
+compression ratio<br>
+compared to previous 7Z normal default, 7Z fast is 500% faster
+providing 5% worse compression ratio<br>
+please note compression levels and compression presets works as usual,
+the new settings are meant only to provide novice users better
+performance balance for general purpose tasks<br>
+            </div>
+Modified existing preset scripts<br>
+            <div style="margin-left: 40px;">10 from faster zip to fast
+zip<br>
+12 (Linux) from .tar.zst to .7z using Zstandard compression (which
+requires single pass)<br>
+            </div>
+Test mode always show details about single files in archive<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
+WINDOWS &amp; LINUX INSTALLERS<br>
+            </div>
+            <div style="margin-left: 80px;">(Windows XP) additional 7z
+codecs introduced in 7.4 line, incompatible with Windows XP, are
+deactivated when installed on XP machines, consequently the error
+messages are no longer triggered when using 7z backend<br>
+            </div>
+            <br>
+            </div>
+            <br>
 2020 10 05<br>
+            <div style="margin-left: 40px;">7.4.2<br>
             <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">(Linux) p7zip 16.02
+            </div>
+            <div style="margin-left: 80px;">(Linux) p7zip 16.02
 superseded by szcnick/p7zip fork 17.02, not available for legacy 32 bit
 platforms<br>
             <div style="margin-left: 40px;">added support for FLZMA2,
@@ -420,13 +500,15 @@ unsupported algorithms for one platform are preceeded with / (currently
 unsupported /Brotli, /Lizard, and /LZ5 on linux)<br>
             </div>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 CODE<br>
-            <div style="margin-left: 40px;">Various fixes<br>
             </div>
-            <br>
+            <div style="margin-left: 80px;">Various fixes<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
 FILE MANAGER<br>
-            <div style="margin-left: 40px;">(Windows) File manager now
+            </div>
+            <div style="margin-left: 80px;">(Windows) File manager now
 displays icons for exe files for better usability, using a separate
 thread; previously the feature was enabled only if browser was set to
 show thumbnails<br>
@@ -434,9 +516,10 @@ In-archive "Extract and open with PeaZip" and "Preview with PeaZip" now
 forces trying to open file as archive, as in "Open as archive" menu
 entry<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">(Windows) Drop target
+            </div>
+            <div style="margin-left: 80px;">(Windows) Drop target
 window is locked, as in WinRar, until drag and drop operation is
 completed<br>
 If password contains characters that can be troublesome if used in
