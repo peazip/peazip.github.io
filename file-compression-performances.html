@@ -558,8 +558,8 @@ making further compression efforts difficult or even useless; computing
 power wold be more productively spent reducing size occupation of other
 types of files, leading to both better results and faster operation.<br>
                   <span style="background-color: rgb(255, 238, 221);"><a
- name="compress_multimedia_files"></a>Multimedia
-files (MP3, JPG, MPEG, AVI,
+ name="compress_multimedia_files"></a><span style="font-weight: bold;">Multimedia
+files</span> (MP3, JPG, MPEG, AVI,
 DIVX...) tend to poorly compressible</span>, as those formats features <a
  href="lossless-compression-lossy-compression.html">lossy compression</a>,
 and, especially videos, are usually very large compared to other file
@@ -573,15 +573,22 @@ compressor application.<br>
 For best practices to reduce disk usage of graphic files (JPEG, PNG,
 TIFF, BMP) see <a href="compress-resize-jpeg-png-files.html">how to
 optimize compression of images</a> for tips and tricks.<br>
-Some document formats (PDF, Open Office and new Microsoft Office 2007
+                  <span style="font-weight: bold;">Some document formats</span>
+(PDF, Open Office and new Microsoft Office 2007
 and beyond
 file formats), and some databases, are already compressed (usually fast
 deflate based lossless compression), so they generally does not
 compress
 well.<br>
+                  <span style="font-weight: bold;">Archive files</span>
+(7Z, RAR, ZIP...) are already compressed and cannot be directly
+compressed (gains will be small, if any), but <a
+ href="convert-files.html">archives can be converted</a> (extracted to
+the original non-compressed form, and the re-compressed) to a format
+providing a better compression ratio.<br>
                   <span style="background-color: rgb(255, 238, 221);"><a
- name="compress_encrypted_files"></a>Encrypted
-data is not
+ name="compress_encrypted_files"></a><span style="font-weight: bold;">Encrypted
+data</span> is not
 compressible at all</span>, being pseudo random there is
 not a "shorter way" to represent the information carried in encrypted
 form; attempting compression of encrypted files is not recommended.<br>
