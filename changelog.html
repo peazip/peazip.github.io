@@ -323,23 +323,17 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.5 brings new icons to better distinguish main archive types,
-and several improvements in archive management.<br>
-It is now possible to extract everything in the archive (or in current
-path, or search filter) in order to correctly preview special file
-types (i.e. executables, html files, multi volume spanned archives).<br>
-Test mode was improved, it is now possible to create new
-folders in existing archives, and it is
-available a new option to automatically close PeaZip after extraction
-if no browsing took place - useful in example if the
-user wants to preview a downloaded file before extraction, but wants
-the application to auto close right after.<br>
-Default compression levels were set to fast for ZIP and 7Z formats,
-which runs over 4x faster than at normal compression level with minor
-impact on compression ratio, in order to offer a better
-speed/compression tradeoff for general purpose use - compression levels
-and compression presets works as usual, only the initial default is
-changed.<br>
+PeaZip 7.6 brings various fixes and usability improvements, with
+settings and themes reorganized for clarity, and archive treeview
+automatically updated when browsing archive content.<br>
+It is now possible to use custom code page for file names encoding in
+ZIP archives: local, UTF-8 or any arbitrary code page supported by the
+system; this helps to solve issues with file names encoding often
+encountered working on ZIP files created using a different code page -
+neither the recipient's local code page nor UTF-8.<br>
+Within PeaZip file manager it is now possible to extract items form
+archives simply using copy/paste keyboard shortcuts (copy from archive,
+paste to filesystem).<br>
             <br>
 A total of 210
 file extensions can now be managed by PeaZip.<br>
@@ -354,37 +348,29 @@ directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
-7.5.0 release packages</span></h3>
-PeaZip_7.5.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-22E5B00C8D4F0B7BA0A43C16230083D6ED5061D4D0A2CD5658548C7D763D582D<br>
-peazip_7.5.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-211EBDDE0D617FA981132D4ACF2907CF559CA66D3564C1F7C12F7888C0E4E714<br>
-peazip_help.pdf&nbsp;&nbsp;&nbsp;
-82A7C540BB49F53C92E3E9237D498F855CC6B3362E41BBEAB800028182E43544<br>
-peazip_portable-7.5.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-1485BC2FE378FC113D6C799B5E27AE1CD9A80FD51A96EC9912B2A60A57C4C835<br>
-peazip_portable-7.5.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-55C1A02F01DF9882236629ADDDFAC4369F4199F371721DE4E9431E412EF3FD0C<br>
-peazip_portable-7.5.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-F9E87ABB3D292E2DD0EB3CD1092EB4E4E5A14059A6AD654D054EDC0984A54BEA<br>
-peazip_portable-7.5.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-CF452528F0B591E17474B6299CC15D6BFE7B9E5CB6EDBE1F95CCA9B4C996114E<br>
-peazip_portable-7.5.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-A082A291C18C452BA2E3EB682EF3787AEEFF8A74D01B7033D175DFF2B99112FB<br>
-peazip-7.5.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-9F21207AF5206213EB169CB6E36AF9A445AD79C2DAD3BBF41C50309024FDB8C7<br>
-peazip-7.5.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-25C1D5D7ADE605CEA853591ABE5FD0444493DCDE3F9EE50FB7877AC21359DE5A<br>
-peazip-7.5.0.src.zip&nbsp;&nbsp;&nbsp;
-1D17CE032A44D7DC333D78E19EECABB0A3B09ED75548776844FEDB0F8E6DD828<br>
-peazip-7.5.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-4C40B9F3DC56047C13F9B5C983F4B0F0FC5B997597ABBCCA17D0895DB88A557D<br>
-peazip-7.5.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-D1594F81F74FB328AFD5046CD504A92636EF8F52D8B8C7A6BD22C9757E182376<br>
-peazip-7.5.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-DAEEBAF6C26735F4CC2D36F5E0CC8C81C9F47567628ACB210AFE4DEA7FF26240<br>
-peazip-7.5.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-937E3CD13844CBC706A5ABD9BC8AAFDCF5A508372E572E5F51E3B0004823C6DF<br>
+7.6.0 release packages</span></h3>
+peazip-7.6.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+845ee6424415d8761cf7f22b1c3d1547e5ac9725dc8bccabcd2aeadff68dbacc<br>
+peazip-7.6.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+de09293cbbf45382b8be9ee6244545d22b4ef64e2b7ac3b9dcc9ab1be7fa1b3b<br>
+peazip-7.6.0.src.zip&nbsp;&nbsp;&nbsp;
+7bd607b3930939087700ab7ad2387da8ca55ae72811592246eabfed791cbe4b6<br>
+peazip-7.6.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+f2fb634116a51ab6d7eecf6ae3ee0fd8ed0b131f31d6cb45355589c345aa9092<br>
+peazip_portable-7.6.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+03f4c83c5ef11256f5c54809586950895cc58401a05e85443970e0a2777f0e0d<br>
+peazip_portable-7.6.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+8b0b1a1ad2f7c2773204571f76a56d11c23178daf1fd04cac187c331d242620d<br>
+peazip_portable-7.6.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+fc04031fb7bcbc1959bd203b895bea209849744d470ea5b53670790a26606c1f<br>
+peazip_portable-7.6.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
+1183f8d0b74dd74b3ff90811dfd923197f4513e14670bdb4a4ce23c3c1e8aa24<br>
+peazip_portable-7.6.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+bad059a252bdcb55c341a8b5cd1a4208c3b128a252079b36591684444d58afab<br>
+peazip_7.6.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
+efbf59f5d992ef6870391905e0b28fbff91c73aee4b2f0af75930126baeb9e1c<br>
+PeaZip_7.6.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+42bde3018e9fdbf06eba6adbd20668cecd4a46b2c78cbeaa4d6ff94dd927055e<br>
             </td>
           </tr>
         </tbody>
@@ -403,6 +389,76 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2020 12 15<br>
+            <div style="margin-left: 40px;">7.6.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">(Winodws, ReactOS) McMilk
+codecs in 7z\Codecs path are now automatically checked at PeaZip
+startup, in order to disable them (moving in 7z\Codecs\bk) on systems
+not capable to run them (as XP or ReactOS), and re-enable them on other
+systems; this works for both Portable and installable packages without
+requiring manual intervention<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(in left navigation panel) <span
+ style="font-weight: bold;">Archive treeview is now automaticaly updated</span>
+accordingly to browsing in file manager area<br>
+            <div style="margin-left: 40px;">&nbsp;This option can be
+fine tuned in Options &gt; Settings &gt; Archive manager<br>
+            </div>
+Various usability improvements<br>
+            <div style="margin-left: 40px;">Can now set current path as
+default archiving or extraction path<br>
+Options &gt; Settings &gt; General, Advanced, and Archive manager tabs
+reorganized<br>
+Improved and updated themes, and simplified Theme tab<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Improved handling ZIP files
+with code pages different than local<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Can now customize code page for
+reading/writing filenames in ZIP archives</span>, from Options &gt;
+Settings, Advanced tab it is possible to set:<br>
+            </div>
+            <div style="margin-left: 40px;">
+            <div style="margin-left: 40px;">Local code page, then UTF-8
+for sysmbols outside local code page (default)<br>
+Force UTF-8 for non-ASCII characters<br>
+Force local code page<br>
+Use a custom code page: an arbitrary code page can be entered by user
+(the host machine needs to support the code page to run the tasks,
+otherwise tasks can be saved as scripts and run on different machines)<br>
+            </div>
+Text encoding entry is now accessible also from application's file
+browser context menu, and in Archiving and Extraction screens context
+menus<br>
+            </div>
+Within PeaZip file manager it is now possible to use <span
+ style="font-weight: bold;">copy/paste shortcuts Ctrl+C (or Ctrl+X) /
+Ctrl+V to extract</span> items from archives to filesystem<br>
+            <div style="margin-left: 40px;">If clipboard is set to keep
+multiple selection operations at once:<br>
+            </div>
+            <div style="margin-left: 80px;">Copy/paste extraction is
+possible form multiple archives at once<br>
+It is also possibile to mix cut/paste and extraction operations<br>
+            </div>
+            <div style="margin-left: 40px;">Extraction targets the file
+system, it is not currently possible i.e. to directly paste compressed
+items from archive A to archive B<br>
+            </div>
+            </div>
+            </div>
+            </div>
+            <br>
 2020 11 13<br>
             <div style="margin-left: 40px;">7.5.0<br>
             <div style="margin-left: 40px;">CODE<br>
@@ -1630,8 +1686,8 @@ opener</a></span><br>
             <a href="peazip-portable.html">portable
 rar tar zip files
 utility</a></span> <span class="wrd free-rar0"
- id="linux-file-compression-utility"> <a href="peazip-linux.html">linux
-file compression utility</a></span> <span class="wrd free-rar2"
+ id="linux-zip-files-utility-download"> <a href="peazip-linux.html">download
+zip unzip files utility</a></span> <span class="wrd free-rar2"
  id="windows-rar-extractor"> <a
  href="download-installer-p-windows.html">windows rar tar zip files
 extractor</a></span> <span class="wrd free-rar1"
