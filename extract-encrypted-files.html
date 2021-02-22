@@ -553,7 +553,32 @@ RAR, and ZIP/ZIPX) uses strong file encryption, and it is unlikely to
 be
 possible to brute-force it with any kind of utility if the password is
 unknown or was forgotten.</span><br>
-            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="width: 48px; vertical-align: middle;">
+                  <h2><img title="How to extract encrypted archives"
+ alt="extract encrypted archive" src="file-format/information.png"
+ style="width: 48px; height: 48px;"></h2>
+                  </td>
+                  <td style="vertical-align: middle;"><a
+ name="extract_encrypted_archives"></a>Some archive types such as 7Z,
+ARC, RAR, and ZIP, allows to use <span style="font-weight: bold;">multiple
+passwords in the same archive</span>, and even to <span
+ style="font-weight: bold;">mix encrypted and unencryped content</span>,
+because encryption is applied at level of each single file inside the
+archive - each file can be theoretically encrypted with a differnt
+password.<br>
+This means that providing a password it may be possible to extract only
+the part of the archive protected by that password, and to access other
+files different password may be needed.<br>
+Using test function with different passwords can help identifying which
+files can be correctly decripted with the given password.<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <span style="font-style: italic;"></span><span
  style="font-style: italic;"></span><a
  name="free_encrypted_files_extraction_utility"></a>In some cases
