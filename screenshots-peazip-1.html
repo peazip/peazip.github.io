@@ -317,6 +317,47 @@ listing mode is currently implemented).<br>
  title="Graphic file manager" alt="rar zip archive manager"
  src="peazip-image-viewer.png"
  style="border: 0px solid ; width: 850px; height: 543px;"></a></h3>
+            <br>
+            <br>
+            <h3><span style="font-weight: bold;">DARK MODE</span></h3>
+            <br>
+PeaZip currently does not fully support Windows 10 dark mode, which is
+meant - by Microsoft design - for UWP applications only.<br>
+Unlike previous versions of Windows, applying Dark Mode theming does
+not changes system's colors values passed to Win32/Win64 applications,
+but changes only colors passed to UWP apps.<br>
+Until Windows 10 Dark Mode will be implemented by Microsoft in this
+bizarre way, purposely passing wrong values for on screen colors to
+non-UWP apps, supporting it will need each non-UWP application to
+replace the code for drawing each widget drawn by the system (e.g.
+checkboxes, combo boxes, listviews, etc), overriding standard - proven,
+stable, and optimized for speed - system drawing routines with custom
+ones.<br>
+            <br>
+There are however some possible workarounds in order to use PeaZip in
+dark mode.<br>
+            <br>
+1) <span style="font-weight: bold;">Dark option</span>: in Options
+&gt; Settings &gt; Theme it is possible to set the program's GUI to
+Dark, which will darken the colors within the limits to preserve
+legibility of system-drawn widgets (which cannot be drawn by the
+application in custom colors)<br>
+            <br>
+            <h3><a href="peazip-dark-mode.png" target="_blank"><img
+ alt="peazip windows 10 dark mode" title="PeaZip Dark option"
+ src="peazip-dark-mode.png"
+ style="border: 0px solid ; width: 850px; height: 558px;"></a></h3>
+            <br>
+2) <span style="font-weight: bold;">High Contrast</span>: in Windows
+10 system's settings it is possible to set on of the pre-set high
+contrast theme, which passes dark system colors (which can be further
+customized, creating custom dark themes) to all non-UWP applications,
+including PeaZip<br>
+            <br>
+            <h4><a href="peazip-hig-contrast.png" target="_blank"><img
+ alt="dark mode peazip high contrast" title="High Contrast theme"
+ src="peazip-hig-contrast.png"
+ style="border: 0px solid ; width: 850px; height: 557px;"></a></h4>
             </div>
             <div style="text-align: right;"> </div>
             </td>
