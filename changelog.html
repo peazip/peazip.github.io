@@ -323,9 +323,17 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.7.1 introduces various fixes, improves working with special
-characters, improves control over temporary
-work files, and allows to use system's p7zip package on Linux systems.<br>
+PeaZip 7.8.0 introduces interactive extraction option, asking user to
+skip or overwrite existing files and folders, as alternative to the
+classic policy-based unattended extraction - which is still available
+as alternative.<br>
+It is now possible to customize file types triggering "Extract
+everything for", to set global priority for compression / extraction
+tasks, and to replace archive extension with a custom one.<br>
+On Windows systems, is it now supported drag&amp;drop extraction
+directly to other applications (i.e. 7-Zip or WinRar), and compression
+/ extraction progress is now shown in application's icon.<br>
+On Linux, a new Qt5 build is available as portable package.<br>
             <br>
 A total of 211
 file extensions can now be managed by PeaZip.<br>
@@ -340,35 +348,37 @@ directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
-7.7.1 release packages</span></h3>
-PeaZip_7.7.1.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-c424a384b1182e036d1ba47bca9a80173fb9539b72713123cbe9a620e30224b5<br>
-peazip_7.7.1.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-93b1c41616085b54e78a6e42b6c0eb700d52f142e68c67f7a4e24a46fedee22b<br>
-peazip_portable-7.7.1.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-80f03b9c26380a89cf6f8453762b964506b114e0a7cb504a09f015de0cf3081e<br>
-peazip_portable-7.7.1.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-30a1453d84572daaefc80924ab492296c4a66fef27b8a3a8507949d00bba5acb<br>
-peazip_portable-7.7.1.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-387bf86a067c83b9bbac2de27e41ba5f858960c035dc1cf47c28a4b4a2936db4<br>
-peazip_portable-7.7.1.WIN64.zip&nbsp;&nbsp;&nbsp;
-07cab4f1fdb1d60df4be6c7af3f6df14f9622d87b7305d69949f97cf9da99e92<br>
-peazip_portable-7.7.1.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-8f4af2f9ee0db4edbd63b893ccb4cd8393f4d456a991ed9858188ee496de2839<br>
-peazip-7.7.1.about_translations.zip&nbsp;&nbsp;&nbsp;
-a5d960ca0b1b24ab4b68e64b828f4391504814d35b7f3a627c482d3a2a6661bf<br>
-peazip-7.7.1.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-ab77d667e9175e017da6d48b78e69027049e2c5d6c6cf19d5d0b2e6190ed2a91<br>
-peazip-7.7.1.src.zip&nbsp;&nbsp;&nbsp;
-f8db220769c972824a608e97137af2cddf8c4212a72dd9a9089ae2aa432cf508<br>
-peazip-7.7.1.WIN64.exe&nbsp;&nbsp;&nbsp;
-4c70f3db0daefeb2de850c7e8ad3b1c462792a671d44cdf6df8fe2eb6ba79155<br>
-peazip-7.7.1.WIN64.msi&nbsp;&nbsp;&nbsp;
-eebcf74807c48664b3f0dbc8e483d50ba065595a34400cc9f7a70fbc8bce43d1<br>
-peazip-7.7.1.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-e4c0a14ef5d9624772557aba4637db06e5b6ed9e1b9b94057348a4e83d8a9c0a<br>
-peazip-7.7.1.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-c2b7f3437311d94a07c6fcb5c21f4988e15ace0071cc7fb4a30342d3283f65e2<br>
+7.8.0 release packages</span></h3>
+PeaZip_7.8.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+2f18dfd7640ad74f4a27f7226a10f149d433d8bf7b8d21b035484b99d53b539c<br>
+peazip_7.8.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
+59f29c9be9ada66870b4c6020b32aaeac3f27021ad3b29829e55b4f3c682fb1a<br>
+peazip_portable-7.8.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+afd63508de1b18ac93d34894df3a208a4a707022915b0e31ec657fee185cc15e<br>
+peazip_portable-7.8.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
+8780a614c04ca9d32c7585f6079b7c75a47ffb2dd5f30822b65caf64259829ce<br>
+peazip_portable-7.8.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
+146795eb5005525a65246752e4b99f0f107dbf2b32d19e8d34a90232a05ce322<br>
+peazip_portable-7.8.0.LINUX.x86_64.Qt5.tar.gz&nbsp;&nbsp;&nbsp;
+258a7172fb984d29ed5072212624a601041cc557401feef54da07ad42e2f998d<br>
+peazip_portable-7.8.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+874bf93a5bba05b7bc149dd286c7b49f0408f5aa4fc43e20ea76fd260bc0aca5<br>
+peazip_portable-7.8.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+215cedc1a71e4a855d582d7ffb706e073d1948d5d257ccab77baa9e8f856a4d7<br>
+peazip-7.8.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+c3cf6149f6cb708e3d32c06c0b616cbc8ee454548fc7d2989c96c42cb420718a<br>
+peazip-7.8.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+2f469b7a216c42285425b7610c92aee492fe8d7babb0755a76d0a6c711efa7dc<br>
+peazip-7.8.0.src.zip&nbsp;&nbsp;&nbsp;
+d66b2cc038f19a959d11996b0b03717f6162e1828c62a9ee0b5d16d339c1e944<br>
+peazip-7.8.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+1d89648ffa4e2ce0682c6b748c96c575df832097313865a6805d93ad51c261a6<br>
+peazip-7.8.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+f67518e1ceeef5d3d484c0f500c2ed420e00f8ae2f6d430758e1a62f840611b6<br>
+peazip-7.8.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+fac528140a44abb55bb4598b56d7e2b68c43f6085574e7f2e3ce849ec4259d1b<br>
+peazip-7.8.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
+38307d85cee3a6105343a6bd890bff46358477b131e9696dcc5ca6a48fcb3f3d<br>
             </td>
           </tr>
         </tbody>
@@ -387,6 +397,63 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2021 03 21<br>
+            <div style="margin-left: 40px;">7.8.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">PEA 0.77<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">(Linux) Alternative <span
+ style="font-weight: bold;">Qt5</span> build is now available as
+portable package<br>
+If a setting requires to restart PeaZip (localization, system
+integration, change work folder) it is told in the hint text for the
+item<br>
+Various fixes and improvements<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Windows) Drag&amp;drop now
+allows to <span style="font-weight: bold;">drag-extract files directly
+to other applications</span>, previoulsy it was possible to
+drag-extract to the system only<br>
+Righclicking an element on the breadcrumb it is now possible to use
+context menu functions on it - e.g. display properties, open the path
+in system's file explorer, open command prompt here, etc<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Interactive extraction</span> option
+(checked by default on Windows) enables two-step extraction for all
+archive types supported through 7z/p7zip: content is extracted to a
+fresh folder and then moved to actual output destination with standard
+system's calls.<br>
+            <div style="margin-left: 40px;">When interactive extraction
+is used, all unneeded levels of directory nesting are removed, and
+conflicts with existing files are prompted interactively to user.<br>
+            </div>
+            <div style="margin-left: 40px;">Unchecking the option, it
+is possible to perform single-step extraction as in previous versions,
+with policy based directives to resolve naming conflicts without
+needing user interaction (recommended when creating scripts).<br>
+            </div>
+It is now possible to set custom extensions for "Extract everything
+for" in Options &gt; Settings &gt; Archive manager, Extract group<br>
+It is now possible to replace archive extension with a custom extension
+from archiving screen, Advanced tab<br>
+            <div style="margin-left: 40px;">In res/presets/custom
+directory are provided some pre built compression settings for comic
+book archive formats which uses the new custom extension feature<br>
+            </div>
+Priority for archiving and extraction tasks can now be permanently set
+from Options &gt; Settings &gt; General, Tasks priority<br>
+(Windows 7+) Global progress is shown in application's icon in taskbar<br>
+            </div>
+            </div>
+            </div>
+            <br>
 2021 02 12<br>
             <div style="margin-left: 40px;">7.7.1<br>
             <div style="margin-left: 40px;">BACKEND&nbsp;<br>

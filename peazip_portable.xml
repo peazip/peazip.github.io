@@ -34,9 +34,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip Portable</Program_Name>
-		<Program_Version>7.7.1</Program_Version>
-		<Program_Release_Month>02</Program_Release_Month>
-		<Program_Release_Day>12</Program_Release_Day>
+		<Program_Version>7.8.0</Program_Version>
+		<Program_Release_Month>03</Program_Release_Month>
+		<Program_Release_Day>21</Program_Release_Day>
 		<Program_Release_Year>2021</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Win2000,Win7 x32,Win7 x64,Win98,WinOther,WinServer,WinVista,WinVista x64,WinXP,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Fixes, updated installers</Program_Change_Info>
+		<Program_Change_Info>Improved extraction, improved drag&amp;drop, can customize special file types, can add custom archive extension, display progress in app's icon</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements />
 		<File_Info>
-			<File_Size_Bytes>13540642</File_Size_Bytes>
-			<File_Size_K>13223</File_Size_K>
-			<File_Size_MB>12.91</File_Size_MB>
+			<File_Size_Bytes>13562368</File_Size_Bytes>
+			<File_Size_K>13244</File_Size_K>
+			<File_Size_MB>12.93</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -94,8 +94,8 @@ The distinctive trait of PeaZip is the innovative GUI, integrating a full featur
 			<Application_XML_File_URL>https://peazip.github.io/peazip_portable.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.7.1/peazip_portable-7.7.1.WIN64.zip</Primary_Download_URL>
-			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.7.1/peazip_portable-7.7.1.WINDOWS.zip</Secondary_Download_URL>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.8.0/peazip_portable-7.8.0.WIN64.zip</Primary_Download_URL>
+			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/7.8.0/peazip_portable-7.8.0.WINDOWS.zip</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
 		</Download_URLs>
