@@ -323,17 +323,14 @@ VERSION)</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 7.8.0 introduces interactive extraction option, asking user to
-skip or overwrite existing files and folders, as alternative to the
-classic policy-based unattended extraction - which is still available
-as alternative.<br>
-It is now possible to customize file types triggering "Extract
-everything for", to set global priority for compression / extraction
-tasks, and to replace archive extension with a custom one.<br>
-On Windows systems, is it now supported drag&amp;drop extraction
-directly to other applications (i.e. 7-Zip or WinRar), and compression
-/ extraction progress is now shown in application's icon.<br>
-On Linux, a new Qt5 build is available as portable package.<br>
+PeaZip 7.9.0 introduces fixes, PEA 1.00 backend, improves managing
+temporary work files, enhances GUI usability allowing to customize
+items
+spacing and zooming, and improves ZPAQ support automatically removing
+extra nesting levels on extraction.<br>
+On Linux systems, interactive extraction is improved and it is now
+enabled by default, and Qt5 build is now available packed as DEB and
+RPM alongside Portable package.<br>
             <br>
 A total of 211
 file extensions can now be managed by PeaZip.<br>
@@ -348,37 +345,39 @@ directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash of
-7.8.0 release packages</span></h3>
-PeaZip_7.8.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-2f18dfd7640ad74f4a27f7226a10f149d433d8bf7b8d21b035484b99d53b539c<br>
-peazip_7.8.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;&nbsp;
-59f29c9be9ada66870b4c6020b32aaeac3f27021ad3b29829e55b4f3c682fb1a<br>
-peazip_portable-7.8.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-afd63508de1b18ac93d34894df3a208a4a707022915b0e31ec657fee185cc15e<br>
-peazip_portable-7.8.0.LINUX.Qt.tar.gz&nbsp;&nbsp;&nbsp;
-8780a614c04ca9d32c7585f6079b7c75a47ffb2dd5f30822b65caf64259829ce<br>
-peazip_portable-7.8.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;&nbsp;
-146795eb5005525a65246752e4b99f0f107dbf2b32d19e8d34a90232a05ce322<br>
-peazip_portable-7.8.0.LINUX.x86_64.Qt5.tar.gz&nbsp;&nbsp;&nbsp;
-258a7172fb984d29ed5072212624a601041cc557401feef54da07ad42e2f998d<br>
-peazip_portable-7.8.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-874bf93a5bba05b7bc149dd286c7b49f0408f5aa4fc43e20ea76fd260bc0aca5<br>
-peazip_portable-7.8.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-0f0143b7fa6a0c4b9497ac767a333f02544968b78e3e16221a0f84c2f184ac4f<br>
-peazip-7.8.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-c3cf6149f6cb708e3d32c06c0b616cbc8ee454548fc7d2989c96c42cb420718a<br>
-peazip-7.8.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-2f469b7a216c42285425b7610c92aee492fe8d7babb0755a76d0a6c711efa7dc<br>
-peazip-7.8.0.src.zip&nbsp;&nbsp;&nbsp;
-84b5379e712240ee9f45d63a520e006af6505508fff2a56a899b798fc4e208ef<br>
-peazip-7.8.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-1d89648ffa4e2ce0682c6b748c96c575df832097313865a6805d93ad51c261a6<br>
-peazip-7.8.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-f67518e1ceeef5d3d484c0f500c2ed420e00f8ae2f6d430758e1a62f840611b6<br>
-peazip-7.8.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-5d9a48904f873127f53f3ed1d64034b4ff8e6fc9be3956c4bfa0981e971d42a2<br>
-peazip-7.8.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-591d6b2de06cf3deb098b11dcc4bdafa78be77b57c625ec7583358241a9135a6<br>
+7.9.0 release packages</span></h3>
+PeaZip_7.9.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;
+&nbsp;197a0143c26cf3c5b9c4576bf5823f5c748f1874535cefe4f190b1de48bdd160<br>
+peazip_7.9.0.LINUX.x86_64.GTK2.deb&nbsp;&nbsp;
+&nbsp;c0a90680c15c46395f227af302e888540dda74977e8cb81c3564bcf0a7908c44<br>
+peazip_7.9.0.LINUX.x86_64.Qt5.deb&nbsp;&nbsp;
+&nbsp;f1692c30bc8e2e8439d6ef09ed401186ab55b4ed6b82176dede711f923c24c57<br>
+peazip_portable-7.9.0.LINUX.GTK2.tar.gz&nbsp;&nbsp;
+&nbsp;ff8513a3d956f2c0df56b9ad1f4ae036b18bf0ee8b5cae799baaf9d0b0704b8e<br>
+peazip_portable-7.9.0.LINUX.Qt.tar.gz&nbsp;&nbsp;
+&nbsp;9f220b68a2dcc4dc5e0abce3c3e2fa1f8c40d72055aa1e20ecd7dfc0236245f3<br>
+peazip_portable-7.9.0.LINUX.x86_64.GTK2.tar.gz&nbsp;&nbsp;
+&nbsp;4ed599fa1d1e3ed02e57ed5400ec45dab97554efcc15efcbae020760cea180de<br>
+peazip_portable-7.9.0.LINUX.x86_64.Qt5.tar.gz&nbsp;&nbsp;
+&nbsp;848b20501254408951a0c152c0791200e019ddf9408e4823df20b5ece2f14d6e<br>
+peazip_portable-7.9.0.WIN64.zip&nbsp;&nbsp;
+&nbsp;a557a77f21a0f8b11e051edaaa92a6e3c0c2502d46bae8c69c15923ad1f524ac<br>
+peazip_portable-7.9.0.WINDOWS.zip&nbsp;&nbsp;
+&nbsp;734e24ead1065d031b3dc2e9831497ce00180208ac371152ad1a27a482f29d18<br>
+peazip-7.9.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;
+&nbsp;79f1566dde4a361d7c514d9ebb138dbdce9b35b791349227adf7d2d5aee4b9cc<br>
+peazip-7.9.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;
+&nbsp;f704efb7403f19eca06d58ad0b64f62f1464d6dac1a56c714e1d59b3ba689a8c<br>
+peazip-7.9.0.src.zip&nbsp;&nbsp;
+&nbsp;b2e80860035095e353608c85a542b39458d07fa2ef81ca9eb619da0041df1e94<br>
+peazip-7.9.0.WIN64.exe&nbsp;&nbsp;
+&nbsp;de5abc28d9dccfa5a031d675ac9cf1e5cc4db2c5eef3bc1626ef491ed0656c9c<br>
+peazip-7.9.0.WIN64.msi&nbsp;&nbsp;
+&nbsp;c93774788a9e70ea78edd2359afebc0f14f0d768d166f4ee29df0f395f3bf340<br>
+peazip-7.9.0.WINDOWS.exe&nbsp;&nbsp;
+&nbsp;5b753cd64020f2edb26a5c37b721e1a5ba7d8d8f8a970e5b8f2dddc9a16248a8<br>
+peazip-7.9.0.WINDOWS.msi&nbsp;&nbsp;
+&nbsp;b112e8317d1601c64d1bb023f049fd2d42721dcea0744255416a9c45b64a19c8<br>
             </td>
           </tr>
         </tbody>
@@ -397,6 +396,77 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2019 12 01 ..
 CURRENT </div>
+2021 04 19<br>
+            <div style="margin-left: 40px;">7.9.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.00<br>
+            <div style="margin-left: 40px;">Added 512 bit hash
+functions to PeaUtils menu, also available from Windows context menu
+(CRC, hash entry): Blake2b, SHA512, SHA3_512, Whirlpool<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Improved theming: new
+customizable parameters - beyond standard scaling which follows
+system's metric - can be set at runtime, and saved into themes, to
+improve usability for visually impaired users, small / far screens, or
+touch devices<br>
+            <div style="margin-left: 40px;">Spacing [small, medium,
+large] to increase spacing in file manager and row height in tables<br>
+Zooming [100% to 150%] to enlarge icons and graphic elements<br>
+            </div>
+(Windows) Quick delete function can now delete files requiring UAC
+elevation<br>
+Working directory is now set to by default to: user tmp for preview
+operations, output for other operations<br>
+            <div style="margin-left: 40px;">"Extract everything for"
+preview for special file types now uses working directory (as standard
+preview mode)<br>
+"Interactive extraction" now uses working directory; disallowing
+temporary work files results in disabling interactive extraction,
+falling back to standard extraction mode<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">(Linux) Improved
+interactive extraction, which is now set on by default in extraction
+screen<br>
+            <div style="margin-left: 40px;">If no naming conflict is
+detected, the output data is now moved, if possible, rather than copied
+to the intended destination, which is extremely faster<br>
+            </div>
+(Windows XP, ReactOS) Fixed handling non supported additional 7Z codecs<br>
+(Windows) "TAR before" action now correctly asks for UAC elevation if
+needed<br>
+Improved support for ZPAQ format<br>
+            <div style="margin-left: 40px;">Fixed test of ZPAQ format
+from context menu<br>
+ZPAQ format extraction, without checking "Absoulte paths", removes
+extra nesting levels from the output<br>
+            <div style="margin-left: 40px;">In case multiple revisions
+are featured, the nesting (which starts from the root of the archive)
+is preserved<br>
+            </div>
+            </div>
+Main window is now hidden during list, test, and ctrl+c/ctrl+v
+extraction operations, in order to reduce visual clutter accordingly
+with behavior during archive, and extract operations<br>
+            </div>
+            <br>
+WINDOWS &amp; LINUX INSTALLERS<br>
+            <div style="margin-left: 40px;">(Linux) Qt5 build available
+pre-packed as DEB and RPM, alongside portable version not requiring
+installation <br>
+            </div>
+            </div>
+            </div>
+            <br>
 2021 03 21<br>
             <div style="margin-left: 40px;">7.8.0<br>
             <div style="margin-left: 40px;">BACKEND<br>
