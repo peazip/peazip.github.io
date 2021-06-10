@@ -1,0 +1,551 @@
+2021 04 19
+7.9.0
+BACKEND
+Pea 1.00
+Added 512 bit hash functions to PeaUtils menu, also available from Windows context menu (CRC, hash entry): Blake2b, SHA512, SHA3_512, Whirlpool
+
+CODE
+Various fixes
+
+FILE MANAGER
+Improved theming: new customizable parameters - beyond standard scaling which follows system's metric - can be set at runtime, and saved into themes, to improve usability for visually impaired users, small / far screens, or touch devices
+Spacing [small, medium, large] to increase spacing in file manager and row height in tables
+Zooming [100% to 150%] to enlarge icons and graphic elements
+(Windows) Quick delete function can now delete files requiring UAC elevation
+Working directory is now set to by default to: user tmp for preview operations, output for other operations
+"Extract everything for" preview for special file types now uses working directory (as standard preview mode)
+"Interactive extraction" now uses working directory; disallowing temporary work files results in disabling interactive extraction, falling back to standard extraction mode
+
+EXTRACTION and ARCHIVING
+(Linux) Improved interactive extraction, which is now set on by default in extraction screen
+If no naming conflict is detected, the output data is now moved, if possible, rather than copied to the intended destination, which is extremely faster
+(Windows XP, ReactOS) Fixed handling non supported additional 7Z codecs
+(Windows) "TAR before" action now correctly asks for UAC elevation if needed
+Improved support for ZPAQ format
+Fixed test of ZPAQ format from context menu
+ZPAQ format extraction, without checking "Absoulte paths", removes extra nesting levels from the output
+In case multiple revisions are featured, the nesting (which starts from the root of the archive) is preserved
+Main window is now hidden during list, test, and ctrl+c/ctrl+v extraction operations, in order to reduce visual clutter accordingly with behavior during archive, and extract operations
+
+WINDOWS & LINUX INSTALLERS
+(Linux) Qt5 build available pre-packed as DEB and RPM, alongside portable version not requiring installation
+
+2021 03 21
+7.8.0
+BACKEND
+PEA 0.77
+
+CODE
+(Linux) Alternative Qt5 build is now available as portable package
+If a setting requires to restart PeaZip (localization, system integration, change work folder) it is told in the hint text for the item
+Various fixes and improvements
+
+FILE MANAGER
+(Windows) Drag&drop now allows to drag-extract files directly to other applications, previoulsy it was possible to drag-extract to the system only - 2021 03 22 fix for Windows 32 bit version, sources and legacy Windows 32 bit packages were republished and online hash values were updated
+Righclicking an element on the breadcrumb it is now possible to use context menu functions on it - e.g. display properties, open the path in system's file explorer, open command prompt here, etc
+
+EXTRACTION and ARCHIVING
+Interactive extraction option (checked by default on Windows) enables two-step extraction for all archive types supported through 7z/p7zip: content is extracted to a fresh folder and then moved to actual output destination with standard system's calls.
+When interactive extraction is used, all unneeded levels of directory nesting are removed, and conflicts with existing files are prompted interactively to user.
+Unchecking the option, it is possible to perform single-step extraction as in previous versions, with policy based directives to resolve naming conflicts without needing user interaction (recommended when creating scripts).
+It is now possible to set custom extensions for "Extract everything for" in Options > Settings > Archive manager, Extract group
+It is now possible to replace archive extension with a custom extension from archiving screen, Advanced tab
+In res/presets/custom directory are provided some pre built compression settings for comic book archive formats which uses the new custom extension feature
+Priority for archiving and extraction tasks can now be permanently set from Options > Settings > General, Tasks priority
+(Windows 7+) Global progress is shown in application's icon in taskbar
+
+2021 02 12
+7.7.1
+BACKEND 
+Pea 0.76
+UPX was removed from Windows packages due the amount of false positives triggered in (low quality) security software; it is possible to add UPX support installing Additional Formats Plugin, or downloading and copying the most up to date UPX executable in res\upx subfolder in PeaZip's directory
+
+CODE
+Command line -ext2simple and -ext2simplefolder can now accept also empthy output path (extract to archive's path)
+-ext2simplefolder as -ext2folder (switch -*folder) apply smart folder policy, while -ext2simple and -ext2here ignores it
+Updated web search (Ctrl+Alt+F3)
+Updated Windows installers to work with recent versions of InnoSetup (.exe) and MSIWrapper (.msi)
+Various fixes
+CPUAARCH64 now disable Intel ASM to allow build on ARM64 architectures
+fixed adding multiple .enc suffix
+fixed various issues with non-English localizations
+fixed issue with preview for special file types (bat, exe, html) resulting in extraction instead of preview
+improved handling special characters in password for arc, rar, and pea formats
+(Linux) improved handling of special characters in filenames
+(Linux) fixed issues with smart folder option
+
+EXTRACTION and ARCHIVING
+PEA compression and decompression can now be cancelled from the GUI
+
+2021 01 08
+7.7.0
+BACKEND
+(Linux) Can now optionally use system p7zip, if installed, from Options > Settings, General tab
+requires p7zip-full (or equivalent package) to be installed in order to have a 7z binary compatible with PeaZip's requirements in terms of syntax and features
+
+CODE
+Various fixes
+
+FILE MANAGER
+Added shortcut Ctrl+W to close window, consistently with conventional use in WinRar and Windows file explorer
+Improved control over temporary work directory, used when the archive is created or edited, during drag and drop extraction (Windows), and content preview
+Output: faster as no copy to destination is needed, more secure as no content is unpacked/decrypted outside of the intended destination path
+Output, preview in user's temp
+User's temp (as conventionally used by most applications): in case of failure for any reason, user's temp folder is the single place to look for orphaned data and can be safely cleaned
+None, user's temp if needed: allows exceptions to perform drag and drop extraction and preview using user's temp
+None: no exceptions allowed, no temporary work data is saved, this does not allow to perform neither drag and drop extraction nor preview, as archive content can't be transparently unpacked and passed to system's drag & drop handler, nor to the associated application
+
+EXTRACTION and ARCHIVING
+Added read support to .appxbundle format
+
+2020 12 15
+7.6.0
+BACKEND
+(Winodws, ReactOS) McMilk codecs in 7z\Codecs path are now automatically checked at PeaZip startup, in order to disable them (moving in 7z\Codecs\bk) on systems not capable to run them (as XP or ReactOS), and re-enable them on other systems; this works for both Portable and installable packages without requiring manual intervention
+
+CODE
+Various fixes
+
+FILE MANAGER
+(in left navigation panel) Archive treeview is now automaticaly updated accordingly to browsing in file manager area
+ This option can be fine tuned in Options > Settings > Archive manager
+Various usability improvements
+Can now set current path as default archiving or extraction path
+Options > Settings > General, Advanced, and Archive manager tabs reorganized
+Improved and updated themes, and simplified Theme tab
+
+EXTRACTION and ARCHIVING
+Improved handling ZIP files with code pages different than local
+Can now customize code page for reading/writing filenames in ZIP archives, from Options > Settings, Advanced tab it is possible to set:
+Local code page, then UTF-8 for sysmbols outside local code page (default)
+Force UTF-8 for non-ASCII characters
+Force local code page
+Use a custom code page: an arbitrary code page can be entered by user (the host machine needs to support the code page to run the tasks, otherwise tasks can be saved as scripts and run on different machines)
+Text encoding entry is now accessible also from application's file browser context menu, and in Archiving and Extraction screens context menus
+Within PeaZip file manager it is now possible to use copy/paste shortcuts Ctrl+C (or Ctrl+X) / Ctrl+V to extract items from archives to filesystem
+If clipboard is set to keep multiple selection operations at once:
+Copy/paste extraction is possible form multiple archives at once
+It is also possibile to mix cut/paste and extraction operations
+Extraction targets the file system, it is not currently possible i.e. to directly paste compressed items from archive A to archive B
+
+2020 11 13
+7.5.0
+CODE
+Various fixes
+
+FILE MANAGER
+Create new folder is now also available for 7Z/p7Zip and RAR supported archive types
+Improved file renaming routines
+added function to cutting file names at specified lengtt
+added function to replace / remove non-ASCII characters
+all quick rename functions (lowercase, replace string, etc...) are now also available when browsing 7Z/p7zip and RAR supported archive types
+Updated icons in embedded theme and added icons to distinguish common archive types
+Updated Ten theme
+
+EXTRACTION and ARCHIVING
+Added "Extract everything for special file types" (to 7Z-supported archive types) to optionally extract the entire archive (or current path) to preview special filetypes which usually needs external data to properly run, in example .html, .bat, and .exe files
+From Options > Settings > Archive manager, Extract group is possible to customize "Extract everything for..." behavior
+Never use special preview, Ask, Always (default)
+Extract entire archive (default) or Extract displayed items only (items in current path, or matching search filters) which can be faster than extracting the entire archive
+Archive timestamp preservation directive is now also applied to rename and delete operations (previously only for add / update)
+Options > Settings > Archive manager, Extract group: added option to auto close PeaZip after extraction if no browsing actions took place (default off), useful in example if a downloaded file was opened for quick inspection before extraction
+Options > Settings > General (Windows): added options for locking or hiding target window during drag and drop operations, by default target window is hidden and locked while the operation is running
+Out of the box default compression levels are set to fast for ZIP and 7Z formats
+compared to previous ZIP normal default, ZIP fast is over 400% faster providing 2% worse compression ratio, and 7Z fast is 25% faster providing 3% better compression ratio
+compared to previous 7Z normal default, 7Z fast is 500% faster providing 5% worse compression ratio
+please note compression levels and compression presets works as usual, the new settings are meant only to provide novice users better performance balance for general purpose tasks
+Modified existing preset scripts
+10 from faster zip to fast zip
+12 (Linux) from .tar.zst to .7z using Zstandard compression (which requires single pass)
+Test mode always show details about single files in archive
+
+WINDOWS & LINUX INSTALLERS
+(Windows XP) additional 7z codecs introduced in 7.4 line, incompatible with Windows XP, are deactivated when installed on XP machines, consequently the error messages are no longer triggered when using 7z backend
+
+
+2020 10 05
+7.4.2
+BACKEND
+(Linux) p7zip 16.02 superseded by szcnick/p7zip fork 17.02, not available for legacy 32 bit platforms
+added support for FLZMA2, LZ4, and Zstd compression algorithms in .7z format
+algorithm selection dropdown is now common to all platforms, unsupported algorithms for one platform are preceeded with / (currently unsupported /Brotli, /Lizard, and /LZ5 on linux)
+
+CODE
+Various fixes
+
+FILE MANAGER
+(Windows) File manager now displays icons for exe files for better usability, using a separate thread; previously the feature was enabled only if browser was set to show thumbnails
+In-archive "Extract and open with PeaZip" and "Preview with PeaZip" now forces trying to open file as archive, as in "Open as archive" menu entry
+
+EXTRACTION and ARCHIVING
+(Windows) Drop target window is locked, as in WinRar, until drag and drop operation is completed
+If password contains characters that can be troublesome if used in scripts (i.e. quotes) it is now possible to interactively enter password in console to create / extract archive types handled through 7z/p7zip, ARC, and RAR backends
+
+2020 09 08
+7.4.1
+BACKEND
+Pea 0.74
+Introduced PEA format revision 1.3, supporting multiple cascade authenticated encryption, each cipher with 256 bit key, in EAX mode: AES+Twofish+Serpent, Twofish+Serpent+AES, Serpent+AES+Twofish
+Fixed a bug preventing extraction of PEA archives in case of naming conflicts
+
+CODE
+Fixed Fast-LZMA2 dictionary sizes
+Fixed error 127 erroneously raised in some cases
+
+FILE MANAGER
+Improved directories smart sorting in file manager
+Improved tabs
+closing last tab collapses tab bar
+mouse middle button closes tab
+
+WINDOWS & LINUX INSTALLERS
+(Windows) Fixed context menu entry "CRC, hash and file tools", now pointing by default to "Checksum/hash (common algorithms)" consistently to all other calls form PeaZip
+
+2020 08 23
+7.4.0
+BACKEND
+PEA 0.73
+(Windows) Tino Reichardt (mcmilk) codecs for .7z format v1.4.5r2
+
+CODE
+Various fixes
+Online resources pointing to new web space on GitHub
+
+FILE MANAGER
+Added shortcuts to set archiving/conversion and extraction options, from context menu and from Options > Archive manager screen
+Added button to change case on the fly for checksum/hash (when encoded hex or lsbhex)
+GUI refresh
+Added main menu shortcuts to toggle most common browser's layout options: side bar, tool bar, tab browser bar
+Modified aspect of address bar and tab bars
+
+EXTRACTION and ARCHIVING
+7Z
+(Windows) Added support for Tino Reichardt (mcmilk) codecs for .7z format
+7Z archives can now be created using also Brotli, Fast-LZMA2, Lizard, LZ4, LZ5, and Zstandard compression algorithms in addition to traditional ones
+7Z archives created using those extra algorithms can be extracted by PeaZip or Reichardt's 7-Zip fork, cannot be extracted by plain 7-Zip or p7zip without using Reichardt's codecs
+Compression presets 11 and 12 changed from tar.br and tar.zst to 7z format with Brotli and Zstd compression respectively
+ARC
+Added options to add recovery records and repair archive, from "Test" dropdown in tool bar and in "More" group in context menu
+RAR
+(Windows) Improved creation support using Rar.exe, if featured in the system, introduced as prototype in previous release
+Other than in WinRar's application path Rar.exe is now searched also in PeaZip's directory, in case user wants to copy the exe here for portability: it is sufficient to copy Rar.exe from WinRar's path to PeaZip or PeaZip Portable application's path, or in said path into res\ folder, or in a subfolder named res\rar or res\unrar: any of those locations is supported
+Add to separate archives and Archive to original path options enabled for RAR backend
+New RAR-specific options supported
+RAR archive header encryption is now possible
+RAR archives can be locked
+Can now set recovery records percentage
+Can now set archive time to: current system time, original archive time, most recent item in archive
+It is now possible to save RAR compression settings in custom compression settings profiles
+RAR compression preset is now available, it is shown only if Rar.exe is detected
+It is now possible to update, edit, rename, and delete files in existing RAR archives
+Application title will now display if archive is RAR4 or RAR5, and if it is locked
+Added options to lock archive, add comment, add recovery records, repair archive, from "Test" button dropdown in tool bar and in "More" group in context menu
+ZIPX
+.zipx archives are now write supported and can now be edited (add, delete, rename items in existing archives)
+It is now possible to optionally to switch to .zipx extension if a method different than Deflate/Deflate64 is set for zip compression, accordingly to WinZip's definition of zipx format
+Please note that are currently supported, for reading and writing, following compression methods defined in zipx standard: Bzip2, LZMA, LZMA2, PPMd; currently WavPack, JPEG and MP3 preprocessors are unsupported (both for reading and writing) unless proper codecs are separately installed (cannot be added to PeaZip packages due closed source nature of those codecs)
+Repair archive function, for RAR and ARC files, is available in PeaZip's file manager also before opening the archive, in case the specific damage does not allow to successfully browse the archive
+
+2020 06 23
+7.3.2
+CODE
+Various fixes
+
+FILE MANAGER
+Added support to more file extensions:
+.cramfs compressed ROM/RAM file system images
+.ext, .ext2, .ext3, and .ext4 filesystem images
+.hfsx filesystem images
+.qcow, and .qcow2c QEMU disk images
+.scap, and .uefif firmware files
+.mub, .pkg, and .ppmd compressed files
+Archive browser now will automatically ask for password to open files with unreadable TOC, for all formats supporting TOC encryption, e.g. archives encrypted with "Encrypt also file names" option
+Fixed browsing of encrypted ARC files
+Fixed: can now delete files within WIM archives
+
+EXTRACTION and ARCHIVING
+[Prototype] Support for RAR compression if WinRar 64 or 32 bit is installed in the system (Windows)
+Setting Custom compression type optionally aut-configures PeaZip to use RarLab's Rar.exe as compressor; if libre_directive option is set to 2 (most restrictive, not allowing closed archive formats), rar creation will be not allowed in any case
+Rar.exe will be set to use PeaZip's work dir as other backend binaries
+For RAR archives it is possible to set
+compression level, from store to maximum
+action: new archive, add, update, freshen, sync with disk
+spanning in multiple volumes
+password, optionally with two factor authentication (password + keyfile)
+create RAR5 or legacy RAR4 archive
+(RAR5) set dictionary size 1..1024 MB
+(RAR5) use BLAKE2 hash instead of CRC checksum
+Create self extracting RAR
+Solid archive
+Recovery records
+Save files open for writing
+Save NT security information
+Save NTFS streams
+Set archive time to last modified object
+Improved support for more RAR options is planned in future, to allow efficient RAR creation from PeaZip GUI, providing RarLab's WinRar is installed in the system and Rar.exe is available.
+
+please note PeaZip does not implement any autonomus RAR creation feature, which is prohibited by RarLab's licensing for RAR, and only passes parameters to Rar.exe if separately installed by the user from RarLab's packages
+
+
+2020 06 02
+7.3.1
+BACKEND
+Zstd 1.4.5
+
+CODE
+Various fixes, improved progress bar accurancy for multiple tasks
+
+FILE MANAGER
+Fixed folder sorting, now folders are always grouped before files
+Improved theming, window and toolbar colors can now be customized
+New Graphite, Mocha, and Senape themes with intermediate color tones
+(cross-platform limitation) System-rendered widgetsets are not affected by theme colors as native drawing methods were not bypassed by theme implementation
+(Windows 10 limitation) Dark Mode colors are not passed from system to application, as workaround it is possible to use an High Contrast theme, which passes colors consistent with Dark Mode UI, until a complete API is made available to developers
+
+EXTRACTION and ARCHIVING
+Added support for .zstd extension, as used in compressed cpo in new rpm installers
+(Linux) Updated sfx module for p7zip
+
+2020 05 18
+7.3.0
+BACKEND
+Pea 0.71 with PEA file format revision 1.2
+
+CODE
+Various fixes
+
+FILE MANAGER
+Added BLAKE2S and BLAKE2B hashes to
+File manager's hash (for file hashing and deduplication)
+File tools set of hashes
+Optional hash for raw file split
+Optional hash for PEA format
+Added support for opening as archive modern Linux package formats: .appimage, Ubuntu's .snap, and FreeDesktop Listaller .ipk
+Browser now uses smarter sorting for file/directory names
+By default now PeaZip tries to open archives containing errors
+Errors detected browsing the archive are now notified in status bar, even if it is possible to list archive's content
+"Try to open archives contining errors" can be disabled in Options > Settings > Archive manager
+Fixed some cases not allowing secure deletion and zero deletion of files
+Improved deletion of temporary work files
+
+EXTRACTION and ARCHIVING
+Added option to not ask confirmation for delete after archiving/extraction, in Options > Settings > Archive manager
+Delete is not triggered if errors are detected
+Delete is triggered after extraction only in case of complete extraction (extract all)
+Added option to set archive time from most recent file in archive, for all 7z/p7zip formats
+Added option to improve Brotli compression using more memory at cost of small impact on speed (archives created with this option may not be compatible with some Brotli decompressors)
+Added option to improve Zstandard compression using more memory at cost of small impact on speed
+Added new advanced options to custom compression settings files, keeping compatibility with setting files created with older versions
+Presets were rebuilt accordingly new format
+Two new presets: Medium compression with 7z fast, and Fast compression with 7Z fastest
+It is now possible to cancel all tasks of a sequence in the case one of the archiving / extraction task fails
+
+WINDOWS & LINUX INSTALLERS
+(Windows) Improved installer
+(Windows) Installer now available also as .msix package
+(Linux) Created generic DEB and RPM packages, x86-64 native
+Some binaries, i.e. FreeArc, may need IA32-libs to run
+
+2020 05 06
+7.2.2
+FILE MANAGER
+(Windows) fixed bug in multiple selection for drag and drop
+Updated translations, modified texts of Presets to clarify compression level to be expected
+
+EXTRACTION and ARCHIVING
+Fixed save custom options fields for 7z/p7zip and Arc
+
+2020 04 27
+7.2.1
+BACKEND
+PEA 0.70
+(Linux) UPX 3.96
+Please note: updating UPX in Windows packages triggered false positives from multiple antimalware, consequently the update was removed from Windows packages restoring UPX 3.95.
+This is not, in any way, a fault of UPX, which is and remains a legitimate and safe software, but being one of the tools that may be employed by malware to compress binary payload, it is regarded as higly suspicious by most anytivirus, and in the past it triggered several false positives for PeaZip for Windows, almost at each update, taking months to be corrected from antivirus teams - and some of false positives are not yet fixed after years, nor the feedback mails were ever answered.
+For the future I'll consider about introducing UPX support as a separate plugin, so it can be stripped from main package, and manually updated by end user, to keep it up to date e.g. in the case security issues surfaces on older UPX versions.
+If you want to use last version of UPX on PeaZip for Windows, please replace the executable manually, until same syntax is honored the executable can be freely replaced.
+
+CODE
+Built with Lazarus 2.0.8
+(Windows) Updated custom SendTo menu links for working with 32 and 64 bit systems, packed in SendTo.7z in program's path
+Various fixes
+
+FILE MANAGER
+(Windows) Added SMART entry to access to system's disk diagnostic data, in application's context menu File manager > System tools
+Fixed: CRC and hash values are now reported also for empty files (previously were left blank)
+File tools: improved "Checksum/hash file(s)" report window, with the new context menu it is now possible to:
+save each single crc or hash value to file, rightclicking on the cell of the value
+save all information to file, including all CRC and hash computed
+
+EXTRACTION and ARCHIVING
+Fixed: advanced compression settings was not preserved after direct creation of archive form context menu
+Fixed; various issues with new advanced compression settings mechanism
+(Windows) Fixed drag and drop extraction of items with names containing characters non valid for filenames
+Context menu Add to 7Z and Add to ZIP now uses compression settings from PeaZip configuration rather than default compression settings, unless a specific level of compression is stated (i.e. Add to 7Z ultra)
+
+WINDOWS & LINUX INSTALLERS
+(Windows) Added context menu entries to encrypt to 7Z format (checked by default), and to add to 7Z format with fastest compression (unchecked by default)
+
+2020 04 08
+7.2.0
+CODE
+Various fixes and improvements
+
+FILE MANAGER
+Extended options to manually update edited files in archive (consistently with update dialog) in context menu > more submenu
+it is now possible to update archive and discard temp edit files (as in auto update dialog Yes/Clear option), and to discard edits without update
+
+EXTRACTION and ARCHIVING
+Added option to automatically close PeaZip when task completes
+Added options to save and load custom compression settings
+Menu entries are available in main menu > Layout (in compression screen) and in compression presets context menus (in file browser and in compression screen)
+Compression settings are saved by default to "Compression settings" folder in same path of PeaZip configuration
+Password and keyfiles are not saved in custom compression settings, to manage passwords safely see instead main menu > Tools > Password manager
+Volatile, context dependant variables can be saved alongside non-volatile ones, but will be lost in subsequent uses unless the custom setting is reloaded (in Options > Advanced volatile variables can be shown in italic font)
+Presets for archive creation / conversion are now rewritten to use new compression setting mechanism, new presets supersedes both old presets and favourite formats menu entries
+Presets are saved in PeaZip\res\presets folder, in PeaZip's program path; apart for being saved separately they are standard compression setting files and can be used as such
+To customize an existing preset with a custom compression settings file, copy the desired custom compression settings file in presets folder, in place of one of the existing preset files
+Optionally, editing the compression setting file is possible to change its displayed file name, the name that will be shown by PeaZip in presets menu
+New presets: ZPAQ ultra, ZPAQ, ARC, Brotli, Zstandard
+Extended non-volatile options saved to configuration (and compression settings)
+7z/p7zip advanced compression options for dictionary, word, passes and block size are now remembererd
+File spanning options are now remembered
+Improved support for ZPAQ format
+AES256 encryption, supported by design by the format, is now enabled
+Compression settings were optimized for better results
+From Advanced tab of extraction screen are now supported following options
+Restore files to original absolute paths
+Separate extraction of all revisions of the archive
+Overwrite existing files
+Test operation is now enabled
+ZPAQ is now available in presets at medium and ultra compression formats
+
+2020 03 08
+7.1.1
+CODE
+Various fixes and improvements
+improved efficiency of context menu entries
+improved file renaming
+Updated application and antivirus automatically detected in "Open with" menu
+Improved support to Windows Defender and MBAM to scan files from PeaZip archive/file browser
+
+FILE MANAGER
+Improved editing files in archive
+dialog to update modified preview files now allow 3 choices
+"Yes / Clear" update the archive and clear temporary preview data (as in previous versions), mimimize disk occupation and time data is left on the disk
+"Yes" update the archive and let temporary preview data on disk to allow instantaneously re-opening files, not needing new extraction, in order to perform new edits
+"No" discard changes clearing temporary preview data (as in previous versions)
+
+EXTRACTION and ARCHIVING
+Added support for Microsoft MSIX app package and ESD image formats
+
+WINDOWS & LINUX INSTALLERS
+Improved Windows installer
+new default language option is to do not change current installation language
+"Add to archive" and "Extract to..." context menu entries are now optional and can be unchecked
+
+2020 02 02
+7.1.0
+BACKEND
+Added Brotli 1.0.7 backend
+Added Zstd 1.4.4 backend
+Pea 0.68
+
+CODE
+Various fixes and improvements
+
+FILE MANAGER
+Added "Type here to search in current path" hint to address bar to make this feature more esaily discoverable
+Added compression method information when browsing archives supported through 7z/p7zip backend
+Improved file rename
+Added option to rename only files
+Improved hints about rename functions in confirmation dialogs
+Improved management of compressed TAR files
+Brotli, LPAQ, QUAD/BALZ/BCM, and Zstandard backed now supports previewing compressed TAR files
+Same formats now supports option to auto open compressed TAR archive (previously applied only to formats supported through 7z/p7zip backend)
+Same formats now supports smart extraction feature
+
+EXTRACTION and ARCHIVING
+Added read / write / test support for Brotli (.br) and Zstandard (.zst) files
+Added more dictionary size options for LZMA / LZMA2
+Added compression preset ("Add" button's dropdown menu) for ZIP, Bzip2 method, fast compression
+Improved direct extraction from PeaZip's file browser
+Context menu and Extract dropdown menu now features: extract all here, extract all here smart, extract all here to new folder
+Reduced duplication of destinations in Extract dropdown menu
+Extract all to moved to More group in context menu
+Keyboard shortcuts:
+extract all here Ctrl+Alt+Shift+E
+extract all here smart Ctrl+Alt+Shift+S
+extract all here to new folder Ctrl+Alt+Shift+N
+Instantaneous compression ratio % is shown while running 7z/p7zip compression tasks
+
+2019 12 29
+7.0.1
+BACKEND
+Pea 0.67
+
+CODE
+Various memory management, speed, responsivity and stability optimizations
+For archive browsing, fast mode (equivalent to previous versions default mode):
+Up to -15% memory usage browsing archives containing large number of files
+Up to +35% speed browsing and testing for encryption archives containing large number of files
+
+FILE MANAGER
+Added mass rename option to prepend progressive number to filenames
+Action is available in Context menu, File manager > Rename > 1, 2, 3...
+Items will be numbered following the current sorting order, e.g. name, time/date, size, extension...
+Added support for navigation with mouse buttons
+Button3 go up
+Button4 go forward
+Button5 go back
+New archive browsing optimization option available in Options > Settings > General, Performance group
+Normal, no optimization
+Fast (default, works as "fast open routine" option in previos versions), stop pre-browsing archives containing very large number of files to preserve performance
+Fastest, do not pre-browse archives for very fast opening, as downside this mode does not show archive information, and may non correctly list some out of standard archives
+Row select option for file / archive browser is now duplicated in context menu > Navigation for better discoverability
+Updated translations
+
+EXTRACTION and ARCHIVING
+Fixed: archives are tested for encryption before extraction from SendTo menu entries and from command line
+Improved detection of multipart archives for automatic deletion after extraction option
+Alongside .001 spanning (as in 7-Zip and PeaZip) are now recognized .z01, .zx01, .rar01, .part1.rar spanning conventions followed by WinZip and WinRar
+
+2019 12 01
+7.0.0
+BACKEND
+PEA 0.66
+
+FILE MANAGER
+Added option to automatically open tar archive inside tar.* compressed files
+Option is on by default, can be set in Options > Settings > Archive manager
+Drag & drop can now be hot swapped between standard and custom mode while using the application
+Improved finding duplicate files, both with crc/hash and quick duplicate check: Info column shows "D" for duplicate for each copy of file with same digest value, except the last copy found
+Sorting files for Info column allows to quickly select (and delete) duplicate items
+Sorting files for checksum/hash column allows to easily compare identical files as in previous versions
+New function to analyze content of folders in file browser (from column header menu)
+Info column marks empty folders with "E"
+Checksum/hash column shows content of folders: number of directories, number of files, and total size
+New scaling mechanism for better support of high DPI in PeaZip and Pea executables
+UI elements are scaled at run time at discrete steps zooming up to 10x of design time size, using Lazaruz LCL scaling
+Graphic is accordingly scaled at run time, accepting arbitrarily sized graphic sources
+Embedded 16 and 32 pixel icons are currently provided with 3x definition (48 and 96 pixel respectively) to provide high quality graphic up to 300% scaling
+New themes for PeaZip version 7+ uses 8 or 32 bit PNG with transparency, and currently provides 16 and 32 pixel icons upscaled to 3x definition
+New Windows icons for menus and file types; new icons allows to better distinguish supported file types, at large and small resolutions
+When a single file of unsupported format is passed as parameter, the application lets the user decide if to try to open it as archive or to add it to new archive
+Various fixes
+Fixed System benchmark tool
+
+EXTRACTION and ARCHIVING
+Improved progress bar accuracy
+Option to delete input files after task completion is now globally applied to all archiving / extraction functions
+Also batch version of direct archiving / extraction functions now apply the deletion on completion policy accordingly to the application's configuration
+Alternative versions of batch commands are now available in order to explicitly ignore deletion on completion policy, with "i" appended after function name: -add2peai, -add2crypti, -add27zi, -add27zmaili, -add2separate7zi, -add2sfx7zi, -add2sfx7zmaili, -add2zipi, -add2zipmaili, -add2separatezipi, and -ext2herei, -ext2folderi, -ext2toi, ext2tofolderi, -ext2simplei, -ext2simplefolderi
+Fixed and improved -add2split batch command, can now accept multiple input files and folders (if more than one file is passed as input it will be consolidated in a tar archive)
+
+WINDOWS & LINUX INSTALLERS
+Improved Windows 32 and 64 bit installers
+Added shortcuts to selectively start PeaZip in add, extract or open mode
+Shortcuts are saved in application's entry in Start Menu, and in program's path, and can be freely moved/copied for ease of use
+By default now the installer associate files and create menu entries for all users (local machine)
+New "Install for current user only" checkbox, unchecked by default, to run the installer for current user only
+Various fixes and removal of legacy code
