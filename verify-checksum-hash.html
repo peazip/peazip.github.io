@@ -5,12 +5,22 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Verify file integrity, compute checksum and hash values to detect errors, test data corruption or forgery. CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd hashing utility">
+ content="Verify file integrity, compute checksum and hash values to detect errors, test data corruption or forgery. CRC32, Adler, MD5, SHA, SHA2, SHA256, SHA3, Ripemd hashing utility">
   <meta name="KEYWORDS"
  content="verify, integrity, compute, checksum, hash, hashing, utility, software, CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd, values, detect, errors, test, data, files, corruption, forgery">
   <meta name="ROBOTS" content="all">
-  <title>File hashing / checksum software, verify CRC MD5 SHA values</title>
+  <title>File hashing / checksum utility, verify CRC MD5 SHA256 hash
+values</title>
   <meta name="viewport" content="width=device-width">
+  <meta property="og:site_name"
+ content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title"
+ content="File hashing / checksum utility, verify CRC MD5 SHA256 hash values">
+  <meta property="og:description"
+ content="Verify file integrity, compute checksum and hash values to detect errors, test data corruption or forgery. CRC32, Adler, MD5, SHA, SHA2, SHA256, SHA3, Ripemd hashing utility">
+  <meta property="og:image" content="free-zip/peazip-icon.png">
+  <meta property="og:url"
+ content="https://peazip.github.io/verify-checksum-hash.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
   <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
@@ -122,24 +132,24 @@ PEAZIP FREE ARCHIVER</a> </td>
  style="width: 2px; height: 2px;"><br>
                         </td>
                         <td style="vertical-align: top;"><img
- alt="verify file integrity" src="peazip/compressor.png"
+ alt="calculate hash of file" src="peazip/compressor.png"
  style="width: 2px; height: 2px;"></td>
                         <td
  style="vertical-align: top; background-color: rgb(51, 102, 255);"><img
  alt="error detection utility" src="peazip/compressor.png"
  style="width: 2px; height: 2px;"></td>
                         <td style="vertical-align: top;"><img
- alt="checksum calculator utility" src="peazip/compressor.png"
+ alt="compute sha256 hash value" src="peazip/compressor.png"
  style="width: 2px; height: 2px;"></td>
                         <td style="vertical-align: top;"><img
- alt="download file hashing tool" src="peazip/compressor.png"
+ alt="verify sha256 hash" src="peazip/compressor.png"
  style="width: 2px; height: 2px;"></td>
                         <td style="vertical-align: top;"><img
- alt="detect data errors in files" src="peazip/compressor.png"
+ alt="verify file hash" src="peazip/compressor.png"
  style="width: 2px; height: 2px;"></td>
                         <td style="vertical-align: top;"><img
- alt="detect file corruption with hash and checksum verification"
- src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
+ alt="verify file sha256 hash" src="peazip/compressor.png"
+ style="width: 2px; height: 2px;"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -155,7 +165,7 @@ PEAZIP FREE ARCHIVER</a> </td>
                   <td style="width: 96px; vertical-align: top;">
                   <div style="text-align: center;"> </div>
                   <h2 style="text-align: left;"><img
- title="Compute CRC MD5 SHA to test file errors, detect data forgery"
+ title="Compute CRC MD5 SHA256 to test file errors, detect data forgery"
  alt="verify file integrity" src="zip-files/extract-rar-files.png"
  style="border: 0px solid ; width: 64px; height: 64px;" align="top"></h2>
                   </td>
@@ -253,9 +263,8 @@ HOW TO</a></small></td>
           <tr>
             <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
             <h1 style="text-align: center;"><big><big><big><a
- name="crc_md5_sha_algorithm"></a>File hashing, checksum software,
-verify
-CRC MD5 SHA values<br>
+ name="crc_md5_sha_algorithm"></a>File hashing / checksum utility,
+verify CRC MD5 SHA256 hash values<br>
             </big></big></big></h1>
             <br>
             </td>
@@ -351,8 +360,9 @@ one.<br>
                   <td
  style="text-align: right; vertical-align: middle; width: 64px;">
                   <h2><span style="font-weight: bold;"><img
- title="Find corrupted or forged files" alt="detect corrupt files"
- src="file-format/note.png" style="width: 48px; height: 48px;"><br>
+ title="Find corrupted or forged files"
+ alt="how to verify sha256 file hash" src="file-format/note.png"
+ style="width: 48px; height: 48px;"><br>
                   </span></h2>
                   </td>
                   <td
@@ -448,7 +458,8 @@ chose faster checksums like CRC32 to
 perform a quick comparison (e.g. to detect duplicate
 files of test for casual corruption data errors), but it is
 recommended to employ a cryptographically
-secure hash function (like BLAKE2S or BLAKE2B, SHA-3 algorithms, or the
+secure hash function (like BLAKE2S or BLAKE2B, SHA256, SHA-3
+algorithms, or the
 AES-based Whirlpool512) to detect
 malicious
 corruption / forgery attacks that might be calculated in order to pass
@@ -457,8 +468,8 @@ to one (or some) of the non-secure algorithms exploiting collision -
 algorithm maps different input to same ouput digest.</span> </td>
                   <td style="vertical-align: bottom; width: 64px;">
                   <h3><img title="CRC vs MD5 vs SHA"
- alt="test file integrity with hash value"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+ alt="verify sha256 hash value" src="file-format/quotes-inverse.png"
+ style="width: 32px; height: 32px;"></h3>
                   </td>
                 </tr>
               </tbody>
@@ -516,7 +527,7 @@ format specification's standards, either testing archive table of
 content and single archive items. <br>
             <h2><img
  title="Test file integrity to identify corrupt or forged data"
- alt="detect data corruption or forgery" src="test-archive.png"
+ alt="calculate sha256 hash of file" src="test-archive.png"
  style="width: 100px; height: 45px;"></h2>
 Some archive types (7z, rar, tar, zipx...) improves error detection
 storing pre-computed checksum values (usually CRC32) of archived data.<br>
@@ -855,7 +866,7 @@ Linux/BSD</a><br>
             <td style="vertical-align: top; width: 25%;"><small><img
  title="Online zip software help" alt="compute sha hash"
  src="titles.png" style="width: 129px; height: 2px;"><br>
-            <a name="compute_sha3_hash"></a>SUPPORT<br>
+            <a name="verify_sha256_hash"></a>SUPPORT<br>
             <img alt="how do i zip unzip files"
  title="how to work with rar file" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -899,7 +910,7 @@ Privacy</a></small><br>
 Feed</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="how to detect file errors" title="PeaZip releases feed"
+ alt="verify CRC MD5 SHA256 hash values" title="PeaZip releases feed"
  src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
  align="middle"></small></td>
                 </tr>
@@ -909,7 +920,7 @@ Feed</a></small></td>
 Wiki</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="detect data corruption or forgery"
+ title="PeaZip Wiki online" alt="how to verify sha256 hash"
  src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
  align="middle"></small></td>
                 </tr>
@@ -918,7 +929,7 @@ Wiki</a></small></td>
  href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="compute CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd algorithms"
+ alt="compute CRC32, Adler, MD5, SHA, SHA2, sha256, SHA3, Ripemd algorithms"
  title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
  style="width: 24px; height: 24px;"><br>
                   </small></td>
@@ -929,8 +940,7 @@ Wiki</a></small></td>
                   </small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="calculate CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd values"
- title="Search in PeaZip project domain"
+ alt="free sha256 hash utility" title="Search in PeaZip project domain"
  src="extract-rar/rar-opener.png"
  style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
                 </tr>
