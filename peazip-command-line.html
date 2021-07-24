@@ -699,8 +699,8 @@ adding input from the same directory selecting objects and using
 context menu&#8217;s entry, as an alternative to dragging the object to the
 application window that might be less handy if the workspace is crowded.<br>
             <br>
-            <h2 style="font-weight: bold;"><big>COMPRESSION &amp;
-EXTRACTION SYNTAX EXAMPLES</big></h2>
+            <h2 style="font-weight: bold;">COMPRESSION &amp;
+EXTRACTION SYNTAX EXAMPLES</h2>
             <ul>
               <li><span style="font-style: italic;"><a
  name="compression_script_example"></a>peazip -add2zip
@@ -727,14 +727,35 @@ path of archive1 file</li>
               <li><span style="font-style: italic;">peazip -ext2simple
 archive1 somedirectory</span> extract archive1 in "somedirectory" path</li>
             </ul>
-            <h3><br style="font-weight: bold;">
-            </h3>
-            <h3><big><big><span style="font-weight: bold;">PEA.EXE
+            <br>
+            <h3><big><big><span style="font-weight: bold;">PEAZIP
+WINDOWS INSTALLER SYNTAX EXAMPLES</span></big></big></h3>
+            <br>
+/SILENT performs an unattended installation, not requiring user's
+feedback and assuming default values for all installation parameters<br>
+            <br>
+/VERYSILENT performsa an unattended installation not showing the
+installer's UI<br>
+            <br>
+/IT (example) to set application's language - also apply translation to
+system's context menu entries for PeaZip<br>
+Language, if needed, must be declared as last parameter, with or
+without "/" prefix.<br>
+Supported languages are AR, BG, BY-CR, BY-LT, CHS, CHT, CZ, DEFAULT,
+DE-UM, EN, EN-GB, ES-ES, ES-LA, EU, FI, FR, GL, GR, HE-PROTOTYPE, HU,
+ID, IT, JA, KO, LV, NL, NO, PL, PT-BR, PT-PT, RO, RU, SI, SK, SL, SV,
+TJ, TR, UK, UZ, VN.<br>
+Generally language file isa named using the two letters international
+abbreviation, with exceptions: to identify the exact names of supported
+languages you can check the filename of language files in
+PeaZip\res\lang\ directory.<br>
+            <br style="font-weight: bold;">
+            <h3><big><big><span style="font-weight: bold;">PEA
 SYNTAX EXAMPLES</span><br>
             </big></big></h3>
             <br>
-Syntax for pea.exe backend is documented in <a
- style="font-weight: bold;" href="pea_help.pdf">PEA file
+Syntax for pea backend is documented in <a style="font-weight: bold;"
+ href="pea_help.pdf">PEA file
 format specifications and implementation notes (pdf)</a><br>
             <br>
 More information: <a target="_blank"
