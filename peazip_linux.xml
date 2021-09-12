@@ -34,7 +34,7 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip for Linux</Program_Name>
-		<Program_Version>8.1.0</Program_Version>
+		<Program_Version>8.2.0</Program_Version>
 		<Program_Release_Month>07</Program_Release_Month>
 		<Program_Release_Day>24</Program_Release_Day>
 		<Program_Release_Year>2021</Program_Release_Year>
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Android,Linux,Linux Console,Linux Gnome,Linux GPL,Linux Open Source,Unix,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Bulgarian,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Improved performances, and archive conversion procedure. Updated to szcnick p7zip 17.04, PEA 1.02, Zstd 1.50</Program_Change_Info>
+		<Program_Change_Info>Improved scripting, extraction, and archive manager. Updated to Brotli 1.0.9. Updated DEB and RPM installers.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements />
 		<File_Info>
-			<File_Size_Bytes>10362480</File_Size_Bytes>
-			<File_Size_K>10119</File_Size_K>
-			<File_Size_MB>9.88</File_Size_MB>
+			<File_Size_Bytes>10799260</File_Size_Bytes>
+			<File_Size_K>10546</File_Size_K>
+			<File_Size_MB>10.30</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -95,10 +95,10 @@ The distinctive trait of PeaZip is the innovative and easy to use compression/ex
 			<Application_XML_File_URL>https://peazip.github.io/peazip_linux.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.1.0/peazip_8.1.0.LINUX.x86_64.GTK2.deb</Primary_Download_URL>
-			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.1.0/peazip-8.1.0.LINUX.GTK2-1.x86_64.rpm</Secondary_Download_URL>
-			<Additional_Download_URL_1>https://github.com/peazip/PeaZip/releases/download/8.1.0/peazip_portable-8.1.0.LINUX.x86_64.GTK2.tar.gz</Additional_Download_URL_1>
-			<Additional_Download_URL_2>https://github.com/peazip/PeaZip/releases/download/8.1.0/peazip_portable-8.1.0.LINUX.x86_64.Qt5.tar.gz</Additional_Download_URL_2>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_8.2.0.LINUX.GTK2-1_amd64.deb</Primary_Download_URL>
+			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip-8.2.0.LINUX.GTK2-1.x86_64.rpm</Secondary_Download_URL>
+			<Additional_Download_URL_1>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_portable-8.2.0.LINUX.GTK2.x86_64.tar.gz</Additional_Download_URL_1>
+			<Additional_Download_URL_2>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_portable-8.2.0.LINUX.Qt5.x86_64.tar.gz</Additional_Download_URL_2>
 		</Download_URLs>
 	</Web_Info>
 	<Permissions>
