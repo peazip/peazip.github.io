@@ -440,7 +440,8 @@ a link to PeaZip executable with the desired first parameter.<br>
             <br>
             <h3 style="font-weight: bold;">PEAZIP'S COMMANDS SYNTAX</h3>
             <ul>
-              <li><a name="command_line_compression"></a>-add2archive:
+              <li><a name="command_line_compression"></a><span
+ style="font-weight: bold;">-add2archive</span>:
 add to a new archive and open PeaZip
 GUI to set archive&#8217;s
 type and options;</li>
@@ -452,7 +453,8 @@ existing archive (if found)</li>
 -add2archive-update as previous, but update older
 files only</li>
               </ul>
-              <li>-add27z: add to a new .7z archive;</li>
+              <li><span style="font-weight: bold;">-add27z</span>: add
+to a new .7z archive;</li>
               <li>-add27zmail: add to a new .7z archive and attach it
 to a mail, requires
 compatible mail client like in exampe Outlook and
@@ -466,7 +468,8 @@ and attach it to a
 mail, requires
 compatible mail client like in example Outlook and
 Outlook Express</li>
-              <li><a name="zip_file_command"></a>-add2zip: add to a new
+              <li><a name="zip_file_command"></a><span
+ style="font-weight: bold;">-add2zip</span>: add to a new
 .zip archive;</li>
               <li>-add2zipmail: add to a new .zip archive and attach it
 to a mail, requires
@@ -482,6 +485,8 @@ split a single input file;</li>
             <ul>
               <li><a name="secure_file_deletion_command"></a>-add2wipe:
 securely delete selected file(s);</li>
+            </ul>
+            <ul>
               <li>-add2compare: byte to byte compare two files;</li>
             </ul>
             <ul>
@@ -493,26 +498,63 @@ path, if a file is
 selected) in PeaZip;</li>
             </ul>
             <ul>
-              <li><a name="interactive_extraction_command"></a>-ext2main:
+              <li><a name="interactive_extraction_command"></a><span
+ style="font-weight: bold;">-ext2main</span>:
 open archive in "Archive extraction"
 interface, allowing to specify i/o options, password and keyfile
 (interactively);</li>
-              <li><a name="batch_extraction_command"></a>-ext2here and
--ext2folder: extract archive(s) to its
-own path, &#8220;folder&#8221; variant creates a new folder named after the archive;</li>
-              <li>-ext2to and -ext2tofolder: extract archive(s)
-interactively asking for output directory;</li>
-              <li>-ext2simple and -ext2simplefolder: simplified
-&#8220;blanket&#8221; extraction command for all backends, allows to specify output
-path as first parameter; <br>
+            </ul>
+            <ul>
+              <li><a name="batch_extraction_command"></a><span
+ style="font-weight: bold;">-ext2here</span> is a simplified
+&#8220;blanket&#8221; extraction command for all backends accepting as parameter
+the input archive(s) to be extracted as in "Extract here" action, using
+as output path the directory containing the archive (or the first
+archive of the list in case of multiple input): "extract to new folder"
+and "smart new folder" directives are both set to off during the
+execution of this function, without modifying program's configuration.<br>
               </li>
+              <li><span style="font-weight: bold;">-ext2folder</span>
+(alias-ext2smart) works as previous switch but setting both "extract to
+new folder" and "smart new folder" directives on. In this way the
+archive is extracted to a fresh new folder with unique name (named
+after the archive), but only if 1) the archive's root contains more
+than a single file or a single directory, and 2) in case a file or
+directory with same name exists in destination path.<br>
+              </li>
+              <li><span style="font-weight: bold;">-ext2newfolder</span>:
+works as previous switches but setting "extract to new folder" on and
+"smart new folder" off, in this case the archive's content is always
+extracted to a fresh new folder with unique name, named after the
+archive.</li>
+            </ul>
+            <ul>
+              <ul>
+                <li>-ext2to (and -ext2tofolder, -ext2newfolder...)
+variants extract archive(s)
+interactively asking for output directory;</li>
+                <li>-ext2simple (and -ext2simplefolder,
+-ex2simplenewfolder) variants allows to specify output
+path as first parameter; <br>
+                </li>
+                <li>all those switches runs multiple extraction tasks
+in a single GUI instance (which shows progress bar for current task and
+another progress bar for global progress), allowing i.e. to minimize
+the entire batch of tasks. If this behavior is not wanted, switches with
+"_" suffix, i.e. -ext2here_, runs each extraction process as a separate
+GUI instance.<br>
+                </li>
+              </ul>
             </ul>
             <ul>
               <li><a name="programmatically_list_archive_file"></a>-ext2list:
 list archive(s) content, to quickly look
 what is in the
 archive;</li>
-              <li><a name="programmatically_test_archive_content"></a>-ext2test:
+            </ul>
+            <ul>
+              <li><a name="programmatically_test_archive_content"></a><span
+ style="font-weight: bold;">-ext2test</span>:
 test archive(s) content;</li>
               <li>-ext2openpwtest requires password as paramstr(2)
 (always delimited) and
@@ -527,7 +569,8 @@ selected folder (or
 in its path, if a file is selected)</li>
             </ul>
             <ul>
-              <li>-peaziplanguage followed by name of the langiage file
+              <li><span style="font-weight: bold;">-peaziplanguage</span>
+followed by name of the langiage file
 e.g. it.txt changes language of the GUI and, on Windows installable
 version, launches the .reg file containing translated strings for the
 system's context menu entries (which requires UAC)<br>
@@ -543,15 +586,21 @@ application with factory settings</li>
 to allow
 further user&#8217;s interaction<br>
             <br>
-Direct batch archiving functions <br>
+Direct batch <span style="font-weight: bold;">archiving </span>functions
+as<br>
 -add2pea, -add2crypt, -add27z, -add27zmail, -add2separate7z,
 -add2sfx7z, -add2sfx7zmail, -add2zip, -add2zipmail, -add2separatezip <br>
-and direct batch extraction functions<br>
--ext2here, -ext2folder, -ext2to, ext2tofolder, -ext2simple,
--ext2simplefolder<br>
+            <br>
+and direct batch <span style="font-weight: bold;">extraction </span>functions
+as<br>
+-ext2here, -ext2folder, -ext2newfolder and variants (e.g. -ext2to,
+ext2tofolder, -ext2simple,
+-ext2simplefolder...)<br>
+            <br>
 can delete (asking for confirmation) input files as atomic operation if
 this policy is set in PeaZip - delete after archiving and delete after
 extraction checkboxes in archiving and extraction screens respectively.<br>
+            <br>
 As it could not be handy to have an interactive request prompt in a
 batch script, an alternative version for those actions not applying
 deletion policy after archiving/extraction is available appending &#8220;i&#8221;
@@ -559,8 +608,8 @@ letter to the command: -add2peai, -add2crypti, -add27zi, -add27zmaili,
 -add2separate7zi, -add2sfx7zi, -add2sfx7zmaili, -add2zipi,
 -add2zipmaili, -add2separatezipi, and -ext2herei, -ext2folderi,
 -ext2toi, ext2tofolderi, -ext2simplei, -ext2simplefolderi. <br>
-Using those version of the commands, PeaZip&#8217;s delete after archiving
-and delete after extraction directives are explicitly ignored.<br>
+Using those version of the commands, PeaZip&#8217;s "delete after archiving"
+and "delete after extraction" directives are explicitly ignored.<br>
             <br>
 On MS Windows platforms PeaZip can also send multiple input
 to a single instance using semaphores and temporary files (temp files
@@ -619,7 +668,8 @@ and so on).</li>
 archive1</span> will extract archive1 in its path; using <span
  style="font-style: italic;">-ext2folder</span>
 archive1 will be extracted to a new folder named "archive1" in the same
-path of archive1 file</li>
+path of archive1 file (smart new folder option enabled)<br>
+              </li>
             </ul>
             <ul>
               <li><span style="font-style: italic;">peazip -ext2simple
