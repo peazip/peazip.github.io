@@ -5,7 +5,7 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Fast compression benchmark. Comparison of Brotli, Zstandard formats performances, br and zst compression and extraction speed, comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms.">
+ content="Fast compression benchmark. Comparison of Brotli, Zstandard formats performances, br vs zst compression and extraction speed, comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms.">
   <meta name="KEYWORDS"
  content="brotli, zstandard, zstd, br, zst, compression, test, extraction, decompression, ratio, speed, size, benchmark, performances, comparative, ppmd, deflate, lzma2, algorithms, rar, zip, 7z, fast, fastest, window">
   <meta name="ROBOTS" content="all">
@@ -17,7 +17,7 @@ performances test</title>
   <meta property="og:title"
  content="Fast compression: Brotli Zstandard comparative speed performances test">
   <meta property="og:description"
- content="Fast compression benchmark. Comparison of Brotli, Zstandard formats performances, br and zst compression and extraction speed, comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms.">
+ content="Fast compression benchmark. Comparison of Brotli, Zstandard formats performances, br vs zst compression and extraction speed, comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms.">
   <meta property="og:image"
  content="brotli-zstandard-comparative-benchmark.png">
   <meta property="og:url"
@@ -34,231 +34,89 @@ performances test</title>
  style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
  border="0" cellpadding="0" cellspacing="0">
   <tbody>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
+    <tr>
+      <td style="vertical-align: top; text-align: center;">
       <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+ style="text-align: left; margin-left: auto; margin-right: auto;"
  border="0" cellpadding="0" cellspacing="0">
         <tbody>
-          <tr align="center">
-            <td
- style="vertical-align: top; background-color: rgb(248, 247, 246);">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr align="center">
-                  <td
- style="vertical-align: top; background-color: rgb(236, 235, 234);">
-                  <table style="text-align: left;" border="0"
- cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top;"> <img
- title="Fast compression: Brotli, Zstandard speed performances comparative"
- alt="Fast compression Brotli, Zstandard comparative speed, performances test"
+          <tr>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"> <img
+ title="Fast compression: Brotli vs Zstandard comparative speed, performances test"
+ alt="Fast compression benchmark, comparison of Brotli versus Zstandard"
  src="peazip_ico24.png"
  style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-                        <td style="vertical-align: middle;">&nbsp;
+            <td style="vertical-align: middle;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
-                        </td>
-                        <td style="vertical-align: middle;"><a
+            </td>
+            <td style="vertical-align: middle; font-weight: bold;"><a
  href="index.html">DOWNLOAD
 PEAZIP FREE ARCHIVER</a> </td>
-                        <td style="vertical-align: middle;">&nbsp;
+            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
-                        </td>
-                        <td style="vertical-align: middle;"><a
+            </td>
+            <td style="vertical-align: middle; font-weight: bold;"><a
  href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-                        <td style="vertical-align: top;">&nbsp;
+            <td style="vertical-align: top; font-weight: bold;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
-                        </td>
-                        <td style="vertical-align: middle;"><a
+            </td>
+            <td style="vertical-align: middle; font-weight: bold;"><a
  href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-                        <td style="vertical-align: top;">&nbsp;
+            <td style="vertical-align: top; font-weight: bold;">&nbsp;
 &nbsp; &nbsp; &nbsp;&nbsp; <br>
-                        </td>
-                        <td style="vertical-align: middle;"><a
+            </td>
+            <td style="vertical-align: middle; font-weight: bold;"><a
  href="donations.html">DONATE</a> </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                        <td style="vertical-align: top;"><small><br>
-                        </small></td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top;"><img
- alt="Fast compression benchmark" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="comparison of Brotli vs Zstandard formats performances"
- src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="compare br vs zst compression extraction speed"
- src="peazip/compressor.png" style="width: 2px; height: 2px;"><br>
-                        </td>
-                        <td style="vertical-align: top;"><img
- alt="comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms"
- src="peazip/compressor.png" style="width: 2px; height: 2px;"></td>
-                        <td
- style="background-color: rgb(51, 102, 255); vertical-align: top;"><img
- alt="brotli zstandard fastest compressor" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="brotli vs zstandard" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="which is faster brotli zstandard" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="zstd vs brotli" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                        <td style="vertical-align: top;"><img
- alt="zstd compared to brotli" src="peazip/compressor.png"
- style="width: 2px; height: 2px;"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <table style="width: 960px; text-align: left;" border="0"
- cellpadding="0" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="width: 96px; vertical-align: top;">
-                  <div style="text-align: center;"> </div>
-                  <h2 style="text-align: left;"><img
- title="Brotli, Zstd compression and extraction speed, comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms."
- alt="Brotli vs Zstd algorithm" src="zip-files/extract-rar-files.png"
- style="border: 0px solid ; width: 64px; height: 64px;" align="top"></h2>
-                  </td>
-                  <td style="vertical-align: middle;">
-                  <p><small><a
- name="which_is_the_faster_brotli_zstandard"></a>PeaZip
-is a free cross-platform file compressor application that provides an
-unified
-portable GUI for many Open Source technologies like 7-Zip, FreeArc,
-PAQ, UPX... free alternative to WinRar, WinZip </small><small>and
-similar
-proprietary software</small><small>.<br>
-- Create 7Z, ARC, BR, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ,
-ZIP, ZST
-files<br>
-- Open and extract ACE, ARJ, CAB, DMG, ISO, LHA,
-RAR, UDF, ZIPX files and more,</small><small> over 200 archive types
-supported</small><small><br>
-Features of PeaZip includes: </small><small> </small><small>archives
-opener and extractor, </small><small>batch creation and </small><small>extraction
-                  </small><small>of multiple
-archives at once, </small><small>convert files, </small><small>create
-self-extracting archives, split and join files,
-strong encryption with two factor authentication, encrypted password
-manager, </small><small>secure deletion, </small><small>find
-duplicate files, </small><small>calculate hash and checksum,
-export job definition as script.</small></p>
-                  </td>
-                  <td
- style="text-align: right; width: 224px; vertical-align: middle;">
-                  <div style="text-align: center;"> </div>
-                  <h3><a href="index.html"><span
- style="text-decoration: underline;"><img
- alt="Brotli, Zstandard faster compressor"
- title="Download PeaZip free file compression utility"
- src="free-rar/extract-zip.png"
- style="border: 0px solid ; width: 200px; height: 48px;" align="middle"></span></a></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-help-faq.html">FAQ,
-HOW TO</a></small></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-more.html">REPORT ISSUES</a></small></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-                  </small></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><a
- href="changelog.html"><small>CHANGELOG<br>
-                  </small></a></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255);"><small><a
- href="peazip-compression-benchmark.html">FILE
-COMPRESSION BENCHMARKS</a></small></td>
-                  <td style="vertical-align: top; text-align: center;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
+          </tr>
+          <tr>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><img
+ alt="Comparison of Brotli, Zstandard formats performances"
+ src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
           </tr>
         </tbody>
       </table>
+      </td>
+    </tr>
+    <tr align="center">
+      <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);">
       <div style="text-align: left;"> </div>
       <table
  style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
@@ -279,7 +137,7 @@ Brotli, Zstandard comparative speed, performances test<br>
     </tr>
     <tr align="center">
       <td
- style="background-color: rgb(104, 152, 248); vertical-align: top;">
+ style="vertical-align: top; background-color: rgb(104, 152, 248);">
       <table style="width: 960px; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">
         <tbody>
@@ -322,9 +180,72 @@ compression</a><a style="color: rgb(253, 253, 253);"
       </table>
       </td>
     </tr>
-    <tr align="center">
+    <tr>
       <td
- style="vertical-align: top; background-color: rgb(248, 247, 246);"><br>
+ style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+ alt="br vs zst compression and extraction speed"
+ src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+ alt="Fast compression: Brotli, Zstandard comparative speed, performances test"
+ src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+      </td>
+    </tr>
+    <tr align="center">
+      <td style="vertical-align: top;"><br>
+      <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-help-faq.html">FAQ,
+HOW TO</a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-more.html">REPORT ISSUES</a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
+ href="changelog.html"><small>CHANGELOG<br>
+            </small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(204, 224, 255);"><small><a
+ href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
+ href="peazip-reviews.html">REVIEWS</a></small></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
       <table
  style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
  border="0" cellpadding="24" cellspacing="0">
@@ -354,16 +275,21 @@ compression</a><a style="color: rgb(253, 253, 253);"
             <div style="text-align: left; color: rgb(0, 0, 0);">
             <ul>
               <li>
-                <p><a href="#brotli_vs_zstandard">BROTLI, ZSTD
+                <p><a
+ href="fast-compression-benchmark-brotli-zstandard.html#brotli_vs_zstandard">BROTLI
+VS ZSTD
 BENCHMARK
 SETTINGS</a></p>
               </li>
               <li>
-                <p><a href="#brotli_vs_zstd_compressor">COMPRESSION /
+                <p><a
+ href="fast-compression-benchmark-brotli-zstandard.html#brotli_vs_zstd_compressor">COMPRESSION
+/
 DECOMPRESSION SPEED, PERFORMANCES</a></p>
               </li>
               <li>
-                <p><a href="#what_is_the_fastest_compression_algorithm">CONCLUSIONS:
+                <p><a
+ href="fast-compression-benchmark-brotli-zstandard.html#what_is_the_fastest_compression_algorithm">CONCLUSIONS:
 BROTLI, ZSTANDARD COMPARISON<br>
                 </a></p>
               </li>
@@ -382,7 +308,8 @@ BROTLI, ZSTANDARD COMPARISON<br>
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <div style="text-align: left; color: rgb(0, 0, 0);">
             <h2><big><big><big><a name="brotli_vs_zstandard"></a><a
- href="#faster_compressor">Brotli, Zstd benchmark
+ href="fast-compression-benchmark-brotli-zstandard.html#faster_compressor">Brotli
+vs Zstd benchmark
 settings</a></big></big></big></h2>
             <h2><big> </big></h2>
             </div>
@@ -422,10 +349,6 @@ compression levels?<br>
 Zstandard performances
 with classic reference
 compression formats as 7Z, RAR and ZIP at standard compression levels.</li>
-                        </ol>
-                        <ul>
-                        </ul>
-                        <ol>
                         </ol>
                         </td>
                       </tr>
@@ -506,8 +429,6 @@ compression level, default LZMA2 algorithm, from PeaZip<br>
                           </li>
                         </ul>
                         <ul>
-                        </ul>
-                        <ul>
                           <li><a
  href="brotli-compressed-file-format.html"><span
  style="font-weight: bold;">Br (Brotli) compression format</span></a>
@@ -544,8 +465,6 @@ compressor,
 providing very fast
 compression and decompression, tested from fastest to maximum
 compression level from PeaZip</li>
-                        </ul>
-                        <ul style="text-align: justify;">
                         </ul>
                         </td>
                       </tr>
@@ -611,7 +530,7 @@ compression corpus<img
             <td
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <h3><big><big><big><a name="brotli_vs_zstd_compressor"></a><a
- href="#faster_compressor">Compression
+ href="fast-compression-benchmark-brotli-zstandard.html#faster_compressor">Compression
 / decompression speed, performances<br>
             </a></big></big></big></h3>
             <br>
@@ -1386,7 +1305,8 @@ compression levels.<br>
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <h3><big><big><big><a
  name="what_is_the_fastest_compression_algorithm"></a><a
- href="#faster_compressor">Conclusions: Brotli, Zstandard comparison<br>
+ href="fast-compression-benchmark-brotli-zstandard.html#faster_compressor">Conclusions:
+Brotli, Zstandard comparison<br>
             </a></big></big></big></h3>
             <br>
             <span style="font-weight: bold;"><br>
@@ -1596,215 +1516,16 @@ compression in significantly faster times, showing excellent potential
 for tasks requiring <span style="font-weight: bold;">intermediate
 compression</span> - but still not competitive for high compression
 tasks.<br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
- style="color: rgb(253, 253, 253);">RELATED &amp; SIMILAR PAGES</span> </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="file-compression-performances.html">ARCHIVE FORMATS COMPARISON</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="brotli-compression-utility.html">WORK WITH BROTLI FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="brotli-compression-utility.html">WORK WITH ZSTANDARD FILES</a><br>
-                  </small></td>
-                </tr>
-              </tbody>
-            </table>
-            <small><small>&nbsp;</small></small><br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="backup-files.html">BACKUP FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="file-compression-performances.html">IMPROVE COMPRESSION RATIO</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="how-to-compress-files-folders.html">HOW TO COMPRESS FILES AND
-FOLDERS</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="how-to-extract-rar-zip-archives.html">EXTRACT 7Z RAR ZIP ARCHIVE
-FILES</a><br>
-                  </small></td>
-                </tr>
-              </tbody>
-            </table>
-            <small><small>&nbsp;</small></small><br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="7zip-files-utility.html">CREATE 7Z ARCHIVES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="free-rar-create.html">RAR COMPRESSOR</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="zip-files-utility.html">CREATE ZIP FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="free-rar.html">DECOMPRESS RAR FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="what-is-zip-file.html">WHAT IS FILE COMPRESSION</a><br>
-                  </small></td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table
- style="background-color: rgb(255, 255, 255); margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;">Tag Cloud<br>
-            <span class="wrd free-rar3"
- id="brotli-vs-zstandard-comparison"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">Brotli vs
-Zstandard
-comparison</a></span> <span class="wrd free-rar1"
- id="optimize-compression-performances"> <a
- href="file-compression-performances.html">optimize compression
-performances</a></span> <span class="wrd free-rar0"
- id="7zip-7z-format-features"> <a href="7z-file-format.html">7Z format
-features</a></span> <span class="wrd free-rar1"
- id="compression-formats-comparison"> <a
- href="archive-file-formats-comparison.html">compression formats
-benchmark</a></span><br>
-            <span class="wrd free-rar1"
- id="lossy-lossless-data-compression"> <a
- href="lossless-compression-lossy-compression.html">lossy and lossless
-compression</a></span> <span class="wrd free-rar4"
- id="brotli-zstd-compression-benchmark"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">Brotli Zstd
-comparative</a></span> <span class="wrd free-rar2"
- id="file-compression-benchmark"> <a
- href="peazip-compression-benchmark.html">file
-compression benchmark</a></span> <span class="wrd free-rar1"
- id="solid-compression-option"> <a
- href="what-is-solid-compression.html">solid compression option</a></span>
             <br>
-            <span class="wrd free-rar2" id="download-backup-utility"> <a
- href="backup-files.html">download backup utility</a></span> <span
- class="wrd free-rar3" id="brotli-zstandard-faster-compressor"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">is Brotli
-faster tha Zstandard?</a></span> <span class="wrd free-rar1"
- id="best-file-compression-standard"> <a
- href="archive-file-formats-comparison.html">what is best
-file
-compression format</a></span> <span class="wrd free-rar2"
- id="rar-compressor-tool"> <a href="free-rar-create.html">RAR
-compression utility</a></span><br>
-            <span class="wrd free-rar0" id="compress-files"> <a
- href="how-to-compress-files-folders.html">compress
-files</a></span> <span class="wrd free-rar3"
- id="what-is-fastest-compression-algorithm"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">what is the
-fastest compression algorithm?</a></span> <span class="wrd free-rar1"
- id="rar-file-extension"> <a href="what-is-rar-file.html">RAR extension</a></span>
-            <span class="wrd free-rar0" id="zip-format-features"> <a
- href="zip-file-format.html">ZIP format</a></span> <span
- class="wrd free-rar3" id="download-zstandard-compression-utility"> <a
- href="zstandard-compression-utility.html">Zstandard compression utility</a></span><br>
-            <span class="wrd free-rar3" id="free-rar-extractor"> <a
- href="free-rar.html">free
-RAR extractor</a></span> <span class="wrd free-rar2"
- id="windows-tar-extractor"> <a href="tar-windows.html">TAR files
-extractor</a></span> <span class="wrd free-rar4"
- id="free-zip-files-utility"> <a href="zip-files-utility.html">free
-ZIP files utility</a></span> <span class="wrd free-rar3"
- id="brotli-compression-utility"><a
- href="brotli-compression-utility.html">Brotli compression utility</a></span>
-            <span class="wrd free-rar1" id="7z-files-extractor"> <a
- href="7zip-files-utility.html">7Z files
-extractor</a></span> <br>
-            <span class="wrd free-rar2"
- id="64-bit-zip-windows-application"> <a href="peazip-64bit.html">64
-bit RAR files opener</a></span> <span class="wrd free-rar3"
- id="free-archiver-utility"> <a href="index.html">free archiver utility</a></span>
-            <span class="wrd free-rar1" id="paq-file-compressor-tool"> <a
- href="paq-files-compression-utility.html">PAQ files compressor</a></span>
-            <span class="wrd free-rar0" id="file-compression-software">
-            <a href="index.html">file compression software</a></span> <span
- class="wrd free-rar3" id="brotli-zstandard-speed-comparison"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">Brotli Zstd
-speed comparison</a></span><br>
-            <span class="wrd free-rar3"
- id="fastest-compression-algorithms-benchmark"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">fast file
-compression benchmark</a></span> <span class="wrd free-rar2"
- id="portable-rar-files-utility"> <a href="peazip-portable.html">portable
-WinZip WinRar alternative</a></span> <span class="wrd free-rar3"
- id="best-compression-application"> <a
- href="peazip-compression-benchmark.html">best file compression
-application</a></span> <br>
-            <span class="wrd free-rar0"
- id="linux-file-compression-utility"> <a href="peazip-linux.html">Open
-Source WinRar alternative for Linux</a></span> <span
- class="wrd free-rar1" id="windows-rar-extractor"> <a
- href="download-installer-p-windows.html">windows rar tar zip files
-extractor</a></span> <span class="wrd free-rar4"
- id="brotli-zstandard-best-compression"> <a
- href="fast-compression-benchmark-brotli-zstandard.html">Br vs Zst
-format compression</a></span> <span class="wrd free-rar0"
- id="best-file-archiving-format"><a
- href="archive-file-formats-comparison.html">best file
-archiving formats</a></span> <br>
+            <p style="font-weight: bold;">Synopsis: Fast compression
+benchmark. Comparison of Brotli versus Zstandard formats
+performances at different compression settings. BR vs ZST compression
+and extraction speed comparative
+test. Comparison of Brotli and Zstandard speed with 7Z LZMA2, RAR PPMd,
+and ZIP Deflate algorithms for fastest compressor and decompressor. </p>
+            <p><span style="font-weight: bold;">PeaZip &gt; Compression
+benchmark &gt; Fast compression: Brotli, Zstandard comparative speed,
+performances test</span></p>
             </td>
           </tr>
         </tbody>
@@ -1831,11 +1552,11 @@ archiving formats</a></span> <br>
           </tr>
           <tr>
             <td style="vertical-align: top; width: 25%;"><small> <img
- alt="fastest compression algorithm" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="how_brotli_fares_with_zstandard"></a>DOWNLOADS<br>
+ alt="Brotli and Zstandard compared to 7Z LZMA2, RAR PPMd, ZIP Deflate"
+ src="titles.png" style="width: 129px; height: 2px;"><br>
+            <a name="brotli_zstandard_comparison"></a>DOWNLOADS<br>
             <img
- alt="zstandard maximum compression compared with brotli"
+ alt="Which format provides best compression, Brotli BR or Zstandard ZST"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
             <a href="index.html">All
@@ -1850,10 +1571,11 @@ Portable</a><br>
 Linux/BSD</a><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="what is the best between brotli and zstd" src="titles.png"
+ alt="Which is the fastest compressor Brotli or Zstd" src="titles.png"
  style="width: 129px; height: 2px;"><br>
-            <a name="how_zstd_fares_with_brotli"></a>SUPPORT<br>
-            <img alt="zstd fastest compression compared with brotli"
+            <a name="brotli_ztandard_comparative"></a>SUPPORT<br>
+            <img
+ alt="Which algorithm scales better at different compression levels, Brotli or Zstd"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
             <a href="peazip-help.html">Online
@@ -1864,12 +1586,13 @@ Asked Questions</a><br>
 information</a></small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="does zstd compresses better than brotli" src="titles.png"
- style="width: 129px; height: 2px;"><br>
+ alt="Which is the faster decompressor between Brotli and Zstd"
+ src="titles.png" style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="how_br_fares_with_zstd_format"></a>DONATE<br
+ name="brotli_zstandard_benchmark"></a>DONATE<br
  style="font-style: italic;">
-            <img alt="zstd standard compression compared with brotli"
+            <img
+ alt="Zstd fastest compression settings compared with Brotli"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
 Support
@@ -1883,8 +1606,8 @@ page</a><br>
             </small><small>&copy; <a href="peazip-tos-privacy.html"
  style="font-weight: normal;">PeaZip
 srl: TOS,
-Privacy</a></small><br>
-            </td>
+Privacy</a><br>
+            </small></td>
             <td style="vertical-align: top; width: 247px;">
             <table
  style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
@@ -1892,22 +1615,21 @@ Privacy</a></small><br>
               <tbody>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank"
- href="https://github.com/giorgiotani/PeaZip/releases.atom">Releases
+ target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
 Feed</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="brotli vs zstd speed" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
+ alt="br brotli zst zstandard comparative test with 7Z LZMA2, RAR PPMd, ZIP Deflate algorithms"
+ title="PeaZip releases feed" src="extract-zip/rss16.png"
+ style="width: 24px; height: 24px;" align="middle"></small></td>
                 </tr>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/giorgiotani/PeaZip/wiki">PeaZip
+ target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
 Wiki</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="Brotli vs Zstandard benchmark results"
+ title="PeaZip Wiki online" alt="Brotli vs Zstd benchmark settings"
  src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
  align="middle"></small></td>
                 </tr>
@@ -1916,7 +1638,7 @@ Wiki</a></small></td>
  href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Brotli Zstandard comparative at fastest compression settings"
+ alt="Conclusions: Brotli, Zstandard comparison"
  title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
  style="width: 24px; height: 24px;"><br>
                   </small></td>
