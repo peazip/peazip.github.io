@@ -320,8 +320,44 @@ delete</span> (unrecoverable, permanent erasure), <span
 multiple <span style="font-weight: bold;">checksum </span>algorithms,
 export scripts to automate backup and
 restore tasks.<br>
-            <br>
             </p>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="text-align: right; vertical-align: middle; width: 64px;">
+                  <h3><span style="font-weight: bold;"><img
+ title="How to UNACE files" alt="download rar opener"
+ src="file-format/information.png" style="width: 48px; height: 48px;"></span></h3>
+                  <h3><span style="font-weight: bold;"> </span></h3>
+                  </td>
+                  <td
+ style="font-style: italic; vertical-align: middle;">
+                  <p><span style="font-style: italic;">Please note that
+on current version of <span style="font-weight: bold;">Microsoft
+SmartScreen</span></span><span style="font-style: italic;">, new
+packages of PeaZip (likewise many
+other software packages) may be reported as harmful software.<br>
+The only solution for this issue is to proceed with installation anyway
+(with "more info" or other version-specific links in SmartScreen) and
+possibly to help fighting false positives reporting the software as
+safe to Microsoft.<br>
+SmartScreen is a "reputation based" filter solely based on
+popularity of a package, and its
+rating is not presently influenced by quality factors as the software
+being <span style="font-weight: bold;">published on a safe domain</span>
+(including Microsoft-own ones like GitHub), <span
+ style="font-weight: bold;">supported by reputable package managers</span>
+(including Microsoft winget) and <span style="font-weight: bold;">reported
+as
+safe by antivirus</span> (including Microsof ones...).<br>
+                  </span></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p> </p>
             <h2><big><big><big>Free WinRar,
 WinZip alternative file archiving application<br>
             </big></big></big></h2>
@@ -414,35 +450,23 @@ strongly advised to avoid those apps!</span><big> </big></td>
             </h3>
             <br>
 As alternative, PeaZip is also available through new Microsoft Windows'
-package manager <span style="font-weight: bold;">winget</span>, it can
-be installed running "winget install peazip" command as administrator,
-while "winget show
-peazip" displaysinformation for last available version in winget
-package management system.<br>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="How to UNACE files" alt="download rar opener"
- src="file-format/information.png" style="width: 48px; height: 48px;"></span></h3>
-                  <h3><span style="font-weight: bold;"> </span></h3>
-                  </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">
-                  <p><span style="font-style: italic;">Please note that
-PeaZip, likewise many
-other software packages, can currently be installed only
-running <br>
-winget as administrator, due a known (and already notified) winget
-install bug.</span></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+package manager <span style="font-weight: bold;">winget</span><br>
+            <ul>
+              <li>PeaZip can be installed running "<span
+ style="font-weight: bold;">winget install -e peazip</span>" command;
+-e parameters searches for exact match excluding extra applications
+erroneously matching on plain "winget install peazip" command<br>
+              </li>
+            </ul>
+            <ul>
+              <li>"winget show
+-e peazip" displays information for the last available version in
+winget
+package management system</li>
+            </ul>
+With some versions of winget PeaZip can be installed only
+running winget as administrator, due a known winget
+install bug applying to various software packages.<br>
             <br>
             <br>
             <h4>PEAZIP FOR WINDOWS 64 BIT DOWNLOAD
