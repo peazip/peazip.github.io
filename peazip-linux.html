@@ -571,30 +571,37 @@ installable package for PeaZip needs to contain:<span
 main application's binary<br>
 /usr/lib/peazip/pea binary, contains routines for PEA format,
 encryption, hashing etc<br>
-/usr/lib/peazip/res directory, contain application's resources<br>
-/usr/lib/peazip/res/bin directory contains binary,
+                  <span style="font-weight: bold;">/usr/lib/peazip/res</span>
+directory, contain application's resources<br>
+                  <span style="font-weight: bold;">/usr/lib/peazip/res/bin</span>
+directory contains binary,
 architecture-dependent resources (binaries of p7zip, brotli, paq,
 zstandatd, etc)<br>
-/usr/lib/peazip/res/peazip shortcut points to <span
- style="font-weight: bold;">/usr/share/peazip/</span> directory,
+/usr/lib/peazip/res/share shortcut points to <span
+ style="font-weight: bold;">/usr/share/peazip</span> directory,
 containing non architecture-dependent resources (texts, graphics)<br>
                   <span style="font-weight: bold;">$XDG_CONFIG_HOME/peazip</span>
 (if OpenDesktop configuration folder variable is not set it is used
 $HOME/.config/peazip) directory containing user-specific configuration
 files<br>
                   <br>
-PeaZip Portable packahges contains all needed files into application's
-directory, here called (peazip).<br>
+PeaZip Portable packages contains all needed files into application's
+directory, here called <span style="font-weight: bold;">(peazip)</span>,
+which ca be saved anywhere the user prefers.<br>
 Portable packages needs (peazip)/res/portable, an empty file to tell
 the app to run as Portable version.<br>
-(peazip)/res/peazip shortcut which in installable versions points to
-non-binary resources in /usr/share/peazip/ is replaced in Portable
-packages by an actual directory named (peazip)/res/share which contains
+                  <span style="font-weight: bold;">(peazip)/res/bin</span>
+contains architecture-dependent binary files.<br>
+res/share shortcut which in installable versions points to
+non-binary resources in /usr/share/peazip is replaced in Portable
+packages by an actual directory named <span style="font-weight: bold;">(peazip)/res/share</span>
+which contains
 the non-architecture dependant content.<br>
 Being largely independent from underlying system, it can be used as is
 on different OS, unless the package maintainer whishes to add or remove
 OS specific features (i.e. reg scripts on Windows machines).<br>
-Portable versions saves user configuration in (peazip)/res/conf
+Portable versions saves user configuration in <span
+ style="font-weight: bold;">(peazip)/res/conf</span>
 directory.<br>
                   </td>
                   <td style="vertical-align: bottom; width: 64px;">
