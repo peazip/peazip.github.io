@@ -260,25 +260,21 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.2.0 improves command line usage with updated archiving and
-extraction switches, and introduces (peazip)/res/batch folder which
-contains sample scripts and system integration files (SendTo and
-freedesktop_integration folders are moved here).<br>
-The archive manager is now capable of optionally displaying
-compression/encryption method, and modified, created, accessed
-timestamps for each item in archive, and to display number of items
-contained in each folder.<br>
-It is now possible to chose to keep extracted files even in case errors
-occurred during the extraction, and working with spanned files was
-improved.<br>
-Smart extraction is now available as default action to take at
-program's startup, alongside Open, Open as archive, Extract (full),
-Extract here.<br>
-This release focuses on improving user experience on Linux systems,
-updating installers, improving the automatic configuration of
-applications for "open with" actions, and displaying more system's
-paths in the file manager.<br>
-Backend were updated to Brotli 1.0.9 (Linux).<br>
+PeaZip 8.3.0 comes with an updated internal file structure clearly
+separating binary, architecture dependent files from other resources,
+in order to make easier to port the application to multiple Operating
+Systems and architectures with specific requirements for hierarchy
+structure.<br>
+Linux versions improves compliance with Open Desktop standards and
+Filesystem Hierarchy Standard, provides better integration with XFCE
+Desktop Environment.<br>
+Theming is updated, with introduction of color temperature and
+optionally highlighted tabs.<br>
+Alongside many improvements and fixes, it is now easier to manage
+temporary work files, Deflate and Deflate64 are now available in 7Z
+format, new command line options are available, and it is now possible
+to define a custom list of preferred algorithms to be performed at once
+to calculate file checksum and hash values.<br>
             <br>
 A total of 225
 file extensions can now be managed by PeaZip, with addition of .apkm,
@@ -294,44 +290,40 @@ please consider taking the time to give a look to <a
 directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <h3><span style="font-weight: bold;">SHA256 hash of 8.2.0
+            <h3><span style="font-weight: bold;">SHA256 hash of 8.3.0
 release packages</span></h3>
-PeaZip_8.2.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-730dfbb80d831b2b9347ffe63c6e80339cc242e5ee4e0ce22b9db2fcc632d23f<br>
-peazip_8.2.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-130101d4f933824157cd39984ffdf9aa66c23e03abf2cde4a199a076a44b580f<br>
-peazip_8.2.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-5e161595c74c98d739d5439418564d1f2ce21b0a4eb89724868a48e5d9c636b9<br>
-peazip_help.pdf&nbsp;&nbsp;&nbsp;
-73f9413af8d22b88e0ae4402c00d0feef673cb70453f47c5f3b819dc59879440<br>
-peazip_portable-8.2.0.LINUX.GTK2.x86.tar.gz&nbsp;&nbsp;&nbsp;
-aa3bc2283b055ce002327a4feb827ddbb9df5e2b3d830f2173a531ea9dff2544<br>
-peazip_portable-8.2.0.LINUX.Qt4.x86.tar.gz&nbsp;&nbsp;&nbsp;
-052a08276189dfd0e4ccb3e2a1b9640c051925d9b154ded037c902c230c7b813<br>
-peazip_portable-8.2.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-ba07116cb1493409ecebcc08f43b06ab37d2c8c41be5ca9a65dcb7a8bbd746f2<br>
-peazip_portable-8.2.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-f8e673960be5270f4763d7613646882b061f0188ade23df7953d3c5466232e21<br>
-peazip_portable-8.2.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-fef83cfaf0f59b967ae4c482a0628807711e78c595a2a5468d4ced13d8edb477<br>
-peazip_portable-8.2.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-430180b4d4002cdb37668639b844351f5230ffc5ae4a62d61c94342e6300285b<br>
-peazip-8.2.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-7889842514059dccd839e0587b2a9057b88cd12f34d588db61481601b703fea1<br>
-peazip-8.2.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-5eb09e87891de28ea1217a9e8d9efa93e6851bef5920fb2d43ee59023134e3ee<br>
-peazip-8.2.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-d4b6e56eb7f12f8e7338e0ebeb749a9f61d9c1ca28577bde6a91f5190a0df020<br>
-peazip-8.2.0.src.zip&nbsp;&nbsp;&nbsp;
-bc8c27e95d2e18eec8f2107d427b34fc378408316c1a97728614fb12edbfa7d4<br>
-peazip-8.2.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-9e5c9f1d42dbc5634eab54ac3ebef32ade89632031f4bbed88449e98eb789dce<br>
-peazip-8.2.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-ba4e155397a896b5bf9ffda7790c10b47459ba047385a53e7eb4838537b8a9dc<br>
-peazip-8.2.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-2212a2aceaf7780a0003d53b380873f6562930f9959e4a7468d57231adb69978<br>
-peazip-8.2.0.WINDOWS.msi&nbsp;&nbsp;&nbsp;
-944cfeaa90cff6b698c3cc5606b271d5f3b131c74c02bb64d362596219306b1d<br>
+PeaZip_8.3.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+e1b9d390a76d071fa8ee31ce53d9c7ac2793bca58cb187c9c2be32e56f473b59<br>
+peazip_8.3.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+156318d011536be72d6614312c7e064426d3b75bda2ffa56a7ada34888c2a1a3<br>
+peazip_8.3.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+56e8695ba0c65426c424639b84bb4982bba86cb2c73e8cb6630c6524c9a62a64<br>
+peazip_portable-8.3.0.LINUX.GTK2.x86.tar.gz&nbsp;&nbsp;&nbsp;
+a96cb7b70e37b73460f0319c83c911cf4fac587b62f0ca8c777c593876b41d45<br>
+peazip_portable-8.3.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+6382c744b4f510198ab57a65fe5d3e924ba399d1003c1338de5dd750d070fe36<br>
+peazip_portable-8.3.0.LINUX.Qt4.x86.tar.gz&nbsp;&nbsp;&nbsp;
+e39aba0200c742c743b26ac24f2eedb27aa88f0bdf3d560968a2f22b56350bc7<br>
+peazip_portable-8.3.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+fedc6ae0fb326671db1493e8930f9a2054f1a0e89167cd009aa5bd6e7cd8ee45<br>
+peazip_portable-8.3.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+7f7387a2e0caca39195eeb36708cb19e5307ec2dc0439a46446ef3966ddae5ad<br>
+peazip_portable-8.3.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+098a95ce57613f51f29bae63a7fd8e840d395d59a267f2aba7c9f70d86662f14<br>
+peazip-8.3.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+fdb4adc0ca1f8a363c2b9585ecdf802ae3f2d7950630c750d15023d56d3db080<br>
+peazip-8.3.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+bb31380868e73fd2395ce9af4aa3638afc86a6dfe4a4924d1cf578415291b738<br>
+peazip-8.3.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+ad2dc3b5645f4e6a7d3c5cb3b5e3b6bd67b877c723d13ee37eb0a183931bfc24<br>
+peazip-8.3.0.src.zip&nbsp;&nbsp;&nbsp;
+fc81487fca46aca0fdbe05bc5ed8c84069f09d4afd4bc45b1adf9dfeb56acd9b<br>
+peazip-8.3.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+7fcc36fa657325cfbbce36fb534e4f21b7bc6ef9babf6e8d525a12a4c8693e85<br>
+peazip-8.3.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+80d966f777a37f41eacd838bb771317751602fc56bd42711184c51a3435581e9<br>
+peazip-8.3.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+6831e4195cb66095433115e0002308f2e046ef7179d9c16f2b56bb328a877548<br>
             </td>
           </tr>
         </tbody>
@@ -350,6 +342,164 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2021 11 14<br>
+            <div style="margin-left: 40px;">8.3.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">(Linux) Total max length of
+command scripts generated by the appplication can be customized from
+32KB to 2MB from Options &gt; Settings &gt; General, Performances<br>
+(Linux) szcnick/p7zip regressed from 17.04 to 17.02 due a possible bug
+handling some zip files<br>
+            <div style="margin-left: 40px;">different versions /
+branches of p7zip (provided same syntax is employued) can be used
+simply replacing binaries in (peazip)res/bin/7z path<br>
+            </div>
+Updated to pea 1.04<br>
+To improve portability of PeaZip to multiple operating systems and
+architectures, app's folder is now structured as follows:<br>
+            <div style="margin-left: 40px;">Application's root folder
+contains pea and peazip binaries (and dragdropfiles.dll on Windows),
+architecture-specific, compiled from src package<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">/res </span>directory, contains resources
+divided by type<br>
+            </div>
+            <div style="margin-left: 80px;">/res/portable (empty) file,
+marks the package as portable: if missing, the application woks as
+installable package and rearches for configuration in user's path
+(depending on the host system)<br>
+            </div>
+            <div style="margin-left: 80px;"><span
+ style="font-weight: bold;">/res/bin </span>directory contains third
+party architecture specific binaries, should be replaced with binaries
+for the apporpriate target architecture; on Windows it also contains
+PeaZip configuration wizard executab&ograve;e<br>
+            </div>
+            <div style="margin-left: 80px;"><span
+ style="font-weight: bold;">/res/share </span>directory contains non
+architecture specific resources such as texts, media, licenses,
+documentation (license and notes about binaries has been moved here in
+note subdiorectory), it could be simply copied as is for any PeaZip
+package on any system<br>
+            </div>
+            <div style="margin-left: 80px;"><span
+ style="font-weight: bold;">/res/conf</span> directory contains user
+specific configuration files<br>
+            </div>
+On installable packages res/conf is written to appropriate user
+specific path, and installers take care to replace /res/bin and
+/res/share with links to directories placed in appropriate paths
+depending on the target system<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">(Linux) Improved compliance
+with Open Desktop specifications: configuration is now saved in
+$XDG_CONFIG_HOME/peazip directory; if $XDG_CONFIG_HOME is not defined
+configuration is saved to $HOME/.config/peazip<br>
+            <div style="margin-left: 40px;">To import existing
+configuration simply copy content of $HOME/.PeaZip directory to the new
+location<br>
+            </div>
+GitHub: Merged ACTom's "Initial support for MacOS #25"<br>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed possible error with
+progress bar<br>
+Fixed possible error not asking password opening some encrypted
+archives, and reduced false positive cases in which it the application
+suggested to provide a password<br>
+Fixed error reporting information about multi volume archives<br>
+Fixed error in file manager selecting files with same characteristics
+of selected item<br>
+(Windows) Fixed issue not showing system's file properties dialog in
+some cases<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Linux) Shortcuts to
+/media, /run/media, and /mnt (if not empty) are now featured in
+navigation tree, under filesystem group<br>
+(Linux) Improved automatically configuring XFCE apps alternatives in
+"Open with" menu: Mousepad, Midori, Parole, Ristretto<br>
+(Linux) Fixed theming issues with GTK2<br>
+Column header's context menu is now accessible alternatively
+right-clicking the status bar<br>
+Improved theming<br>
+            <div style="margin-left: 40px;">Added <span
+ style="font-weight: bold;">Color temperature</span> option, to adapt
+application to DE using warmer or colder colors<br>
+Added <span style="font-weight: bold;">Highlight tabs</span> option
+(default on) highlighting rows or columns containing tabs with
+alternate color<br>
+            </div>
+Options &gt; Settings &gt; General, Privacy / Reset group, Working
+directory is now set to system's temp by default (consistently with
+most applications of this type)<br>
+            <div style="margin-left: 40px;">Working directory label can
+now be clicked to explore path (unless it is set to output, which is
+variable), in order to make easier for the user to verify if for any
+reasons there are left orphaned files<br>
+All PeaZip's temporary work files and dirs are now collected in
+peazip-tmp subdirectory of work path (unless it is set to output) for
+same reason of making easier to spot and remove orphaned files<br>
+All PeaZip's temporary work files and dirs now contains p*tmp string
+for making easier to find them regardless the tools employed<br>
+            </div>
+Options &gt; Settings &gt; General, Privacy / Reset group now allows to
+silently skip deletion of locked temporary work files (default on,
+consistently with behavior of most applications of this type); temp
+work files can then be optionally deleted separately:<br>
+            <div style="margin-left: 40px;">Automatically from Reset
+link, and if reset fails the folder is opened for soliciting manual
+deletion (regardless the option to silently skip locked files during
+normal operations)<br>
+Manually clicking on Working directory label and using standard
+system's tools<br>
+            </div>
+Options &gt; Settings &gt; File manager now allows to set the
+multiple-byte unit: binary, 1024 (IEC kibibyte), or decimal, 1000 (IEC
+kilobyte), or none (exact byte size)<br>
+Options &gt; Settings &gt; File manager now allows to customize the
+list of preferred algorithms for calculating file checksum and hashes;
+all preferred algorithms in the list will be performed in a single step
+when it is required to checksum / hash files.<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added Deflate and Deflate64
+compression options to 7z format<br>
+Improved -ext2here, -ext2folder (-alias -ext2smart), and -ext2newfolder
+functions adding command line options:<br>
+            <div style="margin-left: 40px;">-i ignore delete original
+archive after extraction settings<br>
+-o output directory in next parameter<br>
+-p password in next parameter<br>
+            </div>
+            </div>
+            <br>
+WINDOWS &amp; LINUX INSTALLERS<br>
+            <div style="margin-left: 40px;">(Windows) Improved installer<br>
+            </div>
+            <div style="margin-left: 80px;">"Extract here (in new
+folder)" entry is now featured by default both in context menu and
+SendTo menu<br>
+Fixed additional extraction entries not showing up on some cases<br>
+Installation folder selection screen is now available also running
+"Configure PeaZip" wizard from the application, for Portable versions
+this allows to easily integrate with host system<br>
+            </div>
+            <div style="margin-left: 40px;">(Linux) Improved DEB and
+RPM installers with better compliance with Filesystem Hierarchy
+Standard,
+separating architecture specific and non-architecture
+specific resources<br>
+            </div>
+            </div>
+            </div>
+            <br>
             <br>
 2021 09 12<br>
             <div style="margin-left: 40px;">8.2.0<br>
@@ -508,7 +658,7 @@ functions provides same features provided by context menu entries, but
 much more faster and efficient and without artificial limitation in
 terms of number of input items<br>
             </div>
-(Linux) Improved Linux installers<br>
+(Linux) Improved Linux installers <br>
             <div style="margin-left: 40px;">install the app in <span
  style="font-weight: bold;">/opt/peazip</span> directory (non
 capitalized)<br>
