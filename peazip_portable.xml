@@ -34,9 +34,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip Portable</Program_Name>
-		<Program_Version>8.2.0</Program_Version>
-		<Program_Release_Month>09</Program_Release_Month>
-		<Program_Release_Day>12</Program_Release_Day>
+		<Program_Version>8.4.0</Program_Version>
+		<Program_Release_Month>12</Program_Release_Month>
+		<Program_Release_Day>15</Program_Release_Day>
 		<Program_Release_Year>2021</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Win2000,Win7 x32,Win7 x64,Win98,WinOther,WinServer,WinVista,WinVista x64,WinXP,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Improved scripting, extraction, and archive manager.</Program_Change_Info>
+		<Program_Change_Info>Improved scripting, test, and themes</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements />
 		<File_Info>
-			<File_Size_Bytes>14085451</File_Size_Bytes>
-			<File_Size_K>13755</File_Size_K>
-			<File_Size_MB>13.43</File_Size_MB>
+			<File_Size_Bytes>14217769</File_Size_Bytes>
+			<File_Size_K>13884</File_Size_K>
+			<File_Size_MB>13.56</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -70,7 +70,7 @@
 			<Keywords>portable, rar, zip, files, backup, software, tool, compressor, archiving, extraction, utility, opener, extractor</Keywords>
 			<Char_Desc_45>Portable zip utility, open 7Z, RAR, TAR, ZIP</Char_Desc_45>
 			<Char_Desc_80>Free, portable zip utility, open 7Z ACE ISO TAR RAR ZIP files (200+ formats)</Char_Desc_80>
-			<Char_Desc_250>Free portable zip/unzip utility, encrypt and split files, open 7Z, ACE, BR, BZ2, CAB, ISO, JAR, GZ, LHA, PAQ, PEA, RAR, sfx, TAR, ZIP, ZST files and many more archive types (200+ formats). Portable and open source, PeaZip runs on Windows and Linux.</Char_Desc_250>
+			<Char_Desc_250>Free portable zip/unzip utility, encrypt and split files, open 7Z, ACE, BR, BZ2, CAB, ISO, JAR, GZ, LHA, PAQ, PEA, RAR, sfx, TAR, ZIP, ZST files and many more archive types (200+ formats). Portable and open source, runs on Windows, macOS, and Linux.</Char_Desc_250>
 			<Char_Desc_450>PeaZip Portable is a free zip/unzip utility for Windows and Linux, features encryption, secure deletion and file split. Create 7Z, Brotli, BZip2, GZip, *PAQ, PEA, split .001, sfx, TAR, WIM, XZ, ZIP, Zstd. Open CAB, DEB, DMG, ISO, JAR, LHA, LZH, MSI, NSIS, RAR, UDF, ZIPX and more (200+ types). Tabbed browsing, search in archives, apply inclusion/exclusion filters, save archive layout, export task definition as script, schedule backup/restore task.</Char_Desc_450>
 			<Char_Desc_2000>PeaZip Portable is the ideal package when you want to use a free file archiver and compressor utility without modifying your system, either because you prefer natively portable software as replacement of installable software, or you need to bring it with you on an USB stick, or when you cannot modify the machine you are working on, or if you just want to try it without installing anything on the system: simply extract and use PeaZip, and simply delete its folder to remove the application.
 
@@ -94,8 +94,8 @@ The distinctive trait of PeaZip is the innovative GUI, integrating a full featur
 			<Application_XML_File_URL>https://peazip.github.io/peazip_portable.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_portable-8.2.0.WIN64.zip</Primary_Download_URL>
-			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.2.0/peazip_portable-8.2.0.WINDOWS.zip</Secondary_Download_URL>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.4.0/peazip_portable-8.4.0.WIN64.zip</Primary_Download_URL>
+			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/8.4.0/peazip_portable-8.4.0.WINDOWS.zip</Secondary_Download_URL>
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />
 		</Download_URLs>
