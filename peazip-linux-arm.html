@@ -155,8 +155,8 @@ EXPERIMENTAL</span><br>
             </small></div>
             </td>
             <td
- style="vertical-align: middle; width: 34%; color: rgb(253, 253, 253); text-align: right;"><big><a
- style="color: rgb(253, 253, 253);"
+ style="vertical-align: middle; width: 34%; color: rgb(253, 253, 253); text-align: right;"><big
+ style="font-weight: bold;"><a style="color: rgb(253, 253, 253);"
  href="http://download.opensuse.org/repositories/home:/ecsos/openSUSE_Tumbleweed/aarch64/"><big><img
  title="PeaZip aarch64" alt="peazip aarch64 packages"
  src="free-rar/download-free-software.png"
@@ -168,12 +168,14 @@ EXPERIMENTAL</span><br>
  style="border: 0px solid ; width: 15px; height: 9px;"></big>armv7</a></big><br>
             <small>openSUSE RPM packages</small><br>
             <br>
-            <small><a style="color: rgb(253, 253, 253);" target="_blank"
+            <small style="font-weight: bold;"><a
+ style="color: rgb(253, 253, 253);" target="_blank"
  href="https://flathub.org/apps/details/io.github.peazip.PeaZip"><big><big><img
  title="PeaZip Flatpack for Linux on ARM" alt="peazip aarch64 flatpack"
  src="free-rar/download-free-software.png"
- style="border: 0px solid ; width: 15px; height: 9px;">Flatpack</big></big></a></small><br>
-            <br>
+ style="border: 0px solid ; width: 15px; height: 9px;">Flatpak</big></big></a></small><br>
+            <small>FlatHub's Flatpak packages<br>
+            </small><br>
             <small><span style="font-weight: bold;">LEGACY</span><br>
             </small> <big> <small><a
  href="https://github.com/Arucard1983/PeaZip-for-ARM"><img
@@ -215,13 +217,11 @@ armv6l (armhf), no installation needed (no .apk)</small><small
       </div>
       <div style="text-align: center; font-weight: bold;"><a
  style="color: rgb(253, 253, 253);" href="peazip-linux.html">[Linux
-x86-64]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
+x86_64]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
  style="color: rgb(253, 253, 253);" href="peazip-linux-x86.html">[Linux
 x86]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
  style="color: rgb(253, 253, 253);" href="peazip-linux-arm.html">[Linux
-ARM]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
- style="color: rgb(253, 253, 253);" href="peazip-bsd.html">[BSD]</a> <small>
-      </small></div>
+ARM]</a><span style="color: rgb(253, 253, 253);"></span> <small> </small></div>
       <div style="text-align: right;"><img
  alt="file compression application" src="free-rar/file-compressor.png"
  style="width: 12px; height: 12px;"><br>
@@ -256,18 +256,29 @@ ARM]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(204, 224, 255);"><small><a
- href="peazip-linux.html">PEAZIP LINUX / BSD</a><a
- href="peazip-linux.html"><br>
+ href="peazip-linux.html">PEAZIP LINUX</a><a href="peazip-linux.html"><br>
             </a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-64bit.html">PEAZIP FOR WINDOWS</a><a
- href="peazip-64bit.html"><br>
+ href="peazip-macos.html">PEAZIP MACOS</a><a href="peazip-64bit.html"><br>
             </a></small></td>
             <td style="vertical-align: top; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-64bit.html">PEAZIP WINDOWS</a><a href="peazip-64bit.html"><br>
+            </a></small></td>
+            <td style="vertical-align: top; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-sources.html">SOURCES</a><a href="peazip-add-ons.html"><br>
+            </a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
@@ -357,8 +368,37 @@ NOTES<big><br>
             </big></h3>
             </div>
             <br>
+            <a name="free_file_compression_utility"></a>PeaZip Portable
+(which is available for Windows and Linux) is a
+cross-platform file compression software, a free zip / unzip / unrar
+utility that
+supports the same rich set of file archiving and compression, strong
+encryption / decryption, and
+file management functions (split
+and join
+files, verify checksum / hash, secure data and disk
+deletion tools,...),
+featuring the same
+powerful and user-friendly interface over multiple operating systems
+and hardware platforms, as well as installable packages but without
+requiring installation.<br>
+All what is needed is to extract the downloaded package to the desired
+folder, and the app is ready for use.<br>
+To remove the application, no unistallation is needed, it is sufficient
+to delete the application's folder.<br>
+            <br>
+AARCH64<br>
+            <br>
+Linux aarch64 builds are made available from third parties (FlatHub's
+Flatpak, opeSUSE RPM) as currently I have not a Linux aarch64 test
+environment to test it first hand; native aarch64 build, however, is
+currently available for <a href="peazip-macos.html">Darwin / macOS</a>.<br>
+            <br>
+            <br>
+ARM 32 BIT<br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
+            <br>
             <a name="open_source_file_compression_utility"></a>This is
 an experimental, user contributed port of PeaZip file compression
 utility to
@@ -379,7 +419,6 @@ contribution. This port of PeaZip is also discussed in a <a
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
 on Lazarus / FreePascal forum, the best place to discuss coding related
 issues.<br>
-            <br>
 Please note this download is not a native Google Play Store APK app
 package for
 Android (or ChromeOS): PeaZip file compression utility will run
@@ -390,25 +429,6 @@ of those
 systems (requiring a rooted machine) rather than running on the
 Applications stack (Dalvik virtual machine), as required for Store
 apps.<br>
-            <br>
-            <a name="free_file_compression_utility"></a>PeaZip Portable
-(which is available for Windows and Linux) is a
-cross-platform file compression software, a free zip / unzip / unrar
-utility that
-supports the same rich set of file archiving and compression, strong
-encryption / decryption, and
-file management functions (split
-and join
-files, verify checksum / hash, secure data and disk
-deletion tools,...),
-featuring the same
-powerful and user-friendly interface over multiple operating systems
-and hardware platforms, as well as installable packages but without
-requiring installation.<br>
-All what is needed is to extract the downloaded package to the desired
-folder, and the app is ready for use.<br>
-To remove the application, no unistallation is needed, it is sufficient
-to delete the application's folder.<br>
             <br>
             <span style="font-weight: bold;">Installation Instructions:</span><br>
 PeaZip Portable for Linux ARM requires a (physical or virtual) machine
@@ -441,7 +461,11 @@ of PeaZip for ARM Linux, cross platform Open Source file compression
 application for aarch64, armv7. Free Software application to manage 7Z
 ISO RAR TAR ZIP files and many more compression formats.<br>
             </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; Linux &gt;
+            <p><span style="font-weight: bold;">Topics: PeaZip for
+aarch64, PeaZip for arm builds download<br>
+            </span></p>
+            <p><span style="font-weight: bold;">PeaZip &gt; Downloads
+&gt;
 PeaZip Linux ARM 7Z RAR ZIP file compression application<br>
             </span></p>
             </td>
@@ -476,16 +500,16 @@ PeaZip Linux ARM 7Z RAR ZIP file compression application<br>
             <img alt="peazip aarch64 package"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            <a href="index.html">All
+            </small><small><a href="index.html">All
 PeaZip downloads</a><br>
-            <a href="download-installer-p-windows.html">PeaZip for
-Windows 32 bit</a><br>
-            <a href="peazip-64bit.html">PeaZip
-for Windows 64 bit</a><br>
-            <a href="peazip-portable.html">PeaZip
-Portable</a><br>
-            <a href="peazip-linux.html">PeaZip
-Linux/BSD</a><br>
+            </small><small><a href="peazip-linux.html">PeaZip
+for Linux</a><br>
+            </small><small><a href="peazip-macos.html">PeaZip
+for macOS</a></small><br>
+            <small> <a href="peazip-64bit.html">PeaZip
+for Windows</a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><a
+ href="peazip-linux.html"></a><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="unrar for linux on arm" src="titles.png"

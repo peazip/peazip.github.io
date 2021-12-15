@@ -259,11 +259,6 @@ PEAZIP ON LINUX</a></li>
               <li><a href="peazip-free-archiver.html#how_to_use_peazip">USERS</a></li>
               <li><a
  href="peazip-free-archiver.html#software_translations">TRANSLATORS</a></li>
-              <li><a
- href="peazip-free-archiver.html#software_development">DEVELOPERS</a></li>
-              <li><a
- href="peazip-free-archiver.html#software_engineering">THIRD PARTY
-TECHNOLOGIES</a></li>
               <li><a href="peazip-free-archiver.html#software_design">PROJECT'S
 GOALS</a></li>
             </ul>
@@ -667,8 +662,8 @@ installed in ia64 systems.<br>
 Alternatively, PeaZip Portable for Linux packages (GTK2 or Qt) can be
 used on BSD systems.<br>
             <br>
-Please refer to those instructions on BSD systems family page for
-porting or running PeaZip on <span style="font-weight: bold;">macOS </span>or
+            <a href="peazip-macos.html">PeaZip for macOS</a> is
+available as DMG package for <span style="font-weight: bold;">macOS </span>or
             <span style="font-weight: bold;">Darwin </span>systems.<br>
             <br>
             <h3><big><a name="portable_file_archiver"></a></big><a
@@ -917,234 +912,6 @@ GFDL, GNU Free Documentation License, as they have to be considered
 derivate work from the application's language file which is released
 under GFDL.<br>
             <br>
-            <h3><big><a name="software_development"></a><a
- href="#how_to_install_unistall_peazip">Notes for
-developers</a></big></h3>
-            <br>
-PeaZip free archiver
-utility
-sources are contained
-in the peazip-*.src.zip package.<br>
-PeaZip and PeaZip_portable shares the same sources being PeaZip
-installable basically the same portable application packaged into an
-installable format: Inno Setup's .exe for Microsoft Windows, DEB, RPM
-and TGZ for
-Linux.<br>
-            <br>
-            <h4><span style="font-weight: bold;">Compilation, build
-and
-porting </span></h4>
-PeaZip, Pea and PeaLauncher are written in FreePascal (highly
-compatible with Delphi and ObjectPascal languages) and require <a
- target="_blank" href="http://sourceforge.net/projects/lazarus/">Lazarus
-IDE<img alt="delphi like language" title="Lazarus FreePascal IDE"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a><a
- href="http://sourceforge.net/projects/lazarus/"><span
- style="font-weight: bold;"></span></a> to
-be compiled; Windows setup
-scripts (.iss files) are developed using Inno Setup. <br>
-To compile PeaZip binaries open the .lpi file of the desired binary
-(i.e. peach.lpi for peazip binary) and select "build all". <br>
-FreePascal supports multiple widgetsets (Win32, WinCE, GTK1, GTK2, Qt,
-Carbon, fpGUI) to allow compilation of GUI applications for the various
-supported systems and to create different &#8220;flavours&#8221; of the application
-for platforms supporting multiple widgetsets (i.e Linux). <br>
-PeaZip's sourcecode is cross platform, platform-specific code portions
-are contained in conditional compilations blocks. <br>
-Deploying the application to other targets than MSWINDOWS and LINUX may
-require adaptation of those platform specific areas (and possibly other
-fine-tunings); PC-BSD users successfully built PeaZip on *BSD platform.
-            <br>
-PeaZip will also need various backend compression and archiving
-applications to be reachable in expected directories within the
-application's path, please refer to the structure of any of the
-precompiled packages, either installable or portable, to see what third
-parts binaries must be included, and refer to respective Authors for
-ports of those utilities; also read the help file readme.txt in the
-source's package for more
-hints.<br>
-Being PeaZip programmed as frontend/backend application, missing or
-unwanted backend binaries can be omitted, at the cost of losing the
-ability of handling supported formats; for the same reason, backend
-binaries can be freely replaced with 64 bit counterparts or with
-updated versions (which will work fine as long as they follow the same
-syntax).<br>
-PeaZip code should be fairly easy to port on Delphi and other Pascal
-dialects; the underlying crypto
-library<span style="font-weight: bold;"></span>,
-developed and maintained by
-Wolfgang Ehrhardt, is explicitly written to be portable to most or all
-Pascal dialects, however due to some ASM parts some of its features may
-be x86 processor specific.<br>
-Some units of the crypto
-library uses ASM sections not fully compatible with 64 bit
-Lazarus/FPC compiler, but the library provides also pure Pascal
-replacement for those units in order to allow compilation in those
-environments.<br>
-            <br>
-            <h4><span style="font-weight: bold;">Packages testing</span></h4>
-            <br>
-PeaZip free archiver should run on all MS Windows and Linux systems,
-the program is currently tested on:
-            <ul>
-              <li>Windows 98SE (versions lower than
-PeaZip 5.5.1)</li>
-              <li>Windows 2000/XP</li>
-              <li>Windows Vista/7/8.1/10 32 and 64 bit</li>
-              <li>various x86 and x86-64 Linux
-distributions with GTK2 or Qt, both for Gnome and KDE</li>
-            </ul>
-            <br>
-            <h4><span style="font-weight: bold;">PEA archive support in
-third
-parts software</span></h4>
-To support Pea file format in your applications you may follow one of
-those ways:<br>
-            <ul>
-              <li>use directly the executable Pea
-archiving utility (LGPL freeware) passing parameters through command
-line, as in PeaZip;</li>
-              <li>use Pea source code as library to call
-Pea-related functions from your code (as in the demo application in
-"sources" package);</li>
-              <li>create a new implementation following
-the file format specifications, which are released under public domain
-and, as for what is known to the author, are free and unencumbered for
-any use.</li>
-            </ul>
-            <br>
-            <h4><big><a name="software_engineering"></a><a
- href="#how_to_install_unistall_peazip">Third party
-technlologies</a></big></h4>
-            <div style="text-align: left;"><br>
-PeaZip acts as graphic frontend for multiple "engines"
-performing archiving, compression, encryption and volume split
-features: manage, open and extract Zip
-archives, unzip
-files, free Rar
-extractor
-(unrar), extract Tar files on Windows (untar), create and convert
-archives, create compressed,
-spanned and password protected backup, compress and attach files and
-folders,
-encrypt files, split and join files (file spanning), secure file
-delete. </div>
-            <ul style="text-align: left;">
-              <li><a href="pea-archiving-utility.html"><span
- style="font-weight: bold;">Pea</span></a>
-(Giorgio Tani,
-LGPLv3) archiving utility featuring authenticated encryption; both
-PeaZip and Pea uses <a href="pea-archiving-utility.html">Wolfgang
-Ehrhardt's Pascal/Delphi crypto
-library</a><span style="font-weight: bold;"></span> </li>
-              <li><a target="_blank" href="http://www.7-zip.org/"><span
- style="font-weight: bold;">7z</span><span style="font-weight: bold;"></span></a>
-(Igor
-Pavlov, LGPL) and <a target="_blank"
- href="http://p7zip.sourceforge.net/"><span style="font-weight: bold;">p7zip</span><span
- style="font-weight: bold;"></span></a>
-(Myspace,
-LGPL, the POSIX port of 7z for Unix systems), supporting most of the
-mainstream archiving and compression formats; McMilk <a
- style="font-weight: bold;" href="https://github.com/mcmilk/7-Zip-zstd">codecs</a>
-adding support
-to Brotli, FastLZMA, Lizard, LZ4, LZ5, and Zstd through 7z binary (Tino
-Reichardt, LGPL).<span style="text-decoration: underline;"></span> </li>
-              <li><a target="_blank"
- href="http://freearc.sourceforge.net/"><span style="font-weight: bold;">ARC</span><span
- style="font-weight: bold;"></span></a>
-(Bulat
-Ziganshin, GPL) FreeARC archiver, featuring high compression and strong
-encryption</li>
-              <li><a style="font-weight: bold;"
- href="https://github.com/google/brotli">Brotli</a> (Google / Jyrki
-Alakuijala, Eugene Kliuchnikov, Robert Obryk, Zolt&aacute;n Szabadka,
-Lode Vandevenne, MIT License) fast data compression utility<br>
-              </li>
-              <li><a target="_blank"
- href="http://www.mattmahoney.net/dc/"><span style="font-weight: bold;">PAQ/LPAQ/ZPAQ</span><span
- style="font-weight: bold;"></span></a>
-(Matt
-Mahoney and other contributors, GPL) various compression utilities, the
-current state of art for maximum compression ratio, multiple times
-winner (in original or custom forms) of <a target="_blank"
- href="http://prize.hutter1.net/">Hutter Prize<img
- title="Hutter Prize for Compressing Human Knowledge"
- alt="artificial intelligence and data compression research"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> <a
- target="_blank" href="https://en.wikipedia.org/wiki/Hutter_Prize">Wikipedia
-entry
-about Hutter Prize<img title="Hutter Prize AI and compression"
- alt="text compression as hard AI problem" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> </li>
-              <li><a target="_blank"
- href="http://sourceforge.net/projects/quad/"><span
- style="font-weight: bold;">QUAD</span><span style="font-weight: bold;"></span></a>
-(Ilia
-Muraviev, LGPL), <a target="_blank"
- href="http://sourceforge.net/projects/balz/"><span
- style="font-weight: bold;">BALZ</span><span style="font-weight: bold;"></span></a>
-and <a style="font-weight: bold;" target="_blank"
- href="http://sourceforge.net/projects/bcm/">BCM</a> (Ilia
-Muraviev, public domain) compression utilities </li>
-              <li><a target="_blank" href="http://upx.sourceforge.net/"><span
- style="font-weight: bold;">UPX</span><span style="font-weight: bold;"></span></a>
-(Markus
-F.X.J. Oberhumer, L&aacute;szl&oacute; Moln&aacute;r and John F.
-Reiser, GPL), compression utility for binaries, and <a target="_blank"
- href="http://www.gnu.org/software/binutils/"><span
- style="font-weight: bold;">Strip</span><span style="font-weight: bold;"></span></a>
-form GNU
-binutils (GPL) </li>
-              <li><a target="_blank" href="http://www.winace.com/"><span
- style="font-weight: bold;">UNACE</span><span style="font-weight: bold;"></span></a>
-(Marcel
-Lemke, ACE Compression Software, royalty-free UNACEV2.DLL license)
-UNACEV2.DLL 2.6.0.0 and UNACE for Linux (royalty-free UNACE for Linux
-license) extractor for ACE files</li>
-              <ul>
-                <li>being non compliant with OSI approved licenses, it
-is
-available as separate download on Add-Ons page as <a
- href="peazip-add-ons.html#open_ace_file">PeaZip UNACE Plugin</a><br>
-                </li>
-              </ul>
-              <li><a style="font-weight: bold;" target="_blank"
- href="http://www.rarlab.com/rar_add.htm">UNRAR</a> (Eugene Roshal,
-royalty-free license from RarLab/Win.Rar GmbH, source code is available
-but subject to licensing restriction in order to disallow creating a
-rar compressor) extractor for RARv5 files</li>
-              <ul>
-                <li>being non compliant with OSI approved licenses due
-unrar
-licensing restriction, it is available as separate download on Add-Ons
-page as <a href="peazip-add-ons.html#open_rar5_file">PeaZip UNRAR5
-Plugin</a> (no longer needed on recent releases, still featured as
-alternate rar decompression engine).</li>
-              </ul>
-              <li><a style="font-weight: bold;"
- href="https://facebook.github.io/zstd/">Zstd</a> (Facebook / Yann
-Collet, Przemys&#322;aw Skibi&#324;ski, dual license BSD License and GPLv2)
-Zstandard fast data compression utility<br>
-              </li>
-            </ul>
-            <div style="text-align: left;">Open source
-archiving and
-compression utilities are included in the
-program&#8217;s package and ready to use; all software included in the
-package is released under <span style="font-weight: bold;">OSI
-approved licenses</span>. UNACE and UNRAR5 are available as separate
-downloadable
-plugin since, while royalty free, are not released under an
-OSI-approved open source license. <br>
-Self-extracting archives are supported, built using 7-Zip's sfx modules
-(with custom icons and compressed with UPX in order to minimize the
-overhead added to the archive) and alternatively FreeArc's sfx modules.
-Custom third parts modules distributors are linked in Add-ons page.<br>
-            </div>
-            <br>
             <h4><big><a name="software_design"></a></big><a
  href="#how_to_install_unistall_peazip"><big>Project's
 goals</big><br>
@@ -1284,6 +1051,9 @@ on Windows, Linux, and other operating systems. Notes for users,
 translators, developers. Learn more about third party technologies
 employed in PeaZip, and project's goals.<br>
             </span></p>
+            <p><span style="font-weight: bold;">Topics: what is PeaZip,
+how to install and uninstall, notes for users<br>
+            </span></p>
             <p><span style="font-weight: bold;">PeaZip &gt; Learn more:
 what is PeaZip, how to install<br>
             </span> </p>
@@ -1319,16 +1089,16 @@ what is PeaZip, how to install<br>
             <img alt="learn what is peazip"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            <a href="index.html">All
+            </small><a href="index.html"><small><a href="index.html">All
 PeaZip downloads</a><br>
-            <a href="download-installer-p-windows.html">PeaZip for
-Windows 32 bit</a><br>
-            <a href="peazip-64bit.html">PeaZip
-for Windows 64 bit</a><br>
-            <a href="peazip-portable.html">PeaZip
-Portable</a><br>
-            <a href="peazip-linux.html">PeaZip
-Linux/BSD</a><br>
+            </small><small><a href="peazip-linux.html">PeaZip
+for Linux</a><br>
+            </small><small><a href="peazip-macos.html">PeaZip
+for macOS</a></small><br>
+            <small> <a href="peazip-64bit.html">PeaZip
+for Windows</a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small></a><small><a
+ href="peazip-linux.html"></a><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="learn how to install peazip" src="titles.png"

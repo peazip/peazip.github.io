@@ -260,26 +260,20 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.3.0 comes with an updated internal file structure clearly
-separating binary, architecture dependent files from other resources,
-in order to make easier to port the application to multiple Operating
-Systems and architectures with specific requirements for hierarchy
-structure.<br>
-Linux versions improves compliance with Open Desktop standards and
-Filesystem Hierarchy Standard, provides better integration with XFCE
-Desktop Environment.<br>
-Theming is updated, with introduction of color temperature and
-optionally highlighted tabs.<br>
-Alongside many improvements and fixes, it is now easier to manage
-temporary work files, Deflate and Deflate64 are now available in 7Z
-format, new command line options are available, and it is now possible
-to define a custom list of preferred algorithms to be performed at once
-to calculate file checksum and hash values.<br>
+PeaZip 8.4.0 is the first release providing experimental native <a
+ href="peazip-macos.html">packages for Darwin / macOS</a> platform,
+both aarch64 (for M1 Apple Silicon chip) and Intel x86_64.<br>
+This release brings fixes and improvements (management of temporary
+files, test batches, and language selection), a new alternative
+benchmark (single and multi core, based on integer and floating point
+arithmetic) and comes with updated
+backends: Pea 1.05, and 7z 21.06, which is now employed on all
+platform; on Linux packages, 7z replaces p7zip, which is still fully
+supported as
+alternative backend.<br>
             <br>
 A total of 225
-file extensions can now be managed by PeaZip, with addition of .apkm,
-.apks, and .aab Android package formats, and of Lzip .lz (on Linux
-versions only).<br>
+file extensions can now be managed by PeaZip.<br>
             <br>
 Translations are
 available in over than 30 languages, any help is welcome to translate
@@ -290,42 +284,44 @@ please consider taking the time to give a look to <a
 directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <h3><span style="font-weight: bold;">SHA256 hash of 8.3.0
+            <h3><span style="font-weight: bold;">SHA256 hash of 8.4.0
 release packages</span></h3>
-PeaZip_8.3.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-ecf9592194dc35d7eb6bf28c561324a5c168e8a5886564f65b8e43dc06d66459<br>
-peazip_8.3.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-156318d011536be72d6614312c7e064426d3b75bda2ffa56a7ada34888c2a1a3<br>
-peazip_8.3.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-56e8695ba0c65426c424639b84bb4982bba86cb2c73e8cb6630c6524c9a62a64<br>
-peazip_help.pdf&nbsp;&nbsp;&nbsp;
-b43abfc4a7ce3f14ba8d75ca35a50d66021938f474da2367f22b3445a9b59ee7<br>
-peazip_portable-8.3.0.LINUX.GTK2.x86.tar.gz&nbsp;&nbsp;&nbsp;
-a96cb7b70e37b73460f0319c83c911cf4fac587b62f0ca8c777c593876b41d45<br>
-peazip_portable-8.3.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-6382c744b4f510198ab57a65fe5d3e924ba399d1003c1338de5dd750d070fe36<br>
-peazip_portable-8.3.0.LINUX.Qt4.x86.tar.gz&nbsp;&nbsp;&nbsp;
-e39aba0200c742c743b26ac24f2eedb27aa88f0bdf3d560968a2f22b56350bc7<br>
-peazip_portable-8.3.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-fedc6ae0fb326671db1493e8930f9a2054f1a0e89167cd009aa5bd6e7cd8ee45<br>
-peazip_portable-8.3.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-dc2ddf8f11d66c213a0a4532b54649694d5e1edf55a62ed00fdd81d4382d1c39<br>
-peazip_portable-8.3.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-b9ca8e63c7166cd78bc3f2a4be581af035817d599bbd9fbf8a81565459e2956f<br>
-peazip-8.3.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-fdb4adc0ca1f8a363c2b9585ecdf802ae3f2d7950630c750d15023d56d3db080<br>
-peazip-8.3.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-9b962a64b61d7421a49884d25166ab4e56a038daee583c70b74151ea8924c307<br>
-peazip-8.3.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-d67bd88040d70f350360aff156e049143f091997f5afe0294eac70fb19cbca18<br>
-peazip-8.3.0.src.zip&nbsp;&nbsp;&nbsp;
-9d43dc03a65cb9b1732f185251f5a2067941ad7b28e3272a3d6484d6384c18cb<br>
-peazip-8.3.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-cd8f822bea7265637480b506deee94c0b9870b1060add148774afdbb2f4eeb92<br>
-peazip-8.3.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-70069ae32081289c724002f4e20a9d762f8ca2b51246db2acda13427ee892bf0<br>
-peazip-8.3.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-edc54b26de25ca6c6b971aec2b4ebacd3cde487cc4427d4dc61adf208d58c5e8<br>
+PeaZip_8.4.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+a8e432eaa04b4a2f9ebc020d05f916cf3ebfdc571267129b43cd0727f71d1064<br>
+peazip_8.4.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+77d1b0325f3fbec5baa1874b90f52ff66746d787b0a2ad442f855a6c278333e8<br>
+peazip_8.4.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+4de40c09dcecd69dd67cedf0ea093310b67c716aae5d47a51a30638c2cc2cc54<br>
+peazip_portable-8.4.0.LINUX.GTK2.x86.tar.gz&nbsp;&nbsp;&nbsp;
+9236327c76c06bc1a90c85ce5de798250059316f641658f390b93809b2bcbcb3<br>
+peazip_portable-8.4.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+c3b323cdbeb14779b7f65458b179fd9312b665cc85f195d3429665c7a4b0011e<br>
+peazip_portable-8.4.0.LINUX.Qt4.x86.tar.gz&nbsp;&nbsp;&nbsp;
+200374afcdd8bd51485eefec3ab8e9dffb8f07ec1f939b3f44eee05ac5d2efed<br>
+peazip_portable-8.4.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+149d7aa93a4272e21cf7ad01a517a1542d8385f5ce5665454da386310243fe44<br>
+peazip_portable-8.4.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+09cacd2f74c81b4a3aee9cd976c5dd00f3edcf52a8f2369369d98bb1abe31de3<br>
+peazip_portable-8.4.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+ce44e2f6b5455f7ff2518f0e11e2958ccdc13d41a086ace735b647832c857537<br>
+peazip-8.4.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+e912983909c54e7a0efb77290f5b3d3d46c09f9ed35c71ff67991e7384e8aa16<br>
+peazip-8.4.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+c408f240380444090f1c337ea4861e939cbce1d4cd617cbab8169423851138d6<br>
+peazip-8.4.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+95cf8bbf784bfa06e89cf15cd105ce6d3a45f91e79b4499b0840df1980c60b2f<br>
+peazip-8.4.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+fae19f23d2f35a3d338206d950efebd60dbb893cf636f822828d090d0998b823<br>
+peazip-8.4.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+88d8a602d80e5044e73fff34efdc195220a0dc6892778054338f08445e67d286<br>
+peazip-8.4.0.src.zip&nbsp;&nbsp;&nbsp;
+f4ffb4ca1e912eb89d8d32338166bad2bdb0dc86fffb747921eb2c2b90c8aa74<br>
+peazip-8.4.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+a1bd79aa0fa46b2041ce807202e9bba9f1bbb2dc3efda76c1db93c146dfc83fd<br>
+peazip-8.4.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+6e3818e72e3751dd919a5366b5d191896d8eef8b644a002c7644dadd00bcddbc<br>
+peazip-8.4.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+03d7b50f22d815468e47e6b58acf008c94247e2e781232e26e4b466149db5583<br>
             </td>
           </tr>
         </tbody>
@@ -344,6 +340,83 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2021 12 15<br>
+            <div style="margin-left: 40px;">8.4.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.05<br>
+7z 21.06 (console) used by default on Darwin/macOS, Linux, and Windows<br>
+            <div style="text-align: left; margin-left: 40px;">p7zip,
+and szcnick's p7zip (fork of p7zip) syntax is fully supported and can
+be used as alternative replacing (peazip)/res/bin/7z/7z binary<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Fixed issues when temporary
+work path is set to user's temp<br>
+            <div style="margin-left: 40px;">(Windows) Fixed unnecessary
+confirmation message for non existing output directory<br>
+Fixed smart extraction not able to remove extra level of nesting<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added single and multi core
+performances benchmark, in main menu Tools &gt; System benchmark (pea)<br>
+            <div style="margin-left: 40px;">The benchmark performs
+integer and floating point arithmetic operations<br>
+Benchmark result unit is arbitrary and only meant to allow comparison
+between different platforms<br>
+            <div style="margin-left: 40px;">For reference 2020 MacBook
+Air M1 score is 100 (single core) and 515 (multi core) for aarm64 build
+            <br>
+            </div>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">(Darwin/macOS, Linux) File
+manager columns' menu is available
+righclicking status bar<br>
+(Darwin/macOS) Improved file manager<br>
+            <div style="margin-left: 40px;">Added links to Volumes,
+Applications, and System/Applications in navigation treeview<br>
+Added auto-configured custom apps for "Open with" submenu<br>
+Added macOS-specific funtions in context menu, File Manager &gt; System
+tools: Launchpad, Activity monitor, System preferences, Disk utility<br>
+Open command prompt here function now working<br>
+PeaUtils launching from PeaZip now working<br>
+Run function now working<br>
+            </div>
+Language can now be changed from dropdown menu from General settings
+tab (main menu, Options &gt; Settings)<br>
+            <div style="margin-left: 40px;">Previous method allowing to
+manually select the language file is still available from the link
+before the dropdown menu<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">New option to not stop
+sequences of archive test tasks unless an error is encountered<br>
+            <div style="margin-left: 40px;">From main menu, Options
+&gt; Settings, Advanced tab set "Stop to inspect report for error,
+list" instead of default value "Stop to inspect report for error, list,
+test"<br>
+            </div>
+            <div style="margin-left: 40px;">With this setting, a
+successful archive test closes on completion unless an error is foud in
+the archive and test fails, in which case error message (and full
+report) is shown to user and needs to be dismissed before continuing
+with following test in sequence<br>
+            </div>
+Improved management of temporary work files<br>
+            <div style="margin-left: 40px;">7z/p7zip work files during
+compression are now inside peazip-tmp subpath, if work directory is set
+to Custom or User's temp <br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2021 11 14<br>
             <div style="margin-left: 40px;">8.3.0<br>
@@ -1094,9 +1167,16 @@ versions change log<br>
             <br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: PeaZip
-project development change log. Bug fixes, implementatio of new
+project development change log. Hash of current version's published
+packages. Bug fixes, implementatio of new
 software's features</span><span style="font-weight: bold;">, release
-notes, historu of previos version's change logs. </span> </p>
+notes, history of previos version's change logs.<br>
+            </span></p>
+            <p><span style="font-weight: bold;">Topics: release notes,
+hash of packages, change log, history of changes<br>
+            </span></p>
+            <p><span style="font-weight: bold;">PeaZip &gt; Change log<br>
+            </span> </p>
             </td>
           </tr>
         </tbody>
@@ -1129,16 +1209,17 @@ notes, historu of previos version's change logs. </span> </p>
             <img alt="peazip bug fixes log"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            <a href="index.html">All
+            </small><a href="index.html"><small></small></a><small><a
+ href="index.html">All
 PeaZip downloads</a><br>
-            <a href="download-installer-p-windows.html">PeaZip for
-Windows 32 bit</a><br>
-            <a href="peazip-64bit.html">PeaZip
-for Windows 64 bit</a><br>
-            <a href="peazip-portable.html">PeaZip
-Portable</a><br>
-            <a href="peazip-linux.html">PeaZip
-Linux/BSD</a><br>
+            </small><small><a href="peazip-linux.html">PeaZip
+for Linux</a><br>
+            </small><small><a href="peazip-macos.html">PeaZip
+for macOS</a></small><br>
+            <small> <a href="peazip-64bit.html">PeaZip
+for Windows</a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><a
+ href="peazip-linux.html"></a><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="peazip changes" src="titles.png"

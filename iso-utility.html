@@ -225,6 +225,18 @@ HOW TO</a></small></td>
           <tr align="left">
             <td
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <ul>
+              <li>
+                <p><a href="#free_iso_software">HOW TO EXTRACT ISO DMG
+UDF VMDK DISK IMAGE FILES</a></p>
+              </li>
+              <li>
+                <p><a href="#iso_format">WHAT ARE ISO, DMG, UDF, VMDK
+DISK IMAGE</a></p>
+              </li>
+            </ul>
+            <br>
+            <br>
             <h2><big><big><big><a name="free_iso_software"></a><a
  href="iso-utility.html#extract_iso_image">How to extract ISO DMG UDF
 VMDK disk image
@@ -438,12 +450,166 @@ selected files from archive</a><br>
               </tbody>
             </table>
             <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+ style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
+ border="0" cellpadding="48" cellspacing="0">
+        <tbody>
+          <tr align="left">
+            <td
+ style="background-color: rgb(255, 255, 255); vertical-align: top;">
+            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a name="iso_format"></a><a
+ href="#extract_iso_image">What are ISO, DMG, UDF,
+VMDK disk images</a></big></big><br>
+            </big></h2>
+            </div>
+            <br>
+PeaZip supports reading .ISO and other common disk image formats, such
+as Apple DMG (commonly used on macOS / OSX operating systems), UDF, and
+viewing many virtual machine disk image types
+including
+VMDK VMWare virtual disks, QCOW2, Oracle VDI, Microsoft Virual Hard
+Disk VDH
+files, as well as general purpose image formats as IMA, IMG, and MDF.<br>
+Burning ISO or other images to CD/DVD supports is
+currently out of the scope of the application, and it is not
+implemented.<br>
+PeaZip also features support to <a href="wim-utility.html">reading and
+writing WIM files</a>,
+new <a href="wim-files.html">Microsoft Windows Image Format</a> for
+data distribution based on disk images,
+superseding older <a href="cab-files-utility.html">CAB packages format</a>.<br>
+            <h2><img title="What are disk image file formats"
+ alt="ISO DMG UDF VMDK extension" src="extract-archive.png"
+ style="width: 112px; height: 45px;"></h2>
+            <br>
+            <a name="what_is_disk_image"></a>Read more: <a
+ href="file:///C:/-%20src/peazip-web/iso-utility.html">how to work with
+ISO, DMG, UDF, VMDK files</a><br>
+            <br>
+            <a name="iso_file_specs"></a>External online resources
+about image file types: <a target="_blank"
+ href="http://en.wikipedia.org/wiki/Apple_Disk_Image">DMG<img
+ title="dmg files" alt="free dmg utility" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
+Apple Disk Image, <a target="_blank"
+ href="http://en.wikipedia.org/wiki/ISO_image">ISO<img
+ title="play iso files" alt="free iso utility"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+ target="_blank"
+ href="http://en.wikipedia.org/wiki/Universal_Disk_Format">UDF<img
+ title="udf files" alt="free dmg utility" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
+Universal File Format entries on Wikipedia, <a target="_blank"
+ href="https://en.wikipedia.org/wiki/VMDK">VMDK<img title="VMDK files"
+ alt="VMWare image file format" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px; font-weight: bold;"></a>
+file format and Open Virtualization Format <a target="_blank"
+ href="http://www.dmtf.org/standards/ovf">OVF<img
+ title="Virtual machine image formats" alt="virtual machine disk"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px; font-weight: bold;"></a>
+standard initiative.<br>
+            <br>
+            <div style="text-align: left;"> </div>
+            <div style="text-align: left;"> </div>
+            <span style="font-weight: bold;"></span>
+            <table
+ style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
+ border="0" cellpadding="0" cellspacing="1">
+              <tbody>
+                <tr style="color: rgb(245, 245, 245);">
+                  <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                  <table style="width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td
+ style="vertical-align: top; width: 50%; color: rgb(245, 245, 245);">
+                        <h3><big><big><big><big><a
+ name="what_is_apple_dmg_file"></a>.DMG</big></big></big></big></h3>
+                        <a name="apple_macos_virtual_disk_image"></a>DMG
+extension designates Apple
+Disk Image format, commonly employed for software and data package
+distribution on
+macOS / Mac OSX platform, storing content in Universal Disk Image
+Format (UDIF
+data
+format).<br>
+PeaZip supports opening (mounting), browsing and extracting content
+from DMG disk
+images, but cannot create dmg packages, nor update existing dmg files.<br>
+                        <br>
+                        </td>
+                        <td
+ style="vertical-align: top; width: 50%; color: rgb(245, 245, 245);">
+                        <h3><big><big><big><big><a
+ name="what_is_iso_file"></a>.ISO</big></big></big></big></h3>
+                        <a name="iso_file_format"></a>Uncompressed
+sector-based imaging format storing binary digital copy,
+sector-by-sector, of an optical disk support, filesystem agnostic (may
+contain in example an ISO 9660 file system, as well as other file
+systems), commonly used to save as single archive file a data CD, DVD,
+or Blu-Ray disk.<br>
+PeaZip supports opening (mounting), browsing and extracting content
+from iso disk
+images. Creation of ISO images, or burning disk images to physical
+media supports, is beyond the scope of the program.<br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+ style="vertical-align: top; width: 50%; color: rgb(245, 245, 245);">
+                        <h3><big><big><big><big><a
+ name="what_is_udf_file"></a>.UDF</big></big></big></big></h3>
+UDF extension designates Universal File Format,
+an open standard (ISO 13346, created by Optical Storage Technology
+Association) for data storage, developed for overcoming limitations of
+older ISO 9660 standard.<br>
+PeaZip provides read-only support for that file type; the application
+supports opening (mounting), browsing and extracting content from udf
+disk
+images.<br>
+                        </td>
+                        <td
+ style="vertical-align: top; width: 50%; color: rgb(245, 245, 245);">
+                        <h3><big><big><big><big><a
+ name="what_is_vmdk_file"></a>Other disk image formats<br>
+                        </big></big></big></big></h3>
+PeaZip supports (read-only) multiple virtual disk imaging types, as
+IMA, IMG,
+IMZ, MDF (Alcohol 120 image files), and many virtual machine disk
+formats like
+QCOW2 (for QUEMU full-system emulator), VMDK (for VMWare virtualization
+software family), VDI for Oracle VirtualBox, and Microsoft
+Virtual PC's Virtual Hard Disk format VHD.<br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
             <p><span style="font-weight: bold;">Synopsis: Work with
 PeaZip as free ISO files opener, extractor software. How to open,
 convert,
 extract content from DMG ISO UDF VMDK disk images as archives on
 Windows, Linux. Extract single file form iso images. Manage encrypted
-image files.</span><span style="font-weight: bold;"></span></p>
+image files. What are disk image files: Apple DMG, IMG, ISO, QCOW2,
+UDF, VDI, VMDK...<br>
+            </span></p>
+            <p><span style="font-weight: bold;">Topics: iso file
+extension, udf format, dmg Apple disk images</span><br>
+            <span style="font-weight: bold;"></span><span
+ style="font-weight: bold;"></span></p>
             <p><span style="font-weight: bold;">PeaZip &gt; FAQ
 &gt; Free DMG ISO UDF VMDK files opener, extractor utility</span></p>
             </td>
@@ -478,16 +644,16 @@ image files.</span><span style="font-weight: bold;"></span></p>
             <img alt="how to use iso files"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            <a href="index.html">All
+            </small><a href="index.html"><small><a href="index.html">All
 PeaZip downloads</a><br>
-            <a href="download-installer-p-windows.html">PeaZip for
-Windows 32 bit</a><br>
-            <a href="peazip-64bit.html">PeaZip
-for Windows 64 bit</a><br>
-            <a href="peazip-portable.html">PeaZip
-Portable</a><br>
-            <a href="peazip-linux.html">PeaZip
-Linux/BSD</a><br>
+            </small><small><a href="peazip-linux.html">PeaZip
+for Linux</a><br>
+            </small><small><a href="peazip-macos.html">PeaZip
+for macOS</a></small><br>
+            <small> <a href="peazip-64bit.html">PeaZip
+for Windows</a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small></a><small><a
+ href="peazip-linux.html"></a><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="Manage encrypted image files" src="titles.png"
