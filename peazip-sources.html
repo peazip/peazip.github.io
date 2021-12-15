@@ -160,8 +160,22 @@ Lazarus/FPC<br>
  style="border: 0px solid ; width: 15px; height: 9px;"></span><span
  style="color: rgb(253, 253, 253);">PeaZip source package (ZIP)</span></a></big></h3>
             <big><small><small>Sources of PeaZip as ZIP package,
-requires Lazarus / FreePascal IDE for building and compiling the app</small></small></big><br>
-&nbsp; <br>
+requires Lazarus / FreePascal IDE for building and compiling the app<br>
+            </small></small></big><br>
+            <big style="font-weight: bold; color: rgb(255, 255, 255);"><a
+ href="https://github.com/peazip/PeaZip/releases/download/8.4.0/peazip-8.4.0.pack.zip"></a></big>
+            <h3 style="font-weight: bold;"><big> <a
+ style="color: rgb(253, 253, 253);" _blank=""
+ href="https://github.com/peazip/PeaZip/releases/download/8.4.0/peazip-8.4.0.pack.zip"><span
+ style="text-decoration: underline;"><img
+ title="Download PeaZip for FreeBSD"
+ alt="peazip deb rpm packages structure"
+ src="free-rar/download-free-software.png"
+ style="border: 0px solid ; width: 15px; height: 9px;"></span><span
+ style="color: rgb(253, 253, 253);">PeaZip packages examples (ZIP)</span></a></big></h3>
+            <big><small><small>Examples of DEB and RPM packages
+structures to help building packages for distribution</small></small></big><br>
+            <br>
             </div>
             <h4><big><a style="color: rgb(253, 253, 253);" _blank=""
  href="https://github.com/peazip/PeaZip/releases/download/8.4.0/peazip-8.4.0.src.zip"><span
@@ -277,9 +291,14 @@ v3 Open Source license, and are avilable as:<br>
             <ul>
               <li>Git repository on GitHub</li>
               <li>standalone, downloadable ZIP package containing
-source files<br>
-              </li>
+source files</li>
             </ul>
+"Packages exampes" package is an optional addition to source package,
+ans it is simply meant to help developers to create installer packages
+for different package management systems, and provides examples of
+directory structures used to create DEB and RPM packages for the
+current release.<br>
+            <br>
 PeaZip is written in <a target="_blank"
  href="https://www.freepascal.org/">FreePascal<img
  alt="freepascal compiler" src="free-rar/extract-files.png"
@@ -447,12 +466,22 @@ packages for a wide array of different installer technologies and for
 many different package management systems, such as Windows EXE, MSI,
 and MSIX installers, macOS DMG, Linux DEB, RPM, and Flatpack - Flatpack
 packages are maintained by third parties developers at FlatHub.<br>
+            <br>
 At its core, PeaZip is simply a standalone, as autocontained as
 possible application (just as the Portable versions, which shares the
 same code base) which is told to save the configuration in
 system-specific user's path, and a set of scripts (mostly collected in
 (peazip)/res/share/batch path, e.g. OpenDesktop .desktop files) which
 instructs the host system on how to pass input and parameters to PeaZip.<br>
+            <br>
+"Packages exampes" package <span style="font-weight: bold;">peazip-x.y.z.pack.zip</span>
+provides examples of
+the directory structures used to create DEB and RPM packages for the
+current release, in order to help developers in assembling packages for
+distribution with different package managers.<br>
+It is not needed to compile sources, it is only meant as additional
+help to assemble packages.<br>
+            <br>
             <br>
             <span style="font-weight: bold;">DETAILS ABOUT RES/SHARE</span><br>
             <br>
@@ -637,7 +666,7 @@ installable packages for PeaZip<br>
             <img alt="HOW TO ASSEMBLE PEAZIP APP PACKAGES"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            </small><a href="index.html"><small><a href="index.html">All
+            </small><small><a href="index.html">All
 PeaZip downloads</a><br>
             </small><small><a href="peazip-linux.html">PeaZip
 for Linux</a><br>
@@ -645,8 +674,7 @@ for Linux</a><br>
 for macOS</a></small><br>
             <small> <a href="peazip-64bit.html">PeaZip
 for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small></a><small><a
- href="peazip-linux.html"></a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="Notes for developers" src="titles.png"
