@@ -401,9 +401,13 @@ most disk space it is possible (to reduce the cost of storing more
 copies if the backup over the time), or to reduce the size of the
 output in order to reduce bandwidth usage when backup is not stored
 locally (i.e. on SAN / NAS, cloud).<br>
-Fore instance, backup to 7Z format (as well as ZPAQ) allows excellent
-compression ratio, while backup in TAR format with fast Brotli or
-Zstandard compression allows to easily handle large amount of backup
+Fore instance, backup to <a href="7z-file-format.html">7Z format</a>
+(as well as ZPAQ) allows excellent
+compression ratio, while backup in <a href="tar-file-format.html">TAR
+format</a> with fast <a href="brotli-compressed-file-format.html">Brotli</a>
+or
+            <a href="zst-compressed-file-format.html">Zstandard</a>
+compression allows to easily handle large amount of backup
 data per amount of time.<br>
             <br>
             <span style="background-color: rgb(255, 238, 221);"><a

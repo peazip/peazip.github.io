@@ -227,15 +227,18 @@ algorithm can be easily made
 parallel, and benefit of recent multi-core CPU), but faster than more
 powerful compression schemes as in <a href="what-is-rar-file.html">RAR
 format</a>, <a href="7z-file-format.html">7Z format</a>, and new <a
- href="zipx-file-format.html">ZIPX format</a>. Compression
+ href="zipx-file-format.html">ZIPX format</a> (which can optionally use
+BZip2 algorithm as compressor). <br>
+Compression
 ratio, also, is usually intermediate between older Deflate-based ZIP/GZ
 files and modern RAR, 7Z, ZIPX formats.<br>
             <br>
 Compressed files are usually identified by .bz2 extension, and can
 contain a single input file.<br>
 Due this by-design limitation, on Unix/Linux systems BZip2 compression
-(as well as Gzip, XZ,...) is usually cascaded to <span
- style="font-weight: bold;">TAR</span> archiving -&nbsp; multiple files
+(as well as Gzip, XZ,...) is usually cascaded to <a
+ style="font-weight: bold;" href="tar-windows.html">TAR archive creation</a>
+-&nbsp; multiple files
 data
 and metadata (file attributes, date/time etc) are consolidated into a
 single uncompressed .tar container - producing TBZ2 file, which can be

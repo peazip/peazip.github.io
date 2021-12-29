@@ -219,16 +219,25 @@ providing file archival nor encryption features</span>.<br>
             <span style="font-weight: bold;">Brotli </span>compression
 algorithm was developed by Google continuing and superseding
 previous <span style="font-weight: bold;">Zopfli </span>project
-(which was meant for compatibility with standard zlib GZip /&nbsp;
+(which was meant for compatibility with standard zlib <a
+ href="gzip-files.html">GZip</a> /&nbsp;
 Deflate specifications) in order to provide a more flexible compression
 algorithm, capable both of high speed at low compression settings, and
 improved (better than Deflate) compression ratio at higher compression
-settings. Extraction of Brotli-compressed files is also extremely fast.<br>
+settings.<br>
+Extraction of Brotli-compressed files is also extremely fast.<br>
+For its extreme data compression and decompression speed, and low CPU
+and memory usage (if compared to Deflate, or more powerful compression
+algorithms such as <a href="bzip2-file.html">BZip2</a>, LZMA, PPMd, <a
+ href="paq-file-format.html">PAQ</a>) Brotli is a competitor of
+Facebook's <a href="zst-compressed-file-format.html">Zstandard</a>
+compression algorithm.<br>
             <br>
             <a name="google_brotli_compression_specs"></a>Brotli-compressed
 files are usually identified by .br extension, and can
 contain a single input file; to overcome this by-design limitation
-PeaZip automatically cascades Brotli compression with TAR archiving if
+PeaZip automatically cascades Brotli compression with <a
+ href="tar-windows.html">TAR archive creation</a> if
 multiple files or folders are sent as input for BR file creation,
 resulting in a .tar.br archive.<br>
 In this two step process, input files are consolideted in a single TAR
