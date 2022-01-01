@@ -214,7 +214,9 @@ compressor, extractor and opener utility (list, test, search and
 explore archived
 files and
 directories) alternative to WinZip. <br>
-Support is limited to archives compressed with BZip2, LZMA, LZMA2, and
+Support is limited to archives compressed with <a
+ href="bzip2-file.html">BZip2</a>, LZMA, LZMA2 (<a
+ href="7z-file-format.html">XZ</a>), and
 PPMd methods;<span style="font-weight: bold;"> WavPack, and JPEG
 precompressors are currently
 unsupported bot for creation and for extraction</span>.<br>
@@ -225,10 +227,11 @@ However, to add support to WavPack in PeaZip, you can use <a
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
 plugin (free of charge, closed source, hence cannot be provided with
 PeaZip packages), simply extracting the 32 or 64 bit plugin in PeaZip's
-folder, in \res\7z\Codecs path.<br>
-The application also supports encryption and decryption of password
-protected zipx
-archives.<br>
+folder, in (peazip)/res/7z/Codecs path.<br>
+The application also supports <a href="encrypt-files.html">encryption</a>
+and <a href="extract-encrypted-files.html">decryption</a> of password
+protected <a href="zipx-file-format.html">zipx
+archives</a>.<br>
             <br>
             <h3><a href="index.html"><img
  alt="how to work with zipx files"
@@ -252,7 +255,7 @@ archives.<br>
                         <br>
                         <h3>ZIPX archives are ZIP files employing a
 compression method different than Deflate or Deflate64.</h3>
-Changing ZIP compression method to BZip2, LZMA, LZMA2, or PPMd in
+Changing ZIP compression method to BZip2, LZMA, LZMA2 XZ, or PPMd in
 Advanced tab of archive creation screen automatically changes the
 output extension to ZIPX - this behavior can be set in Options &gt;
 Settings &gt; Archive manager.<br>
@@ -437,8 +440,9 @@ dialog asking for decompression output path only<br>
                           </li>
                           <li>
                             <p><a name="extract_file_from_zipx_archive"></a>Simply
-drag &amp; drop
-to unzip desired objects
+                            <a href="screenshots-peazip-3.html">drag
+&amp; drop
+to unzip</a> desired objects
 from
 the
 application to the system</p>

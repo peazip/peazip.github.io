@@ -213,22 +213,23 @@ algorithm</a></big></big><br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
             <a name="gz_file"></a>GZ extension designates
-a <span style="background-color: rgb(255, 238, 221);">single <a
- href="what-is-zip-file.html">file
-compression</a> format</span>, created
+a <a href="what-is-zip-file.html">single file
+compression format</a>, created
 for GZip (GNU Zip or "gratis
 Zip") project, started in 1992 by Jean-Loup Gailly and Mark Adler in
 order to provide a free replacement for proprietary / commercial data
 compression solutions.<br>
 Compression is based on <span style="font-weight: bold;">DEFLATE </span>algorithm
-(also used as default algorithm in PKZip/WinZip's
-.ZIP format),
+(also used as default algorithm in PKZip/<a href="zip-file-format.html">WinZip's
+.ZIP format</a>),
 a combination of
 Lempel-Ziv coding (LZ77) and Huffman coding.<br>
 Deflate is obiquitously employed as fast (and light in resources)
 compression algorithm (as in zlib / PNG lossless compression and Zopfli
 project), and recently is being surpassed in speed by new actively
-developed projects as Google's Brotli and Facebook's Zstandard
+developed projects as Google's <a
+ href="brotli-compressed-file-format.html">Brotli</a> and Facebook's <a
+ href="zst-compressed-file-format.html">Zstandard</a>
 providing either superior compression ratio at high compression levels,
 and faster, near real time compression and extraction speed at whith
 lower settings, while retaining a comparable compression ratio to
@@ -267,7 +268,7 @@ PeaZip has full support for GZip standard, including <span
  name="gzip_vs_brotli_vs_zstandard"></a>When
 it is recommended to use GZ format: GZip is usually employed
 for compressing TAR packages (meant for distribution or backup) on
-Linux and
+                  <a href="peazip-linux.html">Linux</a> and
 other Unix-like systems.<br>
 GZip Deflate excels in fast compression but recent faster alternatives
 as Brotli and Zstandard are now available and increasily supported.<br>
@@ -287,7 +288,8 @@ single file, but cannot consolidate multiple input file in a single
 (compressed) container archive</span> - for that reason it is commonly
 used on
 Unix/Linux world to <a href="tar-windows.html">compress TAR archives</a>
-(as well as Brotli .BR, BZip2 .BZ2, LZMA .XZ, Zstandard .ZST...)
+(as well as Brotli .BR, <a href="bzip2-file.html">BZip2</a> .BZ2, <a
+ href="7z-file-format.html">LZMA .XZ</a>, Zstandard .ZST...)
 -
 archiving format which can consolidate multiple files in a single
 package and preserve filesystem information (file attributes, date/time

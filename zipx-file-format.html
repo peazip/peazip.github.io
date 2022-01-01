@@ -228,7 +228,7 @@ on PKZip's <a href="zip-file-format.html">ZIP format specifications</a>,
 with only difference of employing newer <span
  style="font-weight: bold;">data compression</span>
 algorithms - <span style="font-weight: bold;">BZip2</span>, <span
- style="font-weight: bold;">LZMA</span>, <span
+ style="font-weight: bold;">LZMA</span> / LZMA2 (XZ), <span
  style="font-weight: bold;">PPMd </span>and others
 (superseding
 classic Deflate / Deflate64 algorithm) - <a
@@ -242,9 +242,11 @@ higher, <a href="file-compression-performances.html">improved
 compression ratio</a> compared to classic zip/Deflate, at cost of
 higher
 computational cost,
-comparable with compression ratio of formats like RAR,
-ACE, and
-in some cases 7-Zip's 7Z / XZ files - modern archiving formats also
+comparable with compression ratio of formats like <a
+ href="what-is-rar-file.html">RAR</a>,
+            <a href="ace-files-utility.html">ACE</a>, and
+in some cases <a href="7z-file-format.html">7-Zip's 7Z / XZ file format</a>
+- modern archiving formats also
 relying in LZMA and PPMd -family compression algorithms and multimedia
 precompressors.<br>
             <br>
@@ -252,7 +254,7 @@ The possibility of employing alternate compression methods is anyway
 already featured in standard ZIP format definition, so using an
 alternate designation as ZIPX is merely a choice and does not
 (technically) define a different, independent standard.<br>
-            <span style="font-weight: bold;">File extension</span>
+The <span style="font-weight: bold;">file extension</span>
 modification from zip to zipx was intended to avoid
 ambiguity with users (openly marking it as new type, with new
 extension) and prevent older archivers to try to handle the new zipx
@@ -260,12 +262,14 @@ standard as it was a classic zip file, failing to support its newer
 features.<br>
             <br>
             <a name="zipx_aes_encryption"></a>ZIPX files supports
-new AES-based WinZip's <span style="font-weight: bold;">AE encryption</span>
+new AES-based WinZip's <a href="encrypt-files.html"><span
+ style="font-weight: bold;">AE encryption</span></a>
 (128 bit and 256 bit), which is also part of ZIP standard - and
 optionally, for legacy support only, old
 ZipCrypto (Zip 2.0) cryptography.<br>
-Like for ZIP files, WinZip provides its custom <span
- style="font-weight: bold;">file spanning</span> scheme for splitting
+Like for ZIP files, WinZip provides its custom <a
+ href="file-split.html"><span style="font-weight: bold;">file spanning</span></a>
+scheme for splitting
 ZIPX archives (Z01 extension).<br>
             <a name="max_zipx_file_size_limit_specifications"></a>As in
 current Zip format revision, Zipx
@@ -276,10 +280,12 @@ and to <span style="font-weight: bold;">16 EB as max file size</span>
 and for the total size of the archive - as ZIP64 standard zip archives
 - likely exceeding user's needs and limits of current filesystems
 implementation.<br>
+Read more about <a href="rar-zip-file-format-size-limitations.html">size
+and number of items limitations of various archive types</a>.<br>
             <br>
 PeaZip can <a href="zipx-files-software.html">create, open and extract
 ZIPX
-files</a> with Bzip2, LZMA, LZMA2,
+files</a> with <a href="bzip2-file.html">Bzip2</a>, LZMA, LZMA2 / XZ,
 and PPMd (technically ZIPX files by definition); custom WavPack, MP3
 and JPEG pre-compression filters are currently unsupported (both for
 reading and for writing).<br>
@@ -290,7 +296,7 @@ To add support to WavPack in PeaZip, you can use <a target="_blank"
  style="border: 0px solid ; width: 12px; height: 10px;"></a> plugin
 (free of charge, closed source, hence cannot be provided with PeaZip
 packages), simply extracting the 32 or 64 bit plugin in PeaZip's
-folder, in \res\7z\Codecs path.<br>
+folder, in (peazip)/res/7z/Codecs path.<br>
             <h2><img title="ZIPX format creation" alt="zipx file format"
  src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
             <h3><img title="ZIPX format extraction"

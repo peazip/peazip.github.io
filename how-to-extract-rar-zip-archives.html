@@ -219,9 +219,11 @@ types of archives, compressed files, or containers, including: <span
  style="font-weight: bold;">bz2</span>, <span
  style="font-weight: bold;">gz</span>, <span style="font-weight: bold;">tar</span>,
             <span style="font-weight: bold;">zip</span>, <span
- style="font-weight: bold;">zipx</span>, arj, cab,
+ style="font-weight: bold;">zipx</span>, arj, <a
+ href="cab-files-utility.html"><span style="font-weight: bold;">cab</span></a>,
 chm, cpio, deb, lzh, lha, <span style="font-weight: bold;">rar</span>,
-rpm, z, <span style="font-weight: bold;">iso</span>, Java (jar, ear,
+rpm, z, <a href="iso-utility.html"><span style="font-weight: bold;">iso</span></a>,
+Java (jar, ear,
 war), xpi, wim, u3p,
 lzma, udf, dmg, swm, Open Office /
 Libre Office (ods, ots, odm,
@@ -229,13 +231,27 @@ oth, oxt, odb, odf, odg, otg, odp, otp, odt, ott), Microsoft
 Office (doc, dot, xls,
 xlt, ppt, pps, pot, docx, dotx, xlsx, xltx), Flash (swf, flv), quad,
 balz, bcm, zpaq,
-paq*, lpaq*, <span style="font-weight: bold;">ace</span>, arc, pea and
+paq*, lpaq*, <a href="ace-files-utility.html"><span
+ style="font-weight: bold;">ace</span></a>, arc, pea and
 more...<br>
-            <a name="recoursive_extraction_of_archives"></a>If a folder
-of archives is selected for extraction procedure, the application will
+PeaZip can <a href="free-rar.html">extract RAR files free</a> (even
+new RAR5 standard), out of the box, without requiring installation of
+additional packages or pulg-ins.<br>
+ZIPX files are read/write supported by PeaZip archiver utility, but
+when <a href="zipx-files-software.html">extracting a ZIPX archive</a>
+please remember it may contain filest compressed with newer (or even
+proprietary) algorithms not yet supported by PeaZip, as ZIPX standard
+is subject to constant development from WinZip company.<br>
+            <br>
+            <a name="recoursive_extraction_of_archives"></a>If a <span
+ style="font-weight: bold;">folder
+of archives</span> is selected for extraction procedure, the
+application will
 scan
 it (recursively, including sub-folders) for detecting archive files of
 supported types, to be listed for batch extraction in a single pass.<br>
+All archive files contained in the selected folder will consequently be
+added to the extraction list layout.<br>
             <br>
             <br>
             <h3 style="font-weight: bold;"><big>How to extract one or
@@ -264,9 +280,8 @@ archive or the group of archives<br>
                     </li>
                     <li>
                       <p><a name="extract_rar_zip_from_context_menu"></a>Select
-one or more archives and use
-context
-menu
+one or more archives and use <a href="screenshots-peazip-3.html">context
+menu extraction</a>
 entry <span style="font-weight: bold;">Extract here</span>, <span
  style="font-weight: bold;">Extract here (smart) </span>or <span
  style="font-weight: bold;">Extract
@@ -319,7 +334,8 @@ unpacked (<span style="font-weight: bold;">extraction layout</span>):
 rightclick on it for context menu to further
 edit the list, and for showing
 other input-related options.<br>
-To extract spanned (split) archives it is needed to save all the parts
+To extract and <a href="file-split.html">merge spanned (split) archive
+files</a> it is needed to save all the parts
 (usually .001, .002, etc) in the same
 directory, and to send the first part to extraction (usually with
 extension .001, .R01, Z01...).<br>
@@ -381,9 +397,9 @@ manager, to speed up the selection of most frequently used paths.<br>
                   </td>
                   <td style="vertical-align: top; font-style: italic;">On
 the right of Output field it is featured Enter password / keyfile
-button (padlock icon) to set the decryption password, if needed for
-extraction of
-encrypted archives.<br>
+button (padlock icon) to set the decryption password, if needed for <a
+ href="extract-encrypted-files.html">extraction of
+encrypted archives</a>.<br>
                   <h2><img title="Extract password protected archives"
  alt="extract mutiple archives at once" src="rar-files/cryptography.png"
  style="width: 16px; height: 16px;"></h2>
@@ -477,6 +493,18 @@ current output disk, and input size, and on the right OK and Cancel
 buttons.<br>
 Cancelling an operation also means discarding changes in option
 switches, while confirming with OK saves changes.<br>
+            <br>
+Learn more about how to use PeaZip archive manager utility to <a
+ href="7zip-files-utility.html">extract 7Z files</a>, <a
+ href="brotli-compression-utility.html">decompress Brotli files</a>, <a
+ href="bzip2-utility.html">decompress BZ2 files</a>, <a
+ href="gzip-utility.html">decompress GZ files</a>, <a
+ href="paq-files-compression-utility.html">extract PAQ, LPAQ, ZPAQ
+archives</a>, <a href="tar-windows.html">extract TAR files</a> (and
+compressed TAR formats, such as TBZ, TGZ, TXZ...), <a
+ href="wim-utility.html">extract WIM files</a> as they were
+"traditional" archives, <a href="zip-files-utility.html">extract ZIP
+files</a>.<br>
             <br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: How to

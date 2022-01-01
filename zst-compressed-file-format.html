@@ -231,12 +231,14 @@ recent multi-core CPUs currently outperforms single-threaded Brotli
 implementation at similar levels of compression.<br>
             <br>
 Due to&nbsp; the by-design limitation of being a single file
-compressor, PeaZip uses Zstandard compression cascaded with TAR
-archiving in order to consolidate multiple input files / folders into a
-single container, which is then compressed originating a .tar.zst file.
-            <br>
-Zstandard-compressed tar archives are sometimes identified as .tzst
-instead.<br>
+compressor, PeaZip uses Zstandard <a href="tar-windows.html">compression
+cascaded with TAR
+archiving</a> in order to consolidate multiple input files / folders
+into a
+single container, which is then compressed originating a .tar.zst file.<br>
+Zstandard-compressed <a href="tar-file-format.html">tar archives</a>
+are sometimes identified by .tzst
+file extension instead or the composite tar.zst extension.<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>

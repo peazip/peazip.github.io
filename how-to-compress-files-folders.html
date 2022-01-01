@@ -216,15 +216,24 @@ PeaZip provides write support - create new archive, and edit existing
 ones adding files and/or directories - for following archive types:<br>
             <ul>
               <li>
-                <p><span style="font-weight: bold;">7Z, </span>FreeArc's
-                <span style="font-weight: bold;">ARC
-/ WRC, BZ2, </span><span style="font-weight: bold;">BCM
-/ QUAD / BALZ, </span><span style="font-weight: bold;">GZ, PAQ </span>family
-(ZPAQ, LPAQ, PAQ)<span style="font-weight: bold;">, PEA, RAR</span> (if
-WinRar is installed in the system)<span style="font-weight: bold;">,
-TAR,
-WIM, ZIP</span><span style="font-weight: bold;">, </span>creation of
-plain <span style="font-weight: bold;">split files .001</span>
+                <p><span style="font-weight: bold;"><a
+ href="7z-file-format.html">7Z</a>, </span>FreeArc's <span
+ style="font-weight: bold;"><a href="arc-files-utility.html">ARC</a>
+/ WRC, <a href="bzip2-file.html">BZ2</a>, </span><span
+ style="font-weight: bold;">BCM
+/ QUAD / BALZ, </span><span style="font-weight: bold;"><a
+ href="gzip-files.html">GZ</a>, <a href="paq-file-format.html">PAQ</a>
+                </span>family
+(ZPAQ, LPAQ, PAQ)<span style="font-weight: bold;">, <a
+ href="pea-file-format.html">PEA</a>, <a href="what-is-rar-file.html">RAR</a></span>
+(if
+WinRar is installed in the system)<span style="font-weight: bold;">, <a
+ href="tar-file-format.html">TAR</a>, <a href="wim-files.html">WIM</a>,
+                <a href="zip-files-utility.html">ZIP</a></span><span
+ style="font-weight: bold;">, <a href="zipx-file-format.html">ZIPX</a></span>,
+creation of
+plain <a href="file-split.html"><span style="font-weight: bold;">split
+files .001</span></a>
 (supported by 7-Zip/p7zip, HJSplit, and "split" Unix
 command)</p>
               </li>
@@ -441,9 +450,19 @@ dictionary sizes, alternative algorithms, <a
 Console and Schedule
 tabs can fine tune task definition beyond GUI capabilities, and save /
 schedule the task
-in the form of <a href="peazip-command-line.html">command line script</a>.
-            </div>
+in the form of <a href="peazip-command-line.html">command line script</a>.<br>
             <br>
+PeaZip can <a href="zipx-files-software.html">create ZIPX files</a>,
+which are basically ZIP files allowing compression algorithms different
+than Deflate / Deflate64, with the possible result of improved
+compression ratio over <a href="zip-files-utility.html">creating
+classic ZIP files</a>.<br>
+            <br>
+            </div>
+PeaZip can also <a href="free-rar-create.html">create RAR files</a>,
+but only if WinRar is found on same machines, because RAR compression
+routines are encoubered by proprietary patents and cannot be freely
+distributed as standalone Free Software.<br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: How to
 archive and compress data with PeaZip free archiver utility. Select

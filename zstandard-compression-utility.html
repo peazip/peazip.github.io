@@ -213,8 +213,8 @@ compressor, opener, extractor utility</a></big></big></big></h2>
 free
 archiver
 utility offers full read /
-write support (compress, open, decompress) for ZST
-compressed files,
+write support (compress, open, decompress) for <a
+ href="zst-compressed-file-format.html">ZST compressed files</a>,
 through the Open Source tool ZSTD from Facebook's Zstandard project
 (released
 under BSD + GPLv2 dual license) to offer the same GUI
@@ -223,17 +223,18 @@ create,
 browse, and extract .zst files under Windows
 and Linux operating systems.<br>
 ZSTD compressor is multithreaded and provides faster than Deflate (ZIP
-/ GZip) compression, even faster than current Brotli implementation,
+/ GZip) compression, even faster than current <a
+ href="brotli-compressed-file-format.html">Brotli</a> implementation,
 see <a style="font-weight: bold;"
- href="peazip-compression-benchmark.html">PeaZip&nbsp;
-comparative benchmarks</a> page for fastest data compression results.<br>
+ href="peazip-compression-benchmark.html">PeaZip comparative benchmarks</a>
+page for fastest data compression results.<br>
 Zstandard algorithm is a pure single file (or stream) compressor, and
 does
 not provide file archiving features: if multiple files are sent to
 ZSTD compressor PeaZip will automatically switch to <a
  href="what-is-solid-compression.html"><span style="font-weight: bold;">solid
 mode</span></a> consolidating all input files / directories to a
-single TAR archive.<br>
+single <a href="tar-file-format.html">TAR archive</a>.<br>
 Treating the entore input as a whole usually also allows reach
 better compression ratio that compressing each
 input file separately.<br>
@@ -420,7 +421,8 @@ application to the system to decompress it</li>
  title="Decompress ZSTD-compressed files" src="extract-archive.png"
  style="width: 112px; height: 45px;"></h2>
                         <div style="text-align: left;"><a
- name="how_to_extract_zst_files"></a>To work on a TAR file compressed
+ name="how_to_extract_zst_files"></a>To <a href="tar-windows.html">work
+on a TAR file</a> compressed
 with Zsrandard (with .tar.zst or .tzst extension) you will need
 to
 uncompress the tar container before using aforementioned methods.<br>
@@ -451,15 +453,19 @@ selected content from archive</a>. </div>
  style="font-style: italic; vertical-align: middle;">
                   <p><a name="7z_zstd_compression"></a> Zstandard
 faster-than-zip compression is
-available also for 7Z format, with Tino
+available also for <a href="7z-file-format.html">7Z format</a>, with
+Tino
 Reichardt's 7Z plugins for 7-Zip / 7Z.exe (supported by PeaZip,
 providing Brotli, Lizard,
 LZ4, LZ5, and Zstd algorithms for 7Z API), selecting Zstd compression
 method in
-Advanced tab when 7Z format is selected. <br>
-Zst compression / decompression algorithm in .7z containers is also
+Advanced tab when 7Z format is selected.</p>
+                  <p>Zst compression / decompression algorithm in .7z
+containers is also
 supported on GNU/Linux systems by szcnick/p7zip fork used by PeaZip for
 Linux.<br>
+Read more about <a href="7zip-files-utility.html">how to create 7Z
+files with ZSTD compression</a>.<br>
                   </p>
                   </td>
                 </tr>
