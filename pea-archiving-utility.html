@@ -208,8 +208,9 @@ encrypt, authenticate</a></big></big><br>
             </div>
             <br>
             <a name="data_encryption"></a>Pea executable is the engine
-implementing <span style="font-weight: bold;">PEA
-file format</span>
+implementing <a href="pea-file-format.html"><span
+ style="font-weight: bold;">PEA
+file format</span></a>
 archiving, extraction, <a href="encrypt-files.html">file encryption</a>,
 and <a href="extract-encrypted-files.html">file decryption</a>
 routines; it
@@ -218,11 +219,16 @@ released as Open Source freeware program
 under
 LGPLv3 license.<br>
 Pea file compression and cryptograpy utility can be compiled as a
-cross-platform autocontained (portable) executable
-that can be used from batch scripts or invoked by a GUI frontend like
+cross-platform autocontained (portable) binary for various
+archiutectures and platforms: <a href="peazip-bsd.html">BSD</a>, <a
+ href="peazip-linux.html">Linux</a>, <a href="peazip-macos.html">macOS</a>
+(both Intel and M1 aarch64), <a href="peazip-64bit.html">Windows</a>.<br>
+Pea executable can be used from <a href="peazip-command-line.html">batch
+scripts</a> or invoked by a GUI frontend like
 PeaZip or it can be used also as library from external application; it
 supports it's native .pea archive format and also raw file split / join
-with optional integrity check ranging to CRCs to cryptographically
+with optional <a href="protect-files.html">integrity check</a> ranging
+to CRCs to cryptographically
 strong hashes, to detect treats ranging from casual file corruption to
 malicious data tampering.<br>
             <br>
@@ -255,8 +261,9 @@ compression</span></big></h2>
 with a Deflate-based compression scheme (PCOMPRESS) defined in PEA file
 format
 specifications, resulting in compression ratio and compression speed
-similar to typical Deflate-based compressors of that class, like Zip,
-PKZip, and GZip.<br>
+similar to typical Deflate-based compressors of that class, like
+PKZip's <a href="zip-file-format.html">Zip</a>, and GNU <a
+ href="gzip-files.html">GZip</a>.<br>
 Please note that at present stage of development of PEA format maximum
 compression is out of the scope of the project; a fast and versatile
 deflate-based compression scheme was used in order to offer a
@@ -384,9 +391,8 @@ in EAX mode<br>
 split
 and join</big></h3>
             <br>
-            <a name="file_spanning_tool"></a>Pea utility <a
- href="file-split.html">file spanning
-(split and join)</a> features are compatible with most file
+            <a name="file_spanning_tool"></a>Pea utility file spanning
+(split and join) features are compatible with most file
 spliters
 applications like HJSplit, 7-Zip, and split Unix command: simply
 provide an input file to cut it into volumes of the desired
@@ -419,7 +425,8 @@ utility:<br>
 hash tool</a><br>
               </li>
               <li><a href="duplicates-hash-checksum.html">byte to byte
-file compare tool</a><br>
+file compare tool</a></li>
+              <li><a href="file-split.html">split and join files</a><br>
               </li>
             </ul>
             <br>
@@ -429,8 +436,9 @@ file compare tool</a><br>
 Pea utility is compiled and built using Lazarus, a cross platform Open
 Source RAD IDE
 based on FreePascal, a language widely compatible with Delphi, Kylix,
-ObjectPascal, capable to target Windows, Linux, BSD, Darwin and many
-other platforms, as well as ARM, x86, x86_64 and many other
+ObjectPascal, capable to target Windows, Linux, BSD, Darwin / macOS and
+many
+other platforms, as well as ARM, aarch64, x86, x86_64 and many other
 architectures.<br>
 Sources are available from <a href="peazip-sources.html">PeaZip
 sources page</a>;

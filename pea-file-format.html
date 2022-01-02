@@ -225,10 +225,12 @@ multi volume <a href="file-split.html"><span style="font-weight: bold;">file
 split</span></a> (spanning) feature in a single passage,
 along with
 flexible schemes of<span style="font-weight: bold;"> </span>optional <a
- href="verify-checksum-hash.html"><span style="font-weight: bold;">integrity
+ href="verify-checksum-hash.html"><span style="font-weight: bold;">checksum
+/ hash integrity
 check</span></a>
-and <span style="font-weight: bold;">authenticated
-encryption</span> (AES in EAX or HMAC mode, alternatively Twofish and
+and <a href="encrypt-files.html"><span style="font-weight: bold;">authenticated
+file encryption</span></a> (AES in EAX or HMAC mode, alternatively
+Twofish and
 Serpent in EAX mode); PEA file format specifications are
 released under
 public domain.<br>
@@ -351,8 +353,9 @@ utility implementation</p>
                   <td
  style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
  valign="top" width="199">
-                  <h3>Maximum
-PEA archive size</h3>
+                  <h3><a
+ href="rar-zip-file-format-size-limitations.html">Maximum
+PEA archive size</a></h3>
                   </td>
                   <td
  style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; vertical-align: top; width: 189pt;">
@@ -840,7 +843,7 @@ design (.pdf).<br>
                   </td>
                   <td style="vertical-align: top; font-style: italic;"><big>When
 it is recommended to use PEA format: it is a good choice for reasonably
-fast archiving and backup, when
+fast archiving and <a href="backup-files.html">backup</a>, when
 it is needed to guarantee confidentiality (data cannot be accessed
 without password), integrity, and autenticity - data can only be
 modified by recipient knowing the password, as data is subject to

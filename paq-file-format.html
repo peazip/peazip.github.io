@@ -224,8 +224,9 @@ magnitude, at the cost of inferior compression compated to PAQ, but
 still comparable or superior to mainstream compression formats like 7Z,
 ARC, RAR, ZIPX at maximum copression settings.<br>
 LPAQ is a pure compression format, unlike paq and zpaq, so multiple
-files needs to be consolidated in a single TAR container before lpaq
-compression.<br>
+files needs to be consolidated in a single <a
+ href="tar-file-format.html">TAR container</a> before lpaq
+compression, creating a .tar.lpaq archive.<br>
 ZPAQ designates the current evolution of PAQ/LPAQ project, providing a
 backward compatible standard format supporting incremental archiving
 and journaling, and AES256 encryption.<br>
@@ -235,9 +236,14 @@ mechanism, ranging from speed / compression ratio tradeoff similar to
 Deflate for lower compression settings up to better than PAQ for
 highest compression settings.<br>
 See <a href="peazip-compression-benchmark.html">file compression
-benchmark</a> page to see how ZPAQ compares for compression ratio and
-speed to strongest compressor algorithms, as LZMA/PPMD employed in 7Z,
-ARC, RAR and ZIPX formars.<br>
+benchmark</a>, and <a href="maximum-compression-benchmark.html">maximum
+compression benchmark</a> pages to see how ZPAQ compares for
+compression ratio and
+speed to strongest compressor algorithms, as LZMA/PPMD employed in <a
+ href="7z-file-format.html">7Z</a>,
+            <a href="arc-files-utility.html">ARC</a>, <a
+ href="what-is-rar-file.html">RAR</a> and <a
+ href="zipx-file-format.html">ZIPX</a> formars.<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>
@@ -425,7 +431,8 @@ Error recovery is currently not supported.<br>
               </tbody>
             </table>
             <p style="font-weight: bold;"><br>
-Synopsis: What is PAQ file compression format. What is PAQ family,
+Synopsis: What is PAQ file compression format and how does it compare
+to 7z, arc, rar, zipx. What is PAQ family,
 which provides maximum compression ratio, with ZPAQ format implementing
 strongest compression algorithm currently available. *PAQ format family
 extensions: paq, lpaq, and zpaq file types.<br>
