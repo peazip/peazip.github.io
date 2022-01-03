@@ -244,9 +244,11 @@ window.<br>
  alt="rar command line examples"
  src="rar-files/console-compression-software.gif"
  style="width: 16px; height: 16px;" align="middle"></h2>
+            <br>
             <a name="compose_command_line_tasks"></a>From the Console
 tab the task can be modified and tested, before being saved for future
 programmatical use.<br>
+            <br>
 Exporting GUI-defined jobs as script bridges the gap between GUI and
 command-line software worlds, taking the best of both: users can
 benefit of
@@ -262,6 +264,7 @@ executables (in example build examples for backend p7zip / 7-Zip
 command line
 syntax), <span style="font-weight: normal;">or for fine-tuning the
 task beyond the GUI's capabilities.<br>
+            <br>
 Exported tasks are displayed as UTF8 text and can be freely saved, in
 example (but not only) as </span>Bash shell on Unix systems, or .bat
 or .ps1 PowerShell script on Microsoft Windows platform.<br>
@@ -419,16 +422,19 @@ a link to PeaZip executable with the desired first parameter.<br>
             <ul>
               <li><a name="command_line_compression"></a><span
  style="font-weight: bold;">-add2archive</span>:
-add to a new archive and open PeaZip
+                <a href="how-to-compress-files-folders.html">add to a
+new archive</a> and open PeaZip
 GUI to set archive&#8217;s
 type and options;</li>
               <ul>
                 <li>&nbsp;
--add2archive-add as -add2archive, but add to
-existing archive (if found)</li>
+-add2archive-add as -add2archive, but <a
+ href="add-files-to-existing-archive.html">add to
+existing archive</a> (if found)</li>
                 <li>&nbsp;
--add2archive-update as previous, but update older
-files only</li>
+-add2archive-update as previous, but <a
+ href="how-to-update-existing-archive.html">update older
+files in archive</a> only</li>
               </ul>
               <li><span style="font-weight: bold;">-add27z</span>: add
 to a new .7z archive;</li>
@@ -438,7 +444,8 @@ compatible mail client like in exampe Outlook and
 Outlook Express</li>
               <li>-add2separate7z: add each input to a separate new .7z
 archive;</li>
-              <li>-add2sfx7z: add to a new self extracting 7z archive
+              <li>-add2sfx7z: add to a new <a
+ href="self-extracting-archives.html">self extracting 7z archive</a>
 (.exe);</li>
               <li>-add2sfx7zmail: add to a new self extracting archive
 and attach it to a
@@ -452,24 +459,29 @@ Outlook Express</li>
 to a mail, requires
 compatible mail client like in example Outlook and
 Outlook Express</li>
-              <li>-add2separatezip: add each input to a separate new
-.zip archive;</li>
+              <li>-add2separatezip: <a
+ href="how-to-zip-files-separate-archives.html">add each input to a
+separate new
+.zip archive</a>;</li>
               <li>-add2pea: add to a new .pea archive;</li>
               <li>-add2crypt: add to a new encrypted .pea archive;</li>
               <li><a name="file_spanning_command"></a>-add2split: raw
-split a single input file;</li>
+                <a href="file-split.html">split a single input file</a>;</li>
             </ul>
             <ul>
               <li><a name="secure_file_deletion_command"></a>-add2wipe:
-securely delete selected file(s);</li>
+                <a href="secure-delete.html">securely delete selected
+file(s)</a>;</li>
             </ul>
             <ul>
-              <li>-add2compare: byte to byte compare two files;</li>
+              <li>-add2compare: byte to byte <a
+ href="duplicates-hash-checksum.html">compare two files</a>;</li>
             </ul>
             <ul>
-              <li><a name="batch_open_archive"></a>-ext2browse: open
+              <li><a name="batch_open_archive"></a>-ext2browse: <a
+ href="how-to-open-rar-tar-zip-files.html">open
 (and browse if applicable) the
-archive(s) in PeaZip file/archive manager GUI;</li>
+archive(s)</a> in PeaZip file/archive manager GUI;</li>
               <li>-ext2browsepath: browse the selected folder (or its
 path, if a file is
 selected) in PeaZip;</li>
@@ -478,7 +490,9 @@ selected) in PeaZip;</li>
               <li><a name="interactive_extraction_command"></a><span
  style="font-weight: bold;">-ext2main</span>:
 open archive in "Archive extraction"
-interface, allowing to specify i/o options, password and keyfile
+interface to <a href="how-to-extract-rar-zip-archives.html">extract
+input archive(s)</a>, allowing to specify i/o options, password and
+keyfile
 (interactively);</li>
             </ul>
             <ul>
@@ -680,8 +694,9 @@ PeaZip\res\lang\ directory.<br>
 SYNTAX EXAMPLES</span><br>
             </big></big></h3>
             <br>
-Syntax for pea backend is documented in <a style="font-weight: bold;"
- href="pea_help.pdf">PEA file
+Syntax for pea backend is documented in <a
+ href="pea-archiving-utility.html">PEA archiving utility</a> page and
+on <a style="font-weight: bold;" href="pea_help.pdf">PEA file
 format specifications and implementation notes (pdf)</a><br>
             <br>
 More information: <a target="_blank"
