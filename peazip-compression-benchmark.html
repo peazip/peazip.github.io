@@ -973,8 +973,9 @@ ZIPX</td>
 what application compresses better<br>
             </h2>
             <br>
-            <a name="maximum_copression_ratio_utility"></a>Compressing
-data to <span style="font-weight: bold;">ZIP format</span>,
+            <a name="maximum_copression_ratio_utility"></a><a
+ href="zip-files-utility.html"><span style="font-weight: bold;">Compressing
+data to ZIP format</span></a>,
 which is read / write supported by all all archiving applications
 tested in this benchmark, all utilities reach a compression ratio in
 the order of 33%, with WinZip reaching best compression for ZIP archive
@@ -1087,7 +1088,9 @@ slowest
 of this sub-group, a gap more evident on faster SSD disk.<br>
 Another very unusual data point is WinRar resulting very slow in
 extracting its ZIP file on the mechanical disk while in all other test
-the software result performing very well - to verify the correctness of
+the software result performing very well (with <a href="free-rar.html">RAR
+extraction</a> being as fast as ZIP extraction on SSD) - to verify the
+correctness of
 the data, the very same archive was tested for integrity, and extracted
 with other utilities without producing the same unusual slow result.<br>
             <br>
@@ -1097,9 +1100,11 @@ ARC and ZIPX).<br>
 Brotli and Zstandard features the slightly fastest decompression speeds
 of the group.<br>
             <br>
-PeaZip ARC extraction performed more slowly than 7Z extraction,
+PeaZip ARC extraction performed more slowly than <a
+ href="7zip-files-utility.html">7Z extraction</a>,
 reversing the results from compression performances<br>
-Also ZPAQ decompression compares unfavorably with mainstream archive
+Also <a href="paq-files-compression-utility.html">ZPAQ decompression</a>
+compares unfavorably with mainstream archive
 formats, being quite similar to compression speed.<br>
 WinZip ZIPX
 features significantly slower decompression performance taking over 6
@@ -1214,6 +1219,11 @@ providing by far the <span style="text-decoration: underline;">fastest
 compression</span> performance of the benchmark, even taking in account
 the extra time overhead for PeaZip to transparently add multiple inputs
 to TAR archive before compression.<br>
+Read more about fast compression benchmarks: <a
+ href="fast-compression-benchmark-brotli-zstandard.html">Brotli vs
+Zstandard fast compression benchmark</a>, and <a
+ href="fastest-compression-zip-deflate-benchmark.html">faster than Zip
+compression benchmark</a>.<br>
             <br>
 Also, PeaZip features as pre-set ZIP/<span style="font-weight: bold;">BZip2</span>
 compression, that gets close to high compression formats but on modern
@@ -1249,6 +1259,9 @@ With <span style="font-weight: bold;">ZPAQ </span>PeaZip provided the
 ratio</span>, with compression times comparable to 7Z (but slower
 extraction) at normal compression preset, and even superior compression
 at ultra preset.<br>
+Read more about best compressors in terms of maximum attained
+compression ratio in <a href="maximum-compression-benchmark.html">maximum
+copression benchmark</a>.<br>
             <br>
             <br>
             <span style="font-weight: bold;">Final recommendations<br>

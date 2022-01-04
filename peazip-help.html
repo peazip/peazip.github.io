@@ -345,8 +345,10 @@ or in the file system
             <div style="text-align: justify;"><span
  style="font-weight: normal;">On
 the top of the app's window,
-the <span style="font-weight: bold;">toolbar </span>contains file
-compression / extraction
+the <span style="font-weight: bold;">tool bar </span>contains <a
+ href="how-to-compress-files-folders.html">file
+compression</a> and <a href="how-to-extract-rar-zip-archives.html">archive
+extraction</a>
 related functions.<br>
             </span>
             <div style="text-align: justify;">Please note, on
@@ -401,8 +403,9 @@ with
 favourite programs, scan with antivirus/antimalware etc; custom
 applications
 can be set in Options &gt; Settings &gt; Open with...<br>
-In "File manager" submenu are featured mass rename, <a
- href="secure-delete.html">secure file deletion</a>, copy, move, rename
+In "<a href="screenshots-peazip-1.html">File manager</a>" submenu are
+featured mass rename, <a href="secure-delete.html">secure file deletion</a>,
+copy, move, rename
 and create new
 folder functions; its "File tools" submenu allows to <a
  href="duplicates-hash-checksum.html">find duplicate files</a> and to <a
@@ -444,11 +447,14 @@ outside the intended destination. <br>
 Drag from app to system can
 be used both for extraction form archives and for robust file copy.<br>
 PeaZip also accepts drag and drop from <span style="font-weight: bold;">system
-to application</span>, to add files to archive (new or existing) or to
+to application</span>, to <a href="add-files-to-existing-archive.html">add
+files to archive</a> (new or existing) or to
 add one or more archives to extraction list.<br>
 Double clicking on a file in archive open it as
-preview; if the file is changed PeaZip will ask to update the archive
-with the newer version of the file - if archive extension is known as
+preview; if the file is changed PeaZip will ask to <a
+ href="how-to-update-existing-archive.html">update the archive
+with the newer version of the file</a> - if archive extension is known
+as
 supported for this this operation.<br>
             <br>
             <div style="text-align: center;">
@@ -546,7 +552,8 @@ This option, used with "<span style="font-weight: bold;">Add each
 object to a separate archive</span>" option enabled, performs a mass
 conversion of listed archives to the desired format; otherwise, with
 the option disabled, archive conversion is meant to consolidate input
-data in a single archive, improving data compression efficency because
+data in a single archive, <a href="file-compression-performances.html">improving
+data compression performances</a> because
 it
 allows recompression of the original data from its uncompressed form.<br>
 Advanced format
@@ -598,14 +605,27 @@ and
 folders to be extracted (decompressed), and other options.<br>
 Editable extraction list allows to partially extract
 data from the archive, extract all, or to extract from multiple
-archives at once, even of mixed types - e.g. unrar all RAR archives
-while unzipping all ZIP archives in the list in a single pass.<br>
+archives at once, even of mixed types - e.g. <a href="free-rar.html">unrar
+all RAR archives</a>
+while <a href="zip-files-utility.html">unzipping all ZIP archives</a>
+in the list in a single pass.<br>
 The padlock icon shows if password is set and allows to
 set/change/remove it.<br>
 It is possible to set the policy in case of
 conflict with existing files: skip (default), overwrite, rename
 existing files, rename
 extracted files, or to ask interactively (in backend process' console).<br>
+            <span style="font-weight: bold;">Interactive extraction</span>
+switch supersedes naming conflict policy, and uses standard system's
+dialogs to interactively ask to users whether to overwrite existing
+files or not.<br>
+Interactive extraction allows more natural behavior for extraction
+tasks for the typical workflow of a desktop user, but policy method is
+preferable when it is needed to run unatteded extraction tasks (the
+action to take in case of existing files is already defined at the
+beginning of the task), and when it is needed to <a
+ href="peazip-command-line.html">export task definition as console
+script</a>.<br>
 While performing a partial extraction of content from an archive, it is
 featured a link to switch to full archive extraction, on the top of the
 list of objects listed for extraction.<br>
@@ -646,7 +666,7 @@ paq and lpaq families, ace [trough UNACE Plugin], arc, wrc, 001,
 pea, cbz... (and more, 200+ types supported)</li>
             </ul>
 Lern more about <a href="how-to-extract-rar-zip-archives.html">how to
-extract (multiple) archives</a>, and <a
+extract (multiple) archives at once</a>, and <a
  href="how-to-extract-selected-files-from-archive.html">how to extract
 selected content from archive</a>.<br>
             <br>
@@ -659,8 +679,7 @@ extraction operations</big></h3>
 From <span style="font-weight: bold;">Console</span> tab, featured in
 file archiving / conversion and extraction UIs, it is possible to
 transform
-the task defined in the GUI interface into a <a
- href="peazip-command-line.html">command line script</a> that
+the task defined in the GUI interface into a command line script that
 can be edited (independently from the task definition in the GUI
 frontend), clicking on the &#8220;Click to import&#8230;&#8221; label.<br>
 If the task definition is changed in the GUI the same label can be used
@@ -724,7 +743,9 @@ GTK2 widgetset, running on Gnome desktop environment (Ubuntu Linux).</span></sma
             <small> </small>
             <div style="text-align: left;"><br>
             <div style="text-align: justify;">PeaZip free zip / unzip
-app, on Linux, and BSD systems supporting multiple desktop environments
+app, on <a href="peazip-linux.html">Linux</a>, and <a
+ href="peazip-bsd.html">BSD</a> systems supporting multiple desktop
+environments
 and widgetsets, is a desktop
 neutral
 utility and as long as the needed libraries are installed (GTK2 or Qt,

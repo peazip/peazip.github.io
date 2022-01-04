@@ -614,7 +614,8 @@ ZIPX, ZST...)</p>
 compression / file archiving operations and best practices</p>
               </li>
               <li>
-                <p>File manager, documentation about PeaZip's file
+                <p><a href="screenshots-peazip-1.html">File manager</a>,
+documentation about PeaZip's file
 browser and file management features</p>
               </li>
               <li>
@@ -912,8 +913,8 @@ doubleclick on an archived file to preview it</li>
 To enter <span style="font-weight: bold;">password </span>in PeaZip
 click in the locker icon in the status bar
 (in the file/archive browser) or the locker icon below output address
-field in extraction (<a href="extract-encrypted-files.html">decryption</a>)
-and archiving (<a href="encrypt-files.html">encryption</a>)
+field in extraction (<span style="font-weight: bold;">decryption</span>)
+and archiving (<span style="font-weight: bold;">encryption</span>)
 interfaces,
 or click Tools &gt; Enter
 password / keyfile in main menu, or press F9.<br>
@@ -981,6 +982,8 @@ performance is mainly bound to the algorithm and the data compression
 level
 involved, being the underlying executables good and efficient
 implementations.<br>
+See <a href="peazip-compression-benchmark.html">PeaZip compression and
+extraction benchmarks</a> page for more information. <br>
 PeaZip features extremely fast operations, as tar/untar, split/merge
 files, create archives with "store" compression level, quite fast
 operations (in example Deflate based algorithms, like in gzip
@@ -989,9 +992,11 @@ slow/quite slow
 operations (when bzip2, LZMA, PPMd,
 unrar, unace are involved), up to very slow operations when PAQ at
 highest compression levels are used.<br>
-Currently, <a href="peazip-compression-benchmark.html">fastest
+Currently, <a href="fast-compression-benchmark-brotli-zstandard.html">fastest
 compression</a> (faster than any benchmarked archiver utility) is
-attained with Google's Brotli and Facebook's Zstandard algorithms.<br>
+attained with Google's Brotli and Facebook's Zstandard algorithms, and <a
+ href="maximum-compression-benchmark.html">best compression ratio</a>
+is reached using ZPAQ compression.<br>
 A wide range of performances and compression levels can be attained
 using PeaZip, the point is in chosing the right balance between the two
 factors.<br>
@@ -1275,7 +1280,7 @@ recent, as native application for
 Darwin / macOS, both for Intel x86-64 CPU (OSX up to macOS 10.15
 Catalina), and for Apple Silicon M1 aarch64 ARM SoC (for macOS 11 Big
 Sur and more revent systems), targeting Cocoa widgetset in both cases.<br>
-Official binary macOS packages are now available for download on <a
+Official binary macOS DMG packages are now available for download on <a
  href="peazip-macos.html">PeaZip for macOS page</a>. <br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: How to use

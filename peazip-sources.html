@@ -341,8 +341,10 @@ all to compile and build the binaries:<br>
             <ul>
               <li>project_peach.lpi builds peazip, the main app
 executable, file and archive manager</li>
-              <li>project_pea.lpi builds pea, which provides pea format
-support, file management tools, encryption and hashing routines</li>
+              <li>project_pea.lpi builds pea, to <a
+ href="pea-archiving-utility.html">manage pea archives</a>, and to
+provide file management, <a href="encrypt-files.html">encryption</a>,
+and <a href="verify-checksum-hash.html">hashing</a> routines</li>
             </ul>
 On Windows systems you will also need to compile (peazip
 sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi and copy
@@ -528,7 +530,10 @@ Up to date links to aforementioned projects are:<br>
             <ul>
               <li><a href="https://www.7-zip.org/download.html">https://www.7-zip.org/download.html</a>
 7-Zip's 7z
-(Windows, Linux, and macOS), should be placed in (peazip)/res/bin/7z</li>
+(Windows, Linux, and macOS), should be placed in (peazip)/res/bin/7z,
+to <a href="7zip-files-utility.html">manage 7Z files</a> and most of
+the other supported formats (including ISO, RAR, TAR, WIM, ZIP formats)<br>
+              </li>
               <ul>
                 <li><a href="http://p7zip.sourceforge.net/">http://p7zip.sourceforge.net/</a>
 vanilla p7zip, can be
@@ -545,13 +550,20 @@ codecs for 7Z
               </ul>
               <li><a href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/
 FreeArc</a>, should be
-placed in (peazip)/res/bin/arc</li>
+placed in (peazip)/res/bin/arc to <a href="arc-files-utility.html">manage
+ARC files</a><br>
+              </li>
               <li><a href="https://github.com/google/brotli">https://github.com/google/brotli</a>
 Google's Brotli
-compressor, should be placed in (peazip)/res/bin/brotli</li>
+compressor, should be placed in (peazip)/res/bin/brotli to <a
+ href="brotli-compression-utility.html">manage Brotli compressed files</a><br>
+              </li>
               <li><a href="http://mattmahoney.net/dc/">http://mattmahoney.net/dc/</a>
 *PAQ, should be placed in
-(peazip)/res/bin/lpaq, /paq, and /zpaq</li>
+(peazip)/res/bin/lpaq, /paq, and /zpaq to <a
+ href="paq-files-compression-utility.html">work with PAQ files</a>
+family<br>
+              </li>
               <li><a href="https://github.com/encode84/bcm">https://github.com/encode84/bcm</a>,
                 <a href="http://www.encode.su/">http://www.encode.su/,</a>
                 <a href="http://sourceforge.net/projects/bcm/">http://sourceforge.net/projects/bcm/</a>
@@ -565,22 +577,29 @@ UPX, should be placed in
 (peazip)/res/bin/upx</li>
               <li><a href="http://facebook.github.io/zstd/">http://facebook.github.io/zstd/</a>
 Facebook's Zstandard
-compressor, should be placed in (peazip)/res/bin/zstd</li>
+compressor, should be placed in (peazip)/res/bin/zstd to <a
+ href="zstandard-compression-utility.html">work with Zstandard
+compressed files</a><br>
+              </li>
             </ul>
             <br>
 PeaZip can also support other binaries, which MUST not be included in
 base packages due their closed source nature: official PeaZip packages
 only contain software released under OSI-approved licenses.<br>
             <ul>
-              <li>WinAce UnACE (royalty free) can be supported as
+              <li>WinAce UnACE (royalty free), to <a
+ href="ace-files-utility.html">work with ACE files</a>, can be
+supported as
 back-end binary if placed in (peazip)/res/bin/unace, but must not be
 included in packages because non-free license.</li>
               <li>RarLab UnRar (royalty free) can be supported as
-back-end binary if placed in (peazip)/res/bin/unrar, but must not be
+back-end binary if placed in (peazip)/res/bin/unrar as alternative <a
+ href="free-rar.html">rar files extractor tool</a>, but must not be
 included in packages because non-free license.</li>
               <li>RarLab Rar.exe (shareware) can be supported as
 back-end binary if installed on the same system (PeaZip can
-auto-configure itself to use it to create RAR archives), but must not
+auto-configure itself to use it to <a href="free-rar-create.html">create
+RAR archives</a>), but must not
 included in packages because it is non-free software AND has non
 royalty free license.</li>
             </ul>
