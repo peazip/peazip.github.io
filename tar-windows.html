@@ -211,8 +211,8 @@ and extraction (UNTAR)<br>
 full read /
 write support (create, open and extract tar) for uncompressed and
 compressed
-TAR archives - <a href="gzip-files.html">TAR.GZ archives</a> (same as
-TGZ extension), <a href="bzip2-file.html">TAR.BZ2 archives</a>
+TAR archives - TAR.GZ archives (same as
+TGZ extension), TAR.BZ2 archives
 (alternative file extensions TBZ, TB2,
 TBZ2), TAR.BR, TAR.ZST / TZST, TAZ, TZ, TAR.Z, TLZ,
 TAR.LZ, TAR.LZMA, TXZ, TAR.XZ,
@@ -236,9 +236,10 @@ etc... <br>
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                         <h3><big>Create TAR archive<br>
                         </big></h3>
-                        <p><a name="work_with_tar_files"></a>To add
+                        <p><a name="work_with_tar_files"></a>To <a
+ href="how-to-compress-files-folders.html">add
 files /
-folders to a new or
+folders to a new archive</a>, or
 into an existing .tar file:</p>
                         <h4><a name="create_tar_on_windows"></a>Create
 tar file from
@@ -289,6 +290,12 @@ automatically switches on
 Alternatively, compression can be achieved creating tar file first,
 then compressing it in a second separate step, selecting any of the
 write-supported formats - 7z, arc, pea, zip...<br>
+Read more about how to <a href="brotli-compression-utility.html">compress
+files with Brotli</a>, <a href="bzip2-utility.html">compress files
+with BZip2</a>, <a href="gzip-utility.html">compress files with GZip</a>,
+                        <a href="7zip-files-utility.html">compress
+files to 7-Zip's XZ</a> format, and how to <a
+ href="zstandard-compression-utility.html">compress files with Zstandard</a>.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -303,11 +310,13 @@ write-supported formats - 7z, arc, pea, zip...<br>
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                         <h4><big>Update existing TAR archive</big></h4>
                         <br>
-                        <a name="tar_for_windows"></a>To update a
+                        <a name="tar_for_windows"></a>To <a
+ href="how-to-update-existing-archive.html">update</a> a
 compressed Tar file (TGZ, TBZ, TXZ, TAR.GZ...) it must be
 decompressed before.<br>
                         <br>
-Easiest way to edit an uncompressed TAR is opening it with PeaZip
+Easiest way to <a href="edit-file-in-archive.html">edit</a> an
+uncompressed TAR is opening it with PeaZip
 utility and
 dragging files/folders to it, which will automatically activate update
 mode - can be changed into add mode in advanced tab.<br>
@@ -335,7 +344,8 @@ format (7z, arc, pea, zip...) - optionally keeping or discarding
 original
 archives - or convert any existing read-supported archive (7z, ace,
 rar, zip, zipx...) to TAR format.<br>
-Directly, single-step, converting archive file to compressed tar
+Directly, single-step, <a href="convert-files.html">converting archive
+file</a> to compressed tar
 archive is currently not supported.<br>
                         <h2><img alt="tar for windows"
  title="Convert from / to TAR format" src="convert.png"
@@ -383,7 +393,7 @@ open and browse archives</a><br>
                           <li>
                             <p>Use context menu entry "Extract..."
 for
-extraction screen screen where to set
+extraction screen where to set
 output path and other tar extraction options</p>
                           </li>
                           <li>
@@ -436,11 +446,13 @@ extract entire archive(s)</a> and <a
  href="how-to-extract-selected-files-from-archive.html">how to extract
 selected files from archive</a>.<br>
                         <br>
-To extract a <a href="file-split.html">spanned (split) TAR file</a>,
+To extract a spanned (split) TAR file,
 save all the parts in the same
 directory, then open as usual the first volume of the archive, which
 has .TAR.001 extension - subsequent volumes have
 progressively numbered file extensions (002, 003 etc).<br>
+Read more about <a href="file-split.html">how to manage spanned
+(split) archive files</a>.<br>
                         <br>
                         <span style="font-weight: bold;">Tarbomb</span>
 term designates a malicious .tar package built to purposely spam
@@ -461,8 +473,9 @@ decompressing the tar file using "extract to new folder" option.<br>
  style="vertical-align: top; background-color: rgb(250, 250, 250);"> <big>Apply
 encryption to TAR archives</big><br>
                         <br>
-Tar standard does not implement <span style="font-weight: bold;">data
-encryption</span>, but an existing TAR package
+Tar standard does not implement <a href="encrypt-files.html"><span
+ style="font-weight: bold;">file</span><span style="font-weight: bold;">
+encryption</span></a>, but an existing TAR package
 can be made password protected
 compressing
 it in 7Z, ARC, PEA, or ZIP format, all supporting encryption.<br>

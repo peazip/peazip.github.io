@@ -235,9 +235,11 @@ Windows EXE executable file.</td>
               </tbody>
             </table>
 WinRar, WinZip, 7-Zip, PeaZip, and other file archiver software are
-capable of creating self extracting archives, usually employing <span
- style="font-weight: bold;">7Z</span>, <span style="font-weight: bold;">RAR
-            </span>and <span style="font-weight: bold;">ZIP </span>compression
+capable of creating self extracting archives, usually employing <a
+ href="7z-file-format.html"><span style="font-weight: bold;">7Z</span></a>,
+            <span style="font-weight: bold;"><a
+ href="what-is-rar-file.html">RAR</a> </span>and <span
+ style="font-weight: bold;"><a href="zip-file-format.html">ZIP</a> </span>compression
 for the archival part - learn more: <a href="what-is-zip-file.html">what
 is a compressed archive file</a> -
 and minimal sfx modules
@@ -319,14 +321,18 @@ create self-extracting
             <br>
             <a name="create_sfx_archive"></a>To create a SFX
 archive with PeaZip, select desired files and folders and click "Add"
-button for archive creation screen. Supported SFX formats can be
+button for archive creation screen.<br>
+PeaZip can <a href="7zip-files-utility.html">create self extracting 7Z
+files</a> and, alternatively, self extracting archives in ARC format:
+supported SFX formats can be
 selected directly in archive format dropdown menu,
 simply selecting "<span style="font-weight: bold;">Self-extracting 7Z</span>"
 or "<span style="font-weight: bold;">Self-extracting ARC</span>"
 entries.<br>
 In "Advanced" tab of archive creation screen it is possible to select
-one of the available SFX modules, the routine that will be embedded in
-the archive and will handle the extraction of the content on
+one of the available alternative SFX modules, which is the binary
+routine that will be embedded in
+the archive and which will handle the extraction of the content on
 recipient's machine without requiring external software.<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
@@ -342,13 +348,19 @@ recipient's machine without requiring external software.<br>
                   <td style="vertical-align: top; font-style: italic;"><a
  name="sfx_advantages"></a>Recipient will not need a
 suitable
-unarchiver to open those files (as the sfx module itself is autonomous
-for extraction of package content), alternatively some archive
-managers, as PeaZip, can open sfx files as standard
-archives for custom content extraction without running the sfx module.<br>
+unarchiver application to open self-extracting files as the sfx module
+itself is autonomous
+for extraction of package content.<br>
 Please note, anyway, recipient will at least need the right to execute
 binary files (the sfx module) on the target system to proceed with
-(auto)extraction of the SFX archive.</td>
+(auto)extraction of the SFX archive.<br>
+Alternatively some archive
+managers, as PeaZip, can try to <a href="peazip-password.html">open
+arbitrary file types as archives</a>
+(including most sfx packages) for custom content extraction without
+running the sfx module - which is recommended over running the files as
+binary if the source of the archive is unknown.<br>
+                  </td>
                   <td style="vertical-align: bottom; width: 128px;">
                   <h2><img title="Add files to self exctracting archive"
  alt="how to create sfx files" src="file-format/quotes-inverse.png"
@@ -357,7 +369,8 @@ binary files (the sfx module) on the target system to proceed with
                 </tr>
               </tbody>
             </table>
-To add a password to prevent unauthorized decopression of the
+To <a href="encrypt-files.html">add a password to archive</a> to
+prevent unauthorized decompression of the
 self-extracting archive, click on the padlock icon button "Enter
 password / keyfile" - also the encryption options are customizable in
 "Advanced" tab.<br>

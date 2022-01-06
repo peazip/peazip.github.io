@@ -241,7 +241,7 @@ compatibility with ZIP standard.</span></td>
               </tbody>
             </table>
             <a name="what_is_zip_file"></a>ZIP extension desingates a
-popular <a href="what-is-zip-file.html">archiving format</a>,
+popular <a href="what-is-zip-file.html">file archiving format</a>,
 mainstream on Microsoft Windows systems.<br>
 ZIP format
 specifications are maintained by PKWare which
@@ -257,7 +257,8 @@ Newer archive formats like 7Z (7-Zip / p7zip), RAR (WinRar), and ACE
 have gained popularity and
 introduced several improvements (some of them later brought into ZIP
 format) like <a href="file-compression-performances.html">better
-compression ratio</a>, recovery records, <a href="encrypt-files.html">strong
+compression ratio and better performances</a>, recovery records, <a
+ href="encrypt-files.html">strong
 file encryption</a> etc. - often at cost of inferior speed and higher
 memory requirements compared to faster, lightweight Deflate compression
 used in ZIp format.<br>
@@ -289,7 +290,9 @@ is
 a good choice anytime
 it is important to keep the archive compatible with most archive
 managers recipients may use, making it also an excellent choice for
-content distribution, being unzip generally possible on any platform.</span>
+                  <a href="share-files-sharing.html">sharing and
+content distribution</a>, being unzip generally possible on any
+platform.</span>
 For same reson it is also
 recommended for
 long
@@ -315,7 +318,8 @@ compression formats, both for archiving and for extraction steps.<br>
                   <h2 style="font-weight: bold;">Maximum number of
 files in a ZIP archive</h2>
                   <a name="max_number_of_files_in_a_zip_file"></a>ZIP
-format standard limits the number of files in archive to 2^16 (64 K
+format standard <a href="rar-zip-file-format-size-limitations.html">limits
+the number of files in archive</a> to 2^16 (64 K
 files maximum), <span style="font-weight: bold;">ZIP64 </span>standard
 extension, supported by PeaZip, allows 2^32 files per archive (4 G
 files as maximum number)<br>
@@ -360,30 +364,41 @@ quite
 fast and
 it's based on <span style="font-weight: bold;">Deflate </span>algorithm
 (like
-in GZip format); alternatively Deflate64, BZip2, LZMA, and PPMd based
+in <a href="gzip-files.html">GZip format</a>, <a
+ href="pea-file-format.html">PEA format</a>, and even in <a
+ href="paq-file-format.html">ZPAQ format</a> at minimum compression
+level); alternatively Deflate64, BZip2, LZMA, and PPMd based
 compression is
 possible, and supported by PeaZip.<br>
+            <br>
 Recently WinZip (first GUI zip file utility on Microsoft Windows
 platform, and still one of most popular "zipper" program) introduced
-some new compression algorithms and a new
-AES based encryption scheme, Advanced Encryption (AE-1, released in
+some new compression algorithms, and a new
+AES based <a href="encrypt-files.html">encryption</a> scheme, Advanced
+Encryption (AE-1, released in
 2003, and AE-2 revision in 2004).<br>
             <a name="zip_aes_encryption"></a>AE-encrypted
 archives as well as classic
 ZipCrypto-encrypted archives are supported by PeaZip (read and write),
 the application is also
-capable to read PKWare's AES encrypted zip archives, standard
+capable to read (<a href="extract-encrypted-files.html">decrypt</a>)
+PKWare's AES encrypted zip archives, standard
 introduced in 2003 with PKZip 6.0 Professional Edition.<br>
             <br>
             <a name="zip_vs_zipx"></a>Since 2008 WinZip designed a new
-archival format, distinguished by ZIPX extension, supporting newer
+archival format, distinguished by <a href="zipx-file-format.html">ZIPX
+extension</a>, supporting newer
 compression
 and encryption features, but ZIP format retained most of its popularity
-as common, "standard" way to pack and share data.<br>
+as common, "standard" way to pack and share data, as using a
+non-Deflate / Deflate64 compression algorithm may break compatibility
+with older zip utilities and use of a separate file extension was
+useful to avoid confusion for end users.<br>
             <br>
             <a name="zip_format_variants"></a>Many special-purpose
 variants were built on zip format structure (Android APK,
-Java JAR, Apple IPA, EPUB) or using Deflate compression (Microsoft CAB
+Java JAR, Apple IPA, EPUB) or using Deflate compression (<a
+ href="cab-files-utility.html">Microsoft CAB</a>
 and MS Office OPC "Open Packaging Conventions" and COMPOUND file types).<br>
 For some of these file types PeaZip features a warning when trying to
 edit archive

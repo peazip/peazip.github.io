@@ -291,7 +291,8 @@ total size of the entire archive</h3>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">7Z </h4>
+                  <h4 style="font-weight: bold;"><a
+ href="7z-file-format.html">7Z</a> </h4>
                   <small style="font-weight: normal;">7-Zip</small> </td>
                   <td
  style="width: 30%; vertical-align: middle; background-color: rgb(255, 255, 204);">
@@ -313,7 +314,8 @@ maximum 16 EB for each input file</p>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <span style="font-weight: bold;">ARC </span><br>
+                  <a href="arc-files-utility.html"><span
+ style="font-weight: bold;"><a>ARC</a> </span></a><br>
                   <small><span style="font-weight: normal;">FreeArc</span></small>
                   </td>
                   <td
@@ -334,8 +336,8 @@ maximum 8 EB for each input file</p>
                 </tr>
                 <tr>
                   <td
- style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">CAB
-                  <br>
+ style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);"><a
+ href="cab-files-utility.html">CAB</a> <br>
                   <small><span style="font-weight: normal;">Microsoft</span></small>
                   </td>
                   <td
@@ -362,7 +364,8 @@ parts</p>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <span style="font-weight: bold;">PEA </span><br>
+                  <a href="pea-file-format.html"><span
+ style="font-weight: bold;"><a>PEA</a></span></a><br>
                   <small><span style="font-weight: normal;">current
 format rev. PEA1.1</span></small> </td>
                   <td
@@ -384,7 +387,8 @@ maximum archive size limit by design</p>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">RAR </h4>
+                  <h4 style="font-weight: bold;"><a
+ href="what-is-rar-file.html">RAR</a> </h4>
                   <small><span style="font-weight: normal;">current
 specs revision RAR5</span></small> </td>
                   <td
@@ -407,7 +411,8 @@ maximum 8 EB for each input file</p>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">TAR&nbsp; </h4>
+                  <h4 style="font-weight: bold;"><a
+ href="tar-file-format.html">TAR</a>&nbsp; </h4>
                   <small style="font-weight: normal;">current specs
 revision POSIX.1 2001</small> </td>
                   <td
@@ -432,7 +437,8 @@ POSIX.1 1988 standard<br>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">ZIP </h4>
+                  <h4 style="font-weight: bold;"><a
+ href="zip-file-format.html">ZIP</a> </h4>
                   <small><span style="font-weight: normal;">original
 PKZIP file format specs</span></small> </td>
                   <td
@@ -483,7 +489,8 @@ maximum 16 EB for each input file</p>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">ZIPX </h4>
+                  <h4 style="font-weight: bold;"><a
+ href="zipx-file-format.html">ZIPX</a> </h4>
                   <small><span style="font-weight: normal;">WINZIP
 revision of zip standard</span></small> </td>
                   <td
@@ -585,7 +592,8 @@ maximum 4 GB file size in FAT32 filesystem<br>
                 <tr>
                   <td
  style="width: 10%; font-weight: bold; vertical-align: middle; background-color: rgb(255, 204, 153);">
-                  <h4 style="font-weight: bold;">ISO</h4>
+                  <h4 style="font-weight: bold;"><a
+ href="iso-utility.html">ISO</a></h4>
                   <small style="font-weight: normal;">ISO 9660</small><br>
                   </td>
                   <td
@@ -654,15 +662,23 @@ size) </p>
             <small>Table2: comparison of known file size limitations of
 common filesystems<br>
             <br>
-            </small>PeaZip free archiver utility read / write ZIP files
+            </small>PeaZip free archiver utility can <a
+ href="zip-files-utility.html">read / write ZIP files</a>
 with newer ZIP64 specifications meant to transparently expand zip
 format features, as well as powerful formats like 7Z, PEA, and TAR,
 designed for managing large files compression and archiving.<br>
-PeaZip also supports extraction of RAR and ZIPX formats, which are
+PeaZip also supports <a href="free-rar.html">extraction of RAR files</a>
+and of ZIPX files, which are
 equally desiged to work on large files (over 2^32 4 GB / 2GB limit).<br>
 In any case handling such large files with any software utility, and
 under any Operating System, requires working on a suitable filesystem,
 like as NTFS or exFAT.<br>
+            <br>
+Alongsize archive / file size limitations and maximum input items
+number limitations, learn more about <a
+ href="archive-file-formats-comparison.html">how different archive
+formats compares</a> in terms of features, and <a
+ href="what-is-zip-file.html">how archive files work</a>.<br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: 7Z, RAR, TAR,
 ZIP archive format limitations. Specs in terms of max size and item

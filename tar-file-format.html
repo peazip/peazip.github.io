@@ -230,7 +230,8 @@ files, effect that can be avoided by moders archivers simply employing
             <h3><span style="font-weight: bold;">Maximum size of a TAR
 file</span></h3>
 Current POSIX.1 2001 revision of the tar standard removed the old
-limitation of 8 GB of maximum archive size for tar archives defined in
+            <a href="rar-zip-file-format-size-limitations.html">limitation</a>
+of 8 GB of maximum archive size for tar archives defined in
 POSIX.1 1988 standard<br>
             <br>
             <span style="background-color: rgb(255, 238, 221);"><a
@@ -238,13 +239,15 @@ POSIX.1 1988 standard<br>
 file format doesn't
 feature native data compression</span>, so TAR archives are often
 compressed
-with an external utility like, but not only, <span
- style="font-weight: bold;">GZip</span>, <span
- style="font-weight: bold;">BZip2</span>, <span
- style="font-weight: bold;">XZ </span>(using
-7-Zip / p7zip LZMA / LZMA2 compression algorithms), <span
- style="font-weight: bold;">Brotli</span>, <span
- style="font-weight: bold;">Zstandard</span>, and similar
+with an external utility like, but not only, <a href="gzip-files.html"><span
+ style="font-weight: bold;">GZip</span></a>, <a href="bzip2-file.html"><span
+ style="font-weight: bold;">BZip2</span></a>, <span
+ style="font-weight: bold;"><a href="7z-file-format.html">XZ</a> </span>(using
+7-Zip / p7zip LZMA / LZMA2 compression algorithms), <a
+ href="brotli-compressed-file-format.html"><span
+ style="font-weight: bold;">Brotli</span></a>, <a
+ href="zst-compressed-file-format.html"><span style="font-weight: bold;">Zstandard</span></a>,
+and similar
 tools to reduce archive's size, i.e. for more compact backup, or
 smaller software distribution package.<br>
             <a name="tgz_tbz_txz_extensions"></a>Resulting compressed
@@ -254,7 +257,8 @@ with <span style="font-weight: bold;">double file extension</span>,
 e.g. <a name="tar.gz_tar.bz_extensions"></a>TAR.GZ, TAR.BR, TAR.BZ2,
 TAR.XZ, TAR.ZST.<br>
 Adding items to a tarball before compression stage is quivalent to
-using <span style="font-weight: bold;">solid compression</span>,
+using <a href="what-is-solid-compression.html"><span
+ style="font-weight: bold;">solid compression</span></a>,
 which can be beneficial for optimizing output size.<br>
 Similarly, TAR also does
 not natively support cryptography, but it is possible to compress the
@@ -363,8 +367,8 @@ is
 applied to
 multiple files, which consequnetly needs to be
 consolidated into a single archive - most times a TAR file -
-before the compression step (also known as <a
- href="what-is-solid-compression.html">solid mode compression</a>).<br>
+before the compression step (resulting in equivalent of solid mode
+compression).<br>
                   <br>
 This result in the first step archiving extension (e.g. <a
  href="tar-windows.html">creating a TAR archive file</a>) being
@@ -376,7 +380,8 @@ compressed tar files
 treated as
 atomic,
 single step operation, but usually (as in PeaZip, 7-Zip and other
-archival utilities) extraction of compressed TAR files is a two step
+archival utilities) <a href="how-to-extract-rar-zip-archives.html">extraction</a>
+of compressed TAR files is a two step
 process which firstly uncompress the TAR archive, and then unarchive
 the contained files and folder structure.<br>
                   </td>
@@ -389,7 +394,8 @@ the contained files and folder structure.<br>
                   </td>
                   <td style="vertical-align: middle;"> <big>Spanned
 multi-volume archives</big><br>
-                  <a name="double_extension"></a>File spanning is
+                  <a name="double_extension"></a><a
+ href="file-split.html">File spanning</a> is
 applied (often in a single pass) to output archive,
 creating a set of volumes of desired size, with a numerator in the file
 extension to declare what is the first volume and the progressive order

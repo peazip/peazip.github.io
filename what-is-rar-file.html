@@ -240,7 +240,11 @@ encryption</p>
                 <p><a name="rar5_file"></a>encrypted RAR5 archives rely
 on AES-256 in CBC
 mode, with improved key
-scheduling</p>
+scheduling, and can optionally use cryptographically strong 256-bit
+BLAKE2sp hash instead of CRC32 checksum to <a
+ href="verify-checksum-hash.html">verify integrity of files</a> inside
+archives<br>
+                </p>
               </li>
             </ul>
 Notably, .rar
@@ -252,6 +256,10 @@ Please note RAR4 and RAR5 standard revisions both have same .rar
 extension, the format revision level being declared in file header area.<br>
 Spanned multi-volume rar archives are designed by R01 extension - with
 file extension numerator incremented for following volumes of the set.<br>
+            <br>
+RAR format was designed ground up to avoid practical <a
+ href="rar-zip-file-format-size-limitations.html">limitations in terms
+of size and number of items</a> in archive:<br>
             <br>
             <h2 style="font-weight: bold;">Maximum size of
 a RAR archive</h2>

@@ -188,7 +188,8 @@ and file manager</big></a><br>
             </big></big></h2>
             <br>
 Screenshots showing
-PeaZip file manager software creating a ZIP archive (showing file
+PeaZip file manager software <a href="zip-files-utility.html">creating
+a ZIP archive</a> (showing file
 explorer in backgorund, first screenshot),
 and displaying file
 browser / archive
@@ -203,15 +204,22 @@ view to showing all content at same time, with full path displayed on
 the rightmost column of the file browser. Same file manager GUI is
 shown on Microsoft Windows and Linux systems.<br>
             <br>
-When reading the content of an archive file, for most common formats
-(7z, cab, iso, jar, rar, tar, zip, zipx...) it is shown the archive (or
+When <a href="how-to-open-rar-tar-zip-files.html">reading the content
+of an archive file</a>, for most common formats
+(<a href="7z-file-format.html">7z</a>, <a href="cab-files-utility.html">cab</a>,
+            <a href="iso-utility.html">iso</a>, jar, <a
+ href="what-is-rar-file.html">rar</a>, <a href="tar-file-format.html">tar</a>,
+            <a href="zip-file-format.html">zip</a>, <a
+ href="zipx-file-format.html">zipx</a>...) it is shown the archive (or
 package) structure tree on the left navigation area, for quick
 inspection of the content and for fast browsing to desired node.<br>
 To read the content of a spanned archive set, click on the first volume
 of the set (with extension 001, Z01, R01 or similar) and browse the
 archive as usual.<br>
             <br>
-Formats like gz, bz2, xz are simply compressed file containers, they
+Formats like <a href="gzip-files.html">gz</a>, <a
+ href="bzip2-file.html">bz2</a>, xz are simply compressed file
+containers, they
 contains a single file compressed with Gzip, BZip2, LZMA algorithm
 respectively.<br>
 Some exceptions: only flat mode view is enabled for ace and arc
@@ -236,14 +244,21 @@ listing mode is currently implemented).<br>
             <br>
             <h3><span style="font-weight: bold;">DARK MODE</span></h3>
             <br>
-PeaZip fully support dark mode on macOS and Linux - Gnome and
-derivatives (DE such as Cinnamon and MATE), KDE, XFCE...<br>
+PeaZip fully support dark mode on <span style="font-weight: bold;">macOS</span>,
+and on <span style="font-weight: bold;">Linux </span>with different
+Desktop Environments: <span style="font-weight: bold;">Gnome </span>and
+derivatives (DE such as <span style="font-weight: bold;">Cinnamon </span>and
+            <span style="font-weight: bold;">MATE</span>), <span
+ style="font-weight: bold;">KDE</span>, <span
+ style="font-weight: bold;">XFCE</span>...<br>
 Dark mode is basically supported by PeaZip on any system that is
 correctly passing to the application the real system's colors.<br>
             <br>
-            <img alt="peazip dark mode"
+            <h2><img alt="peazip dark mode"
  title="PeaZip in dark mode on macOS" src="macos-darkmode.png"
- style="width: 849px; height: 525px;"><br>
+ style="width: 849px; height: 525px;"></h2>
+            <span style="font-style: italic;">Screnshot: PeaZip in dark
+mode on macOS</span><br>
             <br>
 PeaZip currently does not fully support Windows dark mode, which is
 meant - by Microsoft design limitation - for UWP applications only.<br>
@@ -268,7 +283,7 @@ Options
 &gt; Settings &gt; Theme it is possible to set the program's GUI to
 Dark, which will darken the colors within the limits to preserve
 legibility of system-drawn widgets (which cannot be drawn by the
-application in custom colors)<br>
+application in custom colors), as seen in next screenshot<br>
             <br>
             <h3><a href="peazip-dark-mode.png" target="_blank"><img
  alt="open source file manager" title="PeaZip Dark option"
@@ -279,7 +294,7 @@ application in custom colors)<br>
 settings it is possible to set on of the pre-set high
 contrast theme, which passes dark system colors (which can be further
 customized, creating custom dark themes) to all non-UWP applications,
-including PeaZip<br>
+including PeaZip, as seen in following screenshot<br>
             <br>
             <h3><a href="peazip-high-contrast.png" target="_blank"><img
  alt="open source file browser" title="High Contrast theme"
@@ -317,8 +332,8 @@ ArkLinux), TGZ (Slackware), and TAR.GZ (portable, installation not
 required).<br>
 Experimental versions exists
 for <a href="peazip-linux-arm.html">ARM Linux</a> and <a
- href="peazip-bsd.html">BSD</a>, and on macOS (experimental)<a
- name="apple_macos_file_manager"></a>.<br>
+ href="peazip-bsd.html">BSD</a>, and on <a href="peazip-macos.html">macOS</a>
+(experimental)<a name="apple_macos_file_manager"></a>.<br>
             <br>
             <span style="font-weight: bold;">Portable versions</span>
 of of PeaZip cross-platform file archiver software are available for
@@ -329,7 +344,8 @@ the program's folder to the desired directory, and starting the
 application clicking on peazip executable.<br>
             <br>
 UNACE Plugin,
-required to open and extract WinAce ACE files, is available for Windows
+required to open and <a href="ace-files-utility.html">extract WinAce
+ACE files</a>, is available for Windows
 and
 Linux platforms, both for installable and portable packages.<br>
 Optional UNRAR5
@@ -337,10 +353,13 @@ Plugin, alternative unrar engine (WinRar RAR5 format extraction is
 supported
 out of the box), based on RarLab's unrar code, is available too for
 Linux and Windows operating systems, both for portable and installable
-packages. <br>
+packages. Pleaase note that <a href="free-rar.html">RAR files
+extraction</a> is supported out of the box on all systems and does not
+require installation of plugins or extra software.<br>
 ACE and RAR compression (creation) is not implemented due to licensing
 limitations
-of those formats.<br>
+of those formats, but PeaZip can <a href="free-rar-create.html">create
+RAR files</a> if WinRar is installed on the same system..<br>
 Those packages, available for multiple platfroms supported by PeaZip,
 requires separate download as they contains code
 released under licenses not compatible with Open Source LGPLv3: <a
@@ -349,7 +368,7 @@ Windows</a><br>
             <br>
             <a name="linux_7Z_RAR_ZIP_archive_browser_app"></a>Following
 screenshots are
-taken running PeaZip on multiple patforms: Darwin / macOS (prototype),
+taken running PeaZip on multiple patforms: Darwin / macOS,
 MS Windows XP, Linux
 (Ubuntu) with
 GTK2 and Qt widget sets.<br>

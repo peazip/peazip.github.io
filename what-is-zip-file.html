@@ -230,7 +230,9 @@ archiving</big></big><span
 archiving</span><span style="background-color: rgb(255, 238, 221);">
 means
 to combine multiple files together for easier management of the data</span>
-(i.e. backup, mail attachments, sharing by FTP, torrent, cloud, or any
+(i.e. <a href="backup-files.html">backup</a>, <a
+ href="share-files-sharing.html">sharing by email attachment, FTP,
+torrent, cloud</a>, or any
 kind of network service, etc) as for the host filesystem all the data
 will be treated as a single file rather than as multiple ones,
 eliminating the overhead of handling multiple objects - for each single
@@ -279,9 +281,12 @@ merged into a single output archive, the operation was often
 concatenated to lossless data compression to reduce the size of the
 archive using various utilities available at the time as SQ (DOS,
 CP/M), CRUNCH (CP/M), and compress (Unix).<br>
-TAR format, for example, is still an uncompressed archive standard, and
-uses external compressors, nowadays usually GZ (fast deflate based
-compression, same as in ZIP format), BZ2 (more powerful compression),
+            <a href="tar-file-format.html">TAR format</a>, for example,
+is still an uncompressed archive standard, and
+uses external compressors, nowadays usually <a href="gzip-files.html">GZ</a>
+(fast deflate based
+compression, same as in ZIP format), <a href="bzip2-file.html">BZ2</a>
+(more powerful compression),
 XZ (modern, very powerful LZMA based compression - the default
 compression algorithm used in 7Z format), BR Google's Brotli (modern,
 very fast compressor), and ZST Facebook's Zstandard (another modern,
@@ -341,9 +346,9 @@ is a fundamental property for storing some types of data - i.e. a
 software, a database.<br>
             <br>
             <a name="compression_of_archive_files"></a>For this reason
-lossless compression algorithms are used for data backup and for <a
- href="archive-file-formats-comparison.html">archive
-file formats</a>
+lossless compression algorithms are used for data backup and for
+archive
+file formats
 used in general
 purpose archive manager utilities, like <span
  style="font-weight: bold;">7Z</span>, <span style="font-weight: bold;">RAR</span>,
@@ -419,8 +424,10 @@ archiving
 (as in example losing a single byte of an executable file would make it
 not working), but&nbsp; it works very well when loss, reducing less
 relevant
-information, is acceptable, as for graphic and multimedia files
-compression
+information, is acceptable, as for <a
+ href="compress-resize-jpeg-png-files.html">graphic and multimedia
+files
+compression</a>
 - in example for <span style="font-weight: bold;">MP3</span>
 losing audio information below the audibility threshold, or losing not
 visible details in <span style="font-weight: bold;">JPEG</span>
@@ -452,6 +459,11 @@ information - intelligible audio, clear picture or video.</big></td>
             </table>
 Most common lossy compression algorithms are consequently usually fine
 tuned for the specific pattern of a multimedia data type.<br>
+For this very same reson, file types compressed with lossy algorithms
+will not compress well (or at all) if added to archive files compressed
+with general purpose compression algorithms: <a
+ href="why-can-not-compress-pdf-avi-mp3-files.html">already compressed
+files compresses poorly, if at all</a>.<br>
             <br>
 Due the lossy nature of those compression schemes, however, usually
 professional editing work is performed on non compressed data (i.e. WAV
@@ -527,28 +539,34 @@ ACE, 7Z files</big><br>
             <br>
             <a name="how_rar_archives_work"></a>During '90s and
 beyond, multiple alternative archival standard emerged,
-as <span style="font-weight: bold;">ARJ</span>, <span
- style="font-weight: bold;">RAR</span>
-(1993), <span style="font-weight: bold;">ACE</span>,
-and <span style="font-weight: bold;">7Z</span>
+as <span style="font-weight: bold;">ARJ</span>, <a
+ href="what-is-rar-file.html"><span style="font-weight: bold;">RAR</span></a>
+(1993), <a href="ace-files-utility.html"><span
+ style="font-weight: bold;">ACE</span></a>,
+and <a href="7z-file-format.html"><span style="font-weight: bold;">7Z</span></a>
 (1999), introducing unique
 features to
 distinguish
 them from the growing number of competitors, in example:<br>
             <ul>
-              <li>usually, stronger compression ratio than ZIP at the
+              <li>usually, <a href="maximum-compression-benchmark.html">stronger
+compression</a> ratio than ZIP at the
 cost of slower operation - but that disadvantage would have been paid
 off by slower transfer time (especially on slow and public networks)
 of smaller output file<br>
               </li>
-              <li>multi volume archival, splitting the output to met
+              <li>multi volume archival, <a href="file-split.html">spanning
+output to multiple files</a> to met
 constrains as mail attachment size limit</li>
-              <li>encryption, to enforce end user's privacy if the file
+              <li><a href="encrypt-files.html">encryption</a>, to
+enforce end user's privacy if the file
 is stolen, or
 passed through unsecure servers (unencrypted public network, or any
 third party controlled channel as a mail server, or remote storage
 service)</li>
-              <li>error detection and correction, to prevent extraction
+              <li><a href="verify-checksum-hash.html">error detection</a>
+and error correction (as implemented in ARC and RAR formats), to
+prevent extraction
 in the event data gets corrupted (i.e. faulty connection, damaged disk)
 and attempt recovery from known good data.<br>
               </li>
