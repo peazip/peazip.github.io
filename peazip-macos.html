@@ -139,6 +139,13 @@ Darwin / Apple macOS<br>
             <h3>Open Source WinRar / WinZip alternative for Macintosh<br>
             </h3>
             <br>
+If you receive "<span style="font-weight: bold;">peazip.app is damaged
+and can&#8217;t be opened</span>" error message when you try
+to open the app for the first time, you can fix the issue running the
+following command in console:<br>
+            <span style="font-weight: bold;">xattr -dr
+com.apple.quarantine /Applications/peazip.app</span><br>
+            <br>
             </div>
             <div style="text-align: left;"><small>Software license:
 LGPL3,
@@ -178,7 +185,6 @@ for Darwin, Intel</big><br>
 Darwin / macOS on </small></small></big><big><small><small>Intel x86_64</small></small></big><small><span
  style="font-weight: bold;"><br>
             </span></small></div>
-            <br>
             </td>
           </tr>
         </tbody>
@@ -304,11 +310,26 @@ most
 macOS sytem versions it is sufficient to respond "OK" to the
 system's permission request.<br>
             <br>
+            <h2><big><big>How to install PeaZip archive manager on macOS</big></big></h2>
+            <br>
             <a name="how_to_install_peazip_on_macos"></a>To <span
  style="font-weight: bold;">install </span>PeaZip archive manager
 utility on macOS open the DMG
 package, and
 simply drag&amp;drop peazip.app into you Mac's Application folder.<br>
+            <br>
+If the system shows the error message <span style="font-weight: bold;">"peazip.app
+is damaged and can&#8217;t be opened. You should move it to the Trash"</span>,
+it means the browser has applied the "quarantine" flag to the
+downloaded app package (which is a common security practice for Safari).<br>
+The quarantine flag can be removed with xattr command, open the console
+and run:<br>
+            <br>
+            <div style="text-align: left;"><span
+ style="font-weight: bold;">xattr -dr com.apple.quarantine
+/Applications/peazip.app</span><br>
+            </div>
+            <br>
 Alternatively, to use PeaZip without installation, you can drag
 peazip.app elsewhere on the system and run the application from the
 preferred location, even a network path in order to share the
