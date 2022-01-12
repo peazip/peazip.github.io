@@ -140,9 +140,10 @@ Darwin / Apple macOS<br>
             </h3>
             <br>
 If you receive "<span style="font-weight: bold;">peazip.app is damaged
-and can&#8217;t be opened</span>" error message when you try
-to open the app for the first time, you can fix the issue running the
-following command in console:<br>
+and can&#8217;t be opened</span>" or "<span style="font-weight: bold;">peazip.app
+cannot be opened because the developer cannot be verified</span>" error
+message running PeaZip for the first time, you can run the
+following command in Terminal:<br>
             <span style="font-weight: bold;">xattr -dr
 com.apple.quarantine /Applications/peazip.app</span><br>
             <br>
@@ -287,7 +288,6 @@ macOS]</a><span style="color: rgb(253, 253, 253);"> &nbsp; </span><a
 archive manager utility for Darwin / Apple macOS</big></big></big></h1>
             <br>
             </div>
-            <br>
             <a name="open_7z_rar_tar_zip_files_on_mac"></a>PeaZip is an
 Open Source cross-platform free archive manager
 application for Linux, macOS, and Windows, a freeware alternative to
@@ -295,42 +295,60 @@ WinRar, WinZip and similar utilities, to create, open and extract 7z,
 rar, tar, zip files and many more archive formats.<br>
             <br>
 PeaZip is now available as precompiled binary DMG
-packages for Darwin and Apple Macintosh systems (macOS series operating
-systems), built both for
+packages for Darwin and Apple Macintosh systems (macOS operating
+system), built both for
 M1 Apple
-Silicon chip, and for Intel architecture.<br>
-The application's binaries are not signed (M1 version is simply ad-hoc
-signed, Intel version is not signed), which means the first time it
-runs the
-app will
-ask
-for permission, to run to and to access certain paths on your machine.
-On
-most
-macOS sytem versions it is sufficient to respond "OK" to the
-system's permission request.<br>
+Silicon chip, and for Intel architecture. M1 SoC can run both versions,
+aarch64 and Intel 64 bit using Rosetta 2 emulation layer. <br>
+            <br>
             <br>
             <h2><big><big>How to install PeaZip archive manager on macOS</big></big></h2>
             <br>
             <a name="how_to_install_peazip_on_macos"></a>To <span
  style="font-weight: bold;">install </span>PeaZip archive manager
 utility on macOS open the DMG
-package, and
-simply drag&amp;drop peazip.app into you Mac's Application folder.<br>
+package recommended for your architecture (M1 can run both), and
+simply drag&amp;drop peazip.app into your Mac's Application folder.<br>
             <br>
-If the system shows the error message <span style="font-weight: bold;">"peazip.app
-is damaged and can&#8217;t be opened. You should move it to the Trash"</span>,
-it means the browser has applied the "quarantine" flag to the
-downloaded app package (which is a common security practice for Safari).<br>
-The quarantine flag can be removed with xattr command, open the console
-and run:<br>
+The application's binaries are not signed (M1 version is simply ad-hoc
+signed, Intel version is not signed): if the system shows the error
+message <span style="font-weight: bold;">"peazip.app
+is damaged and can&#8217;t be opened. You should move it to the Trash"</span>
+or <span style="font-weight: bold;">"peazip.app cannot be opened
+because the developer cannot be verified"</span> the first time you run
+PeaZip, it simply means Safari has applied the "quarantine" attribute
+to the
+downloaded app package. This attribute can be easily removed with xattr
+command.<br>
+            <br>
+To fix the error open the
+Terminal and run:<br>
             <br>
             <div style="text-align: left;"><span
  style="font-weight: bold;">xattr -dr com.apple.quarantine
 /Applications/peazip.app</span><br>
             </div>
             <br>
-Alternatively, to use PeaZip without installation, you can drag
+you can replace /Applications/peazip.app with actual PeaZip's path if
+you prefer to use it from a different position than Applications'
+folder.<br>
+            <br>
+            <h2><a href="peazip-darwin-macos.png" target="_blank"><img
+ alt="Macintosh WinRar alternative" title="PeaZip running on macOS"
+ src="peazip-darwin-macos.png"
+ style="border: 0px solid ; height: 542px; width: 849px;"></a></h2>
+            <br>
+Safari browser usually apply "quarantine" flag to various file types
+when they are downloaded from the web (which is a common security
+practice for Safari), so apps downloaded from the web rather than from
+the Apple Store usually comes with this flag.<br>
+Learn more about Apple suggestions to <a
+ href="https://support.apple.com/en-us/HT202491">Safely open apps on
+yor Mac<img alt="install mac apps" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>.<br>
+            <br>
+Alternatively, to use PeaZip without installation (as a Portable app),
+you can drag
 peazip.app elsewhere on the system and run the application from the
 preferred location, even a network path in order to share the
 application with other users.<br>
@@ -339,12 +357,6 @@ click peazip.app and run it; in this way the DMG will be closed and
 app's files automatically removed at next login.<br>
 In all of aforementioned cases, PeaZip configuration will be saved into
 user's home/.config path.<br>
-            <br>
-            <h2><a href="peazip-darwin-macos.png" target="_blank"><img
- alt="Macintosh WinRar alternative" title="PeaZip running on macOS"
- src="peazip-darwin-macos.png"
- style="border: 0px solid ; width: 849px; height: 542px;"></a></h2>
-            <br>
             <br>
 PeaZip is a full featured <a href="screenshots-peazip-1.html">file
 manager</a> and archive manager application, providing and Open Source
@@ -364,6 +376,7 @@ PeaZip can also export tasks defined in the GUI as <a
  href="file-split.html">split files</a>, <a
  href="verify-checksum-hash.html">verify checksum and hash</a>, etc.<br>
             <br>
+            <br>
             <big><big>Compile PeaZip on Darwin / macOS from sources<br>
             </big></big><br>
             <a name="download_archive_manager_for_macos"></a>As
@@ -375,8 +388,10 @@ Darwin / macOS, both for Intel x86_64 CPU (OSX up to macOS 10.15
 Catalina), and for Apple Silicon M1 aarch64 ARM SoC (for macOS 11 Big
 Sur, Monterey and more recent systems), targeting in both cases Cocoa
 widgetset.
+            <br>
 Legacy Carbon widgetset is still supported by Lazarus, but untested
 regarding compiling and building PeaZip for legacy Apple systems.<br>
+            <br>
 For best results compiling project_peach.lpi and project_pea.lpi with
 Lazarus/FPC targeting Macintosh machines, open main menu, Project &gt;
 Project Options,
@@ -386,6 +401,15 @@ Configuration and Target, and set <span style="font-weight: bold;">Darwin
 if compiling for machines with M1 Apple Silicon chip, or <span
  style="font-weight: bold;">x86_64</span> if compiling for Intel-based
 Apple machines.<br>
+            <br>
+As compiled binaries are unsigned, they will
+ask
+for permission to run to and to access certain paths on your machine
+the first time.<br>
+On
+most
+macOS sytem versions it is sufficient to respond "OK" to the
+system's permission request.<br>
             <br>
             <br>
             <h3><big><big>Running non-native PeaZip packages on macOS /
@@ -425,7 +449,40 @@ install alternative x86_64 Intel build<br>
             </span></p>
             <p><span style="font-weight: bold;">PeaZip &gt; macOS &gt;
 PeaZip free archive manager app for Apple macOS<br>
+            <br>
             </span></p>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+ style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-linux.html">LINUX ARCHIVE MANAGER</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-portable.html">PORTABLE WINRAR ALTERNATIVE</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="7zip-files-utility.html">MANAGE 7Z FILES</a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="tar-windows.html">TAR FILES UTILITY</a></small></td>
+                </tr>
+              </tbody>
+            </table>
             </td>
           </tr>
         </tbody>

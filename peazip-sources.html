@@ -343,8 +343,12 @@ all to compile and build the binaries:<br>
 executable, file and archive manager</li>
               <li>project_pea.lpi builds pea, to <a
  href="pea-archiving-utility.html">manage pea archives</a>, and to
-provide file management, <a href="encrypt-files.html">encryption</a>,
-and <a href="verify-checksum-hash.html">hashing</a> routines</li>
+provide file management, <a href="encrypt-files.html">encryption</a>
+(AES, Serpent, Twofish),
+and <a href="verify-checksum-hash.html">hashing</a> / checksum
+routines (Whirlpool, SHA / SHA2 / SHA3, BLAKE2, Ripemd160, MD5, various
+CRCs) <br>
+              </li>
             </ul>
 On Windows systems you will also need to compile (peazip
 sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi and copy
@@ -583,7 +587,7 @@ compressed files</a><br>
               </li>
             </ul>
             <br>
-PeaZip can also support other binaries, which MUST not be included in
+PeaZip can also support other binaries, which MUST NOT be included in
 base packages due their closed source nature: official PeaZip packages
 only contain software released under OSI-approved licenses.<br>
             <ul>
@@ -615,6 +619,10 @@ This behavior can be hardcoded setting HLIBRE_DIR constant in peazip
 known open archive formats (not encumbered by patents for read nor
 write)<br>
             <br>
+Please note that PeaZip provides strong cryptographic functions, so
+please refer to cryptography laws and regulations that may apply in
+your country.<br>
+            <br>
             <p><span style="font-weight: bold;">Synopsis: Download page
 of PeaZip sources (LGPLv3). Compile and build the application from
 source code with Lazarus/FPC, help porting PeaZip to new Operating
@@ -629,7 +637,68 @@ installable packages for PeaZip<br>
             </span></p>
             <p><span style="font-weight: bold;">PeaZip &gt; Downloads
 &gt; Compile and buid PeaZip from sources<br>
+            <br>
             </span></p>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+ style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="screenshots-peazip-1.html">PEAZIP FILE MANAGER GUI</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-portable.html">PORTABLE FILE ARCHIVER</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="zip-files-utility.html">FREE ZIP ARCHIVER</a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="tar-windows.html">TAR FILES UTILITY</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <small><small>&nbsp;</small></small><br>
+            <table style="text-align: left;" border="0" cellpadding="6"
+ cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="iso-utility.html">OPEN DMG ISO UDF FILES</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="extract-encrypted-files.html">OPEN ENCRYPTED 7Z RAR ZIP FILES</a><br>
+                  </small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="peazip-command-line.html">CREATE PEAZIP SCRIPTS</a></small></td>
+                  <td style="vertical-align: top;"><small><br>
+                  </small></td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+ href="how-to-open-rar-tar-zip-files.html">OPEN 7Z RAR TAR ZIP ARCHIVES</a></small></td>
+                </tr>
+              </tbody>
+            </table>
             </td>
           </tr>
         </tbody>
