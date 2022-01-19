@@ -139,11 +139,8 @@ Darwin / Apple macOS<br>
             <h3>Open Source WinRar / WinZip alternative for Macintosh<br>
             </h3>
             <br>
-If you receive "<span style="font-weight: bold;">peazip.app is damaged
-and can&#8217;t be opened</span>" or "<span style="font-weight: bold;">peazip.app
-cannot be opened because the developer cannot be verified</span>" error
-message running PeaZip for the first time, you can run the
-following command in Terminal:<br>
+To install PeaZip (1) drop peazip.app in /Applications directory, (2)
+open Terminal and run:<br>
             <span style="font-weight: bold;">xattr -dr
 com.apple.quarantine /Applications/peazip.app</span><br>
             <br>
@@ -305,31 +302,31 @@ aarch64 and Intel 64 bit using Rosetta 2 emulation layer. <br>
             <h2><big><big>How to install PeaZip archive manager on macOS</big></big></h2>
             <br>
             <a name="how_to_install_peazip_on_macos"></a>To <span
- style="font-weight: bold;">install </span>PeaZip archive manager
-utility on macOS open the DMG
+ style="font-weight: bold;">install PeaZip</span> archive manager
+utility on macOS machines, open the DMG
 package recommended for your architecture (M1 can run both), and
-simply drag&amp;drop peazip.app into your Mac's Application folder.<br>
+simply (1) drag &amp; drop peazip.app into your Mac's Application
+directory, (2) open the
+Terminal and run the command:<br>
             <br>
-The application's binaries are not signed (M1 version is simply ad-hoc
-signed, Intel version is not signed): if the system shows the error
+            <span style="font-weight: bold;">xattr -dr
+com.apple.quarantine
+/Applications/peazip.app</span><br>
+            <br>
+If the system shows the error
 message <span style="font-weight: bold;">"peazip.app
 is damaged and can&#8217;t be opened. You should move it to the Trash"</span>
 or <span style="font-weight: bold;">"peazip.app cannot be opened
 because the developer cannot be verified"</span> the first time you run
 PeaZip, it simply means Safari has applied the "quarantine" attribute
 to the
-downloaded app package. This attribute can be easily removed with xattr
-command.<br>
-            <br>
+downloaded app package.<br>
+This happens because the application's binaries are not signed (M1
+version is simply ad-hoc
+signed, Intel version is not signed).<br>
 To fix the error open the
-Terminal and run:<br>
-            <br>
-            <div style="text-align: left;"><span
- style="font-weight: bold;">xattr -dr com.apple.quarantine
-/Applications/peazip.app</span><br>
-            </div>
-            <br>
-you can replace /Applications/peazip.app with actual PeaZip's path if
+Terminal and run the aforementioned xattr command.<br>
+You can replace /Applications/peazip.app with actual PeaZip's path if
 you prefer to use it from a different position than Applications'
 folder.<br>
             <br>
@@ -387,8 +384,7 @@ recent, as native application for
 Darwin / macOS, both for Intel x86_64 CPU (OSX up to macOS 10.15
 Catalina), and for Apple Silicon M1 aarch64 ARM SoC (for macOS 11 Big
 Sur, Monterey and more recent systems), targeting in both cases Cocoa
-widgetset.
-            <br>
+widgetset. <br>
 Legacy Carbon widgetset is still supported by Lazarus, but untested
 regarding compiling and building PeaZip for legacy Apple systems.<br>
             <br>
