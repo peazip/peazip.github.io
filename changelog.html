@@ -237,20 +237,30 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.4.0 is the first release providing experimental native <a
- href="peazip-macos.html">packages for Darwin / macOS</a> platform,
-both aarch64 (for M1 Apple Silicon chip) and Intel x86_64.<br>
-This release brings fixes and improvements (management of temporary
-files, test batches, and language selection), a new alternative
-benchmark (single and multi core, based on integer and floating point
-arithmetic) and comes with updated
-backends: Pea 1.05, and 7z 21.06, which is now employed on all
-platform; on Linux packages, 7z replaces p7zip, which is still fully
-supported as
-alternative backend.<br>
+PeaZip 8.5.0 release improves the <a href="peazip-macos.html">packages
+for macOS platform</a>, with macOS-style keyboard shortcuts,
+integration with macOS context menu, full support to "move to trash"
+deletion (both from file manager, and after compression / extraction
+operations), and support for Brotli, Zpaq, and Zstandard backends.<br>
+macOS system integration is fully scriptable through Automator
+.workflow scripts, see sample service menus in (peazip)/res/share/batch
+folder.<br>
+File manager was improved, and now allows more alternative styles
+(large list and large details) on Linux.<br>
+It is now possible to optionally integrate PeaZip in <a
+ href="screenshots-peazip-3.html#extract_files_from_context_menu">Windows
+11
+mini-context menu</a> from .reg scripts in (peazip)/res/share/batch
+folder.<br>
+This release improves scripting, usage of layouts (files defining
+advanced inclusion and exclusion filters, and optionally input list),
+and updates compression settings.<br>
+Updated
+backends: 7z 21.07, Pea 1.06, and Zstd 1.5.2.<br>
             <br>
-A total of 225
-file extensions can now be managed by PeaZip.<br>
+A total of 226
+file extensions can now be managed by PeaZip, with addition of support
+for .vhdx Microsoft disk image format<br>
             <br>
 Translations are
 available in over than 30 languages, any help is welcome to translate
@@ -261,44 +271,40 @@ please consider taking the time to give a look to <a
 directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <h3><span style="font-weight: bold;">SHA256 hash of 8.4.0
+            <h3><span style="font-weight: bold;">SHA256 hash of 8.5.0
 release packages</span></h3>
-PeaZip_8.4.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-a8e432eaa04b4a2f9ebc020d05f916cf3ebfdc571267129b43cd0727f71d1064<br>
-peazip_8.4.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-77d1b0325f3fbec5baa1874b90f52ff66746d787b0a2ad442f855a6c278333e8<br>
-peazip_8.4.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-4de40c09dcecd69dd67cedf0ea093310b67c716aae5d47a51a30638c2cc2cc54<br>
-peazip_portable-8.4.0.LINUX.GTK2.x86.tar.gz&nbsp;&nbsp;&nbsp;
-9236327c76c06bc1a90c85ce5de798250059316f641658f390b93809b2bcbcb3<br>
-peazip_portable-8.4.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-c3b323cdbeb14779b7f65458b179fd9312b665cc85f195d3429665c7a4b0011e<br>
-peazip_portable-8.4.0.LINUX.Qt4.x86.tar.gz&nbsp;&nbsp;&nbsp;
-200374afcdd8bd51485eefec3ab8e9dffb8f07ec1f939b3f44eee05ac5d2efed<br>
-peazip_portable-8.4.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-149d7aa93a4272e21cf7ad01a517a1542d8385f5ce5665454da386310243fe44<br>
-peazip_portable-8.4.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-09cacd2f74c81b4a3aee9cd976c5dd00f3edcf52a8f2369369d98bb1abe31de3<br>
-peazip_portable-8.4.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-ce44e2f6b5455f7ff2518f0e11e2958ccdc13d41a086ace735b647832c857537<br>
-peazip-8.4.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-e912983909c54e7a0efb77290f5b3d3d46c09f9ed35c71ff67991e7384e8aa16<br>
-peazip-8.4.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
-c408f240380444090f1c337ea4861e939cbce1d4cd617cbab8169423851138d6<br>
-peazip-8.4.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
-95cf8bbf784bfa06e89cf15cd105ce6d3a45f91e79b4499b0840df1980c60b2f<br>
-peazip-8.4.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-fae19f23d2f35a3d338206d950efebd60dbb893cf636f822828d090d0998b823<br>
-peazip-8.4.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-88d8a602d80e5044e73fff34efdc195220a0dc6892778054338f08445e67d286<br>
-peazip-8.4.0.src.zip&nbsp;&nbsp;&nbsp;
-f4ffb4ca1e912eb89d8d32338166bad2bdb0dc86fffb747921eb2c2b90c8aa74<br>
-peazip-8.4.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-a1bd79aa0fa46b2041ce807202e9bba9f1bbb2dc3efda76c1db93c146dfc83fd<br>
-peazip-8.4.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-6e3818e72e3751dd919a5366b5d191896d8eef8b644a002c7644dadd00bcddbc<br>
-peazip-8.4.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-03d7b50f22d815468e47e6b58acf008c94247e2e781232e26e4b466149db5583<br>
+peazip-8.5.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+109147e3bc7800a79466e44f8a57fad282100848ce88f4a86c161b854adbaf52<br>
+peazip-8.5.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+8a3dfa1734ba72ea09ba81017e96d0294bda5eeeba84e469785c30b6fc652c4f<br>
+peazip-8.5.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+bcba40c7a234ba64a620a3e57776ac7bf639cb4f7e9f2f983dc16e1cdf34767d<br>
+peazip-8.5.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+3993ee108a908857027d2adbee224dd80f593923e1c1ebec24bc3284e0c3317c<br>
+peazip-8.5.0.pack.zip&nbsp;&nbsp;&nbsp;
+f888b82b9edc89c77e5b2b05439b9a20ddc4177a1baa7ce703526790e5b3d2a2<br>
+peazip-8.5.0.src.zip&nbsp;&nbsp;&nbsp;
+af77933d4fc4e5a577440da496f9e93daa5117494a793f2f81d0863553248205<br>
+peazip-8.5.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+b43562581566166d22eb4f7f026c76e67493af13ac33f6b45bf9b63be6616e5f<br>
+peazip-8.5.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+222c9e35afcc896f2f8dca1276e30501da7c6f3c0eb511a0be8947cf4c49d3e3<br>
+peazip-8.5.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+ab43008e3ec4c2e5a6086066fe740c758b00c3b2f658c43767a7fa6ccea82974<br>
+PeaZip_8.5.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+2f9c5038ae6bd9871068064d449fafb0b80a193e36da3fe1b65b80d83b315170<br>
+peazip_8.5.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+550e4abfbe288884443e06e34b81084f3b43d273cba049c2fd6677e128f896d3<br>
+peazip_8.5.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+31644148c58fab915c4a9ba4984fcc1b0eecf4febbb9af1455d1a4a1e57adc64<br>
+peazip_portable-8.5.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+c7fad45e5da33d8000b90d902381698a19907b846c68f77023f81d6c6610fa58<br>
+peazip_portable-8.5.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+39fa078c1b9ca60bcb575fd7eee0da878a33564fac8333a85dc6007e426c9769<br>
+peazip_portable-8.5.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+9bb9142f1906acfb6f10e5f2e15dab361c980f76e41f4af5440cceef6bb46521<br>
+peazip_portable-8.5.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+d75a52f104f4d7c8b98e817ce886f168d8717d256b3fbc88fb0f4eefb956033c<br>
             </td>
           </tr>
         </tbody>
@@ -317,6 +323,154 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2022 02 20<br>
+            <div style="margin-left: 40px;">8.5.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z updated to 21.07<br>
+pea updated to 1.06<br>
+Zstd updated to 1.5.2 (on macOS and Windows)<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Cleaned up conditional
+compilation sections which were causing errors in some non-Windows
+versions of Lazarus IDE<br>
+Compiled with <span style="font-weight: bold;">Lazarus 2.2.0</span><br>
+(macOS) <br>
+            <div style="margin-left: 40px;">Can now open selected
+file(s) on: double click, "open with" from system context menu, drag
+files on app<br>
+Some <span style="font-weight: bold;">keyboard shortcuts</span> are
+conditionally modified to better fit to
+macOS conventions: <br>
+            <div style="margin-left: 40px;">Command+F find, +A select
+all, +C copy, +X cut, +V paste, +left open previous item in history,
++up open parent folder, +right next item in history, +BackSpace move to
+Trash; <br>
+Shift+Command+N create new folder, +C jump to root, +D jump to Desktop,
++H jump to home, +L jump to Downloads, +O jump to documents<br>
+            </div>
+            </div>
+Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Linux) <br>
+            <div style="margin-left: 40px;">Added link to devices
+mounted in /var/run/media in filesystem treeview, when applicable<br>
+File / archive browser can now alternatively display larger details,
+and large list modes (from Style menu on status bar) in order to
+improve readability and touch usability<br>
+            </div>
+(macOS) <br>
+            <div style="margin-left: 40px;">Added filesystem treeview
+link to ~/Library/Mobile Documents/, which contains iCloud
+syncronization folder, when the path is not empty<br>
+            </div>
+            <div style="margin-left: 40px;">Explore path menu entry now
+uses open -R reveal option to highlight the item selected in PeaZip
+when Finder is opened<br>
+            </div>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Move to Recycle bin (Trash)</span>
+deletion option is now available, both in file manager and as option
+for deletion after archiving / extraction<br>
+            </div>
+Improved icon spacing<br>
+            <div style="margin-left: 40px;">A larger Spacing option is
+now available<br>
+Theme &gt; Spacing option now apply also to the various syles of the
+file browser listview<br>
+            </div>
+New keyboard shortcuts:<br>
+            <div style="margin-left: 40px;">Ctrl+Alt+T keyboard
+shortcut to open item in a new tab<br>
+Ctrl+Alt+F4 jump to Downloads<br>
+Ctrl+Alt+Shift+F4 jump to Documents<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">(macOS) <br>
+            <div style="margin-left: 40px;">Added support for <span
+ style="font-weight: bold;">Brotli</span>, <span
+ style="font-weight: bold;">Zpaq</span>, and <span
+ style="font-weight: bold;">Zstandard </span>backends<br>
+            </div>
+Improved <span style="font-weight: bold;">compression settings</span><br>
+            <div style="margin-left: 40px;">Added option to use
+dictionary up to 4 GB of memory for LZMA and LZMA2 compression<br>
+It is now possible to use custom dictionary sizes for non-&nbsp;
+Defalte / Deflate64 ZIP compression<br>
+Updated compression defaults for LZMA, LZMA2/XZ, and PPMd accordingly
+to new 7z defaults<br>
+Updated compression presets in (peazip)/res/share/presets<br>
+Fixed: it is now possible to change compression level and algorithm
+using keyboard<br>
+            </div>
+Improved usage of <span style="font-weight: bold;">Layouts</span><br>
+            <div style="margin-left: 40px;">From main menu Tools &gt;
+Apply filters to archive browser, it is possible to apply or to ignore
+(default) advanced filters for the archive browser, in this way the
+user can specify filters (i.e. file extensions) to be applied to
+archiving and extraction tasks without changing the way the file
+manager works<br>
+From main menu Options &gt; Settings, Archive manager tab it is now
+possible to set a Layout to be opened automatically when starting PeaZip<br>
+Layouts can be now loaded and saved from the file manager (saving a
+Layout from file manager saves only Advanced filters as no input list
+is provided)<br>
+            </div>
+Improved <span style="font-weight: bold;">scripting</span><br>
+            <div style="margin-left: 40px;">Interactive extraction
+option is now ignored when creating scripts, which would otherwise
+point to a temporary work path rather than the intended output
+destination<br>
+            <div style="margin-left: 40px;">This behavior can be
+changed in the configuration file editing [ignore interactive
+extraction option when creating scripts from Console tab] variable<br>
+            </div>
+Force UTF8 flag for file names ZIP archives is now enabeld by default,
+in order to better handling international characters on multiple
+platforms<br>
+Reversed a change intoduced in previous version: 7z temporary work
+files during compression are no longer created inside peazip-tmp
+subpath, because it is created on the fly by PeaZip and would not
+function if the action is exported as script to be used separately<br>
+            </div>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(macOS) <br>
+            <div style="margin-left: 40px;">Moved (peazip)/res/bin
+directory to correct location into peazip.app/Contents/MacOS/ path<br>
+Added <span style="font-weight: bold;">readme with installation
+instructions</span> in the root of the macOS
+packages<br>
+Added sample Automator scripts for Service menus in the root of the
+macOS packages and, for reference, in (peazip)/res/share/batch for
+integration with <span style="font-weight: bold;">macOS context menu</span><br>
+            </div>
+(Windows) <br>
+            <div style="margin-left: 40px;">Added "Browse path with
+PeaZip" entry for folder background context menu<br>
+Optional <span style="font-weight: bold;">integration with Windows 11
+mini-context menu</span><br>
+            <div style="margin-left: 40px;">Windows 11 mini-context
+menu integration is available as .reg scripts in
+(peazip)/res/share/batch folder<br>
+            </div>
+            <div style="margin-left: 40px;">Scripts uses whitelisted IDs<br>
+            </div>
+            <div style="margin-left: 40px;">Mini-context menu entries
+can handle multiple input items per single application's instance<br>
+            </div>
+            </div>
+            </div>
+            <br>
+            </div>
+            </div>
             <br>
 2021 12 15<br>
             <div style="margin-left: 40px;">8.4.0<br>
