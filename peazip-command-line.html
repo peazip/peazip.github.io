@@ -469,6 +469,23 @@ separate new
  href="file-split.html">split a single input file</a>;</li>
             </ul>
             <ul>
+              <li>-add2preset N uses Nth preset settings; presets are
+numbered from 0 to 15, are fully customizable, and can be found in
+(peazip)/res/share/presets directory</li>
+              <li>-add2custom (full qualified name of the custom
+compression setting) uses the custom compression setting specified
+after the switch</li>
+            </ul>
+-add2preset and -add2custom switches can be used in scripts (.reg,
+desktop files, .workflow service menus) employed to integrate PeaZip
+with Linux, Mac, and Windows systems, in order i.e. to make a personal,
+custom compression setting readily available from system's context menu<br>
+If "Immediate execution" option is enabled (dropdown on the right of
+Add button in PeaZip GUI), -add2preset and -add2custom will start
+compression immediately without requiring confirmation, otherwise it
+will be possible to modify the task further before confirming with OK
+button.<br>
+            <ul>
               <li><a name="secure_file_deletion_command"></a>-add2wipe:
                 <a href="secure-delete.html">securely delete selected
 file(s)</a>;</li>

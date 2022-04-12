@@ -237,26 +237,13 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.5.0 release improves the <a href="peazip-macos.html">packages
-for macOS platform</a>, with macOS-style keyboard shortcuts,
-integration with macOS context menu, full support to "move to trash"
-deletion (both from file manager, and after compression / extraction
-operations), and support for Brotli, Zpaq, and Zstandard backends.<br>
-macOS system integration is fully scriptable through Automator
-.workflow scripts, see sample service menus in (peazip)/res/share/batch
-folder.<br>
-File manager was improved, and now allows more alternative styles
-(large list and large details) on Linux.<br>
-It is now possible to optionally integrate PeaZip in <a
- href="screenshots-peazip-3.html#extract_files_from_context_menu">Windows
-11
-mini-context menu</a> from .reg scripts in (peazip)/res/share/batch
-folder.<br>
-This release improves scripting, usage of layouts (files defining
-advanced inclusion and exclusion filters, and optionally input list),
-and updates compression settings.<br>
+PeaZip 8.6.0 release comes with new themes and improved, easier to
+customize UI layout.<br>
+Under the hood, it is now possible to use custom compression pre-sets
+(either built-in or user defined) from command line and scripts, and to
+set immediate execution for custom compression pre-sets.<br>
 Updated
-backends: 7z 21.07, Pea 1.06, and Zstd 1.5.2.<br>
+backends: Pea 1.07, and (Linux) Zstd 1.5.2.<br>
             <br>
 A total of 226
 file extensions can now be managed by PeaZip, with addition of support
@@ -271,40 +258,44 @@ please consider taking the time to give a look to <a
 directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <h3><span style="font-weight: bold;">SHA256 hash of 8.5.0
+            <h3><span style="font-weight: bold;">SHA256 hash of 8.6.0
 release packages</span></h3>
-peazip-8.5.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
-109147e3bc7800a79466e44f8a57fad282100848ce88f4a86c161b854adbaf52<br>
-peazip-8.5.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
-8a3dfa1734ba72ea09ba81017e96d0294bda5eeeba84e469785c30b6fc652c4f<br>
-peazip-8.5.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-bcba40c7a234ba64a620a3e57776ac7bf639cb4f7e9f2f983dc16e1cdf34767d<br>
-peazip-8.5.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-3993ee108a908857027d2adbee224dd80f593923e1c1ebec24bc3284e0c3317c<br>
-peazip-8.5.0.pack.zip&nbsp;&nbsp;&nbsp;
-f888b82b9edc89c77e5b2b05439b9a20ddc4177a1baa7ce703526790e5b3d2a2<br>
-peazip-8.5.0.src.zip&nbsp;&nbsp;&nbsp;
-af77933d4fc4e5a577440da496f9e93daa5117494a793f2f81d0863553248205<br>
-peazip-8.5.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-b43562581566166d22eb4f7f026c76e67493af13ac33f6b45bf9b63be6616e5f<br>
-peazip-8.5.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-222c9e35afcc896f2f8dca1276e30501da7c6f3c0eb511a0be8947cf4c49d3e3<br>
-peazip-8.5.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-ab43008e3ec4c2e5a6086066fe740c758b00c3b2f658c43767a7fa6ccea82974<br>
-PeaZip_8.5.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-2f9c5038ae6bd9871068064d449fafb0b80a193e36da3fe1b65b80d83b315170<br>
-peazip_8.5.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-550e4abfbe288884443e06e34b81084f3b43d273cba049c2fd6677e128f896d3<br>
-peazip_8.5.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-31644148c58fab915c4a9ba4984fcc1b0eecf4febbb9af1455d1a4a1e57adc64<br>
-peazip_portable-8.5.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-c7fad45e5da33d8000b90d902381698a19907b846c68f77023f81d6c6610fa58<br>
-peazip_portable-8.5.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-39fa078c1b9ca60bcb575fd7eee0da878a33564fac8333a85dc6007e426c9769<br>
-peazip_portable-8.5.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-9bb9142f1906acfb6f10e5f2e15dab361c980f76e41f4af5440cceef6bb46521<br>
-peazip_portable-8.5.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-d75a52f104f4d7c8b98e817ce886f168d8717d256b3fbc88fb0f4eefb956033c<br>
+peazip-8.6.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+8184d9d1a4443d246b1809d754e947a442859dcfa0c43adcd3c0df278731854d<br>
+peazip-8.6.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+9ec242a67c918d53ab3eb7209f0302c71fb2369c771392c424d24184d91431a4<br>
+peazip-8.6.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+e043034ae0baa5a859d5c9ed08875c6e49d3c1e0ca15b9495ec2718ba045c6e2<br>
+peazip-8.6.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+ce38570bff392bfb269757bac729e9636e8cd8ffa9abb0830594d14c43ee78c0<br>
+peazip-8.6.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+16ec98ca4f057a4b3b8545032a2ddfb6b46cfd107ebd14682514a69c7b8651bf<br>
+peazip-8.6.0.pack.zip&nbsp;&nbsp;&nbsp;
+840aa38804d0c983853ca9de45f2eb4ac9d840ef1c165529dde085b647a406e5<br>
+peazip-8.6.0.src.zip&nbsp;&nbsp;&nbsp;
+a0dd9e5fb45594904e3f2c45dd1077fe4e4ec426471483240ea5b1a8bccd2e1b<br>
+peazip-8.6.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+226ceb22689c8bc431c38e27b7fe83840f1ca142ab3cbcd0ee23e2c76eafd86d<br>
+peazip-8.6.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+07bb4478be3048391c7c7128537e3d1598d8ec26acc98e17248dfbf2d775c731<br>
+peazip-8.6.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+f2c95fa2c806226822cd7fee0966a08912f5e89df93f9a6acd005eaceb160e57<br>
+PeaZip_8.6.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+bedc1f01d63f33c1abb81bd64a1910d3fc7c312eb858fd1a8c7778e3f1a83178<br>
+peazip_8.6.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+2959cfb6ab92f1a0e2148a5c1d8e87e0a00bdecb3db981c6182d909dcf7f0e76<br>
+peazip_8.6.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+e602f5278f2e1cf45d9f69a4f8e67e1ea9fed694d42030a646040e2016e51e3d<br>
+peazip_help.pdf&nbsp;&nbsp;&nbsp;
+686942b3c926ac60b7166f4befc46d8bfb2284d95fe047b6f4c7bd999ed12037<br>
+peazip_portable-8.6.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+8d430a24dc6aaf21931aa82e46e91e36fcf82eaeb9a53906b3cce360668a443b<br>
+peazip_portable-8.6.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+7f0ec8c92f9be28976be5991115b4e59a8dadaa3e23426e70909369cfceae4ae<br>
+peazip_portable-8.6.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+4b42bc2121dbadc895140cd2ef21a332a0b51f328907f93d660ee598b8d1bf20<br>
+peazip_portable-8.6.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+1b7e113db76e08209d0c574540d9fdbefa7af08a051bc99cb286c4d14b5991c5<br>
             </td>
           </tr>
         </tbody>
@@ -323,6 +314,109 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2022 04 12<br>
+            <div style="margin-left: 40px;">8.6.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.07<br>
+(Linux) Zstd 1.5.2<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Fixed dictionary size for
+ZIP using XZ compression<br>
+(Windows) Fixed compatibility issue with Windows XP<br>
+(Windows) Fixed defective system's file explorer refresh after some
+operations<br>
+Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Improved theming</span><br>
+            <div style="margin-left: 40px;">New "Main" theme (default),
+with icons meant to visually integrate the application with most of the
+design styles found on supported platforms<br>
+New "Different" theme meant to integrate with macOS visual style
+without being too unfamiliar to users of modern Windows and Linux
+systems<br>
+New "Gray" theme meant to integrate with modern Windows systems and
+Fluent design<br>
+Previous versions theme is named "Ten" and can be set from the themes
+picker in Options &gt; Settings, Theme tab, Advanced section<br>
+Other old themes are available collected in a separate package<br>
+Themes picker control was simplified<br>
+            </div>
+New .ico and .png icons are now available in (peazip)/res/share/icons
+directory for customizing the application on Linux, macOS, and Windows
+systems<br>
+Simplified organization of <span style="font-weight: bold;">UI layout</span><br>
+            <div style="margin-left: 40px;">New Style popup menu from
+the right of tool bar unifies the multiple submenus for quick
+customization of the UI<br>
+            <div style="margin-left: 40px;">Righclicking on the Styles
+button is a secondary way to show column's header menu for organizing
+the browser in details mode (as column headers are not correctly
+handled on some target operating systems)<br>
+            </div>
+Status bar is now simpler and more focused on displaying information
+about navigation and password, now that styles-retaled controls are
+moved to the new Styles button in tool bar<br>
+            <div style="margin-left: 40px;">On the left of the status
+bar displayed and selected items are shown, plus information about
+items cut or copied in the clipboard<br>
+            </div>
+            <div style="margin-left: 80px;">Clicking or passing the
+mouse on that area displays comprehensive information about current
+archive (if applicable), filesystem and clipboard content<br>
+            </div>
+            <div style="margin-left: 40px;">On the right of the status
+bar is available the button to enter / change password<br>
+            </div>
+Navigation submenu in context menu is now simpler and more focused on
+file browsing, with the removal of duplicate sytles-related controls<br>
+Unified navigation menu for address bar, breadcrumb and treeview to
+provide an single, easier to understand structure (organized in the
+same way of the navigation side bar), and to remove duplicate controls<br>
+Added <span style="font-weight: bold;">session history</span> popup
+menu to "back" and "forward" buttons, and <span
+ style="font-weight: bold;">breadcrumb </span>popup menu to "up" button<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added "<span
+ style="font-weight: bold;">Immediate execution</span>" option for
+Profiles and Presets, in Add button's dropdown menu<br>
+            <div style="margin-left: 40px;">If the option is flagged,
+custom compression profiles and presets immediately starts compression
+when selected without requiring confirmation<br>
+            </div>
+Added command line switches to compress items using one of the
+compression presets or loading a saved custom compression setting<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">-add2preset N</span> uses Nth preset
+settings; presets are numbered from 0 to 15, and are fully
+customizable, they can be found in (peazip)/res/share/presets directory<br>
+            <span style="font-weight: bold;">-add2custom</span> (full
+qualified name of the custom compression setting) uses the custom
+compression setting specified after the switch<br>
+Those switches can also be used in scripts (.reg, desktop files,
+.workflow service menus) employed to integrate PeaZip with Linux, Mac,
+and Windows systems<br>
+If "immediate execution" option is enabled, compression will start
+immediately without requiring confirmation, otherwise it will be
+possible to modify the task further before lanuching it<br>
+            </div>
+Added option to not immediately save edited files into archive, keeping
+changes for further editing (or for manually saving to archive from
+context menu, More submenu)<br>
+Labels in status bar of Archiving and Extraction screens are clickable
+to show synthetic information about the task<br>
+            </div>
+            <br>
+            </div>
+            </div>
             <br>
 2022 02 20<br>
             <div style="margin-left: 40px;">8.5.0<br>
