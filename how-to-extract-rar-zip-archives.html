@@ -325,6 +325,48 @@ folders - desktop, documents, favorites...</li>
               </tbody>
             </table>
             <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: right; width: 128px;">
+                  <h2><span style="font-weight: bold;"><img
+ title="Add and remove files from archives"
+ alt="extract 7z rar tar zip files" src="file-format/quotes.png"
+ style="width: 32px; height: 32px;"></span></h2>
+                  </td>
+                  <td style="vertical-align: top; font-style: italic;"><big>Hint:
+in Options &gt; Settings &gt; Archive manager page, Extraction group it
+is possible to set how file extraction works internally, flagging or
+unflagging the option "<span style="font-weight: bold;">Interactive
+extraction, extract then move to destination</span>".<br>
+                  </big></td>
+                  <td style="vertical-align: bottom; width: 128px;">
+                  <h3><img
+ title="Add and remove data from current archive"
+ alt="how to extract rar files" src="file-format/quotes-inverse.png"
+ style="width: 32px; height: 32px;"></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+When <span style="font-weight: bold;">interactive extraction option</span>
+is on, extraction is a two-step
+process extracting content to the temporary work path (which can be set
+from Options Settings &gt; General page) then moving extracted content
+to intended output destination, interactively asking to user to
+overwrite existing files if needed.<br>
+When interactive extraction option is off, the extraction is performed
+directly toward output destination, and naming conflict policy
+automatically resolves issues with existing files without needing
+user's feedback - for this reason, it is recommended for batch tasks,
+and this mode of operation is automatically applied whenever an <a
+ href="peazip-command-line.html">extraction task is exported as console
+script</a>, from Console tab.<br>
+            <br>
+            <br>
             <h3 style="font-weight: bold;"><big>Archive extraction
 options</big></h3>
             <br>

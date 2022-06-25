@@ -119,7 +119,7 @@ PEAZIP FREE ARCHIVER</a> </td>
  style="text-align: center; vertical-align: middle; width: 66%; color: rgb(253, 253, 253);">
             <div style="text-align: left;"><a
  style="color: rgb(153, 153, 153);" name="peazip_source_code"></a><big><big><big>Sources
-8.6.0<br>
+8.7.0<br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -150,7 +150,7 @@ Lazarus/FPC<br>
             <div style="color: rgb(253, 253, 253);">
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/8.6.0/peazip-8.6.0.src.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/8.7.0/peazip-8.7.0.src.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD" alt="download peazip code base"
  src="free-rar/download-free-software.png"
@@ -161,7 +161,7 @@ requires Lazarus / FreePascal IDE for building and compiling the app<br>
             </small></small></big><br>
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/8.6.0/peazip-8.6.0.pack.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/8.7.0/peazip-8.7.0.pack.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD"
  alt="peazip deb rpm packages structure"
@@ -289,13 +289,13 @@ compatible with Delphi and ObjectPascal, and <a target="_blank"
 required to
 compile, build, and edit the source code.<br>
             <br>
-Lazarus/FPC supports many more <a
+Lazarus/FPC supports many more <a target="_blank"
  href="https://wiki.freepascal.org/Platform_list">platforms<img
  alt="build cross platform applications"
  src="free-rar/extract-files.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
 (architectures and Operating Systems) than the ones PeaZip is
-built/tested for, following the <a
+built/tested for, following the <a target="_blank"
  href="https://en.wikipedia.org/wiki/Write_once,_compile_anywhere">"Write
 once, compile anywhere"<img alt="compile peazip sources"
  src="free-rar/extract-files.png"
@@ -326,6 +326,61 @@ scripts (.iss files) are written using InnoSetup, which also uses a
 Delphi-like syntax and are easily understandable for developers
 proficient in Delphi or ObjectPascal dialects.<br>
             <br>
+            <span style="font-weight: bold; color: rgb(204, 0, 0);">Please
+note that PeaZip provides strong cryptographic functions, so
+please refer to cryptography laws and regulations that may apply in
+your country.</span><br>
+            <br>
+            <br>
+            <h3><big><big><big>Quick start to compile PeaZip and build
+a distributable package<br>
+            </big></big></big></h3>
+            <br>
+Source package contains "<span style="font-weight: bold;">dev</span>"
+subdirectory containing sources to compile the application's binaries,
+"<span style="font-weight: bold;">res</span>" subdirectory
+containing resources needed by the application, and a <span
+ style="font-weight: bold;">readme.txt</span> file containing
+instructions to compile peazip and build a distributable package,
+either as Portable application and for many different package
+management systems.<br>
+            <ol>
+              <li>Download and install <a target="_blank"
+ href="https://www.lazarus-ide.org/index.php?page=downloads">Lazarus IDE<img
+ alt="cross platfrom development" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> for your
+OS / architecture platform. In case of troubles installing
+Lazarus, its <a target="_blank"
+ href="https://forum.lazarus.freepascal.org/index.php">forum<img
+ alt="install support" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> is an
+excellent starting point for obtaining support from a friendly
+and competent community of developers using Lazarus / FreePascal.<br>
+              </li>
+              <li>Compile sources in "dev" subdirectory, see below
+"Notes for developers" section for
+details about manual and automated compiling.</li>
+              <li>Compiled binaries must be moved
+up one level, into package's root folder (where readme.txt file is);
+now dev subdir is no longer needed.</li>
+              <li>Find appropriate builds of third party binaries for
+the intended target OS and architecture, and copy them into
+(peazip)/res/bin/ subfolders: please note that "res" folder provided in
+source package (as
+template for creating a working PeaZip port / distributable package)
+contains only non- OS
+/ architecture -dependant resources, so res/bin is simply a
+placeholder,
+not containing actual binaries but rather only the directories the
+binaries need to be copied in.</li>
+              <li>Zip the package to use / distribute it as a portable
+application, or <br>
+              </li>
+              <li>Read further suggestions below in "Notes for
+developers" section to create an installable
+package for your intended OS target<br>
+              </li>
+            </ol>
             <br>
             <br>
             <h3><big><big><big>Notes
@@ -369,6 +424,33 @@ Run:<br>
 sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi //only needed for
 Windows systems</li>
             </ul>
+            <br>
+            <span style="font-weight: bold;">COMPILE TIME OPTIONS</span><br>
+            <br>
+From main menu, Options &gt; Settings, Advanced tab it is possible to
+set PeaZip to <span style="font-weight: bold;">NOT use non-free
+software or archive formats</span>.<br>
+This behavior can be hardcoded setting HLIBRE_DIR constant in peazip
+(project_peach.lpi) at compile time:<br>
+0 not hardcoded, read from configuration; <br>
+1 hardcoded to allow only using known Free Software components <br>
+2 hardcoded to allow only using known Free Software components and
+known open archive formats (not encumbered by patents for read nor
+write)<br>
+            <br>
+It is now possible to <span style="font-weight: bold;">hardcode paths
+of backend binaries, configuration, and resources </span>at compile
+time in order to met specific FHS or security requirements - e.g.
+allowing paths only writeable with admin / root privileges.<br>
+Those paths are defined by HBINPATH, HCONFPATH, and
+HSHAREPATH constants.<br>
+            <br>
+It is now possible to define at compile time a <span
+ style="font-weight: bold;">list of known SHA256 hash
+values for known binaries</span> invoked by PeaZip, in function
+checkchash in peach.pas source file. This list can be checked on
+demand to detect non-matching values, and in this case inform user that
+some binaries are unknown.<br>
             <br style="font-weight: bold;">
             <h4><span style="font-weight: bold;">HOW TO ASSEMBLE PEAZIP
 APP PACKAGES</span></h4>
@@ -448,7 +530,7 @@ peazip-setup_script_WIN*-configure.iss in (peazip)/res/bin directory</li>
 pages for Linux, macOS, and Windows, can provide examples of
 packages for a wide array of different installer technologies and for
 many different package management systems, such as Windows EXE, MSI,
-and MSIX installers, macOS DMG, Linux DEB, RPM, and Flatpack - Flatpack
+and MSIX installers, macOS DMG, Linux DEB, RPM, and flatpak - flatpak
 packages are maintained by third parties developers at FlatHub.<br>
             <br>
 At its core, PeaZip is simply a standalone, as autocontained as
@@ -464,8 +546,8 @@ the directory structures used to create DEB and RPM packages for the
 current release, in order to help developers in assembling packages for
 distribution with different package managers.<br>
 It is not needed to compile sources, it is only meant as additional
-help to assemble packages.<br>
-            <br>
+help to assemble packages.<span
+ style="font-weight: bold; color: rgb(204, 0, 0);"></span><br>
             <br>
             <span style="font-weight: bold;">DETAILS ABOUT RES/SHARE</span><br>
             <br>
@@ -533,54 +615,87 @@ respective Authors.<br>
             <br>
 Up to date links to aforementioned projects are:<br>
             <ul>
-              <li><a href="https://www.7-zip.org/download.html">https://www.7-zip.org/download.html</a>
-7-Zip's 7z
+              <li><a target="_blank"
+ href="https://www.7-zip.org/download.html">https://www.7-zip.org/download.html<img
+ alt="7z package" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> 7-Zip's 7z
 (Windows, Linux, and macOS), should be placed in (peazip)/res/bin/7z,
 to <a href="7zip-files-utility.html">manage 7Z files</a> and most of
 the other supported formats (including ISO, RAR, TAR, WIM, ZIP formats)<br>
               </li>
               <ul>
-                <li><a href="http://p7zip.sourceforge.net/">http://p7zip.sourceforge.net/</a>
+                <li><a target="_blank"
+ href="http://p7zip.sourceforge.net/">http://p7zip.sourceforge.net/<img
+ alt="7zip installer" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 vanilla p7zip, can be
 placed as alternative to 7z in (peazip)/res/bin/7z</li>
-                <li><a href="https://github.com/szcnick/p7zip">https://github.com/szcnick/p7zip</a>
+                <li><a target="_blank"
+ href="https://github.com/szcnick/p7zip">https://github.com/szcnick/p7zip<img
+ alt="p7zip packages" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 p7zip fork with
 extra algorithms, can be placed as alternative in (peazip)/res/bin/7z<br>
                 </li>
               </ul>
               <ul>
-                <li><a href="https://github.com/mcmilk/7-Zip-zstd">https://github.com/mcmilk/7-Zip-zstd</a>
+                <li><a target="_blank"
+ href="https://github.com/mcmilk/7-Zip-zstd">https://github.com/mcmilk/7-Zip-zstd<img
+ alt="7-zip codecs" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 codecs for 7Z
 (Windows only), should be placed in (peazip)/res/bin/7z/Codecs</li>
               </ul>
-              <li><a href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/
-FreeArc</a>, should be
+              <li><a target="_blank"
+ href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/
+FreeArc<img alt="freearc sources" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, should be
 placed in (peazip)/res/bin/arc to <a href="arc-files-utility.html">manage
 ARC files</a><br>
               </li>
-              <li><a href="https://github.com/google/brotli">https://github.com/google/brotli</a>
+              <li><a target="_blank"
+ href="https://github.com/google/brotli">https://github.com/google/brotli<img
+ alt="build brotli" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 Google's Brotli
 compressor, should be placed in (peazip)/res/bin/brotli to <a
  href="brotli-compression-utility.html">manage Brotli compressed files</a><br>
               </li>
-              <li><a href="http://mattmahoney.net/dc/">http://mattmahoney.net/dc/</a>
+              <li><a target="_blank" href="http://mattmahoney.net/dc/">http://mattmahoney.net/dc/<img
+ alt="zpaq sources" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 *PAQ, should be placed in
 (peazip)/res/bin/lpaq, /paq, and /zpaq to <a
  href="paq-files-compression-utility.html">work with PAQ files</a>
 family<br>
               </li>
-              <li><a href="https://github.com/encode84/bcm">https://github.com/encode84/bcm</a>,
-                <a href="http://www.encode.su/">http://www.encode.su/,</a>
-                <a href="http://sourceforge.net/projects/bcm/">http://sourceforge.net/projects/bcm/</a>
+              <li><a target="_blank"
+ href="https://github.com/encode84/bcm">https://github.com/encode84/bcm<img
+ alt="packager" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+ target="_blank" href="http://www.encode.su/">http://www.encode.su/<img
+ alt="packager" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+ target="_blank" href="http://sourceforge.net/projects/bcm/">http://sourceforge.net/projects/bcm/<img
+ alt="packager" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 Ilia
 Muraviev's QUAD/BALZ/BCM, should be placed in (peazip)/res/bin/quad</li>
-              <li><a href="https://www.gnu.org/software/binutils/">https://www.gnu.org/software/binutils/</a>
+              <li><a target="_blank"
+ href="https://www.gnu.org/software/binutils/">https://www.gnu.org/software/binutils/<img
+ alt="gnu binutils package" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 strip (needed
 only on Windows), should be placed in (peazip)/res/bin/upx</li>
-              <li><a href="https://upx.github.io/">https://upx.github.io/</a>
+              <li><a target="_blank" href="https://upx.github.io/">https://upx.github.io/<img
+ alt="upx package" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 UPX, should be placed in
 (peazip)/res/bin/upx</li>
-              <li><a href="http://facebook.github.io/zstd/">http://facebook.github.io/zstd/</a>
+              <li><a target="_blank"
+ href="http://facebook.github.io/zstd/">http://facebook.github.io/zstd/<img
+ alt="build zstd" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
 Facebook's Zstandard
 compressor, should be placed in (peazip)/res/bin/zstd to <a
  href="zstandard-compression-utility.html">work with Zstandard
@@ -608,21 +723,6 @@ RAR archives</a>), but must not
 included in packages because it is non-free software AND has non
 royalty free license.</li>
             </ul>
-            <br>
-From main menu, Options &gt; Settings, Advanced tab it is possible to
-set PeaZip to <span style="font-weight: bold;">NOT use non-free
-software or archive formats</span>.<br>
-This behavior can be hardcoded setting HLIBRE_DIR constant in peazip
-(project_peach.lpi) at compile time:<br>
-0 not hardcoded, read from configuration; <br>
-1 hardcoded to allow only using known Free Software components <br>
-2 hardcoded to allow only using known Free Software components and
-known open archive formats (not encumbered by patents for read nor
-write)<br>
-            <br>
-Please note that PeaZip provides strong cryptographic functions, so
-please refer to cryptography laws and regulations that may apply in
-your country.<br>
             <br>
             <p><span style="font-weight: bold;">Synopsis: Download page
 of PeaZip sources (LGPLv3). Compile and build the application from

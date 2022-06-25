@@ -237,13 +237,15 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.6.0 release comes with new themes and improved, easier to
-customize UI layout.<br>
-Under the hood, it is now possible to use custom compression pre-sets
-(either built-in or user defined) from command line and scripts, and to
-set immediate execution for custom compression pre-sets.<br>
+PeaZip 8.7.0 release comes with a simpler to use interface, improved
+file manager, and refreshed themes!<br>
+Archive creation and extraction options are now better organized, with
+current task -focused options available in archiving and extraction
+screen, and general use preferences available in Options &gt; Settings
+&gt; Archive manager page.<br>
+            <br>
 Updated
-backends: Pea 1.07, and (Linux) Zstd 1.5.2.<br>
+backends: 7z 22.00, Pea 1.08.<br>
             <br>
 A total of 226
 file extensions can now be managed by PeaZip, with addition of support
@@ -258,44 +260,80 @@ please consider taking the time to give a look to <a
 directory</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <h3><span style="font-weight: bold;">SHA256 hash of 8.6.0
+            <span style="color: rgb(204, 0, 0);"><span
+ style="font-weight: bold;">NOTES ABOUT SOURCE PACKAGE:</span> </span><br
+ style="color: rgb(204, 0, 0);">
+            <span style="color: rgb(204, 0, 0);">Source package has
+been re-organized in 8.7.0 release: </span><span
+ style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">sources
+are now in "dev" subdirectory</span>.<br>
+Compiled binaries, which are generated in "dev" subfolder, must be
+moved
+up one level to package's root (which contains "res" subdirectory
+exactly as
+standard packages), then "dev" subdir is no longer needed.</span><br
+ style="color: rgb(204, 0, 0);">
+            <span style="color: rgb(204, 0, 0);">Please note the "res"
+subdirectory provided by source package (as
+template for creating a working PeaZip port / distributable package)
+contains only non- OS
+/ architecture -dependant resources, so res/bin is simply a placeholder
+not containing actual third party binaries - you must find appropriate
+binaries for the intended target platform.</span><br
+ style="color: rgb(204, 0, 0);">
+            <span style="color: rgb(204, 0, 0);">It is now possible to <span
+ style="font-weight: bold;">hardcode paths of backend binaries</span>
+at compile
+time in order to met specific FHS or security requirements - e.g. using
+paths only writeable with admin / root privileges - set from HBINPATH
+constant in code.</span><br style="color: rgb(204, 0, 0);">
+            <span style="color: rgb(204, 0, 0);">It is now possible to
+define at compile time a <span style="font-weight: bold;">list of
+known hash
+values</span> for known binaries invoked by PeaZip, which can be
+checked on
+demand to detect non-matching values - set in "checkchash" function in
+peach.pas.</span><br>
+            <br>
+            <h3><span style="font-weight: bold;">SHA256 hash values of
+8.7.0
 release packages</span></h3>
-peazip-8.6.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-8184d9d1a4443d246b1809d754e947a442859dcfa0c43adcd3c0df278731854d<br>
-peazip-8.6.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
-9ec242a67c918d53ab3eb7209f0302c71fb2369c771392c424d24184d91431a4<br>
-peazip-8.6.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
-e043034ae0baa5a859d5c9ed08875c6e49d3c1e0ca15b9495ec2718ba045c6e2<br>
-peazip-8.6.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-ce38570bff392bfb269757bac729e9636e8cd8ffa9abb0830594d14c43ee78c0<br>
-peazip-8.6.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-16ec98ca4f057a4b3b8545032a2ddfb6b46cfd107ebd14682514a69c7b8651bf<br>
-peazip-8.6.0.pack.zip&nbsp;&nbsp;&nbsp;
-840aa38804d0c983853ca9de45f2eb4ac9d840ef1c165529dde085b647a406e5<br>
-peazip-8.6.0.src.zip&nbsp;&nbsp;&nbsp;
-a0dd9e5fb45594904e3f2c45dd1077fe4e4ec426471483240ea5b1a8bccd2e1b<br>
-peazip-8.6.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-226ceb22689c8bc431c38e27b7fe83840f1ca142ab3cbcd0ee23e2c76eafd86d<br>
-peazip-8.6.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-07bb4478be3048391c7c7128537e3d1598d8ec26acc98e17248dfbf2d775c731<br>
-peazip-8.6.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-f2c95fa2c806226822cd7fee0966a08912f5e89df93f9a6acd005eaceb160e57<br>
-PeaZip_8.6.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-bedc1f01d63f33c1abb81bd64a1910d3fc7c312eb858fd1a8c7778e3f1a83178<br>
-peazip_8.6.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-2959cfb6ab92f1a0e2148a5c1d8e87e0a00bdecb3db981c6182d909dcf7f0e76<br>
-peazip_8.6.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-e602f5278f2e1cf45d9f69a4f8e67e1ea9fed694d42030a646040e2016e51e3d<br>
+peazip-8.7.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+1858c1cb56d85e596153dd777292a53125b920044e2b03e38b76a8880d52e437<br>
+peazip-8.7.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+430a0fdf5d95504585e250fcf79888f373fd297e083e95c59fb128f3332876b8<br>
+peazip-8.7.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+41792d34852d8faeb9ae89fabfbda77af49b1eb2005cccffdab7bf30d05e3c55<br>
+peazip-8.7.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+74e60201df63f98782793350e887bc408022ff3e0376a0b6a469dca88b1b244e<br>
+peazip-8.7.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+92b87eecfcca60381c61aa9e056cff0d2326ef26c3e36c884643405c422973df<br>
+peazip-8.7.0.pack.zip&nbsp;&nbsp;&nbsp;
+0d3cba8de6b0c07b1b6c34e14422e9b118dedc10b298883f89dc23f579df266e<br>
+peazip-8.7.0.src.zip&nbsp;&nbsp;&nbsp;
+40fb0a399164f6af4118329d005ac25847f900f2654a4d5918a0a5c28e3c6ef8<br>
+peazip-8.7.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+78faf86c7a0e3ce70deef0c867f861681bb3d7aec26c03dce1ff7f0f6a512993<br>
+peazip-8.7.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+5ba3031fde7a076c8015da53e5ebc9f6d5921c96c30715ca998dad7dd75c452f<br>
+peazip-8.7.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+d7e8c17d08c54af3264828f95c80221d32abb4d945b5ea0ff921b5a8d5b10a29<br>
+PeaZip_8.7.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+aa1354fee1a43e7a4a3df5a33c962f5d2d215232a8960dbe858b7b4071f227e1<br>
+peazip_8.7.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+441701c9609eb6c98cc7fec1ca4eaf9c0ecf52e0d42254adbbb22260da0f5345<br>
+peazip_8.7.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+52e5327619432213da3d16a70a6826b6f0d02061e695454314a96226094300ff<br>
 peazip_help.pdf&nbsp;&nbsp;&nbsp;
-686942b3c926ac60b7166f4befc46d8bfb2284d95fe047b6f4c7bd999ed12037<br>
-peazip_portable-8.6.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-8d430a24dc6aaf21931aa82e46e91e36fcf82eaeb9a53906b3cce360668a443b<br>
-peazip_portable-8.6.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-7f0ec8c92f9be28976be5991115b4e59a8dadaa3e23426e70909369cfceae4ae<br>
-peazip_portable-8.6.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-4b42bc2121dbadc895140cd2ef21a332a0b51f328907f93d660ee598b8d1bf20<br>
-peazip_portable-8.6.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-1b7e113db76e08209d0c574540d9fdbefa7af08a051bc99cb286c4d14b5991c5<br>
+225f4884e8acb03461b32ff3c5c6e5c4af339c77ce7fb015f7e6122b34011754<br>
+peazip_portable-8.7.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+a9446e2b9b0d72059f8e600da2c43dc8524b26883305d42957f88d5d4eb7ca7e<br>
+peazip_portable-8.7.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+7ac00b616956e0d527d1c2fbbbc352c7e8275f74fc55f239571a6e4fc1feefc6<br>
+peazip_portable-8.7.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+9ea4abbf367c7f914ce8f3a65ed321b8a6740b7a81e77fe900a5f835b60aec34<br>
+peazip_portable-8.7.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+4b30ae8f1c48da0eeb191eda59459977206922497a8b41675724f8d3bb28bce7<br>
             </td>
           </tr>
         </tbody>
@@ -314,6 +352,120 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2022 06 25<br>
+            <div style="margin-left: 40px;">8.7.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">(Linux, Windows) 7z 22.00<br>
+Pea 1.08<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Can now optionally <span
+ style="font-weight: bold;">check hash of backend binaries</span>
+called by PeaZip in order to detect modified ones, from main menu Tools
+&gt; Verify hash of binaries.<br>
+            <div style="margin-left: 40px;">Check is performed against
+known SHA256 (cryptographically strong) hashes of known backend
+binaries, embedded in peazip main binary at compile time in
+"checkchash"
+function in peach.pas<br>
+            </div>
+Can now <span style="font-weight: bold;">optionally hardcode paths </span>of
+backend binaries, configuration, and non-binary resources directories
+as absoulte paths at compile time as HBINPATH, HCONFPATH, and
+HSHAREPATH constants<br>
+            <div style="margin-left: 40px;">This allow to optionally
+force those directories to be placed in system-specific paths in order
+to meet specific FHS or security requirements<br>
+            </div>
+            <div style="margin-left: 40px;">Hardcoded paths must be
+written as absoulte paths ending with directory separator<br>
+If not hardcoded at compile time, those paths are by default
+(peazip)/res/bin, (peazip)/res/conf (or system dependent for
+installable packages), (peazip)/res/share respectively<br>
+Of course in both cases those directories can be replaced in packages
+by links to different paths, if it comes handy to enforce FHS rules<br>
+            </div>
+            <span style="font-weight: bold;">Re-organized source package</span>
+to improve usability, and introducing more quick start examples for
+building peazip packages; sources are now in dev subfolder of the
+package.<br>
+Various fixes and improvements<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(macOS) Can now correctly
+recognize Movies directory in user's home<br>
+Added "Open in a new tab" to breadcrumb navigation menu<br>
+Can now export content of navigation/search filter as CSV, from
+column's header menu, and Main menu &gt; Navigation submenu<br>
+CSV separator can now be customised from Options &gt; Settings, General
+Tab, on the right of Localization selector<br>
+File manager now <span style="font-weight: bold;">displays file size
+and compressed file size of directories inside archives</span>, CRC
+column displays files and sub-directores count for directories<br>
+Many visual enhancements<br>
+            <div style="margin-left: 40px;">Active tabs (in archive,
+extraction screens, progress windows...) are now window color for
+better visibility<br>
+Default coulmns sizes of file browser are now aware of DPI scaling<br>
+            <span style="font-weight: bold;">Search bar</span> in
+address bar can now be optionally kept expanded (width is remembered)<br>
+Theme screen reorganized to be easier to understand<br>
+Theme screen now allows to set more application's color presets;
+alongside dim and low light are now available Graphite, Plum, Mocha,
+and Senape applying a non-neutral color modificator to the UI<br>
+Embedded icons improved<br>
+            <span style="font-weight: bold;">Improved themes</span>:
+updated Different, and Main themes, Gray theme replaced by Minimal
+theme.<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Can now remember default
+archive creation action (force new archive, add, update, sync...)<br>
+            <div style="margin-left: 40px;">The option will anyway be
+temporarily switched to appropriate values when adding/removing files
+in archive through the archive browser<br>
+            </div>
+            <span style="font-weight: bold;">Improved displaying
+directory size in archive creation screen</span>: itemsare now
+recursively enumerated asyncronously (non blocking) by default, so it
+is possible to proceed with archiving operations (confirm, cancel,
+modify parameters...) without needing the input count to be completed<br>
+            <div style="margin-left: 40px;">Enumeration is skipped to
+save time in any case when sending directly input to archive, i.e. a
+script (or a menu entry) with -add2zip parameter<br>
+Now also "Enumerate folder content" menu entry action is performed
+asyncronously, not blocking the GUI while counting items<br>
+            </div>
+            <div style="margin-left: 40px;">Enumeration can be set as
+usual from archiving screen, Advanced tab<br>
+            </div>
+            <span style="font-weight: bold;">Re-organized Archive
+manager settings</span> page in Options &gt; Settings<br>
+            <div style="margin-left: 40px;">This page can now be also
+directly reached from Advanced tab in archiving and extraction screens,
+from "Set archive manager options" link<br>
+Archiving and extraction screens now focus more on options related to
+the current task and which may be frequently needed to be changed,
+while options related to the behavior of the application (expected to
+be usually set once and permanently) have been moved to Archive manager
+page in Settings<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">For Zpaq format now
+"Absolute paths" extraction option is enabled by default (in Advanced
+tab of extraction screen)&nbsp;&nbsp;&nbsp; <br>
+            </div>
+            <div style="margin-left: 40px;">
+            <div style="margin-left: 40px;"> </div>
+            </div>
+            <br>
+            </div>
+            </div>
             <br>
 2022 04 12<br>
             <div style="margin-left: 40px;">8.6.0<br>
