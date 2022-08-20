@@ -237,15 +237,17 @@ VERSIONS</a></p>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.7.0 release comes with a simpler to use interface, improved
-file manager, and refreshed themes!<br>
-Archive creation and extraction options are now better organized, with
-current task -focused options available in archiving and extraction
-screen, and general use preferences available in Options &gt; Settings
-&gt; Archive manager page.<br>
+PeaZip 8.8.0 release completes the evolution of the GUI started in
+previous releases, providing more customization options to better
+integrate the application in different environments.<br>
+Amongst various improvements and fixes it is now possible to
+automatically test archives after creation, and to propagate
+Zone.Identifier stream on Windows when extracting archives.<br>
+TAR format support was improved, with option to follow pax or gnu
+standard, and to save owner/group ids and names (on Linux).<br>
             <br>
 Updated
-backends: 7z 22.00, Pea 1.08.<br>
+backends: 7z 22.01, Pea 1.09.<br>
             <br>
 A total of 226
 file extensions can now be managed by PeaZip, with addition of support
@@ -263,77 +265,83 @@ for newer language files and for any resource useful for translators.<br>
             <span style="color: rgb(204, 0, 0);"><span
  style="font-weight: bold;">NOTES ABOUT SOURCE PACKAGE:</span> </span><br
  style="color: rgb(204, 0, 0);">
-            <span style="color: rgb(204, 0, 0);">Source package has
-been re-organized in 8.7.0 release: </span><span
- style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">sources
-are now in "dev" subdirectory</span>.<br>
+            <span style="color: rgb(204, 0, 0);"><span
+ style="font-weight: bold;">S</span></span><span
+ style="color: rgb(204, 0, 0);"><span style="font-weight: bold;">ource
+files
+are in "dev" subdirectory</span>.<br>
 Compiled binaries, which are generated in "dev" subfolder, must be
 moved
 up one level to package's root (which contains "res" subdirectory
 exactly as
 standard packages), then "dev" subdir is no longer needed.</span><br
  style="color: rgb(204, 0, 0);">
-            <span style="color: rgb(204, 0, 0);">Please note the "res"
-subdirectory provided by source package (as
+            <span style="color: rgb(204, 0, 0);"><span
+ style="font-weight: bold;">The "res"
+subdirectory contains resources</span> used by the main app's binaries.<br>
+The res subdirectory provided by source package (as
 template for creating a working PeaZip port / distributable package)
 contains only non- OS
-/ architecture -dependant resources, so res/bin is simply a placeholder
+/ architecture -dependant resources, this means that res/bin is simply
+a placeholder
 not containing actual third party binaries - you must find appropriate
 binaries for the intended target platform.</span><br
  style="color: rgb(204, 0, 0);">
-            <span style="color: rgb(204, 0, 0);">It is now possible to <span
+            <span style="color: rgb(204, 0, 0);">It is possible to <span
  style="font-weight: bold;">hardcode paths of backend binaries</span>
 at compile
 time in order to met specific FHS or security requirements - e.g. using
 paths only writeable with admin / root privileges - set from HBINPATH
 constant in code.</span><br style="color: rgb(204, 0, 0);">
-            <span style="color: rgb(204, 0, 0);">It is now possible to
+            <span style="color: rgb(204, 0, 0);">It is possible to
 define at compile time a <span style="font-weight: bold;">list of
 known hash
 values</span> for known binaries invoked by PeaZip, which can be
 checked on
 demand to detect non-matching values - set in "checkchash" function in
-peach.pas.</span><br>
+peach.pas.</span><span style="color: rgb(204, 0, 0);"><span
+ style="font-weight: bold;"></span></span><span
+ style="color: rgb(204, 0, 0);"></span><br>
             <br>
             <h3><span style="font-weight: bold;">SHA256 hash values of
-8.7.0
+8.8.0
 release packages</span></h3>
-peazip-8.7.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-1858c1cb56d85e596153dd777292a53125b920044e2b03e38b76a8880d52e437<br>
-peazip-8.7.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
-430a0fdf5d95504585e250fcf79888f373fd297e083e95c59fb128f3332876b8<br>
-peazip-8.7.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
-41792d34852d8faeb9ae89fabfbda77af49b1eb2005cccffdab7bf30d05e3c55<br>
-peazip-8.7.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-74e60201df63f98782793350e887bc408022ff3e0376a0b6a469dca88b1b244e<br>
-peazip-8.7.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-92b87eecfcca60381c61aa9e056cff0d2326ef26c3e36c884643405c422973df<br>
-peazip-8.7.0.pack.zip&nbsp;&nbsp;&nbsp;
-0d3cba8de6b0c07b1b6c34e14422e9b118dedc10b298883f89dc23f579df266e<br>
-peazip-8.7.0.src.zip&nbsp;&nbsp;&nbsp;
-40fb0a399164f6af4118329d005ac25847f900f2654a4d5918a0a5c28e3c6ef8<br>
-peazip-8.7.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-78faf86c7a0e3ce70deef0c867f861681bb3d7aec26c03dce1ff7f0f6a512993<br>
-peazip-8.7.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-5ba3031fde7a076c8015da53e5ebc9f6d5921c96c30715ca998dad7dd75c452f<br>
-peazip-8.7.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-d7e8c17d08c54af3264828f95c80221d32abb4d945b5ea0ff921b5a8d5b10a29<br>
-PeaZip_8.7.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-aa1354fee1a43e7a4a3df5a33c962f5d2d215232a8960dbe858b7b4071f227e1<br>
-peazip_8.7.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-441701c9609eb6c98cc7fec1ca4eaf9c0ecf52e0d42254adbbb22260da0f5345<br>
-peazip_8.7.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-52e5327619432213da3d16a70a6826b6f0d02061e695454314a96226094300ff<br>
+peazip-8.8.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+530bea45e5724ff8fe461bf56267fba35e040d39bd075102d92fc20120b57840<br>
+peazip-8.8.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+100000e9dd605638d6805d97f15632b7fd2e8dc67d12d0abd35238b0f7156c5e<br>
+peazip-8.8.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+1ec058b0cbb77cd0d2e368781dc0da5b76ac112732159871e7f157f1739953a0<br>
+peazip-8.8.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+82c9681c6182b3f03afb8a3e5f6a56abebea724fcfe4ed37c003b0fb0f6f1194<br>
+peazip-8.8.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+81974b15b469f574c9a9bb194a968d96e3a7d819d64a980a914ea823dd13f28c<br>
+peazip-8.8.0.pack.zip&nbsp;&nbsp;&nbsp;
+00cb8762ffd024e9d12db5e19396aeeb6237ae286167b57464508a7adf43c790<br>
+peazip-8.8.0.src.zip&nbsp;&nbsp;&nbsp;
+896e32f4c4366b72ce7650f6eabcfe15bd452f74642f12ae3dccf9cdc616be5b<br>
+peazip-8.8.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+6a58e80e0f0aab18be7791b6dfb1cb887e82ff2622388f1c19920b09e4f052c5<br>
+peazip-8.8.0.WIN64.msi&nbsp;&nbsp;&nbsp;
+d901f08c25a96c8c55589a16ff2afd31ed8f1fc56c870a83864b6be5514afc8d<br>
+peazip-8.8.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+b906c7053e1b5db54743419691accda3716462196f5add7b067ce122e19ee0f3<br>
+PeaZip_8.8.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+b6aa29f331d2fc37688db26bfa02456a495dbab31b1e81c814614e6a17e4b378<br>
+peazip_8.8.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+02b3aa038fbd7c831dc7fea97c25e005deba1a58daa910f2422cd1aa0fd93fc9<br>
+peazip_8.8.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+316494f9a59d981efebf62ee32d948dccfa8f75acac38b128021e98b4b57e5ea<br>
 peazip_help.pdf&nbsp;&nbsp;&nbsp;
-225f4884e8acb03461b32ff3c5c6e5c4af339c77ce7fb015f7e6122b34011754<br>
-peazip_portable-8.7.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-a9446e2b9b0d72059f8e600da2c43dc8524b26883305d42957f88d5d4eb7ca7e<br>
-peazip_portable-8.7.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-7ac00b616956e0d527d1c2fbbbc352c7e8275f74fc55f239571a6e4fc1feefc6<br>
-peazip_portable-8.7.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-9ea4abbf367c7f914ce8f3a65ed321b8a6740b7a81e77fe900a5f835b60aec34<br>
-peazip_portable-8.7.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-4b30ae8f1c48da0eeb191eda59459977206922497a8b41675724f8d3bb28bce7<br>
+c650b0c2d2f3c60125884a3fca13c81e4728e992cc0b8f358ea96d619fd1204a<br>
+peazip_portable-8.8.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+6eddf580e9fd6dce2abf710a2bb42b6423ae7af9e5df0c3548a5481873c82dc0<br>
+peazip_portable-8.8.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+4aba394816a281b7f453e4730f2cf74c4081cc2613b1922e344c7dfc242fd55d<br>
+peazip_portable-8.8.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+5ab7ee2d52ec718bb70bc8b81f88079778cfa4b88541d5f75912fca3812042b9<br>
+peazip_portable-8.8.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+8d497daa2c42faff82f61c6e7d44be9adfc607e546e4f0c2483f6cb4eca0c130<br>
             </td>
           </tr>
         </tbody>
@@ -352,6 +360,95 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2022 08 20<br>
+            <div style="margin-left: 40px;">8.8.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">(Linux, Windows) 7z 22.01<br>
+Pea 1.09<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Various fixes and
+improvements<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Improved GUI</span> for more flexibility to
+better adapt to multiple environments with different visual styles<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">New theming options</span>, in Options &gt;
+Settings, Theme tab<br>
+            <div style="margin-left: 40px;">Address bar, tool bar, and
+tab bar can now be separately set to be highlighted in window color,
+button color, or accent color (with more shades available for the tool
+bar);<br>
+Tool bar buttons can now be centered or aligned to left;<br>
+Address bar can now be displayed as solid bar or blended with file
+browser area;<br>
+Tab bars are now available in 3 alternative styles: left aligned tabs,
+centered buttons, or links;<br>
+Small icon size can be changed 16 px to 32 px to match the default size
+on different platforms;<br>
+            </div>
+&nbsp;Re-built themes to use new theming options<br>
+            <div style="margin-left: 40px;">New Tuxedo theme replaces
+Minimal theme<br>
+            </div>
+"..." Style button improved<br>
+            <div style="margin-left: 40px;">New switch to show/hide
+main menu;<br>
+New switches to quickly toggle large (32 px), medium (24 px), and small
+tool bar size (16 px, or as defined for small icon size), and to
+highlight buttons;<br>
+The Style button now becomes automatically visible in address bar if
+tool bar is hidden<br>
+Organize group in main menu is now more consistent with Style menu
+options<br>
+Task progress window redesigned to be simpler and easier to read<br>
+            </div>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added option to <span
+ style="font-weight: bold;">test archive after creation</span>, for
+formats supporting test routine, in Options &gt; Settings, Archive
+manager tab<br>
+            <div style="margin-left: 40px;">by default test after
+archiving blocks the task sequence only in case errors are detected<br>
+            </div>
+Added <span style="font-weight: bold;">timestamp precision</span>
+option in Archiving screen, Advanced tab, applies to ZIP and TAR/pax
+formats<br>
+Added<span style="font-weight: bold;"> option to set TAR standard</span>
+(gnu or pax, default gnu) from Archiving screen, Advanced tab<br>
+            <div style="margin-left: 40px;">pax allows to customize
+timestamp precision<br>
+pax allows to store creation timestamp and accessed timestamp if "Store
+all timestamp" option is set from Options &gt; Settings &gt; Archive
+manager tab<br>
+            </div>
+(Linux, TAR) Added options to <span style="font-weight: bold;">save
+owner/group ids and names</span>, available in Archiving screen,
+Advanced tab<br>
+(Windows) Added option to <span style="font-weight: bold;">propagate
+Zone.Identifier stream</span> to files extracted through 7z backed,
+default on, available in Extraction screen, Advanced tab<br>
+            <span style="font-weight: bold;">Zpaq </span>absolute
+paths option set to on by default for non-Windows system, off for
+Windows systems<br>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(macOS) fixed dependency
+issues with <span style="font-weight: bold;">Zstd </span>on x86_64
+package<br>
+            </div>
+            <br>
+            </div>
+            </div>
             <br>
 2022 06 25<br>
             <div style="margin-left: 40px;">8.7.0<br>
