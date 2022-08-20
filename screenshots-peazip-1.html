@@ -189,22 +189,65 @@ OPERATING SYSTEMS SCREENSHOTS</a></p>
 and file manager</big></a><br>
             </big></big></h2>
             <br>
-Screenshots showing
-PeaZip file manager software <a href="zip-files-utility.html">creating
-a ZIP archive</a> (showing file
-explorer in backgorund, first screenshot),
-and displaying file
-browser / archive
-browser GUI (second and third screenshots),
-in "Details" mode and "Icons and images" mode, working as explorer-like
-            <a href="compress-resize-jpeg-png-files.html">image viewer</a>
-utility (last
-picture).<br>
             <br>
-F6 toggles flat mode browsing, switching from explorer-like archive
-view to showing all content at same time, with full path displayed on
-the rightmost column of the file browser. Same file manager GUI is
-shown on Microsoft Windows and Linux systems.<br>
+PeaZip provides an (optionally) <span style="font-weight: bold;">tabbed
+file explorer and archive manager</span> GUI.<br>
+The <span style="font-weight: bold;">Tab bar</span> can be shown, on
+the top of the address bar (and below the Tab bar, that can be hidden),
+using "Open in a new tab" entry in context menu or address bar context
+menu.<br>
+Tabs can be arranged, sorted, closed (single or groups), collapsed,
+expanded, and added to Bookmarks from Tab bar's context menu.<br>
+The <span style="font-weight: bold;">Address bar</span> shows
+navigation controls to explore the filesystem and the archive's
+content, a <span style="font-weight: bold;">breadcrumb</span> address
+filed, <span style="font-weight: bold;">search </span>button (to find
+content in the filesystem or in the open archive as well), and a quick
+navigation menu to manage <span style="font-weight: bold;">Bookmarks </span>and
+jump to preferred destinations, <span style="font-weight: bold;">History
+            </span>(visited paths), and relevant filesystem locations
+such as Desktop, Downloads, Home folder, root / My Computer, etc.<br>
+The navigation area on the left of the file browser panel can show a <span
+ style="font-weight: bold;">tree view</span> of the filesystem, or a
+smart tree view (default) showing current archive's tree view,
+bookmarks, history, relevant system's paths, common functions, etc.<br>
+The <span style="font-weight: bold;">file browser / archive browser</span>
+area on the right can be set in large or small (default) <span
+ style="font-weight: bold;">details mode</span>, the colums - each can
+be enadled or disabled - showing file type, size (and compressed size,
+exploring archives supporting this meta data), modified, accessed and
+creation time, attributes, and optionally CRC / hash of files.<br>
+Alternatively, the file browser can be set to <span
+ style="font-weight: bold;">list mode</span> - displaying files in
+multiple columns - or in <span style="font-weight: bold;">Icons and
+images mode</span>, which shows files as large icons and displays
+preview of graphich files (not inside archive, as for security reason
+no content is even automatically uncompressed unless explicitly
+requested by the user)<br>
+            <br>
+            <div style="text-align: left;">
+            <h2><a href="peazip.png" target="_blank"><img
+ src="peazip.png" title="PeaZip file explorer and archive manager"
+ alt="freeware file manager utility"
+ style="border: 0px solid ; width: 850px; height: 543px;"></a></h2>
+            <span style="font-style: italic;">Screenshot 1: file
+manager exploring a path on Windows, in details mode. On the left the
+smart treeview.</span><br>
+            <br>
+            <h2><a href="tabbed-file-manager.png"><img
+ alt="tabbed file manager" title="PeaZip file manager tabs"
+ src="tabbed-file-manager.png"
+ style="border: 0px solid ; width: 849px; height: 523px;"></a></h2>
+            <span style="font-style: italic;">Screenshot 2: tabbed file
+manager, Tool bar and main menu are hidden to focus more on file
+browsing features</span><br>
+            <br>
+            <h3><a href="peazip-image-viewer.png" target="_blank"><img
+ title="Graphic file manager" alt="file explorer"
+ src="peazip-image-viewer.png"
+ style="border: 0px solid ; width: 850px; height: 543px;"></a></h3>
+            <span style="font-style: italic;">Screenshot 3: the file
+manager in (large) Icons and images mode, showing thumbnails of pictures</span><br>
             <br>
 When <a href="how-to-open-rar-tar-zip-files.html">reading the content
 of an archive file</a>, for most common formats
@@ -215,29 +258,21 @@ of an archive file</a>, for most common formats
  href="zipx-file-format.html">zipx</a>...) it is shown the archive (or
 package) structure tree on the left navigation area, for quick
 inspection of the content and for fast browsing to desired node.<br>
-To read the content of a spanned archive set, click on the first volume
+The archive browser will automatically open, by default (can be changed
+in Options &gt; Settings), the TAR archive inside compressed tar files,
+like <a href="gzip-utility.html">.gz</a>, <a href="bzip2-utility.html">.bz</a>,
+and .xz files.<br>
+Please not that to browse the content of a spanned archive set, you
+need to click on the first volume
 of the set (with extension 001, Z01, R01 or similar) and browse the
 archive as usual.<br>
             <br>
-Formats like <a href="gzip-files.html">gz</a>, <a
- href="bzip2-file.html">bz2</a>, xz are simply compressed file
-containers, they
-contains a single file compressed with Gzip, BZip2, LZMA algorithm
-respectively.<br>
-Some exceptions: only flat mode view is enabled for ace and arc
-formats; pea format does not show archive table of content (no content
+F6 toggles flat mode browsing, switching from explorer-like archive
+view to showing all content at same time, with full path displayed on
+the rightmost column of the file browser; only flat mode view is
+enabled for .ace and .arc
+formats; .pea format does not show archive table of content (no content
 listing mode is currently implemented).<br>
-            <br>
-            <div style="text-align: left;">
-            <h2><a href="peazip.png" target="_blank"><img
- src="peazip.png" title="PeaZip file explorer and archive manager"
- alt="freeware file manager utility"
- style="border: 0px solid ; width: 850px; height: 543px;"></a></h2>
-            <br>
-            <h3><a href="peazip-image-viewer.png" target="_blank"><img
- title="Graphic file manager" alt="file explorer"
- src="peazip-image-viewer.png"
- style="border: 0px solid ; width: 850px; height: 543px;"></a></h3>
             <br>
             <br>
             <h2><a name="dark_mode"></a><big><big><a
