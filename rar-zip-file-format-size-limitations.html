@@ -516,6 +516,16 @@ maximum file
 number limitations of
 common archive formats</small><br>
             <br>
+Please note that <a href="self-extracting-archives.html">sfx self
+extracting archives</a>, regardless the archive format employed (PeaZip
+supports creation of .7z and .arc sfx archives) will be limited by the
+specifications of the executable format itself.<br>
+Notably, Windows' .exe executables needs to be smaller than 2 GB, due
+to signed integers (max 2^32 / 2 bytes) being historically employed in
+the implementation of the format - PE and 64 bit Windows binaries can
+address over 2 / 4 GB of memory, but max binaries size limitat still
+applies to modern .exe implementation.<br>
+            <br>
             <a name="filesystem_max_file_size_limitations"></a>To work
 with very large files as allowed by modern archive formats
 specification, it needs the underlying operating system and filesystem

@@ -232,22 +232,21 @@ VERSIONS</a></p>
             <div style="text-align: left; color: rgb(0, 0, 0);">
             <h2><big><big><big><a name="latest_software_release"></a><a
  href="#peazip_bugfix_log">PeaZip release notes</a></big></big></big></h2>
-            <h2><big> </big></h2>
-            </div>
+            <big> </big> </div>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 8.8.0 release completes the evolution of the GUI started in
-previous releases, providing more customization options to better
-integrate the application in different environments.<br>
-Amongst various improvements and fixes it is now possible to
-automatically test archives after creation, and to propagate
-Zone.Identifier stream on Windows when extracting archives.<br>
-TAR format support was improved, with option to follow pax or gnu
-standard, and to save owner/group ids and names (on Linux).<br>
+PeaZip 8.9.0 release completes the progress towards the upcoming 9.x
+line, with many updates both for the UI and under the hood.<br>
+Amongst the many improvements, a progress bar is now visible when
+opening archives, and theming engine was updated to make the
+application easier to integrate with different desktop environments.<br>
+The archive creation / extraction menu was revamped to make easier to
+add bookmarked or previously visited files and folders, and a new "Add
+to separate archives" entry is available in app's context menu.<br>
             <br>
 Updated
-backends: 7z 22.01, Pea 1.09.<br>
+backends: Pea 1.10.<br>
             <br>
 A total of 226
 file extensions can now be managed by PeaZip, with addition of support
@@ -260,7 +259,55 @@ to new languages and to maintain current localizations up to date, so
 please consider taking the time to give a look to <a
  href="https://github.com/giorgiotani/PeaZip-Translations">translations
 directory</a>
-for newer language files and for any resource useful for translators.<br>
+for newer language files and for any resource useful for translators.<span
+ style="color: rgb(204, 0, 0);"><span style="font-weight: bold;"></span></span><span
+ style="color: rgb(204, 0, 0);"></span><span
+ style="color: rgb(204, 0, 0);"><span style="font-weight: bold;"></span></span><span
+ style="color: rgb(204, 0, 0);"></span><br>
+            <br>
+            <h3><span style="font-weight: bold;">SHA256 hash values of
+8.9.0
+release packages</span></h3>
+peazip-8.9.0.about_translations.zip&nbsp;&nbsp;&nbsp;
+179373e36388f45dc6099f68fca1a5a6d33576fee89de8e467653723b24810d6<br>
+peazip-8.9.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
+0041c894e278ac95d69dd98283f7c337ca56a185971ce23775e3311878b16175<br>
+peazip-8.9.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
+886855243dc6d753d25e7d4a8b9f2f32f818236ea3b2beefe20091233f38a07b<br>
+peazip-8.9.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+2cad91f5b8344119e9f732ac4ce33a8e8661f609abef2a55bcae4d6cc6b73d48<br>
+peazip-8.9.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
+2d80aee0732140e47edc264a8321169fb394fbfeedfa809bcb8e465535b2caa5<br>
+peazip-8.9.0.pack.zip&nbsp;&nbsp;&nbsp;
+fd5858b60e4507e53e3914622a1f7fff8a372ee80c17ee9db8676020b3952eba<br>
+peazip-8.9.0.src.zip&nbsp;&nbsp;&nbsp;
+17e5856fda8d8ab7095b5bf2944aae26d82ade389a0d370700de42865a3c7e3e<br>
+peazip-8.9.0.WIN64.exe&nbsp;&nbsp;&nbsp;
+5f1fb04ebc16237d13620f5c23bbc5fd6330f104c53c099e6436e365682ba487<br>
+peazip-8.9.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
+0172fd406131173ae99838ceba26518522091f91da93f62fe42ad349cb0681de<br>
+PeaZip_8.9.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
+b7882a1de181288723556eed4c7d36bd14714c9a3f46a52e0ddac60d107aa893<br>
+peazip_8.9.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
+93518ee312698101300104b437cc1a0d81b932dcdfc70fd0d11faa181e807637<br>
+peazip_8.9.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
+84183bd075517e13b70f233230c3aa6debd74dd1df4ba111828ee6dca4e46c72<br>
+peazip_help.pdf&nbsp;&nbsp;&nbsp;
+c69e1136d32e9946a2eed5703e43d1edc06cd9dbd35f4aa9aaf2075b95d64d4d<br>
+peazip_portable-8.9.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+80423c4fd5b998d6cf1c374f4111f4b7c445e80c8d85bd22a739c2dc3e2747e3<br>
+peazip_portable-8.9.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
+1e87f5188be00000e24facf464f5989c63dc61016194253d9166cabe18c2356c<br>
+peazip_portable-8.9.0.WIN64.zip&nbsp;&nbsp;&nbsp;
+9fee014869a112d0aea2c3dd4b765f9a811cacf0bf3074172034d51ee9e972a2<br>
+peazip_portable-8.9.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
+240cae01b1b3186c1006677415cf3460b9878908e132dd0834fa470c8fc4833c<br>
+            <br>
+            <a target="_blank"
+ href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=peazip"><span
+ style="font-weight: bold;">CVE entries for PeaZip </span><img
+ alt="unicode application" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a><br>
             <br>
             <span style="color: rgb(204, 0, 0);"><span
  style="font-weight: bold;">NOTES ABOUT SOURCE PACKAGE:</span> </span><br
@@ -299,56 +346,7 @@ known hash
 values</span> for known binaries invoked by PeaZip, which can be
 checked on
 demand to detect non-matching values - set in "checkchash" function in
-peach.pas.</span><span style="color: rgb(204, 0, 0);"><span
- style="font-weight: bold;"></span></span><span
- style="color: rgb(204, 0, 0);"></span><br>
-            <br>
-            <h3><span style="font-weight: bold;">SHA256 hash values of
-8.8.0
-release packages</span></h3>
-peazip-8.8.0.about_translations.zip&nbsp;&nbsp;&nbsp;
-530bea45e5724ff8fe461bf56267fba35e040d39bd075102d92fc20120b57840<br>
-peazip-8.8.0.DARWIN.aarch64.dmg&nbsp;&nbsp;&nbsp;
-100000e9dd605638d6805d97f15632b7fd2e8dc67d12d0abd35238b0f7156c5e<br>
-peazip-8.8.0.DARWIN.x86_64.dmg&nbsp;&nbsp;&nbsp;
-1ec058b0cbb77cd0d2e368781dc0da5b76ac112732159871e7f157f1739953a0<br>
-peazip-8.8.0.LINUX.GTK2-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-82c9681c6182b3f03afb8a3e5f6a56abebea724fcfe4ed37c003b0fb0f6f1194<br>
-peazip-8.8.0.LINUX.Qt5-1.x86_64.rpm&nbsp;&nbsp;&nbsp;
-81974b15b469f574c9a9bb194a968d96e3a7d819d64a980a914ea823dd13f28c<br>
-peazip-8.8.0.pack.zip&nbsp;&nbsp;&nbsp;
-00cb8762ffd024e9d12db5e19396aeeb6237ae286167b57464508a7adf43c790<br>
-peazip-8.8.0.src.zip&nbsp;&nbsp;&nbsp;
-896e32f4c4366b72ce7650f6eabcfe15bd452f74642f12ae3dccf9cdc616be5b<br>
-peazip-8.8.0.WIN64.exe&nbsp;&nbsp;&nbsp;
-6a58e80e0f0aab18be7791b6dfb1cb887e82ff2622388f1c19920b09e4f052c5<br>
-peazip-8.8.0.WIN64.msi&nbsp;&nbsp;&nbsp;
-d901f08c25a96c8c55589a16ff2afd31ed8f1fc56c870a83864b6be5514afc8d<br>
-peazip-8.8.0.WINDOWS.exe&nbsp;&nbsp;&nbsp;
-b906c7053e1b5db54743419691accda3716462196f5add7b067ce122e19ee0f3<br>
-PeaZip_8.8.0.0_x64__m1xx1d1szsx2y.msix&nbsp;&nbsp;&nbsp;
-b6aa29f331d2fc37688db26bfa02456a495dbab31b1e81c814614e6a17e4b378<br>
-peazip_8.8.0.LINUX.GTK2-1_amd64.deb&nbsp;&nbsp;&nbsp;
-02b3aa038fbd7c831dc7fea97c25e005deba1a58daa910f2422cd1aa0fd93fc9<br>
-peazip_8.8.0.LINUX.Qt5-1_amd64.deb&nbsp;&nbsp;&nbsp;
-316494f9a59d981efebf62ee32d948dccfa8f75acac38b128021e98b4b57e5ea<br>
-peazip_help.pdf&nbsp;&nbsp;&nbsp;
-c650b0c2d2f3c60125884a3fca13c81e4728e992cc0b8f358ea96d619fd1204a<br>
-peazip_portable-8.8.0.LINUX.GTK2.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-6eddf580e9fd6dce2abf710a2bb42b6423ae7af9e5df0c3548a5481873c82dc0<br>
-peazip_portable-8.8.0.LINUX.Qt5.x86_64.tar.gz&nbsp;&nbsp;&nbsp;
-4aba394816a281b7f453e4730f2cf74c4081cc2613b1922e344c7dfc242fd55d<br>
-peazip_portable-8.8.0.WIN64.zip&nbsp;&nbsp;&nbsp;
-5ab7ee2d52ec718bb70bc8b81f88079778cfa4b88541d5f75912fca3812042b9<br>
-peazip_portable-8.8.0.WINDOWS.zip&nbsp;&nbsp;&nbsp;
-8d497daa2c42faff82f61c6e7d44be9adfc607e546e4f0c2483f6cb4eca0c130<br>
-            <br>
-            <a target="_blank"
- href="https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=peazip"><span
- style="font-weight: bold;">CVE entries for PeaZip </span><img
- alt="unicode application" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a><span
- style="font-weight: bold;"></span><br>
+peach.pas.</span><span style="font-weight: bold;"></span><br>
             </td>
           </tr>
         </tbody>
@@ -367,6 +365,93 @@ version)<br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2021 06 10 ..
 CURRENT </div>
+            <br>
+2022 10 09<br>
+            <div style="margin-left: 40px;">8.9.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.10<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Password Manager is now
+re-set only from Options &gt; Settings &gt; Privacy, Reset Password
+Manager link<br>
+Various fixes and improvements<br>
+            <div style="margin-left: 40px;">(Linux) correctly displays
+folder size inside ZIP archives if applicable<br>
+(macOS) tool bar toggling is not needed and it is now disabled<br>
+Cleanup of legacy code<br>
+Improved performances and memory management for browsing archives<br>
+Improved opening folders after task completition<br>
+            <div style="margin-left: 40px;">Improved detecting root
+extraction directory<br>
+            </div>
+            <div style="margin-left: 40px;">Archive conversion
+procedure now opens target directory only once, after final compression
+step<br>
+            </div>
+Task window can now show temporary extraction work path (if applicable)
+from context menu right-clicking on input and output links<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added progress bar while
+opening archive files supported through 7z backend; progress indicator
+is not visible when archive pre-browsing is disabled in Options &gt;
+Settings &gt; General, Performance group<br>
+Improved Clipboard panel, can now display size and modification date of
+items<br>
+Improved quick navigation menu (on the left of the Address bar)<br>
+            <div style="margin-left: 40px;">Can now set
+password/keyfile, and display if a password is set<br>
+Can now display info on current archive / selection / clipboard content
+duplicating function of staus bar (so hiding status bar is now a more
+viable option); the new Info entry is also featured in main menu,
+Navigation group<br>
+Can now toggle bookmarks, history, and clipboard views in the Status bar<br>
+            </div>
+Improved Style button<br>
+            <div style="margin-left: 40px;">Right-clicking Style shows
+main menu as context menu<br>
+Settings is now reachable from Style button in Tool / Address bar<br>
+            </div>
+Updated theming engine<br>
+            <div style="margin-left: 40px;">Address bar color can now
+be changed separately from Address field color<br>
+Tab bar color has now more options<br>
+Improved existing Themes to take advantage of the new options<br>
+Updated Tuxedo theme<br>
+New Droid theme<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">(Linux, macOS) Changed
+default working directory to output path, as more consistent with
+behavior of similar applications on non-Windows systems<br>
+Added context menu entry for "Add to separate archives" action, shown
+when applicable in file browser screen<br>
+Improved archiving and extraction context menu, to make easier to add
+files and folders (or open search) from bookmarks abd history items<br>
+Improved test after archiving<br>
+            <div style="margin-left: 40px;">Empty archives are reported
+as warnings<br>
+It is now possible to set the sequence of tasks to stop for auto-test
+results (otherwise it will stop only in case of error) from Options
+&gt; Settings &gt; Advanced<br>
+            </div>
+More information is available clicking status bar string in archive
+creation and extraction screens: task type details, temp work path (if
+applicable), input zise, output path with total size and free space<br>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(Windows) MSI installer is
+no longer featured <br>
+            </div>
+            </div>
+            </div>
             <br>
 2022 08 20<br>
             <div style="margin-left: 40px;">8.8.0<br>
