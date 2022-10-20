@@ -295,7 +295,8 @@ attachment limit<img alt="maximum email size allowed"
             <h2 style="font-weight: bold;"><big>How to split files</big></h2>
             <br>
 PeaZip offers
-different, alternative ways to split &amp; join files:<br>
+different, alternative ways to split &amp; join files, or directly
+create a <span style="font-weight: bold;">spanned archive</span> set:<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>
@@ -376,6 +377,35 @@ splitting a
 file into multiple removable media, PeaZip will check if the media
 has enough free space for storing the volumes, and will be asked you to
 provide a new empty media each time the previous one is full.<br>
+            <br>
+            <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
+ name="spanned_archive_with_volumes_different_sizes"></a>Hint:
+if you need to create a <span style="font-weight: bold;">spanned
+archive with volumes of different sizes</span>, it is possible to
+proceed as described above, and then specify <span
+ style="font-weight: bold;">multiple volume sizes</span> in the
+"Console" tab of the archive creation screen - then press "Launch task"
+to execute.<br>
+The -v parameter in the script specifies the volume size as a number
+followed by multiplier: k for kilobytes, m for megabbytes, g for
+gigabytes, t for terabytes; i.e. -v2g will split each volume at 2 GB in
+size.<br>
+Adding multiple -v parameters with different sizes, i.e. -v1g -v500m
+-v2g, will split the archive in multiple different volume sizes as
+specified, in the exact order, with last size being applied to any
+extra volume.<br>
+In the previous example first volume will be 1 GB in size, second
+volume 500 MB, third and any following volume will be 2 GB.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
 Purely splitting a file does not
 involve compression, that is usually only
 marginally efficient on multimedia files, like ie. MP3, OGG and other
