@@ -381,6 +381,67 @@ developers" section to create an installable
 package for your intended OS target<br>
               </li>
             </ol>
+            <span style="font-weight: bold;"><br>
+Quick suggestion about the Lazarus IDE<br>
+            <br>
+            </span>On <span style="font-weight: bold;">Linux</span>,
+download and install FreePascal sources, FreePascal compiler, and
+Lazarus IDE packages from the Lazarus
+repository.<br>
+Lazarus currently uses <span style="font-weight: bold;">GTK2 </span>widget
+set by default on Linux, but it is possible to target other widget
+sets, in example:<br>
+            <ul>
+              <ul>
+                <li><span style="font-weight: bold;">Qt5</span>
+requires installation of <a target="_blank"
+ href="https://wiki.lazarus.freepascal.org/Qt5_Interface">Qt bindings<img
+ alt="qt5 apps" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
+                <li><span style="font-weight: bold;">GTK3</span>
+(currently in alpha stage) requires GTK development library, e.g. in
+Ubuntu use sudo apt-get install libgtk-3-dev</li>
+              </ul>
+            </ul>
+&nbsp;It is also possible to install Lazarus from your distribution's
+repository, and in some cases even non-GTK2 versions of Lazarus are
+available, automatically handling the extra dependencies.<br>
+            <br>
+On <span style="font-weight: bold;">macOS</span>, download and install
+FreePascal sources, FreePascal
+compiler, and Lazarus IDE packages from the Lazarus
+repository.<br>
+You will also need to install Apple's <a target="_blank"
+ href="https://developer.apple.com/xcode/">Xcode<img alt="apple xcode"
+ src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, and to
+separately install standalone <span style="font-weight: bold;">Xcode
+Command Line Tools</span>, using the command:<br>
+sudo xcode-select --install<br>
+Lazarus currently uses <span style="font-weight: bold;">Cocoa </span>as
+default widget set on macOS.<br>
+Binaries are compiled for <span style="font-weight: bold;">x84_64</span>
+architecture by default, so they will run both on old Intel and newer
+Apple Silicon (M1, M2...) Macs.<br>
+To change target architecture open main menu, Project &gt;
+Project Options,
+Configuration and Target, set <span style="font-weight: bold;">Darwin </span>as
+destination OS, and <span style="font-weight: bold;">aarch64 </span>as
+destination CPU family.<br>
+Please note macOS will
+ask
+for permission to run to (or to access some paths) the first time you
+are running an unsigned binary.<br>
+Please refer to Lazarus' <a target="_blank"
+ href="https://wiki.freepascal.org/macOS_Programming_Tips">macOS
+programming tips<img alt="macos app development"
+ src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> for
+subjects as creation of <span style="font-weight: bold;">universal
+binaries</span>, <span style="font-weight: bold;">code signing</span>
+and <span style="font-weight: bold;">notarization</span>, and to
+create a macOS <span style="font-weight: bold;">application bundle</span>
+(in which PeaZip for macOS packages may be used as example).<br>
             <br>
             <br>
             <h3><big><big><big>Notes
