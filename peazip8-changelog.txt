@@ -1,0 +1,512 @@
+2022 10 09
+8.9.0
+BACKEND
+Pea 1.10
+
+CODE
+Password Manager is now re-set only from Options > Settings > Privacy, Reset Password Manager link
+Various fixes and improvements
+(Linux) correctly displays folder size inside ZIP archives if applicable
+(macOS) tool bar toggling is not needed and it is now disabled
+Cleanup of legacy code
+Improved performances and memory management for browsing archives
+Improved opening folders after task completition
+Improved detecting root extraction directory
+Archive conversion procedure now opens target directory only once, after final compression step
+Task window can now show temporary extraction work path (if applicable) from context menu right-clicking on input and output links
+
+FILE MANAGER
+Added progress bar while opening archive files supported through 7z backend; progress indicator is not visible when archive pre-browsing is disabled in Options > Settings > General, Performance group
+Improved Clipboard panel, can now display size and modification date of items
+Improved quick navigation menu (on the left of the Address bar)
+Can now set password/keyfile, and display if a password is set
+Can now display info on current archive / selection / clipboard content duplicating function of staus bar (so hiding status bar is now a more viable option); the new Info entry is also featured in main menu, Navigation group
+Can now toggle bookmarks, history, and clipboard views in the Status bar
+Improved Style button
+Right-clicking Style shows main menu as context menu
+Settings is now reachable from Style button in Tool / Address bar
+Updated theming engine
+Address bar color can now be changed separately from Address field color
+Tab bar color has now more options
+Improved existing Themes to take advantage of the new options
+Updated Tuxedo theme
+New Droid theme
+
+EXTRACTION and ARCHIVING
+(Linux, macOS) Changed default working directory to output path, as more consistent with behavior of similar applications on non-Windows systems
+Added context menu entry for "Add to separate archives" action, shown when applicable in file browser screen
+Improved archiving and extraction context menu, to make easier to add files and folders (or open search) from bookmarks abd history items
+Improved test after archiving
+Empty archives are reported as warnings
+It is now possible to set the sequence of tasks to stop for auto-test results (otherwise it will stop only in case of error) from Options > Settings > Advanced
+More information is available clicking status bar string in archive creation and extraction screens: task type details, temp work path (if applicable), input zise, output path with total size and free space
+
+INSTALLERS
+(Windows) MSI installer is no longer featured
+
+2022 08 20
+8.8.0
+BACKEND
+(Linux, Windows) 7z 22.01
+Pea 1.09
+
+CODE
+Various fixes and improvements
+
+FILE MANAGER
+Improved GUI for more flexibility to better adapt to multiple environments with different visual styles
+New theming options, in Options > Settings, Theme tab
+Address bar, tool bar, and tab bar can now be separately set to be highlighted in window color, button color, or accent color (with more shades available for the tool bar);
+Tool bar buttons can now be centered or aligned to left;
+Address bar can now be displayed as solid bar or blended with file browser area;
+Tab bars are now available in 3 alternative styles: left aligned tabs, centered buttons, or links;
+Small icon size can be changed 16 px to 32 px to match the default size on different platforms;
+ Re-built themes to use new theming options
+New Tuxedo theme replaces Minimal theme
+"..." Style button improved
+New switch to show/hide main menu;
+New switches to quickly toggle large (32 px), medium (24 px), and small tool bar size (16 px, or as defined for small icon size), and to highlight buttons;
+The Style button now becomes automatically visible in address bar if tool bar is hidden
+Organize group in main menu is now more consistent with Style menu options
+Task progress window redesigned to be simpler and easier to read
+
+EXTRACTION and ARCHIVING
+Added option to test archive after creation, for formats supporting test routine, in Options > Settings, Archive manager tab
+by default test after archiving blocks the task sequence only in case errors are detected
+Added timestamp precision option in Archiving screen, Advanced tab, applies to ZIP and TAR/pax formats
+Added option to set TAR standard (gnu or pax, default gnu) from Archiving screen, Advanced tab
+pax allows to customize timestamp precision
+pax allows to store creation timestamp and accessed timestamp if "Store all timestamp" option is set from Options > Settings > Archive manager tab
+(Linux, TAR) Added options to save owner/group ids and names, available in Archiving screen, Advanced tab
+(Windows) Added option to propagate Zone.Identifier stream to files extracted through 7z backed, default on, available in Extraction screen, Advanced tab
+Zpaq absolute paths option set to on by default for non-Windows system, off for Windows systems
+
+INSTALLERS
+(macOS) fixed dependency issues with Zstd on x86_64 package
+
+
+2022 06 25
+8.7.0
+BACKEND
+(Linux, Windows) 7z 22.00
+Pea 1.08
+
+CODE
+Can now optionally check hash of backend binaries called by PeaZip in order to detect modified ones, from main menu Tools > Verify hash of binaries.
+Check is performed against known SHA256 (cryptographically strong) hashes of known backend binaries, embedded in peazip main binary at compile time in "checkchash" function in peach.pas
+Can now optionally hardcode paths of backend binaries, configuration, and non-binary resources directories as absoulte paths at compile time as HBINPATH, HCONFPATH, and HSHAREPATH constants
+This allow to optionally force those directories to be placed in system-specific paths in order to meet specific FHS or security requirements
+Hardcoded paths must be written as absoulte paths ending with directory separator
+If not hardcoded at compile time, those paths are by default (peazip)/res/bin, (peazip)/res/conf (or system dependent for installable packages), (peazip)/res/share respectively
+Of course in both cases those directories can be replaced in packages by links to different paths, if it comes handy to enforce FHS rules
+Re-organized source package to improve usability, and introducing more quick start examples for building peazip packages; sources are now in dev subfolder of the package.
+Various fixes and improvements
+
+FILE MANAGER
+(macOS) Can now correctly recognize Movies directory in user's home
+Added "Open in a new tab" to breadcrumb navigation menu
+Can now export content of navigation/search filter as CSV, from column's header menu, and Main menu > Navigation submenu
+CSV separator can now be customised from Options > Settings, General Tab, on the right of Localization selector
+File manager now displays file size and compressed file size of directories inside archives, CRC column displays files and sub-directores count for directories
+Many visual enhancements
+Active tabs (in archive, extraction screens, progress windows...) are now window color for better visibility
+Default column sizes of file browser are now aware of DPI scaling
+Search bar in address bar can now be optionally kept expanded (width is remembered)
+Theme screen reorganized to be easier to understand
+Theme screen now allows to set more application's color presets; alongside dim and low light are now available Graphite, Plum, Mocha, and Senape applying a non-neutral color modifier to the UI
+Embedded icons improved
+Improved themes: updated Different, and Main themes, Gray theme replaced by Minimal theme.
+
+EXTRACTION and ARCHIVING
+Can now remember default archive creation action (force new archive, add, update, sync...)
+The option will anyway be temporarily switched to appropriate values when adding/removing files in archive through the archive browser
+Improved displaying directory size in archive creation screen: items are now recursively enumerated asynchronously (non blocking) by default, so it is possible to proceed with archiving operations (confirm, cancel, modify parameters...) without needing the input count to be completed
+Enumeration is skipped to save time in any case when sending directly input to archive, i.e. a script (or a menu entry) with -add2zip parameter
+Now also "Enumerate folder content" menu entry action is performed asynchronously, not blocking the GUI while counting items
+Enumeration can be set as usual from archiving screen, Advanced tab
+Re-organized Archive manager settings page in Options > Settings
+This page can now be also directly reached from Advanced tab in archiving and extraction screens, from "Set archive manager options" link
+Archiving and extraction screens now focus more on options related to the current task and which may be frequently needed to be changed, while options related to the behavior of the application (expected to be usually set once and permanently) have been moved to Archive manager page in Settings
+For Zpaq format now "Absolute paths" extraction option is enabled by default (in Advanced tab of extraction screen)   
+
+
+2022 04 12
+8.6.0
+BACKEND
+Pea 1.07
+(Linux) Zstd 1.5.2
+
+CODE
+Fixed dictionary size for ZIP using XZ compression
+(Windows) Fixed compatibility issue with Windows XP
+(Windows) Fixed defective system's file explorer refresh after some operations
+Various fixes
+
+FILE MANAGER
+Improved theming
+New "Main" theme (default), with icons meant to visually integrate the application with most of the design styles found on supported platforms
+New "Different" theme meant to integrate with macOS visual style without being too unfamiliar to users of modern Windows and Linux systems
+New "Gray" theme meant to integrate with modern Windows systems and Fluent design
+Previous versions theme is named "Ten" and can be set from the themes picker in Options > Settings, Theme tab, Advanced section
+Other old themes are available collected in a separate package
+Themes picker control was simplified
+New .ico and .png icons are now available in (peazip)/res/share/icons directory for customizing the application on Linux, macOS, and Windows systems
+Simplified organization of UI layout
+New Style popup menu from the right of tool bar unifies the multiple submenus for quick customization of the UI
+Righclicking on the Styles button is a secondary way to show column's header menu for organizing the browser in details mode (as column headers are not correctly handled on some target operating systems)
+Status bar is now simpler and more focused on displaying information about navigation and password, now that styles-related controls are moved to the new Styles button in tool bar
+On the left of the status bar displayed and selected items are shown, plus information about items cut or copied in the clipboard
+Clicking or passing the mouse on that area displays comprehensive information about current archive (if applicable), filesystem and clipboard content
+On the right of the status bar is available the button to enter / change password
+Navigation submenu in context menu is now simpler and more focused on file browsing, with the removal of duplicate sytles-related controls
+Unified navigation menu for address bar, breadcrumb and treeview to provide an single, easier to understand structure (organized in the same way of the navigation side bar), and to remove duplicate controls
+Added session history popup menu to "back" and "forward" buttons, and breadcrumb popup menu to "up" button
+
+EXTRACTION and ARCHIVING
+Added "Immediate execution" option for Profiles and Presets, in Add button's dropdown menu
+If the option is flagged, custom compression profiles and presets immediately starts compression when selected without requiring confirmation
+Added command line switches to compress items using one of the compression presets or loading a saved custom compression setting
+-add2preset N uses Nth preset settings; presets are numbered from 0 to 15, and are fully customizable, they can be found in (peazip)/res/share/presets directory
+-add2custom (full qualified name of the custom compression setting) uses the custom compression setting specified after the switch
+Those switches can also be used in scripts (.reg, desktop files, .workflow service menus) employed to integrate PeaZip with Linux, Mac, and Windows systems
+If "immediate execution" option is enabled, compression will start immediately without requiring confirmation, otherwise it will be possible to modify the task further before lanuching it
+Added option to not immediately save edited files into archive, keeping changes for further editing (or for manually saving to archive from context menu, More submenu)
+Labels in status bar of Archiving and Extraction screens are clickable to show synthetic information about the task
+
+
+2022 02 20
+8.5.0
+BACKEND
+7z updated to 21.07
+pea updated to 1.06
+Zstd updated to 1.5.2 (on macOS and Windows)
+
+CODE
+Cleaned up conditional compilation sections which were causing errors in some non-Windows versions of Lazarus IDE
+Compiled with Lazarus 2.2.0
+(macOS)
+Can now open selected file(s) on: double click, "open with" from system context menu, drag files on app
+Some keyboard shortcuts are conditionally modified to better fit to macOS conventions:
+Command+F find, +A select all, +C copy, +X cut, +V paste, +left open previous item in history, +up open parent folder, +right next item in history, +BackSpace move to Trash;
+Shift+Command+N create new folder, +C jump to root, +D jump to Desktop, +H jump to home, +L jump to Downloads, +O jump to documents
+Various fixes
+
+FILE MANAGER
+(Linux)
+Added link to devices mounted in /var/run/media in filesystem treeview, when applicable
+File / archive browser can now alternatively display larger details, and large list modes (from Style menu on status bar) in order to improve readability and touch usability
+(macOS)
+Added filesystem treeview link to ~/Library/Mobile Documents/, which contains iCloud syncronization folder, when the path is not empty
+Explore path menu entry now uses open -R reveal option to highlight the item selected in PeaZip when Finder is opened
+Move to Recycle bin (Trash) deletion option is now available, both in file manager and as option for deletion after archiving / extraction
+Improved icon spacing
+A larger Spacing option is now available
+Theme > Spacing option now apply also to the various styles of the file browser listview
+New keyboard shortcuts:
+Ctrl+Alt+T keyboard shortcut to open item in a new tab
+Ctrl+Alt+F4 jump to Downloads
+Ctrl+Alt+Shift+F4 jump to Documents
+
+EXTRACTION and ARCHIVING
+(macOS)
+Added support for Brotli, Zpaq, and Zstandard backends
+Improved compression settings
+Added option to use dictionary up to 4 GB of memory for LZMA and LZMA2 compression
+It is now possible to use custom dictionary sizes for non-  Defalte / Deflate64 ZIP compression
+Updated compression defaults for LZMA, LZMA2/XZ, and PPMd accordingly to new 7z defaults
+Updated compression presets in (peazip)/res/share/presets
+Fixed: it is now possible to change compression level and algorithm using keyboard
+Improved usage of Layouts
+From main menu Tools > Apply filters to archive browser, it is possible to apply or to ignore (default) advanced filters for the archive browser, in this way the user can specify filters (i.e. file extensions) to be applied to archiving and extraction tasks without changing the way the file manager works
+From main menu Options > Settings, Archive manager tab it is now possible to set a Layout to be opened automatically when starting PeaZip
+Layouts can be now loaded and saved from the file manager (saving a Layout from file manager saves only Advanced filters as no input list is provided)
+Improved scripting
+Interactive extraction option is now ignored when creating scripts, which would otherwise point to a temporary work path rather than the intended output destination
+This behavior can be changed in the configuration file editing [ignore interactive extraction option when creating scripts from Console tab] variable
+Force UTF8 flag for file names ZIP archives is now enabeld by default, in order to better handling international characters on multiple platforms
+Reversed a change introduced in previous version: 7z temporary work files during compression are no longer created inside peazip-tmp subpath, because it is created on the fly by PeaZip and would not function if the action is exported as script to be used separately
+
+INSTALLERS
+(macOS)
+Moved (peazip)/res/bin directory to correct location into peazip.app/Contents/MacOS/ path
+Added readme with installation instructions in the root of the macOS packages
+Added sample Automator scripts for Service menus in the root of the macOS packages and, for reference, in (peazip)/res/share/batch for integration with macOS context menu
+(Windows)
+Added "Browse path with PeaZip" entry for folder background context menu
+Optional integration with Windows 11 mini-context menu
+Windows 11 mini-context menu integration is available as .reg scripts in (peazip)/res/share/batch folder
+Scripts uses whitelisted IDs
+Mini-context menu entries can handle multiple input items per single application's instance
+
+
+2021 12 15
+8.4.0
+BACKEND
+Pea 1.05
+7z 21.06 (console) used by default on Darwin/macOS, Linux, and Windows
+p7zip, and szcnick's p7zip (fork of p7zip) syntax is fully supported and can be used as alternative replacing (peazip)/res/bin/7z/7z binary
+
+CODE
+Fixed issues when temporary work path is set to user's temp
+(Windows) Fixed unnecessary confirmation message for non existing output directory
+Fixed smart extraction not able to remove extra level of nesting
+
+FILE MANAGER
+Added single and multi core performances benchmark, in main menu Tools > System benchmark (pea)
+The benchmark performs integer and floating point arithmetic operations
+Benchmark result unit is arbitrary and only meant to allow comparison between different platforms
+For reference 2020 MacBook Air M1 score is 100 (single core) and 515 (multi core) for aarm64 build
+(Darwin/macOS, Linux) File manager columns' menu is available righclicking status bar
+(Darwin/macOS) Improved file manager
+Added links to Volumes, Applications, and System/Applications in navigation treeview
+Added auto-configured custom apps for "Open with" submenu
+Added macOS-specific funtions in context menu, File Manager > System tools: Launchpad, Activity monitor, System preferences, Disk utility
+Open command prompt here function now working
+PeaUtils launching from PeaZip now working
+Run function now working
+Language can now be changed from dropdown menu from General settings tab (main menu, Options > Settings)
+Previous method allowing to manually select the language file is still available from the link before the dropdown menu
+
+EXTRACTION and ARCHIVING
+New option to not stop sequences of archive test tasks unless an error is encountered
+From main menu, Options > Settings, Advanced tab set "Stop to inspect report for error, list" instead of default value "Stop to inspect report for error, list, test"
+With this setting, a successful archive test closes on completion unless an error is foud in the archive and test fails, in which case error message (and full report) is shown to user and needs to be dismissed before continuing with following test in sequence
+Improved management of temporary work files
+7z/p7zip work files during compression are now inside peazip-tmp subpath, if work directory is set to Custom or User's temp
+
+2021 11 14
+8.3.0
+BACKEND
+(Linux) Total max length of command scripts generated by the application can be customized from 32KB to 2MB from Options > Settings > General, Performances
+(Linux) szcnick/p7zip regressed from 17.04 to 17.02 due a possible bug handling some zip files
+different versions / branches of p7zip (provided same syntax is employed) can be used simply replacing binaries in (peazip)res/bin/7z path
+Updated to pea 1.04
+To improve portability of PeaZip to multiple operating systems and architectures, app's folder is now structured as follows:
+Application's root folder contains pea and peazip binaries (and dragdropfiles.dll on Windows), architecture-specific, compiled from src package
+/res directory, contains resources divided by type
+/res/portable (empty) file, marks the package as portable: if missing, the application woks as installable package and rearches for configuration in user's path (depending on the host system)
+/res/bin directory contains third party architecture specific binaries, should be replaced with binaries for the apporpriate target architecture; on Windows it also contains PeaZip configuration wizard executabòe
+/res/share directory contains non architecture specific resources such as texts, media, licenses, documentation (license and notes about binaries has been moved here in note subdiorectory), it could be simply copied as is for any PeaZip package on any system
+/res/conf directory contains user specific configuration files
+On installable packages res/conf is written to appropriate user specific path, and installers take care to replace /res/bin and /res/share with links to directories placed in appropriate paths depending on the target system
+
+CODE
+(Linux) Improved compliance with Open Desktop specifications: configuration is now saved in $XDG_CONFIG_HOME/peazip directory; if $XDG_CONFIG_HOME is not defined configuration is saved to $HOME/.config/peazip
+To import existing configuration simply copy content of $HOME/.PeaZip directory to the new location
+GitHub: Merged ACTom's "Initial support for MacOS #25"
+Various fixes
+Fixed possible error with progress bar
+Fixed possible error not asking password opening some encrypted archives, and reduced false positive cases in which it the application suggested to provide a password
+Fixed error reporting information about multi volume archives
+Fixed error in file manager selecting files with same characteristics of selected item
+(Windows) Fixed issue not showing system's file properties dialog in some cases
+
+FILE MANAGER
+(Linux) Shortcuts to /media, /run/media, and /mnt (if not empty) are now featured in navigation tree, under filesystem group
+(Linux) Improved automatically configuring XFCE apps alternatives in "Open with" menu: Mousepad, Midori, Parole, Ristretto
+(Linux) Fixed theming issues with GTK2
+Column header's context menu is now accessible alternatively right-clicking the status bar
+Improved theming
+Added Color temperature option, to adapt application to DE using warmer or colder colors
+Added Highlight tabs option (default on) highlighting rows or columns containing tabs with alternate color
+Options > Settings > General, Privacy / Reset group, Working directory is now set to system's temp by default (consistently with most applications of this type)
+Working directory label can now be clicked to explore path (unless it is set to output, which is variable), in order to make easier for the user to verify if for any reasons there are left orphaned files
+All PeaZip's temporary work files and dirs are now collected in peazip-tmp subdirectory of work path (unless it is set to output) for same reason of making easier to spot and remove orphaned files
+All PeaZip's temporary work files and dirs now contains p*tmp string for making easier to find them regardless the tools employed
+Options > Settings > General, Privacy / Reset group now allows to silently skip deletion of locked temporary work files (default on, consistently with behavior of most applications of this type); temp work files can then be optionally deleted separately:
+Automatically from Reset link, and if reset fails the folder is opened for soliciting manual deletion (regardless the option to silently skip locked files during normal operations)
+Manually clicking on Working directory label and using standard system's tools
+Options > Settings > File manager now allows to set the multiple-byte unit: binary, 1024 (IEC kibibyte), or decimal, 1000 (IEC kilobyte), or none (exact byte size)
+Options > Settings > File manager now allows to customize the list of preferred algorithms for calculating file checksum and hashes; all preferred algorithms in the list will be performed in a single step when it is required to checksum / hash files.
+
+EXTRACTION and ARCHIVING
+Added Deflate and Deflate64 compression options to 7z format
+Improved -ext2here, -ext2folder (-alias -ext2smart), and -ext2newfolder functions adding command line options:
+-i ignore delete original archive after extraction settings
+-o output directory in next parameter
+-p password in next parameter
+
+WINDOWS & LINUX INSTALLERS
+(Windows) Improved installer
+"Extract here (in new folder)" entry is now featured by default both in context menu and SendTo menu
+Fixed additional extraction entries not showing up on some cases
+Installation folder selection screen is now available also running "Configure PeaZip" wizard from the application, for Portable versions this allows to easily integrate with host system
+(Linux) Improved DEB and RPM installers with better compliance with Filesystem Hierarchy Standard, separating architecture specific and non-architecture specific resources
+
+
+2021 09 12
+8.2.0
+BACKEND
+(Linux) Upodated Brotli to 1.0.9 version
+(Linux) Added read support (browse / test / extract) to Lzip .lz file type
+Added support for .apkm, .apks, and .aab packages Android package formats
+
+CODE
+(Linux) maximum length of CL generated on Linux systems is now increased to 128 K characters in contrast to much more limited 32 K characters allowed on Windows systems
+About screen now displays information about widget set and CPU architecture of the build for better troubleshooting
+Improved command line usage
+New res\batch\ folder containing sample scripts pointing to main app functions to help portabilize and deploy the application on multiple environments: the directory contains sample .bat scripts (Windows), SendTo menu links (Windows), freedesktop_integration examples (Linux) and will expand in future.
+Fixed -add27z, -add2zip and related switches: when multiple items are passed the archive is named accordingly the directory name of first item, as in the GUI version of the same action
+New -ext2here, -ext2folder (alias -ext2smart), -ext2newfolder switches for CL, executing single or multiple tasks as a single sequence of extract here, extract here smart folder, and extract here to new folder respectively
+Extraction to new folder can now be forced to use smart folder option (-ext2folder, alias -ext2smart) or to not use it (-ext2newfolder)
+With new extraction functions extraction of multiple items can run in a single instance without stealing the focus each time the next task in sequence is started
+SendTo links to extraction functions are updated to use those new functions for better handling of queues of multiple tasks, now matching features provided by context menu entries but with advantages of being cross platform, not suffering artificial limitation of input items number, and being much more faster and cpu/memory efficient in receiving input list from system to application
+Previous version of same switches, not running as a single instance queue, are available with "_" suffix, i.e. -ext2here_; in this way existing scripts does not need to be updated to benefit of new functions, but can be easily adapted to use old version of the switches if preferred
+Improved generation of more compact command lines from GUI, with better detection of cases of automatic switch to "extract all"
+Various fixes
+Fixed breadcrumb for "Open unit as archive" in context menu, File manager > System tools
+Fixed deselecting "TAR before" and selecting "Add each object to a separate archive" it is now possible to create multiple archive at once for types such as bz2, br, gz, zst
+
+FILE MANAGER
+(Linux) Improved system directories shown by default in navigation tree on the left of file manager
+(Linux) Updated list of apps automatically detected for Open with submenu; apps and scripts can be customized in Options > Settings, Applications tab
+(Linux) Enabled System tools submenu in context menu > File manager
+(Windows) Improved and re-organized System tools submenu in context menu > File manger
+Improved archive browser
+Added Method column to display compression/encryption method for each single object (this column is enabled by default)
+Added Created and Accessed timestamps columns in addition to existing Modified timestamp column (those columns are disabled by default)
+The new columns can be enabled/disabled from columns header's context menu, and from main menu > Organize > Browser > Columns; if enabled, those columns are automatically shown browsing archives and hidden browsing the fileystem
+Folders in 7z/p7zip archives now show number of contained folders, files, and total uncompressed size (displayed in same column of files' checksums)
+This feature is limited on basis of the number of items contained in the archive, and can be tuned from "Browser optimization" dropdown menu in Options > Settings, General tab Performances group
+New Ctrl+Alt+A link to autoadjust file browser columns
+Themes: added "Presets" link on the right of Application accent color picker, allowing to quickly customize both application and text accent colors accordingly to common color themes of reference Operating Systems e.g. Mint, Ubuntu, Windows
+
+EXTRACTION and ARCHIVING
+Added XZ (Linux, Windows) and Zstd (Linux) as optional algorithms for ZIP/ZIPX compression, from Advanced tab in archiving / conversion screen
+Improved extraction
+Added option to skip testing for encryption on extraction, suppressing password requests
+Improved Interactive extraction option
+Empty folder is now removed in case of error with Extract to new folder
+Naming policy dropdown menu is enabled with "Interactive extraction", allowing to resolve issues of conflicting filenames in the same archive
+New "Keep files" link in extraction progress windows in case of errors "Interactive extraction", allows to preserve extracted files which would be otherwise automatically deleted
+New "Store all timestamps" option (checked by default) is available in Archiving / Conversion screen
+If this option is active, created, modified, last access time are saved to archive rather than modified timestamp only; formats supporting this feature are: 7Z, RAR, ZIP
+Improved raw file spanning, it is now possible to submit multiple separate input files at once to be split to specified size
+Improved support for .xxxaa spanned files from Unix/Linux split command
+New option for default behavior at application startup: Extract all here (smart new folder)
+This option can be set from Options > Settings > Archive manager
+Doubleclicking on an a file of associated type, or clicking Open from context menu on a group of selected files associated with PeaZip, the selected action is performed
+Available actions: Open (default), Open as archive (force trying to open file as archive), Extract (showing options and confirmation screen), Extract all here, Extract all here (smart new folder)
+
+WINDOWS & LINUX INSTALLERS
+(Windows) SendTo menu entries use new extraction functions, more efficient for handling queues of multiple tasks, and "Extract here (smart new folder)" replaces "Extract here (in new folder)"
+With this update SendTo functions provides same features provided by context menu entries, but much more faster and efficient and without artificial limitation in terms of number of input items
+(Linux) Improved Linux installers
+install the app in /opt/peazip directory (non capitalized)
+configuration files are saved in .PeaZip directory in user's home as in previous releases
+link peazip binary in /usr/bin
+place peazip.desktop file in /usr/share/applications
+place peazip.png icon in /usr/share/icons, /usr/share/pixmaps for DEB packages
+optional .desktop files and icons are available in (peazip)/res/batch/freedesktop_integration to provide direct access to specific functions even on DE not supporting Actions
+(DEB) place machine readable copyright file in /usr/share/doc/peazip
+(DEB) packages are now named following Debian naming standard; all other packages - Windows, Linux, portable - follows RedHat naming standard
+
+
+2021 07 24
+8.1.0
+BACKEND
+Pea 1.02
+Improved speed of hex preview function, updated secure delete function
+Zstd 1.50
+(Windows) Tino Reichardt codecs for 7z v1.5.0r1
+updates codecs to Brotli 1.0.9, FLZMA2 1.0.1, Lizard 1.0, LZ4 1.9.3, LZ5 1.5, Zstandard 1.5.0
+(Linux) szcnick p7zip 17.04:
+introduces support for Brotli, Lizard, LZ5
+updates LZ4 1.9.3 and zstd 1.4.9
+on Linux systems Brotli and Zstandard presets now points to single step compression in 7z using Brotli or Zstd compression (tar.br and tar.zst presets are still available as alternative)
+(Windows) added support for system's Extrac32 as alternative CAB extraction engine
+Extrac32 backend be enabled in Options > Settings, Advanced tab
+CAB will be still listed/tested using 7z backend, Extrac32 (if enabled) will be used for for extraction operations
+
+CODE
+Various fixes
+Improved performances working with archives containing large number of items (files, folders)
+on 64K items archive 50% speed increase, -25% RAM usage
+on 128K items archive 2x speed increase, -25% RAM usage
+on 256K items archive 4x speed increase, -35% RAM usage
+improved speed for listing archives, also minor speed improvements for test, archive and extract operations involving a large number of files
+
+FILE MANAGER
+Added new user-provided themes: KDE Breeze, Oxygen
+Improved browsing archives: clicking on root in breadcrumb bar now simply lists root content, while pressing refresh (F5) re-opens the archive, fully re-parsing the content
+In case of spanned archive, the number of volumes actually found in current path (as required by PeaZip for extraction) is shown in application's title bar and status bar
+Improved Settings
+More flexible Browser optimization in General tab, Performances group
+Reorganized various settings for better readability
+Updated translations
+
+EXTRACTION and ARCHIVING
+Added support (as container files) to .whl Python archives and .gem Ruby gem archives
+Added option to extract all, selected or displayed items to extraction dropdown menu, replicating Extract button context menu
+Added actions to Test all, selected or displayed items in Test button context menu
+Improved archive conversion procedure
+Extraction stage is now shown as a single sequence of tasks, and main screen is hidden to reduce visual clutter
+If errors are encountered in extraction stage it is reported to user, so conversion can be stopped (to correct errors) or continued if desired
+Improved extraction command line creation: when all items are selected switch to a more compact command line using filters rather than item's list
+
+WINDOWS & LINUX INSTALLERS
+Windows installer now supports command line parameter to set language during installation
+language can be declared as last parameter, with or without "/" prefix
+to identify the language please check the name of the language file in PeaZip\res\lang\ directory 
+
+2021 06 10
+8.0.0
+BACKEND
+PEA 1.01
+Added exit codes to functions for easier integration with third party software and scripts
+Running PEA in batch_report and hidden_report mode automatically saves task log without further user interaction
+Fixed: hidden and hidden_report modes do not flash the GUI before hiding it
+Updated online documentation at https://peazip.github.io/pea_help.pdf
+CAB (Windows)
+Selecting custom format (and deselecting RAR checkbx, if selected) in Advanced tab it is now available "CAB" preset in custom executable dropdown menu, to use Windows' makecab.exe utility (which accepts single files as input)
+
+CODE
+Various fixes and improvements
+
+FILE MANAGER
+Added support for .xappx, and various Open Packaging Conventions filetypes (.3mf, .vsdx, .mmzx, .aasx, .slx, .scdoc) files, 218 file extensions supported
+ by default support is read only, to enable write support check "Edit non-canonical archive types" in main menu, Options > Settings > Archive manager
+Added text completion for search field
+Checksum/hash files can now be set to perform a single algorithm (faster), by default SHA256
+Performing all algorithms at once, or all common algorithms at once, is available as option in Option > Settings > File manager
+Dragging a single archive file on file manager screen, the archive is now opened without requiring further interaction
+Improved preview and open with functions
+If nothing is selected, preview takes current directory as input
+To avoid confusion with "Preview" actions submenu, "Extract and open with" sumbenu can now be enabled / disabled from Options > Setings > Archive manager
+Improved random password generator in main menu, Tools > Create random password / keyfile
+Default length is now 12 characters
+Quote characters ' and " are avoided to keep the password console-friendly regardless the character escaping abilities of the scripting environment that will be employed by the user
+Improved smart sorting of file names
+Improved status bar
+Browser modes "Details" and "Icons and images" can now be selected with a single click from icons on status bar
+Style dropdown menu button on the left of browser modes icons, on status bar, allows to set most common UI settings fro a single, easily visible place:
+set tool bar to archive manager, file manager, images manager
+toggle tab bar on/off
+toggle row select on/off
+set browser preset modes
+set themes
+set side bar to navigation panel, treeview, or hidden
+ Style menu entries are replicated also in context menu, Navigation submenu
+Improved support for non-canonical archive types (containers, disk images, installers...) with new options in main menu, Options > Settings > Archive manager
+"Browse non-canonical archive types" (default on) set those file types to be opened for browsing on doubleclcik in PeaZip file manager; unchecking this option those file types will be opened with associated application but can still be browsed on demand (as any arbitrary file type) using "Open file as archive" menu entry
+"Convert non-canonical archive types" (default off) will treat those file types as archives in Conversion process (extract and recompress them), otherwise those files will be left unchanged and simply compressed in the desired format
+Improved theming: can now optionally display grids with alternate color for better readability
+Replicated link to Text encoding settings in main menu, Options; extended hint for custom codepage
+
+EXTRACTION and ARCHIVING
+Added "Force typing passwords interactively" option in password screen that forces to always type password in the native backend interface
+This option allows to create scripts that will require operator to enter the password interactively rather than running unattended
+Zpaq backend does not support this option
+Backends not supporting encryption are not affected by this option
+Please note this option forces console mode for backend utilities (except PEA, which is a graphic application)
+With this option enabled PeaZip cannot browse archives with encrypted name of files (encrypted toc), but it is anyway possible to list/test/extract them
+Can now edit existing 7Z-compressed sfx archives
+Improved "TAR before" option, which saves multiple input to TAR archive before compression step
+Option to delete original files now works whith "TAR before" option enabled
+Tasks with "TAR before" option enabled can now be saved as command line
+It is now possible to customize the default action to perform when a file type associated with PeaZip is double-clicked on the system (or any time a single file is sent as input to PeaZip)
+In main menu, Options > Settings > Archive manager "Default action on start-up" can be set to
+Open, default
+Open as archive, force trying to open any arbitrary file type as archive
+Extract..., show full extraction screen to enter password and change options before confirming extraction
+Extract here, immediately start extraction with default parameters

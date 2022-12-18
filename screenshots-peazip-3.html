@@ -297,8 +297,10 @@ removed when using native drag&amp;drop</li>
               </tbody>
             </table>
             <br>
-PeaZip free archiver utility also supports dragging files
-from system to application for archiving and extraction (if drag and
+PeaZip free archiver utility also supports <span
+ style="font-weight: bold;">dragging files
+from system to application</span> for archiving and extraction (if drag
+and
 drop source is detected being an archive
 file i.e. 7Z, RAR, ZIP...), and for plain
 drag&amp;drop file copy.<br>
@@ -311,6 +313,64 @@ dropped files to the current archive</a> on all supported platforms
 write supported (i.e. add to existing zip, but not to ace which is a
 proprietary format supported only for decompression and test
 operations).<br>
+            <br>
+Following table recap drag and drop support from / to PeaZip on all
+supported operating systems: <br>
+            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="vertical-align: middle; text-align: center; width: 20%; background-color: rgb(240, 240, 240); font-weight: bold;">Operating
+System<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 30%;">Drag
+and drop TO PeaZip</td>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 50%;">Drag
+and drop FROM PeaZip</td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">Linux<br>
+                  </td>
+                  <td style="vertical-align: top; width: 30%;">Fully
+supported<br>
+                  </td>
+                  <td style="vertical-align: top; width: 50%;">Not
+supported<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; text-align: center;">macOS<br>
+                  </td>
+                  <td style="vertical-align: top; width: 30%;">Fully
+supported<br>
+                  </td>
+                  <td style="vertical-align: top; width: 50%;">Not
+supported<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; text-align: center;">Windows<br>
+                  </td>
+                  <td style="vertical-align: top; width: 30%;">Fully
+supported<br>
+                  </td>
+                  <td style="vertical-align: top; width: 50%;">Full
+support for
+native Windows drag and drop interface, can drop to system and to any
+application.<br>
+Alternative custom drag and drop implementation able to drop to Windows
+file explorer only.<br>
+In both cases drag &amp; drop performances are optimized to best suit
+file extraction tasks.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
             <br>
             <br>
             </div>
@@ -426,6 +486,55 @@ of DMG installers, for ease of use.<br>
  style="width: 573px; height: 533px;"></h3>
             <span style="font-style: italic;">PeaZip context menu
 entries on macOS (Monterey)</span><br>
+            <br>
+Following table recap PeaZip support of context menu on different
+operating systems:<br>
+            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="font-weight: bold; vertical-align: middle; background-color: rgb(240, 240, 240); text-align: center; width: 20%;">Operating
+System<br>
+                  </td>
+                  <td
+ style="font-weight: bold; vertical-align: middle; background-color: rgb(240, 240, 240); text-align: center; width: 80%;">Archirecture<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">Linux<br>
+                  </td>
+                  <td style="vertical-align: top; width: 80%;">In
+(peazip)/res/share/batch folder are provided sample .desktop files to
+integrate PeaZip with most common Linux DE such Gnome, KDE, XFCE, Mate,
+Cinnamon... following the FreeDestop standard</td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">macOS<br>
+                  </td>
+                  <td style="vertical-align: top; width: 80%;">In
+(peazip)/res/share/batch folder are provided sample Automator .workflow
+scripts to integrate PeaZip with macOS context menu<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">Windows<br>
+                  </td>
+                  <td style="vertical-align: top; width: 80%;">Installers
+provide automatic integration with SendTo and Windows context menu.<br>
+Not supported integration with drag and drop's own context menu.<br>
+In (peazip)/res/share/batch folder are provided sample SendTo menu
+links, and sample .reg scripts to add eaZip to Windows 11 mini-context
+menu.<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
             <br>
             <br>
             </div>

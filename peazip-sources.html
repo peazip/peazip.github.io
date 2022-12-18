@@ -119,7 +119,7 @@ PEAZIP FREE ARCHIVER</a> </td>
  style="text-align: center; vertical-align: middle; width: 66%; color: rgb(253, 253, 253);">
             <div style="text-align: left;"><a
  style="color: rgb(153, 153, 153);" name="peazip_source_code"></a><big><big><big>Sources
-8.9.0<br>
+9.0.0<br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -150,7 +150,7 @@ Lazarus/FPC<br>
             <div style="color: rgb(253, 253, 253);">
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/8.9.0/peazip-8.9.0.src.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/9.0.0/peazip-9.0.0.src.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD" alt="download peazip code base"
  src="free-rar/download-free-software.png"
@@ -161,7 +161,7 @@ requires Lazarus / FreePascal IDE for building and compiling the app<br>
             </small></small></big><br>
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/8.9.0/peazip-8.9.0.pack.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/9.0.0/peazip-9.0.0.pack.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD"
  alt="peazip deb rpm packages structure"
@@ -417,7 +417,9 @@ You will also need to install Apple's <a target="_blank"
  style="border: 0px solid ; width: 12px; height: 10px;"></a>, and to
 separately install standalone <span style="font-weight: bold;">Xcode
 Command Line Tools</span>, using the command:<br>
-sudo xcode-select --install<br>
+sudo xcode-select --install <br>
+Note: after updating macOS to a new release it is likely you need to
+also update Xcode and Xcode Command line Tools.<br>
 Lazarus currently uses <span style="font-weight: bold;">Cocoa </span>as
 default widget set on macOS.<br>
 Binaries are compiled for <span style="font-weight: bold;">x84_64</span>
@@ -442,6 +444,173 @@ binaries</span>, <span style="font-weight: bold;">code signing</span>
 and <span style="font-weight: bold;">notarization</span>, and to
 create a macOS <span style="font-weight: bold;">application bundle</span>
 (in which PeaZip for macOS packages may be used as example).<br>
+            <br>
+Following table summarize the status of PeaZip project on different
+operating systems, architectures, widget sets, and package management
+systems: <span style="font-weight: bold;">any help is deeply
+appreciated to port PeaZip to new platforms!</span><br>
+            <br>
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+ style="font-weight: bold; width: 15%; vertical-align: middle; background-color: rgb(240, 240, 240); text-align: center;">Operating
+System<br>
+                  </td>
+                  <td
+ style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">Archirecture<br>
+                  </td>
+                  <td
+ style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">Widget
+Set<br>
+                  </td>
+                  <td
+ style="font-weight: bold; vertical-align: middle; width: 45%; background-color: rgb(240, 240, 240);">Status<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">GTK,
+GTK2, Qt4<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;"><span
+ style="font-weight: bold;">legacy</span>, available from <span
+ style="font-weight: bold;">third party</span>, see links in Linux
+download sections</td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">GTK2,
+Qt5<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">released
+as portable and installable DEB and RPM packages, Flatpak available
+from third party<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">GTK3<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">unreleased:
+compiles successfully, various graphic and fonts issues, Lazarus/FPC
+support is marked as <span style="font-weight: bold;">alpha </span>for
+GTK3<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">arm,
+aarch64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">various<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">available
+from <span style="font-weight: bold;">third party</span>, see links in
+Linux download sections<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">BSD
+family<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">various<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">various<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">available
+from <span style="font-weight: bold;">third party</span>, see links in
+BSD download section<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">released
+as installable DMG package, can also be used as portable app, run on
+Intel and Apple Silicon machines<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">aarch64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">released
+as installable DMG package, can also be used as portable app, run on
+Apple Silicon machines only<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Windows<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">released
+as portable and installable EXE packages, recommended for <span
+ style="font-weight: bold;">legacy </span>machines only<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="width: 15%; vertical-align: middle; text-align: center;">Windows
+64 bit<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                  </td>
+                  <td
+ style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
+                  </td>
+                  <td style="vertical-align: middle; width: 45%;">released
+as portable and installable EXE and MSIX packages, not as store app<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <br>
             <br>
             <h3><big><big><big>Notes

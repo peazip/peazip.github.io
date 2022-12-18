@@ -345,7 +345,7 @@ original
 archives - or convert any existing read-supported archive (7z, ace,
 rar, zip, zipx...) to TAR format.<br>
 Directly, single-step, <a href="convert-files.html">converting archive
-file</a> to compressed tar
+file</a> into a compressed tar
 archive is currently not supported.<br>
                         <h2><img alt="tar for windows"
  title="Convert from / to TAR format" src="convert.png"
@@ -355,6 +355,13 @@ can
 optionally de-compressed before being converted, so individual archived
 files gets re-compressed in the new format, otherwise existing .tar
 archive will be simply re-compressed as a whole (solid compression).<br>
+                        <br>
+This behavior can be set from "Auto-extract TAR archives from
+compressed .TAR.* files / CONVERT" in Options &gt; Settings &gt;
+Archive manager tab (unchecked by default).<br>
+If tar auto-extraction option is enabled for the conversion procedure,
+compressed tar archives will be uncompressed and unarchived in a single
+step atomic untar operation.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -435,12 +442,26 @@ application to the system</p>
                         <h2><img alt="tar extraction utility"
  title="How to extract TAR archives" src="extract-archive.png"
  style="width: 112px; height: 45px;"></h2>
-                        <a name="open_tar_file"></a>To work on a
-compressed TAR file (TGZ, TAR.BR, TAR.BZ2, TAR.GZ, TAR.ZST, TBZ,
-TXZ...) you will need to
-decompress
-the tar archive before using aforementioned methods - it is
-a two-step non atomic operation.<br>
+                        <a name="atomic_tar_extraction"></a>PeaZip will
+extract compressed tar archives in a single step as atomic operation by
+default<span style="font-weight: bold;">.<br>
+                        </span>This apply to "classic" compressed tar
+containers (TGZ, TAR.BR, TAR.BZ2, TAR.GZ, TAR.ZST, TBZ,
+TXZ...), and also to compressed archives in any format (7Z, ZIP,
+ZPAQ...) containing a single TAR archive.<br>
+                        <span style="font-weight: bold;">P</span>erforming
+                        <span style="font-weight: bold;">atomic TAR
+extraction</span> PeaZip will firstly de-compress the TAR archive in
+temporary work path, and then unarchive the content of the tar
+container.<br>
+                        <br>
+                        <a name="open_tar_file"></a>Optionally,
+unchecking "Auto-extract TAR archives from compressed .TAR.* files" in
+Options &gt; Settings &gt; Archive manager tab, will disable atomic tar
+extraction procedure, so compressed tar files will be simply
+uncompressed and the user will be able to separately decide if the tar
+container needs to be unpacked too.<br>
+                        <br>
 Read more about <a href="how-to-extract-rar-zip-archives.html">how to
 extract entire archive(s)</a> and <a
  href="how-to-extract-selected-files-from-archive.html">how to extract
@@ -495,7 +516,9 @@ chosing a final archive format supporting encryption.<br>
             <p><span style="font-weight: bold;">Synopsis: </span><span
  style="font-weight: bold;">Freeware TAR archiving, extraction software
 online help. </span><span style="font-weight: bold;">How to create,
-open, extract TAR archives on Windows and Linux. How to use PeaZip as
+open, extract TAR archives on Windows and Linux. Atomic tar extraction,
+auto extract compressed tar files in a single step. How to use PeaZip
+as
 TAR files opener and extractor.<br>
             </span></p>
             <p><span style="font-weight: bold;">Topics: open tar files

@@ -124,16 +124,21 @@ portable
 add-ons, sfx...</big></big></big></h1>
             <br>
             <p style="margin-left: 40px;"><a
+ style="color: rgb(253, 253, 253);" href="#download_peazip_plugin">DOWNLOAD
+AND INSTALL PEAZIP PLUGIN</a><br>
+            </p>
+            <div style="margin-left: 40px;">Notes about available
+PeaZip plugin modules<br>
+            </div>
+            <div style="margin-left: 40px;"><a
  style="color: rgb(253, 253, 253);"
- href="peazip-add-ons.html#open_ace_file">UNACE</a></p>
-            <p style="margin-left: 40px;"><a
- style="color: rgb(253, 253, 253);"
+ href="peazip-add-ons.html#open_ace_file">UNACE</a> <br>
+            <a style="color: rgb(253, 253, 253);"
  href="peazip-add-ons.html#open_rar5_file">UNRAR /
-UNRAR5</a></p>
-            <p style="margin-left: 40px;"><a
- style="color: rgb(253, 253, 253);"
+UNRAR5</a> <br>
+            <a style="color: rgb(253, 253, 253);"
  href="peazip-add-ons.html#paq_compression">ADDITIONAL
-FORMATS</a></p>
+FORMATS</a></div>
             <p style="margin-left: 40px;"><a
  style="color: rgb(253, 253, 253);"
  href="peazip-add-ons.html#sfx_modules_spinoff_utilities">OTHER
@@ -219,7 +224,55 @@ RESOURCES</a></p>
         <tbody>
           <tr align="left">
             <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
+ style="background-color: rgb(255, 255, 255); vertical-align: top;"> <big><a
+ name="download_peazip_plugin"></a><a
+ href="peazip-add-ons.html#unace_unrar_plugin_sfx">Download and install
+PeaZip plugin</a></big><br>
+            <br>
+            <div style="margin-left: 40px;">
+            <p style="font-weight: bold;">1) Download the desired
+plugin for PeaZip</p>
+            <p><a target="_blank"
+ href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20UNACE%20Plugin/">Download
+UNACE plugin
+for Windows and Linux</a> </p>
+            <p><a target="_blank"
+ href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20UNRAR%20Plugin/">Download
+UNRAR5 plugin
+for Windows and Linux</a> </p>
+            <p><a target="_blank"
+ href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20Additional%20Formats%20Plugin/">Download
+Additional Formats Plugin for Windows and Linux</a></p>
+            <p style="font-weight: bold;"><br>
+2) Open the plugin file, which is a TAR archive<span
+ style="font-weight: normal;"><br>
+            </span></p>
+            <p style="font-weight: bold;"><span
+ style="font-weight: normal;">The plugin TAR archive can be opened with
+PeaZip itself, or using any other suitable archive manager utility.</span><br>
+            </p>
+            <p><span style="font-weight: bold;"><br>
+3) Extract the directories provided by the plugin in PeaZip's binaries
+folder (peazip)/res/bin/<br>
+            </span></p>
+            <p>This will add to the application the needed executables
+to manage the desired archive format(s) - please note some operating
+systems may require to manually set files as executables.<br>
+            </p>
+            <p>For PeaZip installable versions the binaries folder,
+where the plugin directories must be copied, usually is located in<br>
+/usr/lib/peazip/res/bin/ (Linux)<br>
+/Applications/peazip.app/Content/MacOS/bin/ (macOS)<br>
+C:\Program Files\PeaZip\res\bin\ (Windows)<br>
+            <br>
+            <span style="font-weight: bold;">HINT: From PeaZip main
+menu &gt; Help &gt; About and from Settings &gt; About, it is possible
+to directly open the plugin folder and to check installed plugin
+modules.</span><br>
+            </p>
+            </div>
+            <br>
+            <br>
             <h2><big><a name="open_ace_file"></a><a
  href="peazip-add-ons.html#unace_unrar_plugin_sfx">UNACE Plugin</a></big></h2>
             <br>
@@ -239,20 +292,7 @@ WinAce as royalty free, but closed source, freeware binaries, <span
 on Linux systems; UNACE for Linux is a 32 bit executable, so on 64
 bit
 systems it requires<span style="font-weight: bold;"> ia32-libs</span>
-to extract ACE files<br>
-            <br>
-            <h4><a name="unace_utility"></a><img
- title="ACE extractor for Windows" alt="unzip ace files"
- src="rar-files/rar-file-format.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"><img
- title="Portable ACE files extractor for Linux"
- alt="portable unace linux" src="rar-files/file-format-support.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"><a
- target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20UNACE%20Plugin/">Download
-UNACE plugin
-for Windows and Linux<br>
-            </a></h4>
+to extract ACE files.<br>
             <table
  style="padding: 0px; margin-top: 0px; margin-bottom: 0px; font-family: Helvetica,Arial,sans-serif; font-size: 10pt; line-height: 1.5; color: rgb(51, 51, 51); letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; text-align: left;"
  border="0" cellpadding="24" cellspacing="0">
@@ -303,8 +343,7 @@ from the unmanaged closed source code.<br>
               </tbody>
             </table>
             <br>
-            <big><big><br>
-            </big></big>
+            <big><big><small><small></small></small> </big></big>
             <h2><big><a name="open_rar5_file"></a></big><a
  href="peazip-add-ons.html#unace_unrar_plugin_sfx"><big>UNRAR / UNRAR5
 Plugin
@@ -347,20 +386,6 @@ RAR-compatible archives) it is widely regarded <a target="_blank"
 Source community to not be OSI-compliant - and consequently needs to be
 deployed as separate add-on for PeaZip project.<br>
             <br>
-            <a name="unrar_utility"></a><img
- title="RAR extractor for Windows" alt="unzip rar file"
- src="rar-files/rar-file-format.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"><img
- title="Linux RAR files extractor" alt="portable unrar linux"
- src="rar-files/file-format-support.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"><a
- target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20UNRAR%20Plugin/">Download
-UNRAR5
-installer
-for Windows and Linux</a><br>
-            <br>
-            <br>
             <br>
             <h4><big><a name="paq_compression"></a><a
  href="peazip-add-ons.html#unace_unrar_plugin_sfx">Additional Formats
@@ -390,16 +415,6 @@ positives from antivirus software on that platform, because while it is
 technically a safe and
 legitimate
 software some Windows malware uses it to compress themselves.</span><br>
-            <br>
-            <h4><a target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20Additional%20Formats%20Plugin/"><img
- title="Archive extraction plugin for Windows" alt="Unrar download"
- src="rar-files/rar-file-format.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"></a><a
- target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20Additional%20Formats%20Plugin/peazip_additional_formats_plugin-WINDOWS%28all%29-4.7z/download">Download
-Additional Formats Plugin for Windows (32 and 64 bit)<br>
-            </a></h4>
             <span style="font-weight: bold;"><br>
 Linux </span>package contains also ARC, LPAQ8, PAQ8O, BCM, and ZPAQ,
 as those binaries were removed by some packages in order to reduce the
@@ -409,14 +424,7 @@ package
 provides some x86 32 bit executable software, Linux
 x86 64 bit
 systems needs <span style="font-weight: bold;">ia32-libs</span> to run
-32 bit binaries.<br>
-            <br>
-            <h4><img title="Linux archives extraction plugin"
- alt="unace &amp; unrar for linux" src="rar-files/file-format-support.png"
- style="border: 0px solid ; width: 18px; height: 16px;" align="middle"><a
- target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/PeaZip%20Additional%20Formats%20Plugin/peazip_additional_formats_plugin-LINUX-4.7z/download">Download
-Additional Formats Plugin for Linux</a></h4>
+32 bit binaries.
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
             </td>

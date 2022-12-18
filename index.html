@@ -120,7 +120,7 @@ PEAZIP FREE ARCHIVER</a> </td>
             <td colspan="2" rowspan="1" style="vertical-align: top;">
             <div style="text-align: right; font-weight: bold;"><a
  name="free_file_archiver_software"></a><a
- style="color: rgb(255, 255, 255);" href="changelog.html">8.9.0 CHANGE
+ style="color: rgb(255, 255, 255);" href="changelog.html">9.0.0 CHANGE
 LOG &gt;</a></div>
             <h1><big><big><big><span style="color: rgb(253, 253, 253);">PeaZip
 free
@@ -312,18 +312,63 @@ file archiver utility</span></big><br>
             </p>
             <p>PeaZip is a free file
 archiver
-utility, based on Open Source technologies of <a
+utility, similar to WinRar, WinZip, and 7-Zip (or File Roller, and Ark
+on Linux), based on Open Source technologies of <a
  href="7zip-files-utility.html">7-Zip / p7zip archiver</a>, <a
- href="zstandard-compression-utility.html">Facebook Zstandard fast
-compressor</a>, FreeArc, <a href="brotli-compression-utility.html">Google
-Brotli fast compressor</a>, <a
- href="paq-files-compression-utility.html">PAQ family of compressors</a>,&nbsp;<a
- href="pea-archiving-utility.html">secure file archiving and encryption
-PEA
-project</a>, and other Free Software file
+ href="zstandard-compression-utility.html">Facebook Zstandard compressor</a>,
+FreeArc, <a href="brotli-compression-utility.html">Google
+Brotli compressor</a>, <a href="paq-files-compression-utility.html">PAQ
+family of compressors</a>, <a href="pea-archiving-utility.html">PEA
+(archiving and encryption) project</a>, and other Free Software file
 compression tools.<br>
+            <br>
             </p>
-            <p><span style="font-weight: bold;">Main features:</span><br>
+            <p><big><span style="font-weight: bold;">What is different
+in PeaZip?</span></big><br>
+            </p>
+            <p>The project started aiming to provide features often
+overlooked in applications of the same type.<br>
+            </p>
+            <ul>
+              <li><span style="font-weight: bold;">Be CLI-friendly</span>:
+bridge the gap between GUI and
+CLI applications to offer the best of the two worlds, blending the
+archive manager into a compression / archiving / backup / extraction...
+scripting engine.<br>
+              </li>
+            </ul>
+            <div style="margin-left: 40px; font-style: italic;">From
+"Console"
+tab in archiving and extraction screens, the tasks defined in the GUI
+can be exported as CLI scripts, i.e. for reuse, syntax learning or
+inspection purpose, of for refining the tasks beyond the capabilities
+of the GUI.</div>
+            <ul>
+              <li><span style="font-weight: bold;">Offer two factor
+authentication</span> (password + keyfile)
+for all formats supporting encryption, to increase security against
+guessing and dictionary based attacks on weak passwords.<br>
+              </li>
+              <li><span style="font-weight: bold;">Provide a GUI for
+less commonly supported compression
+formats</span>, which comes from very interesting research threads in
+compression field,&nbsp; like the very powerful compressor zpaq or very
+fast ones as brotli, and zstandard.<br>
+              </li>
+              <li><span style="font-weight: bold;">Provide multiple
+file management features</span> each of
+whom meeting the needs of different use cases, like verification of a
+wide array of checksum and hash functions, find duplicates, search in
+archives, save bookmarks, navigate with tabs, etc.</li>
+              <li><span style="font-weight: bold;">Deploy all the above
+in a tool which is portable</span>, can
+be used from removable devices or shared on a network / cloud, without
+installation, and offers the same UX on all operating systems and
+desktop
+environments.</li>
+            </ul>
+            <br>
+            <p><big><span style="font-weight: bold;">Main features</span></big><br>
             </p>
             <ul>
               <li><span style="font-weight: bold;">Open Source</span>,
@@ -398,12 +443,13 @@ delete</a><span style="text-decoration: underline;"></span>, and <a
 hashing</a> tools, easily export tasks defined in the GUI to <a
  href="peazip-command-line.html">create command line scripts</a>.<br>
             </p>
-            <p>For more information about archive creation and
+For more information about archive creation and
 extraction performances
 compared with other popular file archivers tools, read file compression
 and decompression <a href="peazip-compression-benchmark.html">PeaZip
 benchmarks</a>
-page. </p>
+page.<br>
+            <br>
             <p><big><span style="font-weight: bold;">Safety of Open
 Source
 software</span></big><br>
@@ -420,6 +466,7 @@ All PeaZip packages are safe downloads, do not contain
 advertising or harmful software, and are identified with
 cryptographically secure SHA256 hash published on official dowenload
 site.<br>
+            <br>
             </p>
             <p><big style="font-weight: bold;">Advantages of
 downloading Portable packages</big><br>
