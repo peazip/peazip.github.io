@@ -189,15 +189,7 @@ OPERATING SYSTEMS SCREENSHOTS</a></p>
 and file manager</big></a><br>
             </big></big></h2>
             <br>
-PeaZip provides an (optionally) <span style="font-weight: bold;">tabbed
-file explorer and archive manager</span> GUI.<br>
-The <span style="font-weight: bold;">Tab bar</span> can be shown, on
-the top of the address bar (and below the Tab bar, that can be hidden),
-using "Open in a new tab" entry in context menu or address bar context
-menu.<br>
-Tabs can be arranged, sorted, closed (single or groups), collapsed,
-expanded, and added to Bookmarks from Tab bar's context menu.<br>
-The <span style="font-weight: bold;">Address bar</span> shows
+PeaZip's <span style="font-weight: bold;">Address bar</span> shows
 navigation controls to explore the filesystem and the archive's
 content, a <span style="font-weight: bold;">breadcrumb</span> address
 filed, <span style="font-weight: bold;">search </span>button (to find
@@ -216,13 +208,12 @@ area on the right can be set in large or small (default) <span
 be enadled or disabled - showing file type, size (and compressed size,
 exploring archives supporting this meta data), modified, accessed and
 creation time, attributes, and optionally CRC / hash of files.<br>
-Alternatively, the file browser can be set to <span
- style="font-weight: bold;">list mode</span> - displaying files in
-multiple columns - or in <span style="font-weight: bold;">Icons and
-images mode</span>, which shows files as large icons and displays
-preview of graphich files (not inside archive, as for security reason
-no content is even automatically uncompressed unless explicitly
-requested by the user)<br>
+Examples or the degree of customization that can be reached with
+different themes and with settings - hiding or showing tool bar, tab
+bar, main menu, chnaging file browser style, etc - are showcased in the
+            <a href="peazip-themes.html"><span
+ style="font-weight: bold;">Themes</span></a><span
+ style="font-weight: bold;"> </span>page.<br>
             <br>
             <div style="text-align: left;">
             <h2><a href="peazip.png" target="_blank"><img
@@ -233,6 +224,15 @@ requested by the user)<br>
 manager exploring a path on Windows, in details mode. On the left the
 smart treeview.</span><br>
             <br>
+PeaZip provides an (optionally) <span style="font-weight: bold;">tabbed
+file explorer and archive manager</span> GUI.<br>
+The <span style="font-weight: bold;">Tab bar</span> can be shown, on
+the top of the address bar (and below the Tab bar, that can be hidden),
+using "Open in a new tab" entry in context menu or address bar context
+menu.<br>
+Tabs can be arranged, sorted, closed (single or groups), collapsed,
+expanded, and added to Bookmarks from Tab bar's context menu.<br>
+            <br>
             <h2><a href="tabbed-file-manager.png"><img
  alt="tabbed file manager" title="PeaZip file manager tabs"
  src="tabbed-file-manager.png"
@@ -240,6 +240,18 @@ smart treeview.</span><br>
             <span style="font-style: italic;">Screenshot 2: tabbed file
 manager, Tool bar and main menu are hidden to focus more on file
 browsing features</span><br>
+            <br>
+Alternatively, the file browser can be set to <span
+ style="font-weight: bold;">list mode</span> - displaying files in
+multiple columns - or in <span style="font-weight: bold;">Icons and
+images mode</span>, which shows files as large icons and displays
+preview of graphich files (not inside archive, as for security reason
+no content is even automatically uncompressed unless explicitly
+requested by the user).<br>
+From main menu &gt; Organize it is possible to set <span
+ style="font-weight: bold;">Enlarge file broser icons </span>which is
+especially handy when it is needed to use the app as an image viewer,
+as in the screenshot above.<br>
             <br>
             <h3><a href="peazip-image-viewer.png" target="_blank"><img
  title="Graphic file manager" alt="file explorer"
@@ -278,7 +290,8 @@ listing mode is currently implemented).<br>
  href="screenshots-peazip-1.html#file_manager"><big>Dark mode</big></a></big></big></h2>
             <br>
 PeaZip fully support dark mode on <span style="font-weight: bold;">macOS</span>,
-and on <span style="font-weight: bold;">Linux </span>with different
+            <span style="font-weight: bold;">BSD</span>, and <span
+ style="font-weight: bold;">Linux </span>with different
 Desktop Environments: <span style="font-weight: bold;">Gnome </span>and
 derivatives (DE such as <span style="font-weight: bold;">Cinnamon </span>and
             <span style="font-weight: bold;">MATE</span>), <span
@@ -296,14 +309,21 @@ mode: System Preferences &gt; General, select "Dark" or "Auto" in
 Appearance section.<br>
             <br>
             <h2><a href="macos-darkmode.png" target="_blank"><img
- alt="peazip dark mode file browser"
- title="PeaZip in dark mode on macOS" src="macos-darkmode.png"
+ alt="dark mode file browser" title="PeaZip in dark mode on macOS"
+ src="macos-darkmode.png"
  style="border: 0px solid ; width: 849px; height: 525px;"></a></h2>
             <span style="font-style: italic;">Screnshot: PeaZip in dark
 mode on macOS</span><br>
             <br>
+            <h2><a href="bsd-dark.png" target="_blank"><img
+ alt="dark mode file manager" title="PeaZip in dark mode on FreeBSD"
+ src="bsd-dark.png"
+ style="border: 0px solid ; width: 849px; height: 525px;"></a></h2>
+            <span style="font-style: italic;">Screnshot: PeaZip in dark
+mode on FreeBSD</span><br>
+            <br>
             <h2><a href="linux-mint-dark-mode.png" target="_blank"><img
- alt="peazip dark mode linux file explorer"
+ alt="dark mode linux file explorer"
  title="PeaZip in dark mode on Linux Mint"
  src="linux-mint-dark-mode.png"
  style="border: 0px solid ; width: 849px; height: 525px;"></a></h2>
@@ -324,35 +344,46 @@ replace the code for drawing each widget drawn by the system (e.g.
 checkboxes, combo boxes, listviews, etc), overriding standard - proven,
 stable, and optimized for speed - system drawing routines with custom
 ones.<br>
-            <br>
-            <a name="peazip_dark_mode_windows"></a>There are however
+            <br style="font-weight: bold;">
+            <a style="font-weight: bold;"
+ name="peazip_dark_mode_windows"></a><span style="font-weight: bold;">There
+are however
 some possible workarounds in order to use PeaZip in
-dark mode even on Windows 10+ systems.<br>
-            <br>
-1) <span style="font-weight: bold;">Dark theme option</span>: in
+dark mode even on Windows 10+ systems:</span><br>
+            <p>1) Set Windows in <span style="font-weight: bold;">High
+Contrast</span> mode: in system's
+settings it is possible to set on of the pre-set high
+contrast theme, which passes dark system colors to all non-UWP
+applications,
+including PeaZip, as seen in following screenshot.</p>
+            <p>Windows high contrast themes can be further
+customized, creating custom dark themes, to better match personal
+tastes and make Win32/Win64 apps more similar to UWP/Modern apps in
+dark mode.<br>
+            </p>
+            <h2><a href="peazip-high-contrast.png" target="_blank"><img
+ alt="open source file browser" title="High Contrast theme"
+ src="peazip-high-contrast.png"
+ style="border: 0px solid ; width: 850px; height: 557px;"></a></h2>
+            <p><br>
+2) <span style="font-weight: bold;">set a dark background application
+color</span> in
 Options
-&gt; Settings &gt; Theme it is possible to set the program's GUI to
-Dark, which will darken the colors within the limits to preserve
+&gt; Settings &gt; Theme within the limits to preserve
 legibility of system-drawn widgets (which cannot be drawn by the
-application in custom colors), as seen in next screenshot<br>
-            <br>
+application in custom colors), as seen in next screenshot.</p>
+            <p>It is possible to change the color freely with a color
+picker control, and there are also available various neutral dark
+pre-sets as well as tints like Graphite (cold gray), Mocha (warm,
+coffee gray), Plum (rose tinted gray), and Senape (yellowish tinted
+gray).<br>
+            </p>
             <h3><a href="peazip-dark-mode.png" target="_blank"><img
  alt="open source file manager" title="PeaZip Dark option"
  src="peazip-dark-mode.png"
  style="border: 0px solid ; height: 558px; width: 850px;"></a></h3>
-            <br>
-2) <span style="font-weight: bold;">High Contrast</span>: in system's
-settings it is possible to set on of the pre-set high
-contrast theme, which passes dark system colors (which can be further
-customized, creating custom dark themes) to all non-UWP applications,
-including PeaZip, as seen in following screenshot<br>
-            <br>
-            <h3><a href="peazip-high-contrast.png" target="_blank"><img
- alt="open source file browser" title="High Contrast theme"
- src="peazip-high-contrast.png"
- style="border: 0px solid ; width: 850px; height: 557px;"></a></h3>
-            <p><span style="font-weight: bold;"><br>
-            </span><a name="cross_platform_file_manager"></a><a
+            <p><br>
+            <a name="cross_platform_file_manager"></a><a
  href="screenshots-peazip-1.html#file_manager"><big><big><big>Supported
 Operating
 Systems screenshots</big></big></big></a> <br>
@@ -361,7 +392,7 @@ Systems screenshots</big></big></big></a> <br>
 cross
 platform file archiver software, supporting creation and extraction of
 multiple
-archive formats on Linux, <a name="apple_macos_file_manager"></a>Darwin/<a
+archive formats on BSD, Linux, <a name="apple_macos_file_manager"></a>Darwin/<a
  href="peazip-macos.html">macOS</a>, Windows and other operating
 systems /
 architectures combinations supported by Lazarus/FPC IDE.<br>
@@ -369,7 +400,8 @@ When
 compiled for <span style="font-weight: bold;">Win32</span> or <span
  style="font-weight: bold;">Win64</span>,
 it supports Microsoft Windows
-systems, XP and Vista / 7 / 8.x / 10 family, both 32 bit and 64 bit
+systems, XP and Vista / 7 / 8.x / 10 /11&nbsp; family, both 32 bit and
+64 bit
 versions (64 bit Windows system can run both native Win64 version, or
 32 bit version through WoW64 subsystem), and API compatible Wine /
 ReactOS platforms.<br>
@@ -386,66 +418,24 @@ required).<br>
 Experimental versions exists
 for <a href="peazip-linux-arm.html">ARM Linux</a> and <a
  href="peazip-bsd.html">BSD</a>.<br>
-            <br>
-            <span style="font-weight: bold;">Portable versions</span>
+            </p>
+            <p><span style="font-weight: bold;">Portable versions</span>
 of of PeaZip cross-platform file archiver software are available for
 all
 supported platforms, those
 versions does not require installation and can be used simply unzipping
 the program's folder to the desired directory, and starting the
-application clicking on peazip executable.<br>
-            <br>
-UNACE Plugin,
-required to open and <a href="ace-files-utility.html">extract WinAce
-ACE files</a>, is available for Windows
-and
-Linux platforms, both for installable and portable packages.<br>
-Optional UNRAR5
-Plugin, alternative unrar engine (WinRar RAR5 format extraction is
-supported
-out of the box), based on RarLab's unrar code, is available too for
-Linux and Windows operating systems, both for portable and installable
-packages. Pleaase note that <a href="free-rar.html">RAR files
-extraction</a> is supported out of the box on all systems and does not
-require installation of plugins or extra software.<br>
-ACE and RAR compression (creation) is not implemented due to licensing
-limitations
-of those formats, but PeaZip can <a href="free-rar-create.html">create
-RAR files</a> if WinRar is installed on the same system..<br>
-Those packages, available for multiple platfroms supported by PeaZip,
-requires separate download as they contains code
-released under licenses not compatible with Open Source LGPLv3: <a
- href="peazip-add-ons.html">UNACE, UNRAR / UNRAR5 Plugins for Linux and
-Windows</a><br>
-            <br>
-            <a name="linux_7Z_RAR_ZIP_archive_browser_app"></a>Following
-screenshots are
-taken running PeaZip on multiple patforms: Darwin / macOS,
-MS Windows XP, Linux
-(Ubuntu) with
-GTK2 and Qt widget sets.<br>
+application clicking on peazip executable.<a href="peazip-add-ons.html"></a><br>
             </p>
-            <p><a href="peazip-darwin-macos.png" target="_blank"><img
- alt="peazip for macOS file manager" title="PeaZip on macOS (prototype)"
- src="peazip-darwin-macos.png"
- style="border: 0px solid ; width: 849px; height: 542px;"></a><br>
-            </p>
-            <h2><a href="peazip-xp.png" target="_blank"><img
- title="PeaZip free archiver running on Windows XP"
- alt="peazip file manager" src="peazip-xp.png"
- style="border: 0px solid ; width: 850px; height: 504px;"></a></h2>
+            <h4><a href="peazip-xp.png" target="_blank"><img
+ alt="open source file explorer" title="High Contrast theme"
+ src="peazip-xp.png"
+ style="border: 0px solid ; width: 850px; height: 557px;"></a></h4>
+            <span style="font-style: italic;">PeaZip running on Windows
+XP</span><br>
             <br>
-            <h3><a href="peazip-gtk2.png" target="_blank"><img
- title="PeaZip free archiver running on GTK2 Linux"
- alt="linux file manager" src="peazip-gtk2.png"
- style="border: 0px solid ; width: 850px; height: 546px;"></a></h3>
-            <br>
-            <h3><a href="peazip-qt.png" target="_blank"><img
- title="PeaZip free archiver running on Qt Linux"
- alt="freeware file manager and archive browser" src="peazip-qt.png"
- style="border: 0px solid ; width: 850px; height: 540px;"></a></h3>
-            <p><span style="font-weight: bold;"><br>
-            </span><span style="font-weight: bold;">Synopsis</span><span
+            <p><span style="font-weight: bold;"> </span><span
+ style="font-weight: bold;">Synopsis</span><span
  style="font-weight: bold;">: PeaZip file
 manager / archive explorer screenshots, dark theme, high contrast mode.
 File manager look and feel on various supported operating systems
