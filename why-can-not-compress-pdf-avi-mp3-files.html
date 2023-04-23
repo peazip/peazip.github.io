@@ -53,19 +53,21 @@
             </td>
             <td style="vertical-align: top;"><br>
             </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
           </tr>
           <tr>
             <td style="vertical-align: top;"> <img
- title="Why I cannot compress some types of files (avi, mp3, mpeg, mkv, pdf...)"
- alt="Why some files cannot be efficiently compressed"
- src="peazip_ico24.png"
+ title="What types of files cannot be efficiently compressed?"
+ alt="cannot compress avi mp3 pdf files" src="peazip_ico24.png"
  style="border: 0px solid ; width: 24px; height: 24px;"> </td>
             <td style="vertical-align: middle;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
             </td>
             <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD
-PEAZIP FREE ARCHIVER</a> </td>
+ href="index.html">DOWNLOAD PEAZIP</a> </td>
             <td style="vertical-align: middle; font-weight: bold;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
             </td>
@@ -80,6 +82,11 @@ PEAZIP FREE ARCHIVER</a> </td>
 &nbsp; &nbsp; &nbsp;&nbsp; <br>
             </td>
             <td style="vertical-align: middle; font-weight: bold;"><a
+ href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            </td>
+            <td style="vertical-align: middle; font-weight: bold;"><a
  href="donations.html">DONATE</a> </td>
           </tr>
           <tr>
@@ -92,13 +99,17 @@ PEAZIP FREE ARCHIVER</a> </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
             <td style="text-align: center; vertical-align: bottom;"><img
- alt="why mp3 cannot be compressed" src="free-rar/archive-manager.png"
+ alt="cannot compress media files" src="free-rar/archive-manager.png"
  style="width: 12px; height: 12px;"> </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
             </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
@@ -150,8 +161,7 @@ types of files (avi, mp3, pdf...)<br>
           <tr>
             <td
  style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ,
-HOW TO</a></small></td>
+ href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
@@ -163,7 +173,22 @@ HOW TO</a></small></td>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">REPORT ISSUES</a></small></td>
+ href="peazip-more.html">ISSUE TRACKER, CVE<br>
+            </a></small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
+ href="changelog.html"><small>CHANGE LOG</small></a><br>
+            </td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
+ href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+            </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
@@ -171,19 +196,6 @@ HOW TO</a></small></td>
  style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
  href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
             </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGELOG<br>
-            </small></a></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
@@ -216,24 +228,49 @@ formats, usually multimedia files,
 does not compress properly and reaches very poor compression ratio not
 matter how powerful (and slow)
 compression method is used.<br>
-Most common reasons why a file can't be efficiently compressed are:<br>
+            <br>
+            <span style="font-weight: bold;">File types which usually
+compresses well</span><br>
+Text, uncompressed documents, spreadsheets, and databases (doc,
+xls...), uncompressed images (bmp, tiff), audio and video - especially
+if computer generated or containing low noise from the analogic source.<br>
+            <br>
+            <h3><span style="font-weight: bold;">File types which
+usually don't compress well</span></h3>
+Compressed file archives (7z, rar, zip...), compressed documents,
+spreadsheets, and databases (docx, xlsx...), pdf files (which usually
+are Deflate-compressed), lossy or lossless compressed images (jpeg,
+png), audio (mp3), and video (mp4, divx, mkv) - generally any
+multimedia file from a noisy analogic source.<br>
+            <br>
+            <h4><span style="font-weight: bold;">File types which
+usually does notcompress at all</span></h4>
+Encrypted files and disk images.<br>
+            <br>
+            <br>
+            <big><span style="font-weight: bold;">Most common reasons
+why a file can't be efficiently compressed:<br>
+            <br>
+            </span></big>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="vertical-align: middle;">
+                  <td style="vertical-align: top;">
                   <h2><span style="font-weight: bold;"><img
  title="Non optimal file content leads to poor data compression level"
  alt="cannot compress mp3 avi mpeg mkv files" src="file-format/one.png"
  style="width: 48px; height: 48px;"></span></h2>
                   </td>
-                  <td style="vertical-align: middle;"><big><big><span
+                  <td style="vertical-align: middle;"><big
  style="font-weight: bold;">The file contains lots of non significant
-or duplicate data, or noise</span></big></big><br>
+or duplicate data, or noise</big><br>
+                  <br>
 Some data in the file may be not relevant and should be edited off
 (with the own editing tools appropriate for the input file type) before
 archiving the data, in order to reduce disk occupation without losing
 actual information.<br>
+                  <br>
                   <br>
                   <span style="font-weight: bold;">Some miscellaneous
 examples of non-meaningful data in files</span><br>
@@ -284,8 +321,11 @@ noise ratio, which will lead boot to a poor result and poorly
 compressible data.<br>
                     </li>
                   </ol>
+                  <br>
+                  <span style="font-weight: bold;"></span>
                   <h3><span style="font-weight: bold;">How to reduce
 size of data before compression</span></h3>
+                  <br>
 It is recommended to use specific editing tools for the format or the
 scope, before starting actual compression.<br>
 PeaZip free archiver can help in some of those tasks providing tools to
@@ -293,19 +333,21 @@ PeaZip free archiver can help in some of those tasks providing tools to
 with zero, <a href="duplicates-hash-checksum.html">find and remove
 duplicate files</a>,
 and to <a href="compress-resize-jpeg-png-files.html">resize, convert
-and re-compress graphic files</a>.</td>
+and re-compress graphic files</a>.<br>
+                  <br>
+                  </td>
                 </tr>
                 <tr>
-                  <td
- style="text-align: center; vertical-align: middle;">
+                  <td style="text-align: center; vertical-align: top;">
                   <h2><span style="font-weight: bold;"><img
  title="Unable to compress already compressed files, archives, and multimedia data"
  alt="cannot compress multimedia files" src="file-format/two.png"
  style="width: 48px; height: 48px;"></span></h2>
                   </td>
-                  <td style="vertical-align: middle;"> <big><big><span
+                  <td style="vertical-align: middle;"> <big><span
  style="font-weight: bold;">The file is
-already compressed</span></big></big><br>
+already compressed</span></big><br>
+                  <br>
 Some file formats are designed with built in compression, so no further
 compression is possible (or practical).<br>
 File size is already efficiently reduced by design often employing
@@ -315,9 +357,11 @@ is common in compressed multimedia files), more efficient than general
 purpose compression algorithms designed to work on a plurality of data
 structures.<br>
                   <br>
+                  <br>
                   <h3><span style="font-weight: bold;">Examples of
 already
 compressed file formats</span></h3>
+                  <br>
 Graphic files as JPEG and PNG, will usually compress poorly compared to
 uncompressed bitmap graphic as RAW, BMP and uncompressed TIFF files
 (read more on <a href="compress-resize-jpeg-png-files.html">how to
@@ -351,6 +395,7 @@ as a role of thumb it will compress poorly if compared to file
 of same format containing plain text data, this is the reason why even
 some uncompressed documents (DOC, XLS,
 PPT) will compress less than other documents of the same type.<br>
+                  <br>
                   <br>
                   <h3><span style="font-weight: bold;">Possible
 solutions
@@ -395,21 +440,22 @@ archiving, option generally labelled as "store" compression level),
 which will save time and computing power with no practical inpact on
 final file size.</li>
                   </ol>
+                  <br>
                   </td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: middle;">
+                  <td style="vertical-align: top;">
                   <h2><span style="font-weight: bold;"><img
  title="Solutions to save space while working with non compressible data"
  alt="why mp3 avi mpeg mkv cannot be compressed"
  src="file-format/three.png" style="width: 48px; height: 48px;"></span></h2>
                   </td>
-                  <td style="vertical-align: top;"> <big><big><span
+                  <td style="vertical-align: top;"> <big><span
  style="font-weight: bold;">The file is not
 compressible at all</span><span
- style="background-color: rgb(255, 238, 221);"></span> </big></big><br>
-                  <span style="background-color: rgb(255, 238, 221);"> </span><a
- name="can_not_compress_encrypted_files"></a><a
+ style="background-color: rgb(255, 238, 221);"></span> </big><br>
+                  <span style="background-color: rgb(255, 238, 221);"> </span><br>
+                  <a name="can_not_compress_encrypted_files"></a><a
  href="encrypt-files.html">Encrypted
 files</a> are not
 compressible, containing pseudo random data - except, usually, for a
@@ -418,9 +464,11 @@ bytes in the file header. Plainly, there is
 not a shorter, more efficient way to represent the content of the file
 no matter how hard the compressor tries.<br>
                   <br>
+                  <br>
                   <h3><span style="font-weight: bold;">Examples of non
 compressible files types<br>
                   </span></h3>
+                  <br>
 Encryption can be employed to protect many types of databases, backup
 files, some documents formats as PDF, and it is a common option to
 protect archives. Archive formats supporting strong encryption
@@ -428,9 +476,11 @@ standards are 7Z, PEA,
 RAR,
 ZIP, and ZIPX.<br>
                   <br>
+                  <br>
                   <h4><span style="font-weight: bold;">Possible
 solutions
 to reduce space occupation of non compressible files</span></h4>
+                  <br>
 It is not possible to compress a single encrypted file, and switching
 to more powerful compression algorithms / settings is of no use, but -
 as well as for previous cases - it
@@ -604,8 +654,7 @@ for Windows</a><br>
 help</a><br>
             <a href="peazip-help-faq.html">Frequently
 Asked Questions</a><br>
-            <a href="peazip-free-archiver.html">More
-information</a></small><br>
+            </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="peazip file compression software" src="titles.png"
