@@ -88,17 +88,17 @@ Any kind of file can be passed to PeaExtractor, the software will try to work wi
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_Info_URL>https://peazip.github.io/peaextractor-unace-unrar-unzip.html</Application_Info_URL>
-			<Application_Order_URL>https://peazip.github.io/peaextractor-unace-unrar-unzip.html</Application_Order_URL>
+			<Application_Info_URL>https://sourceforge.net/projects/peaextractor/</Application_Info_URL>
+			<Application_Order_URL>https://sourceforge.net/projects/peaextractor/</Application_Order_URL>
 			<Application_Screenshot_URL>https://peazip.github.io/peaextractor/peaextractor.jpg</Application_Screenshot_URL>
 			<Application_Icon_URL>https://peazip.github.io/peaextractor/peaextractor_ico32.gif</Application_Icon_URL>
 			<Application_XML_File_URL>https://peazip.github.io/peaextractor.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>http://osdn.jp/dl/peazip/peaextractor-1.3.WINDOWS.exe</Primary_Download_URL>
-			<Secondary_Download_URL>http://osdn.jp/dl/peazip/peaextractor-1.3.WIN64.exe</Secondary_Download_URL>
-			<Additional_Download_URL_1>http://osdn.jp/dl/peazip/peaextractor-portable-1.3.WINDOWS.zip</Additional_Download_URL_1>
-			<Additional_Download_URL_2>http://osdn.jp/dl/peazip/peaextractor-portable-1.3.WIN64.zip</Additional_Download_URL_2>
+			<Primary_Download_URL>https://sourceforge.net/projects/peaextractor/files/1.3/peaextractor-1.3.WINDOWS.exe</Primary_Download_URL>
+			<Secondary_Download_URL>https://sourceforge.net/projects/peaextractor/files/1.3/peaextractor-1.3.WIN64.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1>https://sourceforge.net/projects/peaextractor/files/1.3/peaextractor-portable-1.3.WINDOWS.zip</Additional_Download_URL_1>
+			<Additional_Download_URL_2>https://sourceforge.net/projects/peaextractor/files/1.3/peaextractor-portable-1.3.WIN64.zip</Additional_Download_URL_2>
 		</Download_URLs>
 	</Web_Info>
 	<Permissions>

@@ -86,17 +86,17 @@ The program is available for Microsoft Windows and Linux systems (desktop neutra
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_Info_URL>https://peazip.github.io/peautils-hash-secure-delete.html</Application_Info_URL>
-			<Application_Order_URL>https://peazip.github.io/peautils-hash-secure-delete.html</Application_Order_URL>
+			<Application_Info_URL>https://sourceforge.net/projects/peautils</Application_Info_URL>
+			<Application_Order_URL>https://sourceforge.net/projects/peautils</Application_Order_URL>
 			<Application_Screenshot_URL>https://peazip.github.io/peautils.jpg</Application_Screenshot_URL>
 			<Application_Icon_URL>https://peazip.github.io/peaextractor/peaextractor_ico32.gif</Application_Icon_URL>
 			<Application_XML_File_URL>https://peazip.github.io/peautils.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>http://osdn.jp/dl/peazip/peautils-1.2.WINDOWS.exe</Primary_Download_URL>
-			<Secondary_Download_URL>http://osdn.jp/dl/peazip/peautils-1.2.WIN64.exe</Secondary_Download_URL>
-			<Additional_Download_URL_1>http://osdn.jp/dl/peazip/peautils-portable-1.2.WINDOWS.zip</Additional_Download_URL_1>
-			<Additional_Download_URL_2>http://osdn.jp/dl/peazip/peautils-portable-1.2.WIN64.zip</Additional_Download_URL_2>
+			<Primary_Download_URL>https://sourceforge.net/projects/peautils/files/1.2/peautils-portable-1.2.WINDOWS.zip</Primary_Download_URL>
+			<Secondary_Download_URL>https://sourceforge.net/projects/peautils/files/1.2/peautils-1.2.WIN64.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1>https://sourceforge.net/projects/peautils/files/1.2/peautils-portable-1.2.WINDOWS.zip</Additional_Download_URL_1>
+			<Additional_Download_URL_2>https://sourceforge.net/projects/peautils/files/1.2/peautils-portable-1.2.WIN64.zip</Additional_Download_URL_2>
 		</Download_URLs>
 	</Web_Info>
 	<Permissions>
