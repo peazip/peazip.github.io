@@ -249,18 +249,18 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 9.3.0 improves the archive / file manager, adding the ability to
-display file-level comments in archives, and showing if current archive
-type can be edited.<br>
-Free space is now checked before archiving and extraction tasks.<br>
-It is now possible to manually set the Rar.exe or equivalent binary for
-RAR creation, to improve support for that function on Wine and other
-non-Windows based alternatives.<br>
-7z backend is updated to 23.01, and Pea to 1.13 release.<br>
-Themes are improved with new Contrast setting, and being now able to
-customize icons for archive types.<br>
+PeaZip 9.4.0 introduces support for adding, editing, and removing
+archive-level comments in RAR and ZIP/ZIPX files, interactively (Alt+M)
+and from batch scripts, on single or multiple archives at once even of
+mixed types.<br>
+It is now possible to directly add files and folders to archives in
+Brotli, BZip2, GZip, TAR, WIM, XZ, Zstd, and Zpaq formats (from command
+line, Automator scripts, .desktop files, and context menu items), and
+it was updated the (peazip)/res/share/batch folder containing scripting
+and system integration examples.<br>
             <br>
-A total of 230 file extensions can now be opened as archives by PeaZip.<br>
+A total of 234 file extensions can now be opened as archives by PeaZip,
+with the addition of Apple iWork file formats.<br>
             <br>
 Translations are
 available in over than 30 languages, any help is welcome to translate
@@ -278,46 +278,46 @@ for newer language files and for any resource useful for translators.<span
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
 values of
-9.3.0
+9.4.0
 packages</span></big></h3>
-a5f30aade6758622548ca1f6b60fb1ef6581c903365b78432131926ac4bda813&nbsp;
-peazip-9.3.0.about_translations.zip<br>
-021bc2d2d925072beb1ef3de43975cd9ae49420c853e3ed7f37e9c74e7f53bcd&nbsp;
-peazip-9.3.0.DARWIN.aarch64.dmg<br>
-5334108f7cad6d599c926a7782857bcb6f20f1bf85ddaabfb5e5c6e179fa7cb3&nbsp;
-peazip-9.3.0.DARWIN.x86_64.dmg<br>
-abeceb37cdca897845904349ae413320af079a05c8e35c41709590fc87dcc709&nbsp;
-peazip-9.3.0.DARWIN.x86_64.zip<br>
-5ffe152b7159e90ee5e11328c1240ab05ec1919fa48aea0a3674c1c17c5f80e4&nbsp;
-peazip-9.3.0.LINUX.GTK2-1.x86_64.rpm<br>
-6f016f2ea50e52d0590981a7ce533fa59b1fbabd2755de2e718048c3322bf522&nbsp;
-peazip-9.3.0.LINUX.Qt5-1.x86_64.rpm<br>
-0cffb1122ffd11553862206ccbbf7ebc1f82e5d10dd136979d870a85a9abf4c0&nbsp;
-peazip-9.3.0.pack.zip<br>
-383cbfe2c9b93af5920b01845351da8f0e08e25eec2f26307911d0bb3e8e7427&nbsp;
-peazip-9.3.0.src.zip<br>
-b45defb5b4cd0be89bccd046ce5ebfc8305e0c178160133b28215554204cce4c&nbsp;
-peazip-9.3.0.WIN64.exe<br>
-63a2ba1ed38d972b6f8211f6e125193270b7ebce6217bc219087c9a5604ddc7a&nbsp;
-peazip-9.3.0.WINDOWS.exe<br>
-950037f15273994f1e3fbe2df825808168f2808d950c75c6a38604bbe529c4b1&nbsp;
-PeaZip_9.3.0.0_x64__m1xx1d1szsx2y.msix<br>
-c3cb8f54fee123c52d99fbbe10e80da0e6d054ec70aa3a1d52c87a5eff947dc9&nbsp;
-peazip_9.3.0.LINUX.GTK2-1_amd64.deb<br>
-b52af17f70938e43d24b24b4e26f683d42a6091cbcf25e94b2bf49edb61ce54a&nbsp;
-peazip_9.3.0.LINUX.Qt5-1_amd64.deb<br>
-305f29edb7988dc7020a0af1b6ae2dbc7baf6786d5b5a99adafb959890c28695&nbsp;
+a2847c4a5f054838ff55ddc160a4a6e49489a78b137b3f0d9374c0c1bbb1c273&nbsp;
+peazip-9.4.0.about_translations.zip<br>
+9f1c361273fd2beda788a6b83a76186940bcbb9c2292bc9e1865603b9b50a28c&nbsp;
+peazip-9.4.0.DARWIN.aarch64.dmg<br>
+0892e81c36b643a76cf6fbea5f767bbbe395cd11a58beff9a34d2be437b2f88b&nbsp;
+peazip-9.4.0.DARWIN.x86_64.dmg<br>
+49ccfefc9ea72b6111069d464cecca4fdf414f3e8110c03ae4fa5df8448c1547&nbsp;
+peazip-9.4.0.DARWIN.x86_64.zip<br>
+e0d1fdec16cc70baef376eb917d30c3737c0faa1b1cd994aa03c73e5e2712b20&nbsp;
+peazip-9.4.0.LINUX.GTK2-1.x86_64.rpm<br>
+27b131ab40be1997a7f2c38635eb70814119a51420375237a4a0d681989747bf&nbsp;
+peazip-9.4.0.LINUX.Qt5-1.x86_64.rpm<br>
+7e81356b2b99faf58b67081a7305a80c3f096d1b7235d740d68c05c139df0802&nbsp;
+peazip-9.4.0.pack.zip<br>
+48563776f98ae6894b829f1631292e25af10081d4b445add2a770895fde2cc71&nbsp;
+peazip-9.4.0.src.zip<br>
+bc0aac0b2c02b59236a5648b029118c0095e13aa77111d5dea5911fc6d5ed275&nbsp;
+peazip-9.4.0.WIN64.exe<br>
+9e3b67e00a8ac262e5e37851c99949f8c833e19739708563dee8c86eaabb3805&nbsp;
+peazip-9.4.0.WINDOWS.exe<br>
+d47b7bb37e1e9fa9dc1d7a85840d19aaabc1a1086bda7ab9a7adbf23e4977c2d&nbsp;
+PeaZip_9.4.0.0_x64__m1xx1d1szsx2y.msix<br>
+6cfa79ffb98d70d87adbba89a79cafff30850f35b9535af12df6b3dee332dd26&nbsp;
+peazip_9.4.0.LINUX.GTK2-1_amd64.deb<br>
+260986c7ed1da38fd53bddb3334657b816b5d1127e291d2503670f85f3baaa30&nbsp;
+peazip_9.4.0.LINUX.Qt5-1_amd64.deb<br>
+495c0c14b039839569fee4b457b22bf7c60470bdb35de55da399a95b5f3d2479&nbsp;
 peazip_help.pdf<br>
-6b9f0974c00d66f0c5838fc8c49eec89a35b270af6b89683915d05e5fadb55a0&nbsp;
-peazip_portable-9.3.0.BSD.GTK2.x86_64.tar.gz<br>
-a3cdcfea62494bf747a86f48989b516f462c6165e880d1ff652a7c7dec2811bc&nbsp;
-peazip_portable-9.3.0.LINUX.GTK2.x86_64.tar.gz<br>
-f6dca219941d1c00c21d49988f40c19e4a878f38b0bb7835723448e249aa57a7&nbsp;
-peazip_portable-9.3.0.LINUX.Qt5.x86_64.tar.gz<br>
-7216a157f4521235a29ee91213cb9411a17c6c7a59cde037767b67bcf69289a7&nbsp;
-peazip_portable-9.3.0.WIN64.zip<br>
-eb5e778b9b6e2373e1fc52b27bb66dec894069ebd9666e70a24c0ca4855b2e49&nbsp;
-peazip_portable-9.3.0.WINDOWS.zip<br>
+54603d23b37361806dfde55302c744cf72a74af85abd77c22f56c75377151f07&nbsp;
+peazip_portable-9.4.0.BSD.GTK2.x86_64.tar.gz<br>
+a3d0fb1770cc7406deae8a9b2803dc59bf6c56e6a5c0c39b0a4de82efbab0e71&nbsp;
+peazip_portable-9.4.0.LINUX.GTK2.x86_64.tar.gz<br>
+a2b6ffe5f5651e6c5a8772868b0e38dce5f1f8dba2a445814445bbcd8850ce71&nbsp;
+peazip_portable-9.4.0.LINUX.Qt5.x86_64.tar.gz<br>
+2956d3701172806b380addb45d40c37e169e29d575e0ebf2773bb0434d9d40aa&nbsp;
+peazip_portable-9.4.0.WIN64.zip<br>
+7098e9e482e11d304992a243d31504baf2d7ce288a25f85244d8de8d15c0f50c&nbsp;
+peazip_portable-9.4.0.WINDOWS.zip<br>
             </td>
           </tr>
         </tbody>
@@ -337,6 +337,102 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2022 12 18 ..
 CURRENT </div>
+            <br>
+2023 08 19<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.14<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Expanded and re-organized
+(peazip)/res/share/batch directory with <span
+ style="font-weight: bold;">scripting and system integration examples</span><br>
+            <div style="margin-left: 40px;">New sample scripts and
+system integration items are now available for directly creating
+archives in main supported formats, and for adding/removing comments to
+archive<br>
+Scripts are now sorted in "bat" and "sh" subfolders<br>
+Windows Sendto links and .reg files for context menu entries are now
+collected in "Windows" subfolder<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added support to <span
+ style="font-weight: bold;">Apple iWork IWA file formats</span>,
+.numbers, .pages, .key (Keynote)<br>
+When "Try to open archives with errors" flag is set, errors are
+suppressed only for listing operations, so the app can now display
+error messages when previewing a file (e.g. wrong password)<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added pre-set split size
+for Blu-Ray DL, XL3, XL4<br>
+Added function to <span style="font-weight: bold;">add, edit, remove
+archive-level comment in RAR and ZIP/ZIPX files<br>
+            </span>
+            <div style="margin-left: 40px;">Keyboard shortcut for
+comment editor is Alt+M<br>
+            </div>
+            <div style="margin-left: 40px;">Comment can be set for the
+archive being browsed, or for one or multiple archives at once (even of
+mixed types), in this case the same comment is set for all the selected
+archives<br>
+Comment can be manually edited or loaded from text file (selected from
+dialog or dragged on the form), and can be saved to text file for
+future use<br>
+Comment con contain UTF8 characters and are limited to 64 KB for all
+formats (RAR standard would allow 256KB comments but some Rar.exe
+versions does not support 64K+ comments), please note some other
+archive managers may not support UTF8 comments, or such large comments<br>
+RAR comments limitations<br>
+            <div style="margin-left: 40px;">Writing comments to RAR
+archive requires Rar.exe or equivalent installed on the system, reading
+comments does not require Rar.exe<br>
+Cannot currently read comment from multi volume RAR archives, and from
+legacy RAR4 archives (but new comment can be written)<br>
+            </div>
+&nbsp;ZIP/ZIPX comments limitations<br>
+            <div style="margin-left: 40px;">Consistently with 7-Zip and
+WinRar, comments are not supported for spanned multi-volumes ZIP/ZIPX
+archives<br>
+            </div>
+&nbsp;It is possible to set comment from command line scripts with
+following syntax:<br>
+            <div style="margin-left: 40px;">&nbsp;peazip -setcomment
+commentstring archive1..n<br>
+&nbsp;peazip -setcommentf commentfile archive1..n<br>
+&nbsp;peazip -removecomment archive1..n<br>
+            </div>
+            </div>
+New switches to <span style="font-weight: bold;">directly add files
+and folders to Brotli, BZip2, GZip, TAR, WIM, XZ, Zstd, and Zpaq format
+archive</span>, with latest options saved for selected format<br>
+            <div style="margin-left: 40px;">Directly add files and
+folders to archive in the specified format, with latest options used
+for that format (-add2zpaq switch sets last used *PAQ format), TAR is
+automatically applied when folders and/or multiple files are sent to
+formats which supports single file compression (Brotli, BZip2, Gzip,
+XZ, Zstd)<br>
+Syntax: peazip (-add2brotli -add2bzip2 -add2gzip -add2tar -add2wim
+-add2xz -add2zstd -add2zpaq) file1..n<br>
+If no input file or folder is provided after the switch, the archive
+creation screen remains open for input<br>
+The switches can be used in scripts, and for system integration (links,
+.desktop files, Automator scripts)<br>
+Same switches in -add2multi* form can be used to integration with
+Windows registry<br>
+            </div>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(Windows) Add to GZ, XZ,
+and Zstd are now available as choices in Context menu entries screen<br>
+(Windows) A single re-configuration wizard now works for Win32 and
+Win64 packages&nbsp;&nbsp; <br>
+            </div>
+            </div>
             <br>
 2023 06 25<br>
             <div style="margin-left: 40px;">9.3.0<br>
