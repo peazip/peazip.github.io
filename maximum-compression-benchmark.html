@@ -286,7 +286,8 @@ settings</big><br>
 are conducted
 on Windows 10 2009 64 bit using 64 bit versions of:<br>
                         <ul>
-                          <li>PeaZip 7.3.1<br>
+                          <li>PeaZip 7.3.1 and 9.5.0 for Addendum
+section<br>
                           </li>
                           <li>WinRar 5.8</li>
                           <li>WinZip 24</li>
@@ -312,7 +313,44 @@ this benchmark.<br>
 settings</span></big></p>
 Notebook with Intel Core i7-8565U CPU, 4
 physical cores with hyper-threading (8 logical cores), 8 GB RAM<br>
-System disk 512 GB PCIe NVMe SSD, NTFS filesystem<br>
+System disk 512 GB PCIe NVMe SSD, NTFS filesystemaaa<br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br>
+                  <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+                    <tbody>
+                      <tr>
+                        <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                        <p style="font-weight: bold;"><big>Input data</big></p>
+Benchmark input, same of general purpose compression benchmark,
+contains
+42 files in 4 directories for total 303 MB
+(318.000.857 bytes), composed by:<br>
+                        <ul>
+                          <li><a target="_blank"
+ href="http://corpus.canterbury.ac.nz/descriptions/">Calgary
+and
+Canterbury compression corpora<img
+ alt="Calgary Corpus, Canterbury corpus for standard compression tests"
+ title="Standard compression corpus files" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
+                          <li><a target="_blank"
+ href="http://cs.fit.edu/%7Emmahoney/compression/enwik8.zip">enwik8<img
+ alt="english wikipedia dump for data compression benchmark"
+ title="Enwik8 compression test file" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
+                          <li><a target="_blank"
+ href="http://sun.aei.polsl.pl/%7Esdeor/index.php?page=silesia">Silesia
+compression corpus<img
+ alt="Silesia corpus for standard file compression benchmarks"
+ title="Silesia corpus" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
+                        </ul>
                         </td>
                       </tr>
                     </tbody>
@@ -376,7 +414,33 @@ ones, including BZip2, LZMA and PPMd.<br>
  style="font-weight: bold;">ZPAQ format</span></a> (Matt Mahoney, 2009)
 Open Source archive format, computing intensive, providing very high
 compression ratio,
-supersedes previous PAQ format, multiple times Hutter Prize winner.<br>
+supersedes previous PAQ format, multiple times Hutter Prize winner.</li>
+                        </ul>
+                        <br>
+                        <span style="font-weight: bold;">ADDENDUM<br>
+                        </span>With PeaZip 9.5.0 BR and ZST compression
+formats were also tested, at maximum compression settings<span
+ style="font-weight: bold;"><br>
+                        </span>
+                        <ul>
+                          <li><a
+ href="brotli-compressed-file-format.html"><span
+ style="font-weight: bold;">Brotli file
+format</span></a>
+(Google, 2013) Open Source pure compression format developed for
+maximum compression and decompression speed, but very flexible and
+capable of also providing high compression ratio.<br>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li><a href="zst-compressed-file-format.html"><span
+ style="font-weight: bold;">Zstandard file
+format</span></a>
+(Yann Collet, Przemys&#322;aw Skibi&#324;ski, Facebook, 2015) Open Source pure
+compression format, Zstd compressor was developed with same scope of
+Brotli, also very
+flexible and being capable of deliver high compression ratio in
+alternative to impressive compression speed.<br>
                           </li>
                         </ul>
                         </td>
@@ -384,42 +448,6 @@ supersedes previous PAQ format, multiple times Hutter Prize winner.<br>
                     </tbody>
                   </table>
                   <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <p style="font-weight: bold;"><big>Input data</big></p>
-Benchmark input, same of general purpose compression benchmark,
-contains
-42 files in 4 directories for total 303 MB
-(318.000.857 bytes), composed by:<br>
-                        <ul>
-                          <li><a target="_blank"
- href="http://corpus.canterbury.ac.nz/descriptions/">Calgary
-and
-Canterbury compression corpora<img
- alt="Calgary Corpus, Canterbury corpus for standard compression tests"
- title="Standard compression corpus files" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
-                          <li><a target="_blank"
- href="http://cs.fit.edu/%7Emmahoney/compression/enwik8.zip">enwik8<img
- alt="english wikipedia dump for data compression benchmark"
- title="Enwik8 compression test file" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
-                          <li><a target="_blank"
- href="http://sun.aei.polsl.pl/%7Esdeor/index.php?page=silesia">Silesia
-compression corpus<img
- alt="Silesia corpus for standard file compression benchmarks"
- title="Silesia corpus" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
-                        </ul>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                   </td>
                 </tr>
               </tbody>
@@ -462,6 +490,8 @@ compression settings.<br>
 Default compression algorithm and default compression settings, as
 pre-set out of the box by file archivers being tested (PeaZip, WinRar,
 and WinZip), are employed for each format / level.<br>
+For Brotli and Zstandard compression, the input data was consolidated
+in a single TAR archive for running the benchmark<br>
             <br>
             <br>
             <h4><span style="font-weight: bold;"><big>Maximum
@@ -497,316 +527,351 @@ SSD (sec)</td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 7Z, fastest<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">3.5<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">92.90<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">30.66%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">30.66%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">0.9<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 7Z, default<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">39.6<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">73.60<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">24.29%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">24.29%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">1.0<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 7Z, ultra<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">125.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">71.40<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">23.56%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">23.56%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">2.7<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ARC, 1<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">1.4<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">109.00<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">35.97%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">35.97%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">1.9<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ARC, 4<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">17.2<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">71.70<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">23.66%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">23.66%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">7.1<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ARC, 9<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">81.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">66.10<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">21.82%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">21.82%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">40.8<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ZPAQ, fast<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">6.3<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">102.00<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">33.66%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">33.66%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">2.1<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ZPAQ, normal<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">37.2<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">68.50<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">22.61%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">22.61%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">26.8<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
 ZPAQ, ultra<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">354.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">57.60<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">19.01%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">19.01%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">356.0<br>
                   </td>
                 </tr>
+                <tr>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">PeaZip,
+Brotli (max)<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">190.0<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">82.60<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">27.26%</td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">1.3<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">PeaZip
+Zstandard (max)<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">107.0<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">76.80<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">25.335%<br>
+                  </td>
+                  <td
+ style="height: 32px; text-align: center; vertical-align: middle;">1.0<br>
+                  </td>
+                </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
 RAR, fastest<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">2.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">106.00<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">34.98%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">34.98%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">1.0<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
 RAR, normal<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">13.8<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">80.40<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">26.53%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">26.53%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">1.0<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
 RAR, best<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">48.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">78.90<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">26.04%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">26.04%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">1.8<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
 ZIPX, fastest<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">3.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">105.00<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">34.65%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">34.65%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">4.5<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
 ZIPX, enhanced deflate<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">21.0<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">94.00<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">31.02%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">31.02%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">5.0<br>
                   </td>
                 </tr>
                 <tr style="height: 24pt;" height="32">
                   <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinZip,
+ style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
 ZIPX, best method<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="12.1">34.7<br>
                   </td>
                   <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="97.7">70.70<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">23.33%<br>
+ style="height: 32px; text-align: center; vertical-align: middle;">23.33%<br>
                   </td>
                   <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
+ style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
  x:num="1.6">46.2<br>
                   </td>
                 </tr>
@@ -835,6 +900,13 @@ deflate based compression unless switching to alternate compression
 algorithms, with maximum compression, comparable to 7Z ultra, being
 attained using "best method" settings.<br>
             <br>
+Even if usually associated with fast compression, both Brotli and Zstd
+compressors attained quite high compression ratios when used at maximum
+compression settings, with Zstandard being the best of the two and
+compressing slightly better than RAR at best compression level (and
+Brotli slighly worse).<br>
+Both, however, compressed less than 7Z at medium compression level.<br>
+            <br>
             <h3><img alt="best file compressor"
  title="best compressor 7z, arc, zpaq versus rar, zipx"
  src="maximum-compression-benchmark.png"
@@ -854,6 +926,12 @@ RAR, ARC, and 7Z, ZPAQ being the slowest.<br>
 Using moderate compression settings, RAR and ARC emerge as the fastest
 formats.<br>
             <br>
+Brotli suffered a noticeable performance penality when used at maximum
+compression leve, being the second slowest compressor.<br>
+Zstandard too took a seizable performance hit, but overall remails
+noticeably faster than Brotly when both are used at maximum compression
+level,<br>
+            <br>
             <h3><img alt="which file compressor compresses the most"
  title="Comparison of compression speed: 7z, arc, zpaq vsrar, zipx"
  src="maximum-compression-speed.png"
@@ -868,6 +946,11 @@ seconds even at higher compression levels.<br>
 ARC, ZIPX, and ZPAQ decompression speed increases significantly at high
 compression settings, with ARC being generally comparable or better in
 speed than ZIPX, and ZPAQ being the slowest.<br>
+            <br>
+It is noteworthy to point out that both Brotli and Zstandard excels in
+extraction speed even for archives created at maximum compression
+settings, and are amongst the fastest extractors in this benchmark,
+with a slight advantage for Zstd in terms of speed.<br>
             <br>
             <h3><img
  alt="7z, arc, zipx vs rar, zipx max compression ratio"
@@ -971,7 +1054,20 @@ the best compressor?</big><br>
 compression ratio at all compression
 levels, but RAR outperformed 7Z in terms of compression speed. <br>
 Extraction speed is quite similar, and keeps reasonable for both
-formats at all compression levels. <br>
+formats at all compression levels.<br>
+            <br>
+            <br>
+            <big><span style="font-weight: bold;">Are Brotli and
+Zstandard suited for max compression?</span></big><br>
+            <br>
+Brotli and Zstd can provide surprisingly good compression ratios, even
+if they are designed primarily for fast compression tasks, with
+Zstandard being overall the best choice.<br>
+It must be noted the performance penality is very relevant in terms of
+compression speed, with traditional compression formats like 7Z and RAR
+being more fit for this task.<br>
+However, decompression speed remains very high even extracting BR and
+ZST files compressed at maximum settings.<br>
             <br>
             <br>
             <h3 style="font-weight: bold;"><big>Is it worth to set
