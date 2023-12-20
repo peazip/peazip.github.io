@@ -161,7 +161,7 @@
         <tbody>
           <tr>
             <td
- style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;"><small><a
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
  href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -251,6 +251,25 @@ compression algorithm - optionally LZMA, PPMd, BZIP2 and Deflate are
 available as alternative compression algorithms - and built in strong
 compression based on AES256.<br>
             <br>
+            <br>
+            <h4><big style="font-weight: bold;">7Z compression and
+extraction performances</big></h4>
+            <br>
+BZIP2, LMZA, LZMA algorithms provides <span style="font-weight: bold;">multi-threaded
+compression</span>, taking advantage of modern multi-core,
+multi-thraded CPUs, and BZip2 also provided <span
+ style="font-weight: bold;">multi-threaded decompression</span>
+improving extraction speed on muticore architrectures.<br>
+Extraction, however, is significantly faster than compression for most
+algorithms, and is consequently more likely to be limited by disk speed
+rather than CPU speed.<br>
+RAM speed is especially critical when using highest compression
+settings, as largest statistical models and widest data samples are
+kept in memory.<br>
+For more information and comparative test results see the <a
+ href="peazip-compression-benchmark.html">File Compression Benchmarks</a>
+section.<br>
+            <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">
               <tbody>
@@ -330,14 +349,20 @@ archive creation screen it is also possible to apply <span
  style="font-weight: bold;">AES256 encryption </span>to
 password-protect the archive, and to <span style="font-weight: bold;">split
 file</span> - create
-multiple volumes smaller than desired<span style="font-style: italic;">
+multiple volumes <span style="font-weight: bold;">smaller than desired
 maximum output size</span>. <br>
 From "Advanced" tab, it is possible to
 further fine-tune compression settings; faster-than-zip compression is
 posible with Tino
-Reichardt's plugins for Brotli, Lizard, LZ4, LZ5, and Zstd algorithms,
+Reichardt's plugins for Brotli, FLZMA2, Lizard, LZ4, LZ5, and Zstd
+algorithms,
 supported by PeaZip, selecting one of those compression methods in
 Advanced tab.<br>
+                        <span style="font-style: italic;">In this way
+however the resulting archives will not be compatible with 7z archive
+managers not supporting those new compression algorithms, as notably
+vanilla 7-Zip, so using BZip2, LMZA, LZMA2 or PPMd is recommended if
+you intend to preserve interoperability with other archiver utilities.</span><br>
                         <br>
                         <span style="font-weight: bold;">Create self
 extracting 7z archives</span><br>
@@ -633,8 +658,7 @@ Zstandard files</a></p>
       </td>
     </tr>
     <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <td style="vertical-align: top;">
       <table
  style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
  border="0" cellpadding="0" cellspacing="0">
@@ -657,8 +681,7 @@ Zstandard files</a></p>
             <img alt="how to open 7z files"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
-            </small><a href="index.html"><small></small></a><small><a
- href="index.html">All
+            </small><small><a href="index.html">All
 PeaZip downloads</a><br>
             </small><small><a href="peazip-linux.html">PeaZip
 for Linux</a><br>
@@ -666,8 +689,7 @@ for Linux</a><br>
 for macOS</a></small><br>
             <small> <a href="peazip-64bit.html">PeaZip
 for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><a
- href="peazip-linux.html"></a><br>
+            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
  alt="how to create 7z files" src="titles.png"

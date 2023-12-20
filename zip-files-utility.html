@@ -161,7 +161,7 @@ files</span><br>
         <tbody>
           <tr>
             <td
- style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;"><small><a
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
  href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -250,6 +250,29 @@ utility to detect data corruption or forging.<br>
  title="Zip files compression, extraction (decompression, unzip) utility"
  src="read-write.png"
  style="border: 0px solid ; width: 800px; height: 39px;"></h2>
+            <br>
+            <br>
+            <h3><big style="font-weight: bold;">ZIP compression and
+extraction performances</big></h3>
+            <br>
+ZIP format uses Deflate compression algorithm by default, which
+provides fast but single threaded compression and de-compression.<br>
+PeaZip can optionally set Deflate64, BZip2, LZMA, PPMd and XZ
+(LZMA2-based) compression algorithms from Advanced tab in the archive
+creation screen.<br>
+BZip2 and LZMA algorithms provides <span style="font-weight: bold;">multi-threaded
+compression</span>, taking advantage of modern multi-core,
+multi-thraded CPUs, and BZip2 also provided <span
+ style="font-weight: bold;">multi-threaded extraction</span>.<br>
+Read <a href="peazip-compression-benchmark.html">File Compression
+Benchmarks</a> section for more information about performances
+comparison between different compression algorithms, formats, and
+archive managers.<br>
+Please note that some legacy archive managers may not support ZIP
+archives created employing those new compression algorithms, so it is
+recommended to rely on Deflate compressed ZIP archives whenever
+interoperability with other archive manager utilities is critical.<br>
+            <span style="font-weight: bold;"></span><br>
             <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">
@@ -646,8 +669,7 @@ Zstandard files</a></p>
       </td>
     </tr>
     <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <td style="vertical-align: top;">
       <table
  style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
  border="0" cellpadding="0" cellspacing="0">

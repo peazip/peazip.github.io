@@ -159,7 +159,7 @@ files</big></big></big></h1>
         <tbody>
           <tr>
             <td
- style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;"><small><a
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
  href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -238,6 +238,26 @@ etc... <br>
             <h2><img alt="tar files extractor"
  title="Free TAR axtractor and archiver utility" src="read-write.png"
  style="border: 0px solid ; width: 800px; height: 39px;"></h2>
+            <br>
+            <br>
+            <h3><big style="font-weight: bold;">TAR archive creation
+and extraction performances</big></h3>
+            <br>
+As TAR format does not brovide compression by itself, archive creation
+is usually very fast, as fast as copying files - or even faster, as
+multiple input files are sent to a single output archive without the
+need to create multiple filesystem items.<br>
+Combining TAR with Gzip (Deflate) compression result in fast but <span
+ style="font-weight: bold;">single threaded compression and
+de-compression</span>, while BZip2 provides <span
+ style="font-weight: bold;">multi threaded compression and
+de-compression</span>, optimizing performances for modern multicore
+CPUs.<br>
+Brotli provides extremely fast, near real-time compression and
+decompression, but is single-threaded, while Zstandard (which is also
+meat for near real time operation) is multi-threaded and shows a
+noticeable speed advantage over Brotli on multicore, multithreading
+architecture.<br>
             <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">
@@ -638,8 +658,7 @@ Zstandard files</a></p>
       </td>
     </tr>
     <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(243, 242, 241);">
+      <td style="vertical-align: top;">
       <table
  style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
  border="0" cellpadding="0" cellspacing="0">
