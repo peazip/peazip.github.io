@@ -5,21 +5,20 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Free RAR 7Z ACE ISO TAR ZIP file converter software, rar to zip. How to convert type, change format, consolidate archives, batch conversion of multiple files at once.">
+ content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
   <meta name="KEYWORDS"
- content="how to, rar, zip, rar to zip, file, archive, files, batch, converter, convert, consolidate, change, format, conversion, free, software, utility, tool">
+ content="extract, open, multivolume, multipart, archives, 001, r01, part01, r01, z01, volumes, parts, spanned, zip, rar">
   <meta name="ROBOTS" content="all">
-  <title>Convert RAR ISO TAR ZIP files, free file conversion utility</title>
+  <title>How to extract multipart archives</title>
   <meta name="viewport" content="width=device-width">
   <meta property="og:site_name"
  content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Convert RAR ISO TAR ZIP files, free file conversion utility">
+  <meta property="og:title" content="How to extract multipart archives">
   <meta property="og:description"
- content="Free RAR 7Z ACE ISO TAR ZIP file converter software, rar to zip. How to convert type, change format, consolidate archives, batch conversion of multiple files at once.">
-  <meta property="og:image" content="free-zip/peazip-icon.png">
+ content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
+  <meta property="og:image" content="extract.png">
   <meta property="og:url"
- content="https://peazip.github.io/convert-files.html">
+ content="https://peazip.github.io/how-to-extract-multipart-archives.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
 <body>
@@ -60,8 +59,8 @@
           </tr>
           <tr>
             <td style="vertical-align: top;"> <img
- title="How to convert existing archives with PeaZip"
- alt="convert rar iso tar zip files" src="peazip_ico24.png"
+ title="Extract multi part (spanned) archives"
+ alt="extract multipart archives" src="peazip_ico24.png"
  style="border: 0px solid ; width: 24px; height: 24px;"> </td>
             <td style="vertical-align: middle;">&nbsp;
 &nbsp; &nbsp;&nbsp; &nbsp; <br>
@@ -99,7 +98,7 @@
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
             <td style="text-align: center; vertical-align: bottom;"><img
- alt="free file conversion utility" src="free-rar/archive-manager.png"
+ alt="Open multipart archives" src="free-rar/archive-manager.png"
  style="width: 12px; height: 12px;"> </td>
             <td style="text-align: center; vertical-align: bottom;"><br>
             </td>
@@ -129,9 +128,8 @@
           <tr>
             <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
             <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="free_rar_file_converter"></a><span
- style="font-weight: bold;">Convert
-RAR ISO TAR ZIP files, free file conversion utility</span><br>
+ style="font-weight: bold;" name="open_rar_zip_multivolume_files"></a><span
+ style="font-weight: bold;">How to extract multipart archives</span><br>
             </big></big></big></h1>
             <br>
             </td>
@@ -143,14 +141,14 @@ RAR ISO TAR ZIP files, free file conversion utility</span><br>
     <tr>
       <td
  style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="puproses of archive file conversion"
+ alt="How to open multi-part archives"
  src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
       </td>
     </tr>
     <tr>
       <td
  style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="how to convert existing archives, i.e. RAR to ZIP format"
+ alt="How to extract multi-part archives"
  src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
       </td>
     </tr>
@@ -214,273 +212,144 @@ RAR ISO TAR ZIP files, free file conversion utility</span><br>
           <tr align="left">
             <td
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
+            <h2><big><big><big><a style="font-weight: bold;"
+ name="extract_spanned_archives"></a><a
+ href="#open_rar_zip_multivolume_files"><span style="font-weight: bold;">Open,
+extract multivolume spanned
+.001, part01, .r01, .z01 files</span><br>
+            </a></big></big></big></h2>
+            <br>
+            <br>
+            <h3 style="font-weight: bold;"><big>What are mult-part
+archives</big></h3>
+            <br>
+Multi-part archives are, typically, .7z, .rar, .zip files <a
+ href="file-split.html">spanned on multiple volumes</a>, each volume
+containing part of the data split in order to be conatined in a size
+below the desired maximum size.<br>
+This spanning process allows the archive to:<br>
             <ul>
-              <li>
-                <p><a href="convert-files.html#convert_files">PURPOSES
-OF
-ARCHIVE FILE CONVERSION</a></p>
-              </li>
-              <li>
-                <p><a href="convert-files.html#change_file_type">HOW
-TO
-CONVERT
-EXISTING ARCHIVES, I.E. RAR TO ZIP FORMAT</a></p>
-              </li>
+              <li>be sent through channels enforcing a maximum payload
+size, e.g. maximum attachment size for some email providers, or maximum
+allowed file size for upload or cloud services</li>
+              <li>be saved on filesystems where <a
+ href="rar-zip-file-format-size-limitations.html">maximum file size
+limitations</a> are still relevant, i.e. FAT filesystems</li>
             </ul>
+PeaZip supports both creating spanned multipart archives, and opening
+and extracting multipart archives from different archive manager
+utilities in multiple formats.<br>
+The <span style="font-weight: bold;">first volume</span>, the one
+named with the lowest progressive number (usuallay starting from 1,
+seldom from 0) <span style="font-weight: bold;">it is the part that
+needs to be opened or extracted</span> in order to access the full
+content of the archive.<br>
+Most commonly multivolume archives are found with <span
+ style="font-weight: bold;">.001</span> extension (usually 7Z or ZIP
+files spannd by 7-Zip, PeaZip and similar apps), <span
+ style="font-weight: bold;">.part01.rar</span> or <span
+ style="font-weight: bold;">.r01 </span>(usually multi part RAR files
+created by WinRar), or <span style="font-weight: bold;">.z01</span>
+(usually multi part ZIP or ZIPX archives created by WinZip).<br>
             <br>
             <br>
-            <h2><big><big style="font-weight: bold;"><big><a
- name="convert_files"></a><a
- href="convert-files.html#free_rar_file_converter">Puproses of archive
-file conversion</a></big></big><br>
-            </big></h2>
-            </div>
+            <h2><big style="font-weight: bold;">How to open multi-part
+archives</big></h2>
             <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="vertical-align: top; width: 48px;">
-                  <h3><img title="Transform legacy archives"
- alt="convert zip to 7z files" src="file-format/one.png"
- style="width: 48px; height: 48px;"></h3>
-                  </td>
-                  <td style="vertical-align: top;"><span
- style="font-weight: bold;">Recover legacy archives</span><span
- style="background-color: rgb(255, 238, 221);"><br>
-Transform
-legacy read supported format archives</span> (e.g. old
-backup or save files in <a href="ace-files-utility.html">ACE file
-format</a>,
-ARJ,
-LHA), which may be, or become,
-obsolete - surpassed in terms of compression, performances, <a
- href="encrypt-files.html">encryption
-features</a>, or be troublesome to support in future systems - making
-desiderable to switch to a more modern archive type<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top; width: 48px;">
-                  <h3><img title="Change format"
- alt="convert rar to zip file" src="file-format/two.png"
- style="width: 48px; height: 48px;"></h3>
-                  </td>
-                  <td style="vertical-align: top;"><span
- style="font-weight: bold;">Change to a long term supported archive type</span><br>
-Provide
-recipients of data archived in a suitable, widely
-supported standard - usually <a href="zip-file-format.html">ZIP
-format</a>,
-for compatibility with most systems
-and most archive managers, or <a href="tar-file-format.html">TAR format</a>,
-widely employed on Unix and Unix-like environments - changing uncommon
-format existing archives<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top; width: 48px;">
-                  <h3><img title="Consolidate data"
- alt="tar to zip conversion utility" src="file-format/three.png"
- style="width: 48px; height: 48px;"></h3>
-                  </td>
-                  <td style="vertical-align: top;"><span
- style="font-weight: bold;">Merge save files</span><br>
-Optimizing <a href="backup-files.html">data backup</a>, merging
-multiple existing save
-files (even from different formats at once) in a single backup archive
--
-removing "Add each object to a separate
-archive" flag to consolidate data in a single output - to change all
-the input to the new format<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;">
-                  <h3><img title="Improve compression ratio"
- alt="free file conversion utility" src="file-format/four.png"
- style="width: 48px; height: 48px;"></h3>
-                  </td>
-                  <td style="vertical-align: top;"><span
- style="font-weight: bold;">Improve compression ratio</span><span
- style="background-color: rgb(255, 238, 221);"><br>
-Re-compress old
-archives with better compression ratio</span>, as
-more computing power and better algorithms becomes available;
-i.e. 7z / p7zip optimized Deflate algorithm compresses 2-10% smaller
-ZIP
-archives preserving full compatibility with standard specifications,
-and <a href="7z-file-format.html">7Z format</a> usually
-attains 30-70% better compression than
-classic ZIP format<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top;">
-                  <h4><img title="Convert to free archive type"
- alt="how to change rar zip file format" src="file-format/five.png"
- style="width: 48px; height: 48px;"></h4>
-                  </td>
-                  <td style="vertical-align: top;"><span
- style="font-weight: bold;">Switch to open sorce formats</span><span
- style="background-color: rgb(255, 238, 221);"><br>
-Replace
-non-free archive types (ACE, <a href="what-is-rar-file.html">RAR format</a>,
-                  <a href="zipx-file-format.html">ZIPX format</a>) with
-free ones
-(7Z, ZIP)</span> which can be supported by Free Software without being
-encumbered by patents' issues, in order to guarantee the format to stay
-supported even after the original author ceases development.</td>
-                </tr>
-              </tbody>
-            </table>
+From the system file explorer, or from PeaZip file manager <span
+ style="font-weight: bold;">double click (or right click &gt; Open as
+archive)</span> the <span style="font-weight: bold;">first volume of
+the multi part archive</span>.<br>
+In order to be able to list the entire archive content it is
+recommended to <span style="font-weight: bold;">save all the parts of
+the spanned archive in the same folder</span>.<br>
+The first volume of the archive is the one with the lowest progressive
+number, and it can be usually identified as <span
+ style="font-weight: bold;">.001, .r01, .z01, or .part01.rar</span>,
+and other parts should show the same filename and extension type with
+progressively increasing numbering.<br>
+Once all archive parts are in the same directory, open the first part
+with PeaZip to be able to <span style="font-weight: bold;">browse,
+search, list, test or extract the entire multi-part archive</span>.<br>
             <br>
             <br>
-            <h2><big style="font-weight: bold;"><big><big><a
- name="change_file_type"></a></big></big></big><a
- href="convert-files.html#free_rar_file_converter"><big
- style="font-weight: bold;"><big><big>How
-to convert
-existing archives, i.e. RAR to ZIP format</big></big></big><br>
-            </a></h2>
-            <br>
-PeaZip
-file converter function allows to <span style="font-weight: bold;">convert
-existing
-archives</span> belonging to any of the
-200+ formats supported for extraction (CAB, ISO, RAR, ZIPX...), into
-any archive format supported
-for writing (7Z, RAR, WIM, TAR, ZIP and more popular file formats), on
-Microsoft Windows and Linux systems.<br>
-            <a name="convert_rar_to_zip_format"></a>In example, RAR
-archives can be converted to ZIP format (that is
-ubiquitously supported) or to 7Z format (which offers better
-compression), or to TAR format (widely supported on Unix-like systems).
-Format change function also comes handy when the user, for an
-afterthought,
-wants e.g. to recompress the archive using higher compression settings,
-or to apply encryption, etc.<br>
-It is possible to convert existing archives to RAR format with PeaZip
-if WinRar is installed in the system, which enables read/write support
-for RAR format in PeaZip - it is not possible to autonomously add rar
-compression support due rar licensing restrictions.<br>
-            <br>
-            <h2><img title="Convert RAR ISO TAR 7Z ZIP files"
- alt="how to convert rar to zip files" src="convert.png"
- style="width: 120px; height: 45px;"></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Convert multiple
-archives at once</big></h3>
-            <br>
-            <a name="batch_convert_multiple_files_at_once"></a>For
-batch conversion operations, the
-software can work on multiple archives at the same time (even of
-different formats), either
-converting each input archive in a separate file in the chosen target
-format, or consolidating the multiple input archives in a new single
-archive of the desired format.<br>
-Non-archive files can be added as well to the batch input list, and
-will be
-compressed (or consolidated) in the chosen new archive format.<br>
-In any case when using Conversion function, batch or on single files,
-input archives are firstly
-extracted and then recompressed in the new format, in order to get
-optimal compression results.<br>
-            <br>
-To convert existing archives, click on "<span style="font-weight: bold;">Convert</span>"
-button in applications
-tool bar, or check the "Convert existing archives" option in archive
-creation dialog; add files to conversion procedure as for normal
-archive creation, as explained in the FAQ and in program's
-documentation (F1).<br>
-            <br>
-Flag "<span style="font-weight: bold;">Add each object to a separate
-archive</span>" if you want to create a
-separate output archive file for each input object, ie.e. to perform a
-mass file conversion of input archives, or uncheck the option if you
-prefer to merge all the input data in a single archive, i.e. to
-consolidate a set of backup.<br>
-            <br>
-If
-verbose mode is selected, after the extraction stage file conversion
-procedure asks for
-confirmation to proceed with compression, this allows to abort the
-process in case of problems (disk full, unknown password, corrupted
-archives etc) or to further modify the uncompressed data before the
-final re-compression stage.<br>
-            <br>
-After the compression stage, file conversion procedure asks for
-confirmation before deleting temporary files and folders created for
-conversion, however original archives are not deleted and not modified
-in any stage of the conversion unless "Delete files after archiving"
-option is flagged - user confirmation is required in any case, in order
-to let the user always aware and in full control of deletion of
-original data.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">How to convert
-encrypted archives</span></big></h4>
+            <h2 style="font-weight: bold;"><big>How to extract
+multi-part archives</big></h2>
             <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Convert encrypted 7z, rar, zip archives"
- alt="batch file conversion utility" src="file-format/information.png"
- style="width: 48px; height: 48px;"><br>
-                  </span></h2>
+                  <td style="width: 48px; vertical-align: top;">
+                  <h3><img title="Manage multipart (spanned) archives"
+ alt="extract multi volume archives" src="file-format/one.png"
+ style="width: 48px; height: 48px;"></h3>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">
-                  <p><span style="background-color: rgb(255, 238, 221);"><a
- name="file_conversion_utility"></a>If
-input file is <span style="font-weight: bold;">encrypted</span>,
-user needs to provide correct password to
-perform archive conversion, otherwise archive data will not be readable
-and extraction stage will not complete.</span> Logically, it is not
-possible to correctly modify (and switch format for) a file that cannot
-be correctly read.<br>
-Password can be provided clicking on padlcok icon in PeaZip.<br>
-                  </p>
-                  <h3><img title="Convert password protected files"
- alt="free batch file conversion software"
- src="rar-files/cryptography.png" style="width: 16px; height: 16px;"></h3>
+                  <td style="vertical-align: middle;"><span
+ style="font-weight: bold;">Move
+(or copy) all the parts of the multi-volume archive in the same
+folder</span> before proceeding with extraction.<br>
+The spanned archies are usually 7Z, RAR or ZIP archives split in
+multiple smaller parts (volumes).<br>
+The parts have same name, same extension type, and shows progressive
+numberting: no part should be missing or else some of the original
+content will not be available for extarction<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 48px; vertical-align: top;">
+                  <h3><img
+ title="Work with multipart archives 001, r01, z01, part01.rar"
+ alt="open multi volume archives" src="file-format/two.png"
+ style="width: 48px; height: 48px;"></h3>
+                  </td>
+                  <td style="vertical-align: middle;"><span
+ style="font-weight: bold;">Open the
+first volume (part) of the smanned archive</span> as explained in the
+previous section "How to open multi-part archives", <span
+ style="font-weight: bold;">or esle proceed to directly extract the
+first volume of the archive</span> using one of the following available
+methods:<br>
+                  <ul>
+                    <li>From the system file manager, righclick on the
+first volume of the multi part archive and use "Extract" or "Extract
+here" PeaZip's entry in system's context menu.</li>
+                    <li>From PeaZip file manager, select the first
+volume of the spanned archive and click Extract button, or use app's
+context menu Extract entry</li>
+                  </ul>
+The first volume of the archive can be identified by the extension
+which is usually <span style="font-weight: bold;">.001</span>, <span
+ style="font-weight: bold;">.r01</span>, <span
+ style="font-weight: bold;">.z01</span>, <span
+ style="font-weight: bold;">.part01.rar</span>.<br>
+If a <a href="extract-encrypted-files.html">password is required to
+extract</a> an encrypted multi-part archive, it can be set from the
+locker icon in the extraction screen in PeaZip before confirming
+extraction with the OK button on the bottom of the application.<br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="background-color: rgb(255, 238, 221);"></span><br>
             <br>
-Read more: list of <a target="_blank"
- href="http://en.wikipedia.org/wiki/List_of_archive_formats">file
-archiving formats<img alt="file conversion wikipedia"
- title="Archive formats Wiki" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> on
-Wikipedia, <a href="zip-files-utility.html">how to convert zip files
-to other archive formats</a>, and <a
- href="archive-file-formats-comparison.html">comparison
-of archive format features, advantages and disadvantages</a>.<br>
+Learn more about how to use PeaZip archive manager to <a
+ href="7zip-files-utility.html">extract 7Z files</a>, <a
+ href="free-rar.html">extract WIM files</a>, and <a
+ href="zip-files-utility.html">extract ZIP
+files</a>.which are usually the archive type most commonly employed to
+distribute multi-part spanned archives.<br>
             <br>
-            <p><span style="font-weight: bold;">Synopsis: PeaZip free
-RAR 7Z ACE ISO TAR ZIP file converter software. How to convert rar to
-zip files. </span><span style="font-weight: bold;">Change archive
-format, purposes and methods. </span><span style="font-weight: bold;">How
-to convert archive type, e.g. zip to 7z. Consolidate multiple archives
-of mixed types a single archive of chosen format. Batch conversion of
-multiple archive files at once from one or multiple extension to
-another type of archive of choice.<br>
+            <p><span style="font-weight: bold;">Synopsis: How to
+extract multi-part 7z, rar, zip archives. Open and decompress
+multi-volumes spanned .001, patt01, .r01, .z01 files.</span><span
+ style="font-weight: bold;"><br>
             </span></p>
-            <p><span style="font-weight: bold;">Topics: convert
-existing archive to different format</span><br>
+            <p><span style="font-weight: bold;">Topics: Open and
+extract multivolume spanned 7z rar zip archives</span><br>
             <span style="font-weight: bold;"></span><span
  style="font-weight: bold;"></span></p>
             <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Convert RAR ISO TAR ZIP files, free file conversion utility<br>
+&gt; Extract multipart archives<br>
             </span></p>
             <br>
             <table
@@ -492,7 +361,8 @@ existing archive to different format</span><br>
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                   <h3 style="color: rgb(0, 0, 0);"><img
  title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="convert rar to zip" src="file-format/archive-manager.png"
+ alt="extract 001 part01 rar01 z01 archives"
+ src="file-format/archive-manager.png"
  style="width: 96px; height: 96px;" align="right"><a
  name="how_to_compress_files"></a>ARCHIVE
 MANAGER</h3>
@@ -610,10 +480,10 @@ files cannot be compressed?</a><br>
           </tr>
           <tr>
             <td style="vertical-align: top; width: 25%;"><small> <img
- alt="how to convert rar to zip files" src="titles.png"
+ alt="How to extract multipart archives" src="titles.png"
  style="width: 129px; height: 2px;"><br>
-            <a name="convert_rar_to_zip"></a>DOWNLOADS<br>
-            <img alt="convert rar to zip file"
+            <a name="extract_multipart_archives"></a>DOWNLOADS<br>
+            <img alt="extract part01 files"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
             </small><small><a href="index.html">All
@@ -627,12 +497,11 @@ for Windows</a><br>
             </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
             </small></td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="free batch file conversion software" src="titles.png"
+ alt="How to extract multipart 7z, rar, zip archives" src="titles.png"
  style="width: 129px; height: 2px;"><br>
-            <a name="batch_file_conversion_utility"></a>SUPPORT<br>
-            <img alt="tar to zip conversion utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
+            <a name="extract_mutivolume_archives"></a>SUPPORT<br>
+            <img alt="open part01 files" src="free-rar/extract-rar.png"
+ style="width: 1px; height: 1px;" vspace="3"><br>
             <a href="peazip-help.html">Online
 help</a><br>
             <a href="peazip-help-faq.html">Frequently
@@ -640,12 +509,11 @@ Asked Questions</a><br>
             </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
+ alt="Open and decompress multivolume spanned .001, part01, .r01, .z01 files"
+ src="titles.png" style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
+ name="open_multipart_archives"></a>ABOUT<br style="font-style: italic;">
+            <img alt="work with multipart archives"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
             </small><small><a href="peazip-tos-privacy.html"
@@ -663,9 +531,9 @@ Privacy</a><br>
 Feed</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Free RAR 7Z ACE ISO TAR ZIP file converter software"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
+ alt="manage multipart archives" title="PeaZip releases feed"
+ src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
+ align="middle"></small></td>
                 </tr>
                 <tr>
                   <td style="text-align: right; vertical-align: middle;"><small><a
@@ -673,8 +541,7 @@ Feed</a></small></td>
 Wiki</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="How to convert type, change format, consolidate archives"
+ title="PeaZip Wiki online" alt="multipart archives extraction"
  src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
  align="middle"></small></td>
                 </tr>
@@ -683,9 +550,8 @@ Wiki</a></small></td>
  href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="batch conversion of multiple files at once"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
+ alt="extract r01 files" title="Mail developer | Giorgio Tani"
+ src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
                   </small></td>
                 </tr>
                 <tr>
@@ -694,7 +560,7 @@ Wiki</a></small></td>
                   </small></td>
                   <td
  style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="batch file conversion utility"
+ alt="extract multipart rar files"
  title="Search in PeaZip project domain"
  src="extract-rar/rar-opener.png"
  style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
