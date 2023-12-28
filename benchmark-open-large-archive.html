@@ -5,7 +5,7 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is the fastest application to open large archives? Comparison of archive listing and browsing speed with 7-Zip, PeaZip, WinRar.">
+ content="What is the fastest application to open large archives on Windows, Linux, and macOS? Comparison of archive listing and browsing speed with 7-Zip, PeaZip, WinRar.">
   <meta name="KEYWORDS"
  content="open, archive, benchmark, large, fastest, zip, speed, times, WinRar, PeaZip, 7-Zip, application, browse, list, opener">
   <meta name="ROBOTS" content="all">
@@ -13,13 +13,13 @@
   <meta name="viewport" content="width=device-width">
   <meta property="og:site_name"
  content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Compression benchmark: 7-Zip, PeaZip, WinRar, WinZip comparison">
+  <meta property="og:title" content="Open large archives benchmark">
   <meta property="og:description"
- content="File compression and extraction benchmark. Comparison of 7-Zip, Bandizip, PeaZip, WinRar, WinZip archiver utilities performances for the best, fastest application.">
-  <meta property="og:image" content="compression_size_benchmark.png">
+ content="What is the fastest application to open large archives on Windows, Linux, and macOS? Comparison of archive listing and browsing speed with 7-Zip, PeaZip, WinRar.">
+  <meta property="og:image"
+ content="archive-containing-thousands-files.png">
   <meta property="og:url"
- content="https://peazip.github.io/peazip-compression-benchmark.html">
+ content="https://peazip.github.io/benchmark-open-large-archive.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
 <body>
@@ -297,15 +297,19 @@ of:</li>
                             <li>Gnome Archive Manager<br>
                             </li>
                           </ul>
-                          <li>macOS 12</li>
+                          <li>macOS 13.6</li>
                           <ul>
-                            <li>PeaZip for macOS aarch64 9.5.0<br>
-                            </li>
+                            <li>PeaZip for macOS aarch64 9.6.0</li>
+                            <li>PeaZip for macOS x86_64 9.6.0</li>
+                          </ul>
+                          <li>Asahi Linux on aarch64<br>
+                          </li>
+                          <ul>
+                            <li>PeaZip for Linux GTK2 aarch64 9.6.0</li>
                           </ul>
                         </ul>
 All applications are tested using default,
-out-of-the-box configuration unless specified otherwise.<br>
-                        </td>
+out-of-the-box configuration unless specified otherwise. </td>
                       </tr>
                     </tbody>
                   </table>
@@ -334,6 +338,7 @@ Linux: virtual machine over previous hardware.<br>
                         <br>
 macOS: 2020 MacBook Air with M1 chip.<br>
 7-Zip benchmark score 45000<br>
+This machine runs both macOS and Asahi Linux aarch64 benchmarks<br>
                         <br>
 Since very different technologies are employed, 7-Zip benchmark score
 is provided as reference, albeit it is mainly correlated with CPU
@@ -589,6 +594,17 @@ macOS x86_64<br>
  style="vertical-align: top; width: 25%; text-align: center;">55.0<br>
                   </td>
                 </tr>
+                <tr>
+                  <td style="vertical-align: top; text-align: right;">PeaZip
+for
+Linux GTK2 aarch64</td>
+                  <td style="vertical-align: top; text-align: center;">1.8<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">3.2<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">5.2<br>
+                  </td>
+                </tr>
               </tbody>
             </table>
             <span style="font-weight: bold;"><br>
@@ -688,6 +704,10 @@ On macOS, the rendering times were noticeably slower than on Linux and
 Windows, either because Lazarus (the IDE using to build PeaZip) is
 less mature on this platform or because of performances of Cocoa widget
 set functions involved.<br>
+The difference is even more evident when comparing the app versions
+running on macOS/Cocoa aarch64, and on Asahi Linux/GTK2 arrch64, with
+the latter verion being about 7x faster than the macOS one in this
+specifc UI-intensive test.<br>
             <br>
             <h3><img alt="what is the fastest app to open zip files"
  title="Display thousands of files in archive"
@@ -745,13 +765,26 @@ On an M1 Apple Silicon machine, the native macOS aarch64 build
 consistently performed better than the x86_64 build, ranging from 25%
 to 40% faster performances.<br>
             <br>
+            <h3 style="font-weight: bold;">macOS vs Linux performances
+on Apple Silicon</h3>
+The first two benchmarks, opening 25K items archive and 250K items
+archive, which mostrly rely on app's own efficiency, shows quite
+siimilar results, with macOS aarch64 version being faster on the
+smaller archive and the Linux aarch64 scaling better on the larger
+archive.<br>
+The last benchmark, which rely heavily on widget-set ability to render
+in the UI a 25K items "flat" archive, shows a clear advantage for the
+Linux/GTK2 version which is about 7 times faster than the macOS/Cocoa
+version, despising the GTK2 widegt set not being the fast one available
+on Linux platform.<br>
+            <br>
             <p style="font-weight: bold;">Synopsis: Open large archives
 benchmark. What is the fastest application to open large archives?
 Comparison of archive browsing speed with 7-Zip, PeaZip, and WinRar.
 Archive listing benchmark methods, time to open results, comparative of
 speed of archive manager utilities for browsing archives containing
-thousands of files and folders.<br>
-            </p>
+thousands of files and folders. Speed test on Windows, Linux, and macOS
+aarch64 and Intel.</p>
             <p style="font-weight: bold;">Topics: PeaZip vs 7-Zip vs
 WinRar list large archive content benchmark, which is the fastest
 application<br>
