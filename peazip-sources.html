@@ -133,7 +133,7 @@
  style="color: rgb(153, 153, 153); font-weight: bold;"
  name="peazip_source_code"></a><big><big><big><span
  style="font-weight: bold;">Sources
-9.6.0</span><br>
+9.7.0</span><br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -164,7 +164,7 @@ Lazarus/FPC<br>
             <div style="color: rgb(253, 253, 253);">
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/9.6.0/peazip-9.6.0.src.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/9.7.0/peazip-9.7.0.src.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD" alt="download peazip code base"
  src="free-rar/download-free-software.png"
@@ -175,7 +175,7 @@ requires Lazarus / FreePascal IDE for building and compiling the app<br>
             </small></small></big><br>
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/9.6.0/peazip-9.6.0.pack.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/9.7.0/peazip-9.7.0.pack.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD"
  alt="peazip deb rpm packages structure"
@@ -370,7 +370,12 @@ Lazarus, its <a target="_blank"
  alt="install support" src="free-rar/extract-files.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a> is an
 excellent starting point for obtaining support from a friendly
-and competent community of developers using Lazarus / FreePascal.<br>
+and competent community of developers using Lazarus / FreePascal.</li>
+              <li>Add (peazip
+sources)/dev/metadarkstyle/metadarkstyle.lpk
+Lazarus package to the project&nbsp; - otherwise it will be asked later
+by the IDE, reporting missing package error, when trying to compile
+peazip or pea binaries<br>
               </li>
               <li>Compile sources in "dev" subdirectory, see below
 "Notes for developers" section for
@@ -544,9 +549,10 @@ aarch64<br>
                   <td
  style="vertical-align: middle; width: 15%; text-align: center;">various<br>
                   </td>
-                  <td style="vertical-align: middle; width: 45%;">available
-from <span style="font-weight: bold;">third party</span>, see links in
-Linux download sections<br>
+                  <td style="vertical-align: middle; width: 45%;">released
+as portable package, also available
+from <span style="font-weight: bold;">third party</span>, see links on
+Linux download pages<br>
                   </td>
                 </tr>
                 <tr>
@@ -642,6 +648,10 @@ LAZARUS IDE GUI<br>
 Open .lpi project files in Lazarus IDE and use main menu Run &gt; Build
 all to compile and build the binaries:<br>
             <ul>
+              <li>add /dev/metadarkstyle//metadarkstyle.lpk Lazarus
+package to the project, otherwise the IDE will ask later, notifying the
+missing lpk<br>
+              </li>
               <li>project_peach.lpi builds peazip, the main app
 executable, file and archive manager</li>
               <li>project_pea.lpi builds pea, to <a
@@ -660,11 +670,16 @@ dragdropfilesdll.dll in the same directory of peazip.exe<br>
 AUTOMATICALLY, FROM COMMAND LINE OR SCRIPT<br>
             <a name="how_to_compile_peazip_automatically"></a>Replace
 lazbuild string in following examples with the full qualified
-path to lazbuild binary if needed.<br>
-Replace (peazip sources) with full qualified path to PeaZip source's
+path to lazbuild binary if needed - e.g. on Windows it is usually
+C:\lazarus\lazbuild.exe.<br>
+Replace (peazip sources) with the full qualified path of PeaZip
+source's
 directory.<br>
 Run:<br>
             <ul>
+              <li>lazbuild --add-package (peazip
+sources)/dev/metadarkstyle/metadarkstyle.lpk<br>
+              </li>
               <li>lazbuild (peazip sources)/project_peach.lpi</li>
               <li>lazbuild (peazip sources)/project_pea.lpi</li>
               <li>lazbuild (peazip
@@ -946,13 +961,18 @@ only on Windows), should be placed in (peazip)/res/bin/upx</li>
 UPX, should be placed in
 (peazip)/res/bin/upx</li>
               <li><a target="_blank"
- href="http://facebook.github.io/zstd/">http://facebook.github.io/zstd/<img
+ href="https://facebook.github.io/zstd/">https://facebook.github.io/zstd/<img
  alt="build zstd" src="free-rar/extract-files.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
 Facebook's Zstandard
 compressor, should be placed in (peazip)/res/bin/zstd to <a
  href="zstandard-compression-utility.html">work with Zstandard
-compressed files</a><br>
+compressed files</a></li>
+              <li><a target="_blank"
+ href="https://github.com/zamtmn/metadarkstyle">https://github.com/zamtmn/metadarkstyle<img
+ alt="dark mode" src="free-rar/extract-files.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>&nbsp;
+zamtmn's Lazarus package adding support for Windows 10+ dark mode<br>
               </li>
             </ul>
             <br>

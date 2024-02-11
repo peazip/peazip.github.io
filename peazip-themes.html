@@ -315,7 +315,12 @@ Gnome DE.</span><br>
             <br>
             <br>
             <h2><big style="font-weight: bold;">Dark mode themes</big></h2>
-            <br>
+            <br style="font-weight: bold;">
+            <span style="font-weight: bold;">PeaZip is fully functional
+in </span><a style="font-weight: bold;"
+ href="screenshots-peazip-1.html#dark_mode">dark mode</a><span
+ style="font-weight: bold;"> on BSD, Linux, macOS and all Windows
+systems.</span><br>
             <big><span style="font-weight: bold;"></span></big>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
@@ -330,32 +335,26 @@ Gnome DE.</span><br>
                   </td>
                   <td
  style="font-style: italic; vertical-align: middle;">
-                  <p>PeaZip is fully functional in <a
- href="screenshots-peazip-1.html#dark_mode">dark mode</a> on BSD, Linux
-and macOS systems.</p>
-                  <p><br>
-                  <a name="peazip_windows_dark_mode"></a>Windows 10
-Dark Mode colors are not passed from system to application: querying a
-W10 system for UI colors currently get light mode colors in response
-even when dark mode is active. <br>
-This implementation of dark theming is
-unique to Windows 10.<br>
-As workaround it is possible to set an <span style="font-weight: bold;">High
-Contrast theme</span>, which passes colors consistent with Dark Mode
-UI appearance, until a complete API is made available to developers, or
-W10 is
-fixed in order to correctly pass real UI colors values to applications
-when queried (as every other operating system does).<br>
-                  <br>
+                  <p><a name="peazip_windows_dark_mode"></a>Windows 10
+and more recent systems provieds an unique implementation of Darm Mode,
+which purposely passes different colors to classic Win32/64 apps and
+Modern/UWP apps.<br>
                   </p>
-                  <p><a name="peazip_dark_mode"></a>Appearance of
-widgetset items rendered by the system are not affected by PeaZip, even
-applying themes settings, as
-PeaZip does not attempt to bypass native drawing methods, for
-stability, security, and performances reasons.<br>
-This limitation apply to all platform: please note that what are the
-system-rendered
-items varies in different platforms. </p>
+                  <p>Setting Dark Mode for modern apps does not changes
+color scheme for classic apps, which can be themed only applying a
+custom dark Windows theme as in previous Windows systems - in W10+
+system this is limited to applying an High Contrast theme.<br>
+                  </p>
+                  <p>The two settings are kept separated by design, so
+there is currently no way to apply a single color scheme to both type
+of applications on Windows systems.<br>
+                  </p>
+                  <p><span style="font-weight: bold;">PeaZip suppoirts
+both dark mode mechanisms</span> so on W10+ systems it can be set dark
+either setting the system in Dark Mode or applying an High Contrast
+theme, and in older systems it can be set dark setting a dark Windows
+Theme.<br>
+                  </p>
                   </td>
                 </tr>
               </tbody>

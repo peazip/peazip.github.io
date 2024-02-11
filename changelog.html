@@ -249,16 +249,11 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 9.6.0 introduces Profiles to separately store all configuration
-data (including preferences, bookmarks, custom apps, password manager,
-etc) for different users, or for different purposes, or to easily
-export the profile to another machine.<br>
-The application comes with enhanced GUI - with new optional compact
-sidebar, better smart sorting, new tab styles - and many under the hood
-improvements as improved extraction, and better handling of ARC files,
-and of archives containing errors in TOC.<br>
-This release also improves the ability to self-check the integrity of
-its binaries, including also libraries (.dll, .so, etc) and sfx modules.<br>
+PeaZip 9.7.0 release is primarily meant to update app's foundations:
+sources are now built with Lazarus 3.0, Windows dark mode is now fully
+supported, and a native Linux aarch64 version is now available.<br>
+The scripting generation engine is improved, and the app now supports
+Brotli 1.1.0 and Zstd 1.5.5 backend.<br>
             <br>
 A total of 234 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -271,62 +266,51 @@ please consider taking the time to give a look to <a
 repository</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
-            <span style="color: rgb(204, 0, 0);">UPDATE:
-peazip_portable-9.6.0.LINUX.GTK2.aarch64.tar.gz is now available for
-aarch64 Linux systems.</span><br style="color: rgb(204, 0, 0);">
-            <span style="color: rgb(204, 0, 0);">This is the first
-native build targeting this architecture, please report any issue and
-suggestion to improve the package for the future releases.<span
- style="font-weight: bold;"></span></span><span
- style="color: rgb(204, 0, 0);"></span><span
- style="color: rgb(204, 0, 0);"><span style="font-weight: bold;"></span></span><span
- style="color: rgb(204, 0, 0);"></span><br>
-            <br>
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
 values of
-9.5.0
+9.7.0
 packages</span></big></h3>
-5d413ddb493190b3be3d0f51dabf4d79e9b8bdc533f4c5a31d9f42e7c05ef781&nbsp;
-peazip-9.6.0.about_translations.zip<br>
-8e5fbd077adefa44ed31bf32e95bfc3580d04c949541f0222006a4b21622bd7a&nbsp;
-peazip-9.6.0.DARWIN.aarch64.dmg<br>
-d1cd6d0e0bd2b2e7e63085c3bdd3ec4d851aecaef0991ead302913b1e3e925cb&nbsp;
-peazip-9.6.0.DARWIN.x86_64.dmg<br>
-f85fd6f1d0c092277287fb8f5ca8494a0ea9bc8768d9d365415c8dd3d2ba441f&nbsp;
-peazip-9.6.0.DARWIN.x86_64.zip<br>
-29954fa87cc028fdf18e18665c026ede93c66d16bca5257ac3e799f2c0aa4947&nbsp;
-peazip-9.6.0.LINUX.GTK2-1.x86_64.rpm<br>
-b22c0ef4d3539cc96c39e880b26954f6c674f23e76dc021151a1e25c268ba40e&nbsp;
-peazip-9.6.0.LINUX.Qt5-1.x86_64.rpm<br>
-82238ba3b5415303655b00b51a1333ccf61ef456f8cd77fb3913f11dd8eec1f0&nbsp;
-peazip-9.6.0.pack.zip<br>
-d8220cb729a943f52ad3617876369ce0c29bd9a43c37d4ede551b7002068f0e4&nbsp;
-peazip-9.6.0.src.zip<br>
-6453ec37d57dbddedb1476a8b9924990decf6b4ec529e783c0ad39b8765a74c6&nbsp;
-peazip-9.6.0.WIN64.exe<br>
-dcfb90805935350e9a9158f83faf9e768d7045b6d9df8a52f0f9f13088f38b20&nbsp;
-peazip-9.6.0.WINDOWS.exe<br>
-83f467ffa751e0b6e4f171071d9e9276746a4ae8312a84a9e1bea327afba045a&nbsp;
-PeaZip_9.6.0.0_x64__m1xx1d1szsx2y.msix<br>
-f4cf1f8d0e9de0d626a92ea4432ab8057ac26906dfe514208b32ba228169293d&nbsp;
-peazip_9.6.0.LINUX.GTK2-1_amd64.deb<br>
-96c86e1042fbd9f10d88816dd31bb3dc3ca9628b0ccec43376eb36f631c6a576&nbsp;
-peazip_9.6.0.LINUX.Qt5-1_amd64.deb<br>
-51e11886b686af6d92e176457ba6119a71a47a5b6958661e0ad795503b038f7f&nbsp;
+d02238dd5e2b3013b4f393408639e1d955aa73c409203b185f5977fff69e92d6&nbsp;
+peazip-9.7.0.about_translations.zip<br>
+3ee26aa5fd7b1a113c2753bf2cdfa75657b299f41c67361e7112d4a178d9c6bf&nbsp;
+peazip-9.7.0.DARWIN.aarch64.dmg<br>
+39c3af6d9fdc2a283d6e9af56a877fa3e2121c2ebe9a395e09264749f158225a&nbsp;
+peazip-9.7.0.DARWIN.x86_64.dmg<br>
+fd721fe729e950204705173a8ce9f339e22773ec4afe72d2584da1a249d3938b&nbsp;
+peazip-9.7.0.DARWIN.x86_64.zip<br>
+9942d64e43da70a0ecbf7d7aa46c396c8ef94781c80e5de4aa876bcdc8ca08e9&nbsp;
+peazip-9.7.0.LINUX.GTK2-1.x86_64.rpm<br>
+9381794c6904320ba1fbb3b8f0027992d894220afb9356a40ee144461632bb8e&nbsp;
+peazip-9.7.0.LINUX.Qt5-1.x86_64.rpm<br>
+91c0e476339384db712fa3fa12446e8db1f395c396d94fad223ce0af29734306&nbsp;
+peazip-9.7.0.pack.zip<br>
+d01cbb2e2abaddfcc0701d62a2f0c1169167307d4b2942bfa038ce377018e2fe&nbsp;
+peazip-9.7.0.src.zip<br>
+2dd48a46f1260dea3e832b812706687735d9f0948b5ccd571878f7ffb0293913&nbsp;
+peazip-9.7.0.WIN64.exe<br>
+665e16762d78d71abd1fa91d188dfac7d8d6b58c980cc083b42caf6814c39b73&nbsp;
+peazip-9.7.0.WINDOWS.exe<br>
+f9af6568212e5e9f81e5ca3d4291a32f66dc19a0c3df955d5535caeea3770248&nbsp;
+PeaZip_9.7.0.0_x64__m1xx1d1szsx2y.msix<br>
+f6bf64ab53d75bec1a9b954c418a0972f2e5e2c04e853cd32bda36246a54b31d&nbsp;
+peazip_9.7.0.LINUX.GTK2-1_amd64.deb<br>
+b9afb05728b1b134c1eea46b6b132669ed72c525f216c4005ee1728baf4621f1&nbsp;
+peazip_9.7.0.LINUX.Qt5-1_amd64.deb<br>
+b71d507cdbacbaec3b6609f3828cec7e244b61221b307ca1752af17a7ee473cc&nbsp;
 peazip_help.pdf<br>
-05475e94c6e238bd28e3a55798b0ac56e0027440e57b881796e4688a5ef90c66&nbsp;
-peazip_portable-9.6.0.BSD.GTK2.x86_64.tar.gz<br>
-ef5597a35a3a478975a025183d3780abbee602159857ec8183608e7a39455da7&nbsp;
-peazip_portable-9.6.0.LINUX.GTK2.aarch64.tar.gz<br>
-b692274622eb8ae351c05ab708f151fbda85d07e608301bebf75f1f2f83bc6fc&nbsp;
-peazip_portable-9.6.0.LINUX.GTK2.x86_64.tar.gz<br>
-3326f1097c30d881aac81e197d402b2ae785d3b45fec8a546941447cec29c95d&nbsp;
-peazip_portable-9.6.0.LINUX.Qt5.x86_64.tar.gz<br>
-654d0098c790d00b1ab1d7b4d6c59a854e4ccb30eeeb868906c98823fc44bef3&nbsp;
-peazip_portable-9.6.0.WIN64.zip<br>
-0fbd16348e26372fb6eabfa7af307463e32912b114c9e986a3eb34ac8817322f&nbsp;
-peazip_portable-9.6.0.WINDOWS.zip<br>
+ba16dc1f12095ee89d619bd02519dd585cff3c60c8d2b917e7cabab9190406c8&nbsp;
+peazip_portable-9.7.0.BSD.GTK2.x86_64.tar.gz<br>
+5199828bc2fbb20baba95ed0a69c06fad915ab7c8ae7f2d55806028b2eaa6c56&nbsp;
+peazip_portable-9.7.0.LINUX.GTK2.aarch64.tar.gz<br>
+86266ee55fa2418d824a11c52b9f46d76b28dffb6716f399d04202fb527ed10c&nbsp;
+peazip_portable-9.7.0.LINUX.GTK2.x86_64.tar.gz<br>
+7320cb46ac66b3b049d18ed71e5a17b25f8a85e7a45f26430a536b1e2d73bde9&nbsp;
+peazip_portable-9.7.0.LINUX.Qt5.x86_64.tar.gz<br>
+355d9ffeec3af1b3b0351a2d6d9ba1cd31d6ea60ebaffbe7aacefdd585b7a920&nbsp;
+peazip_portable-9.7.0.WIN64.zip<br>
+64732f1f24ec26fffeeb8b397b65b1938d8e6b91d5f90435f451564f1815308a&nbsp;
+peazip_portable-9.7.0.WINDOWS.zip<br>
             </td>
           </tr>
         </tbody>
@@ -346,6 +330,85 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2022 12 18 ..
 CURRENT </div>
+            <br>
+2024 02 11<br>
+            <div style="margin-left: 40px;">9.7.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Brotli 1.1.0<br>
+Pea 1.17<br>
+Zstd 1.5.5<br>
+7z 24.01 beta successfully tested, but not
+included as backend due its beta status<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Compiled with Lazarus 3.0,
+but still compatible with Lazarus 2.x line<br>
+Improved loading of translations<br>
+            <div style="margin-left: 40px;">Can now load language files
+encoded as UTF8, and as UTF8-BOM (preferred)<br>
+Improved support for old translation files not matching with
+application's version<br>
+            </div>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed -ext2simple bug, the
+switch is now properly working<br>
+Fixed Qt5 seection issue, the file browser in details mode is now set
+to row selection<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Smart filename sorting</span> can now be
+turned on/off form Options &gt; Organize<br>
+(Windows) PeaZip now supports the Windows 10 and newer systems <span
+ style="font-weight: bold;">Dark Mode</span> using zamtmn
+metadarkstyle.lpk, thanks to user contributed pull request 114. <br>
+            <div style="margin-left: 40px;">Classic dark themes / high
+contrast mode is still supported on all Windows systems<br>
+            </div>
+(Themes) Improved "Button" alternative Tab style<br>
+            <div style="margin-left: 40px;">Vertical tabs in Options
+screen are now themed accordingly to theme's tab style<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Improved the scripting
+generation engine:<br>
+            <div style="margin-left: 40px;">In Console tab af archiving
+and extraction screens it is now available a new option for the
+scripting engine to<span style="font-weight: bold;"> use strdin/stdout
+pipe for creation and extraction of compressed TAR archives</span>, so
+no intermediate TAR file needs to be saved on disk during those
+operations<br>
+            <div style="margin-left: 40px;">This option does not apply
+to the GUI app itself (which launches the operations as distinct single
+processes), but only to scripts generated by the application, which can
+be saved to run independently in console instances<br>
+The option applies only to formats handles through 7z / p7zip backend<br>
+For extraction operation, the option applies only a single or multiple
+archives are sent to extraction scren, not while brosing a single
+archive (either for partial or total extraction)<br>
+            </div>
+            </div>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(Linux) It is now available
+PeaZip Portable for <span style="font-weight: bold;">aarch64 Linux, t</span>he
+first test release was released built on previous version's code<br>
+(Windows) Improved <span style="font-weight: bold;">Windows 11
+mini-context menu</span> entries, now displaying correct PeaZip icons;
+sample scripts to integrate PeaZip with W11 mini-context menu are
+available in the app inside the subfolder
+(peazip)\res\share\batch\Windows\Windows 11 mini context menu<br>
+(Windows) Packages and configuration wizard built with InnoSetup
+6.2.2&nbsp; <br>
+            </div>
+            </div>
+            </div>
             <br>
 2023 12 17<br>
             <div style="margin-left: 40px;">9.6.0<br>

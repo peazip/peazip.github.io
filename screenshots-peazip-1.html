@@ -309,8 +309,9 @@ listing mode is currently implemented).<br>
             <h2 style="font-weight: bold;"><a name="dark_mode"></a><big><big><a
  href="screenshots-peazip-1.html#file_manager"><big>Dark mode</big></a></big></big></h2>
             <br>
-PeaZip fully support dark mode on <span style="font-weight: bold;">macOS</span>,
-            <span style="font-weight: bold;">BSD</span>, and <span
+PeaZip fully support dark mode on <span style="font-weight: bold;">Windows</span>,
+            <span style="font-weight: bold;">macOS</span>, <span
+ style="font-weight: bold;">BSD</span>, and <span
  style="font-weight: bold;">Linux </span>with different
 Desktop Environments: <span style="font-weight: bold;">Gnome </span>and
 derivatives (DE such as <span style="font-weight: bold;">Cinnamon </span>and
@@ -320,13 +321,19 @@ derivatives (DE such as <span style="font-weight: bold;">Cinnamon </span>and
 supported by PeaZip on any system that is
 correctly passing to the application the real system's colors.<br>
             <a name="peazip_dark_mode_linux"></a>To set PeaZip in dark
-mode on Linux it is sufficient to set a dark theme for the desktop
+mode on Linux or BSD it is sufficient to set a dark theme for the
+desktop
 environment, and most DE will pass correct colors to application's GUI,
 menus, etc, next time PeaZip is started.<br>
-            <a name="peazip_dark_mode_macos"></a>In the same way, to
+            <a name="peazip_dark_mode_macos"></a>To
 set PeaZip in dark mode on macOS it is sufficient to set macOS in dark
 mode: System Preferences &gt; General, select "Dark" or "Auto" in
 Appearance section.<br>
+            <a name="peazip_windows_dark_mode"></a>To set PeaZip to
+dark mode on Windows it is possible either to set Dark mode in
+Personalization &gt; Colors, or to set an Hig contrast (or any other
+Windows Theme with dak color scheme) in Settings &gt; Ease of Access
+&gt; High contrast.<br>
             <br>
             <h2><a href="macos-darkmode.png" target="_blank"><img
  alt="dark mode file browser" title="PeaZip in dark mode on macOS"
@@ -351,64 +358,66 @@ mode on FreeBSD</span><br>
 mode on Linux (Mint)</span><br>
             <br>
             <br>
-            <h3><big style="font-weight: bold;">PeaZip dark mode on
+            <h3><big style="font-weight: bold;">PeaZip Dark mode on
 Windows</big></h3>
             <br>
-PeaZip currently does not fully support Windows dark mode, which is
-meant - by Microsoft design limitation - for UWP applications only.<br>
-Unlike versions of Windows prior than 10, applying Dark Mode theming
-does
-not changes system's colors values passed to Win32/Win64 applications,
-but changes only colors passed to UWP apps.<br>
-Until Windows Dark Mode is implemented by Microsoft (alone) in this
-bizarre and limited way, purposely passing wrong values for on screen
-colors to
-non-UWP apps, supporting it will need each non-UWP application to
-replace the code for drawing each widget drawn by the system (e.g.
-checkboxes, combo boxes, listviews, etc), overriding standard - proven,
-stable, and optimized for speed - system drawing routines with custom
-ones.<br>
-            <br style="font-weight: bold;">
             <a style="font-weight: bold;"
- name="peazip_dark_mode_windows"></a><span style="font-weight: bold;">There
-are however
-some possible workarounds in order to use PeaZip in
-dark mode even on Windows 10+ systems:</span><br>
-            <p><span style="font-weight: bold;">1) High contrast mode</span><br>
-            </p>
-            <p>Set Windows in <span style="font-weight: bold;">High
-Contrast</span> mode: in system's
-settings it is possible to set on of the pre-set high
-contrast theme, which passes dark system colors to all non-UWP
-applications,
-including PeaZip, as seen in following screenshot.</p>
-            <p>Windows high contrast themes can be further
-customized, creating custom dark themes, to better match personal
-tastes and make Win32/Win64 apps more similar to UWP/Modern apps in
-dark mode.<br>
-            </p>
-            <h2><a href="peazip-high-contrast.png" target="_blank"><img
- alt="open source file browser" title="High Contrast theme"
- src="peazip-high-contrast.png"
+ name="peazip_dark_mode_windows"></a>PeaZip fully support Windows dark
+modes.<br>
+            <br>
+On Windows 10 and later systems the dark mode is
+set separately - by design - for UWP / &#8221;modern&#8221; apps (from
+Personalization &gt; Colors) and
+for Win32 (from Settings &gt; Ease of Access &gt; High contrast),
+leading to inconsistencies in color schemes between the two types of
+apps - including parts of the OS itself.<br>
+            <br>
+PeaZip supports both darlk mode methods so in <span
+ style="font-weight: bold;">Windows 10 and later systems</span> it is
+possible to run PeaZip in dark mode either setting system to Dark mode,
+or setting system in High contrast mode.<br>
+The first method provides the better visual result, but the latter
+method has the advantage of applying a dark color palette to all Win32
+apps at once.<br>
+            <span style="font-weight: bold;"><br>
+            </span>Running PeaZip in dark mode on <span
+ style="font-weight: bold;">older Windows systems</span> simply require
+to set a dark Windows Theme, this will
+change the colors of the app elements accordingly to the system theme
+colors.<br>
+            <br>
+            <span style="font-weight: bold;"> </span>
+            <h2><a href="peazip-windows-darkmode.png" target="_blank"><img
+ alt="open source file browser" title="Windows Dark mode"
+ src="peazip-windows-darkmode.png"
  style="border: 0px solid ; width: 850px; height: 557px;"></a></h2>
             <p><br>
-            <span style="font-weight: bold;">2) Theming<br>
+            <span style="font-weight: bold;"><big><big>Theming</big></big><br>
             </span></p>
-            <p><span style="font-weight: bold;">Set a dark background
-application
-color</span> in
-Options
-&gt; Settings &gt; Theme within the limits to preserve
+            <p>If it is preferred to change the look &amp; feel of
+PeaZip application only, from PeaZip Options
+&gt; Settings &gt; Theme it is possible to change app's <span
+ style="font-weight: bold;">contrast</span>, <span
+ style="font-weight: bold;">color temperature</span>, <span
+ style="font-weight: bold;">accent color</span>, and <span
+ style="font-weight: bold;">background color</span> - which furter
+helps in customizing the app's own "darkness" <span
+ style="font-weight: bold;"></span>within the limits to preserve
 legibility of system-drawn widgets (which cannot be drawn by the
-application in custom colors), as seen in next screenshot.</p>
-            <p>It is possible to change the color freely with a color
+application in custom colors).</p>
+            <p>The app background color can be personalized freely with
+a color
 picker control, and there are also available various neutral dark
-pre-sets as well as tints like Graphite (cold gray), Mocha (warm,
-coffee gray), Plum (rose tinted gray), and Senape (yellowish tinted
+pre-sets as well as tints like <span style="font-weight: bold;">Graphite
+            </span>(cold gray), <span style="font-weight: bold;">Mocha
+            </span>(warm,
+coffee gray), <span style="font-weight: bold;">Plum </span>(rose
+tinted gray), and <span style="font-weight: bold;">Senape </span>(yellowish
+tinted
 gray).<br>
             </p>
             <h3><a href="peazip-dark-mode.png" target="_blank"><img
- alt="open source file manager" title="PeaZip Dark option"
+ alt="open source file manager" title="PeaZip Mocha theme"
  src="peazip-dark-mode.png"
  style="border: 0px solid ; height: 558px; width: 850px;"></a></h3>
             <p><br>
