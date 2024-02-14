@@ -249,11 +249,12 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 9.7.0 release is primarily meant to update app's foundations:
+PeaZip 9.7 is primarily meant to update app's foundations:
 sources are now built with Lazarus 3.0, Windows dark mode is now fully
 supported, and a native Linux aarch64 version is now available.<br>
 The scripting generation engine is improved, and the app now supports
 Brotli 1.1.0 and Zstd 1.5.5 backend.<br>
+9.7.1 release is a bug fix update over the previous version.<br>
             <br>
 A total of 234 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -269,48 +270,12 @@ for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
 values of
-9.7.0
+9.7.1
 packages</span></big></h3>
-d02238dd5e2b3013b4f393408639e1d955aa73c409203b185f5977fff69e92d6&nbsp;
-peazip-9.7.0.about_translations.zip<br>
-3ee26aa5fd7b1a113c2753bf2cdfa75657b299f41c67361e7112d4a178d9c6bf&nbsp;
-peazip-9.7.0.DARWIN.aarch64.dmg<br>
-39c3af6d9fdc2a283d6e9af56a877fa3e2121c2ebe9a395e09264749f158225a&nbsp;
-peazip-9.7.0.DARWIN.x86_64.dmg<br>
-fd721fe729e950204705173a8ce9f339e22773ec4afe72d2584da1a249d3938b&nbsp;
-peazip-9.7.0.DARWIN.x86_64.zip<br>
-9942d64e43da70a0ecbf7d7aa46c396c8ef94781c80e5de4aa876bcdc8ca08e9&nbsp;
-peazip-9.7.0.LINUX.GTK2-1.x86_64.rpm<br>
-9381794c6904320ba1fbb3b8f0027992d894220afb9356a40ee144461632bb8e&nbsp;
-peazip-9.7.0.LINUX.Qt5-1.x86_64.rpm<br>
-91c0e476339384db712fa3fa12446e8db1f395c396d94fad223ce0af29734306&nbsp;
-peazip-9.7.0.pack.zip<br>
-d01cbb2e2abaddfcc0701d62a2f0c1169167307d4b2942bfa038ce377018e2fe&nbsp;
-peazip-9.7.0.src.zip<br>
-2dd48a46f1260dea3e832b812706687735d9f0948b5ccd571878f7ffb0293913&nbsp;
-peazip-9.7.0.WIN64.exe<br>
-665e16762d78d71abd1fa91d188dfac7d8d6b58c980cc083b42caf6814c39b73&nbsp;
-peazip-9.7.0.WINDOWS.exe<br>
-f9af6568212e5e9f81e5ca3d4291a32f66dc19a0c3df955d5535caeea3770248&nbsp;
-PeaZip_9.7.0.0_x64__m1xx1d1szsx2y.msix<br>
-f6bf64ab53d75bec1a9b954c418a0972f2e5e2c04e853cd32bda36246a54b31d&nbsp;
-peazip_9.7.0.LINUX.GTK2-1_amd64.deb<br>
-b9afb05728b1b134c1eea46b6b132669ed72c525f216c4005ee1728baf4621f1&nbsp;
-peazip_9.7.0.LINUX.Qt5-1_amd64.deb<br>
-b71d507cdbacbaec3b6609f3828cec7e244b61221b307ca1752af17a7ee473cc&nbsp;
-peazip_help.pdf<br>
-ba16dc1f12095ee89d619bd02519dd585cff3c60c8d2b917e7cabab9190406c8&nbsp;
-peazip_portable-9.7.0.BSD.GTK2.x86_64.tar.gz<br>
-5199828bc2fbb20baba95ed0a69c06fad915ab7c8ae7f2d55806028b2eaa6c56&nbsp;
-peazip_portable-9.7.0.LINUX.GTK2.aarch64.tar.gz<br>
-86266ee55fa2418d824a11c52b9f46d76b28dffb6716f399d04202fb527ed10c&nbsp;
-peazip_portable-9.7.0.LINUX.GTK2.x86_64.tar.gz<br>
-7320cb46ac66b3b049d18ed71e5a17b25f8a85e7a45f26430a536b1e2d73bde9&nbsp;
-peazip_portable-9.7.0.LINUX.Qt5.x86_64.tar.gz<br>
-355d9ffeec3af1b3b0351a2d6d9ba1cd31d6ea60ebaffbe7aacefdd585b7a920&nbsp;
-peazip_portable-9.7.0.WIN64.zip<br>
-64732f1f24ec26fffeeb8b397b65b1938d8e6b91d5f90435f451564f1815308a&nbsp;
-peazip_portable-9.7.0.WINDOWS.zip<br>
+Hash value of each package in each release is now published in the <a
+ target="_blank"
+ href="https://github.com/peazip/PeaZip/releases/download/9.7.1/SHA256.txt">SHA256.txt</a>
+file of the release.<br>
             </td>
           </tr>
         </tbody>
@@ -331,8 +296,31 @@ version)</span><br>
             <div style="text-align: right;">2022 12 18 ..
 CURRENT </div>
             <br>
+2024 02 14<br>
+            <div style="margin-left: 40px;">9.7.1<br>
+            <div style="margin-left: 40px;">CODE<br>
+            <div style="margin-left: 40px;">Added "Requires restarting
+PeaZip" hint missing in some controls<br>
+Created SHA256.txt file containing SHA256 hash of each package in the
+release<br>
+Fixed Options links, now always open General tab as expected<br>
+Fixed restart loop switching off history checkbox, improved code
+against occurrence of similar issues<br>
+Fixed symbol lookup error experienced in some Linux ditributions with
+Qt5 packages<br>
+Fixed usupported compression method eoor experienced extracting source
+package using some unzip utilities<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Updated
+translations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+            </div>
+            </div>
+            </div>
+            <br>
 2024 02 11<br>
-            <div style="margin-left: 40px;">9.7.0<br>
+            <div style="margin-left: 40px;">9.7.0
             <div style="margin-left: 40px;">BACKEND<br>
             <div style="margin-left: 40px;">Brotli 1.1.0<br>
 Pea 1.17<br>
