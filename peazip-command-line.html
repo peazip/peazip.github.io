@@ -593,7 +593,8 @@ and "smart new folder" directives are both set to off during the
 execution of this function, without modifying program's configuration.<br>
               </li>
               <li><span style="font-weight: bold;">-ext2folder</span>
-(alias-ext2smart) works as previous switch but setting both "extract to
+(alias<span style="font-weight: bold;">-ext2smart</span>) works as
+previous switch but setting both "extract to
 new folder" and "smart new folder" directives on. In this way the
 archive is extracted to a fresh new folder with unique name (named
 after the archive), but only if 1) the archive's root contains more
@@ -605,24 +606,55 @@ works as previous switches but setting "extract to new folder" on and
 "smart new folder" off, in this case the archive's content is always
 extracted to a fresh new folder with unique name, named after the
 archive.</li>
+              <li>-ext2neutral directly extracts archives in current
+path applying the "new folder" policy as defined in PeaZip app (non,
+new folder, smart new folder, or force new folder)</li>
+              <li>-ext2downloads, -ext2desktop, -ext2documents directly
+extract archives in Downloads, Desktop, or Documents path; hose options
+apply PeaZip&#8217;s new folder policy, as in -ext2neutral switch</li>
+              <li>-ext2bookmark(1..8) extract archives in the path of
+the bookmarked item number 1 to 8; hose options apply PeaZip&#8217;s new
+folder policy, as in -ext2neutral switch.</li>
             </ul>
+            <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);">Available
+options for extraction operations:<br>
+-i ignore &#8220;Delete original archives after extraction&#8221; directive, if set
+in the application<br>
+-o next parameter declares output path, otherwise assume path of first
+input item as base output path<br>
+-p next parameter declares password, otherwise if password is needed it
+is asked interactively<br>
+Those switches execute single or multiple tasks as a single sequence of
+queued tasks: in this way multiple batch extraction tasks can run in a
+single window without stealing the focus each time the next task in
+sequence is started<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
             <ul>
-              <ul>
-                <li>-ext2to (and -ext2tofolder, -ext2newfolder...)
+              <li>-ext2to (and -ext2tofolder, -ext2newfolder...)
 variants extract archive(s)
 interactively asking for output directory;</li>
-                <li>-ext2simple (and -ext2simplefolder,
+              <li>-ext2simple (and -ext2simplefolder,
 -ex2simplenewfolder) variants allows to specify output
 path as first parameter; <br>
-                </li>
-                <li>all those switches runs multiple extraction tasks
+              </li>
+              <li>all those switches runs multiple extraction tasks
 in a single GUI instance (which shows progress bar for current task and
 another progress bar for global progress), allowing i.e. to minimize
 the entire batch of tasks. If this behavior is not wanted, switches
 with
 "_" suffix, i.e. -ext2here_, runs each extraction process as a separate
 GUI instance.<br>
-                </li>
+              </li>
+              <ul>
               </ul>
             </ul>
             <ul>

@@ -249,12 +249,18 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 9.7 is primarily meant to update app's foundations:
-sources are now built with Lazarus 3.0, Windows dark mode is now fully
-supported, and a native Linux aarch64 version is now available.<br>
-The scripting generation engine is improved, and the app now supports
-Brotli 1.1.0 and Zstd 1.5.5 backend.<br>
-9.7.1 release is a bug fix update over the previous version.<br>
+PeaZip 9.8.0 release brings new Themes, improved flat mode (display all
+archive content at once), and the ability to directly extract all or
+selected items to any path in bookmarks, history or breadcrumb without
+further confirmation.<br>
+Direct extraction is implemented in app's context menu in "Extract to"
+submenu, and it is also available as command line switches for scripts
+and for system integration (context menus, SendTo items, .desktop
+files,
+Automator scripts).<br>
+Sources are compiled with new Lazarus 3.2, and are still compatible
+with Lazarus 2.x line.<br>
+            <br>
             <br>
 A total of 234 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -270,11 +276,12 @@ for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
 values of
-9.7.1
+9.8.0
 packages</span></big></h3>
 Hash value of each package in each release is now published in the <a
  target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/9.7.1/SHA256.txt">SHA256.txt</a>
+ href="https://github.com/peazip/PeaZip/releases/download/9.8.0/SHA256.txt">9.8.0
+SHA256.txt</a>
 file of the release.<br>
             </td>
           </tr>
@@ -295,6 +302,91 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2022 12 18 ..
 CURRENT </div>
+            <br>
+2024 05 11<br>
+            <div style="margin-left: 40px;">9.8.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+Pea 1.18<br>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Code cleanup<br>
+Compiled with Lazarus 3.2, sources are still compatible with Lazarus
+2.x line<br>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed directory name
+sorting which for some widget sets was wrongly displayed in treeview
+and breadcrumb dropdown menus<br>
+Fixed drag and drop extraction failing for some paths (Windows)<br>
+Fixed inability to browse symlinked directories on Windows (other
+systems are immune from the issue)<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added "<span
+ style="font-weight: bold;">Always browse archives in flat view</span>"
+option switch in main menu &gt; Browse and app's context menu &gt;
+Navigation<br>
+Added<span style="font-weight: bold;"> Comment, and Info functions</span>
+to Status bar context menu, to improve its usefulness in providing
+information to user<br>
+Improved <span style="font-weight: bold;">direct extraction of
+archives from context menu</span><br>
+            <div style="margin-left: 40px;">From context menu "Extract
+to" submenu it is now possible to <span style="font-weight: bold;">directly
+extract all or selected item(s), without further confirmation, to any
+output path in bookmarks, history or breadcrumb</span><br>
+            </div>
+            <div style="margin-left: 40px;">Extract here links
+(optionally to smart folder or to new folder) can now extract all or
+selected items<br>
+            </div>
+            <div style="margin-left: 80px;">In the dropdown menu of
+Extract button are still available "Extract all" entries<br>
+            </div>
+            <div style="margin-left: 40px;">Selection and navigation
+submenus in extraction and archiving screens are now organized in same
+way of extract here submenu: bookmarks are shown first, history,
+session history, and breadcrumb are shown in History submenu<br>
+            </div>
+Rename dialog now allows to directly switch to Move to dialog (change
+file path string rather than file name string)<br>
+            <span style="font-weight: bold;">Updated themes</span><br>
+            <div style="margin-left: 40px;">New Mac and Tux themes<br>
+Old themes and additional custom themes are still available online,
+clicking "Check for Themes" button on Themes screen<br>
+            </div>
+(Windows 10+) The application, which by default follows system colors, <span
+ style="font-weight: bold;">can be manually forced to light or dark mode</span>,
+regardless system mode, creating an empty file named "light" or "dark"
+in the same path of the executable (not integrated with themes due to
+technical limitations)<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added <span
+ style="font-weight: bold;">new command line switches</span>, which can
+be used both in scripts and for system integration (context menus,
+SendTo items, .desktop files, Automator scripts)<br>
+            <div style="margin-left: 40px;">-ext2neutral directly
+extracts archives in current path applying the "new folder" policy as
+defined in PeaZip app (non, new folder, smart new folder, or force new
+folder)<br>
+-ext2downloads, -ext2desktop, -ext2documents directly extract archives
+in Downloads, Desktop, or Documents path (applying app's new folder
+policy)<br>
+-ext2bookmark(1..8) extract archives in the path of the bookmarked item
+number 1 to 8<br>
+Windows context menu versions of those switches begins with -ext2multi
+instead of -ext2<br>
+Created sample scripts (.bat, .sh), W11 mini-context menu entries,
+SendTo items, .desktop files and macOS service menus for
+-ext2downloads, -ext2desktop, -ext2documents switches, in
+(PeaZip)/res/share/batch directory<br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2024 02 14<br>
             <div style="margin-left: 40px;">9.7.1<br>

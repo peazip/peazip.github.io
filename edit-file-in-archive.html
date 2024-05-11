@@ -311,6 +311,7 @@ edited - in example 7Z, TAR, WIM, and ZIP formats supported through
             <br>
             <span style="font-weight: bold;">Edit vcontent of arbitrary
 file types as archives</span><br>
+            <br>
 From Options
 &gt; Settings &gt; Archive manager tab it is possible to set <span
  style="font-weight: bold;">"Edit non canonical archive
@@ -321,6 +322,31 @@ by default and not recommended for general usage because those formats
 may require editing / saving metadata fields which are unsupported and
 out of
 the scope of general-purpose archiving applications.<br>
+            <br>
+            <span style="font-weight: bold;">Note about editing Windows
+EXE files</span><br>
+            <br>
+PeaZip can create EXE files as SFX (self-extracting archives) both
+employing 7Z and ARC compression.<br>
+It is possible to open / browse and to edit EXE files as archives, but
+&#8211; due to the multiple standards available for the format - not all
+types of EXE files can be read (for browsing) or written (for editing).<br>
+            <ul>
+              <li><span style="font-weight: bold;">Whenever the user
+attempts to edit the content of an EXE file PeaZip assumes the file is
+a 7Z SFX archives, because this structure can be bot read and written
+by the application.</span></li>
+            </ul>
+            <ul>
+              <li><span style="font-weight: bold;">As a role of thumb,
+to edit the content of an EXE file - which is not an SFX archive - it
+is possible to rename the file form .exe to .zip extension and to
+revert the extension back to .exe once done editing.</span> However
+please note that acting as a resource editor for EXE files is beyond
+the scope of the application, so edited EXE files are not guaranteed to
+work correctly &#8211; conversely, editing 7Z SFX EXE file is fully supported.</li>
+            </ul>
+            <br>
             <br>
 Read more about how to <a href="7zip-files-utility.html">edit files
 inside 7Z archives</a>, <a href="free-rar-create.html">edit content of
