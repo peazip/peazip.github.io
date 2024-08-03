@@ -220,6 +220,9 @@ encryption utility, encrypt
                 <p><a href="encrypt-files.html#apply_password">WHAT
 IS STRONG FILE ENCRYPTION</a></p>
               </li>
+              <li><a href="#add_password_to_archive">HOW ARE PASSWORDS
+MANAGED IN PEAZIP</a><br>
+              </li>
               <li>
                 <p><a href="encrypt-files.html#encrypt_file">HOW
 TO CREATE ENCRYPTED 7Z PEA RAR ZIP ARCHIVES</a></p>
@@ -365,7 +368,102 @@ Read about how quantum computing would likely affect symmetric key
 encryption algorithms employed in PeaZip, under current understandings
 of quantum computing technology, on <a
  href="quantum-computing-cryptography.html">Post-quantum computing
-cryptography analysis</a> page.<br>
+cryptography analysis</a> <br>
+            <br>
+            <br>
+            <br>
+            <h2><big style="font-weight: bold;"><big><big><a
+ name="add_password_to_archive"></a></big></big></big><a
+ href="encrypt-files.html#free_encryption_software"><big
+ style="font-weight: bold;"><big><big>How are passwords managed in
+PeaZip</big></big></big></a> <br>
+            </h2>
+            <br>
+            <br>
+            <big><span style="font-weight: bold;">How are passwords
+handled in PeaZip</span></big><br>
+            <br>
+Passwords are entered in PeaZip and kept only for the current session
+of the app - until the app is closed..<br>
+Unchecking option &#8220;Keep password for the current session&#8221; (in password
+prompt) is more restrictive as it resets the password each time a new
+archive is opened.<br>
+Passwords are kept in memory, unless the system decides to save app&#8217;s
+memory in a paging file - preventing this is beyond the possibility of
+the app.<br>
+            <br>
+By default passwords are then sent, ephemerally, to the backend
+binaries (handling each specific archive format) <span
+ style="font-weight: bold;">stdin of the process</span>, without
+sending them as command line parameters.<br>
+This is safer because sending passwords as command line parameters
+makes them visible, and logged, in the user&#8217;s process table and
+possibly console history, which (depending on the host system
+configuration) may not met the security requirements desired by the
+user.<br>
+            <br>
+Exceptions where the password is sent as command line parameter<br>
+            <ul>
+              <li>If it is not possible to use stdin input for the
+target backend binary</li>
+              <ul>
+                <li>This exception does apply to FreeArc, Pea, and
+Zpaq, legacy UnACE and UnRar5 plugins, and custom arbitrary binaries</li>
+                <li>This exception does NOT apply to 7z/p7zip (7Z, 7Z
+sfx, ZIP, ZIPX, RAR extraction) and WinRar (external, RAR compression)</li>
+              </ul>
+              <li>Always when using Console mode or GUI+Console mode
+option (Settings, Advanced tab Backend binaries option group),</li>
+              <li>Always when saving the task as command line script
+(Console tab in extraction and archiving screens). In this case it is
+also needed to securely handle the saved script file in order to not
+make it accessible to attackers.</li>
+            </ul>
+            <br>
+&#8220;<span style="font-weight: bold;">Force typing password interactively</span>&#8221;
+option (in password dialog) disables entering password in PeaZip app so
+password are never in app&#8217;s memory for any time, nor passed to backend
+binaries by any means - please note this will also disable browsing
+archives with encrypted TOC from PeaZip&#8217;s file browser.<br>
+When this option is checked <span style="font-weight: bold;">passwords
+are directly typed in each backend binary</span> - for any backend
+binary, and overriding any other PeaZip setting.<br>
+This mode can also be used to work with binaries that, for any reason,
+would not work with PeaZip passing password through pipes.<br>
+            <br>
+Console scripts generated with this option checked will require to
+interactively type passwords, and will never result in having passwords
+saved in them.<br>
+            <br>
+Limitations: <br>
+            <ul>
+              <li>In this mode it is not possible to browse <a
+ href="encrypt-filenames.html">archives with encrypted TOC</a><br>
+              </li>
+              <li>Zpaq backend does not accept password interactively,
+in this case password will not be asked nor passed in any way</li>
+            </ul>
+            <br>
+            <br>
+            <big><span style="font-weight: bold;">Characters allowed in
+passwords</span></big><br>
+            <br>
+All characters are allowed in passwords, and <span
+ style="font-weight: bold;">it is strongly recommended to mix
+uppercase, lowercase, numbers and symbols</span>, alongside <span
+ style="font-weight: bold;">relying on long password / passphrases
+which cannot be trivially linked to the user by social engineering, nor
+likely to be recovered with a dictionary attack</span>.<br>
+However as extra safety measure PeaZip checks the password field to
+avoid using quote character(s: this would make more difficult to check
+exported scripts (from Console tab in extraction and archiving screens)
+to detect if special characters in the password are correctly and
+safely escaped.<br>
+On Windows the warning is issued if &#8220; double quote character is used,
+on non-Windows systems only if both &#8216; single quote and &#8220; double quote
+characters are used.<br>
+&#8220;Force typing password interactively&#8221; option (in password dialog)
+disables this check so any character can be used.<br>
             <br>
             <br>
             <br style="font-weight: bold;">

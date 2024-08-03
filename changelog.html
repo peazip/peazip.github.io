@@ -249,18 +249,20 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 9.8.0 release brings new Themes, improved flat mode (display all
-archive content at once), and the ability to directly extract all or
-selected items to any path in bookmarks, history or breadcrumb without
-further confirmation.<br>
-Direct extraction is implemented in app's context menu in "Extract to"
-submenu, and it is also available as command line switches for scripts
-and for system integration (context menus, SendTo items, .desktop
-files,
-Automator scripts).<br>
-Sources are compiled with new Lazarus 3.2, and are still compatible
+PeaZip 9.9.0 completes the evolution of 9.x line and sets the starting
+point for the upcoming 10.x releases.<br>
+Alongside many improvements and fixes in file manager (improved UAC
+elevation, and password testing) the new release adds the ability to
+drag and drop extract content from file browser to any folder in left
+sidebar (containing Bookmarks, History, and filesystem treeview).<br>
+Also, a new quick extraction link is now displayed on the right of the
+toolbar when an archive is being browsed, to extract all or selected
+content in current path (optionally to new folder/smart new folder).<br>
+Backends are now updated to 7z 24.07, Zstd 1.5.6, and Pea 1.19, which
+allows the user to specify a variable number of KDF rounds to further
+increase security against password brute forcing<br>
+Sources are compiled with new Lazarus 3.4, and are still compatible
 with Lazarus 2.x line.<br>
-            <br>
             <br>
 A total of 234 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -276,11 +278,11 @@ for newer language files and for any resource useful for translators.<br>
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
 values of
-9.8.0
+9.9.0
 packages</span></big></h3>
 Hash value of each package in each release is now published in the <a
  target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/9.8.0/SHA256.txt">9.8.0
+ href="https://github.com/peazip/PeaZip/releases/download/9.9.0/SHA256.txt">9.9.0
 SHA256.txt</a>
 file of the release.<br>
             </td>
@@ -302,6 +304,87 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2022 12 18 ..
 CURRENT </div>
+            <br>
+2024 08 03<br>
+            <div style="margin-left: 40px;">9.9.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z 24.07<br>
+Pea 1.19 adds <span style="font-weight: bold;">optional extra KDF
+rounds</span> for triple cascaded encryption in .PEA format (up to 20
+millions iterations for each algorithm, total 60 M rounds)<br>
+Zstd 1.5.6 (Windows, Linux)<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Compiled with Lazarus 3.4,
+sources are still compatible with Lazarus 2.x<br>
+Fixes and code cleanup<br>
+            <div style="margin-left: 40px;">Fixed loading Custom format
+in custom compression settings<br>
+Fixed browsing some special cases of archives (containing items with
+absolute paths starting with directopry separator characters)<br>
+            </div>
+Updated Options screen<br>
+            <div style="margin-left: 40px;">(7z/p7zip) syntax level can
+now be set to 21.07 and 23.01 legacy versions, form Options &gt;
+Settings &gt; Advances, Backend binaries<br>
+(7z/p7zip) new option to show timestamps as UTC insead of local time,
+form form Options &gt; Settings &gt; Archive manager<br>
+New group for TAR -related options in Options &gt; Settings &gt;
+Archive manager<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Windows) When UAC
+elevation is needed (non writeable output path) the user is now offered
+to restart the app UAC elevated.<br>
+            <div style="margin-left: 40px;">In this way it is not
+needed to require elevation to subsequent operations on the same path,
+and it is possible to use all of functions of PeaZip (console mode,
+force interactive password)<br>
+            </div>
+Added internal drag and drop features<br>
+            <div style="margin-left: 40px;">It is now possible to
+perform <span style="font-weight: bold;">internal drag and drop
+extraction</span> from file/archive manager to sidebar, both toward
+treeview panel and navigation panel (bookmarks, filesystem, history
+paths).<br>
+            <div style="margin-left: 40px;">It is possible to extract
+either one or more entire archive(s), or selected archive content while
+browsing archives<br>
+If right mouse button is pressed, it will be possible to choese to
+extract with or without new folder/smart new folder, overriding defaults<br>
+            </div>
+&nbsp;It is now possible to use drag and drop to add items from file
+browser/archive browser to Bookmarks panel<br>
+            </div>
+Archives are now tested for encryption also for list/test operations,
+so password is required in advance if needed<br>
+Improved System tools menu for Linux (context menu, File manager) <br>
+New <span style="font-weight: bold;">"Extract here" quick link</span>
+on the right of the tool bar, shown when browing an archive<br>
+            <div style="margin-left: 40px;">Extracts selected content,
+or entire archive if nothing is selected<br>
+Extracts to new/smart folder depending on settings, link text is
+adjusted accordingly<br>
+Shows context menu with all extraction options (here, smart, new
+folder) to be used on the fly without changing the configuration<br>
+            </div>
+            <span style="font-weight: bold;">The app now dispays if it
+isrunning as root</span> (admin or UAC elevated on Windows), showing
+&lt;ROOT&gt; (or &lt;ADMIN&gt;) note in main menu, or dropdown main
+menu (if main menu is hidden)<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Improved reading DMG, IMG,
+RPM, and SQUASHFS files as archives<br>
+            <span style="font-weight: bold;">Revamped task launcher GUI</span><br>
+Updated compression Presets files to support latest options set <br>
+            </div>
+            </div>
+            </div>
             <br>
 2024 05 11<br>
             <div style="margin-left: 40px;">9.8.0<br>
