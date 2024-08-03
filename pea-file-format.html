@@ -227,7 +227,7 @@ files, format features and specifications</big></big></big><br>
             </div>
             <h3 style="font-weight: bold; text-align: left;"><big><big>PEA
 file
-format specifications version 1.3</big></big></h3>
+format specifications version 1.4</big></big></h3>
             </div>
             <br>
             <br>
@@ -280,7 +280,7 @@ acts
 at 3 levels: objects (input files and folders sent to .pea archive),
 volumes (output archive file that can be spanned to user defined size)
 and streams (the actual output data stream that is formed by multiple
-input files and can be written written to multiple output volumes);
+input files and can be written to multiple output volumes);
 each one of those levels can
 be omitted as needed by the user.</div>
             <ul>
@@ -814,6 +814,12 @@ SHA3-384 value is checked for verification, this requires all the 3
 tags to match to expected values and does not allow ciphers to be
 authenticated separately</li>
             </ul>
+PEA format revision 1.4 introduced variable, user defined number of KDF
+rounds for the triple cascaded encryption, up to 20 million rounds for
+each of the 3 algorithms - also, please note rounds are based on 512
+bit hash primitives, which are more resources intensive than 256 bit
+counterparts.<br>
+            <br>
 Multiple encryption, if correctly implemented, is meant under current
 understandings to:<br>
             <ol>
