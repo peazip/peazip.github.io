@@ -1,640 +1,583 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is BR file format extension, Google's Brotli data compression algorithm. What are Brotli compressed files features and specifications.">
+    content="What is BR file format extension, Google's Brotli data compression algorithm. What are Brotli compressed files features and specifications.">
   <meta name="KEYWORDS"
- content="br, what are, brotli, google, what is, file, format, .br, compression, algorithm, archives, type, extension, features, specifications, specs, files">
+    content="br, what are, brotli, google, what is, file, format, .br, compression, algorithm, archives, type, extension, features, specifications, specs, files">
   <meta name="ROBOTS" content="all">
   <title>What is BR format (Brotli compressed files)</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is BR format (Brotli compressed files)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is BR format (Brotli compressed files)">
   <meta property="og:description"
- content="What is BR file format extension, Google's Brotli data compression algorithm. What are Brotli compressed files features and specifications.">
+    content="What is BR file format extension, Google's Brotli data compression algorithm. What are Brotli compressed files features and specifications.">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/brotli-compressed-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/brotli-compressed-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="BR file extension" alt="brotli files" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="brotli file extension" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="br_file_extension"></a><span
- style="font-weight: bold;">What is BR format, Brotli compressed files</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="What are Brotli compressed files features and specifications"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="What are BR files, Brotli compression algorithm"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="brotli_compression"></a><a
- href="brotli-compressed-file-format.html#br_file_extension">What
-are BR
-files, what is Brotli compression algorithm</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="BR file extension" alt="brotli files"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="brotli file extension"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <br>
-            <h2 style="font-weight: bold;"><big>BR extension</big></h2>
-            <br>
-            <a name="what_is_a_br_file"></a><span
- style="font-weight: bold;">BR</span> extension
-designates a <span style="background-color: rgb(255, 238, 221);">pure
-data compression format not
-providing file archival nor encryption features</span>.<br>
-            <br>
-            <a name="google_brotli_compression_specs"></a>Brotli-compressed
-files are usually identified by .br extension, and can
-contain a single input file; to overcome this by-design limitation
-PeaZip automatically cascades Brotli compression with <a
- href="tar-windows.html">TAR archive creation</a> if
-multiple files or folders are sent as input for BR file creation,
-resulting in a .tar.br archive.<br>
-            <br>
-            <span style="font-weight: bold;">TAR.BR extension</span><br>
-In this two step process, input files are consolideted in a single TAR
-archive (very fast, as no compression is involved), which is then
-compresed by Brotly in the second step. On a related note, this
-procedure improves compression ratio over compressing each input file
-separately, read more about this topic on <a
- href="what-is-solid-compression.html">solid compression</a> page.<br>
-            <br>
-PeaZip features <a href="brotli-compression-utility.html">creation and
-extraction of BR files</a>, can read (open, test and
-extract) and write (compress to) BR file type relying on official
-Google's Brotli implementations for Windows and Linux systems.<br>
-            <h2><img title="Brotli compression"
- alt="what is brotli compression algorithm" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h2>
-            <h3><img title="BR format features and specifications"
- alt="br format specifications" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-            <br>
-            <span style="font-weight: bold;"><br>
-            </span>
-            <h3 style="font-weight: bold;"><big>Brotli compression
-format characteristics<br>
-            </big></h3>
-            <span style="font-weight: bold;"><br>
-Brotli </span>compression
-algorithm was developed by Google continuing and superseding
-previous <span style="font-weight: bold;">Zopfli </span>project
-(which was meant for compatibility with standard zlib <a
- href="gzip-files.html">GZip</a> /&nbsp;
-Deflate specifications) in order to provide a more flexible compression
-algorithm, capable both of high speed at low compression settings, and
-improved (better than Deflate) compression ratio at higher compression
-settings.<br>
-Extraction of Brotli-compressed files is also extremely fast.<br>
-For its extreme data compression and decompression speed, and low CPU
-and memory usage (if compared to Deflate, or more powerful compression
-algorithms such as <a href="bzip2-file.html">BZip2</a>, LZMA, PPMd, <a
- href="paq-file-format.html">PAQ</a>) Brotli is a competitor of
-Facebook's <a href="zst-compressed-file-format.html">Zstandard</a>
-compression algorithm.<br>
-            <br>
-            <h4><big><span style="font-weight: bold;">Use of BR file
-format</span></big></h4>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="br_file_extension"></a><span style="font-weight: bold;">What is BR format, Brotli
+                              compressed files</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="What are Brotli compressed files features and specifications" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="What are BR files, Brotli compression algorithm" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="What is BR file format, Brotli compression algorithm"
- alt="br file extension" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;">
-                  <h3><span style="font-weight: bold;">When is Brotli
-compression
-recommended</span></h3>
-Google Brotli compression should be considered as viable alternative to
-Zopfli and Deflate (Gzip, ZIP) when maximum compression / extraction
-speed and efficiency is desired.<br>
-Both Brotli and its competitor Facebook's Zstandard outperforms classic
-zlib / Deflate in fast, near real time data compression and
-decompression.<br>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
                   </td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img
- title="Brotli BR format features and specifications"
- alt="br file type features" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <br>
-            <a name="br_format_specifications"></a>Read more about
-.br file type on <a target="_blank"
- href="https://github.com/google/brotli">Google Brotli
-official repository<img title="Google Brotli official repository"
- alt="Brotli online" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
- target="_blank" href="https://en.wikipedia.org/wiki/Brotli">Brotli
-algorithm<img title="wiki Brotli algorithm"
- alt="Brotli compression wiki" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> entry on
-Wikipedia.<br>
-            <span style="font-weight: bold;"></span><br>
-            <br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="brotli_files"></a>.BR</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Authors
-Jyrki Alakuijala, Zolt&aacute;n Szabadka (Google), 2013<br>
-limited to 1 single file as input<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img
- alt="brotli fast compression" title="Brotli compression speed"
- src="zip-files/star5.png" style="width: 80px; height: 16px;"></big></h4>
-Brotli excels in fast compression and clearly outperforms classic
-Deflate providing comparable compression levels.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img alt="Brotli algorithm performances"
- title="Brotli compression performances" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big></h4>
-Brotli algorithm provides flexible compression, with good compression
-ratio (improved over Deflate) at higher compression settings.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <big>ADVANCED
-OPTIONS <img alt="brotli features" title="Google BR format options"
- src="zip-files/star1.png" style="width: 80px; height: 16px;"></big><br>
-BR format is meant only for data streams or single-file compression,
-lacks
-archiving and encryption features by design.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="brotli_compression"></a><a
+                                href="brotli-compressed-file-format.html#br_file_extension">What
+                                are BR
+                                files, what is Brotli compression algorithm</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <br>
+                    <h2 style="font-weight: bold;"><big>BR extension</big></h2>
+                    <br>
+                    <a name="what_is_a_br_file"></a><span style="font-weight: bold;">BR</span> extension
+                    designates a <span style="background-color: rgb(255, 238, 221);">pure
+                      data compression format not
+                      providing file archival nor encryption features</span>.<br>
+                    <br>
+                    <a name="google_brotli_compression_specs"></a>Brotli-compressed
+                    files are usually identified by .br extension, and can
+                    contain a single input file; to overcome this by-design limitation
+                    PeaZip automatically cascades Brotli compression with <a href="tar-windows.html">TAR archive
+                      creation</a> if
+                    multiple files or folders are sent as input for BR file creation,
+                    resulting in a .tar.br archive.<br>
+                    <br>
+                    <span style="font-weight: bold;">TAR.BR extension</span><br>
+                    In this two step process, input files are consolideted in a single TAR
+                    archive (very fast, as no compression is involved), which is then
+                    compresed by Brotly in the second step. On a related note, this
+                    procedure improves compression ratio over compressing each input file
+                    separately, read more about this topic on <a href="what-is-solid-compression.html">solid
+                      compression</a> page.<br>
+                    <br>
+                    PeaZip features <a href="brotli-compression-utility.html">creation and
+                      extraction of BR files</a>, can read (open, test and
+                    extract) and write (compress to) BR file type relying on official
+                    Google's Brotli implementations for Windows and Linux systems.<br>
+                    <h2><img title="Brotli compression" alt="what is brotli compression algorithm"
+                        src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
+                    <h3><img title="BR format features and specifications" alt="br format specifications"
+                        src="extract-archive.png" style="width: 112px; height: 45px;"></h3>
+                    <br>
+                    <span style="font-weight: bold;"><br>
+                    </span>
+                    <h3 style="font-weight: bold;"><big>Brotli compression
+                        format characteristics<br>
+                      </big></h3>
+                    <span style="font-weight: bold;"><br>
+                      Brotli </span>compression
+                    algorithm was developed by Google continuing and superseding
+                    previous <span style="font-weight: bold;">Zopfli </span>project
+                    (which was meant for compatibility with standard zlib <a href="gzip-files.html">GZip</a> /&nbsp;
+                    Deflate specifications) in order to provide a more flexible compression
+                    algorithm, capable both of high speed at low compression settings, and
+                    improved (better than Deflate) compression ratio at higher compression
+                    settings.<br>
+                    Extraction of Brotli-compressed files is also extremely fast.<br>
+                    For its extreme data compression and decompression speed, and low CPU
+                    and memory usage (if compared to Deflate, or more powerful compression
+                    algorithms such as <a href="bzip2-file.html">BZip2</a>, LZMA, PPMd, <a
+                      href="paq-file-format.html">PAQ</a>) Brotli is a competitor of
+                    Facebook's <a href="zst-compressed-file-format.html">Zstandard</a>
+                    compression algorithm.<br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">Use of BR file
+                          format</span></big></h4>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img
+                                  title="What is BR file format, Brotli compression algorithm" alt="br file extension"
+                                  src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">
+                            <h3><span style="font-weight: bold;">When is Brotli
+                                compression
+                                recommended</span></h3>
+                            Google Brotli compression should be considered as viable alternative to
+                            Zopfli and Deflate (Gzip, ZIP) when maximum compression / extraction
+                            speed and efficiency is desired.<br>
+                            Both Brotli and its competitor Facebook's Zstandard outperforms classic
+                            zlib / Deflate in fast, near real time data compression and
+                            decompression.<br>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Brotli BR format features and specifications" alt="br file type features"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <a name="br_format_specifications"></a>Read more about
+                    .br file type on <a target="_blank" href="https://github.com/google/brotli">Google Brotli
+                      official repository<img title="Google Brotli official repository" alt="Brotli online"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
+                      target="_blank" href="https://en.wikipedia.org/wiki/Brotli">Brotli
+                      algorithm<img title="wiki Brotli algorithm" alt="Brotli compression wiki"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a> entry
+                    on
+                    Wikipedia.<br>
+                    <span style="font-weight: bold;"></span><br>
+                    <br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="brotli_files"></a>.BR</big></big></big></big></big></h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Authors
+                                            Jyrki Alakuijala, Zolt&aacute;n Szabadka (Google), 2013<br>
+                                            limited to 1 single file as input<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="brotli fast compression" title="Brotli compression speed"
+                                          src="zip-files/star5.png" style="width: 80px; height: 16px;"></big></h4>
+                                    Brotli excels in fast compression and clearly outperforms classic
+                                    Deflate providing comparable compression levels.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img alt="Brotli algorithm performances"
+                                          title="Brotli compression performances" src="zip-files/star4.png"
+                                          style="width: 80px; height: 16px;"></big></h4>
+                                    Brotli algorithm provides flexible compression, with good compression
+                                    ratio (improved over Deflate) at higher compression settings.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <big>ADVANCED
+                                      OPTIONS <img alt="brotli features" title="Google BR format options"
+                                        src="zip-files/star1.png" style="width: 80px; height: 16px;"></big><br>
+                                    BR format is meant only for data streams or single-file compression,
+                                    lacks
+                                    archiving and encryption features by design.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: What is BR
+                        file format extension. Google's Brotli data compression algorithm speed
+                        and compression ratio. What are Brotli compressed files features and
+                        specifications.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: BR file
+                        extension specs</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; What is BR format (Brotli compressed files)<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="brotli file extension" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <p><span style="font-weight: bold;">Synopsis: What is BR
-file format extension. Google's Brotli data compression algorithm speed
-and compression ratio. What are Brotli compressed files features and
-specifications.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: BR file
-extension specs</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; What is BR format (Brotli compressed files)<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="brotli file extension" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="brotli format specs" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="brotli_file_format"></a>DOWNLOADS<br>
+                      <img alt="br file extension" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="br file format" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="br_file_type"></a>SUPPORT<br>
+                      <img alt="what are brotli files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is brotli compression" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="what are brotli files" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is brotli file format" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="brotli file type" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="brotli format specs" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="brotli_file_format"></a>DOWNLOADS<br>
-            <img alt="br file extension" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="br file format" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="br_file_type"></a>SUPPORT<br>
-            <img alt="what are brotli files"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is brotli compression" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="what are brotli files"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is brotli file format" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="brotli file type" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

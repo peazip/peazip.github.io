@@ -1,993 +1,928 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Comparative of archive formats properties and performances. How 7Z, Brotli, RAR, ZIP, ZIPX, Zstandard and other archive types compare for best speed, compression, and features.">
+    content="Comparative of archive formats properties and performances. How 7Z, Brotli, RAR, ZIP, ZIPX, Zstandard and other archive types compare for best speed, compression, and features.">
   <meta name="KEYWORDS"
- content="comparison, archive, format, rar, zip, brotli, zstandard, compression, zipx, 7z, comparative, performances, speed, compare, features, how, rar vs zip, best, br, zst">
+    content="comparison, archive, format, rar, zip, brotli, zstandard, compression, zipx, 7z, comparative, performances, speed, compare, features, how, rar vs zip, best, br, zst">
   <meta name="ROBOTS" content="all">
   <title>Archive and compression formats comparison</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Archive and compression formats comparison: RAR vs ZIP 7Z Brotli Zstandard">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Archive and compression formats comparison: RAR vs ZIP 7Z Brotli Zstandard">
   <meta property="og:description"
- content="Comparative of archive formats properties and performances. How 7Z, Brotli, RAR, ZIP, ZIPX, Zstandard and other archive types compare for best speed, compression, and features.">
+    content="Comparative of archive formats properties and performances. How 7Z, Brotli, RAR, ZIP, ZIPX, Zstandard and other archive types compare for best speed, compression, and features.">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/archive-file-formats-comparison.html">
+  <meta property="og:url" content="https://peazip.github.io/archive-file-formats-comparison.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Archive formats comparison"
- alt="compare features of 7z rar tar zip archive formats"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="compare performances of 7z rar tar zip archive formats"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="rar_vs_zip"></a><span
- style="font-weight: bold;">Archive, compression formats comparison</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="ZIP format features and performances"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="7Z format features and performances"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="comparative_of_archive_types"></a><a
- href="archive-file-formats-comparison.html#rar_vs_zip">Compare
-features, compression ratio of archive formats</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="Archive formats comparison"
+                      alt="compare features of 7z rar tar zip archive formats" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="compare performances of 7z rar tar zip archive formats" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <span style="font-weight: bold;"></span>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="0" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top; width: 448px;">
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big><span style="font-weight: bold;">ZIP
-format features and performances</span><br>
-                        </big></h3>
-                        <br>
-                        <span style="font-weight: bold;"><a
- name="how_zip_compares_with_7z_rar_formats"></a>ZIP </span>is
-a popular <a href="what-is-zip-file.html">compressed file
-archiving format</a>, mainstream on Microsoft Windows systems; ZIP file
-format
-specifications are maintained by PKWare which
-originally developed the
-format.<br>
-                        <br>
-                        <h4><span style="font-weight: bold;">ZIP
-compared to 7Z and RAR formats</span></h4>
-Newer archive formats like 7Z and RAR have gained popularity and
-introduced several improvements compared to classic zip (but some of
-them then were brought into later
-ZIP
-format revisions): better compression ratio, recovery records to
-rebuild accidentally missing data, strong
-encryption etc, but ZIP format retained much of its popularity gained
-in several years of widespread use, mainly for two factors:<a
- href="http://www.7zip.org/"><br>
-                        </a>
-                        <ul>
-                          <li><a
- name="advantages_in_using_zip_over_other_formats"></a>ZIP compression
-is quite fast and it is
-not CPU
-intensive (for today's standard) compared to competing standards as rar
-and 7z - it's based on Deflate lossless compression algorithm
-(like
-in GZip format), alternatively Deflate64 or BZip2 based compression is
-possible, and supported by PeaZip - that makes ZIP format an ideal
-candidate for archiving large quantities of mixed types of data (i.e.
-performing a backup), when speed is more important than maximum
-compression, which is usually the case with today's large disks and
-large, poorly compressible multimedia files.</li>
-                          <li><span
- style="background-color: rgb(255, 238, 221);">ZIP support is nearly
-ubiquitous</span> (i.e.
-most Linux
-distributions and Windows since XP have basic support for ZIP standard
-out of the box), making ZIP format
-the ideal choice when distributing files i.e. downloadable packages,
-mail attachments etc.<br>
-                          </li>
-                        </ul>
-Recently WinZip (probably the most popular zip file utility on MS
-Windows
-platform) introduced a new
-encryption scheme, Advanced Encryption (AE), AES based; AE-encrypted
-archives and classic
-ZipCrypto-encrypted archives are supported by PeaZip (for legacy
-compatibility purpose, ZipCrypto encryption is weak by today's
-standards and should not be used for new files), and it is also
-capable to read PKWare's AES encrypted zip archives.<br>
-                        <br>
-                        <span style="font-weight: bold;">Formats based
-on ZIP standard</span><br>
-Many archive/package formats (i.e. JAR, XPI, APK etc) are based on
-modified ZIP standard, and can be consequently read by PeaZip.<br>
-                        <h2><img
- title="ZIP comparison with other archive formats"
- alt="ZIP vs RAR format comparison" src="zip-extension.png"
- style="width: 88px; height: 82px;"></h2>
-                        <span style="font-style: italic;"></span><span
- style="font-style: italic;"></span>Learn more about <a
- href="zip-file-format.html">ZIP file format</a><span
- style="font-style: italic;"><br>
-                        </span> </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big style="font-weight: bold;">ZIPX format
-features and performances</big><span style="font-style: italic;"></span></h3>
-                        <span style="font-style: italic;"> </span><span
- style="font-weight: bold;"> </span> <br>
-                        <span style="font-weight: bold;"><a
- name="how_zipx_compares_with_rar_zip"></a>ZIPX</span>
-is a new
-archiving format implemented in WinZip starting
-from
-12.1 release, evolved from ZIP specifications with newer data
-compression algorithms - BZip, LZMA, PPMd and others.<br>
-                        <br>
-                        <span style="font-weight: bold;">Advantages and
-disadvantages of ZIPX format</span><br>
-It provides a compression ratio
-comparable with RAR format, but ZIPX compression / extraction is
-significantly slower than ZIP and marginally slower than RAR, in the
-range of operating with 7Z
-format.<br>
-So, while ZIPX is a more feature-rich and powerful compression format
-than ZIP, functionally it
-is not an 1:1 replacement of it, being slower and not yet supported by
-most third party utilities, an "issue" it shares with most of
-ZIP alternative formats.<br>
-                        <br>
-Learn more about <a href="zipx-file-format.html">ZIPX file format</a> </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big style="font-weight: bold;">TAR format
-features and performances</big><span style="font-style: italic;"></span></h3>
-                        <span style="font-style: italic;"> </span><span
- style="font-weight: bold;"> </span> <br>
-                        <span
- style="font-weight: bold; background-color: rgb(255, 238, 221);"><a
- name="how_tar_compares_with_zip_rar"></a> TAR</span><span
- style="background-color: rgb(255, 238, 221);"> is
-a pure-archiving format popular on Unix and Unix-like systems</span>
-(often
-used for backup and for content distribution on those platforms).<br>
-                        <br>
-                        <h4><span style="font-weight: bold;">TAR format
-comparison with other archive formats</span></h4>
-It does provide only archiving (concatenate input data and metadata in
-a single output file), delegating functions as compression, encryption,
-parity/integrity check, to external software working in pipeline with
-TAR command output - so a direct comparison ot Tar with a compressed
-archive format like Rar or Zip is not directly possible,<br>
-Tar is often combined with a compression algorithm as <span
- style="font-weight: bold;">GZip </span>to save disk space occupation,
-originating a compressed tar archive TAR.GZ or TGZ (with zlib's
-Deflate).<br>
-Combining tar with <span style="font-weight: bold;">BZip2 </span>(TAR.BZ2
-or TBZ) allows to attain better compression ratio than Gzip, at expense
-of longer / more computing intensive compression and decompression,
-anyway BZip2 algorithm performances can be dramatically improved by
-multithreading.<br>
-                        <span style="font-weight: bold;">XZ </span>/ <span
- style="font-weight: bold;">LZMA </span>compressed tar archives
-benefit of compression ratio comparable to 7Z file format, as it is
-employed the same LZMA/LZMA2 algorithm discussed in 7Z format paragraph.<br>
-Fastest compression / extraction, retaining compression ratio
-comparable with Gzip, can be obtained with modern Brotli and Zstandard
-compression algorithms, which are explained in detail separately.<br>
-                        <br>
-Learn more about <a href="tar-file-format.html">TAR archive format</a>,
-                        <a href="gzip-files.html">GZIP compressed file
-format</a>, <a href="bzip2-file.html">BZIP2
-compressed file format</a><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                  <td style="vertical-align: top; width: 24px;"><br>
-                  </td>
-                  <td style="vertical-align: top; width: 448px;">
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big><span style="font-weight: bold;">7Z
-format features and performances</span><br>
-                        </big></h3>
-                        <br>
-                        <span style="font-weight: bold;"><a
- name="7z_vs_rar_format"></a>7Z</span>
-is a
-modern,
-open source archive
-format, featuring AES encryption, native volume spanning, and high
-compression ratio (best one in mainstream formats), in many cases -
-depending on the properties of the input
-data - better than competing RAR and ZIPX formats.<br>
-The 7z archive format was introduced by 7-Zip
-on
-Windows platform and ported by p7zip
-team on
-Unix platforms.<br>
-                        <br>
-                        <span style="font-weight: bold;">Advantages of
-7Z over other archive formats</span><br>
-                        <a name="7z_advantages_over_rar_and_zip"></a>Supported
-compression algorithms (LZMA/LZMA2, PPMd,
-BZip2) can take benefit of
-parallel computing on modern multicore CPUs, but 7Z is still a format
-chosen when higher compression, and not speed, is the primary goal.<br>
-                        <h2><img
- title="How 7Z compares with other archive formats"
- alt="7Z vs RAR, ZIP formats comparison" src="7z-extension.png"
- style="width: 88px; height: 82px;"></h2>
-Learn more about <a href="7z-file-format.html">7Z file format</a><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big><span style="font-weight: bold;">RAR
-format features and performances</span><br>
-                        </big></h3>
-                        <br>
-                        <span style="font-weight: bold;"><a
- name="how_rar_compares_to_zip_7z"></a>RAR</span>
-is a
-proprietary archive format introduced by WinRar for
-Windows platform,
-and ported to Linux (only as extractor) by the same Author, Eugene
-Roshal.<br>
-RAR extraction routines were also rewritten as Open Source software
-(PeaZip uses this Open Source RAR component from 7-Zip/p7zip project),
-but its original license however does not allow third party to create a
-RAR compressor.<br>
-                        <br>
-                        <span style="font-weight: bold;">Advantage of
-RAR over competing formats</span><br>
-                        <span
- style="background-color: rgb(255, 238, 221);"><a
- name="what_are_rar_advantages"></a>RAR format advantages are better
-compression ratio than ZIP, built-in strong
-encryption, and error recovery capabilities with optional use of
-recovery records.</span><br>
-For all those reasons, and being one of the first ZIP alternative
-released, even being a proprietary format RAR is a very popular
-choice especially for file distribution over the web, where the error
-recovery
-capability is a welcome advantage over most of other file formats.<br>
-                        <h2><img
- title="How RAR compares to zip, 7z and other archive formats"
- alt="RAR vs ZIP comparison" src="rar-extension.png"
- style="width: 88px; height: 82px;"></h2>
-Learn more about <a href="what-is-rar-file.html">RAR file format</a><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3><big><span style="font-weight: bold;">ACE
-format features and performances</span><br>
-                        </big></h3>
-                        <br>
-                        <span style="font-weight: bold;"><a
- name="ace_vs_rar_vs_zip"></a>ACE </span>is
-a
-proprietary archive format introduced on Windows platform by WinACE and
-ported to Linux
-as command line utility (extraction only) by the same Author of WinACE.<br>
-The format is currently less popular than in past years, it offers
-improved compression compared to ZIP, but not as powerful as for RAR,
-ZIPX, and 7Z formats.<br>
-Due to the commercial nature of the format no free software is
-available for creating ACE archives, but UNACE for
-extraction of ACE archives was made available as royalty free (for use
-and distribution) closed source software.<br>
-PeaZip features UNACE for Windows and Linux as external plugin on
-Add-ons page in order
-to keep the base PeaZip package free of closed source software (only
-software released under OSI approved licenses are included in the base
-package) and provide end users the ability of unpacking ACE archives.<br>
-UNACE plugin for PeaZip is available either as installable package or
-as compressed package to be installed by hand (recommended for PeaZip
-portable), and it's free of charge.<br>
-                        <br>
-Learn more about <a href="arc-files-utility.html">how to work with ACE
-files</a><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h2><big style="font-weight: bold;">Brotli and
-Zstandard compression
-performances comparison</big><span style="font-style: italic;"></span></h2>
-                        <span style="font-style: italic;"> </span><span
- style="font-weight: bold;"> </span> <br>
-                        <span
- style="background-color: rgb(255, 238, 221); font-weight: bold;"><a
- name="brotli_vs_zstandard"></a></span><span style="font-weight: bold;">Google's
-Brotli</span> and <span style="font-weight: bold;">Facebook's
-Zstandard </span>are pure compression algoritms (as well as zlib's
-Deflate and BZip2) meant to compress a single input file or data
-stream, and for archiving purpose are often combined with TAR in order
-to consolidate multiple input file in a single container.<br>
-                        <br>
-                        <span style="font-weight: bold;">Brotli and
-Zstandard compared to classic compression formats</span><br>
-Both Brotli and Zstandard projects aims to maximum compression and
-extraction speed, the main goal being near-real time lossless
-decompression of content being distributed over the network, reducing
-the latency, transmission time, bandwidth consumption, and compression
-/ decompression overhead over traditional lossless compression
-algorithms (as zlib's Deflate or Zopfli).<br>
-As file archiving formats, at lower compression settings both Brotli BR
-format and Zstandard ZST format outperforms for speed fast compressors
-like Gzip / ZIP obtaining comparable compression results, and at higher
-compression levels are both capable of providing a better than Deflate
-compression level, being comparable to BZip2 or even RAR / 7Z formats
-compression.<br>
-In a direct comparison at current level of development, on modern
-multicore CPU Zstandard is
-faster than Brotli if multithreading option for its ZSTD binary is
-enabled - while provided compression level is quite similar.<br>
-                        <br>
-Learn more about <a href="brotli-compressed-file-format.html">Brotli
-BR compressed file
-format</a>, <a href="zst-compressed-file-format.html">Zstandard ZST
-compressed file format</a>, <a
- href="fast-compression-benchmark-brotli-zstandard.html">Brotli vs Zstd
-comparative fast compression benchmark</a> </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="rar_vs_zip"></a><span style="font-weight: bold;">Archive, compression formats
+                              comparison</span><br>
+                          </big></big></big></h1>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <small><br>
-            </small>
-            <div style="text-align: left;"><a style="font-weight: bold;"
- name="performances_of_rar_zip_formats"></a><span
- style="font-weight: bold;">For performances comparison
-(speed, best compression ratio) of archive file formats in
-mainstream archive manager utilities see PeaZip's </span><a
- style="font-weight: bold;" href="peazip-compression-benchmark.html">compression
-benchmarks</a><span style="font-weight: bold;">
-page.</span><br>
-            </div>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Comparative of archival
-and compression formats
-properties</big></h3>
-            <big> </big><br>
-            <a name="what_is_best_archive_format"></a>Lear more about <a
- href="cab-files-utility.html">CAB packages format</a>, and <a
- href="pea-file-format.html">PEA file format</a>.<br>
-            <br>
-            <big><span style="font-weight: bold;"></span></big><span
- style="font-weight: bold;"><a href="arc-files-utility.html">ARC format</a>
-            </span>(or <span style="font-weight: bold;">WRC</span>) is
-a new, open source archiving
-format developed by Bulat Ziganshin for FreeArc archiver utility.<br>
-The format features
-strong but fast and memory efficient compression, comparable to or
-better
-than RAR an 7Z formats for most filetypes.<br>
-            <span style="background-color: rgb(255, 238, 221);">Noteworthy
-advantage of ARC
-format is support for recovery records (like RAR)</span>, for
-attempting
-data
-repair in case of corruption of the archive, and strong encryption with
-AES, Serpent and Twofish
-(all
-up to 256 bit key size) and Blowfish.<br>
-Interestingly, ARC
-command line syntax is close to WinRAR one, allowing
-easy porting of scripts from one program to the other.<br>
-PeaZip offers a GUI frontend to create, browse, test, repair and
-extract ARC / WRC archives under Windows and Linux (on Gnome, KDE or
-other desktop environments).<br>
-ARC / WRC files can be currently be browsed only in flat mode (shows
-all
-objects in archive), but in any other aspect they can be handled as
-ZIP / 7Z files (see previous point). <br>
-Please note that ARC (or ARK) is also the extension of an archive
-format developed by SEA company (not subject of this comparative): it
-was of mainstream diffusion before
-the introduction of ZIP, and it has
-no connection with FreeARC's ARC format. PeaZip does not support SEA
-ARC / ARK files.<br>
-            <br>
-            <a name="paq_vs_7z_rar_best_compression"></a><a
- style="font-weight: bold;" href="paq-file-format.html">PAQ,
-LPAQ and ZPAQ formats</a>:
-families of experimental compressors developed by
-Matt Mahomey and contributors.<br>
-            <span style="font-weight: bold;"><a
- name="what_is_strongest_compressor"></a>PAQ </span>compression
-has very high
-computational requirements (memory, CPU time) if compared to mainstream
-compressors, but <span style="background-color: rgb(255, 238, 221);">reaches
-the highest compression ratio presently
-possible</span>. Most of top
-ranking compression algorithms (i.e. Hutter prize winners)
-belongs from PAQ family or
-are derived works, as well as used in high compression utilities like
-KGB
-Archiver, WinUDA, WinRK and Emilcont. Best choice when maximum
-compression is desired regardless speed and memory usage.<br>
-            <span style="font-weight: bold;">LPAQ </span>is a
-"lite"
-version of PAQ, meant to be faster but providing lower compression
-levels; it is a compression only utility, so LPAQ-compressed files will
-feature a double extension, i.e. filename.ext.lpaq. In PeaZip if
-multiple files are sent to be compressed by LPAQ they will
-be automatically added to a TAR archive before, resulting in the double
-extension TAR.LPAQ.<br>
-            <span style="font-weight: bold;">ZPAQ </span>is the
-latest
-evolution of the PAQ family, featuring backward
-compatibility, while PAQ and LPAQ doesn't, so archives created with a
-PAQ/LPAQ version need to be extracted with the same version. PeaZip
-offers a GUI frontend to create, browse and extract many PAQ
-(PAQ8F, JD, L and O) and LPAQ (LPAQ1 and LPAQ5) archive types, under
-MS Windows and Linux (on Gnome, KDE or other desktop environments).<br>
-            <br>
-            <span style="font-weight: bold;">QUAD</span>, <span
- style="font-weight: bold;">BALZ</span>, and<span
- style="font-weight: bold;"> BCM</span> are very efficient
-ROLZ-based
-compressor developed by Ilia Muraviev,
-featuring
-high compression ratio and high extraction speed, due to the
-observation most types of end users are expected to routinely unpack
-data and rarely compress files.<br>
-All of those are single file compression formats, so compressed files
-will
-feature a double extension, i.e. filename.ext.quad.<br>
-In PeaZip, if multiple files are sent to be compressed by QUAD, BALZ or
-BCM
-they will be automatically added to a TAR archive before, resulting in
-the double extension TAR.QUAD,TAR.BALZ, TAR.BCM respectively. PeaZip
-offers a
-GUI frontend to create, browse and extract those types of compressed
-files, under Microsoft Windows and Linux (on Gnome, KDE
-or other
-desktop environments).<big><span style="font-weight: bold;"></span></big><br>
-            <br>
-            <br>
-            <a name="rar_zip_comparative"></a>Read more on Wikipedia
-page about <a target="_blank"
- href="https://en.wikipedia.org/wiki/Comparison_of_archive_formats">comparison
-of archive formats<img alt="Wikipedia data compression comparative"
- title="File archiving types comparison" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> in terms
-of performances, maximum compression properties, advanced features and
-reciprocal advantages / disadvantages.<br>
-Useful online resources: <a target="_blank"
- href="https://www.pkware.com/">PKWare<img title="PKZip"
- alt="standard zip file features" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> (creators
-of
-ZIP format), <a target="_blank" href="http://www.winzip.com/">WinZip<img
- alt="zipx file format advantages" title="WinZip software"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://www.7-zip.org/">7-Zip<img
- alt="7zip characteristics" title="7Z files tool"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://www.rarlab.com/">WinRAR<img
- alt="rar file format standard" title="RarLab WinRar"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://en.wikipedia.org/wiki/PAQ">PAQ<img
- alt="Hutter prize winner compressor algorithm" title="PAQ compression"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
-entry, <a target="_blank" href="http://mattmahoney.net/dc/zpaq.html">ZPAQ<img
- alt="journaled file archiver" title="ZPAQ project"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://github.com/google/brotli">Google Brotli<img
- title="Google Brotli project page" alt="Brotli fast compression"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://facebook.github.io/zstd/">Zstandard<img
- title="Facebook's ZSTD project page" alt="Zstandard fast compression"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> project
-pages.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Comparative
-of archive formats properties and performances. How 7Z, Brotli, RAR,
-ZIP, ZIPX, Zstandard and other archive types compare for best speed,
-compression, and features. Classic ZIP vs ZIPX, 7Z, RAR, and&nbsp;
-classic archive formats vs Brotli and Zstandard modern pure data
-compression formats. How ZPAQ compares with ohet compressors.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: features
-comparison of 7z rar zip archive formats, comparison of compressed file
-formats</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Archive and compression formats comparison: RAR vs ZIP 7Z Brotli
-Zstandard<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="ZIP format features and performances" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="7Z format features and performances" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="comparison of common archive formats"
- src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="ACE format features and performances" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="rar_vs_zip_comparison"></a>DOWNLOADS<br>
-            <img alt="ZIPX format features and performances"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="TAR format features and performances" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="rar_vs_7z_comparison"></a>SUPPORT<br>
-            <img alt="zip vs rar format features comparison"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="7Z vs RAR, ZIP formats comparison" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="ZIP vs RAR format comparison"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="RAR vs ZIP comparison" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="TAR format features and performances"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="comparative_of_archive_types"></a><a
+                                href="archive-file-formats-comparison.html#rar_vs_zip">Compare
+                                features, compression ratio of archive formats</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <span style="font-weight: bold;"></span>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; width: 448px;">
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big><span style="font-weight: bold;">ZIP
+                                          format features and performances</span><br>
+                                      </big></h3>
+                                    <br>
+                                    <span style="font-weight: bold;"><a
+                                        name="how_zip_compares_with_7z_rar_formats"></a>ZIP </span>is
+                                    a popular <a href="what-is-zip-file.html">compressed file
+                                      archiving format</a>, mainstream on Microsoft Windows systems; ZIP file
+                                    format
+                                    specifications are maintained by PKWare which
+                                    originally developed the
+                                    format.<br>
+                                    <br>
+                                    <h4><span style="font-weight: bold;">ZIP
+                                        compared to 7Z and RAR formats</span></h4>
+                                    Newer archive formats like 7Z and RAR have gained popularity and
+                                    introduced several improvements compared to classic zip (but some of
+                                    them then were brought into later
+                                    ZIP
+                                    format revisions): better compression ratio, recovery records to
+                                    rebuild accidentally missing data, strong
+                                    encryption etc, but ZIP format retained much of its popularity gained
+                                    in several years of widespread use, mainly for two factors:<a
+                                      href="http://www.7zip.org/"><br>
+                                    </a>
+                                    <ul>
+                                      <li><a name="advantages_in_using_zip_over_other_formats"></a>ZIP compression
+                                        is quite fast and it is
+                                        not CPU
+                                        intensive (for today's standard) compared to competing standards as rar
+                                        and 7z - it's based on Deflate lossless compression algorithm
+                                        (like
+                                        in GZip format), alternatively Deflate64 or BZip2 based compression is
+                                        possible, and supported by PeaZip - that makes ZIP format an ideal
+                                        candidate for archiving large quantities of mixed types of data (i.e.
+                                        performing a backup), when speed is more important than maximum
+                                        compression, which is usually the case with today's large disks and
+                                        large, poorly compressible multimedia files.</li>
+                                      <li><span style="background-color: rgb(255, 238, 221);">ZIP support is nearly
+                                          ubiquitous</span> (i.e.
+                                        most Linux
+                                        distributions and Windows since XP have basic support for ZIP standard
+                                        out of the box), making ZIP format
+                                        the ideal choice when distributing files i.e. downloadable packages,
+                                        mail attachments etc.<br>
+                                      </li>
+                                    </ul>
+                                    Recently WinZip (probably the most popular zip file utility on MS
+                                    Windows
+                                    platform) introduced a new
+                                    encryption scheme, Advanced Encryption (AE), AES based; AE-encrypted
+                                    archives and classic
+                                    ZipCrypto-encrypted archives are supported by PeaZip (for legacy
+                                    compatibility purpose, ZipCrypto encryption is weak by today's
+                                    standards and should not be used for new files), and it is also
+                                    capable to read PKWare's AES encrypted zip archives.<br>
+                                    <br>
+                                    <span style="font-weight: bold;">Formats based
+                                      on ZIP standard</span><br>
+                                    Many archive/package formats (i.e. JAR, XPI, APK etc) are based on
+                                    modified ZIP standard, and can be consequently read by PeaZip.<br>
+                                    <h2><img title="ZIP comparison with other archive formats"
+                                        alt="ZIP vs RAR format comparison" src="zip-extension.png"
+                                        style="width: 88px; height: 82px;"></h2>
+                                    <span style="font-style: italic;"></span><span
+                                      style="font-style: italic;"></span>Learn more about <a
+                                      href="zip-file-format.html">ZIP file format</a><span
+                                      style="font-style: italic;"><br>
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big style="font-weight: bold;">ZIPX format
+                                        features and performances</big><span style="font-style: italic;"></span></h3>
+                                    <span style="font-style: italic;"> </span><span style="font-weight: bold;"> </span>
+                                    <br>
+                                    <span style="font-weight: bold;"><a
+                                        name="how_zipx_compares_with_rar_zip"></a>ZIPX</span>
+                                    is a new
+                                    archiving format implemented in WinZip starting
+                                    from
+                                    12.1 release, evolved from ZIP specifications with newer data
+                                    compression algorithms - BZip, LZMA, PPMd and others.<br>
+                                    <br>
+                                    <span style="font-weight: bold;">Advantages and
+                                      disadvantages of ZIPX format</span><br>
+                                    It provides a compression ratio
+                                    comparable with RAR format, but ZIPX compression / extraction is
+                                    significantly slower than ZIP and marginally slower than RAR, in the
+                                    range of operating with 7Z
+                                    format.<br>
+                                    So, while ZIPX is a more feature-rich and powerful compression format
+                                    than ZIP, functionally it
+                                    is not an 1:1 replacement of it, being slower and not yet supported by
+                                    most third party utilities, an "issue" it shares with most of
+                                    ZIP alternative formats.<br>
+                                    <br>
+                                    Learn more about <a href="zipx-file-format.html">ZIPX file format</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big style="font-weight: bold;">TAR format
+                                        features and performances</big><span style="font-style: italic;"></span></h3>
+                                    <span style="font-style: italic;"> </span><span style="font-weight: bold;"> </span>
+                                    <br>
+                                    <span style="font-weight: bold; background-color: rgb(255, 238, 221);"><a
+                                        name="how_tar_compares_with_zip_rar"></a> TAR</span><span
+                                      style="background-color: rgb(255, 238, 221);"> is
+                                      a pure-archiving format popular on Unix and Unix-like systems</span>
+                                    (often
+                                    used for backup and for content distribution on those platforms).<br>
+                                    <br>
+                                    <h4><span style="font-weight: bold;">TAR format
+                                        comparison with other archive formats</span></h4>
+                                    It does provide only archiving (concatenate input data and metadata in
+                                    a single output file), delegating functions as compression, encryption,
+                                    parity/integrity check, to external software working in pipeline with
+                                    TAR command output - so a direct comparison ot Tar with a compressed
+                                    archive format like Rar or Zip is not directly possible,<br>
+                                    Tar is often combined with a compression algorithm as <span
+                                      style="font-weight: bold;">GZip </span>to save disk space occupation,
+                                    originating a compressed tar archive TAR.GZ or TGZ (with zlib's
+                                    Deflate).<br>
+                                    Combining tar with <span style="font-weight: bold;">BZip2 </span>(TAR.BZ2
+                                    or TBZ) allows to attain better compression ratio than Gzip, at expense
+                                    of longer / more computing intensive compression and decompression,
+                                    anyway BZip2 algorithm performances can be dramatically improved by
+                                    multithreading.<br>
+                                    <span style="font-weight: bold;">XZ </span>/ <span style="font-weight: bold;">LZMA
+                                    </span>compressed tar archives
+                                    benefit of compression ratio comparable to 7Z file format, as it is
+                                    employed the same LZMA/LZMA2 algorithm discussed in 7Z format paragraph.<br>
+                                    Fastest compression / extraction, retaining compression ratio
+                                    comparable with Gzip, can be obtained with modern Brotli and Zstandard
+                                    compression algorithms, which are explained in detail separately.<br>
+                                    <br>
+                                    Learn more about <a href="tar-file-format.html">TAR archive format</a>,
+                                    <a href="gzip-files.html">GZIP compressed file
+                                      format</a>, <a href="bzip2-file.html">BZIP2
+                                      compressed file format</a><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="vertical-align: top; width: 24px;"><br>
+                          </td>
+                          <td style="vertical-align: top; width: 448px;">
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big><span style="font-weight: bold;">7Z
+                                          format features and performances</span><br>
+                                      </big></h3>
+                                    <br>
+                                    <span style="font-weight: bold;"><a name="7z_vs_rar_format"></a>7Z</span>
+                                    is a
+                                    modern,
+                                    open source archive
+                                    format, featuring AES encryption, native volume spanning, and high
+                                    compression ratio (best one in mainstream formats), in many cases -
+                                    depending on the properties of the input
+                                    data - better than competing RAR and ZIPX formats.<br>
+                                    The 7z archive format was introduced by 7-Zip
+                                    on
+                                    Windows platform and ported by p7zip
+                                    team on
+                                    Unix platforms.<br>
+                                    <br>
+                                    <span style="font-weight: bold;">Advantages of
+                                      7Z over other archive formats</span><br>
+                                    <a name="7z_advantages_over_rar_and_zip"></a>Supported
+                                    compression algorithms (LZMA/LZMA2, PPMd,
+                                    BZip2) can take benefit of
+                                    parallel computing on modern multicore CPUs, but 7Z is still a format
+                                    chosen when higher compression, and not speed, is the primary goal.<br>
+                                    <h2><img title="How 7Z compares with other archive formats"
+                                        alt="7Z vs RAR, ZIP formats comparison" src="7z-extension.png"
+                                        style="width: 88px; height: 82px;"></h2>
+                                    Learn more about <a href="7z-file-format.html">7Z file format</a><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big><span style="font-weight: bold;">RAR
+                                          format features and performances</span><br>
+                                      </big></h3>
+                                    <br>
+                                    <span style="font-weight: bold;"><a name="how_rar_compares_to_zip_7z"></a>RAR</span>
+                                    is a
+                                    proprietary archive format introduced by WinRar for
+                                    Windows platform,
+                                    and ported to Linux (only as extractor) by the same Author, Eugene
+                                    Roshal.<br>
+                                    RAR extraction routines were also rewritten as Open Source software
+                                    (PeaZip uses this Open Source RAR component from 7-Zip/p7zip project),
+                                    but its original license however does not allow third party to create a
+                                    RAR compressor.<br>
+                                    <br>
+                                    <span style="font-weight: bold;">Advantage of
+                                      RAR over competing formats</span><br>
+                                    <span style="background-color: rgb(255, 238, 221);"><a
+                                        name="what_are_rar_advantages"></a>RAR format advantages are better
+                                      compression ratio than ZIP, built-in strong
+                                      encryption, and error recovery capabilities with optional use of
+                                      recovery records.</span><br>
+                                    For all those reasons, and being one of the first ZIP alternative
+                                    released, even being a proprietary format RAR is a very popular
+                                    choice especially for file distribution over the web, where the error
+                                    recovery
+                                    capability is a welcome advantage over most of other file formats.<br>
+                                    <h2><img title="How RAR compares to zip, 7z and other archive formats"
+                                        alt="RAR vs ZIP comparison" src="rar-extension.png"
+                                        style="width: 88px; height: 82px;"></h2>
+                                    Learn more about <a href="what-is-rar-file.html">RAR file format</a><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3><big><span style="font-weight: bold;">ACE
+                                          format features and performances</span><br>
+                                      </big></h3>
+                                    <br>
+                                    <span style="font-weight: bold;"><a name="ace_vs_rar_vs_zip"></a>ACE </span>is
+                                    a
+                                    proprietary archive format introduced on Windows platform by WinACE and
+                                    ported to Linux
+                                    as command line utility (extraction only) by the same Author of WinACE.<br>
+                                    The format is currently less popular than in past years, it offers
+                                    improved compression compared to ZIP, but not as powerful as for RAR,
+                                    ZIPX, and 7Z formats.<br>
+                                    Due to the commercial nature of the format no free software is
+                                    available for creating ACE archives, but UNACE for
+                                    extraction of ACE archives was made available as royalty free (for use
+                                    and distribution) closed source software.<br>
+                                    PeaZip features UNACE for Windows and Linux as external plugin on
+                                    Add-ons page in order
+                                    to keep the base PeaZip package free of closed source software (only
+                                    software released under OSI approved licenses are included in the base
+                                    package) and provide end users the ability of unpacking ACE archives.<br>
+                                    UNACE plugin for PeaZip is available either as installable package or
+                                    as compressed package to be installed by hand (recommended for PeaZip
+                                    portable), and it's free of charge.<br>
+                                    <br>
+                                    Learn more about <a href="arc-files-utility.html">how to work with ACE
+                                      files</a><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h2><big style="font-weight: bold;">Brotli and
+                                        Zstandard compression
+                                        performances comparison</big><span style="font-style: italic;"></span></h2>
+                                    <span style="font-style: italic;"> </span><span style="font-weight: bold;"> </span>
+                                    <br>
+                                    <span style="background-color: rgb(255, 238, 221); font-weight: bold;"><a
+                                        name="brotli_vs_zstandard"></a></span><span style="font-weight: bold;">Google's
+                                      Brotli</span> and <span style="font-weight: bold;">Facebook's
+                                      Zstandard </span>are pure compression algoritms (as well as zlib's
+                                    Deflate and BZip2) meant to compress a single input file or data
+                                    stream, and for archiving purpose are often combined with TAR in order
+                                    to consolidate multiple input file in a single container.<br>
+                                    <br>
+                                    <span style="font-weight: bold;">Brotli and
+                                      Zstandard compared to classic compression formats</span><br>
+                                    Both Brotli and Zstandard projects aims to maximum compression and
+                                    extraction speed, the main goal being near-real time lossless
+                                    decompression of content being distributed over the network, reducing
+                                    the latency, transmission time, bandwidth consumption, and compression
+                                    / decompression overhead over traditional lossless compression
+                                    algorithms (as zlib's Deflate or Zopfli).<br>
+                                    As file archiving formats, at lower compression settings both Brotli BR
+                                    format and Zstandard ZST format outperforms for speed fast compressors
+                                    like Gzip / ZIP obtaining comparable compression results, and at higher
+                                    compression levels are both capable of providing a better than Deflate
+                                    compression level, being comparable to BZip2 or even RAR / 7Z formats
+                                    compression.<br>
+                                    In a direct comparison at current level of development, on modern
+                                    multicore CPU Zstandard is
+                                    faster than Brotli if multithreading option for its ZSTD binary is
+                                    enabled - while provided compression level is quite similar.<br>
+                                    <br>
+                                    Learn more about <a href="brotli-compressed-file-format.html">Brotli
+                                      BR compressed file
+                                      format</a>, <a href="zst-compressed-file-format.html">Zstandard ZST
+                                      compressed file format</a>, <a
+                                      href="fast-compression-benchmark-brotli-zstandard.html">Brotli vs Zstd
+                                      comparative fast compression benchmark</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <small><br>
+                    </small>
+                    <div style="text-align: left;"><a style="font-weight: bold;"
+                        name="performances_of_rar_zip_formats"></a><span style="font-weight: bold;">For performances
+                        comparison
+                        (speed, best compression ratio) of archive file formats in
+                        mainstream archive manager utilities see PeaZip's </span><a style="font-weight: bold;"
+                        href="peazip-compression-benchmark.html">compression
+                        benchmarks</a><span style="font-weight: bold;">
+                        page.</span><br>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Comparative of archival
+                        and compression formats
+                        properties</big></h3>
+                    <big> </big><br>
+                    <a name="what_is_best_archive_format"></a>Lear more about <a href="cab-files-utility.html">CAB
+                      packages format</a>, and <a href="pea-file-format.html">PEA file format</a>.<br>
+                    <br>
+                    <big><span style="font-weight: bold;"></span></big><span style="font-weight: bold;"><a
+                        href="arc-files-utility.html">ARC format</a>
+                    </span>(or <span style="font-weight: bold;">WRC</span>) is
+                    a new, open source archiving
+                    format developed by Bulat Ziganshin for FreeArc archiver utility.<br>
+                    The format features
+                    strong but fast and memory efficient compression, comparable to or
+                    better
+                    than RAR an 7Z formats for most filetypes.<br>
+                    <span style="background-color: rgb(255, 238, 221);">Noteworthy
+                      advantage of ARC
+                      format is support for recovery records (like RAR)</span>, for
+                    attempting
+                    data
+                    repair in case of corruption of the archive, and strong encryption with
+                    AES, Serpent and Twofish
+                    (all
+                    up to 256 bit key size) and Blowfish.<br>
+                    Interestingly, ARC
+                    command line syntax is close to WinRAR one, allowing
+                    easy porting of scripts from one program to the other.<br>
+                    PeaZip offers a GUI frontend to create, browse, test, repair and
+                    extract ARC / WRC archives under Windows and Linux (on Gnome, KDE or
+                    other desktop environments).<br>
+                    ARC / WRC files can be currently be browsed only in flat mode (shows
+                    all
+                    objects in archive), but in any other aspect they can be handled as
+                    ZIP / 7Z files (see previous point). <br>
+                    Please note that ARC (or ARK) is also the extension of an archive
+                    format developed by SEA company (not subject of this comparative): it
+                    was of mainstream diffusion before
+                    the introduction of ZIP, and it has
+                    no connection with FreeARC's ARC format. PeaZip does not support SEA
+                    ARC / ARK files.<br>
+                    <br>
+                    <a name="paq_vs_7z_rar_best_compression"></a><a style="font-weight: bold;"
+                      href="paq-file-format.html">PAQ,
+                      LPAQ and ZPAQ formats</a>:
+                    families of experimental compressors developed by
+                    Matt Mahomey and contributors.<br>
+                    <span style="font-weight: bold;"><a name="what_is_strongest_compressor"></a>PAQ </span>compression
+                    has very high
+                    computational requirements (memory, CPU time) if compared to mainstream
+                    compressors, but <span style="background-color: rgb(255, 238, 221);">reaches
+                      the highest compression ratio presently
+                      possible</span>. Most of top
+                    ranking compression algorithms (i.e. Hutter prize winners)
+                    belongs from PAQ family or
+                    are derived works, as well as used in high compression utilities like
+                    KGB
+                    Archiver, WinUDA, WinRK and Emilcont. Best choice when maximum
+                    compression is desired regardless speed and memory usage.<br>
+                    <span style="font-weight: bold;">LPAQ </span>is a
+                    "lite"
+                    version of PAQ, meant to be faster but providing lower compression
+                    levels; it is a compression only utility, so LPAQ-compressed files will
+                    feature a double extension, i.e. filename.ext.lpaq. In PeaZip if
+                    multiple files are sent to be compressed by LPAQ they will
+                    be automatically added to a TAR archive before, resulting in the double
+                    extension TAR.LPAQ.<br>
+                    <span style="font-weight: bold;">ZPAQ </span>is the
+                    latest
+                    evolution of the PAQ family, featuring backward
+                    compatibility, while PAQ and LPAQ doesn't, so archives created with a
+                    PAQ/LPAQ version need to be extracted with the same version. PeaZip
+                    offers a GUI frontend to create, browse and extract many PAQ
+                    (PAQ8F, JD, L and O) and LPAQ (LPAQ1 and LPAQ5) archive types, under
+                    MS Windows and Linux (on Gnome, KDE or other desktop environments).<br>
+                    <br>
+                    <span style="font-weight: bold;">QUAD</span>, <span style="font-weight: bold;">BALZ</span>, and<span
+                      style="font-weight: bold;"> BCM</span> are very efficient
+                    ROLZ-based
+                    compressor developed by Ilia Muraviev,
+                    featuring
+                    high compression ratio and high extraction speed, due to the
+                    observation most types of end users are expected to routinely unpack
+                    data and rarely compress files.<br>
+                    All of those are single file compression formats, so compressed files
+                    will
+                    feature a double extension, i.e. filename.ext.quad.<br>
+                    In PeaZip, if multiple files are sent to be compressed by QUAD, BALZ or
+                    BCM
+                    they will be automatically added to a TAR archive before, resulting in
+                    the double extension TAR.QUAD,TAR.BALZ, TAR.BCM respectively. PeaZip
+                    offers a
+                    GUI frontend to create, browse and extract those types of compressed
+                    files, under Microsoft Windows and Linux (on Gnome, KDE
+                    or other
+                    desktop environments).<big><span style="font-weight: bold;"></span></big><br>
+                    <br>
+                    <br>
+                    <a name="rar_zip_comparative"></a>Read more on Wikipedia
+                    page about <a target="_blank"
+                      href="https://en.wikipedia.org/wiki/Comparison_of_archive_formats">comparison
+                      of archive formats<img alt="Wikipedia data compression comparative"
+                        title="File archiving types comparison" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> in terms
+                    of performances, maximum compression properties, advanced features and
+                    reciprocal advantages / disadvantages.<br>
+                    Useful online resources: <a target="_blank" href="https://www.pkware.com/">PKWare<img title="PKZip"
+                        alt="standard zip file features" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> (creators
+                    of
+                    ZIP format), <a target="_blank" href="http://www.winzip.com/">WinZip<img
+                        alt="zipx file format advantages" title="WinZip software" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://www.7-zip.org/">7-Zip<img alt="7zip characteristics" title="7Z files tool"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+                      target="_blank" href="http://www.rarlab.com/">WinRAR<img alt="rar file format standard"
+                        title="RarLab WinRar" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/PAQ">PAQ<img alt="Hutter prize winner compressor algorithm"
+                        title="PAQ compression" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
+                    entry, <a target="_blank" href="http://mattmahoney.net/dc/zpaq.html">ZPAQ<img
+                        alt="journaled file archiver" title="ZPAQ project" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://github.com/google/brotli">Google Brotli<img title="Google Brotli project page"
+                        alt="Brotli fast compression" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://facebook.github.io/zstd/">Zstandard<img title="Facebook's ZSTD project page"
+                        alt="Zstandard fast compression" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> project
+                    pages.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Comparative
+                        of archive formats properties and performances. How 7Z, Brotli, RAR,
+                        ZIP, ZIPX, Zstandard and other archive types compare for best speed,
+                        compression, and features. Classic ZIP vs ZIPX, 7Z, RAR, and&nbsp;
+                        classic archive formats vs Brotli and Zstandard modern pure data
+                        compression formats. How ZPAQ compares with ohet compressors.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: features
+                        comparison of 7z rar zip archive formats, comparison of compressed file
+                        formats</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; Archive and compression formats comparison: RAR vs ZIP 7Z Brotli
+                        Zstandard<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="comparison of common archive formats" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="ACE format features and performances"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="rar_vs_zip_comparison"></a>DOWNLOADS<br>
+                      <img alt="ZIPX format features and performances" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="TAR format features and performances"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="rar_vs_7z_comparison"></a>SUPPORT<br>
+                      <img alt="zip vs rar format features comparison" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="7Z vs RAR, ZIP formats comparison" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="ZIP vs RAR format comparison"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="RAR vs ZIP comparison" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="TAR format features and performances" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

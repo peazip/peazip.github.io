@@ -1,581 +1,535 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
+    content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
   <meta name="KEYWORDS"
- content="extract, open, multivolume, multipart, archives, 001, r01, part01, r01, z01, volumes, parts, spanned, zip, rar">
+    content="extract, open, multivolume, multipart, archives, 001, r01, part01, r01, z01, volumes, parts, spanned, zip, rar">
   <meta name="ROBOTS" content="all">
   <title>How to extract multipart archives</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
   <meta property="og:title" content="How to extract multipart archives">
   <meta property="og:description"
- content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
+    content="How to extract multipart 7z, rar, zip archives. Open and decompress multivolume spanned .001, part01, .r01, .z01 files">
   <meta property="og:image" content="extract.png">
-  <meta property="og:url"
- content="https://peazip.github.io/how-to-extract-multipart-archives.html">
+  <meta property="og:url" content="https://peazip.github.io/how-to-extract-multipart-archives.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Extract multi part (spanned) archives"
- alt="extract multipart archives" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="Open multipart archives" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="open_rar_zip_multivolume_files"></a><span
- style="font-weight: bold;">How to extract multipart archives</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="How to open multi-part archives"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="How to extract multi-part archives"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2><big><big><big><a style="font-weight: bold;"
- name="extract_spanned_archives"></a><a
- href="#open_rar_zip_multivolume_files"><span style="font-weight: bold;">Open,
-extract multivolume spanned
-.001, part01, .r01, .z01 files</span><br>
-            </a></big></big></big></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>What are mult-part
-archives</big></h3>
-            <br>
-Multi-part archives are, typically, .7z, .rar, .zip files <a
- href="file-split.html">spanned on multiple volumes</a>, each volume
-containing part of the data split in order to be conatined in a size
-below the desired maximum size.<br>
-This spanning process allows the archive to:<br>
-            <ul>
-              <li>be sent through channels enforcing a maximum payload
-size, e.g. maximum attachment size for some email providers, or maximum
-allowed file size for upload or cloud services</li>
-              <li>be saved on filesystems where <a
- href="rar-zip-file-format-size-limitations.html">maximum file size
-limitations</a> are still relevant, i.e. FAT filesystems</li>
-            </ul>
-PeaZip supports both creating spanned multipart archives, and opening
-and extracting multipart archives from different archive manager
-utilities in multiple formats.<br>
-The <span style="font-weight: bold;">first volume</span>, the one
-named with the lowest progressive number (usuallay starting from 1,
-seldom from 0) <span style="font-weight: bold;">it is the part that
-needs to be opened or extracted</span> in order to access the full
-content of the archive.<br>
-Most commonly multivolume archives are found with <span
- style="font-weight: bold;">.001</span> extension (usually 7Z or ZIP
-files spannd by 7-Zip, PeaZip and similar apps), <span
- style="font-weight: bold;">.part01.rar</span> or <span
- style="font-weight: bold;">.r01 </span>(usually multi part RAR files
-created by WinRar), or <span style="font-weight: bold;">.z01</span>
-(usually multi part ZIP or ZIPX archives created by WinZip).<br>
-            <br>
-            <br>
-            <h2><big style="font-weight: bold;">How to open multi-part
-archives</big></h2>
-            <br>
-From the system file explorer, or from PeaZip file manager <span
- style="font-weight: bold;">double click (or right click &gt; Open as
-archive)</span> the <span style="font-weight: bold;">first volume of
-the multi part archive</span>.<br>
-In order to be able to list the entire archive content it is
-recommended to <span style="font-weight: bold;">save all the parts of
-the spanned archive in the same folder</span>.<br>
-The first volume of the archive is the one with the lowest progressive
-number, and it can be usually identified as <span
- style="font-weight: bold;">.001, .r01, .z01, or .part01.rar</span>,
-and other parts should show the same filename and extension type with
-progressively increasing numbering.<br>
-Once all archive parts are in the same directory, open the first part
-with PeaZip to be able to <span style="font-weight: bold;">browse,
-search, list, test or extract the entire multi-part archive</span>.<br>
-            <br>
-            <br>
-            <h2 style="font-weight: bold;"><big>How to extract
-multi-part archives</big></h2>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="width: 48px; vertical-align: top;">
-                  <h3><img title="Manage multipart (spanned) archives"
- alt="extract multi volume archives" src="file-format/one.png"
- style="width: 48px; height: 48px;"></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: middle;"><span
- style="font-weight: bold;">Move
-(or copy) all the parts of the multi-volume archive in the same
-folder</span> before proceeding with extraction.<br>
-The spanned archies are usually 7Z, RAR or ZIP archives split in
-multiple smaller parts (volumes).<br>
-The parts have same name, same extension type, and shows progressive
-numberting: no part should be missing or else some of the original
-content will not be available for extarction<br>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
                   </td>
                 </tr>
                 <tr>
-                  <td style="width: 48px; vertical-align: top;">
-                  <h3><img
- title="Work with multipart archives 001, r01, z01, part01.rar"
- alt="open multi volume archives" src="file-format/two.png"
- style="width: 48px; height: 48px;"></h3>
+                  <td style="vertical-align: top;"> <img title="Extract multi part (spanned) archives"
+                      alt="extract multipart archives" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
                   </td>
-                  <td style="vertical-align: middle;"><span
- style="font-weight: bold;">Open the
-first volume (part) of the smanned archive</span> as explained in the
-previous section "How to open multi-part archives", <span
- style="font-weight: bold;">or esle proceed to directly extract the
-first volume of the archive</span> using one of the following available
-methods:<br>
-                  <ul>
-                    <li>From the system file manager, righclick on the
-first volume of the multi part archive and use "Extract" or "Extract
-here" PeaZip's entry in system's context menu.</li>
-                    <li>From PeaZip file manager, select the first
-volume of the spanned archive and click Extract button, or use app's
-context menu Extract entry</li>
-                  </ul>
-The first volume of the archive can be identified by the extension
-which is usually <span style="font-weight: bold;">.001</span>, <span
- style="font-weight: bold;">.r01</span>, <span
- style="font-weight: bold;">.z01</span>, <span
- style="font-weight: bold;">.part01.rar</span>.<br>
-If a <a href="extract-encrypted-files.html">password is required to
-extract</a> an encrypted multi-part archive, it can be set from the
-locker icon in the extraction screen in PeaZip before confirming
-extraction with the OK button on the bottom of the application.<br>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="Open multipart archives"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="open_rar_zip_multivolume_files"></a><span style="font-weight: bold;">How to extract
+                              multipart archives</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="How to open multi-part archives" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="How to extract multi-part archives" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2><big><big><big><a style="font-weight: bold;" name="extract_spanned_archives"></a><a
+                              href="#open_rar_zip_multivolume_files"><span style="font-weight: bold;">Open,
+                                extract multivolume spanned
+                                .001, part01, .r01, .z01 files</span><br>
+                            </a></big></big></big></h2>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>What are mult-part
+                        archives</big></h3>
+                    <br>
+                    Multi-part archives are, typically, .7z, .rar, .zip files <a href="file-split.html">spanned on
+                      multiple volumes</a>, each volume
+                    containing part of the data split in order to be conatined in a size
+                    below the desired maximum size.<br>
+                    This spanning process allows the archive to:<br>
+                    <ul>
+                      <li>be sent through channels enforcing a maximum payload
+                        size, e.g. maximum attachment size for some email providers, or maximum
+                        allowed file size for upload or cloud services</li>
+                      <li>be saved on filesystems where <a href="rar-zip-file-format-size-limitations.html">maximum file
+                          size
+                          limitations</a> are still relevant, i.e. FAT filesystems</li>
+                    </ul>
+                    PeaZip supports both creating spanned multipart archives, and opening
+                    and extracting multipart archives from different archive manager
+                    utilities in multiple formats.<br>
+                    The <span style="font-weight: bold;">first volume</span>, the one
+                    named with the lowest progressive number (usuallay starting from 1,
+                    seldom from 0) <span style="font-weight: bold;">it is the part that
+                      needs to be opened or extracted</span> in order to access the full
+                    content of the archive.<br>
+                    Most commonly multivolume archives are found with <span style="font-weight: bold;">.001</span>
+                    extension (usually 7Z or ZIP
+                    files spannd by 7-Zip, PeaZip and similar apps), <span style="font-weight: bold;">.part01.rar</span>
+                    or <span style="font-weight: bold;">.r01 </span>(usually multi part RAR files
+                    created by WinRar), or <span style="font-weight: bold;">.z01</span>
+                    (usually multi part ZIP or ZIPX archives created by WinZip).<br>
+                    <br>
+                    <br>
+                    <h2><big style="font-weight: bold;">How to open multi-part
+                        archives</big></h2>
+                    <br>
+                    From the system file explorer, or from PeaZip file manager <span style="font-weight: bold;">double
+                      click (or right click &gt; Open as
+                      archive)</span> the <span style="font-weight: bold;">first volume of
+                      the multi part archive</span>.<br>
+                    In order to be able to list the entire archive content it is
+                    recommended to <span style="font-weight: bold;">save all the parts of
+                      the spanned archive in the same folder</span>.<br>
+                    The first volume of the archive is the one with the lowest progressive
+                    number, and it can be usually identified as <span style="font-weight: bold;">.001, .r01, .z01, or
+                      .part01.rar</span>,
+                    and other parts should show the same filename and extension type with
+                    progressively increasing numbering.<br>
+                    Once all archive parts are in the same directory, open the first part
+                    with PeaZip to be able to <span style="font-weight: bold;">browse,
+                      search, list, test or extract the entire multi-part archive</span>.<br>
+                    <br>
+                    <br>
+                    <h2 style="font-weight: bold;"><big>How to extract
+                        multi-part archives</big></h2>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="width: 48px; vertical-align: top;">
+                            <h3><img title="Manage multipart (spanned) archives" alt="extract multi volume archives"
+                                src="file-format/one.png" style="width: 48px; height: 48px;"></h3>
+                          </td>
+                          <td style="vertical-align: middle;"><span style="font-weight: bold;">Move
+                              (or copy) all the parts of the multi-volume archive in the same
+                              folder</span> before proceeding with extraction.<br>
+                            The spanned archies are usually 7Z, RAR or ZIP archives split in
+                            multiple smaller parts (volumes).<br>
+                            The parts have same name, same extension type, and shows progressive
+                            numberting: no part should be missing or else some of the original
+                            content will not be available for extarction<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 48px; vertical-align: top;">
+                            <h3><img title="Work with multipart archives 001, r01, z01, part01.rar"
+                                alt="open multi volume archives" src="file-format/two.png"
+                                style="width: 48px; height: 48px;"></h3>
+                          </td>
+                          <td style="vertical-align: middle;"><span style="font-weight: bold;">Open the
+                              first volume (part) of the smanned archive</span> as explained in the
+                            previous section "How to open multi-part archives", <span style="font-weight: bold;">or esle
+                              proceed to directly extract the
+                              first volume of the archive</span> using one of the following available
+                            methods:<br>
+                            <ul>
+                              <li>From the system file manager, righclick on the
+                                first volume of the multi part archive and use "Extract" or "Extract
+                                here" PeaZip's entry in system's context menu.</li>
+                              <li>From PeaZip file manager, select the first
+                                volume of the spanned archive and click Extract button, or use app's
+                                context menu Extract entry</li>
+                            </ul>
+                            The first volume of the archive can be identified by the extension
+                            which is usually <span style="font-weight: bold;">.001</span>, <span
+                              style="font-weight: bold;">.r01</span>, <span style="font-weight: bold;">.z01</span>,
+                            <span style="font-weight: bold;">.part01.rar</span>.<br>
+                            If a <a href="extract-encrypted-files.html">password is required to
+                              extract</a> an encrypted multi-part archive, it can be set from the
+                            locker icon in the extraction screen in PeaZip before confirming
+                            extraction with the OK button on the bottom of the application.<br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    Learn more about how to use PeaZip archive manager to <a href="7zip-files-utility.html">extract 7Z
+                      files</a>, <a href="free-rar.html">extract WIM files</a>, and <a
+                      href="zip-files-utility.html">extract ZIP
+                      files</a>.which are usually the archive type most commonly employed to
+                    distribute multi-part spanned archives.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: How to
+                        extract multi-part 7z, rar, zip archives. Open and decompress
+                        multi-volumes spanned .001, patt01, .r01, .z01 files.</span><span
+                        style="font-weight: bold;"><br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: Open and
+                        extract multivolume spanned 7z rar zip archives</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; Extract multipart archives<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="extract 001 part01 rar01 z01 archives" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-Learn more about how to use PeaZip archive manager to <a
- href="7zip-files-utility.html">extract 7Z files</a>, <a
- href="free-rar.html">extract WIM files</a>, and <a
- href="zip-files-utility.html">extract ZIP
-files</a>.which are usually the archive type most commonly employed to
-distribute multi-part spanned archives.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: How to
-extract multi-part 7z, rar, zip archives. Open and decompress
-multi-volumes spanned .001, patt01, .r01, .z01 files.</span><span
- style="font-weight: bold;"><br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: Open and
-extract multivolume spanned 7z rar zip archives</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Extract multipart archives<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="extract 001 part01 rar01 z01 archives"
- src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="How to extract multipart archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="extract_multipart_archives"></a>DOWNLOADS<br>
+                      <img alt="extract part01 files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img
+                        alt="How to extract multipart 7z, rar, zip archives" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="extract_mutivolume_archives"></a>SUPPORT<br>
+                      <img alt="open part01 files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img
+                        alt="Open and decompress multivolume spanned .001, part01, .r01, .z01 files" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="open_multipart_archives"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="work with multipart archives" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="manage multipart archives" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="multipart archives extraction"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="extract r01 files" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="extract multipart rar files" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="How to extract multipart archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="extract_multipart_archives"></a>DOWNLOADS<br>
-            <img alt="extract part01 files"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="How to extract multipart 7z, rar, zip archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="extract_mutivolume_archives"></a>SUPPORT<br>
-            <img alt="open part01 files" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="Open and decompress multivolume spanned .001, part01, .r01, .z01 files"
- src="titles.png" style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="open_multipart_archives"></a>ABOUT<br style="font-style: italic;">
-            <img alt="work with multipart archives"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="manage multipart archives" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="multipart archives extraction"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="extract r01 files" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="extract multipart rar files"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

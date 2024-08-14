@@ -1,662 +1,609 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Open Source file hash utility, compute CRC, MD5, SHA256 tool. Verify file integrity, calculate checksum and hash values to detect errors, test data corruption">
+    content="Open Source file hash utility, compute CRC, MD5, SHA256 tool. Verify file integrity, calculate checksum and hash values to detect errors, test data corruption">
   <meta name="KEYWORDS"
- content="verify, integrity, compute, checksum, hash, hashing, utility, software, CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd, values, detect, errors, test, data, files, corruption, tool">
+    content="verify, integrity, compute, checksum, hash, hashing, utility, software, CRC32, Adler, MD5, SHA, SHA2, SHA3, Ripemd, values, detect, errors, test, data, files, corruption, tool">
   <meta name="ROBOTS" content="all">
   <title>File hashing utility, verify CRC MD5 SHA256 hash values</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="File hashing utility, verify CRC MD5 SHA256 hash values">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="File hashing utility, verify CRC MD5 SHA256 hash values">
   <meta property="og:description"
- content="Open Source file hash utility, compute CRC, MD5, SHA256 tool. Verify file integrity, calculate checksum and hash values to detect errors, test data corruption">
+    content="Open Source file hash utility, compute CRC, MD5, SHA256 tool. Verify file integrity, calculate checksum and hash values to detect errors, test data corruption">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/verify-checksum-hash.html">
+  <meta property="og:url" content="https://peazip.github.io/verify-checksum-hash.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Verify file hash values with PeaZip"
- alt="calculate crc of files" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="free file hashing utility" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="crc_md5_sha_algorithm"></a><span
- style="font-weight: bold;">File hashing utility,
-verify CRC MD5 SHA256 hash values</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="Open Source file hash utility, compute CRC, MD5, SHA256 tool"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="Calculate hash, checksum to detect data corruption and forgery"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="how_to_verify_file_integrity"></a><a
- href="verify-checksum-hash.html#crc_md5_sha_algorithm">Calculate hash,
-checksum to
-detect data corruption and forgery</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <a name="file_hashing_software"></a>PeaZip
-is a free, Open Source file hashing utility which provides primitives
-to compute multiple hash and checksum algorithms.<br>
-File hash computation can be used either to <a
- href="duplicates-hash-checksum.html">find
-duplicate files</a> (which have identical checksum/hash value), and to
-detect
-corrupted files which have different checksum / hash values from a
-known
-one.<br>
-            <br>
-            <big style="font-weight: bold;">Why it is needed to verify
-data integrity</big><br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Find corrupted or forged files" alt="open source file hash tool"
- src="file-format/note.png" style="width: 48px; height: 48px;"><br>
-                  </span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">Data corruption
-may arise by simple technical issues - transmission
-faults, degradation of memory support - which can usually be detected
-with ease by quick and computationally light functions (often
-integrated at various levels of transmission protocols and memory
-technologies), or may arise from forgery, purposely crafted
-modifications
-of data created by a malicious attacker to exploit weakness of simpler
-error detection mechanisms - which requires calculation of more
-powerful verification functions like cryptographically strong hash
-algorithms.</td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
                 </tr>
-              </tbody>
-            </table>
-            <span style="font-weight: bold;"></span><br>
-            <h3 style="font-weight: bold;"><big>Compute error detection
-algorithms</big></h3>
-            <br>
-            <span style="font-weight: bold;"><a name="verify_hash_value"></a>Check
-files</span> tool in
-"File tools" submenu (context menu) allows to verify multiple hash and
-checksum algorithms on multiple files at once, e.g. to
-compare a group of file to identify redundant ones, or <span
- style="font-weight: bold;"></span>to <span style="font-weight: bold;">check
-files for corruption</span>
-when an original
-checksum or hash value is
-known (or when it can be calculated for reference from a known safe
-copy of the data).<br>
-Selected algorithms are performed in a single passage so reading the
-data from
-disk (usually the main performance bottleneck) occurs only one time,
-speeding up the disk-bound part of the process.<br>
-The algorithms to be performed can be selected in Options &gt;
-Settings, in File Tools tab; calculated output value of hashes and
-checksums can
-be seen as exadecimal (HEX,
-either LSB or MSB) or encoded as
-Base64.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">CRC and hashing
-algorithms supported by PeaZip</span></big></h4>
-            <br>
-            <a name="compute_checksum_algorithm"></a>15 checksum and
-hash algorithms are currently supported:<br>
-            <ul>
-              <li>
-                <h4>checksum functions Adler32, CRC16, CRC24, CRC32,
-CRC64</h4>
-              </li>
-              <li>
-                <h4>general-purpose hash functions as
-eDonkey/eMule, MD4, MD5</h4>
-              </li>
-              <li>
-                <h4>cryptographically strong hash:</h4>
-              </li>
-              <ul>
-                <li>
-                  <h4>Ripemd160</h4>
-                </li>
-                <li>
-                  <h4>SHA-1</h4>
-                </li>
-                <li>
-                  <h3>SHA-2
-family (SHA256, SHA512)</h3>
-                </li>
-                <li>
-                  <h3>SHA-3 family (SHA-3 256, SHA-3 512)</h3>
-                </li>
-                <li>BLAKE2S and BLAKE2B<br>
-                </li>
-                <li>
-                  <h4>AES-based Whirlpool512</h4>
-                </li>
-              </ul>
-            </ul>
-            <br>
-            <big><span style="font-weight: bold;">File hash
-verification best practices</span></big><br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 64px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Chose hash function" alt="file checksum utility"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  <td style="vertical-align: top;"> <img title="Verify file hash values with PeaZip"
+                      alt="calculate crc of files" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><span
- style="font-style: italic;"><a name="verify_file_integrity"></a>Hint:
-chose faster checksums like CRC32 to
-perform a quick comparison (e.g. to detect duplicate
-files of test for casual corruption data errors), but it is
-recommended to employ a cryptographically
-secure hash function (like BLAKE2S or BLAKE2B, SHA256, SHA-3
-algorithms, or the
-AES-based Whirlpool512) to detect
-malicious
-corruption / forgery attacks that might be calculated in order to pass
-undetected
-to one (or some) of the non-secure algorithms exploiting collision -
-algorithm maps different input to same ouput digest.</span> </td>
-                  <td style="vertical-align: bottom; width: 64px;">
-                  <h3><img title="CRC vs MD5 vs SHA"
- alt="verify sha256 hash value" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="free file hashing utility"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-weight: bold;">Use multiple hash
-functions at once</span><br>
-            <a name="calculate_hash_value"></a>Employing multiple
-functions
-at once, and especially relying on
-cryptographically
-strong hash functions as Ripemd160, SHA-2, SHA-3 or Whirlpool, can
-defeat
-attempt
-of forging identical-looking files, as it is computationally feasible
-to find a collision (different input files mapped to same output
-digest) for
-simpler
-checksum and hash functions, while finding digest value collisions is
-currently not computationally feasible for more robust cryptographic
-hash functions.<br>
-            <br>
-This way, even a purposely crafted modification of a file would not
-pass unnoticed to most sophisticated error / forgery detection
-algorithms, making
-possible to identify not only plain data corruption (e.g. communication
-or device fault) but also to avoid certain classes of attacks relying
-on replacing original content with forged data.<br>
-            <span style="font-weight: bold;"><br>
-            </span> <br>
-            <big style="font-weight: bold;">Byte-to-byte file
-comparison</big><br>
-            <span style="font-weight: bold;"><br>
-            </span><span style="font-weight: bold;">Compare files</span>
-tool in
-"File tools" submenu performs byte to byte comparison between two
-files, a slower process in which all single bytes of one file are
-verified and matched with the same offset byte of the other file.<br>
-Unlike checksum / hash comparison, this method it is not subject to
-collisions
-under any
-circumstance, and can effectively tell what the different bytes are,
-providing not
-only a way to verify if two files are identical or different, but also
-to find in details what changes were
-made between the two versions.<br>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Test archive
-files for
-errors</span><br>
-            </big></h3>
-            <br>
-            <a name="test_archive_integrity"></a>Most archive formats
-can be tested for errors using PeaZip Open Source file hash utility
-routines
-(Test button), detecting if data is correctly readable and matches file
-format specification's standards, either testing archive table of
-content and single archive items. <br>
-            <h2><img
- title="Test file integrity to identify corrupt or forged data"
- alt="calculate file hash" src="test-archive.png"
- style="width: 100px; height: 45px;"></h2>
-Some archive types (7z, rar, tar, zipx...) improves error detection
-storing pre-computed checksum values (usually CRC32, <a
- href="what-is-rar-file.html">RAR format</a> can optionally use 256-bit
-BLAKE2sp hash) of archived data.<br>
-Data errors can be due to random corruption (faulty support, troubles
-during download), out of standard archiving processes (bug, obsolete
-specifications), or in worst case purposeful alteration of original
-content. In some cases corruption or alteration of data can lead to an <a
- href="peazip-password.html">unreadable archive</a> as result.<br>
-Testing archives for errors is an useful good practice sufficient for
-low risk scenarios, but if there is a reasonable suspicion of the data
-being purposely manipulated it is preferable to test the file with a
-cryptographically strong hash function (SHA family, Ripemd, Whirlpool)
-against
-a known value, using aforementioned "Check files" tool.<br>
-            <big style="font-weight: bold;"><br>
-Integrity checking in PEA archives</big><br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Built-in error detection" alt="file hashing utility"
- src="file-format/information.png" style="width: 48px; height: 48px;"><br>
-                  </span></h2>
-                  </td>
-                  <td
- style="font-style: italic; vertical-align: middle;"><a
- href="pea-archiving-utility.html">PEA file format</a>
-provides a wide array of strong hash functions and authenticated
-encryption options, saving inside the archive the calculated digest
-values - Adler, CRC32, CRC64, MD5, SHA1, Ripemd, SHA2 (SHA256, SHA512)
-and SHA3 (SHA-3 256, SHA-3 512), Whirlpool, plus OMAC or HMAC for
-authenticated encryption (default EAX AES256 CTR+OMAC).<br>
-In this way the data integrity can be thoroughly tested
-during extraction, reducing needs of relying on external file hashing
-tools,
-for verification both of integrity and autenticity of the content.</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-Read more about error detection and related topics: definitions of <a
- target="_blank" href="http://en.wikipedia.org/wiki/Data_integrity">data
-integrity<img alt="verify file content" title="Data integrity"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://en.wikipedia.org/wiki/Checksum">checksum<img
- alt="validate data integrity" title="Verify checksum value"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://en.wikipedia.org/wiki/Hash_function">hash<img
- alt="find hash value" title="File hashing" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank"
- href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographically
-secure hash function<img alt="cryptographic hash algorithms"
- title="Non-invertible hash function" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
- href="http://en.wikipedia.org/wiki/Data_deduplication">data
-deduplication<img alt="identify duplicates"
- title="Wikipedia data deduplication" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> on
-Wikipedia, <a target="_blank"
- href="http://csrc.nist.gov/publications/fips/fips200-4/fips-200-4.pdf">sha-2-family<img
- alt="fips certified hash" title="SHA familiy algorithms"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> standard.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Error
-detection, how to verify data integrity with PeaZip, freeware Open
-Source file hashing utility. Calculate CRC checksum and MD5, SHA256
-file hash values to detect corrupt files.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: how to compute
-crc, verify md5, sha256 hash values, detect corrputed files, test files
-for data errors<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-File hashing utility, verify CRC MD5 SHA256 hash values<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);"> <img
- title="File management FAQs" alt="compute hash value"
- src="file-format/file-manager.png" style="width: 96px; height: 96px;"
- align="right"><a name="file_management_utilities"></a>FILE
-MANAGER
-                  <p><a style="font-weight: bold;"
- href="duplicates-hash-checksum.html">Find duplicate files</a><span
- style="font-weight: bold;"></span></p>
-                  <p><span style="font-weight: bold;"></span><a
- style="font-weight: bold;" href="compress-resize-jpeg-png-files.html">Optimize
-compression
-of
-graphic
-files</a></p>
-                  <p><a style="font-weight: bold;"
- href="file-split.html">Split and join file</a></p>
-                  <p><a style="font-weight: bold;"
- href="verify-checksum-hash.html">Verify
-hash and checksum values</a></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="free hash file utility" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="freeware_file_hash_software"></a>DOWNLOADS<br>
-            <img alt="open source file hashing tool"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="open source file hash utility" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="file_hashing_utility"></a>SUPPORT<br>
-            <img alt="file hashing tool" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Compute error detection algorithms" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="crc_md5_sha_algorithm"></a><span style="font-weight: bold;">File hashing utility,
+                              verify CRC MD5 SHA256 hash values</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
                 </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="Open Source file hash utility, compute CRC, MD5, SHA256 tool" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="Calculate hash, checksum to detect data corruption and forgery" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="Test archive files for errors"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Open source file hashing utility, verify CRC MD5 SHA256 hash values free"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="freeware file hash software"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="how_to_verify_file_integrity"></a><a
+                                href="verify-checksum-hash.html#crc_md5_sha_algorithm">Calculate hash,
+                                checksum to
+                                detect data corruption and forgery</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <a name="file_hashing_software"></a>PeaZip
+                    is a free, Open Source file hashing utility which provides primitives
+                    to compute multiple hash and checksum algorithms.<br>
+                    File hash computation can be used either to <a href="duplicates-hash-checksum.html">find
+                      duplicate files</a> (which have identical checksum/hash value), and to
+                    detect
+                    corrupted files which have different checksum / hash values from a
+                    known
+                    one.<br>
+                    <br>
+                    <big style="font-weight: bold;">Why it is needed to verify
+                      data integrity</big><br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h2><span style="font-weight: bold;"><img title="Find corrupted or forged files"
+                                  alt="open source file hash tool" src="file-format/note.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h2>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;">Data corruption
+                            may arise by simple technical issues - transmission
+                            faults, degradation of memory support - which can usually be detected
+                            with ease by quick and computationally light functions (often
+                            integrated at various levels of transmission protocols and memory
+                            technologies), or may arise from forgery, purposely crafted
+                            modifications
+                            of data created by a malicious attacker to exploit weakness of simpler
+                            error detection mechanisms - which requires calculation of more
+                            powerful verification functions like cryptographically strong hash
+                            algorithms.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-weight: bold;"></span><br>
+                    <h3 style="font-weight: bold;"><big>Compute error detection
+                        algorithms</big></h3>
+                    <br>
+                    <span style="font-weight: bold;"><a name="verify_hash_value"></a>Check
+                      files</span> tool in
+                    "File tools" submenu (context menu) allows to verify multiple hash and
+                    checksum algorithms on multiple files at once, e.g. to
+                    compare a group of file to identify redundant ones, or <span style="font-weight: bold;"></span>to
+                    <span style="font-weight: bold;">check
+                      files for corruption</span>
+                    when an original
+                    checksum or hash value is
+                    known (or when it can be calculated for reference from a known safe
+                    copy of the data).<br>
+                    Selected algorithms are performed in a single passage so reading the
+                    data from
+                    disk (usually the main performance bottleneck) occurs only one time,
+                    speeding up the disk-bound part of the process.<br>
+                    The algorithms to be performed can be selected in Options &gt;
+                    Settings, in File Tools tab; calculated output value of hashes and
+                    checksums can
+                    be seen as exadecimal (HEX,
+                    either LSB or MSB) or encoded as
+                    Base64.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">CRC and hashing
+                          algorithms supported by PeaZip</span></big></h4>
+                    <br>
+                    <a name="compute_checksum_algorithm"></a>15 checksum and
+                    hash algorithms are currently supported:<br>
+                    <ul>
+                      <li>
+                        <h4>checksum functions Adler32, CRC16, CRC24, CRC32,
+                          CRC64</h4>
+                      </li>
+                      <li>
+                        <h4>general-purpose hash functions as
+                          eDonkey/eMule, MD4, MD5</h4>
+                      </li>
+                      <li>
+                        <h4>cryptographically strong hash:</h4>
+                      </li>
+                      <ul>
+                        <li>
+                          <h4>Ripemd160</h4>
+                        </li>
+                        <li>
+                          <h4>SHA-1</h4>
+                        </li>
+                        <li>
+                          <h3>SHA-2
+                            family (SHA256, SHA512)</h3>
+                        </li>
+                        <li>
+                          <h3>SHA-3 family (SHA-3 256, SHA-3 512)</h3>
+                        </li>
+                        <li>BLAKE2S and BLAKE2B<br>
+                        </li>
+                        <li>
+                          <h4>AES-based Whirlpool512</h4>
+                        </li>
+                      </ul>
+                    </ul>
+                    <br>
+                    <big><span style="font-weight: bold;">File hash
+                        verification best practices</span></big><br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 64px;">
+                            <h2><span style="font-weight: bold;"><img title="Chose hash function"
+                                  alt="file checksum utility" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><span style="font-style: italic;"><a
+                                name="verify_file_integrity"></a>Hint:
+                              chose faster checksums like CRC32 to
+                              perform a quick comparison (e.g. to detect duplicate
+                              files of test for casual corruption data errors), but it is
+                              recommended to employ a cryptographically
+                              secure hash function (like BLAKE2S or BLAKE2B, SHA256, SHA-3
+                              algorithms, or the
+                              AES-based Whirlpool512) to detect
+                              malicious
+                              corruption / forgery attacks that might be calculated in order to pass
+                              undetected
+                              to one (or some) of the non-secure algorithms exploiting collision -
+                              algorithm maps different input to same ouput digest.</span> </td>
+                          <td style="vertical-align: bottom; width: 64px;">
+                            <h3><img title="CRC vs MD5 vs SHA" alt="verify sha256 hash value"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-weight: bold;">Use multiple hash
+                      functions at once</span><br>
+                    <a name="calculate_hash_value"></a>Employing multiple
+                    functions
+                    at once, and especially relying on
+                    cryptographically
+                    strong hash functions as Ripemd160, SHA-2, SHA-3 or Whirlpool, can
+                    defeat
+                    attempt
+                    of forging identical-looking files, as it is computationally feasible
+                    to find a collision (different input files mapped to same output
+                    digest) for
+                    simpler
+                    checksum and hash functions, while finding digest value collisions is
+                    currently not computationally feasible for more robust cryptographic
+                    hash functions.<br>
+                    <br>
+                    This way, even a purposely crafted modification of a file would not
+                    pass unnoticed to most sophisticated error / forgery detection
+                    algorithms, making
+                    possible to identify not only plain data corruption (e.g. communication
+                    or device fault) but also to avoid certain classes of attacks relying
+                    on replacing original content with forged data.<br>
+                    <span style="font-weight: bold;"><br>
+                    </span> <br>
+                    <big style="font-weight: bold;">Byte-to-byte file
+                      comparison</big><br>
+                    <span style="font-weight: bold;"><br>
+                    </span><span style="font-weight: bold;">Compare files</span>
+                    tool in
+                    "File tools" submenu performs byte to byte comparison between two
+                    files, a slower process in which all single bytes of one file are
+                    verified and matched with the same offset byte of the other file.<br>
+                    Unlike checksum / hash comparison, this method it is not subject to
+                    collisions
+                    under any
+                    circumstance, and can effectively tell what the different bytes are,
+                    providing not
+                    only a way to verify if two files are identical or different, but also
+                    to find in details what changes were
+                    made between the two versions.<br>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Test archive
+                          files for
+                          errors</span><br>
+                      </big></h3>
+                    <br>
+                    <a name="test_archive_integrity"></a>Most archive formats
+                    can be tested for errors using PeaZip Open Source file hash utility
+                    routines
+                    (Test button), detecting if data is correctly readable and matches file
+                    format specification's standards, either testing archive table of
+                    content and single archive items. <br>
+                    <h2><img title="Test file integrity to identify corrupt or forged data" alt="calculate file hash"
+                        src="test-archive.png" style="width: 100px; height: 45px;"></h2>
+                    Some archive types (7z, rar, tar, zipx...) improves error detection
+                    storing pre-computed checksum values (usually CRC32, <a href="what-is-rar-file.html">RAR format</a>
+                    can optionally use 256-bit
+                    BLAKE2sp hash) of archived data.<br>
+                    Data errors can be due to random corruption (faulty support, troubles
+                    during download), out of standard archiving processes (bug, obsolete
+                    specifications), or in worst case purposeful alteration of original
+                    content. In some cases corruption or alteration of data can lead to an <a
+                      href="peazip-password.html">unreadable archive</a> as result.<br>
+                    Testing archives for errors is an useful good practice sufficient for
+                    low risk scenarios, but if there is a reasonable suspicion of the data
+                    being purposely manipulated it is preferable to test the file with a
+                    cryptographically strong hash function (SHA family, Ripemd, Whirlpool)
+                    against
+                    a known value, using aforementioned "Check files" tool.<br>
+                    <big style="font-weight: bold;"><br>
+                      Integrity checking in PEA archives</big><br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h2><span style="font-weight: bold;"><img title="Built-in error detection"
+                                  alt="file hashing utility" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h2>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;"><a
+                              href="pea-archiving-utility.html">PEA file format</a>
+                            provides a wide array of strong hash functions and authenticated
+                            encryption options, saving inside the archive the calculated digest
+                            values - Adler, CRC32, CRC64, MD5, SHA1, Ripemd, SHA2 (SHA256, SHA512)
+                            and SHA3 (SHA-3 256, SHA-3 512), Whirlpool, plus OMAC or HMAC for
+                            authenticated encryption (default EAX AES256 CTR+OMAC).<br>
+                            In this way the data integrity can be thoroughly tested
+                            during extraction, reducing needs of relying on external file hashing
+                            tools,
+                            for verification both of integrity and autenticity of the content.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    Read more about error detection and related topics: definitions of <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Data_integrity">data
+                      integrity<img alt="verify file content" title="Data integrity" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Checksum">checksum<img alt="validate data integrity"
+                        title="Verify checksum value" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Hash_function">hash<img alt="find hash value"
+                        title="File hashing" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographically
+                      secure hash function<img alt="cryptographic hash algorithms" title="Non-invertible hash function"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
+                      href="http://en.wikipedia.org/wiki/Data_deduplication">data
+                      deduplication<img alt="identify duplicates" title="Wikipedia data deduplication"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a> on
+                    Wikipedia, <a target="_blank"
+                      href="http://csrc.nist.gov/publications/fips/fips200-4/fips-200-4.pdf">sha-2-family<img
+                        alt="fips certified hash" title="SHA familiy algorithms" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> standard.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Error
+                        detection, how to verify data integrity with PeaZip, freeware Open
+                        Source file hashing utility. Calculate CRC checksum and MD5, SHA256
+                        file hash values to detect corrupt files.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: how to compute
+                        crc, verify md5, sha256 hash values, detect corrputed files, test files
+                        for data errors<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        File hashing utility, verify CRC MD5 SHA256 hash values<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);"> <img
+                              title="File management FAQs" alt="compute hash value" src="file-format/file-manager.png"
+                              style="width: 96px; height: 96px;" align="right"><a
+                              name="file_management_utilities"></a>FILE
+                            MANAGER
+                            <p><a style="font-weight: bold;" href="duplicates-hash-checksum.html">Find duplicate
+                                files</a><span style="font-weight: bold;"></span></p>
+                            <p><span style="font-weight: bold;"></span><a style="font-weight: bold;"
+                                href="compress-resize-jpeg-png-files.html">Optimize
+                                compression
+                                of
+                                graphic
+                                files</a></p>
+                            <p><a style="font-weight: bold;" href="file-split.html">Split and join file</a></p>
+                            <p><a style="font-weight: bold;" href="verify-checksum-hash.html">Verify
+                                hash and checksum values</a></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="free hash file utility"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="freeware_file_hash_software"></a>DOWNLOADS<br>
+                      <img alt="open source file hashing tool" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="open source file hash utility"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="file_hashing_utility"></a>SUPPORT<br>
+                      <img alt="file hashing tool" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Compute error detection algorithms" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="Test archive files for errors"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Open source file hashing utility, verify CRC MD5 SHA256 hash values free"
+                                title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="freeware file hash software" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

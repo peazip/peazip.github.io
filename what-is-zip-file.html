@@ -1,933 +1,856 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How file compression and archiving works? What is an archive file? What are 7Z, RAR, ZIP compressed archives? Lossy and lossless compression">
+    content="How file compression and archiving works? What is an archive file? What are 7Z, RAR, ZIP compressed archives? Lossy and lossless compression">
   <meta name="KEYWORDS"
- content="how, files, data, compression, archiving, works, what is, what are, archives, compressed, 7z, rar, zip, lossy, lossless">
+    content="how, files, data, compression, archiving, works, what is, what are, archives, compressed, 7z, rar, zip, lossy, lossless">
   <meta name="ROBOTS" content="all">
   <title>How does file compression work</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="How file compression works, what are archive files">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="How file compression works, what are archive files">
   <meta property="og:description"
- content="How file compression and archiving works? What is an archive file? What are 7Z, RAR, ZIP compressed archives? Lossy and lossless compression">
+    content="How file compression and archiving works? What is an archive file? What are 7Z, RAR, ZIP compressed archives? Lossy and lossless compression">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/what-is-zip-file.html">
+  <meta property="og:url" content="https://peazip.github.io/what-is-zip-file.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="What is a compressed file and how does data compression work"
- alt="lossy and lossless definition" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="what is data compression definition"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center; font-weight: bold;"><big><big><big><a
- name="how_does_it_works_file_compression"></a>How does file
-compression
-work</big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="What is file archiving" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="What is file compression" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <ul>
-              <li><a href="#what_is_archive_file">HOW FILE COMPRESSION
-AND FILE ARCHIVING WORKS</a></li>
-              <li><a href="#compression_types_comparison">LOSSY AND
-LOSSLESS DATA COMPRESSION DEFINITION</a></li>
-              <li><a href="#what_is_zip_rar_file">WHAT COMPRESSED
-ARCHIVE FILES ARE</a><br>
-              </li>
-            </ul>
-            <br>
-            <h2><big><big style="font-weight: bold;"><big><a
- name="what_is_archive_file"></a><a
- href="#how_does_it_works_file_compression">How file
-compression and file archiving
-work</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">What is file
-archiving</big><span
- style="font-weight: bold; background-color: rgb(255, 255, 204);"></span></h3>
-            <span
- style="font-weight: bold; background-color: rgb(255, 255, 204);"></span><span
- style="font-weight: bold; background-color: rgb(255, 238, 221);"><br>
-            <a name="what_is_file_archiving"></a>File
-archiving</span><span style="background-color: rgb(255, 238, 221);">
-means
-to combine multiple files together for easier management of the data</span>
-(i.e. <a href="backup-files.html">backup</a>, <a
- href="share-files-sharing.html">sharing by email attachment, FTP,
-torrent, cloud</a>, or any
-kind of network service, etc) as for the host filesystem all the data
-will be treated as a single file rather than as multiple ones,
-eliminating the overhead of handling multiple objects - for each single
-file, locating the physical data on disk, locating possible fragments,
-checking file level security permissions, and so on.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h3><span style="font-weight: bold;"><img
- title="How file archiving works" alt="how file compression works"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><a
- name="first_archive_formats"></a>The idea of archiving
-files pre-dates .zip format by many years, as in
-AR Unix
-format (later superseded by TAR, released in 1979 and
-standardized in 1988), and LBR format in
-CP/M / DOS world in early '80s.</td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h4><img title="How data compression works"
- alt="how file archiving works" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h4>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img
+                      title="What is a compressed file and how does data compression work"
+                      alt="lossy and lossless definition" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="what is data compression definition"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center; font-weight: bold;"><big><big><big><a
+                              name="how_does_it_works_file_compression"></a>How does file
+                            compression
+                            work</big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img alt="What is file archiving"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img alt="What is file compression"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <ul>
+                        <li><a href="#what_is_archive_file">HOW FILE COMPRESSION
+                            AND FILE ARCHIVING WORKS</a></li>
+                        <li><a href="#compression_types_comparison">LOSSY AND
+                            LOSSLESS DATA COMPRESSION DEFINITION</a></li>
+                        <li><a href="#what_is_zip_rar_file">WHAT COMPRESSED
+                            ARCHIVE FILES ARE</a><br>
+                        </li>
+                      </ul>
+                      <br>
+                      <h2><big><big style="font-weight: bold;"><big><a name="what_is_archive_file"></a><a
+                                href="#how_does_it_works_file_compression">How file
+                                compression and file archiving
+                                work</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">What is file
+                        archiving</big><span style="font-weight: bold; background-color: rgb(255, 255, 204);"></span>
+                    </h3>
+                    <span style="font-weight: bold; background-color: rgb(255, 255, 204);"></span><span
+                      style="font-weight: bold; background-color: rgb(255, 238, 221);"><br>
+                      <a name="what_is_file_archiving"></a>File
+                      archiving</span><span style="background-color: rgb(255, 238, 221);">
+                      means
+                      to combine multiple files together for easier management of the data</span>
+                    (i.e. <a href="backup-files.html">backup</a>, <a href="share-files-sharing.html">sharing by email
+                      attachment, FTP,
+                      torrent, cloud</a>, or any
+                    kind of network service, etc) as for the host filesystem all the data
+                    will be treated as a single file rather than as multiple ones,
+                    eliminating the overhead of handling multiple objects - for each single
+                    file, locating the physical data on disk, locating possible fragments,
+                    checking file level security permissions, and so on.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h3><span style="font-weight: bold;"><img title="How file archiving works"
+                                  alt="how file compression works" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h3>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><a name="first_archive_formats"></a>The
+                            idea of archiving
+                            files pre-dates .zip format by many years, as in
+                            AR Unix
+                            format (later superseded by TAR, released in 1979 and
+                            standardized in 1988), and LBR format in
+                            CP/M / DOS world in early '80s.</td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h4><img title="How data compression works" alt="how file archiving works"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">What is file
+                          compression<br>
+                        </span></big></h3>
+                    <span style="font-weight: bold; background-color: rgb(255, 238, 221);"><br>
+                      <a name="whant_is_file_compression"></a>File
+                      compression</span><span style="background-color: rgb(255, 238, 221);">
+                      means to reduce size of data on disk encoding it to a smaller output</span>,
+                    employing various strategies to efficiently map (most cases of) a
+                    larger input to a smaller output, i.e. using statistical analisys to
+                    reduce redundancy in inputa data.<br>
+                    Data compression,
+                    too, predates development of ZIP standard, as once the input files were
+                    merged into a single output archive, the operation was often
+                    concatenated to lossless data compression to reduce the size of the
+                    archive using various utilities available at the time as SQ (DOS,
+                    CP/M), CRUNCH (CP/M), and compress (Unix).<br>
+                    <a href="tar-file-format.html">TAR format</a>, for example,
+                    is still an uncompressed archive standard, and
+                    uses external compressors, nowadays usually <a href="gzip-files.html">GZ</a>
+                    (fast deflate based
+                    compression, same as in ZIP format), <a href="bzip2-file.html">BZ2</a>
+                    (more powerful compression),
+                    XZ (modern, very powerful LZMA based compression - the default
+                    compression algorithm used in 7Z format), BR Google's Brotli (modern,
+                    very fast compressor), and ZST Facebook's Zstandard (another modern,
+                    very fast compressor).<br>
+                    <br>
+                    Learn more about similarities and differences in <span style="font-weight: bold;">Lossy and lossless
+                      data
+                      compression</span> paragraph. For general purpose compressed archive
+                    file,
+                    however, compression means Lossless Compression, a 1:1 mapping of input
+                    to a smaller output.<br>
+                    <br>
+                    <a name="history_of_file_compression"></a>SEA's ARC format
+                    (1985) combined the archival and (lossless)
+                    compression in a single pass, providing probably the first example of
+                    general purpose of archive manager, which allowed both to spare storage
+                    for backup, and save upload
+                    and download bandwidth (and time) for sharing - at the time, mainly BBS.<br>
+                    A few years later, after a controversy with SEA about
+                    alleged derived
+                    work in PKARC, Phil Katz superseded previous works releasing PKZIP,
+                    which knew great success due multiple factors, as superior speed and
+                    efficiency, and being the specs released under public domain, and
+                    having relatively few competitors in years of fast PC market expansion.<br>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="compression_types_comparison"></a><a
+                                href="#how_does_it_works_file_compression">Lossy
+                                and lossless data compression
+                                definition</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>How lossy and lossless
+                        compression works</big></h3>
+                    <br>
+                    Data compression can be defined <span style="font-weight: bold;">lossy
+                    </span>or <span style="font-weight: bold;">lossless</span>,
+                    in terms of
+                    reversibility of the compression process due loss (or preservation) of
+                    original information in the process. The two types of algorithms have
+                    different pros and cons, and different field of application.<br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Lossless compression
+                        definition, file
+                        archiving</big></h3>
+                    <br>
+                    <a name="lossless_compression_algorithms"></a>Lossless
+                    compression
+                    uses
+                    statistical models to map the input to a smaller
+                    output eliminating redundancy in the data.<br>
+                    In this way the output carry
+                    exactly all the information featured by the input in less bytes, and
+                    can be expanded when needed to a 1:1 copy of the original data
+                    (restoring exactly the original content), which
+                    is a fundamental property for storing some types of data - i.e. a
+                    software, a database.<br>
+                    <br>
+                    <a name="compression_of_archive_files"></a>For this reason
+                    lossless compression algorithms are used for data backup and for
+                    archive
+                    file formats
+                    used in general
+                    purpose archive manager utilities, like <span style="font-weight: bold;">7Z</span>, <span
+                      style="font-weight: bold;">RAR</span>,
+                    and <span style="font-weight: bold;">ZIP</span>, where an
+                    exact and reversible image
+                    of the original data must be saved.<br>
+                    Examples of lossless compression algorithms are Deflate (used i.e. for
+                    ZIP and GZ formats), BZip2 (used in BZ2 format), PPMd (RAR, 7Z
+                    formats), LZMA / LZMA2 (7Z / XZ format).<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h3><span style="font-weight: bold;"><img title="Invertible compression algorithms"
+                                  alt="what is lossless compression" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h3>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><big><span
+                                style="font-style: italic;">Lossless compression is fully invertible,
+                                as 1:1 copy of original content input is stored in the smaller,
+                                efficiently encoded output, so it is usually suitable for backup, file
+                                archiving and other applications where any loss of information is not
+                                tolerable.<br>
+                              </span></big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h4><img title="Lossy - Lossless compression differences"
+                                alt="what are reversible compression algorithms" src="file-format/quotes-inverse.png"
+                                style="width: 32px; height: 32px;"></h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    Some graphic file fomats (notably, PNG files and deflated TIFF) uses
+                    lossless compression, which usually results in less compression but no
+                    image quality degradation after multiple cycles of modification and
+                    saving of the picture, making this kind of image format suitable as
+                    intermediate save files for image editing tools.<span style="font-weight: bold;"><br>
+                    </span><br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Lossy compression
+                          definition, multimedia data
+                          compression</span><br>
+                      </big></h3>
+                    <br>
+                    <a name="lossy_compression_algorithms"></a>Lossy
+                    compression, instead,
+                    works
+                    identifying unnecessary
+                    or less relevant information (not just redundant data) and removing it.
+                    <br>
+                    <br>
+                    Unlike the lossless compression, the amount of information to compress
+                    is effectively reduced.<br>
+                    The loss of information / content is irreversible, and depending from
+                    the nature of the algorithm, will likely happen each time the content
+                    is modified and saved to a lossy file format - e.g. when editing a
+                    lossy jpeg images, and saving it multiple times to intermediate work
+                    files.<br>
+                    <br>
+                    In this way data
+                    compression ratio is improved but at the cost of making lossy
+                    compression a
+                    non reversible process - as it comes at the cost of losing part of the
+                    information - and making it a suitable choice only when it is not
+                    intended, by design, to restore the original content again.<br>
+                    <br>
+                    <a name="multimedia_file_compression"></a>Lossy compression
+                    is consequently not suitable for general purpose file
+                    archiving
+                    (as in example losing a single byte of an executable file would make it
+                    not working), but&nbsp; it works very well when loss, reducing less
+                    relevant
+                    information, is acceptable, as for <a href="compress-resize-jpeg-png-files.html">graphic and
+                      multimedia
+                      files
+                      compression</a>
+                    - in example for <span style="font-weight: bold;">MP3</span>
+                    losing audio information below the audibility threshold, or losing not
+                    visible details in <span style="font-weight: bold;">JPEG</span>
+                    images, or both in compressed video formats such as <span style="font-weight: bold;">MPEG
+                    </span>(AVI, MKV, MPG, MP4...).<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h3><span style="font-weight: bold;"><img title="destructive compression algorithm"
+                                  alt="what is lossy compression" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h3>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><big>Information
+                              loss is destructive for the ability of 1:1 reversal of
+                              the algorithm (the information is permanently lost), but it is not
+                              prejudicial for the ability of end users to receive meaningful
+                              information - intelligible audio, clear picture or video.</big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h4><img title="Information loss" alt="non reversible compression algorithms"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    Most common lossy compression algorithms are consequently usually fine
+                    tuned for the specific pattern of a multimedia data type.<br>
+                    For this very same reson, file types compressed with lossy algorithms
+                    will not compress well (or at all) if added to archive files compressed
+                    with general purpose compression algorithms: <a
+                      href="why-can-not-compress-pdf-avi-mp3-files.html">already compressed
+                      files compresses poorly, if at all</a>.<br>
+                    <br>
+                    Due the lossy nature of those compression schemes, however, usually
+                    professional editing work is performed on non compressed data (i.e. WAV
+                    audio, or TIFF images) or data compressed in a lossless way (i.e. FLAC
+                    audio, or PNG images) every time it is feasible so saving the work in
+                    progress multiple times does not result in losing bits of the
+                    information each time, with progressive degradation of quality -
+                    usually
+                    reserving use of lossy compression to final step for creating a
+                    reasonably sized output to distribute for media consumption.<br>
+                    <br>
+                    <h4><big><big><small style="font-weight: bold;">Lossy vs
+                            lossless compression</small><br>
+                        </big></big></h4>
+                    <br>
+                    Lossy and lossless compression algorithms are so different in scopes
+                    that cannot be really put in direct competition.<br>
+                    When original content needs to be restored completely on decompression
+                    (binary files, rew data) lossless, fully reversible compression is the
+                    only option, while when some degree of data loss is acceptable (e.g.
+                    finalizing work on multimedia files such as mp3 audio, mpeg video, jpeg
+                    graphics) generally advantages of lossy compression in terms of speed
+                    and maximum compression ratio over lossless compression are so evident
+                    that lossy, non reversible compression is the only viable choice to
+                    meet size and/or performances constrains.<br>
+                    <br>
+                    <br>
+                    Read <a target="_blank" href="http://en.wikipedia.org/wiki/Lossless_compression">lossless
+                      compression<img alt="optimize data compression" title="Lossless compression algorithms"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
+                      target="_blank" href="http://en.wikipedia.org/wiki/Lossy_compression">lossy
+                      compression<img alt="optimize picture compression" title="Lossy compression algoritms"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    definitions on Wikipedia.<br>
+                    <br>
+                    <br>
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="what_is_zip_rar_file"></a><a
+                                href="what-is-zip-file.html#how_does_it_works_file_compression">What
+                                compressed archive files are</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h2><big><span style="font-weight: bold;">What is a
+                          ZIP file</span><br>
+                      </big></h2>
+                    <br>
+                    <a href="zip-file-format.html">ZIP format</a>
+                    is a <span style="font-weight: bold;">lossless data
+                      compression and archival format</span> created in 1989 by Phil Katz,
+                    implemented for the first time in PKWARE's PKZIP.<br>
+                    <a name="how_zip_archives_work"></a>The ZIP file format
+                    specifications were released under public domain
+                    and the format had long and lasting success, to the point often "zip"
+                    is colloquially used for any generic compressed archive, and many
+                    package formats are based on deflate compression and/or same or very
+                    similar specs: Java JAR / WAR / EAR, Android APK,
+                    Apple iOS IPA files (iPhone and iPad devices), Microsoft CAB and Office
+                    compound files.<br>
+                    <span class="st"><a name="what_is_a_zip_file"></a>WinZip
+                      12.1 (2009) introduced the new <span style="font-weight: bold;">ZIPX </span>file
+                      format specifications
+                      for identifying a
+                      new archive standard which
+                      supports newer and more powerful compression algorithms.<br>
+                      <br>
+                      <br>
+                    </span>
+                    <h3><big><span style="font-weight: bold;">What are RAR,
+                          ACE, 7Z files</span><br>
+                      </big></h3>
+                    <br>
+                    <a name="how_rar_archives_work"></a>During '90s and
+                    beyond, multiple alternative archival standard emerged,
+                    as <span style="font-weight: bold;">ARJ</span>, <a href="what-is-rar-file.html"><span
+                        style="font-weight: bold;">RAR</span></a>
+                    (1993), <a href="ace-files-utility.html"><span style="font-weight: bold;">ACE</span></a>,
+                    and <a href="7z-file-format.html"><span style="font-weight: bold;">7Z</span></a>
+                    (1999), introducing unique
+                    features to
+                    distinguish
+                    them from the growing number of competitors, in example:<br>
+                    <ul>
+                      <li>usually, <a href="maximum-compression-benchmark.html">stronger
+                          compression</a> ratio than ZIP at the
+                        cost of slower operation - but that disadvantage would have been paid
+                        off by slower transfer time (especially on slow and public networks)
+                        of smaller output file<br>
+                      </li>
+                      <li>multi volume archival, <a href="file-split.html">spanning
+                          output to multiple files</a> to met
+                        constrains as mail attachment size limit</li>
+                      <li><a href="encrypt-files.html">encryption</a>, to
+                        enforce end user's privacy if the file
+                        is stolen, or
+                        passed through unsecure servers (unencrypted public network, or any
+                        third party controlled channel as a mail server, or remote storage
+                        service)</li>
+                      <li><a href="verify-checksum-hash.html">error detection</a>
+                        and error correction (as implemented in ARC and RAR formats), to
+                        prevent extraction
+                        in the event data gets corrupted (i.e. faulty connection, damaged disk)
+                        and attempt recovery from known good data.</li>
+                    </ul>
+                    <br>
+                    <big style="font-weight: bold;">Evolution of file archiving
+                      formats</big><br>
+                    <br>
+                    <a name="how_7z_archives_works"></a>Archival file format
+                    tends to be more geared towards powerful,
+                    computing intensive features to enhance manageability of data (high
+                    compression, strong encryption), rather than enhancing ability to work
+                    on live data (rapid read and write access) like filesystems, even if
+                    some archive management utilities offers various mechanisms to <a
+                      href="add-remove-files-from-archive.html">add or remove data inside
+                      archives</a>, and <a href="how-to-update-existing-archive.html">update
+                      or sync files already in the archive</a>.<br>
+                    More choice in standards brought users more features and healthy
+                    competition between standards (see <a href="archive-file-formats-comparison.html">comparison of
+                      archive
+                      formats</a>) and implementations, but also brought
+                    the need for
+                    flexible multi-purpose archival applications, like PeaZip, to deal with
+                    different formats users may encounter, and to make full use of the
+                    feature's potential of
+                    the different supported file formats.<br>
+                    In recent years the trend is shifting toward very fast and highly
+                    efficient compression algorithms, aiming to minimize the compression
+                    and decompression overhead in data transmission and achieve near
+                    real-time speed, with algorithms like Google's <span style="font-weight: bold;">Brotli </span>(<a
+                      href="brotli-compressed-file-format.html">BR file format</a>) and
+                    Facebook's <span style="font-weight: bold;">Zstandard </span>(<a
+                      href="zst-compressed-file-format.html">ZST file format</a>).<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h3><span style="font-weight: bold;"><img
+                                  title="Definition of file archiving and compression" alt="what are archive files"
+                                  src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h3>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">Definition
+                            of compressed / archive file is broadening, with package and
+                            disk image format standards implementing native compression (in some
+                            cases even encryption) features - Microsoft CAB and WIM, Apple DMG.</td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h4><img title="Definition of file archival" alt="what is a compressed file"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h4>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <a name="how_rar_files_works"></a>More online
+                    resources about file archiving and compression formats: <a target="_blank"
+                      href="https://en.wikipedia.org/wiki/Ar_%28Unix%29">AR<img alt="AR wiki"
+                        title="Wikipedia: AR file format" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> (Unix), <a target="_blank"
+                      href="https://en.wikipedia.org/wiki/LBR_%28file_format%29">LBR<img alt="wikipedia lbr file"
+                        title="LBR format" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> (CP/M), <a target="_blank"
+                      href="http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/">SEA<img
+                        alt="sea pkware controversy" title="ARC vs ZIP" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> company, <span class="st"><a
+                        target="_blank" href="http://kb.winzip.com/kb/entry/7">WinZip's
+                        ZIPX
+                        standard<img title="ZIPX Knowledge Base entry" alt="what is winzip's zipx standard"
+                          src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>,
+                    </span><a target="_blank" href="https://github.com/google/brotli">Google Brotli<img
+                        title="Google Brotli project page" alt="how Brotli fast compression works"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+                      target="_blank" href="https://facebook.github.io/zstd/">Facebook
+                      Zstandard<img title="Facebook's ZSTD project page" alt="how Zstandard fast compression works"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a> project
+                    pages.<br>
+                    <br>
+                    <br>
+                    <p style="font-weight: bold;"><span style="font-weight: bold;">Synopsis</span>: What is an archive
+                      file? What is a compressed file? What is a zip file? <span style="font-weight: bold;">How lossy
+                        compression and lossless data compression works. What are non
+                        reversible and reversible algorithms advantages and disadvantages.
+                        Compare definitions, and compressed file types. Lossy vs lossless
+                        compression. </span>How 7Z, RAR, ZIP
+                      files work? How does file compression works? How does file archiving
+                      works? What does file archiving and file compression mean? <br>
+                    </p>
+                    <p style="font-weight: bold;">Topics: how data compression
+                      works, lossy and lossless compression, what is an archive file, what is
+                      a zip or a rar file<br>
+                      <span style="font-weight: bold;"> </span>
+                    </p>
+                    <p style="font-weight: bold;"><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; How file compression works, what are archive files<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="what is and how it works file compression" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <h3><big><span style="font-weight: bold;">What is file
-compression<br>
-            </span></big></h3>
-            <span
- style="font-weight: bold; background-color: rgb(255, 238, 221);"><br>
-            <a name="whant_is_file_compression"></a>File
-compression</span><span style="background-color: rgb(255, 238, 221);">
-means to reduce size of data on disk encoding it to a smaller output</span>,
-employing various strategies to efficiently map (most cases of) a
-larger input to a smaller output, i.e. using statistical analisys to
-reduce redundancy in inputa data.<br>
-Data compression,
-too, predates development of ZIP standard, as once the input files were
-merged into a single output archive, the operation was often
-concatenated to lossless data compression to reduce the size of the
-archive using various utilities available at the time as SQ (DOS,
-CP/M), CRUNCH (CP/M), and compress (Unix).<br>
-            <a href="tar-file-format.html">TAR format</a>, for example,
-is still an uncompressed archive standard, and
-uses external compressors, nowadays usually <a href="gzip-files.html">GZ</a>
-(fast deflate based
-compression, same as in ZIP format), <a href="bzip2-file.html">BZ2</a>
-(more powerful compression),
-XZ (modern, very powerful LZMA based compression - the default
-compression algorithm used in 7Z format), BR Google's Brotli (modern,
-very fast compressor), and ZST Facebook's Zstandard (another modern,
-very fast compressor).<br>
-            <br>
-Learn more about similarities and differences in <span
- style="font-weight: bold;">Lossy and lossless data
-compression</span> paragraph. For general purpose compressed archive
-file,
-however, compression means Lossless Compression, a 1:1 mapping of input
-to a smaller output.<br>
-            <br>
-            <a name="history_of_file_compression"></a>SEA's ARC format
-(1985) combined the archival and (lossless)
-compression in a single pass, providing probably the first example of
-general purpose of archive manager, which allowed both to spare storage
-for backup, and save upload
-and download bandwidth (and time) for sharing - at the time, mainly BBS.<br>
-A few years later, after a controversy with SEA about
-alleged derived
-work in PKARC, Phil Katz superseded previous works releasing PKZIP,
-which knew great success due multiple factors, as superior speed and
-efficiency, and being the specs released under public domain, and
-having relatively few competitors in years of fast PC market expansion.<br>
-            <br>
-            <br>
-            <br>
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="compression_types_comparison"></a><a
- href="#how_does_it_works_file_compression">Lossy
-and lossless data compression
-definition</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>How lossy and lossless
-compression works</big></h3>
-            <br>
-Data compression can be defined <span style="font-weight: bold;">lossy
-            </span>or <span style="font-weight: bold;">lossless</span>,
-in terms of
-reversibility of the compression process due loss (or preservation) of
-original information in the process. The two types of algorithms have
-different pros and cons, and different field of application.<br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Lossless compression
-definition, file
-archiving</big></h3>
-            <br>
-            <a name="lossless_compression_algorithms"></a>Lossless
-compression
-uses
-statistical models to map the input to a smaller
-output eliminating redundancy in the data.<br>
-In this way the output carry
-exactly all the information featured by the input in less bytes, and
-can be expanded when needed to a 1:1 copy of the original data
-(restoring exactly the original content), which
-is a fundamental property for storing some types of data - i.e. a
-software, a database.<br>
-            <br>
-            <a name="compression_of_archive_files"></a>For this reason
-lossless compression algorithms are used for data backup and for
-archive
-file formats
-used in general
-purpose archive manager utilities, like <span
- style="font-weight: bold;">7Z</span>, <span style="font-weight: bold;">RAR</span>,
-and <span style="font-weight: bold;">ZIP</span>, where an
-exact and reversible image
-of the original data must be saved.<br>
-Examples of lossless compression algorithms are Deflate (used i.e. for
-ZIP and GZ formats), BZip2 (used in BZ2 format), PPMd (RAR, 7Z
-formats), LZMA / LZMA2 (7Z / XZ format).<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Invertible compression algorithms"
- alt="what is lossless compression" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><big><span
- style="font-style: italic;">Lossless compression is fully invertible,
-as 1:1 copy of original content input is stored in the smaller,
-efficiently encoded output, so it is usually suitable for backup, file
-archiving and other applications where any loss of information is not
-tolerable.<br>
-                  </span></big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h4><img
- title="Lossy - Lossless compression differences"
- alt="what are reversible compression algorithms"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h4>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="What is and how a ZIP file works"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="how_file_archives_work"></a>DOWNLOADS<br>
+                      <img alt="how zip files work" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img
+                        alt="What are and how RAR, ACE, 7Z files work" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="how_zip_files_work"></a>SUPPORT<br>
+                      <img alt="how zip archives work" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="How file compression and archiving works" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="What are 7Z, RAR, ZIP compressed archives"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="What is an archive file" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="How file compression works, what are archive files"
+                                title="Search in PeaZip project domain" src="extract-rar/rar-opener.png"
+                                style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-Some graphic file fomats (notably, PNG files and deflated TIFF) uses
-lossless compression, which usually results in less compression but no
-image quality degradation after multiple cycles of modification and
-saving of the picture, making this kind of image format suitable as
-intermediate save files for image editing tools.<span
- style="font-weight: bold;"><br>
-            </span><br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Lossy compression
-definition, multimedia data
-compression</span><br>
-            </big></h3>
-            <br>
-            <a name="lossy_compression_algorithms"></a>Lossy
-compression, instead,
-works
-identifying unnecessary
-or less relevant information (not just redundant data) and removing it.
-            <br>
-            <br>
-Unlike the lossless compression, the amount of information to compress
-is effectively reduced.<br>
-The loss of information / content is irreversible, and depending from
-the nature of the algorithm, will likely happen each time the content
-is modified and saved to a lossy file format - e.g. when editing a
-lossy jpeg images, and saving it multiple times to intermediate work
-files.<br>
-            <br>
-In this way data
-compression ratio is improved but at the cost of making lossy
-compression a
-non reversible process - as it comes at the cost of losing part of the
-information - and making it a suitable choice only when it is not
-intended, by design, to restore the original content again.<br>
-            <br>
-            <a name="multimedia_file_compression"></a>Lossy compression
-is consequently not suitable for general purpose file
-archiving
-(as in example losing a single byte of an executable file would make it
-not working), but&nbsp; it works very well when loss, reducing less
-relevant
-information, is acceptable, as for <a
- href="compress-resize-jpeg-png-files.html">graphic and multimedia
-files
-compression</a>
-- in example for <span style="font-weight: bold;">MP3</span>
-losing audio information below the audibility threshold, or losing not
-visible details in <span style="font-weight: bold;">JPEG</span>
-images, or both in compressed video formats such as <span
- style="font-weight: bold;">MPEG </span>(AVI, MKV, MPG, MP4...).<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h3><span style="font-weight: bold;"><img
- title="destructive compression algorithm"
- alt="what is lossy compression" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h3>
-                  </td>
-                  <td style="vertical-align: top; font-style: italic;"><big>Information
-loss is destructive for the ability of 1:1 reversal of
-the algorithm (the information is permanently lost), but it is not
-prejudicial for the ability of end users to receive meaningful
-information - intelligible audio, clear picture or video.</big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h4><img title="Information loss"
- alt="non reversible compression algorithms"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h4>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-Most common lossy compression algorithms are consequently usually fine
-tuned for the specific pattern of a multimedia data type.<br>
-For this very same reson, file types compressed with lossy algorithms
-will not compress well (or at all) if added to archive files compressed
-with general purpose compression algorithms: <a
- href="why-can-not-compress-pdf-avi-mp3-files.html">already compressed
-files compresses poorly, if at all</a>.<br>
-            <br>
-Due the lossy nature of those compression schemes, however, usually
-professional editing work is performed on non compressed data (i.e. WAV
-audio, or TIFF images) or data compressed in a lossless way (i.e. FLAC
-audio, or PNG images) every time it is feasible so saving the work in
-progress multiple times does not result in losing bits of the
-information each time, with progressive degradation of quality -
-usually
-reserving use of lossy compression to final step for creating a
-reasonably sized output to distribute for media consumption.<br>
-            <br>
-            <h4><big><big><small style="font-weight: bold;">Lossy vs
-lossless compression</small><br>
-            </big></big></h4>
-            <br>
-Lossy and lossless compression algorithms are so different in scopes
-that cannot be really put in direct competition.<br>
-When original content needs to be restored completely on decompression
-(binary files, rew data) lossless, fully reversible compression is the
-only option, while when some degree of data loss is acceptable (e.g.
-finalizing work on multimedia files such as mp3 audio, mpeg video, jpeg
-graphics) generally advantages of lossy compression in terms of speed
-and maximum compression ratio over lossless compression are so evident
-that lossy, non reversible compression is the only viable choice to
-meet size and/or performances constrains.<br>
-            <br>
-            <br>
-Read <a target="_blank"
- href="http://en.wikipedia.org/wiki/Lossless_compression">lossless
-compression<img alt="optimize data compression"
- title="Lossless compression algorithms" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
- target="_blank" href="http://en.wikipedia.org/wiki/Lossy_compression">lossy
-compression<img alt="optimize picture compression"
- title="Lossy compression algoritms" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-definitions on Wikipedia.<br>
-            <br>
-            <br>
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="what_is_zip_rar_file"></a><a
- href="what-is-zip-file.html#how_does_it_works_file_compression">What
-compressed archive files are</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h2><big><span style="font-weight: bold;">What is a
-ZIP file</span><br>
-            </big></h2>
-            <br>
-            <a href="zip-file-format.html">ZIP format</a>
-is a <span style="font-weight: bold;">lossless data
-compression and archival format</span> created in 1989 by Phil Katz,
-implemented for the first time in PKWARE's PKZIP.<br>
-            <a name="how_zip_archives_work"></a>The ZIP file format
-specifications were released under public domain
-and the format had long and lasting success, to the point often "zip"
-is colloquially used for any generic compressed archive, and many
-package formats are based on deflate compression and/or same or very
-similar specs: Java JAR / WAR / EAR, Android APK,
-Apple iOS IPA files (iPhone and iPad devices), Microsoft CAB and Office
-compound files.<br>
-            <span class="st"><a name="what_is_a_zip_file"></a>WinZip
-12.1 (2009) introduced the new <span style="font-weight: bold;">ZIPX </span>file
-format specifications
-for identifying a
-new archive standard which
-supports newer and more powerful compression algorithms.<br>
-            <br>
-            <br>
-            </span>
-            <h3><big><span style="font-weight: bold;">What are RAR,
-ACE, 7Z files</span><br>
-            </big></h3>
-            <br>
-            <a name="how_rar_archives_work"></a>During '90s and
-beyond, multiple alternative archival standard emerged,
-as <span style="font-weight: bold;">ARJ</span>, <a
- href="what-is-rar-file.html"><span style="font-weight: bold;">RAR</span></a>
-(1993), <a href="ace-files-utility.html"><span
- style="font-weight: bold;">ACE</span></a>,
-and <a href="7z-file-format.html"><span style="font-weight: bold;">7Z</span></a>
-(1999), introducing unique
-features to
-distinguish
-them from the growing number of competitors, in example:<br>
-            <ul>
-              <li>usually, <a href="maximum-compression-benchmark.html">stronger
-compression</a> ratio than ZIP at the
-cost of slower operation - but that disadvantage would have been paid
-off by slower transfer time (especially on slow and public networks)
-of smaller output file<br>
-              </li>
-              <li>multi volume archival, <a href="file-split.html">spanning
-output to multiple files</a> to met
-constrains as mail attachment size limit</li>
-              <li><a href="encrypt-files.html">encryption</a>, to
-enforce end user's privacy if the file
-is stolen, or
-passed through unsecure servers (unencrypted public network, or any
-third party controlled channel as a mail server, or remote storage
-service)</li>
-              <li><a href="verify-checksum-hash.html">error detection</a>
-and error correction (as implemented in ARC and RAR formats), to
-prevent extraction
-in the event data gets corrupted (i.e. faulty connection, damaged disk)
-and attempt recovery from known good data.</li>
-            </ul>
-            <br>
-            <big style="font-weight: bold;">Evolution of file archiving
-formats</big><br>
-            <br>
-            <a name="how_7z_archives_works"></a>Archival file format
-tends to be more geared towards powerful,
-computing intensive features to enhance manageability of data (high
-compression, strong encryption), rather than enhancing ability to work
-on live data (rapid read and write access) like filesystems, even if
-some archive management utilities offers various mechanisms to <a
- href="add-remove-files-from-archive.html">add or remove data inside
-archives</a>, and <a href="how-to-update-existing-archive.html">update
-or sync files already in the archive</a>.<br>
-More choice in standards brought users more features and healthy
-competition between standards (see <a
- href="archive-file-formats-comparison.html">comparison of archive
-formats</a>) and implementations, but also brought
-the need for
-flexible multi-purpose archival applications, like PeaZip, to deal with
-different formats users may encounter, and to make full use of the
-feature's potential of
-the different supported file formats.<br>
-In recent years the trend is shifting toward very fast and highly
-efficient compression algorithms, aiming to minimize the compression
-and decompression overhead in data transmission and achieve near
-real-time speed, with algorithms like Google's <span
- style="font-weight: bold;">Brotli </span>(<a
- href="brotli-compressed-file-format.html">BR file format</a>) and
-Facebook's <span style="font-weight: bold;">Zstandard </span>(<a
- href="zst-compressed-file-format.html">ZST file format</a>).<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Definition of file archiving and compression"
- alt="what are archive files" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h3>
-                  </td>
-                  <td style="vertical-align: top; font-style: italic;">Definition
-of compressed / archive file is broadening, with package and
-disk image format standards implementing native compression (in some
-cases even encryption) features - Microsoft CAB and WIM, Apple DMG.</td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h4><img title="Definition of file archival"
- alt="what is a compressed file" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h4>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <a name="how_rar_files_works"></a>More online
-resources about file archiving and compression formats: <a
- target="_blank" href="https://en.wikipedia.org/wiki/Ar_%28Unix%29">AR<img
- alt="AR wiki" title="Wikipedia: AR file format"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> (Unix), <a
- target="_blank"
- href="https://en.wikipedia.org/wiki/LBR_%28file_format%29">LBR<img
- alt="wikipedia lbr file" title="LBR format"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> (CP/M), <a
- target="_blank"
- href="http://www.bbsdocumentary.com/library/CONTROVERSY/LAWSUITS/SEA/">SEA<img
- alt="sea pkware controversy" title="ARC vs ZIP"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> company, <span
- class="st"><a target="_blank" href="http://kb.winzip.com/kb/entry/7">WinZip's
-ZIPX
-standard<img title="ZIPX Knowledge Base entry"
- alt="what is winzip's zipx standard" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, </span><a
- target="_blank" href="https://github.com/google/brotli">Google Brotli<img
- title="Google Brotli project page"
- alt="how Brotli fast compression works" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://facebook.github.io/zstd/">Facebook
-Zstandard<img title="Facebook's ZSTD project page"
- alt="how Zstandard fast compression works" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> project
-pages.<br>
-            <br>
-            <br>
-            <p style="font-weight: bold;"><span
- style="font-weight: bold;">Synopsis</span>: What is an archive
-file? What is a compressed file? What is a zip file? <span
- style="font-weight: bold;">How lossy
-compression and lossless data compression works. What are non
-reversible and reversible algorithms advantages and disadvantages.
-Compare definitions, and compressed file types. Lossy vs lossless
-compression. </span>How 7Z, RAR, ZIP
-files work? How does file compression works? How does file archiving
-works? What does file archiving and file compression mean? <br>
-            </p>
-            <p style="font-weight: bold;">Topics: how data compression
-works, lossy and lossless compression, what is an archive file, what is
-a zip or a rar file<br>
-            <span style="font-weight: bold;"> </span></p>
-            <p style="font-weight: bold;"><span
- style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; How file compression works, what are archive files<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="what is and how it works file compression"
- src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="What is and how a ZIP file works" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="how_file_archives_work"></a>DOWNLOADS<br>
-            <img alt="how zip files work" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="What are and how RAR, ACE, 7Z files work" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="how_zip_files_work"></a>SUPPORT<br>
-            <img alt="how zip archives work"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="How file compression and archiving works"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="What are 7Z, RAR, ZIP compressed archives"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="What is an archive file" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="How file compression works, what are archive files"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

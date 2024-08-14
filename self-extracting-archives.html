@@ -1,698 +1,646 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What are, and how to create, Self Extracting Archives (SFX files) autonomous compressed files capable of auto-extraction without requiring external software.">
+    content="What are, and how to create, Self Extracting Archives (SFX files) autonomous compressed files capable of auto-extraction without requiring external software.">
   <meta name="KEYWORDS"
- content="sfx, self, self extracting, archives, files, extraction, extracting, auto, autonomous, arc, rar, zip, 7z, utility, software">
+    content="sfx, self, self extracting, archives, files, extraction, extracting, auto, autonomous, arc, rar, zip, 7z, utility, software">
   <meta name="ROBOTS" content="all">
   <title>How to create Self Extracting Archives (SFX)</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="How to create Self Extracting Archives (SFX)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="How to create Self Extracting Archives (SFX)">
   <meta property="og:description"
- content="What are, and how to create, Self Extracting Archives (SFX files) autonomous compressed files capable of auto-extraction without requiring external software.">
+    content="What are, and how to create, Self Extracting Archives (SFX files) autonomous compressed files capable of auto-extraction without requiring external software.">
   <meta property="og:image" content="free-zip/container-file.png">
-  <meta property="og:url"
- content="https://peazip.github.io/self-extracting-archives.html">
+  <meta property="og:url" content="https://peazip.github.io/self-extracting-archives.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="What are SFX files" alt="create self extracting archives"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="how to create sfx archive" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center; font-weight: bold;"><big><big><big><a
- name="auto_extracting_file"></a>How to create Self
-Extracting Archives (SFX)</big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="What are self-extracting archives?"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="How to create self-extracting 7Z or ARC files"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="what_is_sfx"></a><a
- href="self-extracting-archives.html#auto_extracting_file">What
-are self-extracting archives?</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <big style="font-weight: bold;">SFX files definition</big><br>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="What is a SFX archive" alt="what are sfx files"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><a
- name="what_is_a_self_extracting_archive"></a>Self-extracting
-archives
-(briefly referred as SFX files) are computer executable programs
-containing
-both an (usually compressed) archive of files and the routines needed
-to extract the content (SFX module), usually packed as Microsoft
-Windows EXE executable file.</td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="What are self extracting archives"
- alt="what are self extracting archives"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="What are SFX files"
+                      alt="create self extracting archives" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="how to create sfx archive"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <big><br style="font-weight: bold;">
-            </big>
-            <h4><big><span style="font-weight: bold;">Use of SFX
-archives</span></big></h4>
-            <br>
-WinRar, WinZip, 7-Zip, PeaZip, and other file archiver software are
-capable of creating self extracting archives, usually employing <a
- href="7z-file-format.html"><span style="font-weight: bold;">7Z</span></a>,
-            <span style="font-weight: bold;"><a
- href="what-is-rar-file.html">RAR</a> </span>and <span
- style="font-weight: bold;"><a href="zip-file-format.html">ZIP</a> </span>compression
-for the archival part - learn more: <a href="what-is-zip-file.html">what
-is a compressed archive file</a> -
-and minimal sfx modules
-suitable for basic tasks of deployment of content as autonomous
-packages, not needing external&nbsp; dedicated decompression software
-and capable of
-auto-unpacking themselves.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Definition of SFX files" alt="sfx files software"
- src="file-format/information.png" style="width: 48px; height: 48px;"><br>
-                  </span></h3>
-                  </td>
-                  <td
- style="font-style: italic; vertical-align: middle;"><a
- name="characteristics_of_sfx_files"></a>While an
-auto-extracting archive is potentially a simple, basic form of
-installer, most software for creation of installation packages extends
-the idea further providing
-formats capable of advanced scripting features to generate more complex
-and flexible
-autoextraction modules to unpack the content and perform other related
-operations, suc as conditional extraction of appropriate data,
-automatic output path detection, registration of shared files,
-interaction with registry etc.</td>
-                </tr>
-              </tbody>
-            </table>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span><br>
-            <h3><big><span style="font-weight: bold;">SFX archives:
-advantages and disadvantages </span><br>
-            </big></h3>
-            <br>
-Principle behind self extracting archives is providing the end user of
-the appropriate extraction
-executable instructions without the need of installing any software,
-which brings those advantages over non self extracting archives:<br>
-            <ul>
-              <li>content and extraction tools are passed as atomic
-information</li>
-              <li>in order to extract the content, end user needs to
-run only a simple subset of instructions, through a minimal user
-interface requiring little or no feedback, rather than having to
-install and learn to operate a full general purpose archive manager
-software</li>
-            </ul>
-            <h4>Drawbacks of self extracting archives are:</h4>
-            <ul>
-              <li>being the
-extraction module embedded in the archive itself, it represents an
-overhead (usually some 10s or 100s of KB), which makes it a noticeable
-disadvantage in
-the case of small&nbsp; archives</li>
-              <li>the sfx archive can be executed only on operating
-system platforms capable to run the sfx module - it can still be
-operated as a standard archive on other platforms, if suitable software
-is available<br>
-              </li>
-              <li>being the self extracting archive an
-executable file, some file sharing platforms - cloud service&nbsp;
-providers, e-mail servers - may consider it a security risk and block
-the file, preventing it to reach the intended end users.</li>
-            </ul>
-            <span style="font-weight: bold;"><br>
-            </span>
-            <h4><big><span style="font-weight: bold;">Max size of a
-self-extracting
-archive</span></big></h4>
-            <br>
-On Windows platform .exe executables must be <a
- href="rar-zip-file-format-size-limitations.html">smaller than 2 GB</a>
-(even PE and 64 bit Windows binaries).<br>
-            <span style="font-weight: bold;">Consequently, SFX format
-cannot be used to create a valid sfx archives larger than 2 GB.</span><br>
-A SFX file larger than 2 GB will still be readable as archive, suing an
-external archive manager tool - basically, it is plainly an archive
-with SFX executable module attached - but Windows will not be able to
-run the SFX module because the .exe file is larger than the maximum
-allowed size of 2 GB.<br>
-            <br>
-            <br>
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="sfx_maker"></a><a
- href="self-extracting-archives.html#auto_extracting_file">How to
-create self-extracting
-7Z or ARC files</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Add files to SFX
-archive in PeaZip</big></h3>
-            <br>
-            <a name="create_sfx_archive"></a>To create a SFX
-archive with PeaZip, select desired files and folders and click "Add"
-button for archive creation screen.<br>
-PeaZip can <a href="7zip-files-utility.html">create self extracting 7Z
-files</a> and, alternatively, self extracting archives in ARC format:
-supported SFX formats can be
-selected directly in archive format dropdown menu,
-simply selecting "<span style="font-weight: bold;">Self-extracting 7Z</span>"
-or "<span style="font-weight: bold;">Self-extracting ARC</span>"
-entries.<br>
-In "Advanced" tab of archive creation screen it is possible to select
-one of the available alternative SFX modules, which is the binary
-routine that will be embedded in
-the archive and which will handle the extraction of the content on
-recipient's machine without requiring external software.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Creation of SFX archives"
- alt="how to create self extracting archives"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
-                  </td>
-                  <td style="vertical-align: top; font-style: italic;"><a
- name="sfx_advantages"></a>Recipient will not need a
-suitable
-unarchiver application to open self-extracting files as the sfx module
-itself is autonomous
-for extraction of package content.<br>
-Please note, anyway, recipient will at least need the right to execute
-binary files (the sfx module) on the target system to proceed with
-(auto)extraction of the SFX archive.<br>
-Alternatively some archive
-managers, as PeaZip, can try to <a href="peazip-password.html">open
-arbitrary file types as archives</a>
-(including most sfx packages) for custom content extraction without
-running the sfx module - which is recommended over running the files as
-binary if the source of the archive is unknown.<br>
-                  </td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="Add files to self exctracting archive"
- alt="how to create sfx files" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <h4><big style="font-weight: bold;">Encrypting a self
-extracting archive</big></h4>
-            <br>
-To <a href="encrypt-files.html">add a password to archive</a> to
-prevent unauthorized decompression of the
-self-extracting archive, click on the padlock icon button "Enter
-password / keyfile" - also the encryption options are customizable in
-"Advanced" tab.<br>
-            <span style="background-color: rgb(255, 238, 221);"><a
- name="self_extracting_archives_limitations"></a>Please note that when
-a
-self-extracting archive is created, only the password (if provided)
-will be used for encrypting the data, and only the password will be
-needed to
-extract &amp; decrypt it, this because </span><span
- style="background-color: rgb(255, 238, 221);">available SFX modules
-does not support </span><span
- style="background-color: rgb(255, 238, 221);">t</span><span
- style="background-color: rgb(255, 238, 221);">wo factor authentication
-and </span><span style="background-color: rgb(255, 238, 221);">would
-be unable to parse the keyfile, failing decryption.</span><br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">Custom SFX modules</span></big><br>
-            <br>
-Custom sfx modules
-with different sets of features and user interaction
-interfaces are available in PeaZip add-ons section <a
- href="peazip-add-ons.html">Custom SFX
-modules</a>.<br>
-            <br>
-            <br>
-Read more: <a target="_blank"
- href="http://en.wikipedia.org/wiki/Self-extracting_archive">Self-extracting
-archives<img alt="sfx module" title="Auto-extraction"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
-page<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: </span><span
- style="font-weight: bold;">What are self extracting archives, what are
-advantages and disadvantages in using sfx files. </span><span
- style="font-weight: bold;">Create sfx files with PeaZip free archiver
-software. </span><span style="font-weight: bold;">How to create self
-extracting archives, and work with sfx archives.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: sfx self
-extractiong archives<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-How to create Self Extracting Archives (SFX)<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="self extracting archives" src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <span style="font-weight: normal;"></span>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="create self extracting archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_are_self_extracting_archives"></a>DOWNLOADS<br>
-            <img alt="how to work with sfx files"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="how to use self extracting archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_are_sfx_files"></a>SUPPORT<br>
-            <img alt="how to use sfx files"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="SFX archives: advantages and disadvantages"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center; font-weight: bold;"><big><big><big><a
+                              name="auto_extracting_file"></a>How to create Self
+                            Extracting Archives (SFX)</big></big></big></h1>
+                    <br>
+                  </td>
                 </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="What are self-extracting archives?" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="How to create self-extracting 7Z or ARC files" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="SFX files autonomous compressed files capable of auto-extraction without requiring external software"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is a sfx file" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is a self extracting archive"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="what_is_sfx"></a><a
+                                href="self-extracting-archives.html#auto_extracting_file">What
+                                are self-extracting archives?</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">SFX files definition</big><br>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="What is a SFX archive"
+                                  alt="what are sfx files" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><a
+                              name="what_is_a_self_extracting_archive"></a>Self-extracting
+                            archives
+                            (briefly referred as SFX files) are computer executable programs
+                            containing
+                            both an (usually compressed) archive of files and the routines needed
+                            to extract the content (SFX module), usually packed as Microsoft
+                            Windows EXE executable file.</td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="What are self extracting archives" alt="what are self extracting archives"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <big><br style="font-weight: bold;">
+                    </big>
+                    <h4><big><span style="font-weight: bold;">Use of SFX
+                          archives</span></big></h4>
+                    <br>
+                    WinRar, WinZip, 7-Zip, PeaZip, and other file archiver software are
+                    capable of creating self extracting archives, usually employing <a href="7z-file-format.html"><span
+                        style="font-weight: bold;">7Z</span></a>,
+                    <span style="font-weight: bold;"><a href="what-is-rar-file.html">RAR</a> </span>and <span
+                      style="font-weight: bold;"><a href="zip-file-format.html">ZIP</a> </span>compression
+                    for the archival part - learn more: <a href="what-is-zip-file.html">what
+                      is a compressed archive file</a> -
+                    and minimal sfx modules
+                    suitable for basic tasks of deployment of content as autonomous
+                    packages, not needing external&nbsp; dedicated decompression software
+                    and capable of
+                    auto-unpacking themselves.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h3><span style="font-weight: bold;"><img title="Definition of SFX files"
+                                  alt="sfx files software" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h3>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;"><a
+                              name="characteristics_of_sfx_files"></a>While an
+                            auto-extracting archive is potentially a simple, basic form of
+                            installer, most software for creation of installation packages extends
+                            the idea further providing
+                            formats capable of advanced scripting features to generate more complex
+                            and flexible
+                            autoextraction modules to unpack the content and perform other related
+                            operations, suc as conditional extraction of appropriate data,
+                            automatic output path detection, registration of shared files,
+                            interaction with registry etc.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span><br>
+                    <h3><big><span style="font-weight: bold;">SFX archives:
+                          advantages and disadvantages </span><br>
+                      </big></h3>
+                    <br>
+                    Principle behind self extracting archives is providing the end user of
+                    the appropriate extraction
+                    executable instructions without the need of installing any software,
+                    which brings those advantages over non self extracting archives:<br>
+                    <ul>
+                      <li>content and extraction tools are passed as atomic
+                        information</li>
+                      <li>in order to extract the content, end user needs to
+                        run only a simple subset of instructions, through a minimal user
+                        interface requiring little or no feedback, rather than having to
+                        install and learn to operate a full general purpose archive manager
+                        software</li>
+                    </ul>
+                    <h4>Drawbacks of self extracting archives are:</h4>
+                    <ul>
+                      <li>being the
+                        extraction module embedded in the archive itself, it represents an
+                        overhead (usually some 10s or 100s of KB), which makes it a noticeable
+                        disadvantage in
+                        the case of small&nbsp; archives</li>
+                      <li>the sfx archive can be executed only on operating
+                        system platforms capable to run the sfx module - it can still be
+                        operated as a standard archive on other platforms, if suitable software
+                        is available<br>
+                      </li>
+                      <li>being the self extracting archive an
+                        executable file, some file sharing platforms - cloud service&nbsp;
+                        providers, e-mail servers - may consider it a security risk and block
+                        the file, preventing it to reach the intended end users.</li>
+                    </ul>
+                    <span style="font-weight: bold;"><br>
+                    </span>
+                    <h4><big><span style="font-weight: bold;">Max size of a
+                          self-extracting
+                          archive</span></big></h4>
+                    <br>
+                    On Windows platform .exe executables must be <a
+                      href="rar-zip-file-format-size-limitations.html">smaller than 2 GB</a>
+                    (even PE and 64 bit Windows binaries).<br>
+                    <span style="font-weight: bold;">Consequently, SFX format
+                      cannot be used to create a valid sfx archives larger than 2 GB.</span><br>
+                    A SFX file larger than 2 GB will still be readable as archive, suing an
+                    external archive manager tool - basically, it is plainly an archive
+                    with SFX executable module attached - but Windows will not be able to
+                    run the SFX module because the .exe file is larger than the maximum
+                    allowed size of 2 GB.<br>
+                    <br>
+                    <br>
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="sfx_maker"></a><a
+                                href="self-extracting-archives.html#auto_extracting_file">How to
+                                create self-extracting
+                                7Z or ARC files</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Add files to SFX
+                        archive in PeaZip</big></h3>
+                    <br>
+                    <a name="create_sfx_archive"></a>To create a SFX
+                    archive with PeaZip, select desired files and folders and click "Add"
+                    button for archive creation screen.<br>
+                    PeaZip can <a href="7zip-files-utility.html">create self extracting 7Z
+                      files</a> and, alternatively, self extracting archives in ARC format:
+                    supported SFX formats can be
+                    selected directly in archive format dropdown menu,
+                    simply selecting "<span style="font-weight: bold;">Self-extracting 7Z</span>"
+                    or "<span style="font-weight: bold;">Self-extracting ARC</span>"
+                    entries.<br>
+                    In "Advanced" tab of archive creation screen it is possible to select
+                    one of the available alternative SFX modules, which is the binary
+                    routine that will be embedded in
+                    the archive and which will handle the extraction of the content on
+                    recipient's machine without requiring external software.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Creation of SFX archives"
+                                  alt="how to create self extracting archives" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><a name="sfx_advantages"></a>Recipient
+                            will not need a
+                            suitable
+                            unarchiver application to open self-extracting files as the sfx module
+                            itself is autonomous
+                            for extraction of package content.<br>
+                            Please note, anyway, recipient will at least need the right to execute
+                            binary files (the sfx module) on the target system to proceed with
+                            (auto)extraction of the SFX archive.<br>
+                            Alternatively some archive
+                            managers, as PeaZip, can try to <a href="peazip-password.html">open
+                              arbitrary file types as archives</a>
+                            (including most sfx packages) for custom content extraction without
+                            running the sfx module - which is recommended over running the files as
+                            binary if the source of the archive is unknown.<br>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Add files to self exctracting archive" alt="how to create sfx files"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h4><big style="font-weight: bold;">Encrypting a self
+                        extracting archive</big></h4>
+                    <br>
+                    To <a href="encrypt-files.html">add a password to archive</a> to
+                    prevent unauthorized decompression of the
+                    self-extracting archive, click on the padlock icon button "Enter
+                    password / keyfile" - also the encryption options are customizable in
+                    "Advanced" tab.<br>
+                    <span style="background-color: rgb(255, 238, 221);"><a
+                        name="self_extracting_archives_limitations"></a>Please note that when
+                      a
+                      self-extracting archive is created, only the password (if provided)
+                      will be used for encrypting the data, and only the password will be
+                      needed to
+                      extract &amp; decrypt it, this because </span><span
+                      style="background-color: rgb(255, 238, 221);">available SFX modules
+                      does not support </span><span style="background-color: rgb(255, 238, 221);">t</span><span
+                      style="background-color: rgb(255, 238, 221);">wo factor authentication
+                      and </span><span style="background-color: rgb(255, 238, 221);">would
+                      be unable to parse the keyfile, failing decryption.</span><br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">Custom SFX modules</span></big><br>
+                    <br>
+                    Custom sfx modules
+                    with different sets of features and user interaction
+                    interfaces are available in PeaZip add-ons section <a href="peazip-add-ons.html">Custom SFX
+                      modules</a>.<br>
+                    <br>
+                    <br>
+                    Read more: <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Self-extracting_archive">Self-extracting
+                      archives<img alt="sfx module" title="Auto-extraction" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
+                    page<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: </span><span style="font-weight: bold;">What are self
+                        extracting archives, what are
+                        advantages and disadvantages in using sfx files. </span><span style="font-weight: bold;">Create
+                        sfx files with PeaZip free archiver
+                        software. </span><span style="font-weight: bold;">How to create self
+                        extracting archives, and work with sfx archives.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: sfx self
+                        extractiong archives<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        How to create Self Extracting Archives (SFX)<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="self extracting archives" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-weight: normal;"></span>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="create self extracting archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="what_are_self_extracting_archives"></a>DOWNLOADS<br>
+                      <img alt="how to work with sfx files" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="how to use self extracting archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="what_are_sfx_files"></a>SUPPORT<br>
+                      <img alt="how to use sfx files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="SFX archives: advantages and disadvantages" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online"
+                                alt="SFX files autonomous compressed files capable of auto-extraction without requiring external software"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is a sfx file" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is a self extracting archive" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

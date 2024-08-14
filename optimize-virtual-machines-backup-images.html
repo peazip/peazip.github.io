@@ -1,573 +1,521 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How to optimize backup occupation of virtual machines and disk images. Zero delete files and free disk space. Reduce size of QCOW2, VDI, VHD, VMDK">
+    content="How to optimize backup occupation of virtual machines and disk images. Zero delete files and free disk space. Reduce size of QCOW2, VDI, VHD, VMDK">
   <meta name="KEYWORDS"
- content="how to, optimize, reduce size, backup, disk image, virtual machines, improve, reduce, disk, free space, zero, zeroing, free, function, software, utility, tool">
+    content="how to, optimize, reduce size, backup, disk image, virtual machines, improve, reduce, disk, free space, zero, zeroing, free, function, software, utility, tool">
   <meta name="ROBOTS" content="all">
   <title>How to reduce the size of virtual machines disk images</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Optimize Virtual Machines and disk images size">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Optimize Virtual Machines and disk images size">
   <meta property="og:description"
- content="How to optimize backup occupation of virtual machines and disk images. Zero delete files and free disk space. Reduce size of QCOW2, VDI, VHD, VMDK">
+    content="How to optimize backup occupation of virtual machines and disk images. Zero delete files and free disk space. Reduce size of QCOW2, VDI, VHD, VMDK">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/optimize-virtual-machines-backup-images.html">
+  <meta property="og:url" content="https://peazip.github.io/optimize-virtual-machines-backup-images.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="How to reduce the size of virtual machine images"
- alt="optimize VM disk images" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="reduce the size of disk images" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="optimize_wmware_virtualbox"></a><span
- style="font-weight: bold;">How to reduce the size of
-virtual machine disk images</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="Reduce size of QCOW2, VDI, VHD, VMDK Virtual Machines"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="Optimize Virtual Machines and disk images size"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big><big><a name="how_to_decrease_vm_size"></a><a
- style="font-weight: bold;"
- href="optimize-virtual-machines-backup-images.html#optimize_wmware_virtualbox">Optimize
-size of
-QCOW2, VDI, VHD, VMDK VM images</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">Zeroing files and free
-disk space</big><span style="font-weight: bold;"><br>
-            </span></h3>
-            <br>
-            <a name="prepare_virtual_machine_for_compression"></a>"<span
- style="font-weight: bold;">Zero delete</span>" function in
-PeaZip's "File tools" submenu is intended for overwriting data with
-all-0 stream, either as a file deletion option or as a supported mode
-for overwriting partition's free space, in order to fill corresponding
-physical disk area of homegeneus, highly compressible data.<br>
-Marginally, this deletion and free space optimization mode also offers
-an improved basic grade of security over PeaZip's "Quick delete"
-function, which
-simply remove the file from filesystem, making it not recoverable by
-system's recycle bin but susceptible of being recovered with undelete
-file utilities.<br>
-Zero deletion however is not meant for advanced security, and PeaZip's <span
- style="text-decoration: underline;"></span><a href="secure-delete.html">secure
-delete function</a> should be used instead
-when it is needed to securely and permanently erase a file or sanitize
-free space on a volume.<br>
-            <h2><img title="Overwrite free disk space"
- alt="reduce disk occupation of virtual machines"
- src="secure-delete.png" style="width: 146px; height: 45px;"></h2>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Optimize virtual
-disk
-images size using zero delete</span><br>
-            </big></h3>
-            <br>
-            <a name="optimize_virtual_disk_size"></a>A <span
- style="font-weight: bold;">Disk image</span> is a snapshot of
-the content of a disk, meaning all the content of the disk is mirrored
-into a file which is a 1:1 copy of the source.<br>
-This involves saving exactly the data is stored on the unit, bypassing
-possible filesystem's problems or limitations, and avoiding the
-inherent overhead in managing data as separate files running a set of
-high level software to read the filesystem structure, which means data
-recovery software may be simpler and faster, improving performances and
-reducing possible issues by design.<br>
-This is usually an higly efficient way to backup large quantities of
-data, and to perform a full system backup which in disaster recovery
-events can be deployed without, unlike plain data backup, needing
-additional work to restore the system, software, licenses etc.<br>
-But, being created in a filesystem-agnostic way, the image of the disk
-contains all data featured on the unit, including ones in sectors
-marked (in the filesystem) as deleted data, which may represent a
-sizeable overhead - especially over the time, as files gets created and
-deleted on the physical machine.<br>
-Zeroing the free space (and zeroing files being deleted) let the free
-space in an higly ordered, highly compressible state, that brings
-substantial improvement in terms of size reduction of resulting disk
-images even with most elementary compression algorithms - often
-built-in in disk imaging systems.<br>
-Consequently, it is recommended to perform PeaZip's "Zero delete free
-space" on physical machines before saving disk images for
-backup/disaster recovery purpose (or to routinely delete files with
-Zero delete function) to substantially reduce the size of the disk
-image: when the disk image gets compressed (either for built-in
-space occupation -optimization mechanisms, or for backup purpose) the
-space occupied on the media will be greatly reduced due better
-compression ratio being achiveable, and overall speed of the operating
-will be greatly improved - needing to handle a substantially smaller
-amount of data.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Manage VMDK, QCOW2, VDI, VHD virtual disks"
- alt="how to reduce size of virtual machines"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><big>PeaZip
-supports reading (browse, search, extract) various types of disk images
-commonly used by virtualization software: <span
- style="font-weight: bold;">QCOW2</span> (QUEMU), <span
- style="font-weight: bold;">VMDK</span> (VMWare
-Virtual Machine Disk), Microsoft <span style="font-weight: bold;">VHD</span>
-(Virtual PC, Azure),
-and <span style="font-weight: bold;">VDI</span> (Oracle VirtualBox
-Virtual Drive Image), can <a href="iso-utility.html">read iso files</a>,
-and <a href="wim-files.html">read and write wim files</a><br>
-                  </big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img
- title="Optimize quemu, vmware, virtualbox disks"
- alt="how to reduce backup occupation of virtual machines"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="How to reduce the size of virtual machine images"
+                      alt="optimize VM disk images" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="reduce the size of disk images"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            <h2><big><span style="font-weight: bold;">Optimize Virtual
-machines backup</span><br>
-            </big></h2>
-            <span style="font-weight: bold;"><br>
-            <a name="reduce_virtual_machine_backup_size"></a>Virtual
-machines</span>
-often comes with non-preallocated disk image, that means the content of
-disks
-of the VM is saved on host physical machine to a disk image file which
-smaller than the nominal VM disks size.<br>
-Popular providers of platform virtualization solutions are Microsoft
-(Azure, VirtualPC), Oracle (VirtualBox), and VMWare.<br>
-Anyway, even this optimization is often far than optimal in terms of
-space occupation on host machine, as the VM disk image contains also
-the data not referenced in the disk's filesystem (as explained in Disk
-images paragraph), which can be a sizeable overhead over the real size
-of occupied disk space inside the virtual machine, that should be the
-target size for disk image - which depending on the imaging software /
-VM technology may also be compressed further reducing space
-requirements.<br>
-As for disk images created for backup and disaster recovery purpose it
-is useful having PeaZip installed in the physical machine to zeroe the
-free space before the disk image creation, the same apply to virtual
-machines, where PeaZip should be available and routinely employed to
-zeroe the free space on VM disks.<br>
-This let the disk images it in an higly uniform and
-highly compressible state, the unused data being physically removed
-from the image (replaced with 0s), which results in saving smaller disk
-image on the
-host machine - which allows to improve backup procedure's speed, and to
-more rationally use host disk space for
-storing more virtual machine applicances, or to save more VM restore
-points.<br>
-            <br>
-Read more about <a target="_blank"
- href="https://en.wikipedia.org/wiki/Virtual_machine">virtual machine
-definition<img alt="optimize virtual disk" title="VM"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-on Wikipedia, <a target="_blank"
- href="https://en.wikipedia.org/wiki/Windows_Virtual_PC">Microsoft
-Virtual PC<img alt="microsoft virtual machine" title="VirtualPC"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://www.virtualbox.org/">Oracle VM VirtualBox<img
- alt="oracle virtual machine technology" title="VirtualBox"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://www.vmware.com/">VMWare<img
- alt="virtual disk player, server" title="VMWare"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> mainstream
-virtualization solution providers.<br>
-            <br>
-Learn more about <a href="backup-files.html">how to backup files</a>, <a
- href="what-is-zip-file.html">what is a zip archive file</a>
-definition, and <a href="rar-zip-file-format-size-limitations.html">what
-are size / items limitations of archive formats</a>.<br>
-Read suggestions about <a href="file-compression-performances.html">how
-to improve compression ratio</a>, and <a
- href="why-can-not-compress-pdf-avi-mp3-files.html">why some files
-cannot be compressed</a> and <a
- href="archive-file-formats-comparison.html">how archive formats
-compares</a> for general purpose usage.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: How to
-optimize backup occupation of virtual machines and disk images. Zero
-delete files and free disk space with PeaZip to reduce size of QCOW2,
-VDI, VHD, VMDK virtual disks<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: how to compress
-virtual machines, best strategies to reduce size of disk images,
-optimize vm disk occupation</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Optimize Virtual Machines and disk images size<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="Suggestions: use PeaZip to reduce size of VM disk images"
- alt="optimize virtual machines disk image size"
- src="file-format/tips-tricks.png" style="width: 96px; height: 96px;"
- align="right"><a name="data_compression_improvements"></a>TIPS
-&amp; TRICKS</h3>
-                  <p><a style="font-weight: bold;"
- href="screenshots-peazip-3.html#drag_and_drop_extraction">Add PeaZip
-to context menu</a><br>
-                  </p>
-                  <p><a href="peazip-translations.html"><span
- style="font-weight: bold;">Change PeaZip language</span></a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="screenshots-peazip-1.html#dark_mode">Dark mode for PeaZip</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="screenshots-peazip-3.html#extract_files_from_context_menu">Drag
-and drop from / to PeaZip</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="free-rar-create.html">How to create
-RAR
-files?</a> </p>
-                  <p style="font-weight: bold;"><a
- href="peazip-command-line.html">PeaZip command line scripting syntax</a></p>
-                  <p><a
- href="optimize-virtual-machines-backup-images.html">Reduce Virtual
-Machines disk images space
-occupation</a><br>
-                  </p>
-                  <a href="peazip-password.html">How to unlock
-unreadable files?</a><br>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="optimize_wmware_virtualbox"></a><span style="font-weight: bold;">How to reduce the
+                              size of
+                              virtual machine disk images</span><br>
+                          </big></big></big></h1>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="reduce size of virtual machines" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="optimize_virtual_machines"></a>DOWNLOADS<br>
-            <img alt="optimize backup size of virtual machines"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="reduce size of vm backup" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="reduce_size_of_virtual_machines"></a>SUPPORT<br>
-            <img alt="optimize QCOW2, VDI, VHD, VMDK Virtual Machines"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="Reduce size of QCOW2, VDI, VHD, VMDK Virtual Machines" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="Optimize Virtual Machines and disk images size" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Reduce size of QCOW2, VDI, VHD, VMDK" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="Zeroing files and free disk space"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Optimize virtual disk images size using zero delete"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Optimize Virtual machines backup"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big><big><a name="how_to_decrease_vm_size"></a><a style="font-weight: bold;"
+                                href="optimize-virtual-machines-backup-images.html#optimize_wmware_virtualbox">Optimize
+                                size of
+                                QCOW2, VDI, VHD, VMDK VM images</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">Zeroing files and free
+                        disk space</big><span style="font-weight: bold;"><br>
+                      </span></h3>
+                    <br>
+                    <a name="prepare_virtual_machine_for_compression"></a>"<span style="font-weight: bold;">Zero
+                      delete</span>" function in
+                    PeaZip's "File tools" submenu is intended for overwriting data with
+                    all-0 stream, either as a file deletion option or as a supported mode
+                    for overwriting partition's free space, in order to fill corresponding
+                    physical disk area of homegeneus, highly compressible data.<br>
+                    Marginally, this deletion and free space optimization mode also offers
+                    an improved basic grade of security over PeaZip's "Quick delete"
+                    function, which
+                    simply remove the file from filesystem, making it not recoverable by
+                    system's recycle bin but susceptible of being recovered with undelete
+                    file utilities.<br>
+                    Zero deletion however is not meant for advanced security, and PeaZip's <span
+                      style="text-decoration: underline;"></span><a href="secure-delete.html">secure
+                      delete function</a> should be used instead
+                    when it is needed to securely and permanently erase a file or sanitize
+                    free space on a volume.<br>
+                    <h2><img title="Overwrite free disk space" alt="reduce disk occupation of virtual machines"
+                        src="secure-delete.png" style="width: 146px; height: 45px;"></h2>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Optimize virtual
+                          disk
+                          images size using zero delete</span><br>
+                      </big></h3>
+                    <br>
+                    <a name="optimize_virtual_disk_size"></a>A <span style="font-weight: bold;">Disk image</span> is a
+                    snapshot of
+                    the content of a disk, meaning all the content of the disk is mirrored
+                    into a file which is a 1:1 copy of the source.<br>
+                    This involves saving exactly the data is stored on the unit, bypassing
+                    possible filesystem's problems or limitations, and avoiding the
+                    inherent overhead in managing data as separate files running a set of
+                    high level software to read the filesystem structure, which means data
+                    recovery software may be simpler and faster, improving performances and
+                    reducing possible issues by design.<br>
+                    This is usually an higly efficient way to backup large quantities of
+                    data, and to perform a full system backup which in disaster recovery
+                    events can be deployed without, unlike plain data backup, needing
+                    additional work to restore the system, software, licenses etc.<br>
+                    But, being created in a filesystem-agnostic way, the image of the disk
+                    contains all data featured on the unit, including ones in sectors
+                    marked (in the filesystem) as deleted data, which may represent a
+                    sizeable overhead - especially over the time, as files gets created and
+                    deleted on the physical machine.<br>
+                    Zeroing the free space (and zeroing files being deleted) let the free
+                    space in an higly ordered, highly compressible state, that brings
+                    substantial improvement in terms of size reduction of resulting disk
+                    images even with most elementary compression algorithms - often
+                    built-in in disk imaging systems.<br>
+                    Consequently, it is recommended to perform PeaZip's "Zero delete free
+                    space" on physical machines before saving disk images for
+                    backup/disaster recovery purpose (or to routinely delete files with
+                    Zero delete function) to substantially reduce the size of the disk
+                    image: when the disk image gets compressed (either for built-in
+                    space occupation -optimization mechanisms, or for backup purpose) the
+                    space occupied on the media will be greatly reduced due better
+                    compression ratio being achiveable, and overall speed of the operating
+                    will be greatly improved - needing to handle a substantially smaller
+                    amount of data.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Manage VMDK, QCOW2, VDI, VHD virtual disks"
+                                  alt="how to reduce size of virtual machines" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><big>PeaZip
+                              supports reading (browse, search, extract) various types of disk images
+                              commonly used by virtualization software: <span style="font-weight: bold;">QCOW2</span>
+                              (QUEMU), <span style="font-weight: bold;">VMDK</span> (VMWare
+                              Virtual Machine Disk), Microsoft <span style="font-weight: bold;">VHD</span>
+                              (Virtual PC, Azure),
+                              and <span style="font-weight: bold;">VDI</span> (Oracle VirtualBox
+                              Virtual Drive Image), can <a href="iso-utility.html">read iso files</a>,
+                              and <a href="wim-files.html">read and write wim files</a><br>
+                            </big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Optimize quemu, vmware, virtualbox disks"
+                                alt="how to reduce backup occupation of virtual machines"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h2><big><span style="font-weight: bold;">Optimize Virtual
+                          machines backup</span><br>
+                      </big></h2>
+                    <span style="font-weight: bold;"><br>
+                      <a name="reduce_virtual_machine_backup_size"></a>Virtual
+                      machines</span>
+                    often comes with non-preallocated disk image, that means the content of
+                    disks
+                    of the VM is saved on host physical machine to a disk image file which
+                    smaller than the nominal VM disks size.<br>
+                    Popular providers of platform virtualization solutions are Microsoft
+                    (Azure, VirtualPC), Oracle (VirtualBox), and VMWare.<br>
+                    Anyway, even this optimization is often far than optimal in terms of
+                    space occupation on host machine, as the VM disk image contains also
+                    the data not referenced in the disk's filesystem (as explained in Disk
+                    images paragraph), which can be a sizeable overhead over the real size
+                    of occupied disk space inside the virtual machine, that should be the
+                    target size for disk image - which depending on the imaging software /
+                    VM technology may also be compressed further reducing space
+                    requirements.<br>
+                    As for disk images created for backup and disaster recovery purpose it
+                    is useful having PeaZip installed in the physical machine to zeroe the
+                    free space before the disk image creation, the same apply to virtual
+                    machines, where PeaZip should be available and routinely employed to
+                    zeroe the free space on VM disks.<br>
+                    This let the disk images it in an higly uniform and
+                    highly compressible state, the unused data being physically removed
+                    from the image (replaced with 0s), which results in saving smaller disk
+                    image on the
+                    host machine - which allows to improve backup procedure's speed, and to
+                    more rationally use host disk space for
+                    storing more virtual machine applicances, or to save more VM restore
+                    points.<br>
+                    <br>
+                    Read more about <a target="_blank" href="https://en.wikipedia.org/wiki/Virtual_machine">virtual
+                      machine
+                      definition<img alt="optimize virtual disk" title="VM" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    on Wikipedia, <a target="_blank" href="https://en.wikipedia.org/wiki/Windows_Virtual_PC">Microsoft
+                      Virtual PC<img alt="microsoft virtual machine" title="VirtualPC" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://www.virtualbox.org/">Oracle VM VirtualBox<img
+                        alt="oracle virtual machine technology" title="VirtualBox" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://www.vmware.com/">VMWare<img alt="virtual disk player, server" title="VMWare"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    mainstream
+                    virtualization solution providers.<br>
+                    <br>
+                    Learn more about <a href="backup-files.html">how to backup files</a>, <a
+                      href="what-is-zip-file.html">what is a zip archive file</a>
+                    definition, and <a href="rar-zip-file-format-size-limitations.html">what
+                      are size / items limitations of archive formats</a>.<br>
+                    Read suggestions about <a href="file-compression-performances.html">how
+                      to improve compression ratio</a>, and <a href="why-can-not-compress-pdf-avi-mp3-files.html">why
+                      some files
+                      cannot be compressed</a> and <a href="archive-file-formats-comparison.html">how archive formats
+                      compares</a> for general purpose usage.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: How to
+                        optimize backup occupation of virtual machines and disk images. Zero
+                        delete files and free disk space with PeaZip to reduce size of QCOW2,
+                        VDI, VHD, VMDK virtual disks<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: how to compress
+                        virtual machines, best strategies to reduce size of disk images,
+                        optimize vm disk occupation</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; Optimize Virtual Machines and disk images size<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="Suggestions: use PeaZip to reduce size of VM disk images"
+                                alt="optimize virtual machines disk image size" src="file-format/tips-tricks.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="data_compression_improvements"></a>TIPS
+                              &amp; TRICKS</h3>
+                            <p><a style="font-weight: bold;"
+                                href="screenshots-peazip-3.html#drag_and_drop_extraction">Add PeaZip
+                                to context menu</a><br>
+                            </p>
+                            <p><a href="peazip-translations.html"><span style="font-weight: bold;">Change PeaZip
+                                  language</span></a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="screenshots-peazip-1.html#dark_mode">Dark mode for
+                                PeaZip</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;"
+                                href="screenshots-peazip-3.html#extract_files_from_context_menu">Drag
+                                and drop from / to PeaZip</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="free-rar-create.html">How to create
+                                RAR
+                                files?</a> </p>
+                            <p style="font-weight: bold;"><a href="peazip-command-line.html">PeaZip command line
+                                scripting syntax</a></p>
+                            <p><a href="optimize-virtual-machines-backup-images.html">Reduce Virtual
+                                Machines disk images space
+                                occupation</a><br>
+                            </p>
+                            <a href="peazip-password.html">How to unlock
+                              unreadable files?</a><br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="reduce size of virtual machines"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="optimize_virtual_machines"></a>DOWNLOADS<br>
+                      <img alt="optimize backup size of virtual machines" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="reduce size of vm backup"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="reduce_size_of_virtual_machines"></a>SUPPORT<br>
+                      <img alt="optimize QCOW2, VDI, VHD, VMDK Virtual Machines" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Reduce size of QCOW2, VDI, VHD, VMDK" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="Zeroing files and free disk space"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Optimize virtual disk images size using zero delete"
+                                title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Optimize Virtual machines backup" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

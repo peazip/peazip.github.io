@@ -1,694 +1,642 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Update files in 7Z, TAR, ZIP archives. How to replace and overwrite matching files, update old version with new, freshen and synchronize archive content.">
+    content="Update files in 7Z, TAR, ZIP archives. How to replace and overwrite matching files, update old version with new, freshen and synchronize archive content.">
   <meta name="KEYWORDS"
- content="update, existing, overwrite, freshen, synchronize, replace, sync, files, folders, archive, zip, 7z, how to, howto, tar, old, new, modify">
+    content="update, existing, overwrite, freshen, synchronize, replace, sync, files, folders, archive, zip, 7z, how to, howto, tar, old, new, modify">
   <meta name="ROBOTS" content="all">
   <title>How to update existing 7Z TAR ZIP archives content</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="How to update existing 7Z TAR ZIP archives content">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="How to update existing 7Z TAR ZIP archives content">
   <meta property="og:description"
- content="Update files in 7Z, TAR, ZIP archives. How to replace and overwrite matching files, update old version with new, freshen and synchronize archive content.">
+    content="Update files in 7Z, TAR, ZIP archives. How to replace and overwrite matching files, update old version with new, freshen and synchronize archive content.">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/how-to-update-existing-archive.html">
+  <meta property="og:url" content="https://peazip.github.io/how-to-update-existing-archive.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="How to update existing 7Z TAR ZIP archive"
- alt="update files in archives" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="how to update the content of an existing archive"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="update_7z_zip_file"></a><span
- style="font-weight: bold;">How to update existing 7Z TAR ZIP
-archives content</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="Update files in 7Z, TAR, ZIP archives"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="How to replace and overwrite matching files in archive"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <ul style="font-weight: bold;">
-              <li>see also: <a
- href="add-files-to-existing-archive.html">add files into existing
-archives</a>, <a href="add-remove-files-from-archive.html">delete file
-form archive</a>, <a href="edit-file-in-archive.html">edit file in
-archives</a></li>
-            </ul>
-            <h2><big><big><big><a style="font-weight: bold;"
- name="replace_file_in_archive"></a><a
- href="how-to-update-existing-archive.html#edit_7z_zip_file"><span
- style="font-weight: bold;">Update and
-replace files inside existing
-7Z TAR ZIP archives</span><br>
-            </a></big></big></big></h2>
-            <br>
-The simplest ways to <span style="font-weight: bold;">update content
-of an
-existing archive</span> with PeaZip are<br>
-            <ul>
-              <li><a href="add-files-to-existing-archive.html">drag
-&amp; drop new files into open archive</a>: archiving
-interface
-will be shown, on confirmation new files will be added to the current
-archive, and moved to the archive subdirectory being browsed. If files
-with same names are found inside the archive confirmation will be
-required before overwriting existing ones.</li>
-              <li><a href="edit-file-in-archive.html">double click to
-edit file in archive</a>, opening it as
-preview (files will be extracted for viewing / editing to a temporary
-work path); if a file is changed PeaZip will ask to update the file in
-archive with the newer version.<br>
-              </li>
-            </ul>
-More options (Add, Update, Update only files already in archive,
-Synchronize archive with disk) are available from archiving creation
-interface - clicking
-on "Add" button and selecting an existing archive as output destination.<br>
-            <h3><img title="Update archive"
- alt="update files in archive" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h3>
-            <br>
-            <a name="update_file_already_in_archive"></a>&#8220;Function&#8221;
-dropdown sets the policy to apply when a pre-existing
-archive with the chosen name is found on the system:<br>
-            <ul>
-              <li> <span style="font-weight: bold;">New archive</span>&nbsp;</li>
-            </ul>
-            <div style="margin-left: 40px;">(default) will force the <a
- href="how-to-compress-files-folders.html">creation
-of a new archive</a>, assuring it has unique name</div>
-            <ul>
-              <br>
-              <li> <span style="font-weight: bold;"><a
- name="overwrite_files_in_archive"></a>Add</span><br>
-              </li>
-            </ul>
-            <div style="margin-left: 40px;">Adds the
-input data to the specified archive, if an archive with same name
-exists, overwriting any matching file already inside the archive - <span
- style="font-style: italic;">add option assures input files overwrite
-archived files, input version will be
-featured in the final archive regardless they are newer or older than
-matching files </span>inside the
-initail archive</div>
-            <ul>
-              <li>
-                <h2><span style="font-weight: bold;"><a
- name="update_files_in_archive"></a><span style="font-weight: bold;">Update</span>
-archive</span></h2>
-              </li>
-            </ul>
-            <div style="margin-left: 40px;">Update existing archive
-(default when dragging files into an existing archive open in PeaZip
-file browser) adds the input files and folders to the archive,
-overwriting matching files in the archive only if input files are newer
-than archived files - <span style="font-style: italic;">update option
-assure latest / newer version of files (regardless they are from the
-input or in the original archive) will be
-featured in the final archive and never get replaced</span><br>
-            </div>
-            <ul>
-              <li>
-                <h2><span style="font-weight: bold;"><a
- name="freshen_archive_content"></a>Freshen files in archive</span></h2>
-                <h2><span style="font-weight: bold;"></span></h2>
-                <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></li>
-            </ul>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Update only files
-already in archive</span> <span style="font-style: italic;">&#8220;freshen&#8221;</span>
-the archive content: works as update, but ignoring (not adding) input
-files not already in the archive, and freshening files already in the
-existing archive with updated version found on disk<br>
-            </div>
-            <ul>
-              <li>
-                <h2><span style="font-weight: bold;"><a
- name="how_to_sync_archive_content"></a>Synchronize files in archive</span><br>
-                </h2>
-                <span style="font-weight: bold;"></span></li>
-            </ul>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Synchronize archive
-with disk</span> works as update option, but archived files not
-featured in
-the input will be deleted from archive - <span
- style="font-style: italic;">synchronizing files in archive is the
-opposite of
-freshening archive content operation: freshen files in archive excludes
-files on disk not matching with
-existing archive
-content, while synch files in archive excludes archived files not
-matching with disk
-content. In both cases excluded files will not be featured in the final
-archive</span><br>
-            </div>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">What file types can be
-updated with PeaZip</big></h3>
-            <br>
-            <a name="what_archive_formats_can_be_updated"></a>Please
-note PeaZip can update (modify) only file formats it is able to write.<br>
-This
-means read-only supported formats cannot be changed, nor updated (but
-can be <a href="convert-files.html">converted to a fully supported
-archive format</a>).<br>
-Write-supported file types are: 7Z,
-FreeArc's ARC / WRC, BZ2, BCM
-/ QUAD / BALZ, GZ, *PAQ family
-(ZPAQ, LPAQ, PAQ), PEA, TAR,
-WIM, ZIP, and plain
-split files .001 (as created by 7-Zip/p7zip, HJSplit, PeaZip, and
-"split" Unix
-command).<br>
-            <br>
-            <span style="font-weight: bold;">How to update the content
-of non-archive files</span><br>
-            <a name="cannot_update_existing_archive"></a>From Options
-&gt; Settings &gt; Archive manager tab it is possible to set <span
- style="font-weight: bold;">"Edit non canonical archive
-types"</span>
-option in order force adding / updating / removing content in container
-files with non-archive extension (in example jar, docx, odt, xlsx...)
-that are, internally, very similar to archives - usually based on zip
-standard. Please note that this option is off by default and is not
-recommended for general usage as some container formats employs extra
-fields that are out of the standard of the archive structure they are
-based on, and editing those metadata fields is out of the scope for an
-archive management utility as PeaZip.<br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>How to update encrypted
-archives</big></h3>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
- name="update_encrypted_archive"></a>To edit content inside an <a
- href="extract-encrypted-files.html">encrypted archive</a>, the correct
-password must be provided, clicking locker icon on the right of
-Output field.<br>
-Write-supported encryption standards that can be written from PeaZip,
-in order to update encrypted archive, are:<br>
-                  <h3><img alt="freshen archive content"
- title="Update password protected archives"
- src="rar-files/cryptography.gif" style="width: 16px; height: 16px;"
- align="middle"></h3>
-                  <ul style="font-weight: bold;">
-                    <li> 7Z with 7-Zip AES256 encryption </li>
-                    <li> ARC with FreeARC AES256, Blowfish,
-Twofish256 and
-Serpent256 </li>
-                    <li> PEA with AES, Twofish, and Serpent
-256 bit EAX mode authenticated encryption<br>
-                    </li>
-                    <li>RAR (if WinRar is installed in the system) with
-AES128 / RAR4 and AES256 / RAR5<br>
-                    </li>
-                    <li>ZIP / ZIPX with WinZip AES256 AE, and ZipCrypto
-for
-legacy
-compatibility</li>
-                  </ul>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="How to update existing 7Z TAR ZIP archive"
+                      alt="update files in archives" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="how to update the content of an existing archive" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="update_7z_zip_file"></a><span style="font-weight: bold;">How to update existing 7Z
+                              TAR ZIP
+                              archives content</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="Update files in 7Z, TAR, ZIP archives" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="How to replace and overwrite matching files in archive" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <ul style="font-weight: bold;">
+                      <li>see also: <a href="add-files-to-existing-archive.html">add files into existing
+                          archives</a>, <a href="add-remove-files-from-archive.html">delete file
+                          form archive</a>, <a href="edit-file-in-archive.html">edit file in
+                          archives</a></li>
+                    </ul>
+                    <h2><big><big><big><a style="font-weight: bold;" name="replace_file_in_archive"></a><a
+                              href="how-to-update-existing-archive.html#edit_7z_zip_file"><span
+                                style="font-weight: bold;">Update and
+                                replace files inside existing
+                                7Z TAR ZIP archives</span><br>
+                            </a></big></big></big></h2>
+                    <br>
+                    The simplest ways to <span style="font-weight: bold;">update content
+                      of an
+                      existing archive</span> with PeaZip are<br>
+                    <ul>
+                      <li><a href="add-files-to-existing-archive.html">drag
+                          &amp; drop new files into open archive</a>: archiving
+                        interface
+                        will be shown, on confirmation new files will be added to the current
+                        archive, and moved to the archive subdirectory being browsed. If files
+                        with same names are found inside the archive confirmation will be
+                        required before overwriting existing ones.</li>
+                      <li><a href="edit-file-in-archive.html">double click to
+                          edit file in archive</a>, opening it as
+                        preview (files will be extracted for viewing / editing to a temporary
+                        work path); if a file is changed PeaZip will ask to update the file in
+                        archive with the newer version.<br>
+                      </li>
+                    </ul>
+                    More options (Add, Update, Update only files already in archive,
+                    Synchronize archive with disk) are available from archiving creation
+                    interface - clicking
+                    on "Add" button and selecting an existing archive as output destination.<br>
+                    <h3><img title="Update archive" alt="update files in archive" src="add-to-archive.png"
+                        style="width: 100px; height: 45px;"></h3>
+                    <br>
+                    <a name="update_file_already_in_archive"></a>&#8220;Function&#8221;
+                    dropdown sets the policy to apply when a pre-existing
+                    archive with the chosen name is found on the system:<br>
+                    <ul>
+                      <li> <span style="font-weight: bold;">New archive</span>&nbsp;</li>
+                    </ul>
+                    <div style="margin-left: 40px;">(default) will force the <a
+                        href="how-to-compress-files-folders.html">creation
+                        of a new archive</a>, assuring it has unique name</div>
+                    <ul>
+                      <br>
+                      <li> <span style="font-weight: bold;"><a name="overwrite_files_in_archive"></a>Add</span><br>
+                      </li>
+                    </ul>
+                    <div style="margin-left: 40px;">Adds the
+                      input data to the specified archive, if an archive with same name
+                      exists, overwriting any matching file already inside the archive - <span
+                        style="font-style: italic;">add option assures input files overwrite
+                        archived files, input version will be
+                        featured in the final archive regardless they are newer or older than
+                        matching files </span>inside the
+                      initail archive</div>
+                    <ul>
+                      <li>
+                        <h2><span style="font-weight: bold;"><a name="update_files_in_archive"></a><span
+                              style="font-weight: bold;">Update</span>
+                            archive</span></h2>
+                      </li>
+                    </ul>
+                    <div style="margin-left: 40px;">Update existing archive
+                      (default when dragging files into an existing archive open in PeaZip
+                      file browser) adds the input files and folders to the archive,
+                      overwriting matching files in the archive only if input files are newer
+                      than archived files - <span style="font-style: italic;">update option
+                        assure latest / newer version of files (regardless they are from the
+                        input or in the original archive) will be
+                        featured in the final archive and never get replaced</span><br>
+                    </div>
+                    <ul>
+                      <li>
+                        <h2><span style="font-weight: bold;"><a name="freshen_archive_content"></a>Freshen files in
+                            archive</span></h2>
+                        <h2><span style="font-weight: bold;"></span></h2>
+                        <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                      </li>
+                    </ul>
+                    <div style="margin-left: 40px;"><span style="font-weight: bold;">Update only files
+                        already in archive</span> <span style="font-style: italic;">&#8220;freshen&#8221;</span>
+                      the archive content: works as update, but ignoring (not adding) input
+                      files not already in the archive, and freshening files already in the
+                      existing archive with updated version found on disk<br>
+                    </div>
+                    <ul>
+                      <li>
+                        <h2><span style="font-weight: bold;"><a name="how_to_sync_archive_content"></a>Synchronize files
+                            in archive</span><br>
+                        </h2>
+                        <span style="font-weight: bold;"></span>
+                      </li>
+                    </ul>
+                    <div style="margin-left: 40px;"><span style="font-weight: bold;">Synchronize archive
+                        with disk</span> works as update option, but archived files not
+                      featured in
+                      the input will be deleted from archive - <span style="font-style: italic;">synchronizing files in
+                        archive is the
+                        opposite of
+                        freshening archive content operation: freshen files in archive excludes
+                        files on disk not matching with
+                        existing archive
+                        content, while synch files in archive excludes archived files not
+                        matching with disk
+                        content. In both cases excluded files will not be featured in the final
+                        archive</span><br>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">What file types can be
+                        updated with PeaZip</big></h3>
+                    <br>
+                    <a name="what_archive_formats_can_be_updated"></a>Please
+                    note PeaZip can update (modify) only file formats it is able to write.<br>
+                    This
+                    means read-only supported formats cannot be changed, nor updated (but
+                    can be <a href="convert-files.html">converted to a fully supported
+                      archive format</a>).<br>
+                    Write-supported file types are: 7Z,
+                    FreeArc's ARC / WRC, BZ2, BCM
+                    / QUAD / BALZ, GZ, *PAQ family
+                    (ZPAQ, LPAQ, PAQ), PEA, TAR,
+                    WIM, ZIP, and plain
+                    split files .001 (as created by 7-Zip/p7zip, HJSplit, PeaZip, and
+                    "split" Unix
+                    command).<br>
+                    <br>
+                    <span style="font-weight: bold;">How to update the content
+                      of non-archive files</span><br>
+                    <a name="cannot_update_existing_archive"></a>From Options
+                    &gt; Settings &gt; Archive manager tab it is possible to set <span style="font-weight: bold;">"Edit
+                      non canonical archive
+                      types"</span>
+                    option in order force adding / updating / removing content in container
+                    files with non-archive extension (in example jar, docx, odt, xlsx...)
+                    that are, internally, very similar to archives - usually based on zip
+                    standard. Please note that this option is off by default and is not
+                    recommended for general usage as some container formats employs extra
+                    fields that are out of the standard of the archive structure they are
+                    based on, and editing those metadata fields is out of the scope for an
+                    archive management utility as PeaZip.<br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>How to update encrypted
+                        archives</big></h3>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
+                              name="update_encrypted_archive"></a>To edit content inside an <a
+                              href="extract-encrypted-files.html">encrypted archive</a>, the correct
+                            password must be provided, clicking locker icon on the right of
+                            Output field.<br>
+                            Write-supported encryption standards that can be written from PeaZip,
+                            in order to update encrypted archive, are:<br>
+                            <h3><img alt="freshen archive content" title="Update password protected archives"
+                                src="rar-files/cryptography.gif" style="width: 16px; height: 16px;" align="middle"></h3>
+                            <ul style="font-weight: bold;">
+                              <li> 7Z with 7-Zip AES256 encryption </li>
+                              <li> ARC with FreeARC AES256, Blowfish,
+                                Twofish256 and
+                                Serpent256 </li>
+                              <li> PEA with AES, Twofish, and Serpent
+                                256 bit EAX mode authenticated encryption<br>
+                              </li>
+                              <li>RAR (if WinRar is installed in the system) with
+                                AES128 / RAR4 and AES256 / RAR5<br>
+                              </li>
+                              <li>ZIP / ZIPX with WinZip AES256 AE, and ZipCrypto
+                                for
+                                legacy
+                                compatibility</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <h4 style="font-weight: bold;"><big>Update compressed TAR
+                        archives</big></h4>
+                    <br>
+                    Please note some formats (BZ, GZ, XZ) only provides single-file
+                    compression capability, and usually compress a TAR archive containing
+                    actual content: all the above information apply to the TAR archive,
+                    which needs to be extracted and handled directly in order to be updated.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h3><span style="font-weight: bold;"><img title="Update 7z tar zip files"
+                                  alt="synchronize archive content" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h3>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;">
+                            <p><a name="how_to_update_solid_archive"></a>If <a
+                                href="what-is-solid-compression.html">solid compression</a> is
+                              used, compression process
+                              depends on statistical analysis of previously compressed data, which
+                              may delay the update process as more data (than the sole input files)
+                              needs to be processed and replaced.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    Read more about how to <a href="7zip-files-utility.html">update 7z
+                      archives</a>, <a href="free-rar-create.html">update rar files</a> with
+                    PeaZip if WinRar is available on the same machine, <a
+                      href="paq-files-compression-utility.html">update zpaq archives</a>, <a
+                      href="tar-windows.html">update tar files</a>, <a href="zip-files-utility.html">update zip
+                      files</a>, and to <a href="zipx-files-software.html">update zipx archives</a>.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Update files
+                        in existing 7Z, TAR, ZIP archives with PeaZip archive manager utility.
+                        How to replace and overwrite
+                        matching files, update old version of files with new versions,
+                        selectively freshen and synchronize archive content</span><span style="font-weight: bold;">.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: how to update
+                        7z tar zip archives, freshen files in archive, synchronize archive
+                        content with newer files on disk<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; How to update existing 7Z TAR ZIP archives content<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="update existing archive" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <br>
-            <h4 style="font-weight: bold;"><big>Update compressed TAR
-archives</big></h4>
-            <br>
-Please note some formats (BZ, GZ, XZ) only provides single-file
-compression capability, and usually compress a TAR archive containing
-actual content: all the above information apply to the TAR archive,
-which needs to be extracted and handled directly in order to be updated.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Update 7z tar zip files" alt="synchronize archive content"
- src="file-format/information.png" style="width: 48px; height: 48px;"><br>
-                  </span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">
-                  <p><a name="how_to_update_solid_archive"></a>If <a
- href="what-is-solid-compression.html">solid compression</a> is
-used, compression process
-depends on statistical analysis of previously compressed data, which
-may delay the update process as more data (than the sole input files)
-needs to be processed and replaced.</p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-            <br>
-Read more about how to <a href="7zip-files-utility.html">update 7z
-archives</a>, <a href="free-rar-create.html">update rar files</a> with
-PeaZip if WinRar is available on the same machine, <a
- href="paq-files-compression-utility.html">update zpaq archives</a>, <a
- href="tar-windows.html">update tar files</a>, <a
- href="zip-files-utility.html">update zip files</a>, and to <a
- href="zipx-files-software.html">update zipx archives</a>.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Update files
-in existing 7Z, TAR, ZIP archives with PeaZip archive manager utility.
-How to replace and overwrite
-matching files, update old version of files with new versions,
-selectively freshen and synchronize archive content</span><span
- style="font-weight: bold;">.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: how to update
-7z tar zip archives, freshen files in archive, synchronize archive
-content with newer files on disk<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; How to update existing 7Z TAR ZIP archives content<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="update existing archive" src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="synchronize files in archive"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="update_archive"></a>DOWNLOADS<br>
+                      <img alt="update archive content" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="update files in existing archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="freshen_archive_conetnt"></a>SUPPORT<br>
+                      <img alt="synchronize archive content" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="update old version with new files in archive" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="how to freshen and synchronize archive content"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="update files in archive" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="freshen archive content" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="synchronize files in archive" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="update_archive"></a>DOWNLOADS<br>
-            <img alt="update archive content"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="update files in existing archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="freshen_archive_conetnt"></a>SUPPORT<br>
-            <img alt="synchronize archive content"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="update old version with new files in archive"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="how to freshen and synchronize archive content"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="update files in archive" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="freshen archive content" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

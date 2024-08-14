@@ -1,786 +1,720 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="ZIP file extension, PKZip archives format. Zip file type features and specifications, Deflate compression, maximum size, max number of files limit.">
+    content="ZIP file extension, PKZip archives format. Zip file type features and specifications, Deflate compression, maximum size, max number of files limit.">
   <meta name="KEYWORDS"
- content="zip, file, format, what are, archives, maximum, size, number, max, limit, type, extension, limitations, features, deflate, compression, standard, specifications, specs, pkzip">
+    content="zip, file, format, what are, archives, maximum, size, number, max, limit, type, extension, limitations, features, deflate, compression, standard, specifications, specs, pkzip">
   <meta name="ROBOTS" content="all">
   <title>ZIP file format</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
   <meta property="og:title" content="ZIP file format">
   <meta property="og:description"
- content="ZIP file extension, PKZip archives format. Zip file type features and specifications, Deflate compression, maximum size, max number of files limit.">
+    content="ZIP file extension, PKZip archives format. Zip file type features and specifications, Deflate compression, maximum size, max number of files limit.">
   <meta property="og:image" content="free-zip/zip.png">
-  <meta property="og:url"
- content="https://peazip.github.io/zip-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/zip-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="ZIP file extension" alt="pkzip archive format"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="zip file type" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name=".zip_extension"></a><span
- style="font-weight: bold;">ZIP file format</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="zip file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="zip file extension" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name=".zip_archives"></a><a href="zip-file-format.html#.zip_extension">ZIP
-extension,
-PKZip archive format</a></big></big><br>
-            </big></h2>
-            </div>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="ZIP file extension" alt="pkzip archive format"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="zip file type"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Definition of ZIP format" alt="zip file type"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name=".zip_extension"></a><span style="font-weight: bold;">ZIP file format</span><br>
+                          </big></big></big></h1>
+                    <br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><span
- style="font-style: italic;"><a name="zip_format_specs"></a>ZIP
-is the default
-archive format for PeaZip free archiver, being a good, fast general
-purpose archiving
-format that can be handled by most archive managers - it is chosen as
-default format by most other file archivers for the same reason.</span><br
- style="font-style: italic;">
-                  <span style="font-style: italic;">Optimized Deflate
-algorithm used in PeaZip improves ZIP format performances on modern
-multi core, multi threaded machines, and provides a slightly improved
-compression over classic Deflate implementation, and creates archives
-retaining full
-compatibility with ZIP standard.</span></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="ZIP file format features"
- alt="zip file format specs" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img alt="zip file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img alt="zip file extension"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name=".zip_archives"></a><a
+                                href="zip-file-format.html#.zip_extension">ZIP
+                                extension,
+                                PKZip archive format</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Definition of ZIP format"
+                                  alt="zip file type" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><span style="font-style: italic;"><a
+                                name="zip_format_specs"></a>ZIP
+                              is the default
+                              archive format for PeaZip free archiver, being a good, fast general
+                              purpose archiving
+                              format that can be handled by most archive managers - it is chosen as
+                              default format by most other file archivers for the same reason.</span><br
+                              style="font-style: italic;">
+                            <span style="font-style: italic;">Optimized Deflate
+                              algorithm used in PeaZip improves ZIP format performances on modern
+                              multi core, multi threaded machines, and provides a slightly improved
+                              compression over classic Deflate implementation, and creates archives
+                              retaining full
+                              compatibility with ZIP standard.</span>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="ZIP file format features" alt="zip file format specs"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h4><big style="font-weight: bold;">ZIP file format</big></h4>
+                    <br>
+                    <a name="what_is_zip_file"></a>ZIP extension desingates a
+                    popular <a href="what-is-zip-file.html">file archiving format</a>,
+                    mainstream on Microsoft Windows systems.<br>
+                    ZIP format
+                    specifications are maintained by PKWare which
+                    originally developed the
+                    format as part of Phil Katz's compression utility PKZip (1989), and it
+                    is currently undergoing evaluation for ISO/IEC standardization.<br>
+                    <br>
+                    Newer archive formats like 7Z (7-Zip / p7zip), RAR (WinRar), and ACE
+                    (WinAce)
+                    have gained popularity and
+                    introduced several improvements (some of them later brought into ZIP
+                    format) like <a href="file-compression-performances.html">better
+                      compression ratio and better performances</a>, recovery records, <a
+                      href="encrypt-files.html">strong
+                      file encryption</a> etc. - often at cost of inferior speed and higher
+                    memory requirements compared to faster, lightweight Deflate compression
+                    used in ZIp format.<br>
+                    <br>
+                    Anyway, ZIP format retained much of its popularity earned in several
+                    years of widespread use due its ubiquitous support from many dedicated
+                    software alternatives to WinZip, as well as basic built-in support
+                    (extraction and often creation, i.e. Windows' "add to compressed
+                    folder" command) in
+                    most of modern operating
+                    systems, being .zip file format specifications released in public
+                    domain, which makes unzipping possible on almost all PC and devices.<br>
+                    <br>
+                    Read more: <a href="zip-files-utility.html">how to create, open,
+                      extract ZIP files</a> with PeaZip free archiver<br>
+                    <h2><img title="ZIP: open archiving and compression standard" alt="zip file format features"
+                        src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
+                    <h3><img title="ZIP: Deflate based compression standard" alt="zip file format specifications"
+                        src="extract-archive.png" style="width: 112px; height: 45px;"></h3>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">Spanned ZIP file
+                          types</span></big></h4>
+                    <br>
+                    Various <a href="file-split.html">file spanning</a> schemes
+                    are employed by differnt utilities for creating split multi-volume zip
+                    archives, most popular is raw file spanning (as inplemented in 7-Zip,
+                    or Unix / Linux "split" command) and WinZip's custom spanning.<br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">Use of ZIP file format</span></big><br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Usage recommendations for ZIP format"
+                                  alt="zip extension" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">
+                            <span style="font-weight: bold;">When is ZIP
+                              format
+                              recommended</span><br>
+                            <span style="background-color: rgb(255, 238, 221);">Zip
+                              is
+                              a good choice anytime
+                              it is important to keep the archive compatible with most archive
+                              managers recipients may use, making it also an excellent choice for <a
+                                href="share-files-sharing.html">sharing and
+                                content distribution</a>, being unzip generally possible on any
+                              platform.</span>
+                            For same reson it is also
+                            recommended for
+                            long
+                            term archive / backup storage, as a such obiquitous format (with public
+                            domain specifications) is unlike to be unsupported in any conceivable
+                            scenario.<br>
+                            Also, ZIP is usually significantly faster than more powerful
+                            compression formats, both for archiving and for extraction steps.<br>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="ZIP file format features" alt="zip file extension"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h4 style="font-weight: bold;"><big>Zip format standard and
+                        variants
+                        (ZIPX, JAR, CAB, IPA, APK,
+                        COMPOUND...)</big></h4>
+                    <br>
+                    ZIP compression is
+                    quite
+                    fast and
+                    it's based on <span style="font-weight: bold;">Deflate </span>algorithm
+                    (like
+                    in <a href="gzip-files.html">GZip format</a>, <a href="pea-file-format.html">PEA format</a>, and
+                    even in <a href="paq-file-format.html">ZPAQ format</a> at minimum compression
+                    level); alternatively Deflate64, BZip2, LZMA, and PPMd based
+                    compression is
+                    possible, and supported by PeaZip.<br>
+                    <br>
+                    Recently WinZip (first GUI zip file utility on Microsoft Windows
+                    platform, and still one of most popular "zipper" program) introduced
+                    some new compression algorithms, and a new
+                    AES based <a href="encrypt-files.html">encryption</a> scheme, Advanced
+                    Encryption (AE-1, released in
+                    2003, and AE-2 revision in 2004).<br>
+                    <a name="zip_aes_encryption"></a>AE-encrypted
+                    archives as well as classic
+                    ZipCrypto-encrypted archives are supported by PeaZip (read and write),
+                    the application is also
+                    capable to read (<a href="extract-encrypted-files.html">decrypt</a>)
+                    PKWare's AES encrypted zip archives, standard
+                    introduced in 2003 with PKZip 6.0 Professional Edition.<br>
+                    <br>
+                    <a name="zip_vs_zipx"></a>Since 2008 WinZip designed a new
+                    archival format, distinguished by <a href="zipx-file-format.html">ZIPX
+                      extension</a>, supporting newer
+                    compression
+                    and encryption features, but ZIP format retained most of its popularity
+                    as common, "standard" way to pack and share data, as using a
+                    non-Deflate / Deflate64 compression algorithm may break compatibility
+                    with older zip utilities and use of a separate file extension was
+                    useful to avoid confusion for end users.<br>
+                    <br>
+                    <a name="zip_format_variants"></a>Many special-purpose
+                    variants were built on zip format structure (Android APK,
+                    Java JAR, Apple IPA, EPUB) or using Deflate compression (<a href="cab-files-utility.html">Microsoft
+                      CAB</a>
+                    and MS Office OPC "Open Packaging Conventions" and COMPOUND file types).<br>
+                    For some of these file types PeaZip features a warning when trying to
+                    edit archive
+                    content (unless they are renamed as .zip files, and treated as plain
+                    archives), only browsing and extraction, because file format
+                    specifications involves to create / maintain special purpose meta-data
+                    fields
+                    which are out of the scope of a general-purpose file archiver - those
+                    files should be edited with specialized programs to correctly update
+                    required meta-data.<br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2><big><big><big><span style="font-weight: bold;">ZIP
+                              file format specs</span></big></big></big></h2>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Maximum number of
+                        files in a ZIP archive</big></h3>
+                    <br>
+                    <a name="max_number_of_files_in_a_zip_file"></a>ZIP
+                    format standard <a href="rar-zip-file-format-size-limitations.html">limits
+                      the number of files in archive</a> to 2^16 (64 K
+                    files maximum), <span style="font-weight: bold;">ZIP64 </span>standard
+                    extension, supported by PeaZip, allows 2^32 files per archive (4 G
+                    files as maximum number)<br>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Maximum size of
+                          each file in a ZIP archive</span></big></h3>
+                    <br>
+                    <a name="max_size_fo_input_file_for_zip_format"></a>ZIP
+                    format can accept input files up to 2^32 (4 GB) in size, while <span
+                      style="font-weight: bold;">ZIP64 </span>can archive files as large as
+                    2^64 bytes in size (16 exabytes,
+                    each), far exceeding current needs and limits of common filesystems.<br>
+                    <br>
+                    <big><br>
+                    </big>
+                    <h3 style="font-weight: bold;"><big>Maximum total size of
+                        ZIP archive</big></h3>
+                    <br>
+                    <a name="max_zip_file_size"></a>A standard ZIP file
+                    can be up to 2^32 bytes in size (4 gigabyte of
+                    total size of the archive), <span style="font-weight: bold;">ZIP64 </span>standard
+                    allows the maximum archive size of 2^64 bytes (16 exabyte of total zip
+                    size), exceeding the current needs and limitation of most of current
+                    implementations of filesystems.<br>
+                    <a name="maximum_total_size_of_zip_files"></a>Please
+                    note some old zip archivers supports up to 2 GB for maximum
+                    archive size (and for max size of each input file), using a signed
+                    integer for representing the 32-bit wide size variable.<br>
+                    <br>
+                    <br>
+                    <a name="zip_file_format_specifications"></a>External
+                    online resources: <a target="_blank" href="http://en.wikipedia.org/wiki/Zip_%28file_format%29">ZIP
+                      file
+                      format<img title="ZIP wiki" alt="zip file format" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a><span style="font-weight: bold;">
+                    </span>on Wikipedia, <a target="_blank" href="https://www.pkware.com/software/pkzip">PKWare
+                      PKZip<img title="PKWare" alt="PKZip" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://www.zlib.net/feldspar.html">Deflate
+                      algorithm<img title="Deflate algorithm" alt="zlib deflate" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> specs<br>
+                    <br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="zip_file_type"></a>.ZIP</big></big></big></big></big>
+                                            </h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Phil
+                                            Katz, 1989<br>
+                                            ZIP: 64 K max number of files, 4 GB max size (archive, files)<br>
+                                            ZIP64: 2^32 max number of files, 2^64 bytes max size (archive, files)<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="what are zip format features" title="Compression speed"
+                                          src="zip-files/star4p5.png" style="width: 80px; height: 16px;"></big></h4>
+                                    <a name="deflate_compression_speed"></a>Zip
+                                    format features excellent
+                                    speed either for zip and unzip operations. Deflate algorithm is light
+                                    and fast for
+                                    modern hardware, other
+                                    supported compression algorithms are more resource demanding.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img alt="zip archive type specs" title="ZIP compression performances"
+                                          src="zip-files/star2.png" style="width: 80px; height: 16px;"></big></h4>
+                                    <a name="zip_compression_ratio"></a>Deflate
+                                    algorithm is
+                                    inferior to modern, more powerful (and power demanding)
+                                    compressors as 7Z or RAR. Modern ZIP software supports additional
+                                    algorithms to close the gap (BZip2, PPMd, LZMA) but archives may result
+                                    unreadable for older utilities.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>ADVANCED
+                                        OPTIONS <img alt="zip archive format specifications" title="ZIP format options"
+                                          src="zip-files/star4.png" style="width: 80px; height: 16px;"></big></h4>
+                                    <a name="zip_files_encryption"></a>Zip format
+                                    features good advanced archiving options. Recent
+                                    standard format revisions provide efficent encryption standards and
+                                    allows archiving large files (over 4GB).
+                                    Lacks
+                                    recovery records option
+                                    available for RAR format.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: What is ZIP
+                        file extension. PKZip archives format. Zip file type features and
+                        specifications, functionalities in terms of
+                        speed, compression ratio, advanced options and encryption. </span><span
+                        style="font-weight: bold;">Deflate compression characteristics.
+                        Maximum size, max number of files limit of Zip archive type.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: ZIP file
+                        extension specs, zip format variants<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        ZIP file format<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="zip archive extension" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <h4><big style="font-weight: bold;">ZIP file format</big></h4>
-            <br>
-            <a name="what_is_zip_file"></a>ZIP extension desingates a
-popular <a href="what-is-zip-file.html">file archiving format</a>,
-mainstream on Microsoft Windows systems.<br>
-ZIP format
-specifications are maintained by PKWare which
-originally developed the
-format as part of Phil Katz's compression utility PKZip (1989), and it
-is currently undergoing evaluation for ISO/IEC standardization.<br>
-            <br>
-Newer archive formats like 7Z (7-Zip / p7zip), RAR (WinRar), and ACE
-(WinAce)
-have gained popularity and
-introduced several improvements (some of them later brought into ZIP
-format) like <a href="file-compression-performances.html">better
-compression ratio and better performances</a>, recovery records, <a
- href="encrypt-files.html">strong
-file encryption</a> etc. - often at cost of inferior speed and higher
-memory requirements compared to faster, lightweight Deflate compression
-used in ZIp format.<br>
-            <br>
-Anyway, ZIP format retained much of its popularity earned in several
-years of widespread use due its ubiquitous support from many dedicated
-software alternatives to WinZip, as well as basic built-in support
-(extraction and often creation, i.e. Windows' "add to compressed
-folder" command) in
-most of modern operating
-systems, being .zip file format specifications released in public
-domain, which makes unzipping possible on almost all PC and devices.<br>
-            <br>
-Read more: <a href="zip-files-utility.html">how to create, open,
-extract ZIP files</a> with PeaZip free archiver<br>
-            <h2><img
- title="ZIP: open archiving and compression standard"
- alt="zip file format features" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h2>
-            <h3><img title="ZIP: Deflate based compression standard"
- alt="zip file format specifications" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">Spanned ZIP file
-types</span></big></h4>
-            <br>
-Various <a href="file-split.html">file spanning</a> schemes
-are employed by differnt utilities for creating split multi-volume zip
-archives, most popular is raw file spanning (as inplemented in 7-Zip,
-or Unix / Linux "split" command) and WinZip's custom spanning.<br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">Use of ZIP file format</span></big><br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Usage recommendations for ZIP format" alt="zip extension"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;">
-                  <span style="font-weight: bold;">When is ZIP
-format
-recommended</span><br>
-                  <span style="background-color: rgb(255, 238, 221);">Zip
-is
-a good choice anytime
-it is important to keep the archive compatible with most archive
-managers recipients may use, making it also an excellent choice for <a
- href="share-files-sharing.html">sharing and
-content distribution</a>, being unzip generally possible on any
-platform.</span>
-For same reson it is also
-recommended for
-long
-term archive / backup storage, as a such obiquitous format (with public
-domain specifications) is unlike to be unsupported in any conceivable
-scenario.<br>
-Also, ZIP is usually significantly faster than more powerful
-compression formats, both for archiving and for extraction steps.<br>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="ZIP file format features"
- alt="zip file extension" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="zip archive type" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="zip_file_extension"></a>DOWNLOADS<br>
+                      <img alt="zip file format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="zip archive format" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="zip_file_format"></a>SUPPORT<br>
+                      <img alt="zip file extension" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="What is ZIP extension, PKZip archive format" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="What are zip file type limitations"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what are zip archive format specifications" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="zip specs" title="Search in PeaZip project domain" src="extract-rar/rar-opener.png"
+                                style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            <h4 style="font-weight: bold;"><big>Zip format standard and
-variants
-(ZIPX, JAR, CAB, IPA, APK,
-COMPOUND...)</big></h4>
-            <br>
-ZIP compression is
-quite
-fast and
-it's based on <span style="font-weight: bold;">Deflate </span>algorithm
-(like
-in <a href="gzip-files.html">GZip format</a>, <a
- href="pea-file-format.html">PEA format</a>, and even in <a
- href="paq-file-format.html">ZPAQ format</a> at minimum compression
-level); alternatively Deflate64, BZip2, LZMA, and PPMd based
-compression is
-possible, and supported by PeaZip.<br>
-            <br>
-Recently WinZip (first GUI zip file utility on Microsoft Windows
-platform, and still one of most popular "zipper" program) introduced
-some new compression algorithms, and a new
-AES based <a href="encrypt-files.html">encryption</a> scheme, Advanced
-Encryption (AE-1, released in
-2003, and AE-2 revision in 2004).<br>
-            <a name="zip_aes_encryption"></a>AE-encrypted
-archives as well as classic
-ZipCrypto-encrypted archives are supported by PeaZip (read and write),
-the application is also
-capable to read (<a href="extract-encrypted-files.html">decrypt</a>)
-PKWare's AES encrypted zip archives, standard
-introduced in 2003 with PKZip 6.0 Professional Edition.<br>
-            <br>
-            <a name="zip_vs_zipx"></a>Since 2008 WinZip designed a new
-archival format, distinguished by <a href="zipx-file-format.html">ZIPX
-extension</a>, supporting newer
-compression
-and encryption features, but ZIP format retained most of its popularity
-as common, "standard" way to pack and share data, as using a
-non-Deflate / Deflate64 compression algorithm may break compatibility
-with older zip utilities and use of a separate file extension was
-useful to avoid confusion for end users.<br>
-            <br>
-            <a name="zip_format_variants"></a>Many special-purpose
-variants were built on zip format structure (Android APK,
-Java JAR, Apple IPA, EPUB) or using Deflate compression (<a
- href="cab-files-utility.html">Microsoft CAB</a>
-and MS Office OPC "Open Packaging Conventions" and COMPOUND file types).<br>
-For some of these file types PeaZip features a warning when trying to
-edit archive
-content (unless they are renamed as .zip files, and treated as plain
-archives), only browsing and extraction, because file format
-specifications involves to create / maintain special purpose meta-data
-fields
-which are out of the scope of a general-purpose file archiver - those
-files should be edited with specialized programs to correctly update
-required meta-data.<br>
-            <br>
-            <br>
-            <br>
-            <h2><big><big><big><span style="font-weight: bold;">ZIP
-file format specs</span></big></big></big></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Maximum number of
-files in a ZIP archive</big></h3>
-            <br>
-            <a name="max_number_of_files_in_a_zip_file"></a>ZIP
-format standard <a href="rar-zip-file-format-size-limitations.html">limits
-the number of files in archive</a> to 2^16 (64 K
-files maximum), <span style="font-weight: bold;">ZIP64 </span>standard
-extension, supported by PeaZip, allows 2^32 files per archive (4 G
-files as maximum number)<br>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Maximum size of
-each file in a ZIP archive</span></big></h3>
-            <br>
-            <a name="max_size_fo_input_file_for_zip_format"></a>ZIP
-format can accept input files up to 2^32 (4 GB) in size, while <span
- style="font-weight: bold;">ZIP64 </span>can archive files as large as
-2^64 bytes in size (16 exabytes,
-each), far exceeding current needs and limits of common filesystems.<br>
-            <br>
-            <big><br>
-            </big>
-            <h3 style="font-weight: bold;"><big>Maximum total size of
-ZIP archive</big></h3>
-            <br>
-            <a name="max_zip_file_size"></a>A standard ZIP file
-can be up to 2^32 bytes in size (4 gigabyte of
-total size of the archive), <span style="font-weight: bold;">ZIP64 </span>standard
-allows the maximum archive size of 2^64 bytes (16 exabyte of total zip
-size), exceeding the current needs and limitation of most of current
-implementations of filesystems.<br>
-            <a name="maximum_total_size_of_zip_files"></a>Please
-note some old zip archivers supports up to 2 GB for maximum
-archive size (and for max size of each input file), using a signed
-integer for representing the 32-bit wide size variable.<br>
-            <br>
-            <br>
-            <a name="zip_file_format_specifications"></a>External
-online resources: <a target="_blank"
- href="http://en.wikipedia.org/wiki/Zip_%28file_format%29">ZIP file
-format<img title="ZIP wiki" alt="zip file format"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a><span
- style="font-weight: bold;"> </span>on Wikipedia, <a target="_blank"
- href="https://www.pkware.com/software/pkzip">PKWare PKZip<img
- title="PKWare" alt="PKZip" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://www.zlib.net/feldspar.html">Deflate
-algorithm<img title="Deflate algorithm" alt="zlib deflate"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> specs<br>
-            <br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
-              <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="zip_file_type"></a>.ZIP</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Phil
-Katz, 1989<br>
-ZIP: 64 K max number of files, 4 GB max size (archive, files)<br>
-ZIP64: 2^32 max number of files, 2^64 bytes max size (archive, files)<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img
- alt="what are zip format features" title="Compression speed"
- src="zip-files/star4p5.png" style="width: 80px; height: 16px;"></big></h4>
-                        <a name="deflate_compression_speed"></a>Zip
-format features excellent
-speed either for zip and unzip operations. Deflate algorithm is light
-and fast for
-modern hardware, other
-supported compression algorithms are more resource demanding.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img alt="zip archive type specs"
- title="ZIP compression performances" src="zip-files/star2.png"
- style="width: 80px; height: 16px;"></big></h4>
-                        <a name="zip_compression_ratio"></a>Deflate
-algorithm is
-inferior to modern, more powerful (and power demanding)
-compressors as 7Z or RAR. Modern ZIP software supports additional
-algorithms to close the gap (BZip2, PPMd, LZMA) but archives may result
-unreadable for older utilities.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>ADVANCED
-OPTIONS <img alt="zip archive format specifications"
- title="ZIP format options" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big></h4>
-                        <a name="zip_files_encryption"></a>Zip format
-features good advanced archiving options. Recent
-standard format revisions provide efficent encryption standards and
-allows archiving large files (over 4GB).
-Lacks
-recovery records option
-available for RAR format.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: What is ZIP
-file extension. PKZip archives format. Zip file type features and
-specifications, functionalities in terms of
-speed, compression ratio, advanced options and encryption. </span><span
- style="font-weight: bold;">Deflate compression characteristics.
-Maximum size, max number of files limit of Zip archive type.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: ZIP file
-extension specs, zip format variants<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-ZIP file format<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="zip archive extension" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="zip archive type" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="zip_file_extension"></a>DOWNLOADS<br>
-            <img alt="zip file format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="zip archive format" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="zip_file_format"></a>SUPPORT<br>
-            <img alt="zip file extension" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="What is ZIP extension, PKZip archive format"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="What are zip file type limitations"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what are zip archive format specifications"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="zip specs" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

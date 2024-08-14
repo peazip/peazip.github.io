@@ -60,7 +60,7 @@ stability improved, trying to avoid extracting temporary data to a volume which 
 2019 05 05
 6.8.0
 BACKEND
-Created general purpose dragdropfilesdll.dll to handle drag and drop from application to Windows 32 and 64 bit systems, built from DragDropLazarus Lazarus package (which is required only for compiling the dll), which is based on work of Angus Johnson & Anders Melander (on Delphi), and Michael Köcher / six (on Lazarus)
+Created general purpose dragdropfilesdll.dll to handle drag and drop from application to Windows 32 and 64 bit systems, built from DragDropLazarus Lazarus package (which is required only for compiling the dll), which is based on work of Angus Johnson & Anders Melander (on Delphi), and Michael Kï¿½cher / six (on Lazarus)
 
 FILE MANAGER
 (Windows) Added native drag and drop from application to system

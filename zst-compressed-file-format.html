@@ -1,637 +1,581 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is ZST file format extension, Facebook's Zstandard fast compression algorithm. What are ZSTD compressed files features and specifications.">
+    content="What is ZST file format extension, Facebook's Zstandard fast compression algorithm. What are ZSTD compressed files features and specifications.">
   <meta name="KEYWORDS"
- content="zst, what are, zstandard, zstd, what is, file, format, fast, compression, algorithm, archives, type, extension, features, specifications, specs, speed">
+    content="zst, what are, zstandard, zstd, what is, file, format, fast, compression, algorithm, archives, type, extension, features, specifications, specs, speed">
   <meta name="ROBOTS" content="all">
   <title>ZST extension (Zstandard compressed files)</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="ZST extension (Zstandard compressed files)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="ZST extension (Zstandard compressed files)">
   <meta property="og:description"
- content="What is ZST file format extension, Facebook's Zstandard fast compression algorithm. What are ZSTD compressed files features and specifications.">
+    content="What is ZST file format extension, Facebook's Zstandard fast compression algorithm. What are ZSTD compressed files features and specifications.">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/zst-compressed-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/zst-compressed-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="ZST file extension" alt="zstandard compressed file format"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="zst file type" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- name="zstd"></a><span style="font-weight: bold;">ZST extension,
-Zstandard compressed files</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="what is zst file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="what does zst extension mean" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="zst_compressed_files"></a><a
- href="zst-compressed-file-format.html#zstd">ZST
-file type, what is Facebook Zstandard compression format</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>ZST file extension</big></h3>
-            <br>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="ZST file extension"
+                      alt="zstandard compressed file format" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="zst file type"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <a name="what_is_a_zst_file"></a><span
- style="font-weight: bold;">ZST </span>file extension
-designates a <span style="background-color: rgb(255, 238, 221);">pure
-data compression format</span>, not
-providing file archival or encryption features.<br>
-The input data is compressed with Facebook's Zstandard algorithm, a new
-flexible design that at lower compression settings provides <a
- href="peazip-compression-benchmark.html">faster than Deflate</a> (Gzip
-/ ZIP) performances and at highest compression settings provides
-compression ratio comparable with 7-Zip's LZMA (.7Z).<br>
-            <br>
-PeaZip features <a href="zstandard-compression-utility.html">creation
-and
-extraction of Zstandard files</a> on Windows and Linux systems using
-Facebook's ZSTD implementation, and can read (open, test and
-extract) and write (compress to) ZST file type.<br>
-            <h2><img title="Zstandard compression" alt="zstd extension"
- src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
-            <h3><img
- title="ZST compressed format features and specifications"
- alt="ZST file format specifications" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">Features and goals of
-ZST file format</span></big><br>
-            <br>
-A goal of Zstandard design is <span style="font-weight: bold;">near-real
-time extraction</span>, performing
-very fast (faster than <a href="gzip-files.html">Gzip</a> / <a
- href="zip-file-format.html">ZIP</a>) and with small variations in
-decompressing ZST created with lowest or higher compression settings.<br>
-            <br>
-            <a name="zstandard_compression_specs"></a>Zstandard
-implementation, ZSTD, making use of multi-threading parallelism and on
-recent multi-core CPUs currently outperforms single-threaded Brotli
-implementation at similar levels of compression.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">Use of ZST file
-format</span></big></h4>
-            <br>
-Due to&nbsp; the by-design limitation of being a single file
-compressor, PeaZip uses Zstandard <a href="tar-windows.html">compression
-cascaded with TAR
-archiving</a> in order to consolidate multiple input files / folders
-into a
-single container, which is then compressed originating a .tar.zst file.<br>
-Zstandard-compressed <a href="tar-file-format.html">tar archives</a>
-are sometimes identified by <span style="font-weight: bold;">.tzst
-file extension</span> instead or the composite tar.zst extension.<br>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="What is ZST file format, Zstandard compression algorithm"
- alt="what is zst file format" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a name="zstd"></a><span
+                              style="font-weight: bold;">ZST extension,
+                              Zstandard compressed files</span><br>
+                          </big></big></big></h1>
+                    <br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;">
-                  <h3><span style="font-weight: bold;">When is
-Zstandard
-compression format
-recommended</span></h3>
-Zstandard algorithm is very flexible and can provide a wide range of
-compression levels with reasonable performances, but excels when fast
-compression is desired, reaching Deflate-level compression ratio in
-significantly shorter times.<br>
-Also, extraction is very fast and outperforms alternatives, making it
-an excellent choice where extraction speed are important and where
-decompression tasks are more common than compression ones.<br>
-                  </td>
-                  <td style="vertical-align: bottom; width: 128px;"> <img
- title="ZST format features and specifications."
- alt="zst files features" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"> </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            <a name="bz2_format_specifications"></a>Read more about
-.zst file type on <a target="_blank"
- href="https://facebook.github.io/zstd/">ZSTD
-official repository<img title="Facebook's ZSTD repository"
- alt="Zstandard online" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
- target="_blank" href="https://en.wikipedia.org/wiki/Zstandard">Zstandard<img
- title="wiki Zstandard algorithm" alt="ZSTD compression"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> entry on
-Wikipedia.<br>
-            <br>
-            <span style="font-weight: bold;"></span><br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img alt="what is zst file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img alt="what does zst extension mean"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="zst_file_extension"></a>.ZST</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Authors
-Yann Collet, Przemys&#322;aw Skibi&#324;ski (Facebook), 2015<br>
-limited to 1 single file as input<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img
- alt="Zstandard compression format specs" title="ZSTD compression speed"
- src="zip-files/star5.png" style="width: 80px; height: 16px;"></big></h4>
-ZST format can reach very high compression and decompression speed.
-Designed making use of parallelism of modern CPUs, ZSTD implementation
-is significantly faster than Deflate while providing comparable
-compression levels, and is still efficient at higher compression levels.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img src="zip-files/star4.png"
- title="Zstandard compression performances"
- alt="Zstandard algorithm specs" style="width: 80px; height: 16px;"></big></h4>
-Zstandard flexible compression scheme allows to provide both very fast
-compression and to reach LZMA-like compression ratios at higher
-compression settings.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <big>ADVANCED
-OPTIONS <img alt="zstandard features" title="ZST format options"
- src="zip-files/star1.png" style="width: 80px; height: 16px;"></big><br>
-ZST format is meant purely for providing fast data or single-file
-compression, and lacks
-archiving, encryption features by design.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <p><span style="font-weight: bold;">Synopsis: Zst file
-extension. Facebook's Zstandard single file compression format
-specification and features in terms of compression speed and
-compression ratio. What is .zst file type.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: ZST file
-extension specs, Zstandard compression format<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-ZST extension (Zstandard compressed files)<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="zstandard extension" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="zst_compressed_files"></a><a
+                                href="zst-compressed-file-format.html#zstd">ZST
+                                file type, what is Facebook Zstandard compression format</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>ZST file extension</big></h3>
+                    <br>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <a name="what_is_a_zst_file"></a><span style="font-weight: bold;">ZST </span>file extension
+                    designates a <span style="background-color: rgb(255, 238, 221);">pure
+                      data compression format</span>, not
+                    providing file archival or encryption features.<br>
+                    The input data is compressed with Facebook's Zstandard algorithm, a new
+                    flexible design that at lower compression settings provides <a
+                      href="peazip-compression-benchmark.html">faster than Deflate</a> (Gzip
+                    / ZIP) performances and at highest compression settings provides
+                    compression ratio comparable with 7-Zip's LZMA (.7Z).<br>
+                    <br>
+                    PeaZip features <a href="zstandard-compression-utility.html">creation
+                      and
+                      extraction of Zstandard files</a> on Windows and Linux systems using
+                    Facebook's ZSTD implementation, and can read (open, test and
+                    extract) and write (compress to) ZST file type.<br>
+                    <h2><img title="Zstandard compression" alt="zstd extension" src="add-to-archive.png"
+                        style="width: 100px; height: 45px;"></h2>
+                    <h3><img title="ZST compressed format features and specifications"
+                        alt="ZST file format specifications" src="extract-archive.png"
+                        style="width: 112px; height: 45px;"></h3>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">Features and goals of
+                        ZST file format</span></big><br>
+                    <br>
+                    A goal of Zstandard design is <span style="font-weight: bold;">near-real
+                      time extraction</span>, performing
+                    very fast (faster than <a href="gzip-files.html">Gzip</a> / <a href="zip-file-format.html">ZIP</a>)
+                    and with small variations in
+                    decompressing ZST created with lowest or higher compression settings.<br>
+                    <br>
+                    <a name="zstandard_compression_specs"></a>Zstandard
+                    implementation, ZSTD, making use of multi-threading parallelism and on
+                    recent multi-core CPUs currently outperforms single-threaded Brotli
+                    implementation at similar levels of compression.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">Use of ZST file
+                          format</span></big></h4>
+                    <br>
+                    Due to&nbsp; the by-design limitation of being a single file
+                    compressor, PeaZip uses Zstandard <a href="tar-windows.html">compression
+                      cascaded with TAR
+                      archiving</a> in order to consolidate multiple input files / folders
+                    into a
+                    single container, which is then compressed originating a .tar.zst file.<br>
+                    Zstandard-compressed <a href="tar-file-format.html">tar archives</a>
+                    are sometimes identified by <span style="font-weight: bold;">.tzst
+                      file extension</span> instead or the composite tar.zst extension.<br>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img
+                                  title="What is ZST file format, Zstandard compression algorithm"
+                                  alt="what is zst file format" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">
+                            <h3><span style="font-weight: bold;">When is
+                                Zstandard
+                                compression format
+                                recommended</span></h3>
+                            Zstandard algorithm is very flexible and can provide a wide range of
+                            compression levels with reasonable performances, but excels when fast
+                            compression is desired, reaching Deflate-level compression ratio in
+                            significantly shorter times.<br>
+                            Also, extraction is very fast and outperforms alternatives, making it
+                            an excellent choice where extraction speed are important and where
+                            decompression tasks are more common than compression ones.<br>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;"> <img
+                              title="ZST format features and specifications." alt="zst files features"
+                              src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <a name="bz2_format_specifications"></a>Read more about
+                    .zst file type on <a target="_blank" href="https://facebook.github.io/zstd/">ZSTD
+                      official repository<img title="Facebook's ZSTD repository" alt="Zstandard online"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
+                      target="_blank" href="https://en.wikipedia.org/wiki/Zstandard">Zstandard<img
+                        title="wiki Zstandard algorithm" alt="ZSTD compression" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> entry on
+                    Wikipedia.<br>
+                    <br>
+                    <span style="font-weight: bold;"></span><br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="zst_file_extension"></a>.ZST</big></big></big></big></big>
+                                            </h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Authors
+                                            Yann Collet, Przemys&#322;aw Skibi&#324;ski (Facebook), 2015<br>
+                                            limited to 1 single file as input<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="Zstandard compression format specs"
+                                          title="ZSTD compression speed" src="zip-files/star5.png"
+                                          style="width: 80px; height: 16px;"></big></h4>
+                                    ZST format can reach very high compression and decompression speed.
+                                    Designed making use of parallelism of modern CPUs, ZSTD implementation
+                                    is significantly faster than Deflate while providing comparable
+                                    compression levels, and is still efficient at higher compression levels.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img src="zip-files/star4.png" title="Zstandard compression performances"
+                                          alt="Zstandard algorithm specs" style="width: 80px; height: 16px;"></big></h4>
+                                    Zstandard flexible compression scheme allows to provide both very fast
+                                    compression and to reach LZMA-like compression ratios at higher
+                                    compression settings.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <big>ADVANCED
+                                      OPTIONS <img alt="zstandard features" title="ZST format options"
+                                        src="zip-files/star1.png" style="width: 80px; height: 16px;"></big><br>
+                                    ZST format is meant purely for providing fast data or single-file
+                                    compression, and lacks
+                                    archiving, encryption features by design.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Zst file
+                        extension. Facebook's Zstandard single file compression format
+                        specification and features in terms of compression speed and
+                        compression ratio. What is .zst file type.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: ZST file
+                        extension specs, Zstandard compression format<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        ZST extension (Zstandard compressed files)<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="zstandard extension" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="zstd file type specs" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="zstd_file_format"></a>DOWNLOADS<br>
-            <img alt="what is zstd extension"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="zstd file format specifications" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="zstd_extension"></a>SUPPORT<br>
-            <img alt="zstandard compressed file type"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="ZST file type, what is Facebook Zstandard compression format"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="what is zstd file extension"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what are zstd files" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="facebook zstandard file format"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="zstd file type specs" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="zstd_file_format"></a>DOWNLOADS<br>
+                      <img alt="what is zstd extension" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="zstd file format specifications"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="zstd_extension"></a>SUPPORT<br>
+                      <img alt="zstandard compressed file type" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="ZST file type, what is Facebook Zstandard compression format"
+                                title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="what is zstd file extension"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what are zstd files" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="facebook zstandard file format" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

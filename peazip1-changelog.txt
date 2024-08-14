@@ -326,5 +326,5 @@
 
     * PeaZip 1.0
           o Pea-Peach project renamed in PeaZip project to spot the shift of focus toward a more general purpose free archiving utility;
-          o created frontend and graphic wrapper for Igor Pavlov’s 7za (and Myspace's POSIX port of 7za), introducing full support to 7zarchiver, BZip2, GZip, Tar and Ziparchiver format and browse/extract support to Z format;
+          o created frontend and graphic wrapper for Igor Pavlovï¿½s 7za (and Myspace's POSIX port of 7za), introducing full support to 7zarchiver, BZip2, GZip, Tar and Ziparchiver format and browse/extract support to Z format;
           o various interface improvements; used some icons from Tango Project.

@@ -1,545 +1,509 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How to encrypt name of files inside archives, hide make unreadable TOC list. Disallow, disable browsing. Set ask password for showing content of 7Z PEA RAR files">
+    content="How to encrypt name of files inside archives, hide make unreadable TOC list. Disallow, disable browsing. Set ask password for showing content of 7Z PEA RAR files">
   <meta name="KEYWORDS"
- content="encrypt, filenames, names, file, content, toc, list, hide, unreadable, password, software, 7z, cryptography, archives, free, read">
+    content="encrypt, filenames, names, file, content, toc, list, hide, unreadable, password, software, 7z, cryptography, archives, free, read">
   <meta name="ROBOTS" content="all">
   <title>Encrypt file names in archives, hide content</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Encrypt file names in archives, hide content">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Encrypt file names in archives, hide content">
   <meta property="og:description"
- content="How to encrypt name of files inside archives, hide make unreadable TOC list. Disallow, disable browsing. Set ask password for showing content of 7Z PEA RAR files">
+    content="How to encrypt name of files inside archives, hide make unreadable TOC list. Disallow, disable browsing. Set ask password for showing content of 7Z PEA RAR files">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/encrypt-filenames.html">
+  <meta property="og:url" content="https://peazip.github.io/encrypt-filenames.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Prevent listing archive content"
- alt="encrypt archive content list" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="how to encrypt archive table of content"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="hide_archive_content"></a><span
- style="font-weight: bold;">Encrypt file names in archives, hide
-content</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="How to set to ask password for listing, browsing archive content"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="hide make unreadable TOC list of archives"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 240, 240);"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 240, 240);"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2><big style="font-weight: bold;"><big><big><a
- name="encrypt_file_name_list"></a></big></big></big><a
- href="encrypt-filenames.html#hide_archive_content"><big
- style="font-weight: bold;"><big><big>How
-to set to ask password
-for listing, browsing
-archive content</big></big></big><br>
-            </a></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Hide name of files in
-archives</big></h3>
-            <br>
-            <a name="hide_content_of_archive"></a>Under some
-circumstances, when <a href="encrypt-files.html">protecting archive
-files with encryption</a>, it can be recommended to encrypt the list of
-files
-featured inside an archive to hide it from unauthorized users, in order
-to disallow showing list of archive content before providing password,
-otherwise, even if the file data itself is encrypted, readable
-filenames can leak hints to attackers about the nature of the archive.<br>
-            <br>
-            <h2><img
- title="Prevent listing of archives, hide content for unauthorized browsing"
- alt="disallow listing of archives without password" src="password.png"
- style="border: 0px solid ; width: 562px; height: 302px;"></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>How to encrypt
-filenames in archives with PeaZip<br>
-            </big></h3>
-            <br>
-            <a name="password_for_listing_archive"></a>To prevent this
-kind of information leak and make archive
-table of content (TOC) unreadable without knowing the password,
-disabling listing of the archive when the user will try to <a
- href="extract-encrypted-files.html">open the encrypted archive file</a>,
-it is possible to set a password for listing archive content.<br>
-Click
-on the
-padlock icon to
-set a <span style="font-weight: bold;">password </span>(and
-optionally
-a keyfile) for the archive
-and check "<span style="font-weight: bold;">Encrypt also file names</span>"
-option in the password dialog.<br>
-            <br>
-            <span style="font-weight: bold;">Browse archives with
-hidden file list</span><br>
-This will require the correct password to be provided opening the
-archive, before being able to show name of files in archives.<br>
-The padlock icon to set password for archive / filenames in archive,
-can be found in the status bar, in the file/archive
-browser, or below the output field in the archive creation interface<br>
-            <h3><img
- title="How to encrypt table of content of archive with password for browsing"
- alt="hide archive content" src="rar-files/cryptography.gif"
- style="width: 16px; height: 16px;" align="middle"></h3>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="Prevent listing archive content"
+                      alt="encrypt archive content list" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="how to encrypt archive table of content" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="hide_archive_content"></a><span style="font-weight: bold;">Encrypt file names in
+                              archives, hide
+                              content</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="How to set to ask password for listing, browsing archive content" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="hide make unreadable TOC list of archives" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
                 <tr>
                   <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Make archive unreadable without password"
- alt="hide names of files inside archives" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 240, 240);">
+                    <small><a href="peazip-help-faq.html">FAQ, HOW TO</a></small>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><a
- name="password_protect_browsing_archive"></a><big>Support for
-encryption of archive's table of content depends on the archive format
-design: this feature can't
-be added to formats lacking it by design, as enforcing it on the
-archive manager will enable the attacker to bypass this "protection"
-simply using a
-different software to list the archive's content.</big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="Ask password to show archive content"
- alt="encrypt archive TOC table of content"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  <td
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 240, 240);">
+                    <small><br>
+                    </small>
+                  </td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>What formats support
-hiding names of files in archive</big></h3>
-            <br>
-            <a name="prevent_listing_of_archives"></a>Encryption in
-standards employed by PeaZip supports in different ways the encryption
-of
-file content:<br>
-            <ul>
-              <li><span style="font-weight: bold;">ZIP </span>and <span
- style="font-weight: bold;">ZIPX</span> formats
-lack this feature, meaning this setting will have no effect, and
-archive
-TOC will always be readable before providing the correct password even
-if the data is encrypted</li>
-            </ul>
-            <ul>
-              <li><span style="font-weight: bold;">7Z</span>, <span
- style="font-weight: bold;">ARC</span>, and <span
- style="font-weight: bold;">RAR</span> formats support encryption of
-filenames in archive, so if this option is in use the archive content
-will be
-hidden unless correct password is provided for browsing it</li>
-              <ul>
-                <li>in order to create encrypted RAR files with PeaZip
-WinRar must be installed in the system, autonomous write-support for
-rar format is not possible due to rar licensing limitations<br>
-                </li>
-              </ul>
-            </ul>
-            <span style="font-weight: bold;">PEA</span> and <span
- style="font-weight: bold;">ZPAQ </span>format,
-by design, will never display content of an encrypted archive until
-correct password is provided, and no option is provided to otherwise
-allow listing of password-protected files. Using those archive formats,
-providing encryption is in applied, name of files in archive will
-always stay hidden until password is verified.<br>
-            <br>
-Learn more about working with archive formats supporting filename
-encryption: <a href="7zip-files-utility.html">manage encrypted 7Z files</a>
-(optionally with filename encryption), <a href="arc-files-utility.html">manage
-encrypted ARC files</a>, manage encrypted PEA files, <a
- href="free-rar-create.html">create and modify encrypted RAR files</a>
-from PeaZip GUI if WinRar is installed in the system, <a
- href="paq-files-compression-utility.html">manage encrypted ZPAQ files</a>.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: How to
-encrypt name of files inside archives, hide (make unreadable without
-password) TOC list. Disallow listing archive content. Disable browsing
-inside archives. How to set option to ask password for showing content
-of 7Z PEA RAR files.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: encrypt file
-names, so opening the archive requires password for listing archive
-content</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Encrypt file names in archives, hide content<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img title="Security FAQ"
- alt="encrypt names of files inside archive"
- src="file-format/security.png" style="width: 96px; height: 96px;"
- align="right"><a name="how_to_protect_data"></a>SECURITY</h3>
-                  <p style="font-weight: bold;"><a
- href="antivirus-scan-zipped-files.html">Antivirus scan compressed files</a><br>
-                  </p>
-                  <p><a href="multiple-passwords.html"><span
- style="font-weight: bold;">Archives with multiple passwords</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="encrypt-filenames.html">Encrypt list of filenames inside an
-archive</a><br>
-                  </p>
-                  <p><a href="backup-files.html"><span
- style="font-weight: bold;">How to backup files and folders?</span></a><br>
-                  </p>
-                  <p><a href="change-password.html"><span
- style="font-weight: bold;">How to change password for existing archive?</span></a><br>
-                  </p>
-                  <p> </p>
-                  <p style="font-weight: bold;"> </p>
-                  <p><a style="font-weight: bold;"
- href="encrypt-files.html">How to encrypt
-archives?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="extract-encrypted-files.html">How to
-extract
-encrypted archives?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="protect-files.html">How
-to protect files
-with PeaZip?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="secure-delete.html">How to securely
-delete files, folders, and free space?</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="share-files-sharing.html">How to securely share files?</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="quantum-computing-cryptography.html">Post-quantum computing
-cryptanalysis</a><br>
-                  </p>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2><big style="font-weight: bold;"><big><big><a
+                              name="encrypt_file_name_list"></a></big></big></big><a
+                        href="encrypt-filenames.html#hide_archive_content"><big style="font-weight: bold;"><big><big>How
+                              to set to ask password
+                              for listing, browsing
+                              archive content</big></big></big><br>
+                      </a></h2>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Hide name of files in
+                        archives</big></h3>
+                    <br>
+                    <a name="hide_content_of_archive"></a>Under some
+                    circumstances, when <a href="encrypt-files.html">protecting archive
+                      files with encryption</a>, it can be recommended to encrypt the list of
+                    files
+                    featured inside an archive to hide it from unauthorized users, in order
+                    to disallow showing list of archive content before providing password,
+                    otherwise, even if the file data itself is encrypted, readable
+                    filenames can leak hints to attackers about the nature of the archive.<br>
+                    <br>
+                    <h2><img title="Prevent listing of archives, hide content for unauthorized browsing"
+                        alt="disallow listing of archives without password" src="password.png"
+                        style="border: 0px solid ; width: 562px; height: 302px;"></h2>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>How to encrypt
+                        filenames in archives with PeaZip<br>
+                      </big></h3>
+                    <br>
+                    <a name="password_for_listing_archive"></a>To prevent this
+                    kind of information leak and make archive
+                    table of content (TOC) unreadable without knowing the password,
+                    disabling listing of the archive when the user will try to <a
+                      href="extract-encrypted-files.html">open the encrypted archive file</a>,
+                    it is possible to set a password for listing archive content.<br>
+                    Click
+                    on the
+                    padlock icon to
+                    set a <span style="font-weight: bold;">password </span>(and
+                    optionally
+                    a keyfile) for the archive
+                    and check "<span style="font-weight: bold;">Encrypt also file names</span>"
+                    option in the password dialog.<br>
+                    <br>
+                    <span style="font-weight: bold;">Browse archives with
+                      hidden file list</span><br>
+                    This will require the correct password to be provided opening the
+                    archive, before being able to show name of files in archives.<br>
+                    The padlock icon to set password for archive / filenames in archive,
+                    can be found in the status bar, in the file/archive
+                    browser, or below the output field in the archive creation interface<br>
+                    <h3><img title="How to encrypt table of content of archive with password for browsing"
+                        alt="hide archive content" src="rar-files/cryptography.gif" style="width: 16px; height: 16px;"
+                        align="middle"></h3>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Make archive unreadable without password"
+                                  alt="hide names of files inside archives" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><a
+                              name="password_protect_browsing_archive"></a><big>Support for
+                              encryption of archive's table of content depends on the archive format
+                              design: this feature can't
+                              be added to formats lacking it by design, as enforcing it on the
+                              archive manager will enable the attacker to bypass this "protection"
+                              simply using a
+                              different software to list the archive's content.</big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Ask password to show archive content"
+                                alt="encrypt archive TOC table of content" src="file-format/quotes-inverse.png"
+                                style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>What formats support
+                        hiding names of files in archive</big></h3>
+                    <br>
+                    <a name="prevent_listing_of_archives"></a>Encryption in
+                    standards employed by PeaZip supports in different ways the encryption
+                    of
+                    file content:<br>
+                    <ul>
+                      <li><span style="font-weight: bold;">ZIP </span>and <span style="font-weight: bold;">ZIPX</span>
+                        formats
+                        lack this feature, meaning this setting will have no effect, and
+                        archive
+                        TOC will always be readable before providing the correct password even
+                        if the data is encrypted</li>
+                    </ul>
+                    <ul>
+                      <li><span style="font-weight: bold;">7Z</span>, <span style="font-weight: bold;">ARC</span>, and
+                        <span style="font-weight: bold;">RAR</span> formats support encryption of
+                        filenames in archive, so if this option is in use the archive content
+                        will be
+                        hidden unless correct password is provided for browsing it
+                      </li>
+                      <ul>
+                        <li>in order to create encrypted RAR files with PeaZip
+                          WinRar must be installed in the system, autonomous write-support for
+                          rar format is not possible due to rar licensing limitations<br>
+                        </li>
+                      </ul>
+                    </ul>
+                    <span style="font-weight: bold;">PEA</span> and <span style="font-weight: bold;">ZPAQ </span>format,
+                    by design, will never display content of an encrypted archive until
+                    correct password is provided, and no option is provided to otherwise
+                    allow listing of password-protected files. Using those archive formats,
+                    providing encryption is in applied, name of files in archive will
+                    always stay hidden until password is verified.<br>
+                    <br>
+                    Learn more about working with archive formats supporting filename
+                    encryption: <a href="7zip-files-utility.html">manage encrypted 7Z files</a>
+                    (optionally with filename encryption), <a href="arc-files-utility.html">manage
+                      encrypted ARC files</a>, manage encrypted PEA files, <a href="free-rar-create.html">create and
+                      modify encrypted RAR files</a>
+                    from PeaZip GUI if WinRar is installed in the system, <a
+                      href="paq-files-compression-utility.html">manage encrypted ZPAQ files</a>.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: How to
+                        encrypt name of files inside archives, hide (make unreadable without
+                        password) TOC list. Disallow listing archive content. Disable browsing
+                        inside archives. How to set option to ask password for showing content
+                        of 7Z PEA RAR files.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: encrypt file
+                        names, so opening the archive requires password for listing archive
+                        content</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; Encrypt file names in archives, hide content<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="Security FAQ" alt="encrypt names of files inside archive"
+                                src="file-format/security.png" style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_protect_data"></a>SECURITY</h3>
+                            <p style="font-weight: bold;"><a href="antivirus-scan-zipped-files.html">Antivirus scan
+                                compressed files</a><br>
+                            </p>
+                            <p><a href="multiple-passwords.html"><span style="font-weight: bold;">Archives with multiple
+                                  passwords</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="encrypt-filenames.html">Encrypt list of filenames
+                                inside an
+                                archive</a><br>
+                            </p>
+                            <p><a href="backup-files.html"><span style="font-weight: bold;">How to backup files and
+                                  folders?</span></a><br>
+                            </p>
+                            <p><a href="change-password.html"><span style="font-weight: bold;">How to change password
+                                  for existing archive?</span></a><br>
+                            </p>
+                            <p> </p>
+                            <p style="font-weight: bold;"> </p>
+                            <p><a style="font-weight: bold;" href="encrypt-files.html">How to encrypt
+                                archives?</a> </p>
+                            <p><a style="font-weight: bold;" href="extract-encrypted-files.html">How to
+                                extract
+                                encrypted archives?</a> </p>
+                            <p><a style="font-weight: bold;" href="protect-files.html">How
+                                to protect files
+                                with PeaZip?</a> </p>
+                            <p><a style="font-weight: bold;" href="secure-delete.html">How to securely
+                                delete files, folders, and free space?</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="share-files-sharing.html">How to securely share
+                                files?</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="quantum-computing-cryptography.html">Post-quantum
+                                computing
+                                cryptanalysis</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="hide names of files inside archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="hide_archive_filenames"></a>DOWNLOADS<br>
-            <img alt="hide archive content"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="encrypt archive TOC table of content" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="hide_archive_toc"></a>SUPPORT<br>
-            <img alt="hide archive filenames"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Disallow, disable browsing of archive content"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
                 </tr>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="Set ask password for showing content of 7Z PEA RAR files"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="disallow listing of archives without password"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="hide archive content" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="hide names of files inside archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="hide_archive_filenames"></a>DOWNLOADS<br>
+                      <img alt="hide archive content" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="encrypt archive TOC table of content"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="hide_archive_toc"></a>SUPPORT<br>
+                      <img alt="hide archive filenames" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Disallow, disable browsing of archive content" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online"
+                                alt="Set ask password for showing content of 7Z PEA RAR files"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="disallow listing of archives without password"
+                                title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="hide archive content" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

@@ -1,1220 +1,1136 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="PeaZip sources. Compile, build PeaZip cross-platform archiver, port to new Operating Systems and architectures, assemble installers for different package managers">
+    content="PeaZip sources. Compile, build PeaZip cross-platform archiver, port to new Operating Systems and architectures, assemble installers for different package managers">
   <meta name="KEYWORDS"
- content="PeaZip, sources, code, compile, build, cross-platform, port, Operating Systems, architectures, assemble, installers, package managers, aarch64, linux, macos, windows, packages">
+    content="PeaZip, sources, code, compile, build, cross-platform, port, Operating Systems, architectures, assemble, installers, package managers, aarch64, linux, macos, windows, packages">
   <meta name="ROBOTS" content="all">
   <title>Compile and build PeaZip from sources</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Compile and build PeaZip from sources">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Compile and build PeaZip from sources">
   <meta property="og:description"
- content="PeaZip sources. Compile, build PeaZip cross-platform archiver, port to new Operating Systems and architectures, assemble installers for different package managers">
+    content="PeaZip sources. Compile, build PeaZip cross-platform archiver, port to new Operating Systems and architectures, assemble installers for different package managers">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/peazip-bsd.html">
+  <meta property="og:url" content="https://peazip.github.io/peazip-bsd.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Download PeaZip sources" alt="compile peazip from sources"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="build peazip package from sources"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table style="width: 960px; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="text-align: center; vertical-align: middle; width: 66%; color: rgb(253, 253, 253);">
-            <div style="text-align: left;"><a
- style="color: rgb(153, 153, 153); font-weight: bold;"
- name="peazip_source_code"></a><big><big><big><span
- style="font-weight: bold;">Sources
-9.9.0</span><br>
-            </big></big></big><img alt="free rar zip software"
- title="file archiver utility" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <h1><big>COMPILE AND BUILD PEAZIP FROM SOURCES<br>
-            </big></h1>
-            </div>
-            <div style="text-align: left;"><br>
-            </div>
-            <h2 style="text-align: left;">Compile and build PeaZip
-cross-platform archiver from source code with Lazarus/FPC</h2>
-            <div style="text-align: left;">
-            <h3>Port PeaZip to new Operating Systems and
-architectures</h3>
-            <h2>Assemble installers for more package managers<br>
-            </h2>
-            </div>
-            <br>
-            <div style="text-align: left;"><small>Software license:
-LGPL3,
-free of charge for any use</small><br>
-            <small> Supported
-systems: All target Operating Systems and architectures supported by
-Lazarus/FPC<br>
-            </small></div>
-            </td>
-            <td
- style="vertical-align: middle; width: 34%; color: rgb(253, 253, 253); text-align: right;">
-            <div style="color: rgb(253, 253, 253);">
-            <h3 style="font-weight: bold;"><big> <a
- style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip-9.9.0.src.zip"><span
- style="text-decoration: underline;"><img
- title="Download PeaZip for FreeBSD" alt="download peazip code base"
- src="free-rar/download-free-software.png"
- style="border: 0px solid ; width: 15px; height: 9px;"></span><span
- style="color: rgb(253, 253, 253);">PeaZip source package (ZIP)</span></a></big></h3>
-            <big><small><small>Sources of PeaZip as ZIP package,
-requires Lazarus / FreePascal IDE for building and compiling the app<br>
-            </small></small></big><br>
-            <h3 style="font-weight: bold;"><big> <a
- style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip-9.9.0.pack.zip"><span
- style="text-decoration: underline;"><img
- title="Download PeaZip for FreeBSD"
- alt="peazip deb rpm packages structure"
- src="free-rar/download-free-software.png"
- style="border: 0px solid ; width: 15px; height: 9px;"></span><span
- style="color: rgb(253, 253, 253);">PeaZip packages examples (ZIP)</span></a></big></h3>
-            <big><small><small>Examples of DEB and RPM packages
-structures to help building packages for distribution</small></small></big><br>
-            <br>
-            </div>
-            <h4><big><a style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/tree/sources/peazip-sources"><span
- style="color: rgb(253, 253, 253);"><span style="font-weight: bold;">PeaZip
-Git repository</span><br>
-            </span></a></big></h4>
-            <big><small><small>PeaZip project Git repository on GitHub</small></small></big><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="Port PeaZip to new Operating Systems and architectures"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="Assemble installers for more package managers"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="index.html">ALL DOWNLOADS</a><a href="peazip-help-faq.html"><br>
-            </a></small></td>
-            <td style="vertical-align: top; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-linux.html">PEAZIP LINUX</a><a href="peazip-linux.html"><br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-macos.html">PEAZIP MACOS</a><a href="peazip-64bit.html"><br>
-            </a></small></td>
-            <td style="vertical-align: top; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-64bit.html">PEAZIP WINDOWS</a><a href="peazip-64bit.html"><br>
-            </a></small></td>
-            <td style="vertical-align: top; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-sources.html">SOURCES</a><a href="peazip-add-ons.html"><br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-add-ons.html">PLUGINS</a><a href="peazip-add-ons.html"><br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-themes.html">THEMES</a><a href="peazip-themes.html"><br>
-            </a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2 style="font-weight: bold;"><big><big><big>Download
-PeaZip free archiver sources</big></big></big></h2>
-            <p><a name="download_peazip_sources"></a>PeaZip free
-archiver sources are released under GNU LGPL
-v3 Open Source license, and are avilable as:<br>
-            </p>
-            <ul>
-              <li>Git repository on GitHub</li>
-              <li>standalone, downloadable ZIP package containing
-source files</li>
-            </ul>
-"Packages examples" peazip-x.y.z.pack.zip package is an optional
-addition to source package,
-as it is simply meant to help developers to create installer packages
-for different package management systems, and to provides examples of
-directory structures used to create DEB and RPM packages for the
-current release.<br>
-            <br>
-PeaZip is written in <a target="_blank"
- href="https://www.freepascal.org/">FreePascal<img
- alt="freepascal compiler" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, a
-powerful Open Source
-cross-platform programming language highly
-compatible with Delphi and ObjectPascal, and <a target="_blank"
- href="https://www.lazarus-ide.org/">Lazarus<img alt="lazarus ide"
- src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> IDE is
-required to
-compile, build, and edit the source code.<br>
-            <br>
-Lazarus/FPC supports many more <a target="_blank"
- href="https://wiki.freepascal.org/Platform_list">platforms<img
- alt="build cross platform applications"
- src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-(architectures and Operating Systems) than the ones PeaZip is
-built/tested for, following the <a target="_blank"
- href="https://en.wikipedia.org/wiki/Write_once,_compile_anywhere">"Write
-once, compile anywhere"<img alt="compile peazip sources"
- src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> (WOCA)
-philosophy.<br>
-While PeaZip sources contains ASM sections, a Pure Pascal alternative
-implementation is always available to allow porting to new
-architectures.<br>
-            <br>
-Lazarus/FPC also supports multiple widgetsets (Win32/64, WinCE, GTK1,
-GTK2, Qt4/5,
-Carbon, Cocoa, fpGUI) to allow compilation of GUI applications for the
-various
-supported systems (BSD, Darwin, Linux, macOS, Windows/ReactOS) and to
-create different &#8220;flavours&#8221; of the application
-for platforms supporting multiple widgetsets, e.g. Linux.<br>
-            <br>
-In PeaZip's sourcecode platform-specific, OS-specific, and
-architecture-specific code sections are contained in conditional
-compilations blocks. <br>
-            <br>
-Portable and installable packages shares the same code base, PeaZip is
-natively an auto contained application as Lazarus tries to statically
-link the binaries containing all the dependencies (or as much as
-possible); only the packaging changes between the versions.<br>
-Windows setup
-scripts (.iss files) are written using InnoSetup, which also uses a
-Delphi-like syntax and are easily understandable for developers
-proficient in Delphi or ObjectPascal dialects.<br>
-            <br>
-            <span
- style="font-weight: bold; color: rgb(204, 0, 0); background-color: rgb(255, 204, 204);">Please
-note that PeaZip provides strong cryptographic functions, so
-please refer to cryptography laws and regulations that may apply in
-your country.</span><br>
-            <br>
-            <br>
-            <h3><big><big><big><span style="font-weight: bold;">Quick
-start to compile PeaZip and build
-a distributable package</span><br>
-            </big></big></big></h3>
-            <br>
-Source package contains "<span style="font-weight: bold;">dev</span>"
-subdirectory containing sources to compile the application's binaries,
-"<span style="font-weight: bold;">res</span>" subdirectory
-containing resources needed by the application, and a <span
- style="font-weight: bold;">readme.txt</span> file containing
-instructions to compile peazip and build a distributable package,
-either as Portable application and for many different package
-management systems.<br>
-            <ol>
-              <li>Download and install <a target="_blank"
- href="https://www.lazarus-ide.org/index.php?page=downloads">Lazarus IDE<img
- alt="cross platfrom development" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> for your
-OS / architecture platform. In case of troubles installing
-Lazarus, its <a target="_blank"
- href="https://forum.lazarus.freepascal.org/index.php">forum<img
- alt="install support" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> is an
-excellent starting point for obtaining support from a friendly
-and competent community of developers using Lazarus / FreePascal.</li>
-              <li>Add (peazip
-sources)/dev/metadarkstyle/metadarkstyle.lpk
-Lazarus package to the project&nbsp; - otherwise it will be asked later
-by the IDE, reporting missing package error, when trying to compile
-peazip or pea binaries<br>
-              </li>
-              <li>Compile sources in "dev" subdirectory, see below
-"Notes for developers" section for
-details about manual and automated compiling.</li>
-              <li>Compiled binaries must be moved
-up one level, into package's root folder (where readme.txt file is);
-now dev subdir is no longer needed.</li>
-              <li>Find appropriate builds of third party binaries for
-the intended target OS and architecture, and copy them into
-(peazip)/res/bin/ subfolders: please note that "res" folder provided in
-source package (as
-template for creating a working PeaZip port / distributable package)
-contains only non- OS
-/ architecture -dependant resources, so res/bin is simply a
-placeholder,
-not containing actual binaries but rather only the directories the
-binaries need to be copied in.</li>
-              <li>Zip the package to use / distribute it as a portable
-application, or <br>
-              </li>
-              <li>Read further suggestions below in "Notes for
-developers" section to create an installable
-package for your intended OS target<br>
-              </li>
-            </ol>
-            <span style="font-weight: bold;"><br>
-            <big>Quick suggestion about the Lazarus IDE</big><br>
-            <br>
-            </span>On <span style="font-weight: bold;">Linux</span>
-and <span style="font-weight: bold;">BSD</span>,
-download and install FreePascal sources, FreePascal compiler, and
-Lazarus IDE packages from the Lazarus
-repository.<br>
-Lazarus currently uses <span style="font-weight: bold;">GTK2 </span>widget
-set by default on Linux, but it is possible to target other widget
-sets (and arcihtectures, in Project &gt;
-Project Options,
-Configuration and Target),in example:<br>
-            <ul>
-              <ul>
-                <li><span style="font-weight: bold;">Qt5</span>
-requires installation of <a target="_blank"
- href="https://wiki.lazarus.freepascal.org/Qt5_Interface">Qt bindings<img
- alt="qt5 apps" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
-                <li><span style="font-weight: bold;">GTK3</span>
-(currently in alpha stage) requires GTK development library, e.g. in
-Ubuntu use sudo apt-get install libgtk-3-dev</li>
-              </ul>
-            </ul>
-&nbsp;It is also possible to install Lazarus from your distribution's
-repository, and in some cases even non-GTK2 versions of Lazarus are
-available, automatically handling the extra dependencies.<br>
-            <br>
-On <span style="font-weight: bold;">macOS</span>, download and install
-FreePascal sources, FreePascal
-compiler, and Lazarus IDE packages from the Lazarus
-repository.<br>
-You will also need to install Apple's <a target="_blank"
- href="https://developer.apple.com/xcode/">Xcode<img alt="apple xcode"
- src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, and to
-separately install standalone <span style="font-weight: bold;">Xcode
-Command Line Tools</span>, using the command:<br>
-sudo xcode-select --install <br>
-Note: after updating macOS to a new release it is likely you need to
-also update Xcode and Xcode Command line Tools.<br>
-Lazarus currently uses <span style="font-weight: bold;">Cocoa </span>as
-default widget set on macOS.<br>
-Binaries are compiled for <span style="font-weight: bold;">x84_64</span>
-architecture by default, so they will run both on old Intel and newer
-Apple Silicon (M1, M2...) Macs.<br>
-To change target architecture open main menu, Project &gt;
-Project Options,
-Configuration and Target, set <span style="font-weight: bold;">Darwin </span>as
-destination OS, and <span style="font-weight: bold;">aarch64 </span>as
-destination CPU family.<br>
-Please note macOS will
-ask
-for permission to run to (or to access some paths) the first time you
-are running an unsigned binary.<br>
-Please refer to Lazarus' <a target="_blank"
- href="https://wiki.freepascal.org/macOS_Programming_Tips">macOS
-programming tips<img alt="macos app development"
- src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> for
-subjects as creation of <span style="font-weight: bold;">universal
-binaries</span>, <span style="font-weight: bold;">code signing</span>
-and <span style="font-weight: bold;">notarization</span>, and to
-create a macOS <span style="font-weight: bold;">application bundle</span>
-(in which PeaZip for macOS packages may be used as example).<br>
-            <br>
-Following table summarize the status of PeaZip project on different
-operating systems, architectures, widget sets, and package management
-systems: <span style="font-weight: bold;">any help is deeply
-appreciated to port PeaZip to new platforms!</span><br>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="6" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="Download PeaZip sources"
+                      alt="compile peazip from sources" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="build peazip package from sources"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="text-align: center; vertical-align: middle; width: 66%; color: rgb(253, 253, 253);">
+                    <div style="text-align: left;"><a style="color: rgb(153, 153, 153); font-weight: bold;"
+                        name="peazip_source_code"></a><big><big><big><span style="font-weight: bold;">Sources
+                              9.9.0</span><br>
+                          </big></big></big><img alt="free rar zip software" title="file archiver utility"
+                        src="free-rar/extract-rar.png" style="width: 1px; height: 1px;" vspace="3"><br>
+                      <h1><big>COMPILE AND BUILD PEAZIP FROM SOURCES<br>
+                        </big></h1>
+                    </div>
+                    <div style="text-align: left;"><br>
+                    </div>
+                    <h2 style="text-align: left;">Compile and build PeaZip
+                      cross-platform archiver from source code with Lazarus/FPC</h2>
+                    <div style="text-align: left;">
+                      <h3>Port PeaZip to new Operating Systems and
+                        architectures</h3>
+                      <h2>Assemble installers for more package managers<br>
+                      </h2>
+                    </div>
+                    <br>
+                    <div style="text-align: left;"><small>Software license:
+                        LGPL3,
+                        free of charge for any use</small><br>
+                      <small> Supported
+                        systems: All target Operating Systems and architectures supported by
+                        Lazarus/FPC<br>
+                      </small>
+                    </div>
+                  </td>
+                  <td style="vertical-align: middle; width: 34%; color: rgb(253, 253, 253); text-align: right;">
+                    <div style="color: rgb(253, 253, 253);">
+                      <h3 style="font-weight: bold;"><big> <a style="color: rgb(253, 253, 253);" _blank=""
+                            href="https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip-9.9.0.src.zip"><span
+                              style="text-decoration: underline;"><img title="Download PeaZip for FreeBSD"
+                                alt="download peazip code base" src="free-rar/download-free-software.png"
+                                style="border: 0px solid ; width: 15px; height: 9px;"></span><span
+                              style="color: rgb(253, 253, 253);">PeaZip source package (ZIP)</span></a></big></h3>
+                      <big><small><small>Sources of PeaZip as ZIP package,
+                            requires Lazarus / FreePascal IDE for building and compiling the app<br>
+                          </small></small></big><br>
+                      <h3 style="font-weight: bold;"><big> <a style="color: rgb(253, 253, 253);" _blank=""
+                            href="https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip-9.9.0.pack.zip"><span
+                              style="text-decoration: underline;"><img title="Download PeaZip for FreeBSD"
+                                alt="peazip deb rpm packages structure" src="free-rar/download-free-software.png"
+                                style="border: 0px solid ; width: 15px; height: 9px;"></span><span
+                              style="color: rgb(253, 253, 253);">PeaZip packages examples (ZIP)</span></a></big></h3>
+                      <big><small><small>Examples of DEB and RPM packages
+                            structures to help building packages for distribution</small></small></big><br>
+                      <br>
+                    </div>
+                    <h4><big><a style="color: rgb(253, 253, 253);" _blank=""
+                          href="https://github.com/peazip/PeaZip/tree/sources/peazip-sources"><span
+                            style="color: rgb(253, 253, 253);"><span style="font-weight: bold;">PeaZip
+                              Git repository</span><br>
+                          </span></a></big></h4>
+                    <big><small><small>PeaZip project Git repository on GitHub</small></small></big><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="Port PeaZip to new Operating Systems and architectures" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="Assemble installers for more package managers" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
                 <tr>
                   <td
- style="font-weight: bold; width: 15%; vertical-align: middle; background-color: rgb(240, 240, 240); text-align: center;">Operating
-System<br>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);">
+                    <small><a href="index.html">ALL DOWNLOADS</a><a href="peazip-help-faq.html"><br>
+                      </a></small>
                   </td>
+                  <td style="vertical-align: top; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">Archirecture<br>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);">
+                    <small><a href="peazip-linux.html">PEAZIP LINUX</a><a href="peazip-linux.html"><br>
+                      </a></small>
                   </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">Widget
-Set<br>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);">
+                    <small><a href="peazip-macos.html">PEAZIP MACOS</a><a href="peazip-64bit.html"><br>
+                      </a></small>
                   </td>
+                  <td style="vertical-align: top; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="font-weight: bold; vertical-align: middle; width: 45%; background-color: rgb(240, 240, 240);">Status<br>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);">
+                    <small><a href="peazip-64bit.html">PEAZIP WINDOWS</a><a href="peazip-64bit.html"><br>
+                      </a></small>
                   </td>
-                </tr>
-                <tr>
+                  <td style="vertical-align: top; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-sources.html">SOURCES</a><a href="peazip-add-ons.html"><br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                    style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);">
+                    <small><a href="peazip-add-ons.html">PLUGINS</a><a href="peazip-add-ons.html"><br>
+                      </a></small>
                   </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">GTK,
-GTK2, Qt4<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;"><span
- style="font-weight: bold;">legacy</span>, available from <span
- style="font-weight: bold;">third party</span>, see links in Linux
-download sections</td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">GTK2,
-Qt5<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as portable and installable DEB and RPM packages, Flatpak available
-from third party<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">GTK3<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">unreleased:
-compiles successfully, various graphic and fonts issues, Lazarus/FPC
-support is marked as <span style="font-weight: bold;">alpha </span>for
-GTK3<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">arm,
-aarch64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">various<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as portable package, also available
-from <span style="font-weight: bold;">third party</span>, see links on
-Linux download pages<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">BSD<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">GTK2<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as portable package, alternatives are available from third party linked
-on BSD download page<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as installable DMG package, can also be used as portable app, run on
-Intel and Apple Silicon machines<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">aarch64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as installable DMG package, can also be used as portable app, run on
-Apple Silicon machines only<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Windows<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as portable and installable EXE packages, recommended for <span
- style="font-weight: bold;">legacy </span>machines only<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Windows
-64 bit<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">released
-as portable and installable EXE and MSIX packages, not as store app<br>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-themes.html">THEMES</a><a href="peazip-themes.html"><br>
+                      </a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big><big><big>Notes
-for
-developers</big></big></big></h3>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>HOW TO COMPILE AND
-BUILD PEAZIP APP BINARIES</big></h3>
-            <br>
-            <a name="how_to_compile_peazip_manually"></a>MANUALLY, FROM
-LAZARUS IDE GUI<br>
-Open .lpi project files in Lazarus IDE and use main menu Run &gt; Build
-all to compile and build the binaries:<br>
-            <ul>
-              <li>add /dev/metadarkstyle//metadarkstyle.lpk Lazarus
-package to the project, otherwise the IDE will ask later, notifying the
-missing lpk<br>
-              </li>
-              <li>project_peach.lpi builds peazip, the main app
-executable, file and archive manager</li>
-              <li>project_pea.lpi builds pea, to <a
- href="pea-archiving-utility.html">manage pea archives</a>, and to
-provide file management, <a href="encrypt-files.html">encryption</a>
-(AES, Serpent, Twofish),
-and <a href="verify-checksum-hash.html">hashing</a> / checksum
-routines (Whirlpool, SHA / SHA2 / SHA3, BLAKE2, Ripemd160, MD5, various
-CRCs) <br>
-              </li>
-            </ul>
-On Windows systems you will also need to compile (peazip
-sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi and copy
-dragdropfilesdll.dll in the same directory of peazip.exe<br>
-            <br>
-AUTOMATICALLY, FROM COMMAND LINE OR SCRIPT<br>
-            <a name="how_to_compile_peazip_automatically"></a>Replace
-lazbuild string in following examples with the full qualified
-path to lazbuild binary if needed - e.g. on Windows it is usually
-C:\lazarus\lazbuild.exe.<br>
-Replace (peazip sources) with the full qualified path of PeaZip
-source's
-directory.<br>
-Run:<br>
-            <ul>
-              <li>lazbuild --add-package (peazip
-sources)/dev/metadarkstyle/metadarkstyle.lpk</li>
-              <li>lazbuild --add-package (peazip
-sources)\dev\dragdropfilesdll\DragDropLazarus.lpk //only needed to
-build dragdropfilesdll.dll for Windows systems</li>
-              <li>lazbuild (peazip sources)/project_peach.lpi</li>
-              <li>lazbuild (peazip sources)/project_pea.lpi</li>
-              <li>lazbuild (peazip
-sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi //only needed to
-build dragdropfilesdll.dll for Windows systems</li>
-            </ul>
-On Linux systems Lazarus will currently build for GTK2 widget set by
-default:<span style="background-color: rgb(153, 255, 153);">--widgetset=</span>
-option allows to target different widget sets (Qt5, Qt6, GTK3...),
-assuming correct Pascal bindings are installed - please refer to
-Lazarus documentation for each specific widget-set.<br>
-In example, <span style="background-color: rgb(204, 204, 204);">lazbuild
---widgetset=qt5 project_peach.lpi</span> will compile peazip binary for
-Qt5 libraries, if available to Lazarus IDE.<br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">COMPILE TIME PEAZIP
-OPTIONS</span></big><br>
-            <br>
-From main menu, Options &gt; Settings, Advanced tab it is possible to
-set PeaZip to <span style="font-weight: bold;">NOT use non-free
-software or archive formats</span>.<br>
-This behavior can be hardcoded setting HLIBRE_DIR constant in peazip
-(project_peach.lpi) at compile time:<br>
-0 not hardcoded, read from configuration; <br>
-1 hardcoded to allow only using known Free Software components <br>
-2 hardcoded to allow only using known Free Software components and
-known open archive formats (not encumbered by patents for read nor
-write)<br>
-            <br>
-It is now possible to <span style="font-weight: bold;">hardcode paths
-of backend binaries, configuration, and resources </span>at compile
-time in order to met specific FHS or security requirements - e.g.
-allowing paths only writeable with admin / root privileges.<br>
-Those paths are defined by HBINPATH, HCONFPATH, and
-HSHAREPATH constants.<br>
-            <br>
-It is now possible to define at compile time a <span
- style="font-weight: bold;">list of known SHA256 hash
-values for known binaries</span> invoked by PeaZip, in function
-"checkhash" in peach.pas source file. This list can be checked on
-demand to detect non-matching values, and in this case inform user that
-some binaries are unknown.<br>
-            <br>
-            <br style="font-weight: bold;">
-            <h4><big><span style="font-weight: bold;">HOW TO ASSEMBLE
-PEAZIP
-APP PACKAGES</span></big></h4>
-            <br>
-            <span style="font-weight: bold;">NAMING</span><br>
-PeaZip project packages follows this naming convention:
-name-version.architecture <br>
-DEB packages are an exception to this rule, following Debian naming
-convention: name_version_architecture<br>
-"name" states the pakage (i.e. PeaZip, PeaZip Portable, sources...)<br>
-"version" field starts with version number x.y.z, then states target OS
-(LINUX, WINDOWS, WIN64); on Linux systems is then declared the target
-widgetset (i.e. GKT2, Qt5), and finally the release number (usually -1).<br>
-"architecture" on Linux declare target architecture (on Debian amd64 is
-used in place of x86_64) and is omitted on Windows.<br>
-            <br>
-            <span style="font-weight: bold;">PORTABLE PACKAGES</span><br>
-            <a name="assemble_peazip_portable_packages"></a>PeaZip
-Portable should be built compressing a directory here referred
-as (peazip), containing: <br>
-            <ul>
-              <li>pea and peazip binaries compiled for the target
-system (and dragdropfilesdll.dll on Windows) in root directory of the
-app<br>
-              </li>
-              <li>(peazip)/res directory which contains resources
-divided by type</li>
-              <ul>
-                <li>(peazip)/res/portable empty file marking the
-package as portable</li>
-                <li>(peazip)/res/bin directory containing architecture
-dependent binaries, that should be compiled by respective third party
-sources for the target system: refer to THIRD PARTIES section below, or
-refer to the content of an existing package</li>
-                <li>(peazip)/res/share directory containing
-non-architecture dependent data such as texts, sample scripts, media,
-documentation: refer to DETAILS ABOUT RES/SHARE section for further
-information</li>
-                <li>(peazip)/res/conf directory containing
-configuration files, and user-created custom scripts, compression
-settings, archive layouts</li>
-                <li>For details on content of each res subpath plesase
-refer to (peazip sources)/res, and possibly to an existing up to date
-Portable package.</li>
-              </ul>
-            </ul>
-            <span style="font-weight: bold;">ASSEMBLE INSTALLERS</span><br>
-            <a name="how_to_build_peazip_packages"></a>Installer
-packages can be built starting from portable package:<br>
-            <ol>
-              <li>Remove (peazip)/res/portable file, in this way the
-application will write configuration file to appropriate user specific
-directory for the known systems, $XDG_CONFIG_HOME/peazip or
-$HOME/.config/peazip for non_Windows systems following Open Deskptop
-standard.</li>
-              <li>Take care to place resources in proper paths
-depending on the filesystem standards of the target system, e.g.
-(peazip)/res/bin and (peazip)/res/share should be replaced to links to
-pointing to (proper path)/peazip directory created in proper branches
-of the filesystem for the type of resources.</li>
-              <ul>
-                <li>In example, in current Linux packages, (peazip) is
-written to /usr/lib/peazip, with (peazip)/res/bin being
-/usr/lib/peazip/res/bin directory, and (peazip)/res/share being a link
-to /usr/share/peazip directory.</li>
-                <li>This mechanism can be used, on systems not
-supporting Open Desktop standards, also to redirect configuraton
-folder, letting (peazip)/res/portable file, which tells the application
-to write configuration to (peazip)/res/conf which will be, in this
-case, replaced by a link.</li>
-              </ul>
-              <li>(required for Windows packages only), place
-"Configure peazip.exe" compiled from InnoSetup script
-peazip-setup_script_WIN*-configure.iss in (peazip)/res/bin directory</li>
-            </ol>
-            <a name="assemble_peazip_for_package_managers"></a>Download
-pages for Linux, macOS, and Windows, can provide examples of
-packages for a wide array of different installer technologies and for
-many different package management systems, such as Windows EXE, MSI,
-and MSIX installers, macOS DMG, Linux DEB, RPM, and flatpak - flatpak
-packages are maintained by third parties developers at FlatHub.<br>
-            <br>
-At its core, PeaZip is simply a standalone, as autocontained as
-possible application (just as the Portable versions, which shares the
-same code base) which is told to save the configuration in
-system-specific user's path, and a set of scripts (mostly collected in
-(peazip)/res/share/batch path, e.g. OpenDesktop .desktop files) which
-instructs the host system on how to pass input and parameters to PeaZip.<br>
-            <br>
-"Packages examples" package <span style="font-weight: bold;">peazip-x.y.z.pack.zip</span>
-provides examples of
-the directory structures used to create DEB and RPM packages for the
-current release, in order to help developers in assembling packages for
-distribution with different package managers.<br>
-It is not needed to compile sources, it is only meant as additional
-help to assemble packages.<span
- style="font-weight: bold; color: rgb(204, 0, 0);"></span><br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">DETAILS ABOUT
-RES/SHARE</span></big><br>
-            <br>
-(peazip)/res/share directory, containing non-architecture dependent
-resources, can be used "as is" on all systems and types of packages.<br>
-If desired, system dependent resources can be omitted to reduce the
-size of the package, i.e. in non-Windows packages it can be safely
-removed sample .bat and .reg files, being of no use.<br>
-This directory should contain (or link to) peazip_help.pdf in its root
-in order to provide offline help to users.<br>
-            <br>
-            <a name="peazip_installer_sources"></a>(peazip)/res/share/batch
-subfolder contains sample scripts to use
-PeaZip from command line, .desktop files, SendTo examples for Windows,
-and freedesktop_integration subpath which contains files for
-integration in desktop environments compliant with freedesktop standars
-(i.e. Gnome, KDE, and other common Linux DE)<br>
-            <br>
-(peazip)/res/share/copying contains copying.txt (the license file for
-PeaZip project sources, released under LGPLv3) and third-parties
-directory containing thir party licenses.<br>
-            <br>
-(peazip)/res/share/icons (required on Windows only) contains Windows
-icons; .png icons for non-Windows systems are available in
-batch/freedesktop_integration forlder<br>
-            <br>
-(peazip)/res/share/lang path contains translations of application's
-text, most of which are contributed by third parties translators<br>
-            <br>
-(peazip)/res/share/lang-wincontext (required on Windows only) path
-contains .reg files to localize app's context menus in Windows<br>
-            <br>
-(peazip)/res/share/presets contains preset files for PeaZip defining
-custom compression settings. Those files are editable, but user-defined
-custom compression settings should be saved in configuration directory
-consistently with PeaZip's behavior<br>
-            <br>
-(peazip)/res/share/readme files contains a minimal system-dependent
-explanation about the application, for Windows and Linux users<br>
-            <br>
-(peazip)/res/share/themes path contains themes for PeaZip project;
-themes are .7z files (with .theme suffix before .7z extension)
-containing graphic resources and the theme file, an UTF-8 with BOM file
-containing theming options<br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;"><a name="technology"></a>THIRD
-PARTIES TECHNOLOGIES</span></big><br>
-            <br>
-The units of crypto and math utilities library used in PeaZip are
-derived from Wolfgang Ehrhardt's crypto library (originally
-aes_2017-11-17.zip, crc_hash_2018-01-01.zip, fca_2017-11-17.zip,
-serpent_2017-11-17.zip, tf_2017-11-17.zip, and util_2018-11-27.zip
-libraries), released under Zlib license by Wolfgang Ehrhardt.<br>
-Libraries are kept up to date, in example were patched to allow build
-on aarch64 architecture.<br>
-            <br>
-7z (LGPL), p7zip (LGPL), 7-Zip-zstd codecs (LGPL), Brotli (MIT
-License), Zstandard (Dual license BSD / GPLv2), ARC (GPL),
-ZPAQ/LPAQ/PAQ8* (GPL), QUAD (LGPL) / BALZ (public domain) / BCM (Apache
-v2), strip and UPX (GPL) binaries are needed to support mainstream file
-formats.<br>
-            <br>
-Those binaries are not included in source package (but are included in
-the program's precompiled packages) and are intellectual property of
-respective Authors.<br>
-            <br>
-Up to date links to aforementioned projects are:<br>
-            <ul>
-              <li><a target="_blank"
- href="https://www.7-zip.org/download.html">https://www.7-zip.org/download.html<img
- alt="7z package" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> 7-Zip's 7z
-(Windows, Linux, and macOS), should be placed in (peazip)/res/bin/7z,
-to <a href="7zip-files-utility.html">manage 7Z files</a> and most of
-the other supported formats (including ISO, RAR, TAR, WIM, ZIP formats)<br>
-              </li>
-              <ul>
-                <li><a target="_blank"
- href="http://p7zip.sourceforge.net/">http://p7zip.sourceforge.net/<img
- alt="7zip installer" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-vanilla p7zip, can be
-placed as alternative to 7z in (peazip)/res/bin/7z</li>
-                <li><a target="_blank"
- href="https://github.com/szcnick/p7zip">https://github.com/szcnick/p7zip<img
- alt="p7zip packages" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-p7zip fork with
-extra algorithms, can be placed as alternative in (peazip)/res/bin/7z<br>
-                </li>
-              </ul>
-              <ul>
-                <li><a target="_blank"
- href="https://github.com/mcmilk/7-Zip-zstd">https://github.com/mcmilk/7-Zip-zstd<img
- alt="7-zip codecs" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-codecs for 7Z
-(Windows only), should be placed in (peazip)/res/bin/7z/Codecs</li>
-              </ul>
-              <li><a target="_blank"
- href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/
-FreeArc<img alt="freearc sources" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, should be
-placed in (peazip)/res/bin/arc to <a href="arc-files-utility.html">manage
-ARC files</a><br>
-              </li>
-              <li><a target="_blank"
- href="https://github.com/google/brotli">https://github.com/google/brotli<img
- alt="build brotli" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-Google's Brotli
-compressor, should be placed in (peazip)/res/bin/brotli to <a
- href="brotli-compression-utility.html">manage Brotli compressed files</a><br>
-              </li>
-              <li><a target="_blank" href="http://mattmahoney.net/dc/">http://mattmahoney.net/dc/<img
- alt="zpaq sources" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-*PAQ, should be placed in
-(peazip)/res/bin/lpaq, /paq, and /zpaq to <a
- href="paq-files-compression-utility.html">work with PAQ files</a>
-family<br>
-              </li>
-              <li><a target="_blank"
- href="https://github.com/encode84/bcm">https://github.com/encode84/bcm<img
- alt="packager" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://www.encode.su/">http://www.encode.su/<img
- alt="packager" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://sourceforge.net/projects/bcm/">http://sourceforge.net/projects/bcm/<img
- alt="packager" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-Ilia
-Muraviev's QUAD/BALZ/BCM, should be placed in (peazip)/res/bin/quad</li>
-              <li><a target="_blank"
- href="https://www.gnu.org/software/binutils/">https://www.gnu.org/software/binutils/<img
- alt="gnu binutils package" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-strip (needed
-only on Windows), should be placed in (peazip)/res/bin/upx</li>
-              <li><a target="_blank" href="https://upx.github.io/">https://upx.github.io/<img
- alt="upx package" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-UPX, should be placed in
-(peazip)/res/bin/upx</li>
-              <li><a target="_blank"
- href="https://facebook.github.io/zstd/">https://facebook.github.io/zstd/<img
- alt="build zstd" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-Facebook's Zstandard
-compressor, should be placed in (peazip)/res/bin/zstd to <a
- href="zstandard-compression-utility.html">work with Zstandard
-compressed files</a></li>
-              <li><a target="_blank"
- href="https://github.com/zamtmn/metadarkstyle">https://github.com/zamtmn/metadarkstyle<img
- alt="dark mode" src="free-rar/extract-files.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>&nbsp;
-zamtmn's Lazarus package adding support for Windows 10+ dark mode<br>
-              </li>
-            </ul>
-            <br>
-PeaZip can also support other binaries, which MUST NOT be included in
-base packages due their closed source nature: official PeaZip packages
-only contain software released under OSI-approved licenses.<br>
-            <ul>
-              <li>WinAce UnACE (royalty free), to <a
- href="ace-files-utility.html">work with ACE files</a>, can be
-supported as
-back-end binary if placed in (peazip)/res/bin/unace, but must not be
-included in packages because non-free license.</li>
-              <li>RarLab UnRar (royalty free) can be supported as
-back-end binary if placed in (peazip)/res/bin/unrar as alternative <a
- href="free-rar.html">rar files extractor tool</a>, but must not be
-included in packages because non-free license.</li>
-              <li>RarLab Rar.exe (shareware) can be supported as
-back-end binary if installed on the same system (PeaZip can
-auto-configure itself to use it to <a href="free-rar-create.html">create
-RAR archives</a>), but must not
-included in packages because it is non-free software AND has non
-royalty free license.</li>
-            </ul>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Download page
-of PeaZip sources (LGPLv3). Compile and build the application from
-source code with Lazarus/FPC, help porting PeaZip to new Operating
-Systems
-and architectures, package PeaZip binaries for more installers types
-and package managers systems. How to assemble Portable version and
-installable packages.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: PeaZip source
-packages, code base Git repository, how to create portable or
-installable packages for PeaZip<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; Downloads
-&gt; Compile and buid PeaZip from sources<br>
-            <br>
-            </span></p>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
- style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="screenshots-peazip-1.html">PEAZIP FILE MANAGER GUI</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-portable.html">PORTABLE FILE ARCHIVER</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="zip-files-utility.html">FREE ZIP ARCHIVER</a></small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="tar-windows.html">TAR FILES UTILITY</a></small></td>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2 style="font-weight: bold;"><big><big><big>Download
+                            PeaZip free archiver sources</big></big></big></h2>
+                    <p><a name="download_peazip_sources"></a>PeaZip free
+                      archiver sources are released under GNU LGPL
+                      v3 Open Source license, and are avilable as:<br>
+                    </p>
+                    <ul>
+                      <li>Git repository on GitHub</li>
+                      <li>standalone, downloadable ZIP package containing
+                        source files</li>
+                    </ul>
+                    "Packages examples" peazip-x.y.z.pack.zip package is an optional
+                    addition to source package,
+                    as it is simply meant to help developers to create installer packages
+                    for different package management systems, and to provides examples of
+                    directory structures used to create DEB and RPM packages for the
+                    current release.<br>
+                    <br>
+                    PeaZip is written in <a target="_blank" href="https://www.freepascal.org/">FreePascal<img
+                        alt="freepascal compiler" src="free-rar/extract-files.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, a
+                    powerful Open Source
+                    cross-platform programming language highly
+                    compatible with Delphi and ObjectPascal, and <a target="_blank"
+                      href="https://www.lazarus-ide.org/">Lazarus<img alt="lazarus ide" src="free-rar/extract-files.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> IDE is
+                    required to
+                    compile, build, and edit the source code.<br>
+                    <br>
+                    Lazarus/FPC supports many more <a target="_blank"
+                      href="https://wiki.freepascal.org/Platform_list">platforms<img
+                        alt="build cross platform applications" src="free-rar/extract-files.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    (architectures and Operating Systems) than the ones PeaZip is
+                    built/tested for, following the <a target="_blank"
+                      href="https://en.wikipedia.org/wiki/Write_once,_compile_anywhere">"Write
+                      once, compile anywhere"<img alt="compile peazip sources" src="free-rar/extract-files.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> (WOCA)
+                    philosophy.<br>
+                    While PeaZip sources contains ASM sections, a Pure Pascal alternative
+                    implementation is always available to allow porting to new
+                    architectures.<br>
+                    <br>
+                    Lazarus/FPC also supports multiple widgetsets (Win32/64, WinCE, GTK1,
+                    GTK2, Qt4/5,
+                    Carbon, Cocoa, fpGUI) to allow compilation of GUI applications for the
+                    various
+                    supported systems (BSD, Darwin, Linux, macOS, Windows/ReactOS) and to
+                    create different &#8220;flavours&#8221; of the application
+                    for platforms supporting multiple widgetsets, e.g. Linux.<br>
+                    <br>
+                    In PeaZip's sourcecode platform-specific, OS-specific, and
+                    architecture-specific code sections are contained in conditional
+                    compilations blocks. <br>
+                    <br>
+                    Portable and installable packages shares the same code base, PeaZip is
+                    natively an auto contained application as Lazarus tries to statically
+                    link the binaries containing all the dependencies (or as much as
+                    possible); only the packaging changes between the versions.<br>
+                    Windows setup
+                    scripts (.iss files) are written using InnoSetup, which also uses a
+                    Delphi-like syntax and are easily understandable for developers
+                    proficient in Delphi or ObjectPascal dialects.<br>
+                    <br>
+                    <span style="font-weight: bold; color: rgb(204, 0, 0); background-color: rgb(255, 204, 204);">Please
+                      note that PeaZip provides strong cryptographic functions, so
+                      please refer to cryptography laws and regulations that may apply in
+                      your country.</span><br>
+                    <br>
+                    <br>
+                    <h3><big><big><big><span style="font-weight: bold;">Quick
+                              start to compile PeaZip and build
+                              a distributable package</span><br>
+                          </big></big></big></h3>
+                    <br>
+                    Source package contains "<span style="font-weight: bold;">dev</span>"
+                    subdirectory containing sources to compile the application's binaries,
+                    "<span style="font-weight: bold;">res</span>" subdirectory
+                    containing resources needed by the application, and a <span
+                      style="font-weight: bold;">readme.txt</span> file containing
+                    instructions to compile peazip and build a distributable package,
+                    either as Portable application and for many different package
+                    management systems.<br>
+                    <ol>
+                      <li>Download and install <a target="_blank"
+                          href="https://www.lazarus-ide.org/index.php?page=downloads">Lazarus IDE<img
+                            alt="cross platfrom development" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a> for your
+                        OS / architecture platform. In case of troubles installing
+                        Lazarus, its <a target="_blank" href="https://forum.lazarus.freepascal.org/index.php">forum<img
+                            alt="install support" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a> is an
+                        excellent starting point for obtaining support from a friendly
+                        and competent community of developers using Lazarus / FreePascal.</li>
+                      <li>Add (peazip
+                        sources)/dev/metadarkstyle/metadarkstyle.lpk
+                        Lazarus package to the project&nbsp; - otherwise it will be asked later
+                        by the IDE, reporting missing package error, when trying to compile
+                        peazip or pea binaries<br>
+                      </li>
+                      <li>Compile sources in "dev" subdirectory, see below
+                        "Notes for developers" section for
+                        details about manual and automated compiling.</li>
+                      <li>Compiled binaries must be moved
+                        up one level, into package's root folder (where readme.txt file is);
+                        now dev subdir is no longer needed.</li>
+                      <li>Find appropriate builds of third party binaries for
+                        the intended target OS and architecture, and copy them into
+                        (peazip)/res/bin/ subfolders: please note that "res" folder provided in
+                        source package (as
+                        template for creating a working PeaZip port / distributable package)
+                        contains only non- OS
+                        / architecture -dependant resources, so res/bin is simply a
+                        placeholder,
+                        not containing actual binaries but rather only the directories the
+                        binaries need to be copied in.</li>
+                      <li>Zip the package to use / distribute it as a portable
+                        application, or <br>
+                      </li>
+                      <li>Read further suggestions below in "Notes for
+                        developers" section to create an installable
+                        package for your intended OS target<br>
+                      </li>
+                    </ol>
+                    <span style="font-weight: bold;"><br>
+                      <big>Quick suggestion about the Lazarus IDE</big><br>
+                      <br>
+                    </span>On <span style="font-weight: bold;">Linux</span>
+                    and <span style="font-weight: bold;">BSD</span>,
+                    download and install FreePascal sources, FreePascal compiler, and
+                    Lazarus IDE packages from the Lazarus
+                    repository.<br>
+                    Lazarus currently uses <span style="font-weight: bold;">GTK2 </span>widget
+                    set by default on Linux, but it is possible to target other widget
+                    sets (and arcihtectures, in Project &gt;
+                    Project Options,
+                    Configuration and Target),in example:<br>
+                    <ul>
+                      <ul>
+                        <li><span style="font-weight: bold;">Qt5</span>
+                          requires installation of <a target="_blank"
+                            href="https://wiki.lazarus.freepascal.org/Qt5_Interface">Qt bindings<img alt="qt5 apps"
+                              src="free-rar/extract-files.png"
+                              style="border: 0px solid ; width: 12px; height: 10px;"></a></li>
+                        <li><span style="font-weight: bold;">GTK3</span>
+                          (currently in alpha stage) requires GTK development library, e.g. in
+                          Ubuntu use sudo apt-get install libgtk-3-dev</li>
+                      </ul>
+                    </ul>
+                    &nbsp;It is also possible to install Lazarus from your distribution's
+                    repository, and in some cases even non-GTK2 versions of Lazarus are
+                    available, automatically handling the extra dependencies.<br>
+                    <br>
+                    On <span style="font-weight: bold;">macOS</span>, download and install
+                    FreePascal sources, FreePascal
+                    compiler, and Lazarus IDE packages from the Lazarus
+                    repository.<br>
+                    You will also need to install Apple's <a target="_blank"
+                      href="https://developer.apple.com/xcode/">Xcode<img alt="apple xcode"
+                        src="free-rar/extract-files.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>,
+                    and to
+                    separately install standalone <span style="font-weight: bold;">Xcode
+                      Command Line Tools</span>, using the command:<br>
+                    sudo xcode-select --install <br>
+                    Note: after updating macOS to a new release it is likely you need to
+                    also update Xcode and Xcode Command line Tools.<br>
+                    Lazarus currently uses <span style="font-weight: bold;">Cocoa </span>as
+                    default widget set on macOS.<br>
+                    Binaries are compiled for <span style="font-weight: bold;">x84_64</span>
+                    architecture by default, so they will run both on old Intel and newer
+                    Apple Silicon (M1, M2...) Macs.<br>
+                    To change target architecture open main menu, Project &gt;
+                    Project Options,
+                    Configuration and Target, set <span style="font-weight: bold;">Darwin </span>as
+                    destination OS, and <span style="font-weight: bold;">aarch64 </span>as
+                    destination CPU family.<br>
+                    Please note macOS will
+                    ask
+                    for permission to run to (or to access some paths) the first time you
+                    are running an unsigned binary.<br>
+                    Please refer to Lazarus' <a target="_blank"
+                      href="https://wiki.freepascal.org/macOS_Programming_Tips">macOS
+                      programming tips<img alt="macos app development" src="free-rar/extract-files.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> for
+                    subjects as creation of <span style="font-weight: bold;">universal
+                      binaries</span>, <span style="font-weight: bold;">code signing</span>
+                    and <span style="font-weight: bold;">notarization</span>, and to
+                    create a macOS <span style="font-weight: bold;">application bundle</span>
+                    (in which PeaZip for macOS packages may be used as example).<br>
+                    <br>
+                    Following table summarize the status of PeaZip project on different
+                    operating systems, architectures, widget sets, and package management
+                    systems: <span style="font-weight: bold;">any help is deeply
+                      appreciated to port PeaZip to new platforms!</span><br>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="6" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td
+                            style="font-weight: bold; width: 15%; vertical-align: middle; background-color: rgb(240, 240, 240); text-align: center;">
+                            Operating
+                            System<br>
+                          </td>
+                          <td
+                            style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">
+                            Archirecture<br>
+                          </td>
+                          <td
+                            style="font-weight: bold; vertical-align: middle; width: 15%; background-color: rgb(240, 240, 240); text-align: center;">
+                            Widget
+                            Set<br>
+                          </td>
+                          <td
+                            style="font-weight: bold; vertical-align: middle; width: 45%; background-color: rgb(240, 240, 240);">
+                            Status<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">GTK,
+                            GTK2, Qt4<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;"><span
+                              style="font-weight: bold;">legacy</span>, available from <span
+                              style="font-weight: bold;">third party</span>, see links in Linux
+                            download sections</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">GTK2,
+                            Qt5<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as portable and installable DEB and RPM packages, Flatpak available
+                            from third party<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">GTK3<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">unreleased:
+                            compiles successfully, various graphic and fonts issues, Lazarus/FPC
+                            support is marked as <span style="font-weight: bold;">alpha </span>for
+                            GTK3<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">arm,
+                            aarch64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">various<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as portable package, also available
+                            from <span style="font-weight: bold;">third party</span>, see links on
+                            Linux download pages<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">BSD<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">x86_64
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">GTK2<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as portable package, alternatives are available from third party linked
+                            on BSD download page<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as installable DMG package, can also be used as portable app, run on
+                            Intel and Apple Silicon machines<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">macOS<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">aarch64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">Cocoa<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as installable DMG package, can also be used as portable app, run on
+                            Apple Silicon machines only<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Windows<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as portable and installable EXE packages, recommended for <span
+                              style="font-weight: bold;">legacy </span>machines only<br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="width: 15%; vertical-align: middle; text-align: center;">Windows
+                            64 bit<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 15%; text-align: center;">Win32<br>
+                          </td>
+                          <td style="vertical-align: middle; width: 45%;">released
+                            as portable and installable EXE and MSIX packages, not as store app<br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big><big><big>Notes
+                            for
+                            developers</big></big></big></h3>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>HOW TO COMPILE AND
+                        BUILD PEAZIP APP BINARIES</big></h3>
+                    <br>
+                    <a name="how_to_compile_peazip_manually"></a>MANUALLY, FROM
+                    LAZARUS IDE GUI<br>
+                    Open .lpi project files in Lazarus IDE and use main menu Run &gt; Build
+                    all to compile and build the binaries:<br>
+                    <ul>
+                      <li>add /dev/metadarkstyle//metadarkstyle.lpk Lazarus
+                        package to the project, otherwise the IDE will ask later, notifying the
+                        missing lpk<br>
+                      </li>
+                      <li>project_peach.lpi builds peazip, the main app
+                        executable, file and archive manager</li>
+                      <li>project_pea.lpi builds pea, to <a href="pea-archiving-utility.html">manage pea archives</a>,
+                        and to
+                        provide file management, <a href="encrypt-files.html">encryption</a>
+                        (AES, Serpent, Twofish),
+                        and <a href="verify-checksum-hash.html">hashing</a> / checksum
+                        routines (Whirlpool, SHA / SHA2 / SHA3, BLAKE2, Ripemd160, MD5, various
+                        CRCs) <br>
+                      </li>
+                    </ul>
+                    On Windows systems you will also need to compile (peazip
+                    sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi and copy
+                    dragdropfilesdll.dll in the same directory of peazip.exe<br>
+                    <br>
+                    AUTOMATICALLY, FROM COMMAND LINE OR SCRIPT<br>
+                    <a name="how_to_compile_peazip_automatically"></a>Replace
+                    lazbuild string in following examples with the full qualified
+                    path to lazbuild binary if needed - e.g. on Windows it is usually
+                    C:\lazarus\lazbuild.exe.<br>
+                    Replace (peazip sources) with the full qualified path of PeaZip
+                    source's
+                    directory.<br>
+                    Run:<br>
+                    <ul>
+                      <li>lazbuild --add-package (peazip
+                        sources)/dev/metadarkstyle/metadarkstyle.lpk</li>
+                      <li>lazbuild --add-package (peazip
+                        sources)\dev\dragdropfilesdll\DragDropLazarus.lpk //only needed to
+                        build dragdropfilesdll.dll for Windows systems</li>
+                      <li>lazbuild (peazip sources)/project_peach.lpi</li>
+                      <li>lazbuild (peazip sources)/project_pea.lpi</li>
+                      <li>lazbuild (peazip
+                        sources)/dev/dragdropfilesdll/dragdropfilesdll.lpi //only needed to
+                        build dragdropfilesdll.dll for Windows systems</li>
+                    </ul>
+                    On Linux systems Lazarus will currently build for GTK2 widget set by
+                    default:<span style="background-color: rgb(153, 255, 153);">--widgetset=</span>
+                    option allows to target different widget sets (Qt5, Qt6, GTK3...),
+                    assuming correct Pascal bindings are installed - please refer to
+                    Lazarus documentation for each specific widget-set.<br>
+                    In example, <span style="background-color: rgb(204, 204, 204);">lazbuild
+                      --widgetset=qt5 project_peach.lpi</span> will compile peazip binary for
+                    Qt5 libraries, if available to Lazarus IDE.<br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">COMPILE TIME PEAZIP
+                        OPTIONS</span></big><br>
+                    <br>
+                    From main menu, Options &gt; Settings, Advanced tab it is possible to
+                    set PeaZip to <span style="font-weight: bold;">NOT use non-free
+                      software or archive formats</span>.<br>
+                    This behavior can be hardcoded setting HLIBRE_DIR constant in peazip
+                    (project_peach.lpi) at compile time:<br>
+                    0 not hardcoded, read from configuration; <br>
+                    1 hardcoded to allow only using known Free Software components <br>
+                    2 hardcoded to allow only using known Free Software components and
+                    known open archive formats (not encumbered by patents for read nor
+                    write)<br>
+                    <br>
+                    It is now possible to <span style="font-weight: bold;">hardcode paths
+                      of backend binaries, configuration, and resources </span>at compile
+                    time in order to met specific FHS or security requirements - e.g.
+                    allowing paths only writeable with admin / root privileges.<br>
+                    Those paths are defined by HBINPATH, HCONFPATH, and
+                    HSHAREPATH constants.<br>
+                    <br>
+                    It is now possible to define at compile time a <span style="font-weight: bold;">list of known SHA256
+                      hash
+                      values for known binaries</span> invoked by PeaZip, in function
+                    "checkhash" in peach.pas source file. This list can be checked on
+                    demand to detect non-matching values, and in this case inform user that
+                    some binaries are unknown.<br>
+                    <br>
+                    <br style="font-weight: bold;">
+                    <h4><big><span style="font-weight: bold;">HOW TO ASSEMBLE
+                          PEAZIP
+                          APP PACKAGES</span></big></h4>
+                    <br>
+                    <span style="font-weight: bold;">NAMING</span><br>
+                    PeaZip project packages follows this naming convention:
+                    name-version.architecture <br>
+                    DEB packages are an exception to this rule, following Debian naming
+                    convention: name_version_architecture<br>
+                    "name" states the pakage (i.e. PeaZip, PeaZip Portable, sources...)<br>
+                    "version" field starts with version number x.y.z, then states target OS
+                    (LINUX, WINDOWS, WIN64); on Linux systems is then declared the target
+                    widgetset (i.e. GKT2, Qt5), and finally the release number (usually -1).<br>
+                    "architecture" on Linux declare target architecture (on Debian amd64 is
+                    used in place of x86_64) and is omitted on Windows.<br>
+                    <br>
+                    <span style="font-weight: bold;">PORTABLE PACKAGES</span><br>
+                    <a name="assemble_peazip_portable_packages"></a>PeaZip
+                    Portable should be built compressing a directory here referred
+                    as (peazip), containing: <br>
+                    <ul>
+                      <li>pea and peazip binaries compiled for the target
+                        system (and dragdropfilesdll.dll on Windows) in root directory of the
+                        app<br>
+                      </li>
+                      <li>(peazip)/res directory which contains resources
+                        divided by type</li>
+                      <ul>
+                        <li>(peazip)/res/portable empty file marking the
+                          package as portable</li>
+                        <li>(peazip)/res/bin directory containing architecture
+                          dependent binaries, that should be compiled by respective third party
+                          sources for the target system: refer to THIRD PARTIES section below, or
+                          refer to the content of an existing package</li>
+                        <li>(peazip)/res/share directory containing
+                          non-architecture dependent data such as texts, sample scripts, media,
+                          documentation: refer to DETAILS ABOUT RES/SHARE section for further
+                          information</li>
+                        <li>(peazip)/res/conf directory containing
+                          configuration files, and user-created custom scripts, compression
+                          settings, archive layouts</li>
+                        <li>For details on content of each res subpath plesase
+                          refer to (peazip sources)/res, and possibly to an existing up to date
+                          Portable package.</li>
+                      </ul>
+                    </ul>
+                    <span style="font-weight: bold;">ASSEMBLE INSTALLERS</span><br>
+                    <a name="how_to_build_peazip_packages"></a>Installer
+                    packages can be built starting from portable package:<br>
+                    <ol>
+                      <li>Remove (peazip)/res/portable file, in this way the
+                        application will write configuration file to appropriate user specific
+                        directory for the known systems, $XDG_CONFIG_HOME/peazip or
+                        $HOME/.config/peazip for non_Windows systems following Open Deskptop
+                        standard.</li>
+                      <li>Take care to place resources in proper paths
+                        depending on the filesystem standards of the target system, e.g.
+                        (peazip)/res/bin and (peazip)/res/share should be replaced to links to
+                        pointing to (proper path)/peazip directory created in proper branches
+                        of the filesystem for the type of resources.</li>
+                      <ul>
+                        <li>In example, in current Linux packages, (peazip) is
+                          written to /usr/lib/peazip, with (peazip)/res/bin being
+                          /usr/lib/peazip/res/bin directory, and (peazip)/res/share being a link
+                          to /usr/share/peazip directory.</li>
+                        <li>This mechanism can be used, on systems not
+                          supporting Open Desktop standards, also to redirect configuraton
+                          folder, letting (peazip)/res/portable file, which tells the application
+                          to write configuration to (peazip)/res/conf which will be, in this
+                          case, replaced by a link.</li>
+                      </ul>
+                      <li>(required for Windows packages only), place
+                        "Configure peazip.exe" compiled from InnoSetup script
+                        peazip-setup_script_WIN*-configure.iss in (peazip)/res/bin directory</li>
+                    </ol>
+                    <a name="assemble_peazip_for_package_managers"></a>Download
+                    pages for Linux, macOS, and Windows, can provide examples of
+                    packages for a wide array of different installer technologies and for
+                    many different package management systems, such as Windows EXE, MSI,
+                    and MSIX installers, macOS DMG, Linux DEB, RPM, and flatpak - flatpak
+                    packages are maintained by third parties developers at FlatHub.<br>
+                    <br>
+                    At its core, PeaZip is simply a standalone, as autocontained as
+                    possible application (just as the Portable versions, which shares the
+                    same code base) which is told to save the configuration in
+                    system-specific user's path, and a set of scripts (mostly collected in
+                    (peazip)/res/share/batch path, e.g. OpenDesktop .desktop files) which
+                    instructs the host system on how to pass input and parameters to PeaZip.<br>
+                    <br>
+                    "Packages examples" package <span style="font-weight: bold;">peazip-x.y.z.pack.zip</span>
+                    provides examples of
+                    the directory structures used to create DEB and RPM packages for the
+                    current release, in order to help developers in assembling packages for
+                    distribution with different package managers.<br>
+                    It is not needed to compile sources, it is only meant as additional
+                    help to assemble packages.<span style="font-weight: bold; color: rgb(204, 0, 0);"></span><br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">DETAILS ABOUT
+                        RES/SHARE</span></big><br>
+                    <br>
+                    (peazip)/res/share directory, containing non-architecture dependent
+                    resources, can be used "as is" on all systems and types of packages.<br>
+                    If desired, system dependent resources can be omitted to reduce the
+                    size of the package, i.e. in non-Windows packages it can be safely
+                    removed sample .bat and .reg files, being of no use.<br>
+                    This directory should contain (or link to) peazip_help.pdf in its root
+                    in order to provide offline help to users.<br>
+                    <br>
+                    <a name="peazip_installer_sources"></a>(peazip)/res/share/batch
+                    subfolder contains sample scripts to use
+                    PeaZip from command line, .desktop files, SendTo examples for Windows,
+                    and freedesktop_integration subpath which contains files for
+                    integration in desktop environments compliant with freedesktop standars
+                    (i.e. Gnome, KDE, and other common Linux DE)<br>
+                    <br>
+                    (peazip)/res/share/copying contains copying.txt (the license file for
+                    PeaZip project sources, released under LGPLv3) and third-parties
+                    directory containing thir party licenses.<br>
+                    <br>
+                    (peazip)/res/share/icons (required on Windows only) contains Windows
+                    icons; .png icons for non-Windows systems are available in
+                    batch/freedesktop_integration forlder<br>
+                    <br>
+                    (peazip)/res/share/lang path contains translations of application's
+                    text, most of which are contributed by third parties translators<br>
+                    <br>
+                    (peazip)/res/share/lang-wincontext (required on Windows only) path
+                    contains .reg files to localize app's context menus in Windows<br>
+                    <br>
+                    (peazip)/res/share/presets contains preset files for PeaZip defining
+                    custom compression settings. Those files are editable, but user-defined
+                    custom compression settings should be saved in configuration directory
+                    consistently with PeaZip's behavior<br>
+                    <br>
+                    (peazip)/res/share/readme files contains a minimal system-dependent
+                    explanation about the application, for Windows and Linux users<br>
+                    <br>
+                    (peazip)/res/share/themes path contains themes for PeaZip project;
+                    themes are .7z files (with .theme suffix before .7z extension)
+                    containing graphic resources and the theme file, an UTF-8 with BOM file
+                    containing theming options<br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;"><a name="technology"></a>THIRD
+                        PARTIES TECHNOLOGIES</span></big><br>
+                    <br>
+                    The units of crypto and math utilities library used in PeaZip are
+                    derived from Wolfgang Ehrhardt's crypto library (originally
+                    aes_2017-11-17.zip, crc_hash_2018-01-01.zip, fca_2017-11-17.zip,
+                    serpent_2017-11-17.zip, tf_2017-11-17.zip, and util_2018-11-27.zip
+                    libraries), released under Zlib license by Wolfgang Ehrhardt.<br>
+                    Libraries are kept up to date, in example were patched to allow build
+                    on aarch64 architecture.<br>
+                    <br>
+                    7z (LGPL), p7zip (LGPL), 7-Zip-zstd codecs (LGPL), Brotli (MIT
+                    License), Zstandard (Dual license BSD / GPLv2), ARC (GPL),
+                    ZPAQ/LPAQ/PAQ8* (GPL), QUAD (LGPL) / BALZ (public domain) / BCM (Apache
+                    v2), strip and UPX (GPL) binaries are needed to support mainstream file
+                    formats.<br>
+                    <br>
+                    Those binaries are not included in source package (but are included in
+                    the program's precompiled packages) and are intellectual property of
+                    respective Authors.<br>
+                    <br>
+                    Up to date links to aforementioned projects are:<br>
+                    <ul>
+                      <li><a target="_blank"
+                          href="https://www.7-zip.org/download.html">https://www.7-zip.org/download.html<img
+                            alt="7z package" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a> 7-Zip's 7z
+                        (Windows, Linux, and macOS), should be placed in (peazip)/res/bin/7z,
+                        to <a href="7zip-files-utility.html">manage 7Z files</a> and most of
+                        the other supported formats (including ISO, RAR, TAR, WIM, ZIP formats)<br>
+                      </li>
+                      <ul>
+                        <li><a target="_blank" href="http://p7zip.sourceforge.net/">http://p7zip.sourceforge.net/<img
+                              alt="7zip installer" src="free-rar/extract-files.png"
+                              style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                          vanilla p7zip, can be
+                          placed as alternative to 7z in (peazip)/res/bin/7z</li>
+                        <li><a target="_blank"
+                            href="https://github.com/szcnick/p7zip">https://github.com/szcnick/p7zip<img
+                              alt="p7zip packages" src="free-rar/extract-files.png"
+                              style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                          p7zip fork with
+                          extra algorithms, can be placed as alternative in (peazip)/res/bin/7z<br>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li><a target="_blank"
+                            href="https://github.com/mcmilk/7-Zip-zstd">https://github.com/mcmilk/7-Zip-zstd<img
+                              alt="7-zip codecs" src="free-rar/extract-files.png"
+                              style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                          codecs for 7Z
+                          (Windows only), should be placed in (peazip)/res/bin/7z/Codecs</li>
+                      </ul>
+                      <li><a target="_blank"
+                          href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/
+                          FreeArc<img alt="freearc sources" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>, should be
+                        placed in (peazip)/res/bin/arc to <a href="arc-files-utility.html">manage
+                          ARC files</a><br>
+                      </li>
+                      <li><a target="_blank"
+                          href="https://github.com/google/brotli">https://github.com/google/brotli<img
+                            alt="build brotli" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        Google's Brotli
+                        compressor, should be placed in (peazip)/res/bin/brotli to <a
+                          href="brotli-compression-utility.html">manage Brotli compressed files</a><br>
+                      </li>
+                      <li><a target="_blank" href="http://mattmahoney.net/dc/">http://mattmahoney.net/dc/<img
+                            alt="zpaq sources" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        *PAQ, should be placed in
+                        (peazip)/res/bin/lpaq, /paq, and /zpaq to <a href="paq-files-compression-utility.html">work with
+                          PAQ files</a>
+                        family<br>
+                      </li>
+                      <li><a target="_blank" href="https://github.com/encode84/bcm">https://github.com/encode84/bcm<img
+                            alt="packager" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                          href="http://www.encode.su/">http://www.encode.su/<img alt="packager"
+                            src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                          href="http://sourceforge.net/projects/bcm/">http://sourceforge.net/projects/bcm/<img
+                            alt="packager" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        Ilia
+                        Muraviev's QUAD/BALZ/BCM, should be placed in (peazip)/res/bin/quad</li>
+                      <li><a target="_blank"
+                          href="https://www.gnu.org/software/binutils/">https://www.gnu.org/software/binutils/<img
+                            alt="gnu binutils package" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        strip (needed
+                        only on Windows), should be placed in (peazip)/res/bin/upx</li>
+                      <li><a target="_blank" href="https://upx.github.io/">https://upx.github.io/<img alt="upx package"
+                            src="free-rar/extract-files.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        UPX, should be placed in
+                        (peazip)/res/bin/upx</li>
+                      <li><a target="_blank"
+                          href="https://facebook.github.io/zstd/">https://facebook.github.io/zstd/<img alt="build zstd"
+                            src="free-rar/extract-files.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                        Facebook's Zstandard
+                        compressor, should be placed in (peazip)/res/bin/zstd to <a
+                          href="zstandard-compression-utility.html">work with Zstandard
+                          compressed files</a></li>
+                      <li><a target="_blank"
+                          href="https://github.com/zamtmn/metadarkstyle">https://github.com/zamtmn/metadarkstyle<img
+                            alt="dark mode" src="free-rar/extract-files.png"
+                            style="border: 0px solid ; width: 12px; height: 10px;"></a>&nbsp;
+                        zamtmn's Lazarus package adding support for Windows 10+ dark mode<br>
+                      </li>
+                    </ul>
+                    <br>
+                    PeaZip can also support other binaries, which MUST NOT be included in
+                    base packages due their closed source nature: official PeaZip packages
+                    only contain software released under OSI-approved licenses.<br>
+                    <ul>
+                      <li>WinAce UnACE (royalty free), to <a href="ace-files-utility.html">work with ACE files</a>, can
+                        be
+                        supported as
+                        back-end binary if placed in (peazip)/res/bin/unace, but must not be
+                        included in packages because non-free license.</li>
+                      <li>RarLab UnRar (royalty free) can be supported as
+                        back-end binary if placed in (peazip)/res/bin/unrar as alternative <a href="free-rar.html">rar
+                          files extractor tool</a>, but must not be
+                        included in packages because non-free license.</li>
+                      <li>RarLab Rar.exe (shareware) can be supported as
+                        back-end binary if installed on the same system (PeaZip can
+                        auto-configure itself to use it to <a href="free-rar-create.html">create
+                          RAR archives</a>), but must not
+                        included in packages because it is non-free software AND has non
+                        royalty free license.</li>
+                    </ul>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Download page
+                        of PeaZip sources (LGPLv3). Compile and build the application from
+                        source code with Lazarus/FPC, help porting PeaZip to new Operating
+                        Systems
+                        and architectures, package PeaZip binaries for more installers types
+                        and package managers systems. How to assemble Portable version and
+                        installable packages.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: PeaZip source
+                        packages, code base Git repository, how to create portable or
+                        installable packages for PeaZip<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; Downloads
+                        &gt; Compile and buid PeaZip from sources<br>
+                        <br>
+                      </span></p>
+                    <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+                                style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="screenshots-peazip-1.html">PEAZIP FILE MANAGER GUI</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-portable.html">PORTABLE FILE ARCHIVER</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="zip-files-utility.html">FREE ZIP ARCHIVER</a></small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="tar-windows.html">TAR FILES UTILITY</a></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <small><small>&nbsp;</small></small><br>
+                    <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-macos.html">MACOS ZIP FILES UTILITY</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="extract-encrypted-files.html">OPEN ENCRYPTED FILES</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-command-line.html">CREATE PEAZIP CLI SCRIPTS</a></small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="how-to-open-rar-tar-zip-files.html">OPEN 7Z RAR TAR ZIP ARCHIVES</a></small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="free-rar.html">FREE RAR</a></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <small><small>&nbsp;</small></small><br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-macos.html">MACOS ZIP FILES UTILITY</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="extract-encrypted-files.html">OPEN ENCRYPTED FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-command-line.html">CREATE PEAZIP CLI SCRIPTS</a></small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="how-to-open-rar-tar-zip-files.html">OPEN 7Z RAR TAR ZIP ARCHIVES</a></small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="free-rar.html">FREE RAR</a></small></td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="Download PeaZip free archiver sources" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="compile_peazip_sources"></a>DOWNLOADS<br>
-            <img alt="HOW TO ASSEMBLE PEAZIP APP PACKAGES"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="Notes for developers" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="macos_file_compressor"></a>SUPPORT<br>
-            <img alt="build peazip" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="build peazip installers" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="build peazip packages"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="compile peazip" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="peazip source code repository"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="Download PeaZip free archiver sources"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="compile_peazip_sources"></a>DOWNLOADS<br>
+                      <img alt="HOW TO ASSEMBLE PEAZIP APP PACKAGES" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="Notes for developers" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="macos_file_compressor"></a>SUPPORT<br>
+                      <img alt="build peazip" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="build peazip installers" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="build peazip packages" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="compile peazip" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="peazip source code repository" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

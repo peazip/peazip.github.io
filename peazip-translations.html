@@ -1,605 +1,555 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How to change PeaZip language, and localize context menu. How to contribute a translation, or maintain an existing language file">
-  <meta name="KEYWORDS"
- content="peazip, translations, language, localization, translate, text, context menu">
+    content="How to change PeaZip language, and localize context menu. How to contribute a translation, or maintain an existing language file">
+  <meta name="KEYWORDS" content="peazip, translations, language, localization, translate, text, context menu">
   <meta name="ROBOTS" content="all">
   <title>How to change PeaZip language, and contribute translations</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is 7Z file format (7-Zip archives)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is 7Z file format (7-Zip archives)">
   <meta property="og:description"
- content="What is 7Z file format, native 7-Zip archives type extension. What are XZ, LZMA, 7z files features and specifications, maximum size, max number of files limit.">
+    content="What is 7Z file format, native 7-Zip archives type extension. What are XZ, LZMA, 7z files features and specifications, maximum size, max number of files limit.">
   <meta property="og:image" content="free-zip/7z.png">
-  <meta property="og:url"
- content="https://peazip.github.io/7z-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/7z-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="How to change PeaZip's language" alt="translate peazip"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="localize peazip text" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="peazip_localizations"></a><span
- style="font-weight: bold;">How to change PeaZip language, contribute
-translations</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="what is 7z file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="7-zip file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big><big><a style="font-weight: bold;"
- name="change_peazip_texts"></a><a href="#peazip_localizations"><span
- style="font-weight: bold;">How does PeaZip Translations work</span><br>
-            </a></big></big></big></h2>
-            </div>
-            <br>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="How to change PeaZip's language" alt="translate peazip"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="localize peazip text"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <br>
-            <h3><big><span style="font-weight: bold;">To change
-PeaZip's
-language, use main menu Options &gt; Localization</span></big></h3>
-            <br>
-PeaZip packages comes with multiple language files, and <a
- style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip-Translations">PeaZip
-Translations repository</a> on GitHub provide updated language files as
-soon as they are provided by translators, for separate download.<br>
-To use additional translations, download the desired language file and
-copy it in (peazip)/res/share/lang folder. PeaZip is usually installed
-in C:\Program Files\PeaZip on Windows, or /usr/lib/peazip on Unix
-systems.<br>
-            <br>
-Each x.y release entry on GitHub Translations repository contains
-language file for a specific release, minor releases x.y.z share the
-same text.<br>
-            <span style="font-weight: bold;"></span>Language file name
-is composed by <a target="_blank"
- href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">two-letter
-language code<img alt="unicode application" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, i.e. "fr"
-for French in fr.txt; if needed for
-clarity it will be also added <a target="_blank"
- href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">two-letter
-country code</a><a
- href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"><img
- alt="multilangual software" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> i.e. "br"
-for Brazil in pt-br.txt.<br>
-Please note that ".txt" extension of language files may be hidden by
-default on some operating system, notably modern Windows versions.<br>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Localize PeaZip
-entries in
-system's context menu</span></big></h3>
-            <br>
-            <a
- href="screenshots-peazip-3.html#extract_files_from_context_menu">PeaZip's
-context menu and
-SendTo menu items</a> are localized independently from
-the text of the main app.<br>
-            <br>
-On Windows systems (W7 and newer, using cascaded menu), changing
-application language also automatically translates <span
- style="font-weight: bold;">system
-context menu</span>
-entries - which asks for user elevation if UAC is enabled in
-the machine.<br>
-            <br>
-            <span style="font-weight: bold;">Windows 7+</span> context
-menu entries are avaliable as .reg scripts in
-(peazip)\res\share\lang-wincontext folder, and contributed translations
-are in https://github.com/peazip/PeaZip-Translations/releases/tag/0.0<br>
-            <br>
-            <span style="font-weight: bold;">Windows 11</span>
-mini-context menu entries are available as .reg scripts too,
-in (peazip)\res\share\batch folder.<br>
-            <br>
-            <span style="font-weight: bold;">SendTo menu</span> entries
-are .lnk files (changing the link file name changes
-the text in the SendTo menu entry) available in
-(peazip)\res\share\batch folder, and contributed translations are in
-https://github.com/peazip/PeaZip-Translations/releases/tag/0<br>
-            <br>
-Context menu entries for non-Windows systems are provieded as
-(peazip)/res/share/batch subfolders, in form of .desktop files for <span
- style="font-weight: bold;">Linux </span>and <span
- style="font-weight: bold;">BSD </span>desktop environments (Cinnamon,
-Gnome, KDE, Mate, XFCE...) and of Automator .workflow scripts for <span
- style="font-weight: bold;">macOS</span>.<br>
-Translating the text in the sample .desktop and .workflow scripts
-allows to localize the context menu entries on those Operating Systems.<br>
-            <br>
-            <br>
-            <h3><big><big><big><span style="font-weight: bold;">Note
-For Translators</span></big></big></big></h3>
-            <br>
-Instructions about how to provide a translated language file is
-provided in peazip-x.y.z.about_translations.zip package, featured in
-github.com/peazip/PeaZip-Translations/releases/tag/x.y.z subfolder.<br>
-            <br>
-Translations are covered by GFDL copyleft license, and can be sent to
-support email address giorgio.tani.software@gmail.com. As alternative
-method, language files can be directly updated on Git repository so
-commits can be evaluated and merged in the online code base:<br>
-            <br>
-https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share/lang
-(language files)<br>
-https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share/lang-wincontext
-(Windows 7+ context menu items)<br>
-            <br>
-            <br>
-            <h4 style="font-weight: bold;"><big>How to provide or
-maintain
-a translation</big></h4>
-            <br>
-Language files are UTF-8 with BOM encoded
-text files which can be edited using any suitable text editor.<br>
-            <br>
-To create a new translation file you can:<br>
-1 - copy default.txt (in PeaZip's path in /res/lang subfolder) or any
-other language file, if you prefer starting from another language, to a
-new file;<br>
-2 - edit lines 2 to 6 of the document to enter language name (both in
-English and in the original language for better readability), PeaZip's
-version (major.minor) the translation is aimed to, translator's and
-last last revisor's name and last revision date; <span
- style="font-style: italic;">IMPORTANT:
-revision number must not be
-specified alongside major.minor release number in 3rd line of language
-files since
-revisions shares the same text and are meant to deploy between-releases
-updates, ie.e for bugfixing or for packaging additional translations or
-resources.</span><br>
-            <span style="font-style: italic;"> </span>3 -
-translate
-the text after the
-"variable_name: " part in
-"=== PeaZip text group ===" AND "=== PeaLauncher text group ==="
-sections of the file (don't move or remove lines, don't change the
-"variable_name: " part);<br>
-4 - optionally, translate the mini-tutorial after "=== about text group
-===" line (free editing, it is loaded and displayed "as is" as
-application's mini-tutorial); it is very important to improve usability
-of the program for non-English speaking users.<br>
-            <br>
-In <a target="_blank"
- href="https://github.com/peazip/PeaZip-Translations">PeaZip
-Translations repository</a> on GitHub you can find a package named <span
- style="font-weight: bold;">peazip-x.y.z.about_translations.zip</span>
-(in x.y release subdirectory) containing a spreadsheet file to help
-in creating and maintaining localizations, simply compiling column D of
-the spreadsheet.<br>
-IMPORTANT: the spreadsheet contains 3 pages, "PeaZip text group",
-"PeaLauncher text group", and "About text group": all pages need to be
-completed and pasted (column E, for first two pages) in the language
-file; the "About text group" can be freely edited.<br>
-The spreadsheet shows variable name (column B), corresponding text
-string in english (column C) and a blank, yellow column (D) for typing
-the translated text strings.<br>
-On the right, a column E (blue) will show the "variable_name: " part
-assembled with the translated string: the content of this area can be
-copied and paste to replace the text in "=== PeaZip text group ===" and
-"=== PeaLauncher text group ===" sections (the spreadsheet features TWO
-pages, one for each of the two groups).<br>
-Lines must be pasted in the original order (it is sufficient to sort
-them by column F).<br>
-            <br>
-After column F are featured all currently available translations, in
-order to help translators more proficient in other languages than
-Englis, and to help to spot out what localizations need to be updated.<br>
-At each version all language files are mass-updated, with missing text
-lines in English; to update a localization, it's enough to update the
-English text lines.<br>
-For a better result it is also recommended to check all the language
-file to see if the update is coherent with linguistic style used by the
-translator of the current version.<br>
-For languages spoken in different ways in different countries (i.e.
-English, Spanish, Portuguese...) it is recommended to fork the
-translation, creating i.e. en-us, pt-br etc<br>
-Default language file is default.txt<br>
-            <br>
-Translated language files
-can be sent to me using the address&nbsp;<a
- href="mailto:giorgio.tani.software@gmail.com">giorgio.tani.software@gmail.com</a>,
-to be evaluated for
-inclusion in future updates and publication on PeaZip's Translations
-directory.<br>
-All translated language files should be considered as released under
-GFDL, GNU Free Documentation License, as they have to be considered
-derivate work from the application's language file which is released
-under GFDL.<br>
-            <br>
-In case no text is added with a new release of PeaZip, it is
-recommended to, however, update the language files with the new version
-number (third line) and to review the current translation for possible
-improvements and fixes.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: How to change
-PeaZip language, and localize context menu on Windows, Linux, BSD, and
-macOS. How to contribute a new translation, or maintain an existing
-language file<span style="font-weight: bold;">.</span><br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: translations,
-localize application, localize context menus<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-How PeaZip Translations work<br>
-            </span></p>
-            <br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
- style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-portable.html">PORTABLE ARCHIVER UTILITY</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="free-rar.html">FREE RAR</a></small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-macos.html">ARCHIVE MANAGER FOR MACOS</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="zip-files-utility.html">FREE ZIP</a></small></td>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="peazip_localizations"></a><span style="font-weight: bold;">How to change PeaZip
+                              language, contribute
+                              translations</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <small><small>&nbsp;</small></small><br>
-            <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img alt="what is 7z file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img alt="7-zip file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
                 <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="peazip-linux.html">LINUX ARCHIVE MANAGER</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="tar-windows.html">TAR FILES UTILITY</a></small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="brotli-compression-utility.html">OPEN BROTLI FILES</a><br>
-                  </small></td>
-                  <td style="vertical-align: top;"><small><br>
-                  </small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
- href="zstandard-compression-utility.html">OPEN ZSTD FILES</a></small></td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="change peazip language" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="translate_peazip"></a>DOWNLOADS<br>
-            <img alt="translate peazip texts"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="change peazip context menu language" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="change_peazip_language"></a>SUPPORT<br>
-            <img alt="contribute a translation for peazip"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="localize peazip texts" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);" name="localize_peazip_texts"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="localize peazip context menu entries"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="How does PeaZip Translations work" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="How to change PeaZip language, and contribute translations"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="How to change PeaZip language, and localize context menu"
- title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
- style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="How to contribute a translation, or maintain an existing language file"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big><big><a style="font-weight: bold;" name="change_peazip_texts"></a><a
+                                href="#peazip_localizations"><span style="font-weight: bold;">How does PeaZip
+                                  Translations work</span><br>
+                              </a></big></big></big></h2>
+                    </div>
+                    <br>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">To change
+                          PeaZip's
+                          language, use main menu Options &gt; Localization</span></big></h3>
+                    <br>
+                    PeaZip packages comes with multiple language files, and <a style="font-weight: bold;"
+                      target="_blank" href="https://github.com/peazip/PeaZip-Translations">PeaZip
+                      Translations repository</a> on GitHub provide updated language files as
+                    soon as they are provided by translators, for separate download.<br>
+                    To use additional translations, download the desired language file and
+                    copy it in (peazip)/res/share/lang folder. PeaZip is usually installed
+                    in C:\Program Files\PeaZip on Windows, or /usr/lib/peazip on Unix
+                    systems.<br>
+                    <br>
+                    Each x.y release entry on GitHub Translations repository contains
+                    language file for a specific release, minor releases x.y.z share the
+                    same text.<br>
+                    <span style="font-weight: bold;"></span>Language file name
+                    is composed by <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">two-letter
+                      language code<img alt="unicode application" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, i.e. "fr"
+                    for French in fr.txt; if needed for
+                    clarity it will be also added <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">two-letter
+                      country code</a><a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2"><img
+                        alt="multilangual software" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> i.e. "br"
+                    for Brazil in pt-br.txt.<br>
+                    Please note that ".txt" extension of language files may be hidden by
+                    default on some operating system, notably modern Windows versions.<br>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Localize PeaZip
+                          entries in
+                          system's context menu</span></big></h3>
+                    <br>
+                    <a href="screenshots-peazip-3.html#extract_files_from_context_menu">PeaZip's
+                      context menu and
+                      SendTo menu items</a> are localized independently from
+                    the text of the main app.<br>
+                    <br>
+                    On Windows systems (W7 and newer, using cascaded menu), changing
+                    application language also automatically translates <span style="font-weight: bold;">system
+                      context menu</span>
+                    entries - which asks for user elevation if UAC is enabled in
+                    the machine.<br>
+                    <br>
+                    <span style="font-weight: bold;">Windows 7+</span> context
+                    menu entries are avaliable as .reg scripts in
+                    (peazip)\res\share\lang-wincontext folder, and contributed translations
+                    are in https://github.com/peazip/PeaZip-Translations/releases/tag/0.0<br>
+                    <br>
+                    <span style="font-weight: bold;">Windows 11</span>
+                    mini-context menu entries are available as .reg scripts too,
+                    in (peazip)\res\share\batch folder.<br>
+                    <br>
+                    <span style="font-weight: bold;">SendTo menu</span> entries
+                    are .lnk files (changing the link file name changes
+                    the text in the SendTo menu entry) available in
+                    (peazip)\res\share\batch folder, and contributed translations are in
+                    https://github.com/peazip/PeaZip-Translations/releases/tag/0<br>
+                    <br>
+                    Context menu entries for non-Windows systems are provieded as
+                    (peazip)/res/share/batch subfolders, in form of .desktop files for <span
+                      style="font-weight: bold;">Linux </span>and <span style="font-weight: bold;">BSD </span>desktop
+                    environments (Cinnamon,
+                    Gnome, KDE, Mate, XFCE...) and of Automator .workflow scripts for <span
+                      style="font-weight: bold;">macOS</span>.<br>
+                    Translating the text in the sample .desktop and .workflow scripts
+                    allows to localize the context menu entries on those Operating Systems.<br>
+                    <br>
+                    <br>
+                    <h3><big><big><big><span style="font-weight: bold;">Note
+                              For Translators</span></big></big></big></h3>
+                    <br>
+                    Instructions about how to provide a translated language file is
+                    provided in peazip-x.y.z.about_translations.zip package, featured in
+                    github.com/peazip/PeaZip-Translations/releases/tag/x.y.z subfolder.<br>
+                    <br>
+                    Translations are covered by GFDL copyleft license, and can be sent to
+                    support email address giorgio.tani.software@gmail.com. As alternative
+                    method, language files can be directly updated on Git repository so
+                    commits can be evaluated and merged in the online code base:<br>
+                    <br>
+                    https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share/lang
+                    (language files)<br>
+                    https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share/lang-wincontext
+                    (Windows 7+ context menu items)<br>
+                    <br>
+                    <br>
+                    <h4 style="font-weight: bold;"><big>How to provide or
+                        maintain
+                        a translation</big></h4>
+                    <br>
+                    Language files are UTF-8 with BOM encoded
+                    text files which can be edited using any suitable text editor.<br>
+                    <br>
+                    To create a new translation file you can:<br>
+                    1 - copy default.txt (in PeaZip's path in /res/lang subfolder) or any
+                    other language file, if you prefer starting from another language, to a
+                    new file;<br>
+                    2 - edit lines 2 to 6 of the document to enter language name (both in
+                    English and in the original language for better readability), PeaZip's
+                    version (major.minor) the translation is aimed to, translator's and
+                    last last revisor's name and last revision date; <span style="font-style: italic;">IMPORTANT:
+                      revision number must not be
+                      specified alongside major.minor release number in 3rd line of language
+                      files since
+                      revisions shares the same text and are meant to deploy between-releases
+                      updates, ie.e for bugfixing or for packaging additional translations or
+                      resources.</span><br>
+                    <span style="font-style: italic;"> </span>3 -
+                    translate
+                    the text after the
+                    "variable_name: " part in
+                    "=== PeaZip text group ===" AND "=== PeaLauncher text group ==="
+                    sections of the file (don't move or remove lines, don't change the
+                    "variable_name: " part);<br>
+                    4 - optionally, translate the mini-tutorial after "=== about text group
+                    ===" line (free editing, it is loaded and displayed "as is" as
+                    application's mini-tutorial); it is very important to improve usability
+                    of the program for non-English speaking users.<br>
+                    <br>
+                    In <a target="_blank" href="https://github.com/peazip/PeaZip-Translations">PeaZip
+                      Translations repository</a> on GitHub you can find a package named <span
+                      style="font-weight: bold;">peazip-x.y.z.about_translations.zip</span>
+                    (in x.y release subdirectory) containing a spreadsheet file to help
+                    in creating and maintaining localizations, simply compiling column D of
+                    the spreadsheet.<br>
+                    IMPORTANT: the spreadsheet contains 3 pages, "PeaZip text group",
+                    "PeaLauncher text group", and "About text group": all pages need to be
+                    completed and pasted (column E, for first two pages) in the language
+                    file; the "About text group" can be freely edited.<br>
+                    The spreadsheet shows variable name (column B), corresponding text
+                    string in english (column C) and a blank, yellow column (D) for typing
+                    the translated text strings.<br>
+                    On the right, a column E (blue) will show the "variable_name: " part
+                    assembled with the translated string: the content of this area can be
+                    copied and paste to replace the text in "=== PeaZip text group ===" and
+                    "=== PeaLauncher text group ===" sections (the spreadsheet features TWO
+                    pages, one for each of the two groups).<br>
+                    Lines must be pasted in the original order (it is sufficient to sort
+                    them by column F).<br>
+                    <br>
+                    After column F are featured all currently available translations, in
+                    order to help translators more proficient in other languages than
+                    Englis, and to help to spot out what localizations need to be updated.<br>
+                    At each version all language files are mass-updated, with missing text
+                    lines in English; to update a localization, it's enough to update the
+                    English text lines.<br>
+                    For a better result it is also recommended to check all the language
+                    file to see if the update is coherent with linguistic style used by the
+                    translator of the current version.<br>
+                    For languages spoken in different ways in different countries (i.e.
+                    English, Spanish, Portuguese...) it is recommended to fork the
+                    translation, creating i.e. en-us, pt-br etc<br>
+                    Default language file is default.txt<br>
+                    <br>
+                    Translated language files
+                    can be sent to me using the address&nbsp;<a
+                      href="mailto:giorgio.tani.software@gmail.com">giorgio.tani.software@gmail.com</a>,
+                    to be evaluated for
+                    inclusion in future updates and publication on PeaZip's Translations
+                    directory.<br>
+                    All translated language files should be considered as released under
+                    GFDL, GNU Free Documentation License, as they have to be considered
+                    derivate work from the application's language file which is released
+                    under GFDL.<br>
+                    <br>
+                    In case no text is added with a new release of PeaZip, it is
+                    recommended to, however, update the language files with the new version
+                    number (third line) and to review the current translation for possible
+                    improvements and fixes.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: How to change
+                        PeaZip language, and localize context menu on Windows, Linux, BSD, and
+                        macOS. How to contribute a new translation, or maintain an existing
+                        language file<span style="font-weight: bold;">.</span><br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: translations,
+                        localize application, localize context menus<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        How PeaZip Translations work<br>
+                      </span></p>
+                    <br>
+                    <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; background-color: rgb(72, 136, 248);"><small><span
+                                style="color: rgb(253, 253, 253);">RECOMMENDED PAGES</span> </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-portable.html">PORTABLE ARCHIVER UTILITY</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="free-rar.html">FREE RAR</a></small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-macos.html">ARCHIVE MANAGER FOR MACOS</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="zip-files-utility.html">FREE ZIP</a></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <small><small>&nbsp;</small></small><br>
+                    <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="peazip-linux.html">LINUX ARCHIVE MANAGER</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="tar-windows.html">TAR FILES UTILITY</a></small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="brotli-compression-utility.html">OPEN BROTLI FILES</a><br>
+                            </small></td>
+                          <td style="vertical-align: top;"><small><br>
+                            </small></td>
+                          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><small><a
+                                href="zstandard-compression-utility.html">OPEN ZSTD FILES</a></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="change peazip language"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="translate_peazip"></a>DOWNLOADS<br>
+                      <img alt="translate peazip texts" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="change peazip context menu language"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="change_peazip_language"></a>SUPPORT<br>
+                      <img alt="contribute a translation for peazip" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="localize peazip texts" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="localize_peazip_texts"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="localize peazip context menu entries" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="How does PeaZip Translations work" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online"
+                                alt="How to change PeaZip language, and contribute translations"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="How to change PeaZip language, and localize context menu"
+                                title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="How to contribute a translation, or maintain an existing language file"
+                                title="Search in PeaZip project domain" src="extract-rar/rar-opener.png"
+                                style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

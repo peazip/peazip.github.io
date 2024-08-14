@@ -1,726 +1,680 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Free ZST files compressor, opener, extractor GUI utility for Windows and Linux. Work with Facebook's Zstandard fast compression algorithm: create, open, extract ZSTD compressed files">
+    content="Free ZST files compressor, opener, extractor GUI utility for Windows and Linux. Work with Facebook's Zstandard fast compression algorithm: create, open, extract ZSTD compressed files">
   <meta name="KEYWORDS"
- content="zstandard, algorithm, zstd, compression, utility, work with, facebook, zst, files, tar.zst, extractor, opener, extract, open, extraction, how to, decompress, file, format, compress">
+    content="zstandard, algorithm, zstd, compression, utility, work with, facebook, zst, files, tar.zst, extractor, opener, extract, open, extraction, how to, decompress, file, format, compress">
   <meta name="ROBOTS" content="all">
   <title>Free Zstandard compression utility, open, extract ZST files</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Free Zstandard compression utility, open, extract ZST files">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Free Zstandard compression utility, open, extract ZST files">
   <meta property="og:description"
- content="Free ZST files compressor, opener, extractor GUI utility for Windows and Linux. Work with Facebook's Zstandard fast compression algorithm: create, open, extract ZSTD compressed files">
+    content="Free ZST files compressor, opener, extractor GUI utility for Windows and Linux. Work with Facebook's Zstandard fast compression algorithm: create, open, extract ZSTD compressed files">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/zstandard-compression-utility.html">
+  <meta property="og:url" content="https://peazip.github.io/zstandard-compression-utility.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="GUI Zstandard compression utility" alt="free zstd files opener"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="freei zst files extractor with gui"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="zstd_files_compression_software"></a><span
- style="font-weight: bold;">Free Zstandard
-compression GUI utility, open,
-extract ZST files</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="freeware zstandard file compression utility"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="freeware to open and extract zst files"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <ul>
-              <li><a href="#zstandard_file_compression_software">WORK
-WITH
-ZSTD FAST COMPRESSOR, OPENER, EXTRACTOR UTILITY</a></li>
-            </ul>
-            <ul>
-              <li><a href="#7Z_zstd">USE ZSTANDARD COMPRESSION
-ALGORITHM
-IN 7Z FORMAT</a></li>
-            </ul>
-            <br>
-            <br>
-            <h2 style="font-weight: bold;"><big><big><big><a
- name="zstandard_file_compression_software"></a><a
- href="#zstd_files_compression_software">Work
-with ZSTD fast
-compressor, opener, extractor utility</a></big></big></big></h2>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">Manage ZST files
-with PeaZip</span></big></h3>
-            <br>
-            <a name="work_with_facebook_zstd_file_compressor"></a>PeaZip
-free
-archiver
-utility offers full read /
-write support (compress, open, decompress) for <a
- href="zst-compressed-file-format.html">ZST compressed files</a>,
-through the Open Source tool ZSTD from Facebook's Zstandard project
-(released
-under BSD + GPLv2 dual license) to offer the same GUI
-frontend to
-create,
-browse, and extract .zst files under Windows
-and Linux operating systems.<br>
-ZSTD compressor is multithreaded and provides faster than Deflate (ZIP
-/ GZip) compression, even faster than current <a
- href="brotli-compressed-file-format.html">Brotli</a> implementation,
-see <a style="font-weight: bold;"
- href="peazip-compression-benchmark.html">PeaZip comparative benchmarks</a>
-page for fastest data compression results.<br>
-            <br>
-            <span style="font-weight: bold;">Work with TAR archives
-compressed with Zstandard algorithm</span><br>
-Zstandard algorithm is a pure single file (or stream) compressor, and
-does
-not provide file archiving features: if multiple files are sent to
-ZSTD compressor PeaZip will automatically switch to <a
- href="what-is-solid-compression.html"><span style="font-weight: bold;">solid
-mode</span></a> consolidating all input files / directories to a
-single <a href="tar-file-format.html">TAR archive</a>.<br>
-Treating the entore input as a whole usually also allows reach
-better compression ratio that compressing each
-input file separately.<br>
-            <br>
-ZSTD utility does not support encryption (files of .zst type cannot be
-password protected) as no encryption primitive is offered by Zstandard
-algorithm.<br>
-            <br>
-            <h3><img alt="extract zstandard compressed files"
- title="How to create, open, extract Zstandard compressed files."
- src="read-write.png"
- style="border: 0px solid ; width: 800px; height: 39px;"></h3>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="0" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top; width: 448px;">
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h2><big><span style="font-weight: bold;">Compress
-files with Zstandard algorithm</span><br>
-                        </big></h2>
-                        <p><a name="create_zst_file"></a>ZSTD
-fast data compressor accepts a
-single file as input,
-otherwise (to add multiple files and directories) use "TAR before"
-option to consolidate input in a single TAR package before proceeding
-with compression stage with Zstandard algorithm.<br>
-                        </p>
-                        <ul>
-                          <li>
-                            <p>Create ZST files from system's file
-explorer</p>
-                          </li>
-                          <ul>
-                            <li>
-                              <p><a name="zstandard_compression"></a>Use
-context menu
-entry PeaZip &gt; Add to archive for archive creation
-screen, to set compression settings, output destination,
-and other options.</p>
-                            </li>
-                          </ul>
-                          <li>
-                            <p>Create ZST files from PeaZip GUI<br>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="GUI Zstandard compression utility"
+                      alt="free zstd files opener" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="freei zst files extractor with gui"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="zstd_files_compression_software"></a><span style="font-weight: bold;">Free Zstandard
+                              compression GUI utility, open,
+                              extract ZST files</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="freeware zstandard file compression utility" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="freeware to open and extract zst files" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <ul>
+                      <li><a href="#zstandard_file_compression_software">WORK
+                          WITH
+                          ZSTD FAST COMPRESSOR, OPENER, EXTRACTOR UTILITY</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#7Z_zstd">USE ZSTANDARD COMPRESSION
+                          ALGORITHM
+                          IN 7Z FORMAT</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <h2 style="font-weight: bold;"><big><big><big><a name="zstandard_file_compression_software"></a><a
+                              href="#zstd_files_compression_software">Work
+                              with ZSTD fast
+                              compressor, opener, extractor utility</a></big></big></big></h2>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Manage ZST files
+                          with PeaZip</span></big></h3>
+                    <br>
+                    <a name="work_with_facebook_zstd_file_compressor"></a>PeaZip
+                    free
+                    archiver
+                    utility offers full read /
+                    write support (compress, open, decompress) for <a href="zst-compressed-file-format.html">ZST
+                      compressed files</a>,
+                    through the Open Source tool ZSTD from Facebook's Zstandard project
+                    (released
+                    under BSD + GPLv2 dual license) to offer the same GUI
+                    frontend to
+                    create,
+                    browse, and extract .zst files under Windows
+                    and Linux operating systems.<br>
+                    ZSTD compressor is multithreaded and provides faster than Deflate (ZIP
+                    / GZip) compression, even faster than current <a
+                      href="brotli-compressed-file-format.html">Brotli</a> implementation,
+                    see <a style="font-weight: bold;" href="peazip-compression-benchmark.html">PeaZip comparative
+                      benchmarks</a>
+                    page for fastest data compression results.<br>
+                    <br>
+                    <span style="font-weight: bold;">Work with TAR archives
+                      compressed with Zstandard algorithm</span><br>
+                    Zstandard algorithm is a pure single file (or stream) compressor, and
+                    does
+                    not provide file archiving features: if multiple files are sent to
+                    ZSTD compressor PeaZip will automatically switch to <a href="what-is-solid-compression.html"><span
+                        style="font-weight: bold;">solid
+                        mode</span></a> consolidating all input files / directories to a
+                    single <a href="tar-file-format.html">TAR archive</a>.<br>
+                    Treating the entore input as a whole usually also allows reach
+                    better compression ratio that compressing each
+                    input file separately.<br>
+                    <br>
+                    ZSTD utility does not support encryption (files of .zst type cannot be
+                    password protected) as no encryption primitive is offered by Zstandard
+                    algorithm.<br>
+                    <br>
+                    <h3><img alt="extract zstandard compressed files"
+                        title="How to create, open, extract Zstandard compressed files." src="read-write.png"
+                        style="border: 0px solid ; width: 800px; height: 39px;"></h3>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; width: 448px;">
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h2><big><span style="font-weight: bold;">Compress
+                                          files with Zstandard algorithm</span><br>
+                                      </big></h2>
+                                    <p><a name="create_zst_file"></a>ZSTD
+                                      fast data compressor accepts a
+                                      single file as input,
+                                      otherwise (to add multiple files and directories) use "TAR before"
+                                      option to consolidate input in a single TAR package before proceeding
+                                      with compression stage with Zstandard algorithm.<br>
+                                    </p>
+                                    <ul>
+                                      <li>
+                                        <p>Create ZST files from system's file
+                                          explorer</p>
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          <p><a name="zstandard_compression"></a>Use
+                                            context menu
+                                            entry PeaZip &gt; Add to archive for archive creation
+                                            screen, to set compression settings, output destination,
+                                            and other options.</p>
+                                        </li>
+                                      </ul>
+                                      <li>
+                                        <p>Create ZST files from PeaZip GUI<br>
+                                        </p>
+                                      </li>
+                                      <ul>
+                                        <li>
+                                          <p><a name="how_to_use_zstandard_compression"></a>Select
+                                            files and folders, and use Add
+                                            button
+                                            (also in context
+                                            menu) for archive creation screen</p>
+                                        </li>
+                                      </ul>
+                                      <ul>
+                                        <li>
+                                          <p><a name="free_zstandard_compressor_utility"></a>Drag
+                                            and drop files / folders from the
+                                            system
+                                            to a
+                                            PeaZip
+                                            instance</p>
+                                        </li>
+                                      </ul>
+                                    </ul>
+                                    <h3><img alt="free zstd compressor" title="Compress to ZST format"
+                                        src="add-to-archive.png" style="width: 100px; height: 45px;"></h3>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h3 style="font-weight: bold;"><big>How to
+                                        convert Zstandard files</big></h3>
+                                    <br>
+                                    <h2><a name="convert_zstandard_file_format"></a><a href="convert-files.html">Archive
+                                        file
+                                        conversion</a>
+                                      procedure using <span style="font-weight: bold;">Convert </span>button
+                                      extracts and then re-pack input archive files into any write-supported
+                                      format (7z, arc, brotli, pea, tar, zip, zstandard...)</h2>
+                                    <h2><img alt="free zst files opener" title="Convert from/to ZST format"
+                                        src="convert.png" style="width: 120px; height: 45px;"></h2>
+                                    This utility allows to convert any type
+                                    supported for reading (ACE, CAB, RAR, TAR, ZIP...) into a new ZST file,
+                                    as well as to
+                                    convert
+                                    existing ZST file into any other write-supported format.
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td style="vertical-align: top; width: 24px;"><br>
+                          </td>
+                          <td style="vertical-align: top; width: 448px;">
+                            <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+                              border="0" cellpadding="24" cellspacing="1">
+                              <tbody>
+                                <tr>
+                                  <td colspan="1" rowspan="1"
+                                    style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                                    <h2><big><span style="font-weight: bold;">Open
+                                          Zstandard ZST files</span><br>
+                                      </big></h2>
+                                    <br>
+                                    <a name="read_zstandard_compressed_files"></a>To
+                                    open ZST file
+                                    and <span style="font-weight: bold;">read </span>its content (a
+                                    single
+                                    compresed file in case of plain .zst format, a tar archive opening a
+                                    tar.zst or .tzst file), open it in
+                                    PeaZip gui with double click if file extension is associated with the
+                                    application, or using system context menu "Open as archive" entry,
+                                    that
+                                    will attempt to read any user provided file type regardless file
+                                    associations<br>
+                                    <br>
+                                    <h2><big style="font-weight: bold;">Extract ZST
+                                        files</big><br>
+                                    </h2>
+                                    <div style="text-align: left;"> </div>
+                                    <h3><br>
+                                    </h3>
+                                    <a name="work_with_zstandard_compressed_files"></a>Decompress
+                                    ZST files from the
+                                    system
+                                    <ul style="text-align: left;">
+                                      <li>
+                                        <p>Use context menu entry "Extract..."
+                                          for
+                                          extraction screen to set
+                                          output path and other options</p>
+                                      </li>
+                                      <li>
+                                        <p>Select one or more archives and use
+                                          context
+                                          menu
+                                          entry <span style="font-weight: bold;">Extract here</span> or <span
+                                            style="font-weight: bold;">Extract
+                                            here (to new folder)</span> for quick extraction with no further
+                                          confirmation </p>
+                                      </li>
+                                    </ul>
+                                    <a name="unzip_zst_files"></a>Decompress
+                                    Zstandard-compressed files within PeaZip free archiver as GUI frontend<br>
+                                    <ul style="text-align: left;">
+                                      <li>
+                                        <p><a name="decompress_zstandard_file"></a>Extract
+                                          button shows archive
+                                          extraction screen providing access to all extraction options (set
+                                          output
+                                          path, open output path after extraction, keep or delete original
+                                          archives, etc)<br>
+                                        </p>
+                                      </li>
+                                      <li>
+                                        <p><a name="how_to_extract_zst_file"></a>Extract
+                                          all to... button activates a
+                                          simplified
+                                          procedure only asking for output path</p>
+                                      </li>
+                                      <li>Simply drag &amp; drop the compressed
+                                        file
+                                        from
+                                        the
+                                        application to the system to decompress it</li>
+                                    </ul>
+                                    <h2><img alt="gui zstandard utility" title="Decompress ZSTD-compressed files"
+                                        src="extract-archive.png" style="width: 112px; height: 45px;"></h2>
+                                    <br>
+                                    <span style="font-weight: bold;">TAR and
+                                      Zstandard compression</span><br>
+                                    <div style="text-align: left;"><a name="how_to_extract_zst_files"></a>To <a
+                                        href="tar-windows.html">work
+                                        on a TAR file</a> compressed
+                                      with Zsrandard (with .tar.zst or .tzst extension) you will need
+                                      to
+                                      uncompress the tar container before using aforementioned methods.<br>
+                                      Read more about <a href="how-to-extract-rar-zip-archives.html">how to
+                                        extract archive files</a> and <a
+                                        href="how-to-extract-selected-files-from-archive.html">how to extract
+                                        selected content from archive</a>. </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <h4><big><big><big style="font-weight: bold;"><a name="7Z_zstd"></a></big></big></big><a
+                        href="#zstd_files_compression_software"><big><big><big style="font-weight: bold;">Use Zstandard
+                              compression algorithm in 7z
+                              format</big></big></big></a></h4>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h3><span style="font-weight: bold;"><img title="7-Zip Zstandard plugin"
+                                  alt="7-Zip zstd compression plugin" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h3>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;">
+                            <p><a name="7z_zstd_compression"></a> Zstandard
+                              faster-than-zip compression is
+                              available also for <a href="7z-file-format.html">7Z format</a>, with
+                              Tino
+                              Reichardt's 7Z plugins for 7-Zip / 7Z.exe (supported by PeaZip,
+                              providing Brotli, Lizard,
+                              LZ4, LZ5, and Zstd algorithms for 7Z API), selecting Zstd compression
+                              method in
+                              Advanced tab when 7Z format is selected.</p>
+                            <p>Zst compression / decompression algorithm in .7z
+                              containers is also
+                              supported on GNU/Linux systems by szcnick/p7zip fork used by PeaZip for
+                              Linux.<br>
+                              Read more about <a href="7zip-files-utility.html">how to create 7Z
+                                files with ZSTD compression</a>.<br>
                             </p>
-                          </li>
-                          <ul>
-                            <li>
-                              <p><a
- name="how_to_use_zstandard_compression"></a>Select
-files and folders, and use Add
-button
-(also in context
-menu) for archive creation screen</p>
-                            </li>
-                          </ul>
-                          <ul>
-                            <li>
-                              <p><a
- name="free_zstandard_compressor_utility"></a>Drag
-and drop files / folders from the
-system
-to a
-PeaZip
-instance</p>
-                            </li>
-                          </ul>
-                        </ul>
-                        <h3><img alt="free zstd compressor"
- title="Compress to ZST format" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h3>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h3 style="font-weight: bold;"><big>How to
-convert Zstandard files</big></h3>
-                        <br>
-                        <h2><a name="convert_zstandard_file_format"></a><a
- href="convert-files.html">Archive file
-conversion</a>
-procedure using <span style="font-weight: bold;">Convert </span>button
-extracts and then re-pack input archive files into any write-supported
-format (7z, arc, brotli, pea, tar, zip, zstandard...)</h2>
-                        <h2><img alt="free zst files opener"
- title="Convert from/to ZST format" src="convert.png"
- style="width: 120px; height: 45px;"></h2>
-This utility allows to convert any type
-supported for reading (ACE, CAB, RAR, TAR, ZIP...) into a new ZST file,
-as well as to
-convert
-existing ZST file into any other write-supported format.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </td>
-                  <td style="vertical-align: top; width: 24px;"><br>
-                  </td>
-                  <td style="vertical-align: top; width: 448px;">
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h2><big><span style="font-weight: bold;">Open
-Zstandard ZST files</span><br>
-                        </big></h2>
-                        <br>
-                        <a name="read_zstandard_compressed_files"></a>To
-open ZST file
-and <span style="font-weight: bold;">read </span>its content (a
-single
-compresed file in case of plain .zst format, a tar archive opening a
-tar.zst or .tzst file), open it in
-PeaZip gui with double click if file extension is associated with the
-application, or using system context menu "Open as archive" entry,
-that
-will attempt to read any user provided file type regardless file
-associations<br>
-                        <br>
-                        <h2><big style="font-weight: bold;">Extract ZST
-files</big><br>
-                        </h2>
-                        <div style="text-align: left;"> </div>
-                        <h3><br>
-                        </h3>
-                        <a name="work_with_zstandard_compressed_files"></a>Decompress
-ZST files from the
-system
-                        <ul style="text-align: left;">
-                          <li>
-                            <p>Use context menu entry "Extract..."
-for
-extraction screen to set
-output path and other options</p>
-                          </li>
-                          <li>
-                            <p>Select one or more archives and use
-context
-menu
-entry <span style="font-weight: bold;">Extract here</span> or <span
- style="font-weight: bold;">Extract
-here (to new folder)</span> for quick extraction with no further
-confirmation </p>
-                          </li>
-                        </ul>
-                        <a name="unzip_zst_files"></a>Decompress
-Zstandard-compressed files within PeaZip free archiver as GUI frontend<br>
-                        <ul style="text-align: left;">
-                          <li>
-                            <p><a name="decompress_zstandard_file"></a>Extract
-button shows archive
-extraction screen providing access to all extraction options (set
-output
-path, open output path after extraction, keep or delete original
-archives, etc)<br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Free
+                        zstandard file compression utility. How to create zst compressed files
+                        with zstd file compressor tool. Compress TAR archives with ZSTD
+                        compression utility. Convert zst archives to other formats. How to open
+                        zst compressed files. Extract zst files (decompress). How to use PeaZip
+                        as free GUI zst compressor, opener and extractor.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: how to compress
+                        files with zstdandard, open zst files, decompress zstd compressed
+                        files, faster than zip compression algorthm<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        Free Zstandard compression utility, open, extract ZST files<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img title="FAQ how to extract 7Z, RAR, TAR, ZIP..."
+                                alt="manage zst files" src="file-format/archive-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="open_and_extract_archive"></a>WORK WITH
+                              SUPPORTED
+                              FILE TYPES</h3>
+                            <p><a style="font-weight: bold;" href="7zip-files-utility.html">Create, open, extract 7Z
+                                files</a><br>
                             </p>
-                          </li>
-                          <li>
-                            <p><a name="how_to_extract_zst_file"></a>Extract
-all to... button activates a
-simplified
-procedure only asking for output path</p>
-                          </li>
-                          <li>Simply drag &amp; drop the compressed
-file
-from
-the
-application to the system to decompress it</li>
-                        </ul>
-                        <h2><img alt="gui zstandard utility"
- title="Decompress ZSTD-compressed files" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h2>
-                        <br>
-                        <span style="font-weight: bold;">TAR and
-Zstandard compression</span><br>
-                        <div style="text-align: left;"><a
- name="how_to_extract_zst_files"></a>To <a href="tar-windows.html">work
-on a TAR file</a> compressed
-with Zsrandard (with .tar.zst or .tzst extension) you will need
-to
-uncompress the tar container before using aforementioned methods.<br>
-Read more about <a href="how-to-extract-rar-zip-archives.html">how to
-extract archive files</a> and <a
- href="how-to-extract-selected-files-from-archive.html">how to extract
-selected content from archive</a>. </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                            <p><a style="font-weight: bold;" href="ace-files-utility.html">Open and extract ACE
+                                files</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="arc-files-utility.html">Create, open, extract ARC
+                                files</a><br>
+                            </p>
+                            <p><a href="brotli-compression-utility.html"><span style="font-weight: bold;">Create, open,
+                                  extract Brotli files</span></a><br>
+                            </p>
+                            <p><a href="bzip2-utility.html"><span style="font-weight: bold;">Compress, decompress Bzip2
+                                  files</span></a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="cab-files-utility.html">Open and extract CAB
+                                files</a><br>
+                            </p>
+                            <p><a href="gzip-utility.html"><span style="font-weight: bold;">Compress, decompress GZip
+                                  files</span></a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="iso-utility.html">Open and extract DMG, ISO, UDF disk
+                                images</a><br>
+                            </p>
+                            <p><a href="paq-files-compression-utility.html"><span style="font-weight: bold;">Create,
+                                  open, extract PAQ, LPAQ, ZPAQ files</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-archiving-utility.html">PEA: Pack Encrypt
+                                Authenticate</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="free-rar.html">Open
+                                and extract RAR files</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-windows.html">Create, open, extract
+                                TAR, TGZ, TBZ files</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-utility.html">Create, open, extract WIM disk
+                                images</a><br>
+                            </p>
+                            <p> </p>
+                            <p><a style="font-weight: bold;" href="zip-files-utility.html">Create, open, extract ZIP
+                                files</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-files-software.html">Create, open, extract ZIPX
+                                files</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="zstandard-compression-utility.html">Create, open,
+                                extract
+                                Zstandard files</a></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <br>
-            <h4><big><big><big style="font-weight: bold;"><a
- name="7Z_zstd"></a></big></big></big><a
- href="#zstd_files_compression_software"><big><big><big
- style="font-weight: bold;">Use Zstandard compression algorithm in 7z
-format</big></big></big></a></h4>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="7-Zip Zstandard plugin" alt="7-Zip zstd compression plugin"
- src="file-format/information.png" style="width: 48px; height: 48px;"><br>
-                  </span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">
-                  <p><a name="7z_zstd_compression"></a> Zstandard
-faster-than-zip compression is
-available also for <a href="7z-file-format.html">7Z format</a>, with
-Tino
-Reichardt's 7Z plugins for 7-Zip / 7Z.exe (supported by PeaZip,
-providing Brotli, Lizard,
-LZ4, LZ5, and Zstd algorithms for 7Z API), selecting Zstd compression
-method in
-Advanced tab when 7Z format is selected.</p>
-                  <p>Zst compression / decompression algorithm in .7z
-containers is also
-supported on GNU/Linux systems by szcnick/p7zip fork used by PeaZip for
-Linux.<br>
-Read more about <a href="7zip-files-utility.html">how to create 7Z
-files with ZSTD compression</a>.<br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
                   </td>
                 </tr>
-              </tbody>
-            </table>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Free
-zstandard file compression utility. How to create zst compressed files
-with zstd file compressor tool. Compress TAR archives with ZSTD
-compression utility. Convert zst archives to other formats. How to open
-zst compressed files. Extract zst files (decompress). How to use PeaZip
-as free GUI zst compressor, opener and extractor.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: how to compress
-files with zstdandard, open zst files, decompress zstd compressed
-files, faster than zip compression algorthm<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-Free Zstandard compression utility, open, extract ZST files<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to extract 7Z, RAR, TAR, ZIP..." alt="manage zst files"
- src="file-format/archive-format.png" style="width: 96px; height: 96px;"
- align="right"><a name="open_and_extract_archive"></a>WORK WITH
-SUPPORTED
-FILE TYPES</h3>
-                  <p><a style="font-weight: bold;"
- href="7zip-files-utility.html">Create, open, extract 7Z files</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="ace-files-utility.html">Open and extract ACE files</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="arc-files-utility.html">Create, open, extract ARC files</a><br>
-                  </p>
-                  <p><a href="brotli-compression-utility.html"><span
- style="font-weight: bold;">Create, open, extract Brotli files</span></a><br>
-                  </p>
-                  <p><a href="bzip2-utility.html"><span
- style="font-weight: bold;">Compress, decompress Bzip2 files</span></a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="cab-files-utility.html">Open and extract CAB files</a><br>
-                  </p>
-                  <p><a href="gzip-utility.html"><span
- style="font-weight: bold;">Compress, decompress GZip files</span></a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="iso-utility.html">Open and extract DMG, ISO, UDF disk images</a><br>
-                  </p>
-                  <p><a href="paq-files-compression-utility.html"><span
- style="font-weight: bold;">Create, open, extract PAQ, LPAQ, ZPAQ files</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-archiving-utility.html">PEA: Pack Encrypt Authenticate</a><a
- href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;" href="free-rar.html">Open
-and extract RAR files</a><span style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-windows.html">Create, open, extract
-TAR, TGZ, TBZ files</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="wim-utility.html">Create, open, extract WIM disk images</a><br>
-                  </p>
-                  <p> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-files-utility.html">Create, open, extract ZIP files</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-files-software.html">Create, open, extract ZIPX files</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="zstandard-compression-utility.html">Create, open, extract
-Zstandard files</a></p>
+                  <td style="vertical-align: top; width: 25%;"><small> <img
+                        alt="download free zstandard file compressor" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="download_zstd_files_compression_utility"></a>DOWNLOADS<br>
+                      <img alt="open zst files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="free zstandard files extractor"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="free_zstd_files_opener"></a>SUPPORT<br>
+                      <img alt="extract zst files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Work with ZSTD fast compressor, opener, extractor utility"
+                                title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="free zst files extractor" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="free zst files opener" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="free zst files compressor" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="download free zstandard file compressor" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="download_zstd_files_compression_utility"></a>DOWNLOADS<br>
-            <img alt="open zst files" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="free zstandard files extractor" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="free_zstd_files_opener"></a>SUPPORT<br>
-            <img alt="extract zst files" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Work with ZSTD fast compressor, opener, extractor utility"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="free zst files extractor"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="free zst files opener" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="free zst files compressor" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

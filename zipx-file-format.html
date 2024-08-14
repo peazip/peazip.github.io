@@ -1,681 +1,617 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is ZIPX file format, native WinZip archives type extension. What are Zipx files compression features and specifications.">
+    content="What is ZIPX file format, native WinZip archives type extension. What are Zipx files compression features and specifications.">
   <meta name="KEYWORDS"
- content="zipx, winzip, what is, file, format, what are, archives, type, extension, features, specifications, specs">
+    content="zipx, winzip, what is, file, format, what are, archives, type, extension, features, specifications, specs">
   <meta name="ROBOTS" content="all">
   <title>ZIPX file extension (WinZip archive format)</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is ZIPX file format (WinZip archives)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is ZIPX file format (WinZip archives)">
   <meta property="og:description"
- content="What is ZIPX file format, native WinZip archives type extension. What are Zipx files compression features and specifications.">
+    content="What is ZIPX file format, native WinZip archives type extension. What are Zipx files compression features and specifications.">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/zipx-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/zipx-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="ZIPX file extension" alt="winzip archive format"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="zipx file type" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name=".zipx_extension"></a><span
- style="font-weight: bold;">ZIPX file extension</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="what zipx extension stands for" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="what does zipx extension means" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div
- style="text-align: left; color: rgb(0, 0, 0); font-weight: bold;">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="zipx_specifications"></a><a
- href="zipx-file-format.html#.zipx_extension">What is ZIPX file type,
-WinZip archive format</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>ZIPX extension</big></h3>
-            <br>
-            <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <a name="what_is_zipx_file"></a>ZIPX file extension
-designates, <a
- href="https://support.winzip.com/hc/en-us/articles/115011394208-What-is-a-Zipx-File-">by
-definition<img title="ZIPX definition" alt="zipx file format definition"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, a ZIP
-file employing a compression method different than Deflate or Deflate64.<br>
-The extension was introduced by WinZip team,
-starting from
-WinZip 12.1 (released as trialware program on 13 September 2008), in
-order to differentiate files created with new compression algorithms
-from ZIP files compressed with classic Deflate algorithm - as legacy
-applications would be not able to read new files.<br>
-            <br>
-Like for ZIP files, WinZip provides its custom <a
- href="file-split.html"><span style="font-weight: bold;">file spanning</span></a>
-scheme for splitting
-ZIPX archives (Z01 extension).<br>
-            <br>
-PeaZip can <a href="zipx-files-software.html">create, open and extract
-ZIPX
-files</a> with <a href="bzip2-file.html">Bzip2</a>, LZMA, LZMA2 / XZ,
-and PPMd (technically ZIPX files by definition); custom WavPack, MP3
-and JPEG pre-compression filters are currently unsupported (both for
-reading and for writing).<br>
-To add support to WavPack in PeaZip, you can use <a target="_blank"
- href="https://www.tc4shell.com/en/7zip/wavpack7z/">WavPack7z<img
- title="ZIPX WavPack" alt="WavPack standard"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> plugin
-(free of charge, closed source, hence cannot be provided with PeaZip
-packages), simply extracting the 32 or 64 bit plugin in PeaZip's
-folder, in (peazip)/res/7z/Codecs path.<br>
-            <h2><img title="ZIPX format creation" alt="zipx file format"
- src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
-            <h3><img title="ZIPX format extraction"
- alt="zipx file format features" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>ZIPX file format specs</big></h3>
-            <br>
-            <a name="zipx_standard"></a>WinZip's ZIPX standard is based
-on PKZip's <a href="zip-file-format.html">ZIP format specifications</a>,
-with only difference of employing newer <span
- style="font-weight: bold;">data compression</span>
-algorithms - <span style="font-weight: bold;">BZip2</span>, <span
- style="font-weight: bold;">LZMA</span> / LZMA2 (XZ), <span
- style="font-weight: bold;">PPMd </span>and others
-(superseding
-classic Deflate / Deflate64 algorithm) - <a
- name="zipx_pre_compression_filters"></a>and employing custom <span
- style="font-weight: bold;">pre-compression filters</span>
-(WavPack, MP3 and JPEG filter) to improve compression of images and
-other
-media data structures.<br>
-This results in zipx providing
-higher, <a href="file-compression-performances.html">improved
-compression ratio</a> compared to classic zip/Deflate, at cost of
-higher
-computational cost,
-comparable with compression ratio of formats like <a
- href="what-is-rar-file.html">RAR</a>, <a href="ace-files-utility.html">ACE</a>,
-and
-in some cases <a href="7z-file-format.html">7-Zip's 7Z / XZ file format</a>
-- modern archiving formats also
-relying in LZMA and PPMd -family compression algorithms and multimedia
-precompressors.<br>
-            <br>
-            <span style="font-weight: bold;">ZIP or ZIPX file extension</span><br>
-The possibility of employing alternate compression methods is anyway
-already featured in standard ZIP format definition, so using an
-alternate designation as ZIPX is merely a choice and does not
-(technically) define a different, independent standard.<br>
-The <span style="font-weight: bold;">file extension</span>
-modification from zip to zipx was intended to avoid
-ambiguity with users (openly marking it as new type, with new
-extension) and prevent older archivers to try to handle the new zipx
-standard as it was a classic zip file, failing to support its newer
-features.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">ZIPX format
-compression performances</span></big></h4>
-            <br>
-            <a name="zipx_vs_rar"></a>On <a
- href="peazip-compression-benchmark.html">file compression
-benchmark</a>, and <a href="maximum-compression-benchmark.html">maximum
-compression benchmark</a>
-pages you
-can compare how .zpix format fares, in terms
-of compression ration and compression / extraction computation speed,
-with mainstream formats
-such as .7z, .rar, and .zip, testing various software implementations
-(PeaZip, WinRar, WinZip).<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">ZIPX format
-encryption features</span></big></h4>
-            <br>
-            <a name="zipx_aes_encryption"></a>ZIPX files supports
-new AES-based WinZip's <a href="encrypt-files.html"><span
- style="font-weight: bold;">AE encryption</span></a>
-(128 bit and 256 bit), which is also part of ZIP standard - and
-optionally, for legacy support only, old
-ZipCrypto (Zip 2.0) cryptography.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">ZIPX file format
-limitations</span></big></h4>
-            <br>
-            <a name="max_zipx_file_size_limit_specifications"></a>As in
-current Zip format revision, Zipx
-format is limited to maximum <span style="font-weight: bold;">4
-billion files per archive</span> (2^32)
-and to <span style="font-weight: bold;">16 EB as max file size</span>
-(2^64), either for the single input files
-and for the total size of the archive - as ZIP64 standard zip archives
-- likely exceeding user's needs and limits of current filesystems
-implementation.<br>
-Read more about <a href="rar-zip-file-format-size-limitations.html">size
-and number of items limitations of various archive types</a>.<br>
-            <br>
-            <br>
-            <a name="zipx_file_format_specifications"></a>External
-online resources about .zipx archives: <a target="_blank"
- href="http://en.wikipedia.org/wiki/Zip_%28file_format%29">ZIPX<img
- title="ZIPX wiki" alt="zipx file format" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
-page, <a target="_blank" href="http://kb.winzip.com/kb/entry/7">WinZip<img
- title="WinZip's .zipx specs" alt=".zipx type"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> Knowledge
-Base entry for ZIPX standard.<br>
-            <br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="zipx_specs"></a>.ZIPX</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">WinZip
-team, 2008<br>
-max 4 billion files per archive<br>
-16 EB maximum file size (archive, input files) <br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img alt="zipx file type specs"
- title="ZIPX compression speed" src="zip-files/star3.png"
- style="width: 80px; height: 16px;"></big></h4>
-                        <a name="zipx_vs_7z"></a>Zipx format features
-average speed: using PPMd or
-LZMA compression algorithms rather than Deflate, speed is comparable
-with WinRar' RAR or 7-Zip's 7Z rather than with classic ZIP compression.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img alt="zipx file format specifications"
- title="ZIPX compression ratio" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big></h4>
-Zipx format features very good compression: PPMd, and LZMA algorithms
-(and use of WavPack and JPEG
-pre-compression filters) provides compression ratio comparable to RAR
-and 7Z formats, so the format offers a flexible solution for fast
-archiving / backup (Deflate) and powerful slower compression (PPMd,
-LZMA)<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>ADVANCED
-OPTIONS <img alt="zipx extension specifications"
- title="ZIPX format options" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big></h4>
-Zipx features good advanded options, and it is designed to employ new
-AES-based WinZip AE encryption standard. It however lacks
-recovery records option
-available for competing RAR format.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="ZIPX file extension" alt="winzip archive format"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="zipx file type"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name=".zipx_extension"></a><span style="font-weight: bold;">ZIPX file extension</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="what zipx extension stands for" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="what does zipx extension means" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0); font-weight: bold;">
+                      <h2><big><big style="font-weight: bold;"><big><a name="zipx_specifications"></a><a
+                                href="zipx-file-format.html#.zipx_extension">What is ZIPX file type,
+                                WinZip archive format</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>ZIPX extension</big></h3>
+                    <br>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <a name="what_is_zipx_file"></a>ZIPX file extension
+                    designates, <a
+                      href="https://support.winzip.com/hc/en-us/articles/115011394208-What-is-a-Zipx-File-">by
+                      definition<img title="ZIPX definition" alt="zipx file format definition"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, a ZIP
+                    file employing a compression method different than Deflate or Deflate64.<br>
+                    The extension was introduced by WinZip team,
+                    starting from
+                    WinZip 12.1 (released as trialware program on 13 September 2008), in
+                    order to differentiate files created with new compression algorithms
+                    from ZIP files compressed with classic Deflate algorithm - as legacy
+                    applications would be not able to read new files.<br>
+                    <br>
+                    Like for ZIP files, WinZip provides its custom <a href="file-split.html"><span
+                        style="font-weight: bold;">file spanning</span></a>
+                    scheme for splitting
+                    ZIPX archives (Z01 extension).<br>
+                    <br>
+                    PeaZip can <a href="zipx-files-software.html">create, open and extract
+                      ZIPX
+                      files</a> with <a href="bzip2-file.html">Bzip2</a>, LZMA, LZMA2 / XZ,
+                    and PPMd (technically ZIPX files by definition); custom WavPack, MP3
+                    and JPEG pre-compression filters are currently unsupported (both for
+                    reading and for writing).<br>
+                    To add support to WavPack in PeaZip, you can use <a target="_blank"
+                      href="https://www.tc4shell.com/en/7zip/wavpack7z/">WavPack7z<img title="ZIPX WavPack"
+                        alt="WavPack standard" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> plugin
+                    (free of charge, closed source, hence cannot be provided with PeaZip
+                    packages), simply extracting the 32 or 64 bit plugin in PeaZip's
+                    folder, in (peazip)/res/7z/Codecs path.<br>
+                    <h2><img title="ZIPX format creation" alt="zipx file format" src="add-to-archive.png"
+                        style="width: 100px; height: 45px;"></h2>
+                    <h3><img title="ZIPX format extraction" alt="zipx file format features" src="extract-archive.png"
+                        style="width: 112px; height: 45px;"></h3>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>ZIPX file format specs</big></h3>
+                    <br>
+                    <a name="zipx_standard"></a>WinZip's ZIPX standard is based
+                    on PKZip's <a href="zip-file-format.html">ZIP format specifications</a>,
+                    with only difference of employing newer <span style="font-weight: bold;">data compression</span>
+                    algorithms - <span style="font-weight: bold;">BZip2</span>, <span
+                      style="font-weight: bold;">LZMA</span> / LZMA2 (XZ), <span style="font-weight: bold;">PPMd
+                    </span>and others
+                    (superseding
+                    classic Deflate / Deflate64 algorithm) - <a name="zipx_pre_compression_filters"></a>and employing
+                    custom <span style="font-weight: bold;">pre-compression filters</span>
+                    (WavPack, MP3 and JPEG filter) to improve compression of images and
+                    other
+                    media data structures.<br>
+                    This results in zipx providing
+                    higher, <a href="file-compression-performances.html">improved
+                      compression ratio</a> compared to classic zip/Deflate, at cost of
+                    higher
+                    computational cost,
+                    comparable with compression ratio of formats like <a href="what-is-rar-file.html">RAR</a>, <a
+                      href="ace-files-utility.html">ACE</a>,
+                    and
+                    in some cases <a href="7z-file-format.html">7-Zip's 7Z / XZ file format</a>
+                    - modern archiving formats also
+                    relying in LZMA and PPMd -family compression algorithms and multimedia
+                    precompressors.<br>
+                    <br>
+                    <span style="font-weight: bold;">ZIP or ZIPX file extension</span><br>
+                    The possibility of employing alternate compression methods is anyway
+                    already featured in standard ZIP format definition, so using an
+                    alternate designation as ZIPX is merely a choice and does not
+                    (technically) define a different, independent standard.<br>
+                    The <span style="font-weight: bold;">file extension</span>
+                    modification from zip to zipx was intended to avoid
+                    ambiguity with users (openly marking it as new type, with new
+                    extension) and prevent older archivers to try to handle the new zipx
+                    standard as it was a classic zip file, failing to support its newer
+                    features.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">ZIPX format
+                          compression performances</span></big></h4>
+                    <br>
+                    <a name="zipx_vs_rar"></a>On <a href="peazip-compression-benchmark.html">file compression
+                      benchmark</a>, and <a href="maximum-compression-benchmark.html">maximum
+                      compression benchmark</a>
+                    pages you
+                    can compare how .zpix format fares, in terms
+                    of compression ration and compression / extraction computation speed,
+                    with mainstream formats
+                    such as .7z, .rar, and .zip, testing various software implementations
+                    (PeaZip, WinRar, WinZip).<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">ZIPX format
+                          encryption features</span></big></h4>
+                    <br>
+                    <a name="zipx_aes_encryption"></a>ZIPX files supports
+                    new AES-based WinZip's <a href="encrypt-files.html"><span style="font-weight: bold;">AE
+                        encryption</span></a>
+                    (128 bit and 256 bit), which is also part of ZIP standard - and
+                    optionally, for legacy support only, old
+                    ZipCrypto (Zip 2.0) cryptography.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">ZIPX file format
+                          limitations</span></big></h4>
+                    <br>
+                    <a name="max_zipx_file_size_limit_specifications"></a>As in
+                    current Zip format revision, Zipx
+                    format is limited to maximum <span style="font-weight: bold;">4
+                      billion files per archive</span> (2^32)
+                    and to <span style="font-weight: bold;">16 EB as max file size</span>
+                    (2^64), either for the single input files
+                    and for the total size of the archive - as ZIP64 standard zip archives
+                    - likely exceeding user's needs and limits of current filesystems
+                    implementation.<br>
+                    Read more about <a href="rar-zip-file-format-size-limitations.html">size
+                      and number of items limitations of various archive types</a>.<br>
+                    <br>
+                    <br>
+                    <a name="zipx_file_format_specifications"></a>External
+                    online resources about .zipx archives: <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Zip_%28file_format%29">ZIPX<img title="ZIPX wiki"
+                        alt="zipx file format" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> Wikipedia
+                    page, <a target="_blank" href="http://kb.winzip.com/kb/entry/7">WinZip<img
+                        title="WinZip's .zipx specs" alt=".zipx type" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> Knowledge
+                    Base entry for ZIPX standard.<br>
+                    <br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="zipx_specs"></a>.ZIPX</big></big></big></big></big></h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            WinZip
+                                            team, 2008<br>
+                                            max 4 billion files per archive<br>
+                                            16 EB maximum file size (archive, input files) <br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="zipx file type specs" title="ZIPX compression speed"
+                                          src="zip-files/star3.png" style="width: 80px; height: 16px;"></big></h4>
+                                    <a name="zipx_vs_7z"></a>Zipx format features
+                                    average speed: using PPMd or
+                                    LZMA compression algorithms rather than Deflate, speed is comparable
+                                    with WinRar' RAR or 7-Zip's 7Z rather than with classic ZIP compression.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img alt="zipx file format specifications" title="ZIPX compression ratio"
+                                          src="zip-files/star4.png" style="width: 80px; height: 16px;"></big></h4>
+                                    Zipx format features very good compression: PPMd, and LZMA algorithms
+                                    (and use of WavPack and JPEG
+                                    pre-compression filters) provides compression ratio comparable to RAR
+                                    and 7Z formats, so the format offers a flexible solution for fast
+                                    archiving / backup (Deflate) and powerful slower compression (PPMd,
+                                    LZMA)<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>ADVANCED
+                                        OPTIONS <img alt="zipx extension specifications" title="ZIPX format options"
+                                          src="zip-files/star4.png" style="width: 80px; height: 16px;"></big></h4>
+                                    Zipx features good advanded options, and it is designed to employ new
+                                    AES-based WinZip AE encryption standard. It however lacks
+                                    recovery records option
+                                    available for competing RAR format.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: .ZIPX file
+                        extension. What is WinZip archive type. What are ZIPX file format
+                        specifications and features in terms of compression speed, compression
+                        ratio, advanced options, and encryption.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: zipx file
+                        extension specs, zip format vs zipx format<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        ZIPX file extension<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="winzip zipx archive extension" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <p><span style="font-weight: bold;">Synopsis: .ZIPX file
-extension. What is WinZip archive type. What are ZIPX file format
-specifications and features in terms of compression speed, compression
-ratio, advanced options, and encryption.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: zipx file
-extension specs, zip format vs zipx format<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-ZIPX file extension<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="winzip zipx archive extension" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="what are zipx file type specifications"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="what_is_zipx_file_extension"></a>DOWNLOADS<br>
+                      <img alt="zipx file format features" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="what is zipx extension" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="what_is_zipx_file_type"></a>SUPPORT<br>
+                      <img alt=".zipx file format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="What is ZIPX file type, WinZip archive format" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="What are zipx archives" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is zipx file format" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what are zipx file format specs" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="what are zipx file type specifications" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_is_zipx_file_extension"></a>DOWNLOADS<br>
-            <img alt="zipx file format features"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="what is zipx extension" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_is_zipx_file_type"></a>SUPPORT<br>
-            <img alt=".zipx file format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="What is ZIPX file type, WinZip archive format"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="What are zipx archives"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is zipx file format" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what are zipx file format specs"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

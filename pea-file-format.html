@@ -1,1224 +1,1163 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is PEA file type, secure PeaZip archives native format. What are Pea extension features and specifications, AES EAX mode authenticated encryption.">
+    content="What is PEA file type, secure PeaZip archives native format. What are Pea extension features and specifications, AES EAX mode authenticated encryption.">
   <meta name="KEYWORDS"
- content="what are, pea, peazip, what is, file, format, archives, type, extension, features, specifications, specs, pack, encrypt, authenticate">
+    content="what are, pea, peazip, what is, file, format, archives, type, extension, features, specifications, specs, pack, encrypt, authenticate">
   <meta name="ROBOTS" content="all">
   <title>What is PEA file format, features, specs</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is PEA file format, features, specs">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is PEA file format, features, specs">
   <meta property="og:description"
- content="What is PEA file type, secure PeaZip archives native format. What are Pea extension features and specifications, AES EAX mode authenticated encryption.">
+    content="What is PEA file type, secure PeaZip archives native format. What are Pea extension features and specifications, AES EAX mode authenticated encryption.">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/pea-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/pea-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="PEA file extension" alt="pea file format specs"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="what is pea file format" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name=".pea_specifications"></a><span
- style="font-weight: bold;">What is PEA format, features, specs</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="what is pea file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="peazip pea file format" src="free-rar/file-compressor.png"
- style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2><big style="font-weight: bold;"><big><big><a
- name=".pea_specs"></a></big></big></big><a
- href="pea-file-format.html#.pea_specifications"><big
- style="font-weight: bold;"><big><big>What
-are PEA
-files, format features and specifications</big></big></big><br>
-            </a></h2>
-            <div style="text-align: right;">
-            <div style="text-align: center;"> </div>
-            <div style="text-align: left;"><br>
-            <br>
-            </div>
-            <h3 style="font-weight: bold; text-align: left;"><big><big>PEA
-file
-format specifications version 1.4</big></big></h3>
-            </div>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">PEA file extension</big></h3>
-            <br>
-            <a name="what_is_pea_archive_format"></a>Pea (.pea file
-extension),
-acronym for
-Pack, Encrypt, Authenticate, designs a file format focused on data
-security, aiming to provide <span style="font-weight: bold;">archiving</span>,
-            <span style="font-weight: bold;">compression </span>and
-multi volume <a href="file-split.html"><span style="font-weight: bold;">file
-split</span></a> (spanning) feature in a single passage,
-along with
-flexible schemes of<span style="font-weight: bold;"> </span>optional <a
- href="verify-checksum-hash.html"><span style="font-weight: bold;">checksum
-/ hash integrity
-check</span></a>
-and <a href="encrypt-files.html"><span style="font-weight: bold;">authenticated
-file encryption</span></a> (AES in EAX or HMAC mode, alternatively
-Twofish and
-Serpent in EAX mode); PEA file format specifications are
-released under
-public domain.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">PEA
-specifications document<br>
-            </span></big></h4>
-            <br>
-            <a style="font-weight: bold;" href="pea_help.pdf">PEA file
-format specifications and implementation notes (pdf)</a><br>
-            <br>
-            <br>
-            <h4><big style="font-weight: bold;">PEA file format
-compression specs</big></h4>
-            <br>
-            <a name="pea_file_compression"></a>Pea compression is
-optional, at current level of implementation are
-defined only following levels: PCOMPRESS0 (store only, no compression),
-and PCOMPRESS1..3 based on deflate (reference zlib's compres/uncompres
-algorithm code), respectively at compression level 3, 6 and 9.<br>
-            <br>
-            <div style="text-align: justify;"><br>
-            <h3><big style="font-weight: bold;">PEA file format
-encryption and hasing specs</big></h3>
-            <br>
-PEA format security model
-acts
-at 3 levels: objects (input files and folders sent to .pea archive),
-volumes (output archive file that can be spanned to user defined size)
-and streams (the actual output data stream that is formed by multiple
-input files and can be written to multiple output volumes);
-each one of those levels can
-be omitted as needed by the user.</div>
-            <ul>
-              <li>Object level integrity checking is performed to
-detect errors with object level granularity on raw input data and all
-associated data (name, size, attributes, date-time);</li>
-              <ul>
-                <li>Current implementation allows: <a
- name="pea_integrity_checking"></a>Checksum (Adler32,
-CRC32, CRC64), Hash (MD5, SHA1, RIPEMD-160, SHA256, SHA512, Whirlpool,
-SHA3-256, SHA3-512, BLAKE2S, BLAKE2B)<br>
-                </li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Volume level integrity check is communication
-oriented and allow to discard single corrupted volumes in order to
-minimize, in case of error, the retransmission overhead;</li>
-              <ul>
-                <li>Current implementation allows same Checksum and
-Hash algorithms featured by Object level check<br>
-                </li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Stream level check offers wide choice of
-algorithms
-up to authenticated encryption, protecting privacy and authenticity of
-a group of objects sharing same security needs, including tags
-generated by object level checks;</li>
-              <ul>
-                <li>Current implementation allows same Checksum and
-Hash algorithms featured by Object and Volume levels, plus
-Authenticated encryption schemes: <a
- name="pea_authenticated_encryption"></a>HMAC mode AES128, EAX mode
-AES128,
-AES256, Serpent128, Serpent256, Twofish128, Twofish 256, triple cascade
-encrypttion combining AES, Twofish, and Serpent each 256 bit in EAX
-mode.<br>
-                </li>
-              </ul>
-            </ul>
-            <br>
-            <h4><big style="font-weight: bold;">PEA file format volume
-spanning specs</big></h4>
-            <br>
-Arbitrarily sized
-volume
-spanning allows the archive to be splitted in volumes of arbitrary
-size, with the only constrain of volumes being at least 10 byte bigger
-than volume control tag to allow passing (through archive's header)
-minimum needed information to the extraction application.<br>
-            <br>
-            <br>
-            <h4><big style="font-weight: bold;">PEA specs revisions</big></h4>
-            <br>
-PEA file format standard, as defined in version 1 revision 3
-specification, can
-store a single stream containing unlimited objects, each up to 2^64
-byte
-in size; current Pea executable supports 1.3 file format
-specifications (practically, archives are memory and filesystem-limited
-rather than format limited) and is backward compatible with previous
-revisions of the format.<br>
-            <br>
-PEA 2.0 file format specifications extend the concepts behind PEA 1.x
-file format and can store an unlimited number of stream, but the format
-is not actually supported by current Pea archiving utility.<br>
-            <br>
-            <br>
-            <h2><big style="font-weight: bold;">PEA format
-specifications table: max file size, compression, security...</big></h2>
-            <br>
-            <a name="pea_format_features"></a>Here, a brief table
-of
-features and limitations applying to file format and to current
-implementation:<br>
-            <div style="margin-left: 80px; text-align: center;"><br>
-            </div>
-            <div style="text-align: center;"> </div>
-            <table class="MsoNormalTable"
- style="border: medium none ; background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse; width: 800px; text-align: left; margin-left: auto; margin-right: auto;"
- border="1" cellpadding="0" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 149.4pt; background-color: rgb(224, 224, 192); font-weight: bold;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Feature</p>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="border-style: solid solid solid none; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt; background-color: rgb(224, 224, 192); font-weight: bold;"
- valign="top" width="252">
-                  <p style="text-align: justify;" class="MsoNormal">PEA
-file format </p>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="border-style: solid solid solid none; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt; background-color: rgb(224, 224, 192); font-weight: bold;"
- valign="top" width="252">
-                  <p style="text-align: justify;" class="MsoNormal">Current
-utility implementation</p>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                </tr>
-                <tr>
-                  <td colspan="3"
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; vertical-align: top; width: 527.4pt; background-color: rgb(255, 255, 240);">
-                  <p style="text-align: center;" class="MsoNormal"
- align="center">Archive</p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
                   </td>
                 </tr>
                 <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <h3><a
- href="rar-zip-file-format-size-limitations.html">Maximum
-PEA archive size</a></h3>
+                  <td style="vertical-align: top;"> <img title="PEA file extension" alt="pea file format specs"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; vertical-align: top; width: 189pt;">
-                  <p class="MsoNormal">PEA archive maximum size is
-unlimited, nohigher limit is set by
-the format design for maximum archive size, only filesystem size
-limitations applies<br>
-                  </p>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Maximum PEA archive size is
-limited to 16 YB (yottabyte), up to 999999 volumes of
-2^64-1
-byte each.<br>
-Please note under currently understanding using 128 bit block
-encryption it would be safe not to
-encrypt more than 2^64 byte with same key, better staying one or more
-orders of magnitude below.</p>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
                   </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
                 </tr>
                 <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Stream
-number</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1.3: single stream;</p>
-                  <p class="MsoNormal">2.0 unlimited number of
-streams;</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Single stream (1.3 file
-format)</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 527.4pt; background-color: rgb(255, 255, 240);"
- colspan="3" valign="top" width="703">
-                  <p style="text-align: center;" class="MsoNormal"
- align="center">Output</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Security</p>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="what is pea file format"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">Optional Authenticated
-Encryption, at stream level only. HMAC mode: AES128, EAX mode:
-AES 128 or 256bit, Serpent 128 / 256, Twofish 128 / 256, triple cascade
-encrypttion: AES+Twofish+Serpent, Twofish+Serpent+AES,
-Serpent+AES+Twofish each 256 bit in EAX mode</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Integrity
-check</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">AE tag (see security section) or
-hash or checksum
-at
-stream level, plus hash or checksum for input objects, and for output
-volumes.<br>
-                  </p>
-                  <p class="MsoNormal">Currently supported: Adler32,
-CRC32, CRC64 checksum algorithms; MD5, SHA1, RIPEMD-160, SHA-2 and
-SHA-3 families, and Whirlpool hash algorithms.<br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Error
-correction</p>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">No scheme featured at current
-level of development<br>
-                  </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Communication
-recovery</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Independent volume control
-check
-allow to identify corrupted volumes (first volume may be needed to know
-volume check algorithm)</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">No specific tool
-developed;
-volume check is done during extraction and then, allowing to repeat
-download only of corrupted volumes</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Data
-recovery</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Stream control tags allow
-to
-recognize correct streams, if better granularity is needed object
-control tags allow to recognize correct objects; input object names and
-POD trigger allow to identify objects and stream between the archive
-data;</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">No specific tool developed
-to
-try error resistant data extraction, however object check errors are
-reported to identify corrupted and non corrupted data if the extraction
-is successful</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Support
-for multi volume output</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">Native, requires a single
-pass. Raw file spanning compatible with Unix split command, and
-applications like HJSplit and 7-Zip.<br>
-                  </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Volume
-number</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1..unlimited</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1..999999 (6 digit counter
-string in
-output
-file name, after .pea file extension)</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Volume
-size</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Volume tag size +1..
-unlimited;
-first volume must contain at least 10 byte of data to allow parsing of
-the archive header, to allow unpacking application to&nbsp; calculate
-volume tag size</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Volume tag size +1..
-2^64-1
-(qword variable) ; first volume must contain at least 10 byte of data</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Compression</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">Native, requires single
-pass;
-schemes:</p>
-                  <p class="MsoNormal">PCOMPRESS0: no
-compression;
-PCOMPRESS1..3 based on deflate using zlib's compres/uncompres, level 3,
-6 and 9 respectively&nbsp;</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Solid
-archive</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
- colspan="2" valign="top" width="504">
-                  <p class="MsoNormal">Not implemented
-compression
-modes featuring the possibility of creating solid archive</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 527.4pt; background-color: rgb(255, 255, 240);"
- colspan="3" valign="top" width="703">
-                  <p style="text-align: center;" class="MsoNormal"
- align="center">Input</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Input
-types</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1.3: files and dirs;</p>
-                  <p class="MsoNormal">2.0: files, dirs, metadata
-stored as messages triggers</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Files and dirs (1.3)</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <h3>Maximum number of files/ objects in a PEA archive<br>
-                  </h3>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1..unlimited, theoretically a
-PEA archive can accept an unlimied number of input files</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Host system memory limited
-(input object list is stored in a dynamic array of strings)</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <h3>Maximum size of input file for PEA archive<br>
-                  </h3>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">0..2^64-1 16 EB maximum size for
-each input file<br>
-                  </p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">0..2^64-1 16 EB maximum size,
-likely limited by underlying filesystem technology<br>
-                  </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Input
-object qualified name size (size 0 mean that archive object is a
-trigger, no input object mapped to the archive object)</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1..2^16-1 64 KB of characters
-under any encoding<br>
-                  </p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">1..32K (exceeding needs,
-longer
-values are considered errors)</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
- valign="top" width="199">
-                  <p style="text-align: justify;" class="MsoNormal">Metadata</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Objects attributes and
-last
-modification time, optionally comments and any kind of meta content
-using messages</p>
-                  </td>
-                  <td
- style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
- valign="top" width="252">
-                  <p class="MsoNormal">Save object attributes and
-object last modification time. Restore only object attributes (on
-Microsoft Windows), nothing on *x</p>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <div style="text-align: center;"> </div>
-            <br>
-            <h3><big><span style="font-weight: bold;">Triple cascade
-encryption: AES, Twofish, Serpent each 256 bit in EAX mode</span></big></h3>
-            <br>
-PEA format revision 1.3 introduced multiple encryption, cascading AES,
-Twofish, and Sepent, 256 bit in EAX mode<br>
-            <ul>
-              <li>Each cipher is separately keyed through PBKDF2,
-following steps are taken to ensure the 3 keys are statistically
-independent after key schedule:</li>
-            </ul>
-            <ul style="margin-left: 40px;">
-              <li>key schedule of each cipher is based on a different
-hash primitive which is run for a different number of iterations:
-Whirlpool x 25000 for AES, SHA512 x 50000 for Twofish, SHA3-512 x 75000
-for Serpent (Whirlpool is significantly slower than SHA512 that is
-slower than SHA3-512)</li>
-              <li>key schedule of each cipher is provided a separate 96
-byte pseudorandom salt</li>
-              <li>password is modified when provided as input for key
-schedule of each cipher; modification are trivial xor with non secret
-values and counters, with the sole purpose to initialize the key
-derivation with different values and be a further factor (alongside
-different salt, and different hash / iteration number) to guarantee
-keys are a statistically independent</li>
-            </ul>
-            <ul>
-              <li>Password verification tag is the xor of the 3
-password verification tags of each encryption function, and is written
-/ verified after all 3 key initialization functions are completed
-before verification</li>
-            </ul>
-            <ul>
-              <li>Each block between password verification tag and
-stream authentication tag is encrypted with all 3 ciphers</li>
-            </ul>
-            <ul>
-              <li>A 1..128 bytes block of random data is added after
-password verification tag in order to mask exact archive size (this is
-the first block to be encrypted/decrypted)<br>
-              </li>
-            </ul>
-            <ul>
-              <li>Each cipher generate its own 128 bit sized stream
-authentication tag, tags are concatenated and hashed with SHA3-384; the
-SHA3-384 value is checked for verification, this requires all the 3
-tags to match to expected values and does not allow ciphers to be
-authenticated separately</li>
-            </ul>
-PEA format revision 1.4 introduced variable, user defined number of KDF
-rounds for the triple cascaded encryption, up to 20 million rounds for
-each of the 3 algorithms - also, please note rounds are based on 512
-bit hash primitives, which are more resources intensive than 256 bit
-counterparts.<br>
-            <br>
-Multiple encryption, if correctly implemented, is meant under current
-understandings to:<br>
-            <ol>
-              <li>Provide a larger keyspace than each single cipher,
-but smaller than the sum of the lengths of keyspaces due possibility of
-meet-in-the-middle type of attacks. However, such large keyspace may be
-overkilling even in event of
-significant quantum computing advancements: Grover's quantum algorithm
-which is the best-possible known attack for NP-complete problems
-provides a quadratic speed-up over a classic computing. Under those
-assumptions, as a role of thumb, a quantum computer will be able to
-brute force a 256 bit keyspace not faster than a classic machine can
-brute force a 128 bit keyspace, which is currently considered safe by a
-wide margin.</li>
-              <li>provide a security margin even in case all but one of
-the algorithms
-used as cipher (or key schedule hash) is compromised by a breakthrough
-in cryptanalysis, which seems unlike due the amount of theoretical work
-and real life testing behind mainstream primitives available today.</li>
-            </ol>
-Drawbacks of multiple encryption are:<br>
-            <ul>
-              <li>The inherent added complexity makes multiple
-encryption more prone to implementation errors</li>
-              <li>Performing multiple algorithms requires more
-computing power and consequently reduces performances. </li>
-            </ul>
-Performance penalty for cascaded encryption may be decisive for some
-classes of applications, but in case of file archiving as for PeaZip,
-where many other operations (potentially far slower as read / write to
-disk) are involved, the performance hit is quite reasonable: <br>
-            <ul>
-              <li>Test machine: notebook with Intel Core i7-8565U CPU,
-4 physical cores with hyper-threading (8 logical cores), 8 GB RAM, 512
-GB PCIe NVMe SSD, NTFS filesystem</li>
-              <li>Benchmark creation of PEA archive from 100MB input:</li>
-              <ul>
-                <li>7 seconds archive creation, 3 seconds archive
-extraction with AES256
-EAX, deflate compression, CRC32 and SHA3-256 integrity checks</li>
-                <li>8 seconds archive creation, 4 seconds archive
-extraction with Serpent
-256 EAX, deflate compression, CRC32 and SHA3-256 integrity checks
-(slower than AES and Twofish)</li>
-                <li>10 seconds archive creation, 6 seconds archive
-extraction with
-AES+Twofish+Serpent 256 EAX, deflate compression, CRC32 and SHA3-256
-integrity checks &#8211; the purposely slower key schedule, employed at
-startup for multiple encryption modes, also account for the extra time</li>
-              </ul>
-            </ul>
-            <br>
-            <a name="pea_format_specifications"></a>For a more complete
-explanation and discussion of the pea format
-specifications please see the documentation about <a
- href="pea_help.pdf">Pea archive format</a>
-design (.pdf).<br>
-            <br>
-            <h4><big style="font-weight: bold;">Use cases for PEA
-archive format</big></h4>
-            <big><span style="font-weight: bold;"></span></big><span
- style="font-weight: bold;"></span>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="PEA secure archive format features" alt="pea file extension"
- src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
-                  </td>
-                  <td style="vertical-align: top; font-style: italic;"><big>When
-it is recommended to use PEA format: it is a good choice for reasonably
-fast archiving and <a href="backup-files.html">backup</a>, when
-it is needed to guarantee confidentiality (data cannot be accessed
-without password), integrity, and autenticity - data can only be
-modified by recipient knowing the password, as data is subject to
-password-dependent, cryptographically strong verification.</big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="PEA secure file format specs"
- alt="secure archive format with aes encryption"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name=".pea_specifications"></a><span style="font-weight: bold;">What is PEA format,
+                              features, specs</span><br>
+                          </big></big></big></h1>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-weight: bold;"></span>
-            <table
- style="background-color: rgb(78, 126, 230); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img alt="what is pea file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img alt="peazip pea file format"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(88, 136, 240);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2><big style="font-weight: bold;"><big><big><a name=".pea_specs"></a></big></big></big><a
+                        href="pea-file-format.html#.pea_specifications"><big style="font-weight: bold;"><big><big>What
+                              are PEA
+                              files, format features and specifications</big></big></big><br>
+                      </a></h2>
+                    <div style="text-align: right;">
+                      <div style="text-align: center;"> </div>
+                      <div style="text-align: left;"><br>
                         <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big>.PEA</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Author:
-Giorgio Tani, 2006<br>
-no maximum number of input files<br>
-no maximum archive size<br>
-2^64 bytes max size for each input file<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>SPEED
-                        <img alt="secure AES encrypted file type"
- title="pea compression speed" src="zip-files/star3.png"
- style="width: 80px; height: 16px;"></big><br>
-Pea format features average speed, due lightweight, quick Deflate-based
-compression algorithm,
-and efficient encryption
-and hashing algorithms.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>COMPRESSION
-RATIO <img alt="pea secure archive specifications"
- title="pea compression performances" src="zip-files/star2.png"
- style="width: 80px; height: 16px;"></big><br>
-Pea format features moderate compression, due to fast
-Deflate-based compression, comparable with compression ratios of
-GZ and classic ZIP format, making it suitable to archive or backup
-large quantities of data in reasonable time.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>ADVANCED
-OPTIONS <img alt="pea secure file format specs"
- title="pea format options" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big><br>
-Pea format lacks some features of competing formats, but
-offers advanced security focused characteristics, as AES-based
-authenticated encryption (can be optionally be replaced by Serpent or
-Twofish EAX mode authenticated encryption), and triple cascade
-encryption..<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                      </div>
+                      <h3 style="font-weight: bold; text-align: left;"><big><big>PEA
+                            file
+                            format specifications version 1.4</big></big></h3>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">PEA file extension</big></h3>
+                    <br>
+                    <a name="what_is_pea_archive_format"></a>Pea (.pea file
+                    extension),
+                    acronym for
+                    Pack, Encrypt, Authenticate, designs a file format focused on data
+                    security, aiming to provide <span style="font-weight: bold;">archiving</span>,
+                    <span style="font-weight: bold;">compression </span>and
+                    multi volume <a href="file-split.html"><span style="font-weight: bold;">file
+                        split</span></a> (spanning) feature in a single passage,
+                    along with
+                    flexible schemes of<span style="font-weight: bold;"> </span>optional <a
+                      href="verify-checksum-hash.html"><span style="font-weight: bold;">checksum
+                        / hash integrity
+                        check</span></a>
+                    and <a href="encrypt-files.html"><span style="font-weight: bold;">authenticated
+                        file encryption</span></a> (AES in EAX or HMAC mode, alternatively
+                    Twofish and
+                    Serpent in EAX mode); PEA file format specifications are
+                    released under
+                    public domain.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">PEA
+                          specifications document<br>
+                        </span></big></h4>
+                    <br>
+                    <a style="font-weight: bold;" href="pea_help.pdf">PEA file
+                      format specifications and implementation notes (pdf)</a><br>
+                    <br>
+                    <br>
+                    <h4><big style="font-weight: bold;">PEA file format
+                        compression specs</big></h4>
+                    <br>
+                    <a name="pea_file_compression"></a>Pea compression is
+                    optional, at current level of implementation are
+                    defined only following levels: PCOMPRESS0 (store only, no compression),
+                    and PCOMPRESS1..3 based on deflate (reference zlib's compres/uncompres
+                    algorithm code), respectively at compression level 3, 6 and 9.<br>
+                    <br>
+                    <div style="text-align: justify;"><br>
+                      <h3><big style="font-weight: bold;">PEA file format
+                          encryption and hasing specs</big></h3>
+                      <br>
+                      PEA format security model
+                      acts
+                      at 3 levels: objects (input files and folders sent to .pea archive),
+                      volumes (output archive file that can be spanned to user defined size)
+                      and streams (the actual output data stream that is formed by multiple
+                      input files and can be written to multiple output volumes);
+                      each one of those levels can
+                      be omitted as needed by the user.
+                    </div>
+                    <ul>
+                      <li>Object level integrity checking is performed to
+                        detect errors with object level granularity on raw input data and all
+                        associated data (name, size, attributes, date-time);</li>
+                      <ul>
+                        <li>Current implementation allows: <a name="pea_integrity_checking"></a>Checksum (Adler32,
+                          CRC32, CRC64), Hash (MD5, SHA1, RIPEMD-160, SHA256, SHA512, Whirlpool,
+                          SHA3-256, SHA3-512, BLAKE2S, BLAKE2B)<br>
+                        </li>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>Volume level integrity check is communication
+                        oriented and allow to discard single corrupted volumes in order to
+                        minimize, in case of error, the retransmission overhead;</li>
+                      <ul>
+                        <li>Current implementation allows same Checksum and
+                          Hash algorithms featured by Object level check<br>
+                        </li>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>Stream level check offers wide choice of
+                        algorithms
+                        up to authenticated encryption, protecting privacy and authenticity of
+                        a group of objects sharing same security needs, including tags
+                        generated by object level checks;</li>
+                      <ul>
+                        <li>Current implementation allows same Checksum and
+                          Hash algorithms featured by Object and Volume levels, plus
+                          Authenticated encryption schemes: <a name="pea_authenticated_encryption"></a>HMAC mode AES128,
+                          EAX mode
+                          AES128,
+                          AES256, Serpent128, Serpent256, Twofish128, Twofish 256, triple cascade
+                          encrypttion combining AES, Twofish, and Serpent each 256 bit in EAX
+                          mode.<br>
+                        </li>
+                      </ul>
+                    </ul>
+                    <br>
+                    <h4><big style="font-weight: bold;">PEA file format volume
+                        spanning specs</big></h4>
+                    <br>
+                    Arbitrarily sized
+                    volume
+                    spanning allows the archive to be splitted in volumes of arbitrary
+                    size, with the only constrain of volumes being at least 10 byte bigger
+                    than volume control tag to allow passing (through archive's header)
+                    minimum needed information to the extraction application.<br>
+                    <br>
+                    <br>
+                    <h4><big style="font-weight: bold;">PEA specs revisions</big></h4>
+                    <br>
+                    PEA file format standard, as defined in version 1 revision 3
+                    specification, can
+                    store a single stream containing unlimited objects, each up to 2^64
+                    byte
+                    in size; current Pea executable supports 1.3 file format
+                    specifications (practically, archives are memory and filesystem-limited
+                    rather than format limited) and is backward compatible with previous
+                    revisions of the format.<br>
+                    <br>
+                    PEA 2.0 file format specifications extend the concepts behind PEA 1.x
+                    file format and can store an unlimited number of stream, but the format
+                    is not actually supported by current Pea archiving utility.<br>
+                    <br>
+                    <br>
+                    <h2><big style="font-weight: bold;">PEA format
+                        specifications table: max file size, compression, security...</big></h2>
+                    <br>
+                    <a name="pea_format_features"></a>Here, a brief table
+                    of
+                    features and limitations applying to file format and to current
+                    implementation:<br>
+                    <div style="margin-left: 80px; text-align: center;"><br>
+                    </div>
+                    <div style="text-align: center;"> </div>
+                    <table class="MsoNormalTable"
+                      style="border: medium none ; background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse; width: 800px; text-align: left; margin-left: auto; margin-right: auto;"
+                      border="1" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td
+                            style="border: 1pt solid windowtext; padding: 0cm 5.4pt; width: 149.4pt; background-color: rgb(224, 224, 192); font-weight: bold;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Feature</p>
+                          </td>
+                          <td
+                            style="border-style: solid solid solid none; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt; background-color: rgb(224, 224, 192); font-weight: bold;"
+                            valign="top" width="252">
+                            <p style="text-align: justify;" class="MsoNormal">PEA
+                              file format </p>
+                          </td>
+                          <td
+                            style="border-style: solid solid solid none; border-width: 1pt 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt; background-color: rgb(224, 224, 192); font-weight: bold;"
+                            valign="top" width="252">
+                            <p style="text-align: justify;" class="MsoNormal">Current
+                              utility implementation</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3"
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; vertical-align: top; width: 527.4pt; background-color: rgb(255, 255, 240);">
+                            <p style="text-align: center;" class="MsoNormal" align="center">Archive</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <h3><a href="rar-zip-file-format-size-limitations.html">Maximum
+                                PEA archive size</a></h3>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; vertical-align: top; width: 189pt;">
+                            <p class="MsoNormal">PEA archive maximum size is
+                              unlimited, nohigher limit is set by
+                              the format design for maximum archive size, only filesystem size
+                              limitations applies<br>
+                            </p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Maximum PEA archive size is
+                              limited to 16 YB (yottabyte), up to 999999 volumes of
+                              2^64-1
+                              byte each.<br>
+                              Please note under currently understanding using 128 bit block
+                              encryption it would be safe not to
+                              encrypt more than 2^64 byte with same key, better staying one or more
+                              orders of magnitude below.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Stream
+                              number</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1.3: single stream;</p>
+                            <p class="MsoNormal">2.0 unlimited number of
+                              streams;</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Single stream (1.3 file
+                              format)</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 527.4pt; background-color: rgb(255, 255, 240);"
+                            colspan="3" valign="top" width="703">
+                            <p style="text-align: center;" class="MsoNormal" align="center">Output</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Security</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">Optional Authenticated
+                              Encryption, at stream level only. HMAC mode: AES128, EAX mode:
+                              AES 128 or 256bit, Serpent 128 / 256, Twofish 128 / 256, triple cascade
+                              encrypttion: AES+Twofish+Serpent, Twofish+Serpent+AES,
+                              Serpent+AES+Twofish each 256 bit in EAX mode</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Integrity
+                              check</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">AE tag (see security section) or
+                              hash or checksum
+                              at
+                              stream level, plus hash or checksum for input objects, and for output
+                              volumes.<br>
+                            </p>
+                            <p class="MsoNormal">Currently supported: Adler32,
+                              CRC32, CRC64 checksum algorithms; MD5, SHA1, RIPEMD-160, SHA-2 and
+                              SHA-3 families, and Whirlpool hash algorithms.<br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Error
+                              correction</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">No scheme featured at current
+                              level of development<br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Communication
+                              recovery</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Independent volume control
+                              check
+                              allow to identify corrupted volumes (first volume may be needed to know
+                              volume check algorithm)</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">No specific tool
+                              developed;
+                              volume check is done during extraction and then, allowing to repeat
+                              download only of corrupted volumes</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Data
+                              recovery</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Stream control tags allow
+                              to
+                              recognize correct streams, if better granularity is needed object
+                              control tags allow to recognize correct objects; input object names and
+                              POD trigger allow to identify objects and stream between the archive
+                              data;</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">No specific tool developed
+                              to
+                              try error resistant data extraction, however object check errors are
+                              reported to identify corrupted and non corrupted data if the extraction
+                              is successful</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Support
+                              for multi volume output</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">Native, requires a single
+                              pass. Raw file spanning compatible with Unix split command, and
+                              applications like HJSplit and 7-Zip.<br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Volume
+                              number</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1..unlimited</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1..999999 (6 digit counter
+                              string in
+                              output
+                              file name, after .pea file extension)</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Volume
+                              size</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Volume tag size +1..
+                              unlimited;
+                              first volume must contain at least 10 byte of data to allow parsing of
+                              the archive header, to allow unpacking application to&nbsp; calculate
+                              volume tag size</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Volume tag size +1..
+                              2^64-1
+                              (qword variable) ; first volume must contain at least 10 byte of data</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Compression</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">Native, requires single
+                              pass;
+                              schemes:</p>
+                            <p class="MsoNormal">PCOMPRESS0: no
+                              compression;
+                              PCOMPRESS1..3 based on deflate using zlib's compres/uncompres, level 3,
+                              6 and 9 respectively&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Solid
+                              archive</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 378pt;"
+                            colspan="2" valign="top" width="504">
+                            <p class="MsoNormal">Not implemented
+                              compression
+                              modes featuring the possibility of creating solid archive</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 527.4pt; background-color: rgb(255, 255, 240);"
+                            colspan="3" valign="top" width="703">
+                            <p style="text-align: center;" class="MsoNormal" align="center">Input</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Input
+                              types</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1.3: files and dirs;</p>
+                            <p class="MsoNormal">2.0: files, dirs, metadata
+                              stored as messages triggers</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Files and dirs (1.3)</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <h3>Maximum number of files/ objects in a PEA archive<br>
+                            </h3>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1..unlimited, theoretically a
+                              PEA archive can accept an unlimied number of input files</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Host system memory limited
+                              (input object list is stored in a dynamic array of strings)</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <h3>Maximum size of input file for PEA archive<br>
+                            </h3>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">0..2^64-1 16 EB maximum size for
+                              each input file<br>
+                            </p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">0..2^64-1 16 EB maximum size,
+                              likely limited by underlying filesystem technology<br>
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Input
+                              object qualified name size (size 0 mean that archive object is a
+                              trigger, no input object mapped to the archive object)</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1..2^16-1 64 KB of characters
+                              under any encoding<br>
+                            </p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">1..32K (exceeding needs,
+                              longer
+                              values are considered errors)</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="border-style: none solid solid; border-width: medium 1pt 1pt; padding: 0cm 5.4pt; width: 149.4pt;"
+                            valign="top" width="199">
+                            <p style="text-align: justify;" class="MsoNormal">Metadata</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Objects attributes and
+                              last
+                              modification time, optionally comments and any kind of meta content
+                              using messages</p>
+                          </td>
+                          <td
+                            style="border-style: none solid solid none; border-width: medium 1pt 1pt medium; padding: 0cm 5.4pt; width: 189pt;"
+                            valign="top" width="252">
+                            <p class="MsoNormal">Save object attributes and
+                              object last modification time. Restore only object attributes (on
+                              Microsoft Windows), nothing on *x</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div style="text-align: center;"> </div>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">Triple cascade
+                          encryption: AES, Twofish, Serpent each 256 bit in EAX mode</span></big></h3>
+                    <br>
+                    PEA format revision 1.3 introduced multiple encryption, cascading AES,
+                    Twofish, and Sepent, 256 bit in EAX mode<br>
+                    <ul>
+                      <li>Each cipher is separately keyed through PBKDF2,
+                        following steps are taken to ensure the 3 keys are statistically
+                        independent after key schedule:</li>
+                    </ul>
+                    <ul style="margin-left: 40px;">
+                      <li>key schedule of each cipher is based on a different
+                        hash primitive which is run for a different number of iterations:
+                        Whirlpool x 25000 for AES, SHA512 x 50000 for Twofish, SHA3-512 x 75000
+                        for Serpent (Whirlpool is significantly slower than SHA512 that is
+                        slower than SHA3-512)</li>
+                      <li>key schedule of each cipher is provided a separate 96
+                        byte pseudorandom salt</li>
+                      <li>password is modified when provided as input for key
+                        schedule of each cipher; modification are trivial xor with non secret
+                        values and counters, with the sole purpose to initialize the key
+                        derivation with different values and be a further factor (alongside
+                        different salt, and different hash / iteration number) to guarantee
+                        keys are a statistically independent</li>
+                    </ul>
+                    <ul>
+                      <li>Password verification tag is the xor of the 3
+                        password verification tags of each encryption function, and is written
+                        / verified after all 3 key initialization functions are completed
+                        before verification</li>
+                    </ul>
+                    <ul>
+                      <li>Each block between password verification tag and
+                        stream authentication tag is encrypted with all 3 ciphers</li>
+                    </ul>
+                    <ul>
+                      <li>A 1..128 bytes block of random data is added after
+                        password verification tag in order to mask exact archive size (this is
+                        the first block to be encrypted/decrypted)<br>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>Each cipher generate its own 128 bit sized stream
+                        authentication tag, tags are concatenated and hashed with SHA3-384; the
+                        SHA3-384 value is checked for verification, this requires all the 3
+                        tags to match to expected values and does not allow ciphers to be
+                        authenticated separately</li>
+                    </ul>
+                    PEA format revision 1.4 introduced variable, user defined number of KDF
+                    rounds for the triple cascaded encryption, up to 20 million rounds for
+                    each of the 3 algorithms - also, please note rounds are based on 512
+                    bit hash primitives, which are more resources intensive than 256 bit
+                    counterparts.<br>
+                    <br>
+                    Multiple encryption, if correctly implemented, is meant under current
+                    understandings to:<br>
+                    <ol>
+                      <li>Provide a larger keyspace than each single cipher,
+                        but smaller than the sum of the lengths of keyspaces due possibility of
+                        meet-in-the-middle type of attacks. However, such large keyspace may be
+                        overkilling even in event of
+                        significant quantum computing advancements: Grover's quantum algorithm
+                        which is the best-possible known attack for NP-complete problems
+                        provides a quadratic speed-up over a classic computing. Under those
+                        assumptions, as a role of thumb, a quantum computer will be able to
+                        brute force a 256 bit keyspace not faster than a classic machine can
+                        brute force a 128 bit keyspace, which is currently considered safe by a
+                        wide margin.</li>
+                      <li>provide a security margin even in case all but one of
+                        the algorithms
+                        used as cipher (or key schedule hash) is compromised by a breakthrough
+                        in cryptanalysis, which seems unlike due the amount of theoretical work
+                        and real life testing behind mainstream primitives available today.</li>
+                    </ol>
+                    Drawbacks of multiple encryption are:<br>
+                    <ul>
+                      <li>The inherent added complexity makes multiple
+                        encryption more prone to implementation errors</li>
+                      <li>Performing multiple algorithms requires more
+                        computing power and consequently reduces performances. </li>
+                    </ul>
+                    Performance penalty for cascaded encryption may be decisive for some
+                    classes of applications, but in case of file archiving as for PeaZip,
+                    where many other operations (potentially far slower as read / write to
+                    disk) are involved, the performance hit is quite reasonable: <br>
+                    <ul>
+                      <li>Test machine: notebook with Intel Core i7-8565U CPU,
+                        4 physical cores with hyper-threading (8 logical cores), 8 GB RAM, 512
+                        GB PCIe NVMe SSD, NTFS filesystem</li>
+                      <li>Benchmark creation of PEA archive from 100MB input:</li>
+                      <ul>
+                        <li>7 seconds archive creation, 3 seconds archive
+                          extraction with AES256
+                          EAX, deflate compression, CRC32 and SHA3-256 integrity checks</li>
+                        <li>8 seconds archive creation, 4 seconds archive
+                          extraction with Serpent
+                          256 EAX, deflate compression, CRC32 and SHA3-256 integrity checks
+                          (slower than AES and Twofish)</li>
+                        <li>10 seconds archive creation, 6 seconds archive
+                          extraction with
+                          AES+Twofish+Serpent 256 EAX, deflate compression, CRC32 and SHA3-256
+                          integrity checks &#8211; the purposely slower key schedule, employed at
+                          startup for multiple encryption modes, also account for the extra time</li>
+                      </ul>
+                    </ul>
+                    <br>
+                    <a name="pea_format_specifications"></a>For a more complete
+                    explanation and discussion of the pea format
+                    specifications please see the documentation about <a href="pea_help.pdf">Pea archive format</a>
+                    design (.pdf).<br>
+                    <br>
+                    <h4><big style="font-weight: bold;">Use cases for PEA
+                        archive format</big></h4>
+                    <big><span style="font-weight: bold;"></span></big><span style="font-weight: bold;"></span>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="PEA secure archive format features"
+                                  alt="pea file extension" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><big>When
+                              it is recommended to use PEA format: it is a good choice for reasonably
+                              fast archiving and <a href="backup-files.html">backup</a>, when
+                              it is needed to guarantee confidentiality (data cannot be accessed
+                              without password), integrity, and autenticity - data can only be
+                              modified by recipient knowing the password, as data is subject to
+                              password-dependent, cryptographically strong verification.</big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="PEA secure file format specs"
+                                alt="secure archive format with aes encryption" src="file-format/quotes-inverse.png"
+                                style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-weight: bold;"></span>
+                    <table style="background-color: rgb(78, 126, 230); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(88, 136, 240);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big>.PEA</big></big></big></big></big></h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Author:
+                                            Giorgio Tani, 2006<br>
+                                            no maximum number of input files<br>
+                                            no maximum archive size<br>
+                                            2^64 bytes max size for each input file<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>SPEED
+                                      <img alt="secure AES encrypted file type" title="pea compression speed"
+                                        src="zip-files/star3.png" style="width: 80px; height: 16px;"></big><br>
+                                    Pea format features average speed, due lightweight, quick Deflate-based
+                                    compression algorithm,
+                                    and efficient encryption
+                                    and hashing algorithms.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <big>COMPRESSION
+                                      RATIO <img alt="pea secure archive specifications"
+                                        title="pea compression performances" src="zip-files/star2.png"
+                                        style="width: 80px; height: 16px;"></big><br>
+                                    Pea format features moderate compression, due to fast
+                                    Deflate-based compression, comparable with compression ratios of
+                                    GZ and classic ZIP format, making it suitable to archive or backup
+                                    large quantities of data in reasonable time.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <big>ADVANCED
+                                      OPTIONS <img alt="pea secure file format specs" title="pea format options"
+                                        src="zip-files/star4.png" style="width: 80px; height: 16px;"></big><br>
+                                    Pea format lacks some features of competing formats, but
+                                    offers advanced security focused characteristics, as AES-based
+                                    authenticated encryption (can be optionally be replaced by Serpent or
+                                    Twofish EAX mode authenticated encryption), and triple cascade
+                                    encryption..<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis</span><span style="font-weight: bold;">: Pea file
+                        format
+                        specifications. What .pea file extension stands for? What are pea file
+                        format features in terms of compression ratio, compression speed,
+                        advanced authenticated encryption options?<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: pea file
+                        extension specs, pea authenticated encryption<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
+                        What is PEA file format, features, specs<br>
+                      </span></p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="pea format specs" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p> </p>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <p><span style="font-weight: bold;">Synopsis</span><span
- style="font-weight: bold;">: Pea file format
-specifications. What .pea file extension stands for? What are pea file
-format features in terms of compression ratio, compression speed,
-advanced authenticated encryption options?<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: pea file
-extension specs, pea authenticated encryption<br>
-            </span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ &gt;
-What is PEA file format, features, specs<br>
-            </span></p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="pea format specs" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="what are pea archives" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="what_is_pea_file_extension"></a>DOWNLOADS<br>
+                      <img alt="pea file type" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="what are pea files" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="what_is_pea_file_type"></a>SUPPORT<br>
+                      <img alt="pea archive format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="What is PEA file type, secure PeaZip archives native format"
+                                title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt=".pea file extension" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="pea extension" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="pea file type" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p> </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="what are pea archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_is_pea_file_extension"></a>DOWNLOADS<br>
-            <img alt="pea file type" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="what are pea files" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="what_is_pea_file_type"></a>SUPPORT<br>
-            <img alt="pea archive format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="What is PEA file type, secure PeaZip archives native format"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt=".pea file extension"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="pea extension" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="pea file type" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

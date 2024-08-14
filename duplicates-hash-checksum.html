@@ -1,566 +1,519 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Detect duplicate files, search identical content. How to compare multiple CRC MD5 SHA hash, checksum values. Find redundant data to remove (deduplicate)">
+    content="Detect duplicate files, search identical content. How to compare multiple CRC MD5 SHA hash, checksum values. Find redundant data to remove (deduplicate)">
   <meta name="KEYWORDS"
- content="find, detect, search, duplicate, files, identical, content, how to, compare, CRC, MD5, SHA, hash, checksum, deduplicate, redundant, data, remove.">
+    content="find, detect, search, duplicate, files, identical, content, how to, compare, CRC, MD5, SHA, hash, checksum, deduplicate, redundant, data, remove.">
   <meta name="ROBOTS" content="all">
   <title>Find and remove duplicate files</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="Free duplicate finder utility, remove identical files">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="Free duplicate finder utility, remove identical files">
   <meta property="og:description"
- content="Detect duplicate files, search identical content. How to compare multiple CRC MD5 SHA hash, checksum values. Software to find redundant data to remove (deduplicate)">
+    content="Detect duplicate files, search identical content. How to compare multiple CRC MD5 SHA hash, checksum values. Software to find redundant data to remove (deduplicate)">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/duplicates-hash-checksum.html">
+  <meta property="og:url" content="https://peazip.github.io/duplicates-hash-checksum.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Deduplicate data: find and remove identical files"
- alt="remove duplicate files" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="find duplicate files" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="detect_identical_file"></a><span
- style="font-weight: bold;">Find and remove duplicate files</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="How to compare multiple CRC MD5 SHA hash, checksum values"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- style="width: 2px; height: 2px;" src="free-rar/file-compressor.png"
- alt="Software to find redundant data to remove (deduplicate)"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big style="font-weight: bold;"><big><a
- name="duplicate_hash_checksum"></a><a
- href="duplicates-hash-checksum.html#detect_identical_file">How to
-detect duplicate files with identical
-checksum, hash value</a></big></big><br>
-            </big></h2>
-            </div>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Deduplicate data to recduce disk occupation"
- alt="how to detect identical files" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;">Data
-deduplication, to identify and (possibly) remove duplicate
-content, is important to <a href="file-compression-performances.html">reduce
-disk occupation</a> without loss of information (the data being removed
-exists in other copies), in order to keep under control the <a
- href="backup-files.html">size of
-backup</a> -
-possibly speeding up the process and sparing space on backup media
-supports - and to reduce the final size of compressed archives. Some
-compressors
-pushes the principle further and integrate mechanisms to identify
-/ remove duplicate data blocks in order to improve compression ratio.</td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img
- title="Remove redundant data to spare disk space"
- alt="ho to find duplicate content" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="Deduplicate data: find and remove identical files"
+                      alt="remove duplicate files" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="find duplicate files"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="detect_identical_file"></a><span style="font-weight: bold;">Find and remove
+                              duplicate files</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="How to compare multiple CRC MD5 SHA hash, checksum values" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img style="width: 2px; height: 2px;"
+              src="free-rar/file-compressor.png" alt="Software to find redundant data to remove (deduplicate)"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <h2 style="font-weight: bold;"><big>Search for duplicate
-files</big></h2>
-            <br>
-            <a name="find_duplicate_files"></a>When browsing a
-filesystem the file
-browser can <span style="font-weight: bold;">show file checksum /
-hash value</span> on demand in last column, allowing to identify binary
-identical files which have same checksum/hash value.<br>
-            <a name="search_identical_files"></a>Clicking the name of
-the function (after rightclicking the file manager colum header)
-PeaZip file manager will display hash or checksum value for all (or
-selected) files. Clicking "<span style="font-weight: bold;">Find
-duplicates</span>" PeaZip file manager will work as duplicate finder
-utility, displaying size and hash or checksum value
-only for duplicate files - same binary identical content featured in
-two or more distinct files - and will report the number of non-unique
-files
-identified.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
               <tbody>
-                <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Find duplicates" alt="remove duplicate files"
- src="file-format/information.png" style="width: 48px; height: 48px;"></span></h3>
-                  <h3><span style="font-weight: bold;"> </span></h3>
-                  </td>
-                  <td
- style="font-style: italic; vertical-align: middle;">
-                  <p><a name="search_file_duplicates"></a><span
- style="background-color: rgb(255, 238, 221);">In both
-cases, sorting for CRC column allows to group all files (in
-same folder, or same search filter) with identical hash or checksum,
-making easier to detect and remove (if necessary) binary identical
-files.</span></p>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big style="font-weight: bold;"><big><a name="duplicate_hash_checksum"></a><a
+                                href="duplicates-hash-checksum.html#detect_identical_file">How to
+                                detect duplicate files with identical
+                                checksum, hash value</a></big></big><br>
+                        </big></h2>
+                    </div>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h3><span style="font-weight: bold;"><img
+                                  title="Deduplicate data to recduce disk occupation"
+                                  alt="how to detect identical files" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h3>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">Data
+                            deduplication, to identify and (possibly) remove duplicate
+                            content, is important to <a href="file-compression-performances.html">reduce
+                              disk occupation</a> without loss of information (the data being removed
+                            exists in other copies), in order to keep under control the <a href="backup-files.html">size
+                              of
+                              backup</a> -
+                            possibly speeding up the process and sparing space on backup media
+                            supports - and to reduce the final size of compressed archives. Some
+                            compressors
+                            pushes the principle further and integrate mechanisms to identify
+                            / remove duplicate data blocks in order to improve compression ratio.</td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Remove redundant data to spare disk space"
+                                alt="ho to find duplicate content" src="file-format/quotes-inverse.png"
+                                style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h2 style="font-weight: bold;"><big>Search for duplicate
+                        files</big></h2>
+                    <br>
+                    <a name="find_duplicate_files"></a>When browsing a
+                    filesystem the file
+                    browser can <span style="font-weight: bold;">show file checksum /
+                      hash value</span> on demand in last column, allowing to identify binary
+                    identical files which have same checksum/hash value.<br>
+                    <a name="search_identical_files"></a>Clicking the name of
+                    the function (after rightclicking the file manager colum header)
+                    PeaZip file manager will display hash or checksum value for all (or
+                    selected) files. Clicking "<span style="font-weight: bold;">Find
+                      duplicates</span>" PeaZip file manager will work as duplicate finder
+                    utility, displaying size and hash or checksum value
+                    only for duplicate files - same binary identical content featured in
+                    two or more distinct files - and will report the number of non-unique
+                    files
+                    identified.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h3><span style="font-weight: bold;"><img title="Find duplicates"
+                                  alt="remove duplicate files" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"></span></h3>
+                            <h3><span style="font-weight: bold;"> </span></h3>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;">
+                            <p><a name="search_file_duplicates"></a><span
+                                style="background-color: rgb(255, 238, 221);">In both
+                                cases, sorting for CRC column allows to group all files (in
+                                same folder, or same search filter) with identical hash or checksum,
+                                making easier to detect and remove (if necessary) binary identical
+                                files.</span></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="background-color: rgb(255, 238, 221);"></span><br>
+                    <span style="font-weight: bold;">Set the algorithm to
+                      detect duplicates</span><br>
+                    <a name="find_duplicate_file_by_hash_value"></a>The
+                    default verification function used to deduplicate files can be set in
+                    main
+                    application's menu:
+                    Organize, Browser,
+                    Checksum/hash), a wide selection of algorithms can be selected, ranging
+                    from simple checksum functions as Adler32, CRC family (CRC16/24/32, and
+                    CRC64) to hash functions like eDonkey/eMule, MD4, MD5, and
+                    cryptographically strong hash as Ripemd160, SHA-1, SHA-2
+                    (SHA256 and SHA512), SHA-3 256 and 512 bit, BLAKE2S and BLAKE 2B, and
+                    Whirlpool512.<br>
+                    <br>
+                    <br style="font-weight: bold;">
+                    <h3 style="font-weight: bold;"><big>Detect duplicate files
+                        in archives</big></h3>
+                    <br>
+                    <a name="search_duplicate_content"></a>When browsing an
+                    archive this on demand verification is not
+                    available, but some archive types provides the same integrity-checking
+                    information, saving for each archived object the pre-computed
+                    checksum or hash value depending on the archive format, and on the
+                    archival settings employed - i.e. CRC32 in ZIP archives -
+                    allowing to sort archive content by CRC column to group identical files
+                    and find out duplicates.<br>
+                    <br>
+                    <br style="font-weight: bold;">
+                    <h4 style="font-weight: bold;"><big>Find similar images</big></h4>
+                    <br>
+                    When browsing a filesystem, PeaZip file manager can <a
+                      href="compress-resize-jpeg-png-files.html">display
+                      image thumbnails</a> to help deduplication:
+                    in context
+                    menu, organize, check show picture thumbnails, or select a file
+                    browser's preset style showing thumbnails.<br>
+                    <a name="find_identical_images"></a>While checksum/hash
+                    based inspection allows to search for exactly identical
+                    files (and images), thumbnails allows the user to visually detect
+                    similar images
+                    (i.e. same picture or graphic saved in different formats, or with
+                    different color depth or compression settings, or scaled to different
+                    sizes), to help in deciding if the (pseudo) duplication is acceptable,
+                    and what copy (or version) to keep or delete. <br>
+                    As role of thumb for deleting extra versions, the best quality image
+                    (larger resolution, lower compression or possibly lossless format as
+                    RAW, BMP, TIFF, PNG) should be kept, discarding lower quality copies:
+                    once lost, information/quality cannot be recreated.<br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Compare multiple
+                        checksum and hash values at once</big></h3>
+                    <br>
+                    <span style="font-weight: bold;"><a name="batch_search_for_duplicate_files"></a>Check files</span>
+                    launches separate duplicate finder utility, from
+                    "File tools" submenu (context menu) or "Test" button dropdown, which
+                    allows to <a href="verify-checksum-hash.html">verify multiple hash
+                      and
+                      checksum algorithms</a>
+                    of multiple files at once<span style="font-style: italic;">.<br>
+                    </span>
+                    <h3><span style="font-style: italic;"><img title="Test for duplicate content"
+                          alt="find duplicate files" src="test-archive.png" style="width: 100px; height: 45px;"></span>
+                    </h3>
+                    <h2><span style="font-style: italic;"></span></h2>
+                    <span style="font-style: italic;"> </span>Employing
+                    multiple functions, and relying on cryptographically
+                    strong hash algorithms as Ripemd, SHA-2, Whirlpool, can identify even
+                    malicious attempt
+                    of forging identical-looking files, detecting differences that would go
+                    undetected to weaker algorithms, subject to easier found collisions.<br>
+                    <span style="font-weight: bold;"></span><br>
+                    <br>
+                    <h4><big style="font-weight: bold;">Byte-to-byte comparison
+                        (alternative deduplication
+                        method)</big><span style="font-weight: bold;"></span></h4>
+                    <span style="font-weight: bold;"> <br>
+                    </span><span style="font-weight: bold;"><a name="binary_identical_files"></a>Compare files</span>
+                    utility in
+                    "File tools" submenu performs byte to byte comparison between two
+                    files; unlike checksum/hash method it is not subject of collisions
+                    under any
+                    circumstance, and can find out and report exactly what the different
+                    bytes are - so it not
+                    only tells if two files are not identical, but also what changes were
+                    made to content between the two versions.<br>
+                    <br>
+                    Read more: <a target="_blank" href="http://en.wikipedia.org/wiki/Checksum">checksum<img
+                        alt="validate data integrity" title="Verify checksum value" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Hash_function">hash
+                      functions<img alt="find hash value" title="File hashing (Wikipedia)" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    definitions on
+                    Wikipedia.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Detect
+                        duplicate files with PeaZip file manager. Search for identical content.
+                        How to compare multiple CRC MD5 SHA hash, checksum values at once. Free
+                        software to find redundant data to remove (deduplicate) reduntant files.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: find duplicate
+                        files, detect duplicate content by hash<br>
+                      </span></p>
+                    <span style="font-weight: bold;">PeaZip &gt; FAQ &gt; Free
+                      duplicate finder utility, remove identical files<br>
+                      <br>
+                    </span>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);"> <img
+                              title="File management FAQs" alt="delete duplicate files"
+                              src="file-format/file-manager.png" style="width: 96px; height: 96px;" align="right"><a
+                              name="file_management_utilities"></a>FILE
+                            MANAGER
+                            <p><a style="font-weight: bold;" href="duplicates-hash-checksum.html">Find duplicate
+                                files</a><span style="font-weight: bold;"></span></p>
+                            <p><span style="font-weight: bold;"></span><a style="font-weight: bold;"
+                                href="compress-resize-jpeg-png-files.html">Optimize
+                                compression
+                                of
+                                graphic
+                                files</a></p>
+                            <p><a style="font-weight: bold;" href="file-split.html">Split and join file</a></p>
+                            <p><a style="font-weight: bold;" href="verify-checksum-hash.html">Verify hash and checksum
+                                values</a></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="background-color: rgb(255, 238, 221);"></span><br>
-            <span style="font-weight: bold;">Set the algorithm to
-detect duplicates</span><br>
-            <a name="find_duplicate_file_by_hash_value"></a>The
-default verification function used to deduplicate files can be set in
-main
-application's menu:
-Organize, Browser,
-Checksum/hash), a wide selection of algorithms can be selected, ranging
-from simple checksum functions as Adler32, CRC family (CRC16/24/32, and
-CRC64) to hash functions like eDonkey/eMule, MD4, MD5, and
-cryptographically strong hash as Ripemd160, SHA-1, SHA-2
-(SHA256 and SHA512), SHA-3 256 and 512 bit, BLAKE2S and BLAKE 2B, and
-Whirlpool512.<br>
             <br>
-            <br style="font-weight: bold;">
-            <h3 style="font-weight: bold;"><big>Detect duplicate files
-in archives</big></h3>
-            <br>
-            <a name="search_duplicate_content"></a>When browsing an
-archive this on demand verification is not
-available, but some archive types provides the same integrity-checking
-information, saving for each archived object the pre-computed
-checksum or hash value depending on the archive format, and on the
-archival settings employed - i.e. CRC32 in ZIP archives -
-allowing to sort archive content by CRC column to group identical files
-and find out duplicates.<br>
-            <br>
-            <br style="font-weight: bold;">
-            <h4 style="font-weight: bold;"><big>Find similar images</big></h4>
-            <br>
-When browsing a filesystem, PeaZip file manager can <a
- href="compress-resize-jpeg-png-files.html">display
-image thumbnails</a> to help deduplication:
-in context
-menu, organize, check show picture thumbnails, or select a file
-browser's preset style showing thumbnails.<br>
-            <a name="find_identical_images"></a>While checksum/hash
-based inspection allows to search for exactly identical
-files (and images), thumbnails allows the user to visually detect
-similar images
-(i.e. same picture or graphic saved in different formats, or with
-different color depth or compression settings, or scaled to different
-sizes), to help in deciding if the (pseudo) duplication is acceptable,
-and what copy (or version) to keep or delete. <br>
-As role of thumb for deleting extra versions, the best quality image
-(larger resolution, lower compression or possibly lossless format as
-RAW, BMP, TIFF, PNG) should be kept, discarding lower quality copies:
-once lost, information/quality cannot be recreated.<br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Compare multiple
-checksum and hash values at once</big></h3>
-            <br>
-            <span style="font-weight: bold;"><a
- name="batch_search_for_duplicate_files"></a>Check files</span>
-launches separate duplicate finder utility, from
-"File tools" submenu (context menu) or "Test" button dropdown, which
-allows to <a href="verify-checksum-hash.html">verify multiple hash
-and
-checksum algorithms</a>
-of multiple files at once<span style="font-style: italic;">.<br>
-            </span>
-            <h3><span style="font-style: italic;"><img
- title="Test for duplicate content" alt="find duplicate files"
- src="test-archive.png" style="width: 100px; height: 45px;"></span></h3>
-            <h2><span style="font-style: italic;"></span></h2>
-            <span style="font-style: italic;"> </span>Employing
-multiple functions, and relying on cryptographically
-strong hash algorithms as Ripemd, SHA-2, Whirlpool, can identify even
-malicious attempt
-of forging identical-looking files, detecting differences that would go
-undetected to weaker algorithms, subject to easier found collisions.<br>
-            <span style="font-weight: bold;"></span><br>
-            <br>
-            <h4><big style="font-weight: bold;">Byte-to-byte comparison
-(alternative deduplication
-method)</big><span style="font-weight: bold;"></span></h4>
-            <span style="font-weight: bold;"> <br>
-            </span><span style="font-weight: bold;"><a
- name="binary_identical_files"></a>Compare files</span>
-utility in
-"File tools" submenu performs byte to byte comparison between two
-files; unlike checksum/hash method it is not subject of collisions
-under any
-circumstance, and can find out and report exactly what the different
-bytes are - so it not
-only tells if two files are not identical, but also what changes were
-made to content between the two versions.<br>
-            <br>
-Read more: <a target="_blank"
- href="http://en.wikipedia.org/wiki/Checksum">checksum<img
- alt="validate data integrity" title="Verify checksum value"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, and <a
- target="_blank" href="http://en.wikipedia.org/wiki/Hash_function">hash
-functions<img alt="find hash value" title="File hashing (Wikipedia)"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>
-definitions on
-Wikipedia.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Detect
-duplicate files with PeaZip file manager. Search for identical content.
-How to compare multiple CRC MD5 SHA hash, checksum values at once. Free
-software to find redundant data to remove (deduplicate) reduntant files.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: find duplicate
-files, detect duplicate content by hash<br>
-            </span></p>
-            <span style="font-weight: bold;">PeaZip &gt; FAQ &gt; Free
-duplicate finder utility, remove identical files<br>
-            <br>
-            </span>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);"> <img
- title="File management FAQs" alt="delete duplicate files"
- src="file-format/file-manager.png" style="width: 96px; height: 96px;"
- align="right"><a name="file_management_utilities"></a>FILE
-MANAGER
-                  <p><a style="font-weight: bold;"
- href="duplicates-hash-checksum.html">Find duplicate files</a><span
- style="font-weight: bold;"></span></p>
-                  <p><span style="font-weight: bold;"></span><a
- style="font-weight: bold;" href="compress-resize-jpeg-png-files.html">Optimize
-compression
-of
-graphic
-files</a></p>
-                  <p><a style="font-weight: bold;"
- href="file-split.html">Split and join file</a></p>
-                  <p><a style="font-weight: bold;"
- href="verify-checksum-hash.html">Verify hash and checksum values</a></p>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img
+                        alt="How to detect redundant files with identical checksum, hash value" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="duplicate_files_finder"></a>DOWNLOADS<br>
+                      <img alt="detect identical files" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="Search for duplicate files"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="find_identical_files"></a>SUPPORT<br>
+                      <img alt="find duplicate content" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="identical file finder" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="duplicate files finder" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="find duplicate files" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="how to find duplicate files" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="How to detect redundant files with identical checksum, hash value"
- src="titles.png" style="width: 129px; height: 2px;"><br>
-            <a name="duplicate_files_finder"></a>DOWNLOADS<br>
-            <img alt="detect identical files"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="Search for duplicate files" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="find_identical_files"></a>SUPPORT<br>
-            <img alt="find duplicate content"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="identical file finder" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="duplicate files finder"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="find duplicate files" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="how to find duplicate files"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

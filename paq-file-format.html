@@ -1,654 +1,593 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What are PAQ, LPAQ, ZPAQ file extensions. *PAQ family provides maximum compression ratio, with ZPAQ format implementing strongest compression algorithm currently available">
+    content="What are PAQ, LPAQ, ZPAQ file extensions. *PAQ family provides maximum compression ratio, with ZPAQ format implementing strongest compression algorithm currently available">
   <meta name="KEYWORDS"
- content="maximum comprtession, paq, zpaq, file format, best, strongest, highest, compression, algorithm, compression ratio, type, specifications, specs, file">
+    content="maximum comprtession, paq, zpaq, file format, best, strongest, highest, compression, algorithm, compression ratio, type, specifications, specs, file">
   <meta name="ROBOTS" content="all">
   <title>What is PAQ file compression format</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is PAQ file compression format">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is PAQ file compression format">
   <meta property="og:description"
- content="What are PAQ, LPAQ, ZPAQ file extensions. *PAQ family provides maximum compression ratio, with ZPAQ format implementing strongest compression algorithm currently available">
+    content="What are PAQ, LPAQ, ZPAQ file extensions. *PAQ family provides maximum compression ratio, with ZPAQ format implementing strongest compression algorithm currently available">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/paq-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/paq-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="PAQ, LPAQ, ZPAQ file extension" alt="zpaq file type"
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="zpaq file format specs" src="free-rar/archive-manager.png"
- style="width: 12px; height: 12px;"> </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="paq_file_format"></a><span
- style="font-weight: bold;">What is PAQ file compression format</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="PAQ family provides maximum compression ratio,"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="ZPAQ format implementing strongest compression algorithm currently available"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);">
-            <h2><big><big><big><a style="font-weight: bold;"
- name="zpaq_file_format"></a><a
- href="paq-file-format.html#paq_file_format"><span
- style="font-weight: bold;">What are PAQ, LPAQ, ZPAQ
-file extensions</span><br>
-            </a></big></big></big></h2>
-            </div>
-            <br>
-            <br>
-            <h3><big><span style="font-weight: bold;">PAQ file types</span></big></h3>
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="PAQ, LPAQ, ZPAQ file extension" alt="zpaq file type"
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img alt="zpaq file format specs"
+                      src="free-rar/archive-manager.png" style="width: 12px; height: 12px;"> </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
             <div style="text-align: left;"> </div>
-            <div style="text-align: left;"> </div>
-            <br>
-            <a name="paq_algorithm_family"></a>PAQ is a family lossless
-file compression algorithms, top ranking in data compression contests
-like Hutter Prize and holding several records for maximum compressio
-ratio in those competitions.<br>
-PAQ algorithm family is based on multiple stategies to reduce
-redundancies in data, including neural networks, and aims to reduce
-compressed size of the data as near as possible to the quantity of
-information enthropy contained in the input - which cannot be further
-reduced without loss of information.<br>
-            <br>
-            <br>
-            <big style="font-weight: bold;">LPAQ file types</big><br>
-            <br>
-LPAQ is a related project form same author, Matt Mahoney, and provides
-less computing-intensive faster compression, roughly one order of
-magnitude, at the cost of inferior compression compated to PAQ, but
-still comparable or superior to mainstream compression formats like 7Z,
-ARC, RAR, ZIPX at maximum copression settings.<br>
-LPAQ is a pure compression format, unlike paq and zpaq, so multiple
-files needs to be consolidated in a single <a
- href="tar-file-format.html">TAR container</a> before lpaq
-compression, creating a .tar.lpaq archive.<br>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">ZPAQ file format</span></big><br>
-            <br>
-ZPAQ designates the current evolution of PAQ/LPAQ project, providing a
-backward compatible standard format supporting incremental archiving
-and journaling, and AES256 encryption.<br>
-ZPAQ executable is multi threaded, and features a more flexible
-compression
-mechanism, ranging from speed / compression ratio tradeoff similar to
-Deflate for lower compression settings up to better than PAQ for
-highest compression settings.<br>
-See <a href="peazip-compression-benchmark.html">file compression
-benchmark</a>, and <a href="maximum-compression-benchmark.html">maximum
-compression benchmark</a> pages to see how ZPAQ compares for
-compression ratio and
-speed to strongest compressor algorithms, as LZMA/PPMD employed in <a
- href="7z-file-format.html">7Z</a>, <a href="arc-files-utility.html">ARC</a>,
-            <a href="what-is-rar-file.html">RAR</a> and <a
- href="zipx-file-format.html">ZIPX</a> formars.<br>
-            <br>
-            <big><span style="font-weight: bold;">Scopes of PAQ, LPAQ,
-ZPAQ file formats</span></big><br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="paq_file_format"></a><span style="font-weight: bold;">What is PAQ file compression
+                              format</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="PAQ family provides maximum compression ratio," src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="ZPAQ format implementing strongest compression algorithm currently available"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="What are PAQ format features and specifications"
- alt="ZPAQ file format" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;">
-                  <h3><span style="font-weight: bold;">When is PAQ
-compression
-recommended</span></h3>
-PAQ family is unrivaled in the field of maximum compression, but it is
-very computing intensive; those formats are recommended when it is
-desired to effectively reach the best possibile copression ratio.<br>
-ZPAQ, being also capable of faster and lighter compression, in the
-range of Deflate-based formats (ZIP, GZip) is more eclectic and is
-suitable to be used as general purpose compressor, especially for
-user-level backup tasks due the built in capability of incremental
-archiving / incremental backup (add newer and modified files only) and
-journaling (maintaing multiple copies of modified files).<br>
-                  </td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img
- title="What is PAQ file compression algorithm family"
- alt="LPAQ file format" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);">
+                      <h2><big><big><big><a style="font-weight: bold;" name="zpaq_file_format"></a><a
+                                href="paq-file-format.html#paq_file_format"><span style="font-weight: bold;">What are
+                                  PAQ, LPAQ, ZPAQ
+                                  file extensions</span><br>
+                              </a></big></big></big></h2>
+                    </div>
+                    <br>
+                    <br>
+                    <h3><big><span style="font-weight: bold;">PAQ file types</span></big></h3>
+                    <div style="text-align: left;"> </div>
+                    <div style="text-align: left;"> </div>
+                    <br>
+                    <a name="paq_algorithm_family"></a>PAQ is a family lossless
+                    file compression algorithms, top ranking in data compression contests
+                    like Hutter Prize and holding several records for maximum compressio
+                    ratio in those competitions.<br>
+                    PAQ algorithm family is based on multiple stategies to reduce
+                    redundancies in data, including neural networks, and aims to reduce
+                    compressed size of the data as near as possible to the quantity of
+                    information enthropy contained in the input - which cannot be further
+                    reduced without loss of information.<br>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">LPAQ file types</big><br>
+                    <br>
+                    LPAQ is a related project form same author, Matt Mahoney, and provides
+                    less computing-intensive faster compression, roughly one order of
+                    magnitude, at the cost of inferior compression compated to PAQ, but
+                    still comparable or superior to mainstream compression formats like 7Z,
+                    ARC, RAR, ZIPX at maximum copression settings.<br>
+                    LPAQ is a pure compression format, unlike paq and zpaq, so multiple
+                    files needs to be consolidated in a single <a href="tar-file-format.html">TAR container</a> before
+                    lpaq
+                    compression, creating a .tar.lpaq archive.<br>
+                    <br>
+                    <br>
+                    <big><span style="font-weight: bold;">ZPAQ file format</span></big><br>
+                    <br>
+                    ZPAQ designates the current evolution of PAQ/LPAQ project, providing a
+                    backward compatible standard format supporting incremental archiving
+                    and journaling, and AES256 encryption.<br>
+                    ZPAQ executable is multi threaded, and features a more flexible
+                    compression
+                    mechanism, ranging from speed / compression ratio tradeoff similar to
+                    Deflate for lower compression settings up to better than PAQ for
+                    highest compression settings.<br>
+                    See <a href="peazip-compression-benchmark.html">file compression
+                      benchmark</a>, and <a href="maximum-compression-benchmark.html">maximum
+                      compression benchmark</a> pages to see how ZPAQ compares for
+                    compression ratio and
+                    speed to strongest compressor algorithms, as LZMA/PPMD employed in <a
+                      href="7z-file-format.html">7Z</a>, <a href="arc-files-utility.html">ARC</a>,
+                    <a href="what-is-rar-file.html">RAR</a> and <a href="zipx-file-format.html">ZIPX</a> formars.<br>
+                    <br>
+                    <big><span style="font-weight: bold;">Scopes of PAQ, LPAQ,
+                        ZPAQ file formats</span></big><br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img
+                                  title="What are PAQ format features and specifications" alt="ZPAQ file format"
+                                  src="file-format/quotes.png" style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">
+                            <h3><span style="font-weight: bold;">When is PAQ
+                                compression
+                                recommended</span></h3>
+                            PAQ family is unrivaled in the field of maximum compression, but it is
+                            very computing intensive; those formats are recommended when it is
+                            desired to effectively reach the best possibile copression ratio.<br>
+                            ZPAQ, being also capable of faster and lighter compression, in the
+                            range of Deflate-based formats (ZIP, GZip) is more eclectic and is
+                            suitable to be used as general purpose compressor, especially for
+                            user-level backup tasks due the built in capability of incremental
+                            archiving / incremental backup (add newer and modified files only) and
+                            journaling (maintaing multiple copies of modified files).<br>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="What is PAQ file compression algorithm family" alt="LPAQ file format"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <a name="paq_format_specs"></a>Read more about *PAQ
+                    project: <a target="_blank" href="http://mattmahoney.net/dc/">PAQ
+                      family
+                      official domain<img title="PAQ project" alt="PAQ data compression software domain"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
+                      target="_blank" href="http://mattmahoney.net/dc/">ZPAQ project<img title="ZPAQ project"
+                        alt="ZPAQ Incremental Journaling Backup Utility and Archiver" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://en.wikipedia.org/wiki/PAQ">PAQ page on
+                      Wikipedia<img title="PAQ page on Wikipedia" alt="PAQ format wiki" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a><br>
+                    <br>
+                    PeaZip supports <a href="paq-files-compression-utility.html">creation
+                      and
+                      extraction of paq, lpaq, and zpaq files</a>: create, open, browse,
+                    test, and
+                    extract *paq
+                    archives, optionally extract all revision of files contained in the
+                    archive, convert any supported archive to paq and zpaq format and
+                    vice-versa.<br>
+                    <h2><img title="What is PAQ format compression" alt="what are paq files" src="add-to-archive.png"
+                        style="width: 100px; height: 45px;"></h2>
+                    <h2><img title="What is a PAQ file and how to extract" alt="paq file extension"
+                        src="extract-archive.png" style="width: 112px; height: 45px;"></h2>
+                    <br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="zpaq_file_extension"></a>.ZPAQ</big></big></big></big></big>
+                                            </h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Author
+                                            Matt Mahoney, 2009<br>
+                                            2^32 max number of files<br>
+                                            250 TB bytes max input size<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="paq specifications"
+                                          title="7z compression / extraction speed" src="zip-files/star3.png"
+                                          style="width: 80px; height: 16px;"></big></h4>
+                                    ZPAQ is extremely flexible in terms of speed.<br>
+                                    The algorithm is very computing intensive as compression level
+                                    increases, but multithreading support, and several optimizations over
+                                    its PAQ predecessor, makes it usable for general purpose at least at
+                                    medium compression levels on current generation machines.<br>
+                                    At lower compression settings speed / compression tradeoff is quite
+                                    similar to Deflate, making it compete with fast archiving formats.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img alt="zpaq features" title="7z compression performances"
+                                          src="zip-files/star5.png" style="width: 80px; height: 16px;"></big></h4>
+                                    ZPAQ compression algorithm provides state of art compression ratio,
+                                    outperforming even high compression formats like 7Z, RAR, and ZIPX at
+                                    maximum compression settings<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <big>ADVANCED
+                                      OPTIONS <img alt="paq specs" title="7z format options" src="zip-files/star4.png"
+                                        style="width: 80px; height: 16px;"></big><br>
+                                    ZPAQ format natively supports journaling and incremental archiving /
+                                    incremental backup, and natively supports AES256 encryption,<br>
+                                    Error recovery is currently not supported.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p style="font-weight: bold;"><br>
+                      Synopsis: What is PAQ file compression format and how does it compare
+                      to 7z, arc, rar, zipx. What is PAQ family,
+                      which provides maximum compression ratio, with ZPAQ format implementing
+                      strongest compression algorithm currently available. *PAQ format family
+                      extensions: paq, lpaq, and zpaq file types.<br>
+                    </p>
+                    <p style="font-weight: bold;">Topics: PAQ file extension
+                      specs, lpaq and zpaq file format<br>
+                    </p>
+                    <p style="font-weight: bold;">PeaZip &gt; FAQ
+                      &gt; PAQ, LPAQ, ZPAQ file extensions<br>
+                    </p>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3><img title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
+                                alt="zpaq extension" src="file-format/file-format.png"
+                                style="width: 96px; height: 96px;" align="right"><a name="file_extensions"></a>SUPPORTED
+                              ARCHIVE FORMATS </h3>
+                            <p><a style="font-weight: bold;" href="7z-file-format.html">7Z file extension (7-Zip archive
+                                format)</a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="brotli-compressed-file-format.html">BR file extension
+                                (Google Brotli compressed format)</a></p>
+                            <p><a href="bzip2-file.html"><span style="font-weight: bold;">BZ2 extension, BZip2
+                                  compressed file format</span></a><br>
+                            </p>
+                            <p><a href="gzip-files.html"><span style="font-weight: bold;">GZ extension, Gzip compressed
+                                  file format</span></a><br>
+                            </p>
+                            <p><a href="paq-file-format.html"><span style="font-weight: bold;">PAQ, LPAQ, ZPAQ file
+                                  types</span></a><br>
+                            </p>
+                            <p style="font-weight: bold;"><a href="pea-file-format.html">PEA file
+                                format specifications</a><a href="pea-archiving-utility.html"><br>
+                              </a></p>
+                            <p><a style="font-weight: bold;" href="what-is-rar-file.html">RAR file extension (WinRar
+                                archive format)</a><span style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="tar-file-format.html">What are TAR, TGZ, TBZ file
+                                types</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="wim-files.html">WIM
+                                file extension, Microsoft Windows Imaging
+                                format</a> </p>
+                            <p><a style="font-weight: bold;" href="zip-file-format.html">ZIP file extension</a><span
+                                style="font-weight: bold;"></span> </p>
+                            <p><a style="font-weight: bold;" href="zipx-file-format.html">ZIPX file extension (WinZip
+                                archive
+                                format)</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="zst-compressed-file-format.html">ZST file extension
+                                (Facebook Zstandard format)</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p style="font-weight: bold;"> </p>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <a name="paq_format_specs"></a>Read more about *PAQ
-project: <a target="_blank" href="http://mattmahoney.net/dc/">PAQ
-family
-official domain<img title="PAQ project"
- alt="PAQ data compression software domain" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="http://mattmahoney.net/dc/">ZPAQ project<img
- title="ZPAQ project"
- alt="ZPAQ Incremental Journaling Backup Utility and Archiver"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://en.wikipedia.org/wiki/PAQ">PAQ page on
-Wikipedia<img title="PAQ page on Wikipedia" alt="PAQ format wiki"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a><br>
-            <br>
-PeaZip supports <a href="paq-files-compression-utility.html">creation
-and
-extraction of paq, lpaq, and zpaq files</a>: create, open, browse,
-test, and
-extract *paq
-archives, optionally extract all revision of files contained in the
-archive, convert any supported archive to paq and zpaq format and
-vice-versa.<br>
-            <h2><img title="What is PAQ format compression"
- alt="what are paq files" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h2>
-            <h2><img title="What is a PAQ file and how to extract"
- alt="paq file extension" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h2>
-            <br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="zpaq_file_extension"></a>.ZPAQ</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Author
-Matt Mahoney, 2009<br>
-2^32 max number of files<br>
-250 TB bytes max input size<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img alt="paq specifications"
- title="7z compression / extraction speed" src="zip-files/star3.png"
- style="width: 80px; height: 16px;"></big></h4>
-ZPAQ is extremely flexible in terms of speed.<br>
-The algorithm is very computing intensive as compression level
-increases, but multithreading support, and several optimizations over
-its PAQ predecessor, makes it usable for general purpose at least at
-medium compression levels on current generation machines.<br>
-At lower compression settings speed / compression tradeoff is quite
-similar to Deflate, making it compete with fast archiving formats.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img alt="zpaq features" title="7z compression performances"
- src="zip-files/star5.png" style="width: 80px; height: 16px;"></big></h4>
-ZPAQ compression algorithm provides state of art compression ratio,
-outperforming even high compression formats like 7Z, RAR, and ZIPX at
-maximum compression settings<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;"><big>ADVANCED
-OPTIONS <img alt="paq specs" title="7z format options"
- src="zip-files/star4.png" style="width: 80px; height: 16px;"></big><br>
-ZPAQ format natively supports journaling and incremental archiving /
-incremental backup, and natively supports AES256 encryption,<br>
-Error recovery is currently not supported.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img
+                        alt="what are PAQ, LPAQ, ZPAQ file extensions" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="paq_extension"></a>DOWNLOADS<br>
+                      <img alt="lpaq file format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="lpaq extension" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="paq_file_type"></a>SUPPORT<br>
+                      <img alt="zpaq file format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="paq file format" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="paq file type" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="paq file extension" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is paq file compression format" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <p style="font-weight: bold;"><br>
-Synopsis: What is PAQ file compression format and how does it compare
-to 7z, arc, rar, zipx. What is PAQ family,
-which provides maximum compression ratio, with ZPAQ format implementing
-strongest compression algorithm currently available. *PAQ format family
-extensions: paq, lpaq, and zpaq file types.<br>
-            </p>
-            <p style="font-weight: bold;">Topics: PAQ file extension
-specs, lpaq and zpaq file format<br>
-            </p>
-            <p style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; PAQ, LPAQ, ZPAQ file extensions<br>
-            </p>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3><img
- title="FAQ supported archive format features 7Z, RAR, TAR, ZIP..."
- alt="zpaq extension" src="file-format/file-format.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="file_extensions"></a>SUPPORTED ARCHIVE FORMATS </h3>
-                  <p><a style="font-weight: bold;"
- href="7z-file-format.html">7Z file extension (7-Zip archive format)</a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="brotli-compressed-file-format.html">BR file extension
-(Google Brotli compressed format)</a></p>
-                  <p><a href="bzip2-file.html"><span
- style="font-weight: bold;">BZ2 extension, BZip2 compressed file format</span></a><br>
-                  </p>
-                  <p><a href="gzip-files.html"><span
- style="font-weight: bold;">GZ extension, Gzip compressed file format</span></a><br>
-                  </p>
-                  <p><a href="paq-file-format.html"><span
- style="font-weight: bold;">PAQ, LPAQ, ZPAQ file types</span></a><br>
-                  </p>
-                  <p style="font-weight: bold;"><a
- href="pea-file-format.html">PEA file
-format specifications</a><a href="pea-archiving-utility.html"><br>
-                  </a></p>
-                  <p><a style="font-weight: bold;"
- href="what-is-rar-file.html">RAR file extension (WinRar archive format)</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="tar-file-format.html">What are TAR, TGZ, TBZ file types</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;" href="wim-files.html">WIM
-file extension, Microsoft Windows Imaging
-format</a> </p>
-                  <p><a style="font-weight: bold;"
- href="zip-file-format.html">ZIP file extension</a><span
- style="font-weight: bold;"></span> </p>
-                  <p><a style="font-weight: bold;"
- href="zipx-file-format.html">ZIPX file extension (WinZip archive
-format)</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="zst-compressed-file-format.html">ZST file extension
-(Facebook Zstandard format)</a><br>
-                  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <p style="font-weight: bold;"> </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="what are PAQ, LPAQ, ZPAQ file extensions" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="paq_extension"></a>DOWNLOADS<br>
-            <img alt="lpaq file format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="lpaq extension" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="paq_file_type"></a>SUPPORT<br>
-            <img alt="zpaq file format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="paq file format" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="paq file type"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="paq file extension" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is paq file compression format"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

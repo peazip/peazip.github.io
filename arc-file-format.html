@@ -1,620 +1,570 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="What is ARC file format, native FreeArc archives type extension. What are ARC files compression, encryption features, specifications, max size limit.">
+    content="What is ARC file format, native FreeArc archives type extension. What are ARC files compression, encryption features, specifications, max size limit.">
   <meta name="KEYWORDS"
- content="arc, freearc, what is, file, format, what are, archives, type, max, size, limit, extension, features, serpent, twofish, aes, encryption, blowfish, specifications, specs">
+    content="arc, freearc, what is, file, format, what are, archives, type, max, size, limit, extension, features, serpent, twofish, aes, encryption, blowfish, specifications, specs">
   <meta name="ROBOTS" content="all">
   <title>What is ARC file format (FreeARC archives)</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="What is ARC file format (FreeARC archives)">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="What is ARC file format (FreeARC archives)">
   <meta property="og:description"
- content="What is ARC file format, native FreeArc archives type extension. What are ARC files compression, encryption features, specifications, max size limit.">
+    content="What is ARC file format, native FreeArc archives type extension. What are ARC files compression, encryption features, specifications, max size limit.">
   <meta property="og:image" content="free-zip/pea.png">
-  <meta property="og:url"
- content="https://peazip.github.io/arc-file-format.html">
+  <meta property="og:url" content="https://peazip.github.io/arc-file-format.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
   <link rel="stylesheet" type="text/css" href="rar-files-cloud.css">
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
- data-cbid="75f1a2e3-b91a-4f43-a2da-5e08453b8784"
- data-blockingmode="auto" type="text/javascript"></script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="75f1a2e3-b91a-4f43-a2da-5e08453b8784"
+    data-blockingmode="auto" type="text/javascript"></script>
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="What is ARC file format, native FreeArc archives type extension"
- alt="What are ARC files compression, encryption features, specifications, max size limit."
- src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD
-PEAZIP FREE ARCHIVER</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="What is ARC file format, FreeArc archives"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- name=".arc_extension"></a>What is ARC file format, FreeArc
-archives</big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="What is ARC file format, native FreeArc archives type extension"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="What are ARC files, FreeArc archive format"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ,
-HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">REPORT ISSUES</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGELOG<br>
-            </small></a></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="24" cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top; text-align: center;">
-            <script async=""
- src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- 728x90 top center leaderboard -->
-            <ins class="adsbygoogle" style="width: 728px; height: 90px;"
- data-ad-client="ca-pub-9391621538458469" data-ad-slot="8818360162"></ins>
-            <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <div style="text-align: left; color: rgb(0, 0, 0);"><big> </big>
-            <h2><big><big><big><a name="arc_specifications"></a><a
- href="arc-file-format.html#.arc_extension">What are ARC files, FreeArc
-archive format</a></big><big><br>
-            </big></big></big></h2>
-            <br>
-            </div>
-            <a name="what_is_arc_file"></a><span
- style="font-weight: bold;">ARC</span> extension designates the native
-archive format developed for&nbsp; <a href="http://freearc.org/">FreeArc<img
- alt="what is .arc file" title="ARC file format specifications"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, a modern
-open source file archiver created by Bulat Ziganshin, featuring high
-level of compression (11 lossless data compression algorithms and
-filtes are supported, including LZMA and PPMD) with good efficiency (<a
- href="http://www.tomshardware.com/reviews/archive-zip-compression,2572-6.html">Tom's
-Hardware comparative<img alt="arc vs rar vs 7z benchmark"
- title="ARC format performances" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>)
-comparable or better than <a href="what-is-rar-file.html">rar format</a>
-and in many cases also of <a href="7z-file-format.html">7z format</a>,
-            <a href="encrypt-files.html">strong
-encryption</a> (<span style="font-weight: bold;">AES</span>, <span
- style="font-weight: bold;">Blowfish</span>, and AES contest finalist
-algorithms <span style="font-weight: bold;">Twofish</span>, and <span
- style="font-weight: bold;">Serpent</span>), and ability to create
-recovery records (option which is notably featured by proprietary RAR
-format but not by open format 7Z). The file format is also known with <span
- style="font-weight: bold;">WRC</span> extension.<br>
-            <br>
-            <h2 style="font-weight: bold;">Maximum size of ARC file
-format<br>
-            </h2>
-            <a name="max_size_of_arc_file"></a>The max size of ARC
-files is 2^63 bytes (8 exabytes of
-total size of the archive), filesize field represented by a signed 64
-bit integer, exceeding current needs and
-limitations of common filesystems.<br>
-            <br>
-            <h2 style="font-weight: bold;">Maximum number of files in a
-single ARC archive</h2>
-            <a name="max_files_numbers_arc_format"></a>The maximum
-number of input files allowed into a singe ARC package is limited to
-2^31 (max 2 billion files), file number filed represented by a signed
-32
-bit integer, which - like maximum archive size limit - practically
-exceeds current needs.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h2><span style="font-weight: bold;"><img
- title="What is ARC file format, native FreeArc archives extension"
- alt="freearc arc format features" src="file-format/information.png"
- style="width: 48px; height: 48px;"><br>
-                  </span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;"><span
- style="font-style: italic;"><a name="arc_file_type"></a>FreeArc's
-format must not be
-confused
-with 1985 </span><a style="font-style: italic;"
- href="https://en.wikipedia.org/wiki/ARC_%28file_format%29">SEA's ARC
-format<img alt=".arc file definition" title="SEA ARC file format"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a><span
- style="font-style: italic;">, using same .arc file extension. The
-company pionereed the data
-compression in BBS era, but ARC program fell in popularity after the
-introduction of more efficient Phil Katz's PKARC, which later developed
-largely modified and improved ZIP format for PKZIP program, in response
-to the notorious lawsuit ensued between SEA and PKWARE.</span></td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img
+                      title="What is ARC file format, native FreeArc archives type extension"
+                      alt="What are ARC files compression, encryption features, specifications, max size limit."
+                      src="peazip_ico24.png" style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD
+                      PEAZIP FREE ARCHIVER</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="What is ARC file format, FreeArc archives" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-style: italic;"></span>PeaZip features <a
- href="arc-files-utility.html">creation and
-extraction of ARC files</a>: create, open, browse, and extract ARC
-archives, convert any supported archive to .arc format and vice-versa.
-Also, the application supports creation of arc-format <a
- href="self-extracting-archives.html">self extracting
-archives</a> (<span style="font-weight: bold;">SFX</span>), so
-recipient
-will not need a FreeArc compatible extractor when receiving one of
-those self-extracting files.<br>
-PeaZip currently does not support reading, nor writing, the unrelated
-SEA's ARC format.<br>
-            <h2><img title="ARC file format features"
- alt="what are arc files" src="add-to-archive.png"
- style="width: 100px; height: 45px;"></h2>
-            <h3><img title="ARC format specifications"
- alt="arc extension" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-            <br>
-            <a name="arc_file_format_specifications"></a>Read more .arc
-file type <span style="text-decoration: underline;"></span><a
- href="https://en.wikipedia.org/wiki/FreeArc">FreeArc Wikipedia entry<img
- title="Wikipedia FreeArc" alt="FreeArc software"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px; font-weight: bold;"></a>,
-            <a target="_blank"
- href="http://en.wikipedia.org/wiki/Prediction_by_partial_matching">PPMd<img
- title="PPM algorithm" alt="Wikipedia prediction by partial matching"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
- target="_blank"
- href="http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm">LZMA/LZMA2<img
- alt="Lempel Ziv Markov chain algorithm" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> data
-compression algorithms, <a target="_blank"
- href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES<img
- title="Rijndael" alt="wikipedia aes algorithm"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank" href="https://www.schneier.com/twofish.html">Twofish<img
- title="Bruce Schneier" alt="twofish algorithm"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
- target="_blank"
- href="http://en.wikipedia.org/wiki/Serpent_%28cipher%29">Serpent<img
- title="Ross Anderson, Eli Biham, Lars Knudsen" alt="Serpent algorithm"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a> ciphers.<br>
-            <br>
-            <table
- style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="1">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
-                <tr style="color: rgb(245, 245, 245);">
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-                  <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
-                        <br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <table style="width: 100%; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-                          <tbody>
-                            <tr>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
-                              <h3><big><big><big><big><big><a
- name="arc_format_specifications"></a>.ARC</big></big></big></big></big></h3>
-                              </td>
-                              <td
- style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">Author
-Bulat Ziganshin, 2007<br>
-8 EB max total archive size limit<br>
-2 billions files limit in a single archive<br>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>SPEED <img alt="arc format specs"
- title="arc compression speed" src="zip-files/star4.png"
- style="width: 80px; height: 16px;"></big></h4>
-Arc format features good speed. Very efficient implementation makes it
-significantly faster than
-7Z
-compression and extraction (and marginally faster than RAR), with
-comparable compression ratio.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>COMPRESSION
-RATIO <img alt="arc format specifications"
- title=".ARC compression performances" src="zip-files/star4p5.png"
- style="width: 80px; height: 16px;"></big></h4>
-Arc archives features very good compression ratio. Comparable to 7-Zip
-with LZMA / LZMA2 compression,
-consistently better than
-RAR format, but inferior
-to PAQ compressors family.</td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td
- style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
-                        <h4><big>ADVANCED
-OPTIONS <img alt="arc format aes sperpent tworfish encryption"
- title="ARC format options" src="zip-files/star4p5.png"
- style="width: 80px; height: 16px;"></big></h4>
-Arc format features a very good selection of advanced functions.
-Built-in support for AES, Twofish and Serpent encryption,
-and optional creation of recovery records - ARC is one of the few file
-types alongside RAR providing error recovery feature.<br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 430px;"><br>
-                        </td>
-                        <td style="vertical-align: top; width: 24px;"><br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a name=".arc_extension"></a>What is ARC file format,
+                            FreeArc
+                            archives</big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="What is ARC file format, native FreeArc archives type extension" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="What are ARC files, FreeArc archive format" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(204, 224, 255); font-weight: bold;">
+                    <small><a href="peazip-help-faq.html">FAQ,
+                        HOW TO</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">REPORT ISSUES</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGELOG<br>
+                      </small></a>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-compression-benchmark.html">FILE COMPRESSION BENCHMARKS</a></small>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <p><span style="font-weight: bold;">Synopsis: What is ARC
-file format, native FreeArc archives type extension. What are ARC files
-compression ratio and speed performances, encryption features,
-specifications, max size limit for files and archives.</span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; What is ARC file format (FreeArc archives)</span></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(243, 242, 241);">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="arc file extension" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="arc_file_extension"></a>DOWNLOADS<br>
-            <img alt="freearc file format"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="index.html">All
-PeaZip downloads</a><br>
-            <a href="download-installer-p-windows.html">PeaZip for
-Windows 32 bit</a><br>
-            <a href="peazip-64bit.html">PeaZip
-for Windows 64 bit</a><br>
-            <a href="peazip-portable.html">PeaZip
-Portable</a><br>
-            <a href="peazip-linux.html">PeaZip
-Linux/BSD</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="arc file type" src="titles.png" style="width: 129px; height: 2px;"><br>
-            <a name="arc_file_format"></a>SUPPORT<br>
-            <img alt="arc archive format" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            <a href="peazip-free-archiver.html">More
-information</a></small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="arc file format" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);" name="freearc_file_format"></a>DONATE<br
- style="font-style: italic;">
-            <img alt="arc extension" src="free-rar/extract-rar.png"
- style="width: 1px; height: 1px;" vspace="3"><br
- style="font-style: italic;">
-Support
-PeaZip
-project,
-or donate to FAO,
-UNICEF and
-UNESCO from <a style="font-style: italic;" href="donations.html">donation
-page</a><br>
-            <br>
-            </small><small>&copy; <a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip
-srl: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="24" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what are arc files" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top; text-align: center;">
+                    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- 728x90 top center leaderboard -->
+                    <ins class="adsbygoogle" style="width: 728px; height: 90px;"
+                      data-ad-client="ca-pub-9391621538458469" data-ad-slot="8818360162"></ins>
+                    <script>
+                      (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <br>
+                  </td>
                 </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="what is arc file extension"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what are arc archives" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is arc archive type" title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+              </tbody>
+            </table>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <div style="text-align: left; color: rgb(0, 0, 0);"><big> </big>
+                      <h2><big><big><big><a name="arc_specifications"></a><a
+                                href="arc-file-format.html#.arc_extension">What are ARC files, FreeArc
+                                archive format</a></big><big><br>
+                            </big></big></big></h2>
+                      <br>
+                    </div>
+                    <a name="what_is_arc_file"></a><span style="font-weight: bold;">ARC</span> extension designates the
+                    native
+                    archive format developed for&nbsp; <a href="http://freearc.org/">FreeArc<img alt="what is .arc file"
+                        title="ARC file format specifications" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, a modern
+                    open source file archiver created by Bulat Ziganshin, featuring high
+                    level of compression (11 lossless data compression algorithms and
+                    filtes are supported, including LZMA and PPMD) with good efficiency (<a
+                      href="http://www.tomshardware.com/reviews/archive-zip-compression,2572-6.html">Tom's
+                      Hardware comparative<img alt="arc vs rar vs 7z benchmark" title="ARC format performances"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>)
+                    comparable or better than <a href="what-is-rar-file.html">rar format</a>
+                    and in many cases also of <a href="7z-file-format.html">7z format</a>,
+                    <a href="encrypt-files.html">strong
+                      encryption</a> (<span style="font-weight: bold;">AES</span>, <span
+                      style="font-weight: bold;">Blowfish</span>, and AES contest finalist
+                    algorithms <span style="font-weight: bold;">Twofish</span>, and <span
+                      style="font-weight: bold;">Serpent</span>), and ability to create
+                    recovery records (option which is notably featured by proprietary RAR
+                    format but not by open format 7Z). The file format is also known with <span
+                      style="font-weight: bold;">WRC</span> extension.<br>
+                    <br>
+                    <h2 style="font-weight: bold;">Maximum size of ARC file
+                      format<br>
+                    </h2>
+                    <a name="max_size_of_arc_file"></a>The max size of ARC
+                    files is 2^63 bytes (8 exabytes of
+                    total size of the archive), filesize field represented by a signed 64
+                    bit integer, exceeding current needs and
+                    limitations of common filesystems.<br>
+                    <br>
+                    <h2 style="font-weight: bold;">Maximum number of files in a
+                      single ARC archive</h2>
+                    <a name="max_files_numbers_arc_format"></a>The maximum
+                    number of input files allowed into a singe ARC package is limited to
+                    2^31 (max 2 billion files), file number filed represented by a signed
+                    32
+                    bit integer, which - like maximum archive size limit - practically
+                    exceeds current needs.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h2><span style="font-weight: bold;"><img
+                                  title="What is ARC file format, native FreeArc archives extension"
+                                  alt="freearc arc format features" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h2>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;"><span style="font-style: italic;"><a
+                                name="arc_file_type"></a>FreeArc's
+                              format must not be
+                              confused
+                              with 1985 </span><a style="font-style: italic;"
+                              href="https://en.wikipedia.org/wiki/ARC_%28file_format%29">SEA's ARC
+                              format<img alt=".arc file definition" title="SEA ARC file format"
+                                src="free-rar/extractor.png"
+                                style="border: 0px solid ; width: 12px; height: 10px;"></a><span
+                              style="font-style: italic;">, using same .arc file extension. The
+                              company pionereed the data
+                              compression in BBS era, but ARC program fell in popularity after the
+                              introduction of more efficient Phil Katz's PKARC, which later developed
+                              largely modified and improved ZIP format for PKZIP program, in response
+                              to the notorious lawsuit ensued between SEA and PKWARE.</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span style="font-style: italic;"></span>PeaZip features <a href="arc-files-utility.html">creation
+                      and
+                      extraction of ARC files</a>: create, open, browse, and extract ARC
+                    archives, convert any supported archive to .arc format and vice-versa.
+                    Also, the application supports creation of arc-format <a href="self-extracting-archives.html">self
+                      extracting
+                      archives</a> (<span style="font-weight: bold;">SFX</span>), so
+                    recipient
+                    will not need a FreeArc compatible extractor when receiving one of
+                    those self-extracting files.<br>
+                    PeaZip currently does not support reading, nor writing, the unrelated
+                    SEA's ARC format.<br>
+                    <h2><img title="ARC file format features" alt="what are arc files" src="add-to-archive.png"
+                        style="width: 100px; height: 45px;"></h2>
+                    <h3><img title="ARC format specifications" alt="arc extension" src="extract-archive.png"
+                        style="width: 112px; height: 45px;"></h3>
+                    <br>
+                    <a name="arc_file_format_specifications"></a>Read more .arc
+                    file type <span style="text-decoration: underline;"></span><a
+                      href="https://en.wikipedia.org/wiki/FreeArc">FreeArc Wikipedia entry<img title="Wikipedia FreeArc"
+                        alt="FreeArc software" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px; font-weight: bold;"></a>,
+                    <a target="_blank" href="http://en.wikipedia.org/wiki/Prediction_by_partial_matching">PPMd<img
+                        title="PPM algorithm" alt="Wikipedia prediction by partial matching"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
+                      target="_blank"
+                      href="http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm">LZMA/LZMA2<img
+                        alt="Lempel Ziv Markov chain algorithm" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a> data
+                    compression algorithms, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES<img title="Rijndael"
+                        alt="wikipedia aes algorithm" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="https://www.schneier.com/twofish.html">Twofish<img title="Bruce Schneier"
+                        alt="twofish algorithm" src="free-rar/extractor.png"
+                        style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a target="_blank"
+                      href="http://en.wikipedia.org/wiki/Serpent_%28cipher%29">Serpent<img
+                        title="Ross Anderson, Eli Biham, Lars Knudsen" alt="Serpent algorithm"
+                        src="free-rar/extractor.png" style="border: 0px solid ; width: 12px; height: 10px;"></a>
+                    ciphers.<br>
+                    <br>
+                    <table style="background-color: rgb(72, 136, 248); width: 100%; text-align: left;" border="0"
+                      cellpadding="0" cellspacing="1">
+                      <tbody>
+                        <tr style="color: rgb(245, 245, 245);">
+                          <td colspan="1" rowspan="1" style="vertical-align: top; background-color: rgb(72, 136, 248);">
+                            <table style="width: 100%; text-align: left;" border="0" cellpadding="0" cellspacing="0">
+                              <tbody>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;">&nbsp;&nbsp;
+                                    <br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <table style="width: 100%; text-align: left;" border="0" cellpadding="0"
+                                      cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            <h3><big><big><big><big><big><a
+                                                          name="arc_format_specifications"></a>.ARC</big></big></big></big></big>
+                                            </h3>
+                                          </td>
+                                          <td style="width: 50%; color: rgb(245, 245, 245); vertical-align: middle;">
+                                            Author
+                                            Bulat Ziganshin, 2007<br>
+                                            8 EB max total archive size limit<br>
+                                            2 billions files limit in a single archive<br>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>SPEED <img alt="arc format specs" title="arc compression speed"
+                                          src="zip-files/star4.png" style="width: 80px; height: 16px;"></big></h4>
+                                    Arc format features good speed. Very efficient implementation makes it
+                                    significantly faster than
+                                    7Z
+                                    compression and extraction (and marginally faster than RAR), with
+                                    comparable compression ratio.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>COMPRESSION
+                                        RATIO <img alt="arc format specifications" title=".ARC compression performances"
+                                          src="zip-files/star4p5.png" style="width: 80px; height: 16px;"></big></h4>
+                                    Arc archives features very good compression ratio. Comparable to 7-Zip
+                                    with LZMA / LZMA2 compression,
+                                    consistently better than
+                                    RAR format, but inferior
+                                    to PAQ compressors family.
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; color: rgb(245, 245, 245); width: 430px;">
+                                    <h4><big>ADVANCED
+                                        OPTIONS <img alt="arc format aes sperpent tworfish encryption"
+                                          title="ARC format options" src="zip-files/star4p5.png"
+                                          style="width: 80px; height: 16px;"></big></h4>
+                                    Arc format features a very good selection of advanced functions.
+                                    Built-in support for AES, Twofish and Serpent encryption,
+                                    and optional creation of recovery records - ARC is one of the few file
+                                    types alongside RAR providing error recovery feature.<br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 430px;"><br>
+                                  </td>
+                                  <td style="vertical-align: top; width: 24px;"><br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: What is ARC
+                        file format, native FreeArc archives type extension. What are ARC files
+                        compression ratio and speed performances, encryption features,
+                        specifications, max size limit for files and archives.</span><span
+                        style="font-weight: bold;"></span></p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; What is ARC file format (FreeArc archives)</span></p>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(243, 242, 241);">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="arc file extension" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="arc_file_extension"></a>DOWNLOADS<br>
+                      <img alt="freearc file format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="index.html">All
+                        PeaZip downloads</a><br>
+                      <a href="download-installer-p-windows.html">PeaZip for
+                        Windows 32 bit</a><br>
+                      <a href="peazip-64bit.html">PeaZip
+                        for Windows 64 bit</a><br>
+                      <a href="peazip-portable.html">PeaZip
+                        Portable</a><br>
+                      <a href="peazip-linux.html">PeaZip
+                        Linux/BSD</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="arc file type" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="arc_file_format"></a>SUPPORT<br>
+                      <img alt="arc archive format" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                      <a href="peazip-free-archiver.html">More
+                        information</a></small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="arc file format" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="freearc_file_format"></a>DONATE<br
+                        style="font-style: italic;">
+                      <img alt="arc extension" src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
+                        vspace="3"><br style="font-style: italic;">
+                      Support
+                      PeaZip
+                      project,
+                      or donate to FAO,
+                      UNICEF and
+                      UNESCO from <a style="font-style: italic;" href="donations.html">donation
+                        page</a><br>
+                      <br>
+                    </small><small>&copy; <a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip
+                        srl: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what are arc files" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="what is arc file extension" src="free-zip/wikipedia.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what are arc archives" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is arc archive type" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

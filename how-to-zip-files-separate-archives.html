@@ -1,590 +1,543 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Add files to separate archives. Batch compression, create multiple 7Z TAR ZIP files at once. Send each input file to distinct archive, single file per archive.">
+    content="Add files to separate archives. Batch compression, create multiple 7Z TAR ZIP files at once. Send each input file to distinct archive, single file per archive.">
   <meta name="KEYWORDS"
- content="separate, distinct, archives, add, send, multiple, at once, create, 7z, tar, zip, files, into">
+    content="separate, distinct, archives, add, send, multiple, at once, create, 7z, tar, zip, files, into">
   <meta name="ROBOTS" content="all">
   <title>How to create multiple separate 7Z TAR ZIP archives at once</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
-  <meta property="og:title"
- content="How to create multiple separate 7Z TAR ZIP archives at once">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:title" content="How to create multiple separate 7Z TAR ZIP archives at once">
   <meta property="og:description"
- content="Add files to separate archives. Batch compression, create multiple 7Z TAR ZIP files at once. Send each input file to distinct archive, single file per archive.">
+    content="Add files to separate archives. Batch compression, create multiple 7Z TAR ZIP files at once. Send each input file to distinct archive, single file per archive.">
   <meta property="og:image" content="free-zip/peazip-icon.png">
-  <meta property="og:url"
- content="https://peazip.github.io/how-to-zip-files-separate-archives.html">
+  <meta property="og:url" content="https://peazip.github.io/how-to-zip-files-separate-archives.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Create multiple separate archives at once"
- alt="add each file to a separate archive" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="add files to multiple separate archives at once"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="add_to_separate_archives"></a><span
- style="font-weight: bold;">Create multiple separate 7Z TAR
-ZIP archives at once</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="Send each input file to distinct archive, single file per archive"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="Create multiple separate 7Z TAR ZIP archives at once"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2><big><big><big><a style="font-weight: bold;"
- name="create_multiple_archives"></a><a
- href="how-to-zip-files-separate-archives.html#add_to_separate_archives"><span
- style="font-weight: bold;">How
-to add each file to a separate
-archive</span><br>
-            </a></big></big></big></h2>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">Create multiple
-archives at once</big></h3>
-            <br>
-            <a name="send_each_object_to_separate_archive"></a>PeaZip
-allows a simple way to <span style="font-weight: bold;">create
-multiple archives at once</span>, keeping
-separated each input items (folder or file) into a distinct archive in
-the chosen format: <br>
-            <p style="margin-left: 40px;">A) from the system you can
-select multiple files or folders, right click with the mouse, and chose
-"Add to archive" from PeaZip group in system's context menu</p>
-            <div style="margin-left: 40px;">
-            <p>B) from PeaZip you can select multiple files and folders
-from the integrated file browser, and click on "Add" button</p>
-            </div>
-            <h2 style="margin-left: 40px;"><img
- title="Add to multiple archives" alt="create separate archives"
- src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
-            <br>
-            <span style="font-weight: bold;">Compress each item as a
-separate archive</span><br>
-In the lower right area
-of the application window
-check first checkbox option "<span style="font-weight: bold;">Add each
-object to a separate archive</span>".<br>
-            <br>
-Fore each input row the procedure will create a separate archive,
-sending each input to a distinct output:<br>
-            <ul>
-              <li><a name="add_folder_to_separate_archive"></a>if the
-input item is a folder, the folder and its entire content will be sent
-to a single archive named after the folder's name</li>
-              <li><a name="create_a_distinct_archive_for_each_file"></a>if
-the input item is a file, the single file will be added to a single
-archive named after the file's name</li>
-            </ul>
-            <ul>
-              <span style="font-weight: bold;"></span>
-            </ul>
-            <h2 style="text-align: center;"><img
- alt="batch file compression to multiple archives"
- title="Compress each input to separate archive" src="archive.png"
- style="border: 0px solid ; width: 640px; height: 418px;"></h2>
-            <br>
-            <br>
-            <big style="font-weight: bold;">What archive types allows
-creation of separate archives with PeaZip</big><br>
-            <br>
-            <a name="separate_zip_files"></a>Compressing to distinct
-archives at once is possible when working with following archive types
-as output format: 7Z,
-ARC, PAQ, PEA, RAR, TAR,
-WIM, ZIP. All of these formats allows to create separate archives, a
-single archive for each input item.<br>
-            <br>
-            <a name="zip_to_separated_files"></a>This limitation exists
-because some formats (BZ, GZ, XZ...) only
-provides single-file
-compression capability, and are not suitable for this single-pass
-procedure - because
-input object can be folder containing multiple files.<br>
-"Add each object
-to a separate archive" option will be disabled for those formats -
-original multiple input will be sent to single TAR archive before
-proceding adding
-intermediate input (single <a href="tar-file-format.html">TAR file</a>)
-into a compressed file in one of
-those compression-only formats.<br>
-            <br>
-            <a name="compress_separately"></a>Unchecking the option
-will <a href="how-to-compress-files-folders.html">create a single
-archive
-containing all input files and folders</a>.<br>
-            <br>
-            <br>
-            <big style="font-weight: bold;">Convert each input archive
-as separate output archive</big><br>
-            <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="text-align: right; vertical-align: middle; width: 64px;">
-                  <h3><span style="font-weight: bold;"><img
- title="Batch create separate archives" alt="add to separate archives"
- src="file-format/information.png" style="width: 48px; height: 48px;"><br>
-                  </span></h3>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td
- style="font-style: italic; vertical-align: middle;"><a
- name="convert_rar_zip_archives_separately"></a>"<span
- style="font-weight: bold;">Add each
-object to a separate archive</span>" option can be combined to <a
- href="convert-files.html">convert existing archives</a> option - in
-fact it is activated by default when Convert button is clicked in
-PeaZip's file explorer - which extracts each input object befor
-re-compression in the new format (specified in archive format dropdown
-menu)..<br>
-Opting for creating distinct archives allows to convert each single
-input archive (even with different extensions) in a new, separate,
-output archive (all in the new format), while unchecking separation
-option means to consolidate all input data in a single archive in the
-new format.</td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
                 </tr>
-              </tbody>
-            </table>
-            <br>
-Learn more about compressing files with single-file compressors: <a
- href="brotli-compression-utility.html">compress a single file with
-Brotli</a>, <a href="bzip2-utility.html">compress a single file with
-BZip2</a>, <a href="gzip-utility.html">compress a single file with GZip</a>,
-            <a href="zstandard-compression-utility.html">compress a
-single file with Zstandard</a>.<br>
-Or, read more about compressing single-files in separate archives,
-creating one archive for each input file, with formats supporting
-multiple-file compression: <a href="7zip-files-utility.html">create
-separated 7z archives</a>, <a href="free-rar-create.html">create
-separated rar archives</a> with PeaZip if WinRar is featured on the
-system, <a href="zip-files-utility.html">create separated zip files</a>.<br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: Add files to
-separate archives. Batch compression, create multiple 7Z TAR ZIP files
-at once with PeaZip. How to send each input file to a distinct archive,
-a single file per archive.</span><span style="font-weight: bold;">
-Compress files separately, each item into a different archive.</span></p>
-            <p><span style="font-weight: bold;">Topics: create muliple
-archives at once, add files to separate archives </span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; How to create multiple separate 7Z TAR ZIP archives at once<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
                 <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="create separate archive for each file or folder"
- src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How
-to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
+                  <td style="vertical-align: top;"> <img title="Create multiple separate archives at once"
+                      alt="add each file to a separate archive" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="add files to multiple separate archives at once" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="How to add each file to a separate archive" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="create_separate_archives"></a>DOWNLOADS<br>
-            <img alt="how to create separate archives"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="create separate archives" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="add_files_to_separate_archives"></a>SUPPORT<br>
-            <img alt="how to create multiple archives"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="add to separate archives" title="PeaZip releases feed"
- src="extract-zip/rss16.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="add_to_separate_archives"></a><span style="font-weight: bold;">Create multiple
+                              separate 7Z TAR
+                              ZIP archives at once</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
                 </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="Send each input file to distinct archive, single file per archive" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="Create multiple separate 7Z TAR ZIP archives at once" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
                 <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online"
- alt="SFX files autonomous compressed files capable of auto-extraction without requiring external software"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is a sfx file" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
                   <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="what is a self extracting archive"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
                 </tr>
               </tbody>
             </table>
             <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2><big><big><big><a style="font-weight: bold;" name="create_multiple_archives"></a><a
+                              href="how-to-zip-files-separate-archives.html#add_to_separate_archives"><span
+                                style="font-weight: bold;">How
+                                to add each file to a separate
+                                archive</span><br>
+                            </a></big></big></big></h2>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">Create multiple
+                        archives at once</big></h3>
+                    <br>
+                    <a name="send_each_object_to_separate_archive"></a>PeaZip
+                    allows a simple way to <span style="font-weight: bold;">create
+                      multiple archives at once</span>, keeping
+                    separated each input items (folder or file) into a distinct archive in
+                    the chosen format: <br>
+                    <p style="margin-left: 40px;">A) from the system you can
+                      select multiple files or folders, right click with the mouse, and chose
+                      "Add to archive" from PeaZip group in system's context menu</p>
+                    <div style="margin-left: 40px;">
+                      <p>B) from PeaZip you can select multiple files and folders
+                        from the integrated file browser, and click on "Add" button</p>
+                    </div>
+                    <h2 style="margin-left: 40px;"><img title="Add to multiple archives" alt="create separate archives"
+                        src="add-to-archive.png" style="width: 100px; height: 45px;"></h2>
+                    <br>
+                    <span style="font-weight: bold;">Compress each item as a
+                      separate archive</span><br>
+                    In the lower right area
+                    of the application window
+                    check first checkbox option "<span style="font-weight: bold;">Add each
+                      object to a separate archive</span>".<br>
+                    <br>
+                    Fore each input row the procedure will create a separate archive,
+                    sending each input to a distinct output:<br>
+                    <ul>
+                      <li><a name="add_folder_to_separate_archive"></a>if the
+                        input item is a folder, the folder and its entire content will be sent
+                        to a single archive named after the folder's name</li>
+                      <li><a name="create_a_distinct_archive_for_each_file"></a>if
+                        the input item is a file, the single file will be added to a single
+                        archive named after the file's name</li>
+                    </ul>
+                    <ul>
+                      <span style="font-weight: bold;"></span>
+                    </ul>
+                    <h2 style="text-align: center;"><img alt="batch file compression to multiple archives"
+                        title="Compress each input to separate archive" src="archive.png"
+                        style="border: 0px solid ; width: 640px; height: 418px;"></h2>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">What archive types allows
+                      creation of separate archives with PeaZip</big><br>
+                    <br>
+                    <a name="separate_zip_files"></a>Compressing to distinct
+                    archives at once is possible when working with following archive types
+                    as output format: 7Z,
+                    ARC, PAQ, PEA, RAR, TAR,
+                    WIM, ZIP. All of these formats allows to create separate archives, a
+                    single archive for each input item.<br>
+                    <br>
+                    <a name="zip_to_separated_files"></a>This limitation exists
+                    because some formats (BZ, GZ, XZ...) only
+                    provides single-file
+                    compression capability, and are not suitable for this single-pass
+                    procedure - because
+                    input object can be folder containing multiple files.<br>
+                    "Add each object
+                    to a separate archive" option will be disabled for those formats -
+                    original multiple input will be sent to single TAR archive before
+                    proceding adding
+                    intermediate input (single <a href="tar-file-format.html">TAR file</a>)
+                    into a compressed file in one of
+                    those compression-only formats.<br>
+                    <br>
+                    <a name="compress_separately"></a>Unchecking the option
+                    will <a href="how-to-compress-files-folders.html">create a single
+                      archive
+                      containing all input files and folders</a>.<br>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">Convert each input archive
+                      as separate output archive</big><br>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle; width: 64px;">
+                            <h3><span style="font-weight: bold;"><img title="Batch create separate archives"
+                                  alt="add to separate archives" src="file-format/information.png"
+                                  style="width: 48px; height: 48px;"><br>
+                              </span></h3>
+                          </td>
+                          <td style="font-style: italic; vertical-align: middle;"><a
+                              name="convert_rar_zip_archives_separately"></a>"<span style="font-weight: bold;">Add each
+                              object to a separate archive</span>" option can be combined to <a
+                              href="convert-files.html">convert existing archives</a> option - in
+                            fact it is activated by default when Convert button is clicked in
+                            PeaZip's file explorer - which extracts each input object befor
+                            re-compression in the new format (specified in archive format dropdown
+                            menu)..<br>
+                            Opting for creating distinct archives allows to convert each single
+                            input archive (even with different extensions) in a new, separate,
+                            output archive (all in the new format), while unchecking separation
+                            option means to consolidate all input data in a single archive in the
+                            new format.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    Learn more about compressing files with single-file compressors: <a
+                      href="brotli-compression-utility.html">compress a single file with
+                      Brotli</a>, <a href="bzip2-utility.html">compress a single file with
+                      BZip2</a>, <a href="gzip-utility.html">compress a single file with GZip</a>,
+                    <a href="zstandard-compression-utility.html">compress a
+                      single file with Zstandard</a>.<br>
+                    Or, read more about compressing single-files in separate archives,
+                    creating one archive for each input file, with formats supporting
+                    multiple-file compression: <a href="7zip-files-utility.html">create
+                      separated 7z archives</a>, <a href="free-rar-create.html">create
+                      separated rar archives</a> with PeaZip if WinRar is featured on the
+                    system, <a href="zip-files-utility.html">create separated zip files</a>.<br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: Add files to
+                        separate archives. Batch compression, create multiple 7Z TAR ZIP files
+                        at once with PeaZip. How to send each input file to a distinct archive,
+                        a single file per archive.</span><span style="font-weight: bold;">
+                        Compress files separately, each item into a different archive.</span></p>
+                    <p><span style="font-weight: bold;">Topics: create muliple
+                        archives at once, add files to separate archives </span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; How to create multiple separate 7Z TAR ZIP archives at once<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="create separate archive for each file or folder"
+                                src="file-format/archive-manager.png" style="width: 96px; height: 96px;"
+                                align="right"><a name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How
+                                  to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img
+                        alt="How to add each file to a separate archive" src="titles.png"
+                        style="width: 129px; height: 2px;"><br>
+                      <a name="create_separate_archives"></a>DOWNLOADS<br>
+                      <img alt="how to create separate archives" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="create separate archives"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="add_files_to_separate_archives"></a>SUPPORT<br>
+                      <img alt="how to create multiple archives" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="add to separate archives" title="PeaZip releases feed" src="extract-zip/rss16.png"
+                                style="width: 24px; height: 24px;" align="middle"></small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online"
+                                alt="SFX files autonomous compressed files capable of auto-extraction without requiring external software"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is a sfx file" title="Mail developer | Giorgio Tani" src="free-zip/mail.png"
+                                style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="what is a self extracting archive" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>

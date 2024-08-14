@@ -1,847 +1,790 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="How to extract multiple archives mixed formats at once, options. Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archives">
+    content="How to extract multiple archives mixed formats at once, options. Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archives">
   <meta name="KEYWORDS"
- content="batch, multiple, archives, extract, decompress, serial, recursive, extraction, at once, rar, 7z, tar, zip, files">
+    content="batch, multiple, archives, extract, decompress, serial, recursive, extraction, at once, rar, 7z, tar, zip, files">
   <meta name="ROBOTS" content="all">
   <title>Extract 7Z RAR TAR ZIP files</title>
   <meta name="viewport" content="width=device-width">
-  <meta property="og:site_name"
- content="PeaZip file archiver utility, free RAR ZIP software">
+  <meta property="og:site_name" content="PeaZip file archiver utility, free RAR ZIP software">
   <meta property="og:title" content="Extract 7Z RAR TAR ZIP files">
   <meta property="og:description"
- content="How to extract multiple archives mixed formats at once, options. Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archive">
+    content="How to extract multiple archives mixed formats at once, options. Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archive">
   <meta property="og:image" content="extract.png">
-  <meta property="og:url"
- content="https://peazip.github.io/how-to-extract-rar-zip-archives.html">
+  <meta property="og:url" content="https://peazip.github.io/how-to-extract-rar-zip-archives.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
 </head>
+
 <body>
-<div style="text-align: center;">
-<table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: center;">
-      <table
- style="text-align: left; margin-left: auto; margin-right: auto;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top;"> <img
- title="Extract multiple archives at once with PeaZip"
- alt="how to batch extract multiple archives" src="peazip_ico24.png"
- style="border: 0px solid ; width: 24px; height: 24px;"> </td>
-            <td style="vertical-align: middle;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="index.html">DOWNLOAD PEAZIP</a> </td>
-            <td style="vertical-align: middle; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-help-faq.html">ONLINE SUPPORT</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp;&nbsp; &nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
-            <td style="vertical-align: top; font-weight: bold;">&nbsp;
-&nbsp; &nbsp; &nbsp;&nbsp; <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
-            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br>
-            </td>
-            <td style="vertical-align: middle; font-weight: bold;"><a
- href="donations.html">DONATE</a> </td>
-          </tr>
-          <tr>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><img
- alt="Extract multiple 7Z RAR TAR ZIP files at once"
- src="free-rar/archive-manager.png" style="width: 12px; height: 12px;">
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="text-align: center; vertical-align: bottom;"><br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr align="center">
-      <td
- style="vertical-align: top; background-color: rgb(72, 136, 248);">
-      <div style="text-align: left;"> </div>
-      <table
- style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
-            <h1 style="text-align: center;"><big><big><big><a
- style="font-weight: bold;" name="rar_zip_batch_extraction"></a><span
- style="font-weight: bold;">Extract 7Z RAR TAR ZIP
-files</span><br>
-            </big></big></big></h1>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
- alt="How to extract multiple archives mixed formats at once, options"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr>
-      <td
- style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archives"
- src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;"><br>
-      <table style="text-align: left;" border="0" cellpadding="6"
- cellspacing="0">
-        <tbody>
-          <tr>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;"><small><a
- href="peazip-more.html">ISSUE TRACKER, CVE<br>
-            </a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><a
- href="changelog.html"><small>CHANGE LOG</small></a><br>
-            </td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;"><small><a
- href="peazip-reviews.html">REVIEWS</a></small></td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <table
- style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;"
- border="0" cellpadding="48" cellspacing="0">
-        <tbody>
-          <tr align="left">
-            <td
- style="background-color: rgb(255, 255, 255); vertical-align: top;">
-            <h2><big><big><big><a style="font-weight: bold;"
- name="batch_rar_zip_decompression"></a><a
- href="how-to-extract-rar-zip-archives.html#rar_zip_batch_extraction"><span
- style="font-weight: bold;">How
-to batch extract single or multiple 7Z RAR
-TAR ZIP ZIPX archives</span><br>
-            </a></big></big></big></h2>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Archive formats
-supported for extraction</big></h3>
-            <br>
-PeaZip provides read support - open, browse, decompress / extract -
-for over 200
-types of archives, compressed files, or containers, including: <span
- style="font-weight: bold;">7z</span>, apk, <span
- style="font-weight: bold;">bz2</span>, <span
- style="font-weight: bold;">gz</span>, <span style="font-weight: bold;">tar</span>,
-            <span style="font-weight: bold;">zip</span>, <span
- style="font-weight: bold;">zipx</span>, arj, <a
- href="cab-files-utility.html"><span style="font-weight: bold;">cab</span></a>,
-chm, cpio, deb, lzh, lha, <span style="font-weight: bold;">rar</span>,
-rpm, z, <a href="iso-utility.html"><span style="font-weight: bold;">iso</span></a>,
-Java (jar, ear,
-war), xpi, wim, u3p,
-lzma, udf, dmg, swm, Open Office /
-Libre Office (ods, ots, odm,
-oth, oxt, odb, odf, odg, otg, odp, otp, odt, ott), Microsoft
-Office (doc, dot, xls,
-xlt, ppt, pps, pot, docx, dotx, xlsx, xltx), Flash (swf, flv), quad,
-balz, bcm, zpaq,
-paq*, lpaq*, <a href="ace-files-utility.html"><span
- style="font-weight: bold;">ace</span></a>, arc, pea and
-more...<br>
-PeaZip can <a href="free-rar.html">extract RAR files free</a> (even
-new RAR5 standard), out of the box, without requiring installation of
-additional packages or pulg-ins.<br>
-ZIPX files are read/write supported by PeaZip archiver utility, but
-when <a href="zipx-files-software.html">extracting a ZIPX archive</a>
-please remember it may contain filest compressed with newer (or even
-proprietary) algorithms not yet supported by PeaZip, as ZIPX standard
-is subject to constant development from WinZip company.<br>
-            <br>
-            <br>
-            <h3><big style="font-weight: bold;">Extract all archives in
-a
-folder</big></h3>
-            <br>
-            <a name="recoursive_extraction_of_archives"></a>If a <span
- style="font-weight: bold;">folder
-of archives</span> is selected for extraction procedure, the
-application will
-scan
-it (recursively, including sub-folders) for detecting archive files of
-supported types, to be listed for batch extraction in a single pass.<br>
-All archive files contained in the selected folder will consequently be
-added to the extraction list layout.<br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>How to extract one or
-more archives</big></h3>
-            <br>
-To extract <span style="font-weight: bold;">the entire content of a
-single or multiple
-archives at once</span>, even of various types:<br>
-            <table style="text-align: left;" border="0" cellpadding="24"
- cellspacing="0">
+  <div style="text-align: center;">
+    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+      cellspacing="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: top; text-align: center;">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0"
+              cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top; width: 50%;">
-                  <h4><span style="font-weight: bold;"><big>Start
-extraction
-from the
-system's file
-explorer</big> </span></h4>
-                  <ul>
-                    <li>
-                      <p><a name="rar_zip_extraction_options"></a>Select
-one or more archive files and
-use context menu entry "Extract..."
-to display full
-extraction screen GUI, which allows to set
-output path, password, and other options explained below, for the
-archive or the group of archives<br>
-                      </p>
-                    </li>
-                    <li>
-                      <p><a name="extract_rar_zip_from_context_menu"></a>Select
-one or more archives and use <a href="screenshots-peazip-3.html">context
-menu extraction</a>
-entry <span style="font-weight: bold;">Extract here</span>, <span
- style="font-weight: bold;">Extract here (smart) </span>or <span
- style="font-weight: bold;">Extract
-here (to new folder)</span> for directly extract archive(s) with no
-further
-confirmation to current directory - "Extract here (smart)" uses "Smart
-new folder"
-parameter, which automatically decide if a new root folder is needed.<br>
-                      </p>
-                    </li>
-                  </ul>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; width: 50%;">
-                  <h4><big><span style="font-weight: bold;">Start
-extraction
-from
-PeaZip main application</span></big></h4>
-                  <ul>
-                    <li>
-                      <p><a name="rar_tar_zip_extractor"></a>Selecting
-an archive, or a group of archives, Extract
-button shows full featured
-archive
-extraction screen providing access to all options (password, set output
-path, open output path after extraction, keep or delete original
-archives, etc)</p>
-                    </li>
-                  </ul>
-                  <div style="margin-left: 40px;">
-                  <h3><img title="How to batch extract rar zip files"
- alt="extract multiple archives at once" src="extract-archive.png"
- style="width: 112px; height: 45px;"></h3>
-                  </div>
-                  <ul>
-                    <li>On the right of Extract button, the dropdown
-context menu&nbsp; shows Extract all to... (asks
-only for output path), Extract here, and direct extraction to relevant
-folders - desktop, documents, favorites...</li>
-                  </ul>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;"> <img title="Extract multiple archives at once with PeaZip"
+                      alt="how to batch extract multiple archives" src="peazip_ico24.png"
+                      style="border: 0px solid ; width: 24px; height: 24px;"> </td>
+                  <td style="vertical-align: middle;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="index.html">DOWNLOAD PEAZIP</a> </td>
+                  <td style="vertical-align: middle; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="peazip-help-faq.html">ONLINE
+                      SUPPORT</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp;&nbsp; &nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="screenshots-peazip-1.html">SCREENSHOTS</a> </td>
+                  <td style="vertical-align: top; font-weight: bold;">&nbsp;
+                    &nbsp; &nbsp; &nbsp;&nbsp; <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a
+                      href="peazip-compression-benchmark.html">BENCHMARKS</a> </td>
+                  <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                  </td>
+                  <td style="vertical-align: middle; font-weight: bold;"><a href="donations.html">DONATE</a> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><img
+                      alt="Extract multiple 7Z RAR TAR ZIP files at once" src="free-rar/archive-manager.png"
+                      style="width: 12px; height: 12px;">
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="text-align: center; vertical-align: bottom;"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top; background-color: rgb(72, 136, 248);">
+            <div style="text-align: left;"> </div>
+            <table style="width: 960px; text-align: left; font-weight: bold; color: rgb(253, 253, 253);" border="0"
+              cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
+                    <h1 style="text-align: center;"><big><big><big><a style="font-weight: bold;"
+                              name="rar_zip_batch_extraction"></a><span style="font-weight: bold;">Extract 7Z RAR TAR
+                              ZIP
+                              files</span><br>
+                          </big></big></big></h1>
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(204, 204, 204);"><img
+              alt="How to extract multiple archives mixed formats at once, options" src="free-rar/file-compressor.png"
+              style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
+              alt="Single pass, serial, recursive batch extraction of 7Z RAR TAR ZIP files and folders of archives"
+              src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;"><br>
+            <table style="text-align: left;" border="0" cellpadding="6" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
+                        href="peazip-help-faq.html">FAQ, HOW TO</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-help.html">ONLINE TUTORIAL</a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; text-align: center; background-color: rgb(240, 239, 238); font-weight: bold;">
+                    <small><a href="peazip-more.html">ISSUE TRACKER, CVE<br>
+                      </a></small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <a href="changelog.html"><small>CHANGE LOG</small></a><br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-tos-privacy.html">TOS, PRIVACY</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-free-archiver.html">WHAT IS PEAZIP</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+                    </small></td>
+                  <td
+                    style="vertical-align: top; background-color: rgb(240, 239, 238); text-align: center; font-weight: bold;">
+                    <small><a href="peazip-reviews.html">REVIEWS</a></small></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table style="background-color: rgb(240, 240, 240); width: 960px; text-align: left;" border="0"
+              cellpadding="48" cellspacing="0">
+              <tbody>
+                <tr align="left">
+                  <td style="background-color: rgb(255, 255, 255); vertical-align: top;">
+                    <h2><big><big><big><a style="font-weight: bold;" name="batch_rar_zip_decompression"></a><a
+                              href="how-to-extract-rar-zip-archives.html#rar_zip_batch_extraction"><span
+                                style="font-weight: bold;">How
+                                to batch extract single or multiple 7Z RAR
+                                TAR ZIP ZIPX archives</span><br>
+                            </a></big></big></big></h2>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Archive formats
+                        supported for extraction</big></h3>
+                    <br>
+                    PeaZip provides read support - open, browse, decompress / extract -
+                    for over 200
+                    types of archives, compressed files, or containers, including: <span
+                      style="font-weight: bold;">7z</span>, apk, <span style="font-weight: bold;">bz2</span>, <span
+                      style="font-weight: bold;">gz</span>, <span style="font-weight: bold;">tar</span>,
+                    <span style="font-weight: bold;">zip</span>, <span style="font-weight: bold;">zipx</span>, arj, <a
+                      href="cab-files-utility.html"><span style="font-weight: bold;">cab</span></a>,
+                    chm, cpio, deb, lzh, lha, <span style="font-weight: bold;">rar</span>,
+                    rpm, z, <a href="iso-utility.html"><span style="font-weight: bold;">iso</span></a>,
+                    Java (jar, ear,
+                    war), xpi, wim, u3p,
+                    lzma, udf, dmg, swm, Open Office /
+                    Libre Office (ods, ots, odm,
+                    oth, oxt, odb, odf, odg, otg, odp, otp, odt, ott), Microsoft
+                    Office (doc, dot, xls,
+                    xlt, ppt, pps, pot, docx, dotx, xlsx, xltx), Flash (swf, flv), quad,
+                    balz, bcm, zpaq,
+                    paq*, lpaq*, <a href="ace-files-utility.html"><span style="font-weight: bold;">ace</span></a>, arc,
+                    pea and
+                    more...<br>
+                    PeaZip can <a href="free-rar.html">extract RAR files free</a> (even
+                    new RAR5 standard), out of the box, without requiring installation of
+                    additional packages or pulg-ins.<br>
+                    ZIPX files are read/write supported by PeaZip archiver utility, but
+                    when <a href="zipx-files-software.html">extracting a ZIPX archive</a>
+                    please remember it may contain filest compressed with newer (or even
+                    proprietary) algorithms not yet supported by PeaZip, as ZIPX standard
+                    is subject to constant development from WinZip company.<br>
+                    <br>
+                    <br>
+                    <h3><big style="font-weight: bold;">Extract all archives in
+                        a
+                        folder</big></h3>
+                    <br>
+                    <a name="recoursive_extraction_of_archives"></a>If a <span style="font-weight: bold;">folder
+                      of archives</span> is selected for extraction procedure, the
+                    application will
+                    scan
+                    it (recursively, including sub-folders) for detecting archive files of
+                    supported types, to be listed for batch extraction in a single pass.<br>
+                    All archive files contained in the selected folder will consequently be
+                    added to the extraction list layout.<br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>How to extract one or
+                        more archives</big></h3>
+                    <br>
+                    To extract <span style="font-weight: bold;">the entire content of a
+                      single or multiple
+                      archives at once</span>, even of various types:<br>
+                    <table style="text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; width: 50%;">
+                            <h4><span style="font-weight: bold;"><big>Start
+                                  extraction
+                                  from the
+                                  system's file
+                                  explorer</big> </span></h4>
+                            <ul>
+                              <li>
+                                <p><a name="rar_zip_extraction_options"></a>Select
+                                  one or more archive files and
+                                  use context menu entry "Extract..."
+                                  to display full
+                                  extraction screen GUI, which allows to set
+                                  output path, password, and other options explained below, for the
+                                  archive or the group of archives<br>
+                                </p>
+                              </li>
+                              <li>
+                                <p><a name="extract_rar_zip_from_context_menu"></a>Select
+                                  one or more archives and use <a href="screenshots-peazip-3.html">context
+                                    menu extraction</a>
+                                  entry <span style="font-weight: bold;">Extract here</span>, <span
+                                    style="font-weight: bold;">Extract here (smart) </span>or <span
+                                    style="font-weight: bold;">Extract
+                                    here (to new folder)</span> for directly extract archive(s) with no
+                                  further
+                                  confirmation to current directory - "Extract here (smart)" uses "Smart
+                                  new folder"
+                                  parameter, which automatically decide if a new root folder is needed.<br>
+                                </p>
+                              </li>
+                            </ul>
+                          </td>
+                          <td style="vertical-align: top; width: 50%;">
+                            <h4><big><span style="font-weight: bold;">Start
+                                  extraction
+                                  from
+                                  PeaZip main application</span></big></h4>
+                            <ul>
+                              <li>
+                                <p><a name="rar_tar_zip_extractor"></a>Selecting
+                                  an archive, or a group of archives, Extract
+                                  button shows full featured
+                                  archive
+                                  extraction screen providing access to all options (password, set output
+                                  path, open output path after extraction, keep or delete original
+                                  archives, etc)</p>
+                              </li>
+                            </ul>
+                            <div style="margin-left: 40px;">
+                              <h3><img title="How to batch extract rar zip files"
+                                  alt="extract multiple archives at once" src="extract-archive.png"
+                                  style="width: 112px; height: 45px;"></h3>
+                            </div>
+                            <ul>
+                              <li>On the right of Extract button, the dropdown
+                                context menu&nbsp; shows Extract all to... (asks
+                                only for output path), Extract here, and direct extraction to relevant
+                                folders - desktop, documents, favorites...</li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Add and remove files from archives"
+                                  alt="extract 7z rar tar zip files" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;"><big>Hint:
+                              in Options &gt; Settings &gt; Archive manager page, Extraction group it
+                              is possible to set how file extraction works internally, flagging or
+                              unflagging the option "<span style="font-weight: bold;">Interactive
+                                extraction, extract then move to destination</span>".<br>
+                            </big></td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Add and remove data from current archive" alt="how to extract rar files"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <h4><big style="font-weight: bold;">Extract to temporary
+                        work
+                        folder and then move to destination (option)</big></h4>
+                    <br>
+                    When <span style="font-weight: bold;">extract then move to destination</span>
+                    option is on (extraction tab), archive extraction is a two-step
+                    process extracting content to the temporary work path (which can be set
+                    from Options Settings &gt; General page) then moving extracted content
+                    to intended output destination, interactively asking to user to
+                    overwrite existing files if needed.<br>
+                    When interactive extraction option is off, the extraction is performed
+                    directly toward output destination, and naming conflict policy
+                    automatically resolves issues with existing files without needing
+                    user's feedback - for this reason, it is recommended for batch tasks,
+                    and this mode of operation is automatically applied whenever an <a
+                      href="peazip-command-line.html">extraction task is exported as console
+                      script</a>, from Console tab.<br>
+                    <br>
+                    <br>
+                    <h3 style="font-weight: bold;"><big>Archive extraction
+                        options</big></h3>
+                    <br>
+                    In the top part of the application window, PeaZip provides a file
+                    explorer control showing the list of input archive files (single one or
+                    multiple) queued to be
+                    unpacked (<span style="font-weight: bold;">extraction layout</span>):
+                    rightclick on it for context menu to further
+                    edit the list, and for showing
+                    other input-related options.<br>
+                    To extract and <a href="file-split.html">merge spanned (split) archive
+                      files</a> it is needed to save all the parts
+                    (usually .001, .002, etc) in the same
+                    directory, and to send the first part to extraction (usually with
+                    extension .001, .R01, Z01...).<br>
+                    The entire content of the archive(s) queued for extraction will be
+                    saved to output path.<br>
+                    <br>
+                    <h3 style="text-align: center;"><img alt="batch extraction of archives"
+                        title="Extraction of archives of mixed types" src="extract.png"
+                        style="border: 0px solid ; width: 640px; height: 418px;"></h3>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);"><span
+                              style="font-weight: bold;"><a name="select_files_to_add_to_zip_archive"></a>Input
+                              area context menu</span> features entries to add files &amp; folders to
+                            extraction list, drag to application from
+                            search results,
+                            open bookmarked &amp; recently visited paths, add bookmarked and
+                            recently used
+                            files, load and save layout, and more... <br>
+                            Same menu is replicated
+                            clickingon the hamburger icon in the top right
+                            corner of the application's window.<br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">Advanced extraction options</big><br>
+                    <br>
+                    Above input layout area, below application's main menu, it is featured
+                    the extraction tab bar.<br>
+                    Advanced tab provides more features - as attempt extraction of
+                    non-archive
+                    extensions, extract to relative, absolute or full paths (including
+                    drive letter).<br>
+                    <br>
+                    <br>
+                    <h4><big style="font-weight: bold;">Script and schedule
+                        extraction of archives</big></h4>
+                    <br>
+                    Console and Schedule
+                    tabs can fine tune task definition beyond GUI capabilities, and save /
+                    schedule the task
+                    in the form of <a href="peazip-command-line.html">command line script</a>,
+                    i.e. for syntax learning purpose, or for later unattended use as batch
+                    script.<br>
+                    <br>
+                    <br>
+                    <h4><big><span style="font-weight: bold;">Set output path
+                          for extraction</span></big></h4>
+                    <br>
+                    In the bottom area of the form is featured Output group, that allows to
+                    select extraction directory (default: current folder); on the left of
+                    the address box, the arrow
+                    button popup a navigation menu similar to the one featured in file
+                    manager, to speed up the selection of most frequently used paths.<br>
+                    <table style="width: 100%; text-align: left;" border="0" cellpadding="24" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="vertical-align: top; text-align: right; width: 128px;">
+                            <h2><span style="font-weight: bold;"><img title="Extract multiple archives at once"
+                                  alt="extract all archives in a directory" src="file-format/quotes.png"
+                                  style="width: 32px; height: 32px;"></span></h2>
+                          </td>
+                          <td style="vertical-align: top; font-style: italic;">On
+                            the right of Output field it is featured Enter password / keyfile
+                            button (padlock icon) to set the decryption password, if needed for <a
+                              href="extract-encrypted-files.html">extraction of
+                              encrypted archives</a>.<br>
+                            <h2><img title="Extract password protected archives" alt="how to extract mutiple archives"
+                                src="rar-files/cryptography.png" style="width: 16px; height: 16px;"></h2>
+                          </td>
+                          <td style="vertical-align: bottom; width: 128px;">
+                            <h3><img title="Multiple archives extraction" alt="extract all archives in current folder"
+                                src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    Dropdown option menus features
+                    output
+                    options for 7z / p7zip backend, that is used to support most common
+                    file
+                    formats<br>
+                    <br>
+                    <br>
+                    <big style="font-weight: bold;">Skip or overwrite existing
+                      files on extraction</big><br>
+                    <ul>
+                      <li>Policy for handling naming conflicts</li>
+                      <ul>
+                        <li><span style="font-weight: bold;"><a name="extract_and_skip_existing_files"></a>Skip existing
+                            files</span>
+                          assure files on disk will not be affected, conflicting objects will not
+                          be extracted from the archive (default)</li>
+                        <li><span style="font-weight: bold;"><a name="automatically_rename_extracted_files"></a>Auto
+                            rename
+                            extracted files</span> assign a new unique
+                          name to objects being extracted from the archive each time a naming
+                          conflict is encountered; that policy assures that pre-existing objects
+                          on disk
+                          will keep their original names</li>
+                        <li><span style="font-weight: bold;">Auto rename
+                            existing files</span> extracted
+                          objects get the desired name, conflicting pre-existing objects are
+                          renamed
+                          with a new unique name</li>
+                        <li><span style="font-weight: bold;"><a
+                              name="extract_and_overwrite_existing_files"></a>Overwrite existing
+                            files</span> make all conflicting pre-existing
+                          objects overwritten by extracted objects</li>
+                        <li><span style="font-weight: bold;">Ask before
+                            overwriting (in console)</span>: no defined
+                          policy, the console will be shown alongside graphic process launcher
+                          allowing the user to decide interactively if overwriting or skipping
+                          files</li>
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>Actions performed by the extraction
+                        routine: "Extract", default, extracts archived objects with paths,
+                        replicating the directory structure of the input data, "Extract
+                        (without path)" decompress files to a flat structure, and &#8220;List&#8221; or
+                        "Test".</li>
+                    </ul>
+                    <br>
+                    <big><span style="font-weight: bold;">Extraction options
+                        group</span></big><br>
+                    <br>
+                    Checkboxes can set following
+                    options:<br>
+                    <ul>
+                      <li><span style="font-weight: bold;"><a name="delete_archive_after_extraction"></a>Delete archives
+                          after extraction</span> removes original archives after
+                        extraction proces, if checked shows deletion options: move to recycle
+                        bin, quick delete (files are deleted without
+                        being moved to recycle bin), zero delete (data overwritten by 0s),
+                        secure delete (multi-pass overwriting of
+                        data)</li>
+                      <li><span style="font-weight: bold;"><a name="how_to_extract_in_new_folder"></a>Extract in new
+                          folder</span>
+                        triggers extraction to a
+                        fresh new folder, avoiding possible naming conflicts<br>
+                      </li>
+                      <li><span style="font-weight: bold;"><a
+                            name="extract_each_archivce_to_its_original_path"></a>Extract to
+                          original
+                          path</span> perform
+                        extraction of each archive in its original input path</li>
+                      <li><span style="font-weight: bold;">Open output path
+                          when task completes</span> automatically open the output
+                        directory where the archive was extracted to</li>
+                      <li><span style="font-weight: bold;">Smart new folder</span>
+                        prevents multiple unexpected items being extracted to destination
+                        ("tarbomb"-like effect): automatically extracts to new folder, if the
+                        new folder contains
+                        a single object (file or directory) content is copied outside and the
+                        extra folder is removed (removing extra folder layer and preserving
+                        original names of archived folders), if copying the content outside the
+                        new folder fails, the content is kept in the new folder</li>
+                    </ul>
+                    The status bar contains, on the left, information of free space on
+                    current output disk, and input size, and on the right OK and Cancel
+                    buttons.<br>
+                    Cancelling an operation also means discarding changes in option
+                    switches, while confirming with OK saves changes.<br>
+                    <br>
+                    Learn more about how to use PeaZip archive manager utility to <a
+                      href="7zip-files-utility.html">extract 7Z files</a>, <a
+                      href="brotli-compression-utility.html">decompress Brotli files</a>, <a
+                      href="bzip2-utility.html">decompress BZ2 files</a>, <a href="gzip-utility.html">decompress GZ
+                      files</a>, <a href="paq-files-compression-utility.html">extract PAQ, LPAQ, ZPAQ
+                      archives</a>, <a href="tar-windows.html">extract TAR files</a> (and
+                    compressed TAR formats, such as TBZ, TGZ, TXZ...), <a href="wim-utility.html">extract WIM files</a>
+                    as they were
+                    "traditional" archives, <a href="zip-files-utility.html">extract ZIP
+                      files</a>.<br>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: bold;">Synopsis: How to
+                        extract a single archive or multiple archives of mixed formats at once
+                        with PeaZip. Batch
+                        extraction options. Single pass, serial extraction of 7Z RAR TAR ZIP
+                        files. R</span><span style="font-weight: bold;">ecursive extraction of </span><span
+                        style="font-weight: bold;">folders of archives (</span><span style="font-weight: bold;">batch
+                        extract all archives in selected /
+                        current directory)</span><span style="font-weight: bold;">.<br>
+                      </span></p>
+                    <p><span style="font-weight: bold;">Topics: extract 7z rar
+                        tar zip archives, extract multiple archives at once, extract here,
+                        extract to new folder</span><br>
+                      <span style="font-weight: bold;"></span><span style="font-weight: bold;"></span>
+                    </p>
+                    <p><span style="font-weight: bold;">PeaZip &gt; FAQ
+                        &gt; Extract multiple 7Z RAR TAR ZIP files at once<br>
+                      </span></p>
+                    <br>
+                    <table style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;" border="0"
+                      cellpadding="24" cellspacing="1">
+                      <tbody>
+                        <tr>
+                          <td colspan="1" rowspan="1"
+                            style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                            <h3 style="color: rgb(0, 0, 0);"><img
+                                title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
+                                alt="how to extract archives" src="file-format/archive-manager.png"
+                                style="width: 96px; height: 96px;" align="right"><a
+                                name="how_to_compress_files"></a>ARCHIVE
+                              MANAGER</h3>
+                            <p><a href="rar-zip-file-format-size-limitations.html">7Z
+                                RAR TAR ZIP
+                                archive formats
+                                limitations</a><br>
+                            </p>
+                            <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
+                                TAR files
+                                extraction, how to automatically untar compressed TAR archives in a
+                                single step</a><br>
+                            </p>
+                            <p><a href="archive-file-formats-comparison.html">Comparison
+                                of compression
+                                algorithms and archive
+                                formats</a><br>
+                            </p>
+                            <p><a href="what-is-zip-file.html">How file
+                                compression (lossy, lossless)
+                                and archiving works?</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-compress-files-folders.html">How to add files
+                                and folders
+                                to a new
+                                archive</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-zip-files-separate-archives.html">How to add files to
+                                  multiple separate
+                                  archives</a><br>
+                              </li>
+                            </ul>
+                            <p><a style="font-weight: bold;" href="convert-files.html">How to convert
+                                existing
+                                archives</a><br>
+                            </p>
+                            <p><a style="font-weight: bold;" href="how-to-extract-rar-zip-archives.html">How to extract
+                                single or
+                                multiple
+                                archives at once</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="how-to-extract-multipart-archives.html">How
+                                  to extract
+                                  multi-part archiives</a><br>
+                              </li>
+                              <li><a href="how-to-extract-selected-files-from-archive.html">How to extract
+                                  selected content from
+                                  archive</a><br>
+                              </li>
+                            </ul>
+                            <p style="font-weight: bold;"><a href="how-to-open-rar-tar-zip-files.html">How to open,
+                                list, browse,
+                                and search
+                                archive file</a> </p>
+                            <p><a style="font-weight: bold;" href="how-to-update-existing-archive.html">How to update
+                                existing
+                                archives</a><br>
+                            </p>
+                            <ul>
+                              <li><a href="add-files-to-existing-archive.html">How
+                                  to add new
+                                  files to existing archive</a></li>
+                              <li><a href="add-remove-files-from-archive.html">How
+                                  to delete files from
+                                  archive</a></li>
+                              <li><a href="edit-file-in-archive.html">How
+                                  to edit
+                                  files in archive</a><br>
+                              </li>
+                            </ul>
+                            <p> </p>
+                            <p style="font-weight: bold;"><a href="file-compression-performances.html">How to improve
+                                file
+                                compression
+                                performances</a></p>
+                            <p><a href="self-extracting-archives.html">Self
+                                extracting archives</a></p>
+                            <p><a href="what-is-solid-compression.html">What
+                                is solid compression?</a><br>
+                            </p>
+                            <p><a href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
+                                files cannot be compressed?</a><br>
+                            </p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </td>
                 </tr>
               </tbody>
             </table>
             <br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
+          </td>
+        </tr>
+        <tr align="center">
+          <td style="vertical-align: top;">
+            <table style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;" border="0"
+              cellpadding="0" cellspacing="0">
               <tbody>
                 <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Add and remove files from archives"
- alt="extract 7z rar tar zip files" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
+                  <td style="vertical-align: top;"><br>
                   </td>
-                  <td style="vertical-align: top; font-style: italic;"><big>Hint:
-in Options &gt; Settings &gt; Archive manager page, Extraction group it
-is possible to set how file extraction works internally, flagging or
-unflagging the option "<span style="font-weight: bold;">Interactive
-extraction, extract then move to destination</span>".<br>
-                  </big></td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img
- title="Add and remove data from current archive"
- alt="how to extract rar files" src="file-format/quotes-inverse.png"
- style="width: 32px; height: 32px;"></h3>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                  <td style="vertical-align: top;"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 25%;"><small> <img alt="extract all archives in a directory"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="extract_all_archives_in_a_directory"></a>DOWNLOADS<br>
+                      <img alt="extract mutiple archives at once" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                    </small><small><a href="index.html">All
+                        PeaZip downloads</a><br>
+                    </small><small><a href="peazip-linux.html">PeaZip
+                        for Linux</a><br>
+                    </small><small><a href="peazip-macos.html">PeaZip
+                        for macOS</a></small><br>
+                    <small> <a href="peazip-64bit.html">PeaZip
+                        for Windows</a><br>
+                    </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
+                    </small>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="extract mutiple archives at once"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a name="extract_mutiple_archives_at_once"></a>SUPPORT<br>
+                      <img alt="extract all archives in current directory at once" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br>
+                      <a href="peazip-help.html">Online
+                        help</a><br>
+                      <a href="peazip-help-faq.html">Frequently
+                        Asked Questions</a><br>
+                    </small><br>
+                  </td>
+                  <td style="vertical-align: top; width: 25%;"><small><img alt="peazip file compression software"
+                        src="titles.png" style="width: 129px; height: 2px;"><br>
+                      <a style="color: rgb(0, 0, 0);" name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+                        style="font-style: italic;">
+                      <img alt="peazip free archiver utility" src="free-rar/extract-rar.png"
+                        style="width: 1px; height: 1px;" vspace="3"><br style="font-style: italic;">
+                    </small><small><a href="peazip-tos-privacy.html" style="font-weight: normal;">PeaZip project: TOS,
+                        Privacy</a><br>
+                    </small></td>
+                  <td style="vertical-align: top; width: 247px;">
+                    <table style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;" border="0"
+                      cellpadding="3" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/releases.atom">Releases
+                                Feed</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Archive formats supported for extraction" title="PeaZip releases feed"
+                                src="extract-zip/rss16.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a target="_blank"
+                                href="https://github.com/peazip/PeaZip/wiki">PeaZip
+                                Wiki</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                title="PeaZip Wiki online" alt="How to extract one or more archives"
+                                src="free-zip/wikipedia.png" style="width: 24px; height: 24px;" align="middle"></small>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="Archive extraction options" title="Mail developer | Giorgio Tani"
+                                src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
+                            </small></td>
+                        </tr>
+                        <tr>
+                          <td style="text-align: right; vertical-align: middle;"><small><a
+                                href="peazip-more.html">Search knowledge-base</a><br>
+                            </small></td>
+                          <td style="text-align: right; width: 30px; vertical-align: middle;"><small><img
+                                alt="batch extraction of archives" title="Search in PeaZip project domain"
+                                src="extract-rar/rar-opener.png" style="border: 0px solid ; width: 24px; height: 24px;"
+                                align="middle"></small></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <br>
-            <h4><big style="font-weight: bold;">Extract to temporary
-work
-folder and then move to destination (option)</big></h4>
-            <br>
-When <span style="font-weight: bold;">extract then move to destination</span>
-option is on (extraction tab), archive extraction is a two-step
-process extracting content to the temporary work path (which can be set
-from Options Settings &gt; General page) then moving extracted content
-to intended output destination, interactively asking to user to
-overwrite existing files if needed.<br>
-When interactive extraction option is off, the extraction is performed
-directly toward output destination, and naming conflict policy
-automatically resolves issues with existing files without needing
-user's feedback - for this reason, it is recommended for batch tasks,
-and this mode of operation is automatically applied whenever an <a
- href="peazip-command-line.html">extraction task is exported as console
-script</a>, from Console tab.<br>
-            <br>
-            <br>
-            <h3 style="font-weight: bold;"><big>Archive extraction
-options</big></h3>
-            <br>
-In the top part of the application window, PeaZip provides a file
-explorer control showing the list of input archive files (single one or
-multiple) queued to be
-unpacked (<span style="font-weight: bold;">extraction layout</span>):
-rightclick on it for context menu to further
-edit the list, and for showing
-other input-related options.<br>
-To extract and <a href="file-split.html">merge spanned (split) archive
-files</a> it is needed to save all the parts
-(usually .001, .002, etc) in the same
-directory, and to send the first part to extraction (usually with
-extension .001, .R01, Z01...).<br>
-The entire content of the archive(s) queued for extraction will be
-saved to output path.<br>
-            <br>
-            <h3 style="text-align: center;"><img
- alt="batch extraction of archives"
- title="Extraction of archives of mixed types" src="extract.png"
- style="border: 0px solid ; width: 640px; height: 418px;"></h3>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);"><span
- style="font-weight: bold;"><a name="select_files_to_add_to_zip_archive"></a>Input
-area context menu</span> features entries to add files &amp; folders to
-extraction list, drag to application from
-search results,
-open bookmarked &amp; recently visited paths, add bookmarked and
-recently used
-files, load and save layout, and more... <br>
-Same menu is replicated
-clickingon the hamburger icon in the top right
-corner of the application's window.<br>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            <br>
-            <big style="font-weight: bold;">Advanced extraction options</big><br>
-            <br>
-Above input layout area, below application's main menu, it is featured
-the extraction tab bar.<br>
-Advanced tab provides more features - as attempt extraction of
-non-archive
-extensions, extract to relative, absolute or full paths (including
-drive letter).<br>
-            <br>
-            <br>
-            <h4><big style="font-weight: bold;">Script and schedule
-extraction of archives</big></h4>
-            <br>
-Console and Schedule
-tabs can fine tune task definition beyond GUI capabilities, and save /
-schedule the task
-in the form of <a href="peazip-command-line.html">command line script</a>,
-i.e. for syntax learning purpose, or for later unattended use as batch
-script.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">Set output path
-for extraction</span></big></h4>
-            <br>
-In the bottom area of the form is featured Output group, that allows to
-select extraction directory (default: current folder); on the left of
-the address box, the arrow
-button popup a navigation menu similar to the one featured in file
-manager, to speed up the selection of most frequently used paths.<br>
-            <table style="width: 100%; text-align: left;" border="0"
- cellpadding="24" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td
- style="vertical-align: top; text-align: right; width: 128px;">
-                  <h2><span style="font-weight: bold;"><img
- title="Extract multiple archives at once"
- alt="extract all archives in a directory" src="file-format/quotes.png"
- style="width: 32px; height: 32px;"></span></h2>
-                  </td>
-                  <td style="vertical-align: top; font-style: italic;">On
-the right of Output field it is featured Enter password / keyfile
-button (padlock icon) to set the decryption password, if needed for <a
- href="extract-encrypted-files.html">extraction of
-encrypted archives</a>.<br>
-                  <h2><img title="Extract password protected archives"
- alt="how to extract mutiple archives" src="rar-files/cryptography.png"
- style="width: 16px; height: 16px;"></h2>
-                  </td>
-                  <td style="vertical-align: bottom; width: 128px;">
-                  <h3><img title="Multiple archives extraction"
- alt="extract all archives in current folder"
- src="file-format/quotes-inverse.png" style="width: 32px; height: 32px;"></h3>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-Dropdown option menus features
-output
-options for 7z / p7zip backend, that is used to support most common
-file
-formats<br>
-            <br>
-            <br>
-            <big style="font-weight: bold;">Skip or overwrite existing
-files on extraction</big><br>
-            <ul>
-              <li>Policy for handling naming conflicts</li>
-              <ul>
-                <li><span style="font-weight: bold;"><a
- name="extract_and_skip_existing_files"></a>Skip existing files</span>
-assure files on disk will not be affected, conflicting objects will not
-be extracted from the archive (default)</li>
-                <li><span style="font-weight: bold;"><a
- name="automatically_rename_extracted_files"></a>Auto rename
-extracted files</span> assign a new unique
-name to objects being extracted from the archive each time a naming
-conflict is encountered; that policy assures that pre-existing objects
-on disk
-will keep their original names</li>
-                <li><span style="font-weight: bold;">Auto rename
-existing files</span> extracted
-objects get the desired name, conflicting pre-existing objects are
-renamed
-with a new unique name</li>
-                <li><span style="font-weight: bold;"><a
- name="extract_and_overwrite_existing_files"></a>Overwrite existing
-files</span> make all conflicting pre-existing
-objects overwritten by extracted objects</li>
-                <li><span style="font-weight: bold;">Ask before
-overwriting (in console)</span>: no defined
-policy, the console will be shown alongside graphic process launcher
-allowing the user to decide interactively if overwriting or skipping
-files</li>
-              </ul>
-            </ul>
-            <ul>
-              <li>Actions performed by the extraction
-routine: "Extract", default, extracts archived objects with paths,
-replicating the directory structure of the input data, "Extract
-(without path)" decompress files to a flat structure, and &#8220;List&#8221; or
-"Test".</li>
-            </ul>
-            <br>
-            <big><span style="font-weight: bold;">Extraction options
-group</span></big><br>
-            <br>
-Checkboxes can set following
-options:<br>
-            <ul>
-              <li><span style="font-weight: bold;"><a
- name="delete_archive_after_extraction"></a>Delete archives
-after extraction</span> removes original archives after
-extraction proces, if checked shows deletion options: move to recycle
-bin, quick delete (files are deleted without
-being moved to recycle bin), zero delete (data overwritten by 0s),
-secure delete (multi-pass overwriting of
-data)</li>
-              <li><span style="font-weight: bold;"><a
- name="how_to_extract_in_new_folder"></a>Extract in new folder</span>
-triggers extraction to a
-fresh new folder, avoiding possible naming conflicts<br>
-              </li>
-              <li><span style="font-weight: bold;"><a
- name="extract_each_archivce_to_its_original_path"></a>Extract to
-original
-path</span> perform
-extraction of each archive in its original input path</li>
-              <li><span style="font-weight: bold;">Open output path
-when task completes</span> automatically open the output
-directory where the archive was extracted to</li>
-              <li><span style="font-weight: bold;">Smart new folder</span>
-prevents multiple unexpected items being extracted to destination
-("tarbomb"-like effect): automatically extracts to new folder, if the
-new folder contains
-a single object (file or directory) content is copied outside and the
-extra folder is removed (removing extra folder layer and preserving
-original names of archived folders), if copying the content outside the
-new folder fails, the content is kept in the new folder</li>
-            </ul>
-The status bar contains, on the left, information of free space on
-current output disk, and input size, and on the right OK and Cancel
-buttons.<br>
-Cancelling an operation also means discarding changes in option
-switches, while confirming with OK saves changes.<br>
-            <br>
-Learn more about how to use PeaZip archive manager utility to <a
- href="7zip-files-utility.html">extract 7Z files</a>, <a
- href="brotli-compression-utility.html">decompress Brotli files</a>, <a
- href="bzip2-utility.html">decompress BZ2 files</a>, <a
- href="gzip-utility.html">decompress GZ files</a>, <a
- href="paq-files-compression-utility.html">extract PAQ, LPAQ, ZPAQ
-archives</a>, <a href="tar-windows.html">extract TAR files</a> (and
-compressed TAR formats, such as TBZ, TGZ, TXZ...), <a
- href="wim-utility.html">extract WIM files</a> as they were
-"traditional" archives, <a href="zip-files-utility.html">extract ZIP
-files</a>.<br>
-            <br>
-            <br>
-            <p><span style="font-weight: bold;">Synopsis: How to
-extract a single archive or multiple archives of mixed formats at once
-with PeaZip. Batch
-extraction options. Single pass, serial extraction of 7Z RAR TAR ZIP
-files. R</span><span style="font-weight: bold;">ecursive extraction of </span><span
- style="font-weight: bold;">folders of archives (</span><span
- style="font-weight: bold;">batch extract all archives in selected /
-current directory)</span><span style="font-weight: bold;">.<br>
-            </span></p>
-            <p><span style="font-weight: bold;">Topics: extract 7z rar
-tar zip archives, extract multiple archives at once, extract here,
-extract to new folder</span><br>
-            <span style="font-weight: bold;"></span><span
- style="font-weight: bold;"></span></p>
-            <p><span style="font-weight: bold;">PeaZip &gt; FAQ
-&gt; Extract multiple 7Z RAR TAR ZIP files at once<br>
-            </span></p>
-            <br>
-            <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-              <tbody>
-                <tr>
-                  <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                  <h3 style="color: rgb(0, 0, 0);"><img
- title="FAQ how to work with archive files 7Z, RAR, TAR, ZIP..."
- alt="how to extract archives" src="file-format/archive-manager.png"
- style="width: 96px; height: 96px;" align="right"><a
- name="how_to_compress_files"></a>ARCHIVE
-MANAGER</h3>
-                  <p><a href="rar-zip-file-format-size-limitations.html">7Z
-RAR TAR ZIP
-archive formats
-limitations</a><br>
-                  </p>
-                  <p><a href="tar-windows.html#atomic_tar_extraction">Atomic
-TAR files
-extraction, how to automatically untar compressed TAR archives in a
-single step</a><br>
-                  </p>
-                  <p><a href="archive-file-formats-comparison.html">Comparison
-of compression
-algorithms and archive
-formats</a><br>
-                  </p>
-                  <p><a href="what-is-zip-file.html">How file
-compression (lossy, lossless)
-and archiving works?</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-compress-files-folders.html">How to add files and folders
-to a new
-archive</a><br>
-                  </p>
-                  <ul>
-                    <li><a
- href="how-to-zip-files-separate-archives.html">How to add files to
-multiple separate
-archives</a><br>
-                    </li>
-                  </ul>
-                  <p><a style="font-weight: bold;"
- href="convert-files.html">How to convert
-existing
-archives</a><br>
-                  </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-extract-rar-zip-archives.html">How to extract single or
-multiple
-archives at once</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="how-to-extract-multipart-archives.html">How
-to extract
-multi-part archiives</a><br>
-                    </li>
-                    <li><a
- href="how-to-extract-selected-files-from-archive.html">How to extract
-selected content from
-archive</a><br>
-                    </li>
-                  </ul>
-                  <p style="font-weight: bold;"><a
- href="how-to-open-rar-tar-zip-files.html">How to open, list, browse,
-and search
-archive file</a> </p>
-                  <p><a style="font-weight: bold;"
- href="how-to-update-existing-archive.html">How to update existing
-archives</a><br>
-                  </p>
-                  <ul>
-                    <li><a href="add-files-to-existing-archive.html">How
-to add new
-files to existing archive</a></li>
-                    <li><a href="add-remove-files-from-archive.html">How
-to delete files from
-archive</a></li>
-                    <li><a href="edit-file-in-archive.html">How
-to edit
-files in archive</a><br>
-                    </li>
-                  </ul>
-                  <p> </p>
-                  <p style="font-weight: bold;"><a
- href="file-compression-performances.html">How to improve file
-compression
-performances</a></p>
-                  <p><a href="self-extracting-archives.html">Self
-extracting archives</a></p>
-                  <p><a href="what-is-solid-compression.html">What
-is solid compression?</a><br>
-                  </p>
-                  <p><a
- href="why-can-not-compress-pdf-avi-mp3-files.html">Why some types of
-files cannot be compressed?</a><br>
-                  </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      </td>
-    </tr>
-    <tr align="center">
-      <td style="vertical-align: top;">
-      <table
- style="margin-left: auto; margin-right: auto; width: 960px; text-align: left;"
- border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-          <tr>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-            <td style="vertical-align: top;"><br>
-            </td>
-          </tr>
-          <tr>
-            <td style="vertical-align: top; width: 25%;"><small> <img
- alt="extract all archives in a directory" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="extract_all_archives_in_a_directory"></a>DOWNLOADS<br>
-            <img alt="extract mutiple archives at once"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            </small><small><a href="index.html">All
-PeaZip downloads</a><br>
-            </small><small><a href="peazip-linux.html">PeaZip
-for Linux</a><br>
-            </small><small><a href="peazip-macos.html">PeaZip
-for macOS</a></small><br>
-            <small> <a href="peazip-64bit.html">PeaZip
-for Windows</a><br>
-            </small><small><a href="peazip-sources.html">PeaZip sources</a></small><small><br>
-            </small></td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="extract mutiple archives at once" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a name="extract_mutiple_archives_at_once"></a>SUPPORT<br>
-            <img alt="extract all archives in current directory at once"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br>
-            <a href="peazip-help.html">Online
-help</a><br>
-            <a href="peazip-help-faq.html">Frequently
-Asked Questions</a><br>
-            </small><br>
-            </td>
-            <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
- style="width: 129px; height: 2px;"><br>
-            <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
- style="font-style: italic;">
-            <img alt="peazip free archiver utility"
- src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
- vspace="3"><br style="font-style: italic;">
-            </small><small><a href="peazip-tos-privacy.html"
- style="font-weight: normal;">PeaZip project: TOS,
-Privacy</a><br>
-            </small></td>
-            <td style="vertical-align: top; width: 247px;">
-            <table
- style="width: 100%; text-align: left; margin-left: auto; margin-right: 0px;"
- border="0" cellpadding="3" cellspacing="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/releases.atom">Releases
-Feed</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Archive formats supported for extraction"
- title="PeaZip releases feed" src="extract-zip/rss16.png"
- style="width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- target="_blank" href="https://github.com/peazip/PeaZip/wiki">PeaZip
-Wiki</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- title="PeaZip Wiki online" alt="How to extract one or more archives"
- src="free-zip/wikipedia.png" style="width: 24px; height: 24px;"
- align="middle"></small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="mailto:giorgio.tani.software@gmail.com">Developer email</a></small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="Archive extraction options" title="Mail developer | Giorgio Tani"
- src="free-zip/mail.png" style="width: 24px; height: 24px;"><br>
-                  </small></td>
-                </tr>
-                <tr>
-                  <td style="text-align: right; vertical-align: middle;"><small><a
- href="peazip-more.html">Search knowledge-base</a><br>
-                  </small></td>
-                  <td
- style="text-align: right; width: 30px; vertical-align: middle;"><small><img
- alt="batch extraction of archives"
- title="Search in PeaZip project domain"
- src="extract-rar/rar-opener.png"
- style="border: 0px solid ; width: 24px; height: 24px;" align="middle"></small></td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>
