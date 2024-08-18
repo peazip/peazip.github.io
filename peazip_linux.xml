@@ -33,10 +33,10 @@
 		</Support_Info>
 	</Company_Info>
 	<Program_Info>
-		<Program_Name>PeaZip Portable</Program_Name>
-		<Program_Version>9.9.0</Program_Version>
+		<Program_Name>PeaZip for Linux</Program_Name>
+		<Program_Version>9.9.1</Program_Version>
 		<Program_Release_Month>08</Program_Release_Month>
-		<Program_Release_Day>03</Program_Release_Day>
+		<Program_Release_Day>18</Program_Release_Day>
 		<Program_Release_Year>2024</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -44,16 +44,16 @@
 		<Program_Type>Freeware</Program_Type>
 		<Program_Release_Status>Major Update</Program_Release_Status>
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
-		<Program_OS_Support>Win2000,Win7 x32,Win7 x64,Win98,WinOther,WinServer,WinVista,WinVista x64,WinXP,Other</Program_OS_Support>
-		<Program_Language>English,Arabic,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Internal drag and drop extraction, quick extraction link in toolbar, improved file manager, 7z 24.07, Zstd 1.5.6, Pea 1.19 with variable KDF rounds</Program_Change_Info>
+		<Program_OS_Support>Android,Linux,Linux Console,Linux Gnome,Linux GPL,Linux Open Source,Unix,Other</Program_OS_Support>
+		<Program_Language>English,Arabic,Bulgarian,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
+		<Program_Change_Info>Fixes, updated translations</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements />
 		<File_Info>
-			<File_Size_Bytes>14241337</File_Size_Bytes>
-			<File_Size_K>13907</File_Size_K>
-			<File_Size_MB>13.58</File_Size_MB>
+			<File_Size_Bytes>10116880</File_Size_Bytes>
+			<File_Size_K>9879</File_Size_K>
+			<File_Size_MB>9.65</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -67,37 +67,38 @@
 	</Program_Info>
 	<Program_Descriptions>
 		<English>
-			<Keywords>portable, rar, zip, files, backup, software, tool, compressor, archiving, extraction, utility, opener, extractor</Keywords>
-			<Char_Desc_45>Portable zip utility, open 7Z, RAR, TAR, ZIP</Char_Desc_45>
-			<Char_Desc_80>Free, portable zip utility, open 7Z ACE ISO TAR RAR ZIP files (200+ formats)</Char_Desc_80>
-			<Char_Desc_250>Free portable zip/unzip utility, encrypt and split files, open 7Z, ACE, BR, BZ2, CAB, ISO, JAR, GZ, LHA, PAQ, PEA, RAR, sfx, TAR, ZIP, ZST files and many more archive types (200+ formats). Portable and open source, runs on Windows, macOS, and Linux.</Char_Desc_250>
-			<Char_Desc_450>PeaZip Portable is a free zip/unzip utility for Windows and Linux, features encryption, secure deletion and file split. Create 7Z, Brotli, BZip2, GZip, *PAQ, PEA, split .001, sfx, TAR, WIM, XZ, ZIP, Zstd. Open CAB, DEB, DMG, ISO, JAR, LHA, LZH, MSI, NSIS, RAR, UDF, ZIPX and more (200+ types). Tabbed browsing, search in archives, apply inclusion/exclusion filters, save archive layout, export task definition as script, schedule backup/restore task.</Char_Desc_450>
-			<Char_Desc_2000>PeaZip Portable is the ideal package when you want to use a free file archiver and compressor utility without modifying your system, either because you prefer natively portable software as replacement of installable software, or you need to bring it with you on an USB stick, or when you cannot modify the machine you are working on, or if you just want to try it without installing anything on the system: simply extract and use PeaZip, and simply delete its folder to remove the application.
+			<Keywords>linux, rar, zip, tar, unzip, unrar, untar, tool, compression, software, open source, alternative, winrar, winzip</Keywords>
+			<Char_Desc_45>File archiver utility for Linux, RAR opener</Char_Desc_45>
+			<Char_Desc_80>Archive manager for Linux, extract RAR, 7Z, ACE, CAB, ISO, TAR, ZIP, ZIPX files</Char_Desc_80>
+			<Char_Desc_250>PeaZip for Linux, portable and Open Source file manager and archiver. Encryption, file split, secure delete, open RAR, 7Z, ACE, BR, BZ2, CAB, DEB, ISO, JAR, GZ, LHA, PAQ, PEA, RPM, sfx, TAR, XZ, ZIP, ZIPX, ZST files, 200+ archive formats supported.</Char_Desc_250>
+			<Char_Desc_450>PeaZip for Linux is a cross-platform file compression utility. Full support for 7Z, BR, BZ2, GZ, PAQ, ZPAQ, PEA, TAR, WIM, XZ, ZIP, ZST formats. Browse, extract RAR, CAB, DEB, DMG, ISO, JAR, LHA, LZH, RAR, UDF, ZIPX files and more, 200+ types. Create self extracting archives (sfx). Supports spanned archives (.001 files). Update and convert existing archives. Encrypt and decrypt archives, verify checksum / hash. Tabbed browsing, in-archive search.</Char_Desc_450>
+			<Char_Desc_2000>PeaZip is an Open Source archiver and file manager tool for Linux, Free Software alternative to WinRar, WinZip and similar utilities, structured as a frontend for multiple file compression and archiving tools like Ark and FileRoller.
+Tasks created in the GUI can be easily saved as command-line scripts, in order to automate batch backup or restore operations, or for fine tuning, or for learning purpose, bridging the gap between the ease of use of GUI applications and power and flexibility of console.
 
-Compress to 7Z, ARC, BR, BZ2, GZ, *PAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ, ZIP, ZST format
+Based on solid and proven technology of 7-Zip for handling mainstream archive formats, and other great Open Source tools (Brotli, FreeARC, PAQ, UPX, Zstandard...) for supporting additional file formats and features, provides a general purpose zip / unzip / unrar utility with a powerful unified GUI, natively portable, cross-platform and desktop neutral (the same set of features, as well as look and feel, is provided in Gnome, KDE, and other desktop managers).
 
-Read (open, view, extract) 200+ archive types: ACE, ARJ, CAB, DMG, ISO, LHA, RAR / RAR5, UDF, ZIPX and many more...
+Create 7Z, ARC, BR, BZ2, GZ, PAQ/LPAQ/ZPAQ, PEA, QUAD/BALZ, TAR, UPX, WIM, XZ, ZIP, ZST format
 
-Unlike most of other classic file archivers like WinZip and WinRar, PeaZip is structured as a frontend for multiple tools. It is based on solid Open Source technology of 7-Zip for handling most common archive types, and other excellent Open Source tools (Brotli, FreeARC, PAQ, UPX, Zstandard...) for supporting additional file formats and features, providing a natively cross-platform all-purpose portable zip utility with a powerful unified GUI.
+Extract over 200 archive types: ACE, ARJ, CAB, DEB, DMG, ISO, LHA, RAR / RARv5, RPM, UDF, ZIPX files and many more...
 
-PeaZip supports a wide array of advanced file and archive management features (tabbed browsing, search, bookmarks, thumbnail viewer, verify hash, find duplicate files, file converter eg. rar to zip...), especially focused on security: strong encryption (AES, Serpent, Twofish), two factor authentication, encrypted password manager, secure data delete.
+PeaZip is localized in over 30 languages and is capable of handling all most popular archive formats, supporting a wide array of advanced file and archive management features (tabbed browsing, search, bookmarks, batch file rename, thumbnail viewer, graphic files editor and compressor, calculate hash, find duplicate files, edit archives, convert archives...), especially focused on security (strong encryption, two factor authentication, encrypted password manager, secure deletion...).
 
-The distinctive trait of PeaZip is the innovative GUI, integrating a full featured file manager, which makes extremely simple to check and update items set for compression and extraction. Also, zip / unzip / unrar tasks created in the GUI can be easily scheduled saved as batch scripts, in order to automate backup / restore operations, or for fine tuning, or for learning purpose, bridging the gap between the ease of use of GUI applications and power and flexibility of console.</Char_Desc_2000>
+The distinctive trait of PeaZip is the innovative and easy to use compression/extraction interface, more similar to CD burners rather than classic file compressor. This design makes extremely simple to check (and update) items set for compression and extraction, integrating a full featured file manager component.</Char_Desc_2000>
 		</English>
 	</Program_Descriptions>
 	<Web_Info>
 		<Application_URLs>
-			<Application_Info_URL>https://peazip.github.io/peazip-portable.html</Application_Info_URL>
-			<Application_Order_URL>https://peazip.github.io/peazip-portable.html</Application_Order_URL>
-			<Application_Screenshot_URL>https://peazip.github.io/peazip-thumb.jpg</Application_Screenshot_URL>
+			<Application_Info_URL>https://peazip.github.io/peazip-linux.html</Application_Info_URL>
+			<Application_Order_URL>https://peazip.github.io/peazip-linux.html</Application_Order_URL>
+			<Application_Screenshot_URL>https://peazip.github.io/peazip-linux-thumb.png</Application_Screenshot_URL>
 			<Application_Icon_URL>https://peazip.github.io/peazip_ico32.png</Application_Icon_URL>
-			<Application_XML_File_URL>https://peazip.github.io/peazip_portable.xml</Application_XML_File_URL>
+			<Application_XML_File_URL>https://peazip.github.io/peazip_linux.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip_portable-9.9.0.WIN64.zip</Primary_Download_URL>
-			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/9.9.0/peazip_portable-9.9.0.WINDOWS.zip</Secondary_Download_URL>
-			<Additional_Download_URL_1 />
-			<Additional_Download_URL_2 />
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/9.9.1/peazip_9.9.1.LINUX.Qt5-1_amd64.deb</Primary_Download_URL>
+			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/9.9.1/peazip_9.9.1.LINUX.GTK2-1_amd64.deb</Secondary_Download_URL>
+			<Additional_Download_URL_1>https://github.com/peazip/PeaZip/releases/download/9.9.1/peazip-9.9.1.LINUX.Qt5-1.x86_64.rpm</Additional_Download_URL_1>
+			<Additional_Download_URL_2>https://github.com/peazip/PeaZip/releases/download/9.9.1/peazip_portable-9.9.1.LINUX.GTK2.aarch64.tar.gz</Additional_Download_URL_2>
 		</Download_URLs>
 	</Web_Info>
 	<Permissions>
