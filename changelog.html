@@ -249,12 +249,13 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.0.0 comes with a revamped GUI, providing more icon sizes,
-updated Themes and compression pre-sets, and better organized menus.<br>
-File tools menu was improved and expanded, now allowing to save save
-checksum/hash results in GNU Coreutils -compatible
-format, and to search file hash online for detection of know malware.<br>
-Backends are now updated to 7z 24.08, and Pea 1.20.<br>
+PeaZip 10.1.0 provides fixes over previous release, updates compression
+pre-sets, improves breadcrumb and navigation side bar, and updates
+Themes and icons supporting alpha transparency.<br>
+Backends are now updated with introduction of Pea 1.21 which supports
+scrypt KDF to improve resilience to password guessing attacks,
+increasing memory cost
+up to 1GB per instance.<br>
 Sources are compiled with Lazarus 3.4, and are still compatible
 with Lazarus 2.x line.<br>
             <br>
@@ -274,7 +275,7 @@ for newer language files and for any resource useful for translators.<br>
 values of packages</span></big></h3>
 Hash value of each package in each release is now published in the <a
  target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.0.0/SHA256.txt">10.0.0
+ href="https://github.com/peazip/PeaZip/releases/download/10.1.0/SHA256.txt">10.1.0
 SHA256.txt</a>
 file of the release.<br>
             </td>
@@ -296,6 +297,73 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2024 11 12<br>
+            <div style="margin-left: 40px;">10.1.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.21, introduced <span
+ style="font-weight: bold;">scrypt KDF</span> as default option to
+improve resilience to password guessing attacks (increasing memory cost
+per instance) over PBKDF2 implemented in previous versions<br>
+            <div style="margin-left: 40px;">scrypt is now the default
+KDF for all cascaded encryption modes, it can be set to use from 64 MB
+(default) up to 1 GB memory, r set to 8, paralelism 1 to 8 (plus, the
+KDF is repeated for each of the tree layers of the cascaded encryption)<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Fixed "Ask before
+overwriting (in console)" extraction option, now
+correctly sets the app in console mode superseding other options<br>
+Fixed directory copy/move on Unix-like systems<br>
+(Windows) Fixed drag and drop bug preventing extraction towards some
+file managers and third party apps, now more file managers are tested
+for compatibility<br>
+(Windows) Fixed drag and drop bug failing extraction at first try on
+some instances<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">GUI update</span><br>
+            <div style="margin-left: 40px;">Breadcrumb improvements<br>
+            <div style="margin-left: 40px;">Highlighting of temporary
+paths in the breadcrumb bar is now
+consistent with Theme colors<br>
+New Theme option to optionally underline and highlight address
+breadcrumb<br>
+            </div>
+Navigation bar improvements<br>
+            <div style="margin-left: 40px;">Compact side bar mode is
+now integrated with other navigation
+bar modes (navigation, treeview, and none, which can be toggled with
+Alt+4)<br>
+            </div>
+            <div style="margin-left: 40px;">It is now possible to
+internally drag and drop extract items to
+the navigation bar even whent it is set to Compact mode<br>
+Navigation bar width is now automatically adapted to the zoom
+level of the app<br>
+            </div>
+File browser's column header menu is now more easily accessible
+from the top entry in the navigation menu<br>
+Updated Themes and icons to improve appearance on dark mode /
+dark themes using alpha transparency<br>
+            <div style="margin-left: 40px;">Use of <span
+ style="font-weight: bold;">alpha transparency</span> is fully
+supported (but not mandatory)
+when designing Themes' icons, which are PGN images<br>
+            </div>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Updated <span
+ style="font-weight: bold;">compression pre-sets</span><br>
+            </div>
+            </div>
+            </div>
             <br>
 2024 10 26<br>
             <div style="margin-left: 40px;">10.0.0<br>
