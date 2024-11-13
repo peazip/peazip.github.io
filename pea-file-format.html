@@ -227,7 +227,7 @@ files, format features and specifications</big></big></big><br>
             </div>
             <h3 style="font-weight: bold; text-align: left;"><big><big>PEA
 file
-format specifications version 1.4</big></big></h3>
+format specifications version 1.5</big></big></h3>
             </div>
             <br>
             <br>
@@ -337,11 +337,11 @@ minimum needed information to the extraction application.<br>
             <br>
             <h4><big style="font-weight: bold;">PEA specs revisions</big></h4>
             <br>
-PEA file format standard, as defined in version 1 revision 3
+PEA file format standard, as defined in version 1 revision 5
 specification, can
 store a single stream containing unlimited objects, each up to 2^64
 byte
-in size; current Pea executable supports 1.3 file format
+in size; current Pea executable supports 1.5 file format
 specifications (practically, archives are memory and filesystem-limited
 rather than format limited) and is backward compatible with previous
 revisions of the format.<br>
@@ -766,22 +766,44 @@ Microsoft Windows), nothing on *x</p>
             </table>
             <div style="text-align: center;"> </div>
             <br>
-            <h3><big><span style="font-weight: bold;">Triple cascade
+            <h3><big><span style="font-weight: bold;">Triple cascaded
 encryption: AES, Twofish, Serpent each 256 bit in EAX mode</span></big></h3>
             <br>
-PEA format revision 1.3 introduced multiple encryption, cascading AES,
+PEA supports multiple chained encryption, cascading AES,
 Twofish, and Sepent, 256 bit in EAX mode<br>
             <ul>
-              <li>Each cipher is separately keyed through PBKDF2,
-following steps are taken to ensure the 3 keys are statistically
-independent after key schedule:</li>
+              <li>Each cipher is separately keyed through PBKDF2 or
+scrypt (default)<br>
+              </li>
             </ul>
             <ul style="margin-left: 40px;">
-              <li>key schedule of each cipher is based on a different
+              <li>KFD option<br>
+              </li>
+              <ul>
+                <li>with <span style="font-weight: bold;"><a
+ target="_blank" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a>
+                  </span>key schedule of each cipher is based on a
+different
 hash primitive which is run for a different number of iterations:
 Whirlpool x 25000 for AES, SHA512 x 50000 for Twofish, SHA3-512 x 75000
 for Serpent (Whirlpool is significantly slower than SHA512 that is
-slower than SHA3-512)</li>
+slower than SHA3-512). PEA format revision 1.4 introduced variable,
+user defined number of KDF
+rounds for the triple cascaded encryption, up to 25 million rounds for
+each of the 3 algorithms - also, please note rounds are based on 512
+bit hash primitives, which are more resources intensive than 256 bit
+counterparts.</li>
+                <li>with <a target="_blank"
+ href="https://en.wikipedia.org/wiki/Scrypt"><span
+ style="font-weight: bold;">scrypt</span></a> KDF the key schedule work
+load not only impacts on the CPU but also on memory, in order to
+increase resilinece to dictionary attacks. Requiring 64 MB up to 1 GB
+RAM (depending on the KDF workload option) for each instance severely
+increases the requisites to build an hardware setup for brute forcing
+the password, making it difficult to implement such a machine with ASIC
+or FPGA.<br>
+                </li>
+              </ul>
               <li>key schedule of each cipher is provided a separate 96
 byte pseudorandom salt</li>
               <li>password is modified when provided as input for key
@@ -814,11 +836,6 @@ SHA3-384 value is checked for verification, this requires all the 3
 tags to match to expected values and does not allow ciphers to be
 authenticated separately</li>
             </ul>
-PEA format revision 1.4 introduced variable, user defined number of KDF
-rounds for the triple cascaded encryption, up to 20 million rounds for
-each of the 3 algorithms - also, please note rounds are based on 512
-bit hash primitives, which are more resources intensive than 256 bit
-counterparts.<br>
             <br>
 Multiple encryption, if correctly implemented, is meant under current
 understandings to:<br>
