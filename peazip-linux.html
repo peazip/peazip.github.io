@@ -697,6 +697,9 @@ or libgdk-x11-2.0.so.0 (missing in out-of-the box recent Debian
 distributions), see full list of <a target="_blank"
  href="dependencies-gtk2.txt">dependencies
 for running GTK2 packages</a>.<br>
+On some Qt-based DE the GTK version of PeaZip may not correctly receive
+theming information, including system colors, preventing in example to
+automatically apply the dark theme.<br>
             <br>
             <span style="font-weight: bold;">GTK3 </span>widget set is
 currently in alpha support in Lazarus/FPC. While PeaZip for GTK3 can be
@@ -709,13 +712,18 @@ successfully compile PeaZip from sources for GTK3 widget set.<br>
             <span style="font-weight: bold;"><a
  name="archive_manager_application"></a>Qt6 </span>packages provides
 libQt6Pas.so which may be required on some machines to run the Qt
-version of PeaZip. The binary, or equivalent to
+version of PeaZip. <br>
+The binary, or equivalent to
 libQt6Pas.so, must be installed in /usr/local/lib or equivalent
-directory, such as /usr/lib. You can get up to date libQt6Pas.so using
+directory, such as /usr/lib. <br>
+You can get up to date libQt6Pas.so using
 distribution-specific tools, i.e. apt-get install package:architecture,
 or copying the file manually and running ldconfig. See full list of <a
  target="_blank" href="dependencies-qt.txt">dependencies
 for running Qt packages</a>.<br>
+On some GTK-based DE the Qt version of PeaZip may not correctly receive
+theming information, including system colors, preventing in example to
+automatically apply the dark theme.<br>
             <br>
             <span style="font-weight: bold;"><br>
             </span>
