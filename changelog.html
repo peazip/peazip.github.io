@@ -249,14 +249,19 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.1.0 provides fixes over previous release, updates compression
-pre-sets, improves breadcrumb and navigation side bar, and updates
-Themes and icons supporting alpha transparency.<br>
-Backends are now updated with introduction of Pea 1.21 which supports
-scrypt KDF to improve resilience to password guessing attacks,
-increasing memory cost
-up to 1GB per instance.<br>
-Sources are compiled with Lazarus 3.4, and are still compatible
+PeaZip 10.2.0 enhances detection of issues in archives, improves
+displaying archive comments, adds support for Brotli and Zstandard
+maximum compression, and updates app's icon to unify the look &amp;
+feel on all platforms.<br>
+7z backend is updated to 24.09, and PEA is updated to 1.22 introducing
+hybrid KDF mode, employing both PBKDF2 and Scrypt to
+increase resiliency against dictionary and brute force
+password-recovery attacks.<br>
+Linux and macOS installers are updated, Qt6 packages replace Qt5 ones,
+and Flatpak is now
+built for Wayland (with fallback X11 option).<br>
+            <br>
+Sources are compiled with Lazarus 3.6, and are still compatible
 with Lazarus 2.x line.<br>
             <br>
 A total of 234 file extensions can now be opened as archives by PeaZip.<br>
@@ -266,18 +271,20 @@ available in over than 30 languages, any help is welcome to translate
 PeaZip
 to new languages and to maintain current localizations up to date, so
 please consider taking the time to give a look to <a
+ style="font-weight: bold;"
  href="https://github.com/giorgiotani/PeaZip-Translations">translations
 repository</a>
 for newer language files and for any resource useful for translators.<br>
             <br>
             <br>
             <h3><big><span style="font-weight: bold;">SHA256 hash
-values of packages</span></big></h3>
-Hash value of each package in each release is now published in the <a
- target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.1.0/SHA256.txt">10.1.0
-SHA256.txt</a>
-file of the release.<br>
+of packages</span></big></h3>
+Hash values of each package are now published in the SHA256.txt file in
+each release on GitHub.<br>
+You can check hash values of current release in <a
+ style="font-weight: bold;" target="_blank"
+ href="https://github.com/peazip/PeaZip/releases/download/10.2.0/SHA256.txt">SHA256.txt
+10.2.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -298,6 +305,82 @@ version)</span><br>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
             <br>
+2025 01 01<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z 24.09, with new
+dictionary size defaults for LZMA/LZMA2<br>
+Pea 1.22 introducing <span style="font-weight: bold;">hybrid KDF</span>
+to further increase the resilience of the KDF stage of triple cascaded
+encryption, requiring multiple unrelated optimizations to mount an
+hardware accelerated attack on the KDF<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Fixes, updated documentation<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Archives of suitable types
+(RAR, ZIP, ZIPX) are automatically tested for <span
+ style="font-weight: bold;">comment </span>when opened, if archive
+comment is found, "COMMENT" note is displayed in the status bar<br>
+            </div>
+            <div style="margin-left: 80px;">
+            <div style="margin-left: 40px;">Move the mouse over the
+"COMMENT" note to display the comment as hint<br>
+Click the "COMMENT" note to open the comment editing screen<br>
+Alt+M keyboard shortcut is always available as usual to directly open
+the comment editing screen for one or multiple archives at once<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">Improved <span
+ style="font-weight: bold;">detection of issues in archives</span>, for
+archive types browsed with 7z/p7zip frontend<br>
+            <div style="margin-left: 40px;">If warnings are issued a
+warning icon is displayed in the address bar for better visibility,
+alongside the classic textual warning message in the status bar of
+previous versions<br>
+If further details are available, they will be visible clicking the
+warning icon in the address bar or the textual warning message in the
+status bar<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">Improved keyboard shortcuts<br>
+Updated app icon to unify look &amp; feel on all supported platforms<br>
+Updated Tux theme to improve aspect with dark mode / dark themes<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Brotli </span>-q 11 and <span
+ style="font-weight: bold;">Zstd </span>--ultra -22 compression levels
+enabled in the GUI<br>
+It is now possible to manually delte input files / folders at the end
+of tasks, from Options tab in the task progress window, i.e. to
+directly delete a faulty archive failing the test procedure<br>
+The progress window's icon now matches the format chosen for compression<br>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(Linux) <span
+ style="font-weight: bold;">Qt6 </span>packages supersedes the old Qt5
+packages<br>
+(Linux) <span style="font-weight: bold;">GTK3</span>-alpha package is
+now available for test purpose only (Lazarus support for GTK3 is in
+alpha state), see Lazarus Widgetset wiki for more information
+https://wiki.freepascal.org/Widgetset<br>
+(Linux) <span style="font-weight: bold;">Flatpak </span>package is
+now built for <span style="font-weight: bold;">Wayland</span>, with
+fallback X11 option,
+and compiled for the <span style="font-weight: bold;">Qt6 </span>widgetset<br>
+(macOS) "macOS service menus" entry in the package is now a link
+pointing to the folder with same name within the installed peazip.app
+package, in this way running "xattr -dr com.apple.quarantine
+/Applications/peazip.app" applies the correct attributes to the
+scripts, which can be correctly installed on macOS 18 and following<br>
+            </div>
+            <br>
+            </div>
 2024 11 12<br>
             <div style="margin-left: 40px;">10.1.0<br>
             <div style="margin-left: 40px;">BACKEND<br>

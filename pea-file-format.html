@@ -227,7 +227,7 @@ files, format features and specifications</big></big></big><br>
             </div>
             <h3 style="font-weight: bold; text-align: left;"><big><big>PEA
 file
-format specifications version 1.5</big></big></h3>
+format specifications version 1.6</big></big></h3>
             </div>
             <br>
             <br>
@@ -461,7 +461,7 @@ format)</p>
                   <p class="MsoNormal">Optional Authenticated
 Encryption, at stream level only. HMAC mode: AES128, EAX mode:
 AES 128 or 256bit, Serpent 128 / 256, Twofish 128 / 256, triple cascade
-encrypttion: AES+Twofish+Serpent, Twofish+Serpent+AES,
+encryption: AES+Twofish+Serpent, Twofish+Serpent+AES,
 Serpent+AES+Twofish each 256 bit in EAX mode</p>
                   </td>
                 </tr>
@@ -772,12 +772,12 @@ encryption: AES, Twofish, Serpent each 256 bit in EAX mode</span></big></h3>
 PEA supports multiple chained encryption, cascading AES,
 Twofish, and Sepent, 256 bit in EAX mode<br>
             <ul>
-              <li>Each cipher is separately keyed through PBKDF2 or
-scrypt (default)<br>
+              <li>Each cipher is separately keyed through PBKDF2,
+scrypt (default), or both<br>
               </li>
             </ul>
             <ul style="margin-left: 40px;">
-              <li>KFD option<br>
+              <li>KFD options:<br>
               </li>
               <ul>
                 <li>with <span style="font-weight: bold;"><a
@@ -801,8 +801,37 @@ increase resilinece to dictionary attacks. Requiring 64 MB up to 1 GB
 RAM (depending on the KDF workload option) for each instance severely
 increases the requisites to build an hardware setup for brute forcing
 the password, making it difficult to implement such a machine with ASIC
-or FPGA.<br>
+or FPGA.</li>
+                <li>Hybrid KDF (introduced in 1.6 revision) uses scrypt
+for AES (as specified in scrypt section) and for Twofish (with half the
+N parameter and doubling the r parameter, same p parameter), and uses
+PBKDF2 for Serpent (75,000 iterations, plus up to 25M additional
+iterations to increase the work load as specified in PBKDF2 section).<br>
+KDF work flow can be increased as specified in the tenth byte of the
+header<br>
                 </li>
+              </ul>
+            </ul>
+            <div style="text-align: left; margin-left: 120px;">
+            <ul>
+              <li>1 use 128 MB RAM for scrypt KDFs, and +200K
+iterations for the PBKDF2 KDF</li>
+              <li>2 use 256 MB RAM for scrypt KDFs, and +500K
+iterations for the PBKDF2 KDF</li>
+              <li>3 use 512 MB RAM for scrypt KDFs, and +1M iterations
+for the PBKDF2 KDF</li>
+              <li>4 use 1 GB RAM for scrypt KDFs, and +2M iterations
+for the PBKDF2 KDF</li>
+              <li>5 use 1 GB RAM, with p = 2 for scrypt KDFs, and +5M
+iterations for the PBKDF2 KDF</li>
+              <li>6 use 1 GB RAM, with p = 4 for scrypt KDFs, and +10M
+iterations for the PBKDF2 KDF</li>
+              <li>7 use 1 GB RAM, with p = 8 for scrypt KDFs, and +25M
+iterations for the PBKDF2 KDF</li>
+            </ul>
+            </div>
+            <ul style="margin-left: 40px;">
+              <ul>
               </ul>
               <li>key schedule of each cipher is provided a separate 96
 byte pseudorandom salt</li>

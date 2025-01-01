@@ -134,7 +134,7 @@
  style="color: rgb(153, 153, 153); font-weight: bold;"
  name="file_compression_utility"></a><big><big><big><span
  style="font-weight: bold;">PeaZip
-for aarch64 10.1.0</span><br>
+for aarch64 10.2.0</span><br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -170,19 +170,19 @@ systems: any GNU/Linux for ARM aarch64 architecture</span><span
  href="https://flathub.org/apps/details/io.github.peazip.PeaZip"><big><big><img
  title="PeaZip flatpak for Linux on ARM" alt="peazip aarch64 flatpak"
  src="free-rar/download-free-software.png"
- style="border: 0px solid ; width: 15px; height: 9px;">Flatpak</big></big></a></small><br>
-            <small>FlatHub's Flatpak Qt5 packages<br>
+ style="border: 0px solid ; width: 15px; height: 9px;">Flatpak Qt6</big></big></a></small><br>
+            <small>FlatHub's Flatpak package for aarch64 and x86_64<br>
             <br>
             </small><big style="font-weight: bold;"><a
  style="color: rgb(253, 253, 253);" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.1.0/peazip_portable-10.1.0.LINUX.GTK2.aarch64.tar.gz"><img
+ href="https://github.com/peazip/PeaZip/releases/download/10.2.0/peazip_portable-10.2.0.LINUX.GTK2.aarch64.tar.gz"><img
  title="PeaZip free zip app for Linux aarch64"
  alt="freeware archive manager"
  src="free-rar/download-free-software.png"
  style="border: 0px solid ; width: 15px; height: 9px;">Portable
 GTK2</a></big><big><big><span style="color: rgb(253, 253, 253);"></span><a
  style="color: rgb(253, 253, 253);" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.1.0/peazip_portable-10.1.0.LINUX.x86_64.GTK2.tar.gz"><br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.2.0/peazip_portable-10.2.0.LINUX.x86_64.GTK2.tar.gz"><br>
             </a></big></big><small>For
 any Linux distribution on aarch64 architecture. Does not
 require installation, <span style="font-weight: bold;">simply
@@ -197,7 +197,7 @@ de-compress and start the application clicking on peazip</span> binary.</small><
             <small>Find third party RPM packages online</small><br>
             <small> <br>
             </small><small style="color: rgb(255, 255, 255);">Check
-10.1.0 packages <a style="color: rgb(255, 255, 255);"
+10.2.0 packages <a style="color: rgb(255, 255, 255);"
  href="changelog.html">hash values</a><br>
             <br>
             </small><big><small><span style="color: rgb(253, 253, 253);">Download
@@ -364,13 +364,16 @@ requiring downloading add-ons.<br>
             </p>
             <br>
             <h3><big><big><span style="font-weight: bold;">PeaZip
-Flatpak Qt5 for aarch64 Linux download notes</span></big><br>
+Flatpak Qt6 for aarch64 Linux download notes</span></big><br>
             </big></h3>
             <br>
             <span style="font-weight: bold; color: rgb(204, 0, 0);"></span><a
- name="peazip_aarch64_flatpak"></a>PeaZip for aarch64 is available as
-Flatpak package on Flathub, built on Qt5 libraries.<br>
-Flatpak is a cross-distrn packaging system which takes care to install
+ name="peazip_aarch64_flatpak"></a>PeaZip for aarch64 architecture is
+available as
+Flatpak package on Flathub, built on <span style="font-weight: bold;">Qt6
+            </span>libraries, runs on <span style="font-weight: bold;">Wayland
+            </span>by default, with automatic X11 fallback option.<br>
+Flatpak is a cross-distro packaging system which takes care to install
 the app and all the needed dependencies in a sandboxed environment.<br>
 This means in some case the total size required may exceed the actual
 size of the application, and that some desktop environment settings may
@@ -382,8 +385,30 @@ to refer to documentation and troubleshooting on <a
  alt="flatpak file compression application"
  title="peazip arrch64 flatpak" src="free-rar/extractor.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></span><br>
-            </a> <br>
+            </a> <small><br>
             <br>
+            </small><big style="font-weight: bold;"><small>Note for
+the
+Flatpak package</small></big><br>
+Binaries in the Flatpak package are built on the fly on Flathub servers
+starting from the official <a target="_blank"
+ href="https://github.com/flathub/io.github.peazip.PeaZip">package's
+recipe<img alt="Linux on ARM platform" title="ARM architecture"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, so
+they may not be byte-to-byte identical to the binaries provided in the
+manually built packages
+(DEB, RPM, Portable...) which are the reference binary for each
+project (7z/p7zip, Brotli, Zstd...) - being built on different machines
+with differently configured IDEs.<br>
+Consequently running the internal hash based
+verification tool (Main menu &gt; Tools &gt; Verify hash of binaries)
+will probably report mismatching hash values for some of the binaries
+provided in the Flatpoak packages, but this is expected and it
+generally
+does not mean any issue with the Flatpak package.<br>
+            <small><br>
+            </small> <br>
             <h3><big><big><span style="font-weight: bold;">PeaZip
 Portable
 GTK2 for aarch64 Linux download notes</span></big><br>
@@ -416,28 +441,7 @@ initiative
 standard as Gnome, KDE; XFCE and derivate DEs.<br>
             <br>
             <br>
-            <big><big style="font-weight: bold;"><big><small>Note for
-the
-Flatpak package</small></big></big></big><br>
-            <br>
-Binaries in the Flatpak package are built on the fly on Flathub servers
-starting from the official <a target="_blank"
- href="https://github.com/flathub/io.github.peazip.PeaZip">package's
-recipe<img alt="Linux on ARM platform" title="ARM architecture"
- src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, so
-they may not be byte-to-byte identical to the binaries provided in the
-manually built packages
-(DEB, RPM, Portable...) which are the reference binary for each
-project (7z/p7zip, Brotli, Zstd...) - being built on different machines
-with differently configured IDEs.<br>
-Consequently running the internal hash based
-verification tool (Main menu &gt; Tools &gt; Verify hash of binaries)
-will probably report mismatching hash values for some of the binaries
-provided in the Flatpoak packages, but this is expected and it
-generally
-does not mean any issue with the Flatpak package.<br>
-            <br>
+            <h3><big><big><span style="font-weight: bold;">Architectures</span></big></big></h3>
             <br>
             <h3><big><span style="font-weight: bold;">AARCH64</span></big></h3>
 Linux aarch64 build is here available as Portable package built for
