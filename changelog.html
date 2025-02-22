@@ -249,22 +249,18 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.2.0 enhances detection of issues in archives, improves
-displaying archive comments, adds support for Brotli and Zstandard
-maximum compression, and updates app's icon to unify the look &amp;
-feel on all platforms.<br>
-7z backend is updated to 24.09, and PEA is updated to 1.22 introducing
-hybrid KDF mode, employing both PBKDF2 and Scrypt to
-increase resiliency against dictionary and brute force
-password-recovery attacks.<br>
-Linux and macOS installers are updated, Qt6 packages replace Qt5 ones,
-and Flatpak is now
-built for Wayland (with fallback X11 option).<br>
+PeaZip 10.3.0 improves managing TAR format, handling archives
+containing errors, displaying task progress, and saving reports.<br>
+Themes are updated and the new Style submenu allows to quickly
+customize the look&amp;feel of app's file/archive manager.<br>
+Linux packages facilitate the context menu integration in Gnome and
+KDE, and improves out-of-the-box experience for the Qt6 version.<br>
             <br>
 Sources are compiled with Lazarus 3.6, and are still compatible
 with Lazarus 2.x line.<br>
             <br>
-A total of 234 file extensions can now be opened as archives by PeaZip.<br>
+Added support for VmWare and Minecraft container file types.<br>
+A total of 242 file extensions can now be opened as archives by PeaZip.<br>
             <br>
 Translations are
 available in over than 30 languages, any help is welcome to translate
@@ -283,8 +279,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.2.0/SHA256.txt">SHA256.txt
-10.2.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.3.0/SHA256.txt">SHA256.txt
+10.3.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -305,6 +301,96 @@ version)</span><br>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
             <br>
+2025 02 22<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.23<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">project_pea and
+project_peach updated to optimization and debugging project-level
+options recommended for Lazarus 3.x line<br>
+Optimized app startup reducing 25% time and 20% memory usage<br>
+Various fixes<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Auto browse TAR</span> inside compressed
+TAR archives now can be limited to max size (100 MB, 1 GB, 10 GB,
+Always) in order to avoid automatic time consuming operation<br>
+Can now save list of files/search results as csv (with , and ;
+separator), tsv, and txt<br>
+Improved "Analyze content of folders" function, now reporting content
+size in separate column to allow sorting for smallest/largest folder<br>
+            <span style="font-weight: bold;">Improved handling archives
+with errors</span>, or containing extra data, i.e. container formats
+which are variants of archive formats<br>
+            <div style="margin-left: 40px;">With Options &gt; Settings
+&gt; Archive manager, "Browse non-canonical archive types" option
+flagged (default) the app will always try to open for browsing such
+archives<br>
+            </div>
+            <div style="margin-left: 40px;">Unflagging this option
+stops the app from browsing archives if errors are detected, which may
+be more safe, but is less flexible in terms of handling/recovering data<br>
+            </div>
+            <div style="margin-left: 40px;">More cases of warnings and
+errors are recognized and shown (warning icon in the navigation bar)
+for file formats supported through the 7z/p7zip backend<br>
+            </div>
+Smart new folder toggle is now reachable also from quick extraction
+dropdown menu<br>
+Style submenu in "..." style menu allows to quickly change app's file
+manager GUI applying multiple customizations at once to fit one of the <span
+ style="font-weight: bold;">pre-set styles</span>: Minimal, Classic,
+Modern, and Postmodern<br>
+            <span style="font-weight: bold;">Updated Themes </span>to
+customize more items (menu dropdown, breadcrumb separator, settings
+icon), legacy themes are still supported<br>
+            <div style="margin-left: 40px;">New Tux-Alt theme for
+alternative look&amp;feel on Linux systems<br>
+            </div>
+(Windows) Improved rendering of exe files' icons<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Improved displaying
+information in the task progress window and in the archive creation /
+extraction screen title<br>
+Improved managing non-ASCII characters in passwords<br>
+            <div style="margin-left: 40px;">Added warning to prevent
+creation of archives using non-ASCII characters if not supported by the
+format (or otherwise not supported due to technical limitations)<br>
+            </div>
+            <div style="margin-left: 40px;">Fixed Windows drag and drop
+extraction not correctly communicating non-ASCII characters in
+passwords through pipe<br>
+            </div>
+When directly sending items to compression without confirmation, file
+spanning (if set) is automatically disabled for the current operation<br>
+Added support for <span style="font-weight: bold;">VmWare </span>.ova
+files, and <span style="font-weight: bold;">Minecraft </span>archive
+file types
+.mcaddon, .mcmeta, .mcpack, .mcproject, .mcstructure, .mctemplate,
+.mcworld (242 file extensions supported)<br>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">(Linux) <span
+ style="font-weight: bold;">Qt6 </span>installable packages updated to
+create needed links to libQt6Pas.so out of the box<br>
+(Linux) Updated information for <span style="font-weight: bold;">context
+menu integration for Gnome and KDE</span> in
+(peazip)/res/share/batch/freedesktop_integration<br>
+            <div style="margin-left: 40px;">sh scripts to automate
+context menu integration now available in KDE-servicemenus and
+Nautilus-scripts subfolders<br>
+            </div>
+            </div>
+            <br>
+            <br>
+            </div>
 2025 01 01<br>
             <div style="margin-left: 40px;">BACKEND<br>
             <div style="margin-left: 40px;">7z 24.09, with new

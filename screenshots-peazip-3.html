@@ -321,6 +321,19 @@ proprietary format supported only for decompression and test
 operations).<br>
             <br>
             <br>
+            <big><span style="font-weight: bold;">Two panes drag and
+drop extraction (in-app drag &amp; drop)</span></big><br>
+            <br>
+PeaZip can extract items dragging from the file / archive browser area
+to the navigation side bar on the left of the application - which acts
+as a second pane in the scope of this operation.<br>
+This drag &amp; drop mechanism <span style="font-weight: bold;">works
+on all supported systems</span>.<br>
+This allows to drag &amp; drop extract items directly to any path in
+bookmarks or history (navigation bar) or any path (tree view), and
+works even dropping to the minified compact side bar.<br>
+            <br>
+            <br>
             <big style="font-weight: bold;">Drag and drop operations
 supported by PeaZip on different systems</big><br>
             <br>
@@ -332,55 +345,60 @@ supported operating systems: <br>
               <tbody>
                 <tr>
                   <td
- style="vertical-align: middle; text-align: center; width: 20%; background-color: rgb(240, 240, 240); font-weight: bold;">Operating
+ style="vertical-align: middle; text-align: center; background-color: rgb(240, 240, 240); font-weight: bold; width: 20%;">Operating
 System<br>
                   </td>
                   <td
- style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 30%;">Drag
-and drop TO PeaZip</td>
-                  <td
- style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 50%;">Drag
-and drop FROM PeaZip</td>
-                </tr>
-                <tr>
-                  <td
- style="vertical-align: top; width: 20%; text-align: center;">BSD<br>
+ style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 40%;">Drag
+and drop from system TO PeaZip<br>
+Drag and drop within the app panes<br>
                   </td>
-                  <td style="vertical-align: top; width: 30%;">Fully
-supported<br>
-                  </td>
-                  <td style="vertical-align: top; width: 50%;">Not
-supported<br>
+                  <td
+ style="vertical-align: top; background-color: rgb(240, 240, 240); font-weight: bold; width: 40%;">Drag
+and drop FROM PeaZip to system<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">Linux<br>
+ style="vertical-align: top; text-align: center; width: 20%;">BSD<br>
                   </td>
-                  <td style="vertical-align: top; width: 30%;">Fully
+                  <td style="vertical-align: top; width: 40%;">Fully
 supported<br>
                   </td>
-                  <td style="vertical-align: top; width: 50%;">Not
-supported<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="vertical-align: top; text-align: center;">macOS<br>
-                  </td>
-                  <td style="vertical-align: top; width: 30%;">Fully
-supported<br>
-                  </td>
-                  <td style="vertical-align: top; width: 50%;">Not
+                  <td style="vertical-align: top; width: 40%;">Not
 supported<br>
                   </td>
                 </tr>
                 <tr>
-                  <td style="vertical-align: top; text-align: center;">Windows<br>
+                  <td
+ style="vertical-align: top; text-align: center; width: 20%;">Linux<br>
                   </td>
-                  <td style="vertical-align: top; width: 30%;">Fully
+                  <td style="vertical-align: top; width: 40%;">Fully
 supported<br>
                   </td>
-                  <td style="vertical-align: top; width: 50%;">Full
+                  <td style="vertical-align: top; width: 40%;">Not
+supported<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: center; width: 20%;">macOS<br>
+                  </td>
+                  <td style="vertical-align: top; width: 40%;">Fully
+supported<br>
+                  </td>
+                  <td style="vertical-align: top; width: 40%;">Not
+supported<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; text-align: center; width: 20%;">Windows<br>
+                  </td>
+                  <td style="vertical-align: top; width: 40%;">Fully
+supported<br>
+                  </td>
+                  <td style="vertical-align: top; width: 40%;">Full
 support for
 native Windows drag and drop interface, can drop to system and to any
 application.<br>
@@ -467,7 +485,7 @@ available from "Show more" submenu..<br>
 entries on Windows</span></td>
                   <td style="vertical-align: top; width: 50%;">
                   <h3><a href="windows11-mini-menu.png" target="_blank"><img
- alt="peazip windows 11 context menu"
+ alt="add peazip in windows 11 context menu"
  title="PeaZip on Windows 11 mini-context menu"
  src="windows11-mini-menu.png"
  style="border: 0px solid ; width: 281px; height: 267px;"></a></h3>
@@ -499,22 +517,42 @@ FreeDesktop_integration folder in (peazip)/res/share/batch folder
 contains sample scripts and .desktop files for integrating
 the application in system's contextual menus in all Desktop
 Environments and file managers following FreeDesktop initiative's
-standards, such as Gnome, KDE, XFCE, Mate, Cinnamon....<br>
+standards, such as Gnome, KDE, XFCE, Mate, Cinnamon...<br>
             <br>
-            <h3><img alt="peazip linux context menu"
+            <h3><img alt="peazip kde service menus"
+ title="Add PeaZip to KDE right click menu" src="kde-service-menus.png"
+ style="width: 568px; height: 486px;"></h3>
+            <span style="font-style: italic;">PeaZip context
+menu
+integration using KDE Service menus in <span style="font-weight: bold;">KDE
+            </span>right click menu</span><br>
+            <br>
+            <h3><img
+ alt="peazip nautilus scripts for gnome context menu"
+ title="Add PeaZip in Gnome context menu"
+ src="peazip-nautilus-scripts.png" style="width: 701px; height: 528px;"></h3>
+            <span style="font-style: italic;">PeaZip context
+menu
+integration using Nautilus scripts in <span style="font-weight: bold;">Gnome
+            </span>right click menu</span><br>
+            <br>
+            <h4><img alt="how to add peazip to linux context menu"
  title="PeaZip on Linux context menu" src="linux-context-menu.png"
- style="width: 573px; height: 406px;"></h3>
+ style="width: 618px; height: 340px;"></h4>
             <span style="font-style: italic;">PeaZip for Linux context
 menu
-entries (Mint)</span><br>
+entries using .desktop files in Open With menu (Mint, <span
+ style="font-weight: bold;">Cinnamon </span>desktop)</span><br>
             </div>
             <div style="text-align: left;"><span
  style="font-style: italic;"></span><br>
-            <img alt="peazip context menu"
+            <img alt="add peazip in righ click menu"
  title="PeaZip context menu on BSD" src="freebsd-context.png"
  style="width: 645px; height: 513px;"><br>
-            <span style="font-style: italic;">PeaZip on BSD, context
-menu integration</span><br>
+            <span style="font-style: italic;">PeaZip on BSD (<span
+ style="font-weight: bold;">Mate </span>desktop) context
+menu integration </span><span style="font-style: italic;">using
+.desktop files in Open With menu</span><br>
             <br>
             <br>
             <h4><big style="font-weight: bold;">Add PeaZip to macOS
@@ -526,11 +564,11 @@ Automator .workflow scripts to create service menus for main functions
 of PeaZip. A copy of those service menus is also available in the root
 of DMG installers, for ease of use.<br>
             <br>
-            <h3><img alt="peazip apple macos context menu"
+            <h3><img alt="add peazip in apple macos context menu"
  title="PeaZip on macOS context menu" src="macos-service-menu.png"
  style="width: 573px; height: 533px;"></h3>
             <span style="font-style: italic;">PeaZip context menu
-entries on macOS (Monterey)</span><br>
+entries on macOS</span><br>
             <br>
             <br>
             <h3><big style="font-weight: bold;">Right-click menu
@@ -566,7 +604,8 @@ Cinnamon... following the FreeDestop standard</td>
                   </td>
                   <td style="vertical-align: top; width: 80%;">In
 (peazip)/res/share/batch folder are provided sample Automator .workflow
-scripts to integrate PeaZip with macOS context menu<br>
+scripts to integrate PeaZip with macOS context menu (linked in
+packages' root)<br>
                   </td>
                 </tr>
                 <tr>
@@ -575,7 +614,7 @@ scripts to integrate PeaZip with macOS context menu<br>
                   </td>
                   <td style="vertical-align: top; width: 80%;">Installers
 provide automatic integration with SendTo and Windows context menu.<br>
-Not supported integration with drag and drop's own context menu.<br>
+Not supported integration with drag and drop's system context menu.<br>
 In (peazip)/res/share/batch folder are provided sample SendTo menu
 links, and sample .reg scripts to add eaZip to Windows 11 mini-context
 menu.<br>
