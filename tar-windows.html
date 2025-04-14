@@ -227,8 +227,9 @@ archives with PeaZip</span></big></h3>
             <a name="tar_file_archiver"></a>PeaZip free archiver offers
 full read /
 write support (create, open and extract tar) for uncompressed and
-compressed
-TAR archives - TAR.GZ archives (same as
+compressed <a style="font-weight: bold;" href="tar-file-format.html">TAR
+archive format</a> - TAR.GZ
+archives (same as
 TGZ extension), TAR.BZ2 archives
 (alternative file extensions TBZ, TB2,
 TBZ2), TAR.BR, TAR.ZST / TZST, TAZ, TZ, TAR.Z, TLZ,
@@ -258,6 +259,17 @@ decompression, but is single-threaded, while Zstandard (which is also
 meat for near real time operation) is multi-threaded and shows a
 noticeable speed advantage over Brotli on multicore, multithreading
 architecture.<br>
+            <br>
+PLEASE NOTE: PeaZip will by default <span style="font-weight: bold;">store
+soft links (symlinks) as links</span> (store the link "as is"), and
+will <span style="font-weight: bold;">follow hard links</span> (store
+the linked content instead).<br>
+From Advanced tab in the archive creation screen it is possible to
+change this behavior, from "Store soft links as links" and "Store hard
+links as links" checkboxes.<br>
+In Advanced tab are available also other TAR-specific options, such as
+selecting the TAR standard (Gnu or Pax), timestamp interval, Store
+owner/group IDs and names.<br>
             <br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="0" cellspacing="0">

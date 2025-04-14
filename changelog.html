@@ -249,17 +249,16 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.3.0 improves managing TAR format, handling archives
-containing errors, displaying task progress, and saving reports.<br>
-Themes are updated and the new Style submenu allows to quickly
-customize the look&amp;feel of app's file/archive manager.<br>
-Linux packages facilitate the context menu integration in Gnome and
-KDE, and improves out-of-the-box experience for the Qt6 version.<br>
+PeaZip 10.4.0 is mainly focused on fixes, smarter error checking, and
+in providing an overall smoother user experience.<br>
+The app can now automatically adapt icons and colors to system
+light/dark mode, and Themes can now customize all app's icons for
+better integration with different system styles.<br>
+Backend were updated to Pea 1.24 and Zstd 1.5.7.<br>
             <br>
-Sources are compiled with Lazarus 3.6, and are still compatible
+Sources are compiled with Lazarus 3.x, and are still compatible
 with Lazarus 2.x line.<br>
             <br>
-Added support for VmWare and Minecraft container file types.<br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
             <br>
 Translations are
@@ -279,8 +278,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.3.0/SHA256.txt">SHA256.txt
-10.3.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.4.0/SHA256.txt">SHA256.txt
+10.4.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -300,6 +299,68 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2025 04 14<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Zstd 1.5.7<br>
+Pea 1.24<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Expanded script samples for
+CLI usage and system integration in (peazip)/res/share/batch<br>
+Legacy code cleanup<br>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed compact side bar
+being invisible at lower zoom levels<br>
+Fixed drag and drop operations failing for some formats<br>
+Fixed script generation (Advanced tab) when "TAR before" and "Delete
+files after archiving" options are both in use<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added <span
+ style="font-weight: bold;">alternative context menus</span> for quick
+navigation in file/archive manager<br>
+            <div style="margin-left: 40px;">Ctrl+RightClick shows
+breadcrumb context menu<br>
+Shift+RightClick shows session history context menu<br>
+Ctrl+Shift+RightClick shows navigation context menu<br>
+            </div>
+Can now sort items in the Password Manager<br>
+File browser popup now provides more information fields: attributes,
+compression/encryption method, content (compressed folders), object
+level comments, creation and last accessed time (compressed files and
+folder, if set), full path (in search and flat mode)<br>
+New <span style="font-weight: bold;">"90s" style</span> in "..." &gt;
+Style menu providing a simple old-school
+layout with treeview sidebar<br>
+Embedded theme will now <span style="font-weight: bold;">automatically
+adapt to light / dark mode</span> changing icons and accent colors <br>
+Updated to <span style="font-weight: bold;">Themes v.6</span><br>
+            <div style="margin-left: 40px;">All in-app icons can now be
+customized in order to create themes optimized for different system
+color schemes, not limited to light or dark but also alternative color
+palettes (grey, cold/warm colors etc...)<br>
+New mac-dark, main-dark, ten-dark, and tux-dark available as custom
+themes, meant to improve app aspect on systems in dark mode (more
+alternative v.6 themes are available from the Custom entry)<br>
+The app can use older revision themes down to v.3, but it is
+recommended to update old theme packages (suggestion: new themes can be
+used as template for icons missing in previous versions of themes)<br>
+            </div>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">(7z backend) By default <span
+ style="font-weight: bold;">symlinks </span>are stored as links,
+option available in Advanced tab of archive creation screen<br>
+Added error check to avoid automatic deletion of the intermediate tar
+archive if the compression step fails with "Delete files after
+archiving" option enabled<br>
+            </div>
+            </div>
             <br>
 2025 02 22<br>
             <div style="margin-left: 40px;">BACKEND<br>

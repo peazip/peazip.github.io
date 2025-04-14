@@ -257,7 +257,8 @@ or stored on a server whose reliability cannot be verified, received by
 mail as attachment.<br>
             <br>
             <br>
-            <h3><big><span style="font-weight: bold;">Scan files inside
+            <h3><big><span style="font-weight: bold;">Scan content
+inside
 archives from PeaZip</span></big></h3>
             <br>
             <a name="scan_inside_archive_files"></a>PeaZip meets this
@@ -386,23 +387,55 @@ sharing data</a>.<br>
 and anti-malware software
 for in-archive scan</a></big></big></big></h2>
             <br>
-            <span style="font-weight: bold;">How to scan archives for
-viruses from PeaZip</span><br>
+            <h3><big><span style="font-weight: bold;">How to scan
+archives for
+viruses from PeaZip</span></big></h3>
+            <h3><span style="font-weight: bold;"></span></h3>
+            <span style="font-weight: bold;"><br>
+Match the archive against known malware hash values<br>
+            </span>Select the archive, from Test dropdown menu (or
+context menu File manager group) use "Search SHA256 / Google" or
+"Search SHA / Virustotal".<br>
+This works even for encrypted archives, and even for archives which are
+unreadable (format unsupported by PeaZip, or payload encrypted with a
+password unknown to the user): the user is warned if the hash values is
+known (by Google, or by Virustotal meta anti-malware scanner) to be
+associated with malware or otherwise malicious content.<br>
+            <br>
+            <span style="font-weight: bold;">Scan the archive with a
+local antivirus software</span><br>
             <a name="scan_rar_zip_content_with_antivirus"></a>PeaZip's
-"Open with" menu, auto
+"Open with" menu auto
 configure itself to show option to analyze archive files (or analyze
 compressed files inside archives) with
-detected antivirus / antimalware software. The menu is also available
-from Run with buttom in File Tools tool bar.<br>
-This funtion is <span style="font-weight: bold;">available also
-inside archives, </span>as <span style="font-weight: bold;">"Extract
-and open with"</span> and alternatively as <span
- style="font-weight: bold;">"Preview with" </span>which keeps the
+detected antivirus / antimalware software, see "Configure anti virus
+scanners in PeaZip" chapter below.. <br>
+The menu is also available
+from "Run with" button in File Tools tool bar.<br>
+Please note that in this way <span style="font-weight: bold;">some
+anti-virus software may not be able to correctly identify malicious
+payload hidden in archives they cannot access</span>, either because
+compressed with non-mainstream compression functions, or because
+encrypted.<br>
+            <span style="font-weight: bold;"><br>
+            <br>
+            </span>
+            <h3><span style="font-weight: bold;"><big>How to scan files
+inside archives</big> </span></h3>
+            <h3><span style="font-weight: bold;"></span></h3>
+            <span style="font-weight: bold;"><br>
+            </span> "Open with" menu (explained before)&nbsp; is <span
+ style="font-weight: bold;">available also
+inside archives,</span> in <span style="font-weight: bold;">"Extract
+and open with"</span> and alternatively in <span
+ style="font-weight: bold;">"Preview with" </span>submen, which keeps
+the
 output in a temporary work folder PeaZip will take care to clean up.<br>
             <span style="font-weight: bold;">This allows to inspect
 content of archives which the antivirus software itslef is not able to
 access, either because encrypted or because compressed in a format the
-antivirus software does not support.</span><br>
+antivirus software does not support - because PeaZip performed the part
+of the task involving accessing to the actual content of the archive.</span><br>
             <br>
             <br>
             <big><span style="font-weight: bold;">Configure anti virus

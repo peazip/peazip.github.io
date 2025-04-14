@@ -34,9 +34,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip 64 bit</Program_Name>
-		<Program_Version>10.3.0</Program_Version>
-		<Program_Release_Month>02</Program_Release_Month>
-		<Program_Release_Day>22</Program_Release_Day>
+		<Program_Version>10.4.0</Program_Version>
+		<Program_Release_Month>04</Program_Release_Month>
+		<Program_Release_Day>14</Program_Release_Day>
 		<Program_Release_Year>2025</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Win7 x64,WinOther,WinServer,WinVista,WinVista x64,WinXP,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Improved managing archives with errors, TAR format, reports, and Themes.</Program_Change_Info>
+		<Program_Change_Info>Fixes, smarter error checking, smoother user experience, new themes.</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements>Any Windows 64 bit system</Program_System_Requirements>
 		<File_Info>
-			<File_Size_Bytes>9873790</File_Size_Bytes>
-			<File_Size_K>9642</File_Size_K>
-			<File_Size_MB>9.42</File_Size_MB>
+			<File_Size_Bytes>10034327</File_Size_Bytes>
+			<File_Size_K>9799</File_Size_K>
+			<File_Size_MB>9.57</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -82,7 +82,7 @@ Open and extract over 200 archive types: RAR, ACE, ARJ, CAB, DEB, DMG, ISO, LHA,
 PeaZip is localized in more than 30 languages and it is capable of handling all most popular archive formats, supporting a wide array of advanced file and archive management features (tabbed browsing, search, bookmarks, thumbnail viewer, hashing, find duplicate files, edit files inside archives, convert archives...), especially focused on security (strong cascade encryption, two factor authentication, encrypted password manager, secure deletion...).
 With Rar.exe installed on the same machine, PeaZip can create, modify and repair RAR archives.
 
-The distinctive trait of PeaZip is the innovative and easy to use compression/extraction interface, more similar to CD/DVD burners interfaces rather than to a classic file compressor. This design makes extremely simple to check (and update) items set for compression and extraction, integrating a full featured file manager component.
+The distinctive trait of PeaZip is the innovative and easy to use compression/extraction interface. This design makes extremely simple to check (and update) items set for compression and extraction, integrating a full featured file manager component for authoring the list of contents being sent to archiving or extraction tasks.
 
 Also, tasks created in the GUI can be easily saved and scheduled as batch scripts, in order to automate backup and restore operations, or for fine tuning, or for learning purpose, bridging the gap between the ease of use of GUI applications and power and flexibility of console.</Char_Desc_2000>
 		</English>
@@ -96,7 +96,7 @@ Also, tasks created in the GUI can be easily saved and scheduled as batch script
 			<Application_XML_File_URL>https://peazip.github.io/peazip_64bit.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.3.0/peazip-10.3.0.WIN64.exe</Primary_Download_URL>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.4.0/peazip-10.4.0.WIN64.exe</Primary_Download_URL>
 			<Secondary_Download_URL />
 			<Additional_Download_URL_1 />
 			<Additional_Download_URL_2 />

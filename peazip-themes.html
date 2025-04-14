@@ -17,7 +17,7 @@
  content="Themes | Customize PeaZip file manager GUI style">
   <meta property="og:description"
  content="PeaZip file manager themes. Customize application's GUI appearance, icons and colors to fit supported systems styles: Linux, Windows 9x XP 7 10, dark mode...">
-  <meta property="og:image" content="free-zip/peazip-icon.png">
+  <meta property="og:image" content="peazip-theme.png">
   <meta property="og:url"
  content="https://peazip.github.io/peazip-themes.html">
   <link rel="stylesheet" type="text/css" href="peazip-software.css">
@@ -242,19 +242,21 @@ Breeze (Andrain)</a><br>
 repositories</span></big></h3>
             <br>
             <a target="_blank"
- href="https://sourceforge.net/projects/peazip/files/Resources/Themes/Themes%20v5/"><span
+ href="https://sourceforge.net/projects/peazip/files/Resources/Themes/Themes%20v6/"><span
  style="font-weight: bold;">Themes</span></a><br>
-Repository of v5 themes, works with PeaZip 10.0+ versions.<br>
+Repository of v6 themes, works with current PeaZip versions (10.4+).<br>
             <br>
             <a target="_blank"
  href="https://sourceforge.net/projects/peazip/files/Resources/Themes/"><span
  style="font-weight: bold;">Legacy Themes</span></a><br>
-Att thems repository. Themes v1 works with PeaZip &lt; 7.0, Themes v2
+Legacy thems repositories.<br>
+Current releases (PeaZip
+10.4+) can use v6, v5, v4, and v3 themes.<br>
+Themes v1 works with PeaZip &lt; 7.0, Themes v2
 works with PeaZip &lt; 8.2, Themes v3 works with PeaZip &lt; 9.1,
-Themes v4 works with PeaZip &lt; 9.9.1.<br>
-            <div style="text-align: left;">Current releases (PeaZip
-10.0+) can use v5, v4, and v3 themes.<br>
-            <br>
+Themes v4 works with PeaZip &lt; 9.9.1, Themes v5 works with PeaZip
+&lt; 10.4.0.<br>
+            <div style="text-align: left;"><br>
             <a target="_blank"
  href="https://sourceforge.net/projects/peazip/files/Resources/Icons/"><span
  style="font-weight: bold;">Alternative system Icons</span></a><br>
@@ -269,7 +271,7 @@ application's icons are store on your OS.<br>
             <h2><big><span style="font-weight: bold;">Customize the
 aspect
 of
-the application with themes</span></big></h2>
+the application with Themes</span></big></h2>
             </div>
             <br>
 PeaZip T<span style="font-weight: bold;">hemes</span>
@@ -302,37 +304,67 @@ and aspect of tabs, file browser's address bar, and tool bar</li>
               <li>scale the GUI of the application larger or smaller
 than system's defaults</li>
             </ul>
-The apect of PeaZip's file explorer, in particular, can be also
-customized from the "..." style button on the top right of the file
-explorer itself, hiding or showing the main menu, tab bar, tool bar,
-status bar, and setting different styles for the file browser: details,
-list, and icons.<br>
-            <br>
+            <big><span style="font-weight: bold;"></span></big><br>
             <h2><a href="peazip-theme.png" target="_blank"><img
  src="peazip-theme.png" title="PeaZip Tux theme, with customizations"
- alt="customize gui file manager"
+ alt="custom themes for peazip"
  style="border: 0px solid ; width: 850px; height: 543px;"></a></h2>
             <span style="font-style: italic;"><br>
-PeaZip with Tux theme with some customizations: compact tool bar,
-large details mode browser, hidden menu bar and status bar (from Style
-"..." button), Gnome-style
-breadcrumb (from main menu &gt; Options &gt; Breadcrumb)</span><br>
+PeaZip with Tux-dark Theme with modern Style (from "..." style menu)</span><br>
             <br>
             <br>
-            <h2><big style="font-weight: bold;">Dark mode themes</big></h2>
+            <big><span style="font-weight: bold;">Styles</span></big><br>
+            <br>
+The aspect of PeaZip's file explorer - and some other elements like
+tabs in archiving/extraction screens - can be also
+customized from the "..." <span style="font-weight: bold;">style button</span>
+on the top right of the file
+explorer itself, to <br>
+            <ul>
+              <li>hide or show the main menu<br>
+              </li>
+              <li>hide or show the tab bar<br>
+              </li>
+              <li>customize the tool bar<br>
+              </li>
+              <li>customize or hide the navigation sidebar<br>
+              </li>
+              <li>customize or hide the status bar<br>
+              </li>
+              <li>setting different styles and sizes for the file
+browser (details,
+list, and icons)</li>
+            </ul>
+The "Style" submenu can apply multiple customizations at once to set
+the app in classic, modern or other pre-set styles.<br>
+Styles settings are not saved in Themes, so can be freely combined with
+existing themes to quickly create more unique look and feel for the
+application, and quickly applying favourite visual paradigms to
+different themes.<br>
+            <br>
+            <br>
+            <h2><big style="font-weight: bold;">Dark mode Themes</big></h2>
             <br style="font-weight: bold;">
             <span style="font-weight: bold;">PeaZip is fully functional
 in </span><a style="font-weight: bold;"
  href="screenshots-peazip-1.html#dark_mode">dark mode</a><span
  style="font-weight: bold;"> on BSD, Linux, macOS and all Windows
 systems.<br>
-            </span>The application system colors by defaul, so setting
+            </span>Embedded PeaZip theme will automatically adapt icons
+and accent colors to fit the current color scheme.<br>
+Custom Therme packages with -dark suffix are conventionally labed such
+because of icons and accent colors optimized for dark mode.<br>
+            <br>
+The application system colors by defaul, so setting
 a dark theme (or dark mode) will result in the app to start in dark
 mode.<br>
-In some instances this may not happen if the app is running in a way
+            <span style="font-style: italic;">In some instances this
+may not happen if the app is running in a way
 which prevents it to receive correct system colors - virtualization,
-emulation, containers, some package formats (e.g. Flatpak), depending
-on how the host system is configured.<br>
+emulation, containers, some package formats (e.g. Flatpak) depending
+on how the host system is configured, or if the app is using a
+different widgetset than the desktop environment (i.e. GTK2 app on Qt6
+desktop, or vice versa).</span><br>
             <span style="font-weight: bold;"><br>
             </span>On Windows 10 and more recent systems PeaZip can be <span
  style="font-weight: bold;">manually forced to use light
@@ -382,7 +414,7 @@ Theme.<br>
             </table>
             <span style="font-style: italic;"></span><br>
             <h3 style="font-weight: bold;"><big>How to create custom
-themes</big></h3>
+Theme packages</big></h3>
             <br>
 PeaZip Theme
 packages can be created (or saved for back-up) using
@@ -421,7 +453,7 @@ the distribution and the desktop environment policies, i.e.
             </div>
             <br>
             <br>
-            <h3 style="font-weight: bold;"><big>Manage PeaZip themes</big></h3>
+            <big style="font-weight: bold;">Manage PeaZip Themes</big><br>
             <br>
 To further customize themes, or to remove unwanted themes, &#8220;Manage
 Themes&#8221; opens the path containing themes, that is located in user&#8217;s
@@ -433,7 +465,8 @@ working with 32 bit PNG with transparence, and
 theme.txt can be edited as UTF-8 text.<br>
             <br>
             <br>
-            <h3 style="font-weight: bold;"><big>Distribute PeaZip themes</big></h3>
+            <big style="font-weight: bold;">Distribute PeaZip Theme
+packages</big><br>
             <br>
 Themes add-ons can be freely distributed as independent
 packages, as long copyright/copyleft licenses for the graphic elements
