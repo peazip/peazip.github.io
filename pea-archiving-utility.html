@@ -427,24 +427,32 @@ verification hash or checskum is not matching with expected values.<br>
             <h4><big style="font-weight: bold;">Standalone file
 management features</big></h4>
             <br>
-            <a name="file_management_tools"></a>Pea executable, other
+            <a name="file_management_tools"></a>The Pea executable,
+available in PeaZip packages, other
 than implementing extraction and archiving in
 .PEA format, uses the internally supported features (encryption,
 checksum/hash, randomness sampling etc...) to provide general file
-management utility tools, not necessarily related with file archiving,
-as in <a href="http://peautils.sourceforge.net/index.html">PeaUtils</a>
-spin-off
-utility:<br>
+management utility tools, not necessarily related with file archiving:<br>
             <ul style="font-weight: bold;">
               <li><a href="secure-delete.html">secure data deletion</a>
-(file data and free disk space)<br>
+both of file data and free disk space<br>
               </li>
               <li><a href="verify-checksum-hash.html">file checksum /
-hash tool</a><br>
+hash tool</a>, with the ability to save report in a format compatible
+with GNU CoreUtils hashing tools<br>
               </li>
               <li><a href="duplicates-hash-checksum.html">byte to byte
 file compare tool</a></li>
-              <li><a href="file-split.html">split and join files</a><br>
+              <li><a href="file-split.html">split and join files</a>,
+with optional automatic checksum / hash to assure data integrity after
+merging the file chunks<a href="file-split.html"><br>
+                </a></li>
+              <li>file preview, as text or exadecimal</li>
+              <li>search file's SHA256 hash value online for <a
+ href="antivirus-scan-zipped-files.html">possible match with known
+malware</a> (on Google, Jotti VirusScan, and Virustotal)</li>
+              <li>check for Zone.Identifiew (Mark of The Web) in input
+files to identify non-local content, generated on remote systems<br>
               </li>
             </ul>
             <br>
@@ -543,7 +551,11 @@ pages, <a target="_blank" href="http://en.wikipedia.org/wiki/Deflate">Deflate<im
  alt="data compression" title="Deflate algorithm"
  src="free-rar/extractor.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a> algorithm
-description on Wikipedia; software supporting PEA archives <a
+description on Wikipedia; software supporting PEA archives: <a
+ target="_blank" href="http://peautils.sourceforge.net/index.html">PeaUtils<img
+ alt="simple rar extractor application" title="PeaExtractor"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, <a
  target="_blank" href="http://peaextractor.sourceforge.net/index.html">PeaExtractor<img
  alt="simple rar extractor application" title="PeaExtractor"
  src="free-rar/extractor.png"

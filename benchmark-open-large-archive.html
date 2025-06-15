@@ -648,22 +648,32 @@ tested apps.<br>
 archive content with PeaZip</span><br>
             <br>
 PeaZip performs a comprehensive <span style="font-weight: bold;">pre-parsing</span>
-analysis of the archive on opening, listing the entire archive content,
-not
-only the root, which clearly adds a penalty in terms of raw
-performances, but as tradeoff it is meant to warn the user of possible
-integrity issues in advance, to display useful stats about the archive,
-and
-to create a treeview representation of the structure of directories
+analysis of the archive content on opening, listing the entire archive
+content (not
+only the root level), which clearly adds a penalty in terms of raw
+performances.<br>
+As tradeoff, this step is meant:<br>
+            <ol>
+              <li>to warn the user of possible
+archive content integrity issues in advance</li>
+              <li>to reconcile inconsistencies, omissions, and errors /
+corruption in archive's TOC in order to be able to create an usable
+representation of the content for the file browser (and additionally a
+treeview representation of the structure of directories
 inside
-the archive to help browsing.<br>
+the archive)</li>
+              <li>to display comprehensive stats about the archive
+content (size, numberof files, folders, compression ratio, content of
+each single directory in archive...)<br>
+              </li>
+            </ol>
 PeaZip can automatically turn off parts of pre-parsing process in order
 to preserve performances, and can completely skip pre-browsing: this
 behavior can be set in <span style="font-weight: bold;">Options &gt;
 Settings, Browser optimization</span> in the <span
  style="font-weight: bold;">Performance group</span>.<br>
-By default PeaZip is in Normal mode, which pre-.parses up to small
-archives (in the range of few hundreds thousands items in archive),
+By default PeaZip is in Normal mode, which pre-.parses up to mdium
+archives (in the range of few 256 K items in archive),
 while Fast mode has pre-parsing turned off unless listing issues are
 auto-detected while opening the archive.<br>
             <br>

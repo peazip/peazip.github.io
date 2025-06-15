@@ -249,15 +249,25 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.4.0 is mainly focused on fixes, smarter error checking, and
-in providing an overall smoother user experience.<br>
-The app can now automatically adapt icons and colors to system
-light/dark mode, and Themes can now customize all app's icons for
-better integration with different system styles.<br>
-Backend were updated to Pea 1.24 and Zstd 1.5.7.<br>
+PeaZip 10.5.0 brings a major update in the file manager, boosting
+archive browsing performances, improving
+archive editing, adding new
+functions to open file as archive
+from within archives, to prevent running a custom list of file
+extensions without confirmation, and to hide or show hidden files.<br>
+On macOS all file browser styles and icon sizes are now available as on
+other platforms.<br>
+On Windows it is now possible to explore NTFS Alternate Data Streams to
+gather additional information on files, including a dedicated tools to
+batch scan the input for Zone.Identifier (Mark of The Web) to detect
+files coming from remote systems.<br>
+In addition, the option to include the Zone.Identifier metadata in
+archives is now
+enabled by default for all formats supporting it (RAR, WIM).<br>
+Backend were updated to Pea 1.25.<br>
             <br>
-Sources are compiled with Lazarus 3.x, and are still compatible
-with Lazarus 2.x line.<br>
+Sources are compiled with Lazarus 4.x, and are still compatible
+with Lazarus 3.x and 2.x.<br>
             <br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -278,8 +288,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.4.0/SHA256.txt">SHA256.txt
-10.4.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.5.0/SHA256.txt">SHA256.txt
+10.5.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -300,14 +310,188 @@ version)</span><br>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
             <br>
-2025 04 14<br>
+2025 06 15<br>
+            <div style="margin-left: 40px;">10.5.0<br>
+            </div>
+            <div style="margin-left: 40px;">
             <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Zstd 1.5.7<br>
-Pea 1.24<br>
+            </div>
+            <div style="margin-left: 80px;">Pea 1.25<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
+CODE<br>
+            </div>
+            <div style="margin-left: 80px;">Code cleanup<br>
+Fixes<br>
+            <div style="margin-left: 40px;">Fixed "Auto open TAR
+archive" triggering errors when opening some archives for browsing<br>
+Fixed breadcrumb navigation which failed for some archives<br>
+Fixed dialog type when setting Custom binary in archiving and
+extraction screens<br>
+Fixed archive listing warning icon, the icon is now properly re-set
+when password request is prompted opening the archive (encrypted
+filenames)<br>
+Various fixes<br>
+            </div>
+Recompiled with <span style="font-weight: bold;">Lazarus 4.0</span>,
+compatibility kept with Lazarus 3.x and 2.x<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">(macOS) alternative file manager styles and
+sizes are now available</span>, cursor icon is now correctly handled<br>
+recompiled dragdropfiles.dll for Windows 64 bit and 32 bit<br>
+            </div>
+Updated W11 mini-context menu entries in
+(peazip)/res/share/batch/Windows<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
+FILE MANAGER<br>
+            </div>
+            <div style="margin-left: 80px;">Added hints to Settings
+tabs, showing tab's subsections and suggesting most prominent switches
+featured in the tab<br>
+Added option to search SHA256 hash value on Jotti VirusScan to check if
+the selected file matches with known malware<br>
+            <span style="font-weight: bold;">Added warning before
+running file types containing active content</span>, in order to
+improve security of the archive/file browser, from Options, Settings,
+File manager tab<br>
+            <div style="margin-left: 40px;">it is possible to set a
+custom list of extensions to better fit user's security model (the
+default list is tailored for the different supported Operating Systems)<br>
+            </div>
+            <div style="margin-left: 40px;">it is possible to set this
+function for Archive manager (default, when browsing archives only),
+File manager (when browsing the filesystem, not inside archives), both
+or none<br>
+            </div>
+Can now toggle "<span style="font-weight: bold;">Show hidden files and
+folders in the filesystem</span>" on/off (default on) from Options &gt;
+Settings, File manager tab<br>
+            <div style="margin-left: 40px;">hidden files have Hidden
+attribute in Windows, start with . character on non-Windows systems<br>
+            </div>
+            <div style="margin-left: 40px;">this setting only applies
+when browsing the filesystem, will not hide content inside archives<br>
+            </div>
+            <span style="font-weight: bold;">Improved files and
+archives browsing</span><br>
+            <div style="margin-left: 40px;">Improved speed and RAM
+usage opening archives, optimizing some performance critical routines:
+-60% time on 25K items archive (-12% memory), -25% time on 250K items
+archive (-25% memory), -5% time to display 25K items in the same view
+(-8% memory)<br>
+            <div style="margin-left: 40px;">Optimized parsing archive
+content for errors, anomalies, and omissions, over x2 performances<br>
+Optimized representation of archive content in side bar treeview,
+approx x2 performances<br>
+Optimized performances of the file manager<br>
+            <div style="margin-left: 40px;">General optimizations of
+sorting routines, memory intensive operations, file manager update,
+with various degree of performances improvement<br>
+            </div>
+            <div style="margin-left: 40px;">De-duplicated file manager
+update when parsing archives, approx x2 performances when applicable<br>
+            </div>
+Optimization of pipe communication routines with performances
+improvements on execution of browsing and other types of tasks<br>
+            </div>
+Improved representation of archives with complex structures<br>
+Improved editing archives and preventing attempts of unsupported
+operations<br>
+            </div>
+Improved filenames smart sorting<br>
+"Open as archive" function is now enabled also from within archives, so
+it is possible to explicitly ask to preview a compressed file trying to
+handle it as archive/container<br>
+Reorganized and de-duplicated the <span style="font-weight: bold;">Functions
+sub-menu</span> of Open menu (in navigation sidebar, and breadcrumb
+button dropdown menu) which shows most used app's function sorted
+alphabetically<br>
+            <div style="margin-left: 40px;">this sub-menu is now
+available also from the main context menu<br>
+            </div>
+Reorganized alternative main context menus<br>
+            <div style="margin-left: 40px;">Ctrl + RightClick shows
+Breadcrumb menu (unchanged)<br>
+Shift + RightClick shows History menu, which now shows both history and
+session history sections<br>
+Ctrl + Shift + RightClick shows Bookmarks menu (new)<br>
+            </div>
+Simplified pre-parse "Browser optimization" setting in Options &gt;
+Settings, Performance group<br>
+(Linux) Added System tools entries<br>
+(Windows) Added functions to display <span style="font-weight: bold;">NTFS
+Alternate Data Streams</span> and <span style="font-weight: bold;">Zone
+Identifier (Mark of The Web)</span> for the selected file<br>
+            <div style="margin-left: 40px;">please note NTFS Alternate
+Data Streams metadata requires the input file being stored on a NTFS
+filesystem<br>
+            </div>
+            <div style="margin-left: 40px;">this function is available
+from main menu File manager &gt; System tools<br>
+            </div>
+(Windows) Added function to <span style="font-weight: bold;">check for
+Mark of The Web in selected files</span> (and, recursively, in selected
+folders), or for currently open archive file<br>
+            <div style="margin-left: 40px;">this function is available
+as first entry in the Test dropdown menu in tool bar, and from main
+menu File manager &gt; File tools submenu in file manager and in
+archiving / extraction screens<br>
+            </div>
+            <div style="margin-left: 40px;">this function is based in
+NTFS Alternate Data Streams metadata and requires the files/folders
+being stored on a NTFS filesystem<br>
+            </div>
+            <div style="margin-left: 40px;">this function is
+recommended before archiving, opening or extracting files, allows to
+detect if at least one of the input files comes from a remote system
+and therefore contains the Zone Identifier (Mark of The Web) in its
+Alternate Data Streams metadata<br>
+            </div>
+            <div style="margin-left: 40px;">the slower "full report"
+variant of the function (in File tools submenus only) tests all input
+files and displays which ones have the MoTW and which one doesn't<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;"><br>
+EXTRACTION and ARCHIVING<br>
+            </div>
+            <div style="margin-left: 80px;"><span
+ style="font-weight: bold;">Improved handling of NTFS Alternate Data
+Streams</span>, including Zone Identifier (Mark of The Web)<br>
+            <div style="margin-left: 40px;">Added note in the info box
+in archive creation screen (clicking on input details in the status
+bar) to highlight formats which support storing NTFS Alternate Data
+Streams in archives created locally<br>
+            </div>
+            <div style="margin-left: 40px;">NTFS Alternate Data Streams
+are now stored (and propagated on extraction) by default for RAR and
+WIM formats, even for archives created locally<br>
+            </div>
+            <div style="margin-left: 40px;">As in previous versions,
+Mark of The Web is also propagated on extraction for all formats
+handled through 7z backend for downloaded archives<br>
+            </div>
+            <div style="margin-left: 40px;">Please note Alternate Data
+Streams, including Zone Identifier (Mark of The Web), relies on NTFS
+filsystem features and are not portable on different filesystems<br>
+            </div>
+Improved task progress window: text layout auto optimizes, better CPU
+efficiency of GUI for Test tasks<br>
+            </div>
             </div>
             <br>
+2025 04 14<br>
+            <div style="margin-left: 40px;">10.4.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            </div>
+            <div style="margin-left: 80px;">Zstd 1.5.7<br>
+Pea 1.24<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
 CODE<br>
-            <div style="margin-left: 40px;">Expanded script samples for
+            </div>
+            <div style="margin-left: 80px;">Expanded script samples for
 CLI usage and system integration in (peazip)/res/share/batch<br>
 Legacy code cleanup<br>
 Various fixes<br>
@@ -318,9 +502,10 @@ Fixed script generation (Advanced tab) when "TAR before" and "Delete
 files after archiving" options are both in use<br>
             </div>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 FILE MANAGER<br>
-            <div style="margin-left: 40px;">Added <span
+            </div>
+            <div style="margin-left: 80px;">Added <span
  style="font-weight: bold;">alternative context menus</span> for quick
 navigation in file/archive manager<br>
             <div style="margin-left: 40px;">Ctrl+RightClick shows
@@ -351,9 +536,10 @@ recommended to update old theme packages (suggestion: new themes can be
 used as template for icons missing in previous versions of themes)<br>
             </div>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">(7z backend) By default <span
+            </div>
+            <div style="margin-left: 80px;">(7z backend) By default <span
  style="font-weight: bold;">symlinks </span>are stored as links,
 option available in Advanced tab of archive creation screen<br>
 Added error check to avoid automatic deletion of the intermediate tar
@@ -363,20 +549,26 @@ archiving" option enabled<br>
             </div>
             <br>
 2025 02 22<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Pea 1.23<br>
+            <div style="margin-left: 40px;">10.3.0<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;">
+            <div style="margin-left: 40px;">BACKEND<br>
+            </div>
+            <div style="margin-left: 80px;">Pea 1.23<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
 CODE<br>
-            <div style="margin-left: 40px;">project_pea and
+            </div>
+            <div style="margin-left: 80px;">project_pea and
 project_peach updated to optimization and debugging project-level
 options recommended for Lazarus 3.x line<br>
 Optimized app startup reducing 25% time and 20% memory usage<br>
 Various fixes<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 FILE MANAGER<br>
-            <div style="margin-left: 40px;"><span
+            </div>
+            <div style="margin-left: 80px;"><span
  style="font-weight: bold;">Auto browse TAR</span> inside compressed
 TAR archives now can be limited to max size (100 MB, 1 GB, 10 GB,
 Always) in order to avoid automatic time consuming operation<br>
@@ -414,9 +606,10 @@ alternative look&amp;feel on Linux systems<br>
             </div>
 (Windows) Improved rendering of exe files' icons<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">Improved displaying
+            </div>
+            <div style="margin-left: 80px;">Improved displaying
 information in the task progress window and in the archive creation /
 extraction screen title<br>
 Improved managing non-ASCII characters in passwords<br>
@@ -436,43 +629,48 @@ file types
 .mcaddon, .mcmeta, .mcpack, .mcproject, .mcstructure, .mctemplate,
 .mcworld (242 file extensions supported)<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 INSTALLERS<br>
-            <div style="margin-left: 40px;">(Linux) <span
- style="font-weight: bold;">Qt6 </span>installable packages updated to
+(Linux) <span style="font-weight: bold;">Qt6 </span>installable
+packages updated to
 create needed links to libQt6Pas.so out of the box<br>
 (Linux) Updated information for <span style="font-weight: bold;">context
 menu integration for Gnome and KDE</span> in
 (peazip)/res/share/batch/freedesktop_integration<br>
-            <div style="margin-left: 40px;">sh scripts to automate
+            </div>
+            <div style="margin-left: 40px;">
+            <div style="margin-left: 80px;">sh scripts to automate
 context menu integration now available in KDE-servicemenus and
 Nautilus-scripts subfolders<br>
             </div>
             </div>
             <br>
-            <br>
             </div>
 2025 01 01<br>
+            <div style="margin-left: 40px;">10.2.0<br>
             <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">7z 24.09, with new
+            </div>
+            <div style="margin-left: 80px;">7z 24.09, with new
 dictionary size defaults for LZMA/LZMA2<br>
 Pea 1.22 introducing <span style="font-weight: bold;">hybrid KDF</span>
 to further increase the resilience of the KDF stage of triple cascaded
 encryption, requiring multiple unrelated optimizations to mount an
 hardware accelerated attack on the KDF<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 CODE<br>
-            <div style="margin-left: 40px;">Fixes, updated documentation<br>
             </div>
-            <br>
+            <div style="margin-left: 80px;">Fixes, updated documentation<br>
+            </div>
+            <div style="margin-left: 40px;"><br>
 FILE MANAGER<br>
-            <div style="margin-left: 40px;">Archives of suitable types
+            </div>
+            <div style="margin-left: 80px;">Archives of suitable types
 (RAR, ZIP, ZIPX) are automatically tested for <span
  style="font-weight: bold;">comment </span>when opened, if archive
 comment is found, "COMMENT" note is displayed in the status bar<br>
             </div>
-            <div style="margin-left: 80px;">
+            <div style="margin-left: 120px;">
             <div style="margin-left: 40px;">Move the mouse over the
 "COMMENT" note to display the comment as hint<br>
 Click the "COMMENT" note to open the comment editing screen<br>
@@ -480,7 +678,7 @@ Alt+M keyboard shortcut is always available as usual to directly open
 the comment editing screen for one or multiple archives at once<br>
             </div>
             </div>
-            <div style="margin-left: 40px;">Improved <span
+            <div style="margin-left: 80px;">Improved <span
  style="font-weight: bold;">detection of issues in archives</span>, for
 archive types browsed with 7z/p7zip frontend<br>
             <div style="margin-left: 40px;">If warnings are issued a
@@ -492,13 +690,14 @@ warning icon in the address bar or the textual warning message in the
 status bar<br>
             </div>
             </div>
-            <div style="margin-left: 40px;">Improved keyboard shortcuts<br>
+            <div style="margin-left: 80px;">Improved keyboard shortcuts<br>
 Updated app icon to unify look &amp; feel on all supported platforms<br>
 Updated Tux theme to improve aspect with dark mode / dark themes<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;"><span
+            </div>
+            <div style="margin-left: 80px;"><span
  style="font-weight: bold;">Brotli </span>-q 11 and <span
  style="font-weight: bold;">Zstd </span>--ultra -22 compression levels
 enabled in the GUI<br>
@@ -507,9 +706,10 @@ of tasks, from Options tab in the task progress window, i.e. to
 directly delete a faulty archive failing the test procedure<br>
 The progress window's icon now matches the format chosen for compression<br>
             </div>
-            <br>
+            <div style="margin-left: 40px;"><br>
 INSTALLERS<br>
-            <div style="margin-left: 40px;">(Linux) <span
+            </div>
+            <div style="margin-left: 80px;">(Linux) <span
  style="font-weight: bold;">Qt6 </span>packages supersedes the old Qt5
 packages<br>
 (Linux) <span style="font-weight: bold;">GTK3</span>-alpha package is

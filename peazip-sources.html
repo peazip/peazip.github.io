@@ -133,7 +133,7 @@
  style="color: rgb(153, 153, 153); font-weight: bold;"
  name="peazip_source_code"></a><big><big><big><span
  style="font-weight: bold;">Sources
-10.4.0</span><br>
+10.5.0</span><br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -164,7 +164,7 @@ Lazarus/FPC<br>
             <div style="color: rgb(253, 253, 253);">
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.4.0/peazip-10.4.0.src.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.src.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD" alt="download peazip code base"
  src="free-rar/download-free-software.png"
@@ -175,7 +175,7 @@ requires Lazarus / FreePascal IDE for building and compiling the app<br>
             </small></small></big><br>
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.4.0/peazip-10.4.0.pack.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.pack.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD"
  alt="peazip deb rpm packages structure"
@@ -446,12 +446,13 @@ Note: after updating macOS to a new release it is likely you need to
 also update Xcode and Xcode Command line Tools.<br>
 Lazarus currently uses <span style="font-weight: bold;">Cocoa </span>as
 default widget set on macOS.<br>
-Binaries are compiled for <span style="font-weight: bold;">x84_64</span>
-architecture by default, so they will run both on old Intel and newer
+Binaries compiled for <span style="font-weight: bold;">x84_64</span>
+architecture will run both on old Intel and newer
 Apple Silicon (M1, M2...) Macs.<br>
 To change target architecture open main menu, Project &gt;
 Project Options,
-Configuration and Target, set <span style="font-weight: bold;">Darwin </span>as
+Configuration and Target, e.g. set <span style="font-weight: bold;">Darwin
+            </span>as
 destination OS, and <span style="font-weight: bold;">aarch64 </span>as
 destination CPU family.<br>
 Please note macOS will
@@ -507,7 +508,8 @@ System<br>
  style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
                   </td>
                   <td
- style="vertical-align: middle; width: 15%; text-align: center;">i386<br>
+ style="vertical-align: middle; width: 15%; text-align: center;">arm,
+i386<br>
                   </td>
                   <td
  style="vertical-align: middle; width: 15%; text-align: center;">GTK,
@@ -527,45 +529,29 @@ download sections</td>
                   </td>
                   <td
  style="vertical-align: middle; width: 15%; text-align: center;">GTK2,
-Qt6<br>
+Qt6, GTK3<br>
                   </td>
                   <td style="vertical-align: middle; width: 45%;">released
-as portable and installable DEB and RPM packages, Flatpak available
-from third party<br>
-                  </td>
-                </tr>
-                <tr>
-                  <td
- style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">x86_64<br>
-                  </td>
-                  <td
- style="vertical-align: middle; width: 15%; text-align: center;">GTK3<br>
-                  </td>
-                  <td style="vertical-align: middle; width: 45%;">ALPHA:
-for evaluation and debugging only, Lazarus/FPC
+as portable and installable DEB and RPM packages, Qt6 Flatpak available
+on Flathub (linked on download page). GTK3 version is ALPHA and it is
+meant for evaluation and debugging (Lazarus/FPC
 support is marked as <span style="font-weight: bold;">alpha </span>for
-GTK3<br>
-                  </td>
+GTK3) </td>
                 </tr>
                 <tr>
                   <td
  style="width: 15%; vertical-align: middle; text-align: center;">Linux<br>
                   </td>
                   <td
- style="vertical-align: middle; width: 15%; text-align: center;">arm,
-aarch64<br>
+ style="vertical-align: middle; width: 15%; text-align: center;">aarch64<br>
                   </td>
                   <td
  style="vertical-align: middle; width: 15%; text-align: center;">GTK2,
 Qt6<br>
                   </td>
                   <td style="vertical-align: middle; width: 45%;">released
-as portable package, also available
-from <span style="font-weight: bold;">third party</span>, see links on
-Linux download pages<br>
+as portable GTK2 package, also available
+as Qt6 Flatpak on Flathub (linked on download page)<br>
                   </td>
                 </tr>
                 <tr>
