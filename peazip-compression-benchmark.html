@@ -5,9 +5,9 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="File compression and extraction benchmark. Comparison of 7-Zip, Bandizip, PeaZip, WinRar, WinZip archiver utilities performances for the best, fastest application.">
+ content="File compression and extraction benchmark. Comparison of 7-Zip, PeaZip, WinRar, WinZip archive managers performances for the best, fastest application.">
   <meta name="KEYWORDS"
- content="benchmark, rar, zip, file, compression, decompression, extraction, performances, best, fastest, utility, application, comparison, archive format, WinRar, WinZip, Brotli, Zstandard, Bandizip, PeaZip, 7-Zip, archiver, utilities">
+ content="benchmark, rar, zip, file, compression, decompression, extraction, performances, best, fastest, utility, application, comparison, archive format, WinRar, WinZip, PeaZip, 7-Zip, archiver, utilities">
   <meta name="ROBOTS" content="all">
   <title>Compression benchmark: 7-Zip, PeaZip, WinRar, WinZip comparison</title>
   <meta name="viewport" content="width=device-width">
@@ -16,7 +16,7 @@
   <meta property="og:title"
  content="Compression benchmark: 7-Zip, PeaZip, WinRar, WinZip comparison">
   <meta property="og:description"
- content="File compression and extraction benchmark. Comparison of 7-Zip, Bandizip, PeaZip, WinRar, WinZip archiver utilities performances for the best, fastest application.">
+ content="File compression and extraction benchmark. Comparison of 7-Zip, PeaZip, WinRar, WinZip archive managerss performances for the best, fastest application.">
   <meta property="og:image" content="compression_size_benchmark.png">
   <meta property="og:url"
  content="https://peazip.github.io/peazip-compression-benchmark.html">
@@ -166,21 +166,22 @@ PeaZip, WinRar, WinZip comparison</big></big></big></h1>
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="maximum-compression-benchmark.html"><small>MAXIMUM COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="fastest-compression-zip-deflate-benchmark.html"><small>FASTEST
+COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
  href="fast-compression-benchmark-brotli-zstandard.html">BROTLI VS
-ZSTANDARD</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="maximum-compression-benchmark.html">MAXIMUM COMPRESSION</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="fastest-compression-zip-deflate-benchmark.html">FASTER THAN ZIP</a><br>
+ZSTANDARD</a><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -210,7 +211,8 @@ SETTINGS: 7-ZIP, WINRAR, WINZIP COMPARISON<br>
               <li>
                 <p><a
  href="peazip-compression-benchmark.html#7-zip_vs_winrar">COMPRESSION /
-DECOMPRESSION TEST</a></p>
+DECOMPRESSION TEST "OUT-OF-THE-BOX"<br>
+                </a></p>
               </li>
               <li>
                 <p><a
@@ -257,19 +259,23 @@ settings: 7-Zip, PeaZip, WinRar, WinZip comparison</span><br>
                         <td colspan="1" rowspan="1"
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                         <p><big><span style="font-weight: bold;">Goals</span></big></p>
-                        <p>1) Compare mainstream file
-archiving utilities (7-Zip, Bandizip, PeaZip, WinRar, WinZip) for
-best compression sped, maximum compression ratio and
-fastest extraction</p>
-                        <p>2) <a
- href="archive-file-formats-comparison.html">Compare archive formats
-(7z, arc, rar, zip, zipx)</a> to find best real world options
-for <a href="file-compression-performances.html">optimal
-compression performances tradeoff</a><span
- style="text-decoration: underline;"> </span>in terms of compression
-ration
-and
-compression / decompression speed</p>
+                        <p><span style="font-weight: bold;">Test
+performances of default,
+out-of-the-box compression settings.</span><br>
+                        </p>
+                        <p>Compare mainstream archive manager apps
+(7-Zip, PeaZip, WinRar, WinZip, Windows Compressed
+Folders), over multiple <a href="archive-file-formats-comparison.html">archive
+formats
+(7z, rar, zip)</a>, for
+compression ratio, and
+compression and extraction speed to find <a
+ href="file-compression-performances.html">optimal
+compression performances tradeoff</a>.</p>
+                        <p>The comparison is meant to simulate the case
+of user
+with very basic needs and little knowledge
+about compression. </p>
                         </td>
                       </tr>
                     </tbody>
@@ -287,21 +293,16 @@ settings</big><br>
                         </span></h3>
                         <br>
                         <a name="peazip_winrar_performances_comparison"></a>Benchmarks
-are conducted
-on Windows 10 2009 64 bit using 64 bit versions of:<br>
+are run on Windows 10 64 bit, using 64 bit versions of:<br>
                         <ul>
-                          <li>7-Zip 19.00</li>
-                          <li>Bandizip 6.25</li>
-                          <li>PeaZip 7.2.0<br>
+                          <li>7-Zip 25.00</li>
+                          <li>PeaZip 10.6.0<br>
                           </li>
-                          <li>WinRar 5.8</li>
-                          <li>WinZip 24</li>
+                          <li>WinRar 7.11</li>
+                          <li>WinZip 76.9<br>
+                          </li>
+                          <li>Windows 10 built-in Compressed Folders</li>
                         </ul>
-All applications are tested using default,
-out-of-the-box compression settings for the selected archive format.<br>
-No cryptography option is set, since encryption impact on performances
-is out of the scope of
-this benchmark.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -318,10 +319,12 @@ this benchmark.<br>
 settings</span></big></h4>
                         <br>
 Notebook with Intel Core i7-8565U CPU, 4
-physical cores with hyper-threading (8 logical cores), 8 GB RAM<br>
-System disk 512 GB PCIe NVMe SSD, NTFS filesystem<br>
-External disks 4TB 5400 RPM HDD USB3, NTFS filesystem<br>
-                        </td>
+physical cores with hyper-threading (8 logical cores), 8 GB RAM.<br>
+System disk 512 GB
+PCIe NVMe SSD with NTFS filesystem.<br>
+With 7-Zip benchmark score of 23500, this machine represents an entry
+level specs
+system for today's standards. </td>
                       </tr>
                     </tbody>
                   </table>
@@ -347,26 +350,8 @@ formats compared in this benchmark</span></big><br>
  style="font-weight: bold;">7Z file
 format</span></a>
 popular Open Source archive format
-introduced by 7-Zip, providing higher compression ratio than RAR, and
-now supported by many archive managers</li>
-                        </ul>
-                        <ul>
-                          <li><a href="arc-files-utility.html"><span
- style="font-weight: bold;">ARC file
-format</span></a>
-Open Source archive format
-introduced by FreeArc and read / write supported by PeaZip, written
-ground up for high
-compression ratio and advanced features like strong encryption and
-error recovery</li>
-                        </ul>
-                        <ul>
-                          <li><a
- href="brotli-compressed-file-format.html"><span
- style="font-weight: bold;">Brotli compression format</span></a>
-created by Google for providing very fast
-compression and decompression<br>
-                          </li>
+introduced by 7-Zip, providing comparable to higher compression ratio
+than RAR, supported by many archive managers</li>
                         </ul>
                         <ul>
                           <li><a href="what-is-rar-file.html"><span
@@ -382,34 +367,11 @@ supported by third parts archivers only for extraction</li>
                           <li><a href="zip-file-format.html"><span
  style="font-weight: bold;">ZIP file
 format</span></a>
-widely used archive format, read / write supported by most file manager
-and archive manager
-utilities, tested with Deflate and with <a href="bzip2-file.html">BZip2</a>
-compression algorithm (available as preset in PeaZip from Add button
-dropdown menu) </li>
-                        </ul>
-                        <ul>
-                          <li><a href="zipx-file-format.html"><span
- style="font-weight: bold;">ZIPX
-file format</span></a>
-introduced by
-WinZip to improve compression ratio over ZIP and to introduce other
-modern features</li>
-                        </ul>
-                        <ul>
-                          <li><a href="zst-compressed-file-format.html"><span
- style="font-weight: bold;">Zst (Zstandard)
-compression format</span></a> by Facebook providing very fast
-compression and decompression</li>
-                        </ul>
-                        <ul>
-                          <li><a href="zst-compressed-file-format.html"><span
- style="font-weight: bold;"></span></a><a href="paq-file-format.html"><span
- style="font-weight: bold;">ZPAQ format</span></a>,
-computing intensive algorithm providing very high compression ratio,
-available as preset in PeaZip from Add button
-dropdown menu, both at normal and ultra compression level settings.<br>
-                          </li>
+widely used archive format, read / write supported by most archive
+manager
+utilities. De-facto standard for data archival and distribution on
+Windows platform, and supported by file managers and system tools on
+most non-Windows systems. </li>
                         </ul>
                         </td>
                       </tr>
@@ -424,8 +386,8 @@ dropdown menu, both at normal and ultra compression level settings.<br>
  style="vertical-align: top; background-color: rgb(250, 250, 250);"> <big><span
  style="font-weight: bold;">Input data</span></big><br>
                         <br>
-Benchmark input contains 42 files in 4 directories for total 303 MB
-(318.000.857 bytes), composed by well known reference files
+Benchmark input contains 43 files in 4 directories for total 1.22 GB
+(1,318,000,857 bytes), composed by well known reference files
 representative of different data structures, widely used for
 compression
 benchmarks:<br>
@@ -441,7 +403,12 @@ Canterbury compression corpora<img
  href="http://cs.fit.edu/%7Emmahoney/compression/enwik8.zip">enwik8<img
  alt="english wikipedia dump for data compression benchmark"
  title="Enwik8 compression test file" src="free-rar/extractor.png"
- style="border: 0px solid ; width: 12px; height: 10px;"></a>, which is
+ style="border: 0px solid ; width: 12px; height: 10px;"></a> and <a
+ target="_blank"
+ href="http://cs.fit.edu/%7Emmahoney/compression/enwik9.zip">enwik9<img
+ alt="english wikipedia 1GB dump for compression benchmark"
+ title="Enwik9 compression test file" src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, which are
 used as reference in <a target="_blank"
  href="https://en.wikipedia.org/wiki/Hutter_Prize">Hutter Prize<img
  alt="Hutter Prize for best compression ratio" title="Hutter Prize"
@@ -477,687 +444,292 @@ compression corpus<img
  name="7-zip_vs_winrar"></a><a
  href="peazip-compression-benchmark.html#file_archivers_comparative"><span
  style="font-weight: bold;">Compression
-/ decompression test</span><br>
+/ decompression test "out-of-the-box"</span><br>
             </a></big></big></big></h3>
             <br>
             <br>
             <big><span style="font-weight: bold;">Benchmark methods</span></big><br>
             <br>
-            <a name="peazip_bandizip_performances_comparison"></a>Benchmark
-input data is saved to system disk (PCIe <span
+            <a name="peazip_performances_comparison"></a>Benchmark
+input data is saved in system disk (PCIe <span
  style="font-weight: bold;">SSD</span>) and compressed to system
 disk, same partition, separate directory; the resulting archives are
 then extracted to
 separate directory on same (system) disk/partition.<br>
-Then, same operations are repeated on a slower mechanical disk, where
-hard disk read / write speed may become a limiting factor: benchmark
-input data is saved to external disk (USB3 <span
- style="font-weight: bold;">HDD</span>) and
-compressed to same external disk, same partition, separate directory;
-resulting archives
-are extracted to
-separate directory on same (external) disk/partition.<br>
             <br>
-Each compression and extraction test is repeated 10 times to get an
-average value; size is expressed in MB, time in seconds.<br>
-Each archiving utility performance is tested working with zip and at
-least another
-archive format.<br>
+Each compression and extraction test is repeated 5 times to get an
+average value; size is expressed in MB (lower, better), time in seconds
+(lower, better).<br>
             <br>
-For pure compression formats (Brotli and Zstandard) requiring to
-consolidate the multiple input files of the benchmark into a single TAR
-file, are shown both pure compression and extraction speeds - which are
-the actual speed for a single file input, and are the values reported
-in the graphs - and, in brackets (), the total operation time taking in
-account tar / untar operations, with performance penalty being almost
-negligible on fast SSD disk.<br>
+Apps are tested at <span style="font-weight: bold;">default
+out-of-the-box compression settings</span> for ZIP
+(chosen as most commonly supported format) and a secondary, well knwon
+and widely supported format (7Z and RAR).<br>
+            <br>
+Please note that PeaZip uses same Open Source routines implemented in
+7-Zip for 7Z and ZIP formats (tested in this benchmark), so speed and
+compression ratio of the two apps are similar with same compression
+settings, while values reported in this benchmark differs due the
+different choices for default compression settings in the two apps -
+PeaZip defaults more oriented to speed, and 7-Zip defaults more
+oriented to high compression.<br>
+            <br>
             <br>
             <h4><span style="font-weight: bold;"><big>Benchmark results
 table, the lower the better for all columns</big></span></h4>
             <h3><span style="font-weight: bold;"></span></h3>
             <span style="font-weight: bold;"> <br>
             </span>
-            <table x:str="" style="border-collapse: collapse;"
- border="0" cellpadding="0" cellspacing="0">
-              <col span="6" style="width: 68pt;" width="90"> <tbody>
-                <tr style="height: 33.75pt;" height="45">
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 20%;"><br>
+                  </td>
                   <td
- style="height: 32px; width: 150px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;"
- class="xl22">Utility</td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
-SSD (sec)<br>
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compressed
+size (MB)<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
-HDD (sec)<br>
-                  </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Archive
-size (MB)</td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
 ratio<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Extraction
-                  <br>
-SSD (sec)</td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Extraction
-                  <br>
-HDD (sec)</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-ZIP</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">12,1</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16">16,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">97,70</td>
                   <td
- style="text-align: center; vertical-align: middle;">32,24%</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1.6">1,6</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.4">13,4</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-Brotli<br>
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
+time (sec)<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">3,3 (3,5)<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16">8,5 (19,5)<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">100,00</td>
                   <td
- style="text-align: center; vertical-align: middle;">33,00%</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1.6">0,9 (1,1)<br>
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Extraction
+time (sec)</td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">W10
+Compressed Folders<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.4">11,7 (22.5)<br>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">415,00<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">33,02%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">48,0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">17,2<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-Zstd</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">1,0 (1,2)<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16">4,5 (15,5)<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">99,20</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">32,74%</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1.6">0,6 (0,8)<br>
+ style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+ZIP default<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.4">9,8 (20,6)<br>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">407,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">32,38%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">24,0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">9,1<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-ZIP/Bzip2 fast<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">12,6</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16">14,5</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">83,00</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">27,39%</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1.6">4,5</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.4">19,8</td>
+ style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+RAR default<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">318,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">25,30%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">106,0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">5,6<br>
+                  </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-7Z</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="39.6">39,6</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="42.2">42,2</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="73.6">73,60</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">24,69%<br>
+ style="vertical-align: top; width: 20%; text-align: right;">WinZip,
+ZIP default<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1">1,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13">13,0</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">393,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">31,26%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">141,5<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">11,8<br>
+                  </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-ARC</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="17.2">17,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="18.3">18,3</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="71.7">71,70</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">23,66%<br>
+ style="vertical-align: top; width: 20%; text-align: right;">7-Zip, ZIP
+medium<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="7.1">7,1</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16.8">16,8</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">396,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">31,50%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">118,1<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">8,9<br>
+                  </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-ZPAQ</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="17.2">37,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="18.3">40,6</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="71.7">68,50</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">22,61%<br>
+ style="vertical-align: top; width: 20%; text-align: right;">7-Zip, 7Z
+medium<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="7.1">26,8</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16.8">32,8</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">286,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">22,75%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">284,0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">4,4<br>
+                  </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">PeaZip,
-ZPAQ ultra<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="17.2">354,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="18.3">360,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="71.7">57,60</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">19,01%<br>
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip,
+ZIP fast<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="7.1">356,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16.8">364,0</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">426,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">33,89%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">28,8<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">9,5<br>
+                  </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">7-Zip,
-ZIP</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="11.9">11,9</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="16">16,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">97,70</td>
+                <tr>
                   <td
- style="text-align: center; vertical-align: middle;">32,24%<br>
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+fast<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1.2">1,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.1">13,1</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">7-Zip,
-7Z</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="38">38,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="40.3">40,3</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="73.6">73,60</td>
                   <td
- style="text-align: center; vertical-align: middle;">24,29%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="0.9">0,9</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13">13,0</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">WinRar,
-ZIP</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="3">3,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="6">6,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="100">100,00</td>
+ style="vertical-align: top; width: 20%; text-align: center;">346,00</td>
                   <td
- style="text-align: center; vertical-align: middle;">33,00%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">27,53%<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1">1,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="76.6">76,6</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">WinRar,
-RAR</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.8">13,8</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="25.5">25,5</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="80.4">80,40</td>
                   <td
- style="text-align: center; vertical-align: middle;">26,53%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">56,4<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="1">1,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="18.9">18,9</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">Bandizip,
-ZIP</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="3.2">3,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="6">7,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="101">101,00</td>
                   <td
- style="text-align: center; vertical-align: middle;">33,33%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">3,9<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="2">2,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="13.4">13,4</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">Bandizip,
-7Z</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="63.4">63,4</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="69.7">69,7</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="72.8">72,80</td>
-                  <td
- style="text-align: center; vertical-align: middle;">24,03%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="5.2">5,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="17">17,0</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">WinZip,
-ZIP</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="20.5">20,5</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="26">26,0</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.1">97,10</td>
-                  <td
- style="text-align: center; vertical-align: middle;">32,05%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="2">2,0</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.3">12,3</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; width: 150px; text-align: center; vertical-align: middle;">WinZip,
-ZIPX</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="34.7">34,7</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="37.2">37,2</td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="70.7">70,70</td>
-                  <td
- style="text-align: center; vertical-align: middle;">23,33%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="46.2">46,2</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="47.4">47,4</td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-style: italic;"></span><br>
+            <span style="font-style: italic;">Archive size in MB (lower
+better), compression ratio of input data, and time in seconds (lower
+better) to complete compression and de-compression of data.</span><br>
+            <br>
             <br>
             <h2 style="font-weight: bold;"><big>Compression ratio
 results:
-what application compresses better</big><br>
+what application compresses better by default</big><br>
             </h2>
             <br>
-            <a name="maximum_copression_ratio_utility"></a><a
- href="zip-files-utility.html"><span style="font-weight: bold;">Compressing
-data to ZIP format</span></a>,
-which is read / write supported by all all archiving applications
-tested in this benchmark, all utilities reach a compression ratio in
-the order of 33%, with WinZip reaching best compression for ZIP archive
-at 97,10MB but at the cost of much slower compression speed.<br>
-7-Zip and PeaZip (which uses the same optimized Deflate algorithm of
-7-Zip) attains good compression in zip format with 97,70MB at
-intermediate speed, while
-WinRar and Bandizip reach the lowest compression at 100MB and 101 MB
-respectively, but with significantly higher compression speed.<br>
-An exception is ZIP compressed with <span style="font-weight: bold;">BZip2</span>
-method (a preset available in PeaZip) which reduces input size down to
-83 MB, result much closer to strong compression formats (as rar and 7z)
-than to ZIP files compressed with Deflate method.<br>
-            <span style="font-weight: bold;">Brotli </span>and <span
- style="font-weight: bold;">Zstandard </span>(both at default
-compression level 3) provides compression ratio in the same range of
-ZIP, comparing favourably in terms of speed.<br>
+In terms of attainable compression, 7Z and RAR formats shows a clear
+advantage ove ZIP format, which never reaches a compression ratio lower
+than 30%, some percentage points worse than non-zip formats.<br>
             <br>
-Compressing in formats alternative to ZIP allows all tested archiving
-applications to reach a better compression ratio, roughly grouped at
-25%.<br>
-WinZip reaches a good compression ration on the test data with <span
- style="font-weight: bold;">ZIPX </span>format creating a 70,70MB
-output archive, followed by PeaZip with <span
- style="font-weight: bold;">ARC </span>format at 71,70MB - with ARC
-outperforming 7Z and ZIPX in terms of compression speed, taking
-only about half the time.<br>
-In <span style="font-weight: bold;">7Z</span> format both 7-Zip and
-PeaZip obtain a
-73,60 MB archive with comparable times, while BandiZip produces
-a marginally smaller output at 72,80 MB taking about twice the time.<br>
-WinRar with <span style="font-weight: bold;">RAR </span>format (RAR5
-revision) creates the largest output file of this sub-group, 80,40MB,
-with good archive creation speed, even faster than ARC.<br>
-            <span style="font-weight: bold;"></span>Best compression is
-reached by PeaZip with <span style="font-weight: bold;">ZPAQ </span>format,
-the normal compression level preset reduces benchmark data size down to
-68,50 MB (22,61% compression ratio) with a speed comparable to 7Z.<br>
-ZPAQ ultra compression level scores the minimum output size of the
-benchmark, 57,60 MB (19,01%, the only compression ratio below 20%), but
-the extreme compression comes at the cost of a 10x increase in
-computing time.<br>
+7Z provides <span style="font-weight: bold;">best </span>compression
+result with medium compression level (default on 7-Zip), and <span
+ style="font-weight: bold;">third best</span> result with fast
+compression level (default on PeaZip), with RAR at medium
+compression level (default on WinRar) providing the <span
+ style="font-weight: bold;">second best</span> compression ratio, with
+an intermediate output size.<br>
             <br>
-            <h3><img alt="best compression application benchmark"
+As for ZIP compression, WinZip provides the best result, even if it is
+significantly worse (larger output) even of 7Z at fast compression
+level,.<br>
+            <br>
+            <br>
+            <h3 style="text-align: center;"><img
+ alt="best compression application benchmark"
  title="Archive size comparison: PeaZip, WinRar, WinZip..."
  src="compression_size_benchmark.png"
  style="width: 720px; height: 460px;"></h3>
             <br>
+            <br>
             <h2 style="font-weight: bold;"><big>Compression speed
 results:
-what is the fastest application</big><br>
+what is the fastest application by default</big><br>
             </h2>
             <br>
             <a name="compare_winzip_peazip_compression_speed"></a>WinRar
-and BandiZip score the lowest compression times in ZIP format
-(although producing a larger ZIP archive), with the speed advantage
-being more
-evident on the fastest solid state disk.<br>
-7-Zip and PeaZip employ longer time but the optimized Deflate
-algorithm creates a more compressed ZIP archive, however WinRar with
-RAR format and PeaZip both with ZIP/BZip2 and with ARC formats produce
-significantly smaller
-output with only marginally slower compression.<br>
+(<span style="font-weight: bold;">fastest</span>) and PeaZip (<span
+ style="font-weight: bold;">second fastest</span>) provides the best
+results in terms of compression speed when using ZIP format.<br>
+Fastest non-zip compressor is PeaZip using 7Z fast, with RAR being
+almost twice as slow, and 7Z medium being almost 6 times slower.<br>
+WinZip notably provides the slowest ZIP compression performance, even
+solwer than RAR compression.<br>
             <br>
-The compression speed result of BZip2 algorithm is especially
-interesting because it scales very well on multicore architectures, and
-in benchmark CPU (Intel i7-8565U) it approaches the speed of Deflate
-algorithm providing significantly better compression ratio (27,39%
-instead of 32,24%); BZip2 speed result is marginally faster than RAR
-and ARC, and much more faster than 7Z and ZIPX.<br>
             <br>
-Brotli speed is comparable with fastest ZIP implementations, and
-Zstandard (with generic multithreading option activated by default by
-PeaZip) scores the highest compression speed, significantly faster than
-any other compressor tested in the benchmark.<br>
-            <br>
-WinZip ZIP compression is slower than RAR and ARC, with only a marginal
-compression ratio increase on ZIP archives group but far worse
-compression than any of the non-ZIP archives.<br>
-ZIPX (WinZip), ZPAQ (PeaZip), and 7Z (7-Zip, PeaZip) compression
-algorithms are comparable for speed, and significantly
-slower than RAR and ARC, with Bandizip 7Z
-compression being slower that other 7Z implementations and the second
-slowest performance of the benchmark before ZPAQ ultra level.<br>
-            <br>
-            <h3><img alt="what is the fastest file archiver software"
+            <h3 style="text-align: center;"><img
+ alt="what is the fastest file archiver software"
  title="Comparison of compression speed: PeaZip, WinRar, WinZip..."
  src="compression_speed_benchmark.png"
  style="width: 720px; height: 460px;"></h3>
             <br>
+            <br>
             <h2 style="font-weight: bold;"><big>Extraction speed
 results:
-what is the fastest application</big><br>
+what is the fastest application by default</big><br>
             </h2>
             <br>
             <a name="comparison_of_archive_extraction_speed"></a>Decompression
-results usually faster than creation or archives, with
-few
-exceptions. <br>
-The difference in speed is especially noticeable on the
-faster SSD disk, while slower mechanical HDD masks this difference to
-some extent, which hints that compression stage is more CPU-heavy and
-mainstream algorithms are optimized for extraction (that in most user
-cases, i.e. content distribution, is more common and performed more
-often than compression).<br>
+of ZIP archives is slower than decompression of RAR and 7Z archives, in
+contrast with typical compression speed test results.<br>
+This design choice for newer archive formats makes sense, as for
+general rule of thumb it is assumed it is more probable / frequent the
+need to extract a compressed content rather than to create a compressed
+archive - in example a package, which was compressed a single time, may
+be accesssed multiple times to restore saved content, or distributed to
+many users each one needing to extract the compressed content.<br>
+            <span style="font-weight: bold;"><br>
+Fastest </span>decompression time is provided by PeaZip (7Z fast), <span
+ style="font-weight: bold;">second fastest</span> by 7-Zip (7Z medium),
+            <span style="font-weight: bold;">third fastest</span> by
+WinRar (RAR).<br>
             <br>
-Extraction times of ZIP, RAR and 7Z archives is quite tightly packed
-for all file archivers utilities,
-despising RAR and 7Z compression being significantly slower than ZIP -
-with exception of Bandizip extraction of its 7Z archive which is the
-slowest
-of this sub-group, a gap more evident on faster SSD disk.<br>
-Another very unusual data point is WinRar resulting very slow in
-extracting its ZIP file on the mechanical disk while in all other test
-the software result performing very well (with <a href="free-rar.html">RAR
-extraction</a> being as fast as ZIP extraction on SSD) - to verify the
-correctness of
-the data, the very same archive was tested for integrity, and extracted
-with other utilities without producing the same unusual slow result.<br>
+As for ZIP format extraction, 7-Zip, PeaZip, and WinRar performances
+are very close, while WinZip and Windows 10 Compressed Folders are
+significantly slower.<br>
             <br>
-ZIP/BZip2 extraction is significantly slower than ZIP/Deflate, and also
-compairs unfavourably with format like 7Z and RAR (but is faster than
-ARC and ZIPX).<br>
-Brotli and Zstandard features the slightly fastest decompression speeds
-of the group.<br>
             <br>
-PeaZip ARC extraction performed more slowly than <a
- href="7zip-files-utility.html">7Z extraction</a>,
-reversing the results from compression performances<br>
-Also <a href="paq-files-compression-utility.html">ZPAQ decompression</a>
-compares unfavorably with mainstream archive
-formats, being quite similar to compression speed.<br>
-WinZip ZIPX
-features significantly slower decompression performance taking over 6
-times
-ARC on SSD, and almost twice slower than ZPAQ normal, and surpass only
-the extraction speed of ZPAQ ultra which scores an order of magnitude
-slower than competitors.<br>
-            <br>
-            <h3><img alt="fastest decompression speed benchmark"
+            <h3 style="text-align: center;"><img
+ alt="fastest decompression speed benchmark"
  title="Decompression speed compariosn: PeaZip, WinRar, WinZip..."
  src="decompression_speed_benchmark.png"
  style="width: 720px; height: 460px;"></h3>
             <big><br>
+            <br>
             </big>
-            <h3><big><span style="font-weight: bold;">Bonus test: drag
-and
-drop extraction speed</span></big></h3>
-            <br>
-            <a name="test_of_archive_extraction_performances"></a>Extracting
-content from archives by drag and drop is a very common
-operation: PeaZip features an <a href="screenshots-peazip-3.html">optimized
-drag &amp; drop extraction</a> mechanism, which extracts the data
-directly into the intended output path.<br>
-This improves security (no temporary data is written out of the
-intended path) but also, in some cases, performances, as the data would
-otherwise be written twice to be moved to final output path unless it
-is on the same partition of the input.<br>
-In this test, the benchmark input data is compressed to ZIP archive
-with 7-Zip, and copied on external USB3 4TB 5400 RPM mechanical HDD.<br>
-The archive is opened in each one of the archivers, and extracted by
-drag and drop to a second external USB3 4TB 5400 RPM mechanical HDD,
-taking in account time for decompression and for moving the data to the
-final position (test is repeated 10 time for each application to get an
-average value).<br>
-            <br>
-            <table x:str="" style="border-collapse: collapse;"
- border="0" cellpadding="0" cellspacing="0">
-              <col style="width: 68pt;" width="90"> <col
- style="width: 121pt;" width="161"> <tbody>
-                <tr style="height: 25.5pt;" height="34">
-                  <td class="xl26"
- style="font-weight: bold; text-align: center; vertical-align: middle; background-color: rgb(240, 240, 240);">Utility</td>
-                  <td class="xl27"
- style="border-left: medium none; font-weight: bold; text-align: center; vertical-align: middle; background-color: rgb(240, 240, 240);">Drag
-&amp; drop zip file extraction speed (sec)</td>
-                </tr>
-                <tr style="height: 12.75pt;" height="17">
-                  <td class="xl24"
- style="border-top: medium none; text-align: center; vertical-align: middle;">PeaZip</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; text-align: center; vertical-align: middle;"
- x:num="13.6">13,6</td>
-                </tr>
-                <tr style="height: 12.75pt;" height="17">
-                  <td class="xl24"
- style="border-top: medium none; text-align: center; vertical-align: middle;">7-Zip</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; text-align: center; vertical-align: middle;"
- x:num="17">17,0</td>
-                </tr>
-                <tr style="height: 12.75pt;" height="17">
-                  <td class="xl24"
- style="border-top: medium none; text-align: center; vertical-align: middle;">WinRar</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; text-align: center; vertical-align: middle;"
- x:num="16.9">16,9</td>
-                </tr>
-                <tr style="height: 12.75pt;" height="17">
-                  <td class="xl24"
- style="border-top: medium none; text-align: center; vertical-align: middle;">Bandizip</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; text-align: center; vertical-align: middle;"
- x:num="17">17,0</td>
-                </tr>
-                <tr style="height: 12.75pt;" height="17">
-                  <td class="xl24"
- style="border-top: medium none; text-align: center; vertical-align: middle;">WinZip</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; text-align: center; vertical-align: middle;"
- x:num="15.5">15,5</td>
-                </tr>
-              </tbody>
-            </table>
-            <br>
-7-Zip, Bandizip and Winrar are tightly packed around very similar
-performances of 17 seconds, while PeaZip fast drag and drop
-implementation shows a clear performance advantage in this scenario
-completing the extraction in 13,6 seconds. WinZip provides an
-intermediate performance at 15,5 seconds.<br>
-            <br>
-            <br>
-            <br>
             <h3><big><big><big><a style="font-weight: bold;"
  name="rar_vs_zip_vs_7z"></a><a
  href="peazip-compression-benchmark.html#file_archivers_comparative"><span
@@ -1167,70 +739,34 @@ what is the best performing application?</span><br>
             <br>
             <br>
             <big><span style="font-weight: bold;">Overall best
-compressor</span></big><br>
+compressor out-of-the-box</span></big><br>
             <br>
-It is not easy, if even possible, to define what is the best performing
+            <a name="compression_benchmark_results"></a>It is not easy,
+if even possible, to define what is the best performing
 application in this benchmark, as all tested apps supports multiple
 archive formats fulfilling different needs for different user cases at
-best. Let see results in detail:<br>
-            <br>
-            <a name="compression_benchmark_results"></a>7-Zip, PeaZip
-and WinZip lacks a fast <span style="font-weight: bold;">ZIP </span>compression
-as featured in WinRar and Bandizip (with
-WinZip being the slowest), but provides marginally better compression
-ratio than faster applications, and zip decompression falls in the same
-range for all tested utilities.<br>
+best.<br>
+Let see results in detail:<br>
             <br>
             <span style="font-weight: bold;">Fastest compressor</span><br>
-To address this shorthcoming, PeaZip supports <span
- style="font-weight: bold;">Brotli </span>and <span
- style="font-weight: bold;">Zstandard</span>, both well capable to
-compete favourably with fastest Deflate implementations, with Zstandard
-providing by far the <span style="text-decoration: underline;">fastest
-compression</span> performance of the benchmark, even taking in account
-the extra time overhead for PeaZip to transparently add multiple inputs
-to TAR archive before compression.<br>
-Read more about fast compression benchmarks: <a
- href="fast-compression-benchmark-brotli-zstandard.html">Brotli vs
-Zstandard fast compression benchmark</a>, and <a
- href="fastest-compression-zip-deflate-benchmark.html">faster than Zip
-compression benchmark</a>.<br>
-            <br>
-Also, PeaZip features as pre-set ZIP/<span style="font-weight: bold;">BZip2</span>
-compression, that gets close to high compression formats but on modern
-multicore machines is almost as fast as classic ZIP/Deflate for
-compression (even if not for decompression).<br>
-            <br>
-WinRar's <span style="font-weight: bold;">RAR </span>format provides
-significantly better-than-zip compression running only marginally
-slower than 7-Zip's optimized Deflate (and faster than WinZip's ZIP),
-and keeps decompression as fast as for zip.<br>
-            <span style="font-weight: bold;"><br>
-            <a name="best_file_archiver_application"></a>7Z </span>format
-provides
-even better compression at cost of slower speed than rar, but
-decompression is as fast as for zip and rar, making 7Z an excellent
-choice for content distribution case of use, where both reducing the
-content size as much as possible and allowing fast extraction are
-desired qualities. Bandizip produced marginally smaller 7Z archive than
-7-Zip and PeaZip at cost at much slower compression and decompression.<br>
-In this test PeaZip with <span style="font-weight: bold;">ARC </span>outperforms
-7Z results for all utilities in terms of compression ratio and
-compression speed, but falls short with slower decompression.<br>
-            <br>
-WinZip with <span style="font-weight: bold;">ZIPX</span> fared well in
-compression ratio and kept compression speed reasonable (a bit faster
-than better results for 7Z), but extraction is extremely slow even on
-fast SSD (probably being CPU-limited by a very heavy algorithm
-implementation) so use of this format may be unpractical for general
-purpose.<br>
+WinRar (ZIP default) provides the fastest compression, quite closely
+matched by PeaZip (ZIP fast) which however, with this setting, produces
+a larger archive.<br>
+PeaZip (7Z fast) provides an interesting option when speed is a
+prominent requiremet, being the fastest non-zip compressor of this
+benchmark, and producing a significantly smaller archive than any other
+ZIP compressor, with the additional benefit of being the fastest format
+in the extraction benchmark.<br>
+Read more about fast compressors in <a
+ href="fastest-compression-zip-deflate-benchmark.html">fastest
+copression benchmark</a>.<br>
             <br>
             <span style="font-weight: bold;">Best compression ratio</span><br>
-With <span style="font-weight: bold;">ZPAQ </span>PeaZip provided the
-            <span style="text-decoration: underline;">best compression
-ratio</span>, with compression times comparable to 7Z (but slower
-extraction) at normal compression preset, and even superior compression
-at ultra preset.<br>
+7-Zip (7Z medium) provides the best compression ratio, 22,75% against
+25,30% of WinRar (RAR default) but being 2.7x times slower.<br>
+PeaZip (7Z fast) provides a reasonable performances tradeoff reaching
+27,53% compression ratio (significantly better than any ZIP compressor)
+but being almost 2x faster than RAR default compression.<br>
 Read more about best compressors in terms of maximum attained
 compression ratio in <a href="maximum-compression-benchmark.html">maximum
 copression benchmark</a>.<br>
@@ -1238,94 +774,70 @@ copression benchmark</a>.<br>
             <br>
             <h4><span style="font-weight: bold;"><big>Final
 recommendations</big></span></h4>
-            <h4><span style="font-weight: bold;"></span></h4>
-            <span style="font-weight: bold;"> <br>
-            </span><a name="fastest_compression_algorithm"></a>ZIP
+            <br>
+            <span style="font-weight: bold;"> </span><a
+ name="fastest_compression_algorithm"></a>ZIP
 remains the format of choice if <span style="font-weight: bold;">fast
 compression</span> and <span style="font-weight: bold;">compatibility </span>are
 the main
-concerns, with WinRar and Bandizip providing faster ZIP compression
+concerns, with WinRar and PeaZip providing faster ZIP compression
 even
 if at the cost of losing some compression ratio compared to other
 utilities<br>
-Anyway, modern algorithms as Google's Brotli and Facebook's
-Zstandard are becoming viable alternatives providing comparable
-compression ratio at higher speed - especially Zstandard, with
-multithreading parameter enabled, which performs very
-well on multicore machines definitely outperforming all Deflate-based
-compressors / decompressors.<br>
             <br>
             <span style="font-weight: bold;"><a
  name="best_compression_algorithm"></a></span>RAR and 7Z formats
 provides far <span style="font-weight: bold;">better
-compression</span> ratio than zip increasing only compression time, not
+compression</span> ratio than ZIP increasing only compression time, not
 decompression, making it a viable high performance alternative in every
 user case where archive extraction occurs more often than archive
 creation - i.e. for <span style="font-weight: bold;">content
 distribution</span>. <br>
-In 7Z subgroup, 7-Zip and
-PeaZip performs faster than
-Bandizip at the cost of a marginally inferior compression ratio.<br>
+            <br>
+            <a name="maximum_compression_application"></a>In 7Z
+subgroup, 7-Zip and
+PeaZip performs very similarily (PeaZip using same Open Source
+libraries provided by 7-Zip), but different defaults makes 7-Zip more
+oriented to strong compression out of the box, while PeaZip default 7Z
+compression setting is gerared toward speed - a choice which is
+influenced by today's incidence of large files (as multimedia formats)
+containing poorly of <a
+ href="why-can-not-compress-pdf-avi-mp3-files.html">non-compressible
+data</a>.<br>
+            <br>
 RAR format is proprietary and is supported for archive creation only by
 WinRar - even if some archivers as PeaZip can <a
  href="free-rar-create.html">create RAR archives</a> this requires
 WinRar being installed to use its binaries.<br>
-ZIP/BZip2 provides good compression ratio, closer to RAR and 7Z than to
-ZIP/Deflate, and also provides acceptable compression speed, but lags
-behind in terms of decompression speed; it may still be a good choice
-where usually more data gets compressed than extracted, i.e. <span
- style="font-weight: bold;">backup
-tasks</span>.<br>
-Also, ZIP/BZip2 may not be supported by some extractors, notably
-Compressed Folders utility integrated in Windows.<br>
             <br>
-            <a name="maximum_compression_application"></a>Even better
-compression
-ratio could be reached using ARC of ZIPX, or
-tweaking 7Z to maximum compression settings, or using algorithms as
-BCM, but <span style="font-weight: bold;">maximum
-possible compression ratio</span> is reached by PAQ family compressors
-(which are multiple times winner of Hutter
-Prize).<br>
-PeaZip supports PAQ, LPAQ and ZPAQ, with ZPAQ at normal compression
-level being available as preset an competing in the range of slow (but
-perfectly usable for general purpose archiving) algorithms as 7Z / ZIPX.<br>
-ZPAQ with ultra preset provided by far the best compression of this
-benchmark, significantly outperforming even other algorithms of same
-family, reducing the 303 MB input to 57,60 MB (19,01% compression
-ratio): for reference, PeaZip using LPAQ8 reduces the size of
-benchmark input data down to 64,40MB (21,25%) in around 4 minutes, and
-with PAQ8O compresses to 60,50 MB (19,97%) in about 50 minutes - a
-breakthrough being needed (either in term of
-raw computing power or algorithm / implementation efficiency) in order
-to bring performances of PAQ family at highest compression settings in
-the range of general purpose usage.&ugrave;<br>
-            <big><br>
-            </big>
+            <br>
             <h4><span style="font-weight: bold;"><big>Verdict</big></span></h4>
-            <h4><span style="font-weight: bold;"></span></h4>
-            <span style="font-weight: bold;"> <br>
+            <span style="font-weight: bold;"><br>
             </span>For users needing <span style="font-weight: bold;">maximum
 compatibility</span> with recipients using different archive managers,
-the best choice is ZIP format, in which WinRar and BandiZip provides
-best compression speeds, even if PeaZip and 7-Zip provides marginally
-better compression ratio.<br>
+the best choice is ZIP format, in which WinRar and PeaZip provides
+best compression speeds, with WinRar providing better ZIP compression.<br>
             <br>
-For users needing <span style="font-weight: bold;">maximum compression
-speed</span>, the clear winner here are Brotli and Zstandard, both
-supported by PeaZip, which is the best choice in this regard.<br>
+For <span style="font-weight: bold;">maximum compression ratio</span>,
+7-Zip (7Z medium) - or PeaZip set with same compression settings -
+provides an better compression ratio than RAR, and (by wide margin)
+over ZIP format.<br>
             <br>
-For maximum compression ratio, WinRar's RAR format is faster but
-compresess less than 7Z format in PeaZip and 7-Zip, and ZPAQ format
-supported by PeaZip provides even stronger compression, placing at top
-in this category.<br>
+PeaZip (7Z fast) provides a <span style="font-weight: bold;">well
+balanced alternative</span>, with fastest non-zip compression speed,
+fastest extraction speed, and third best compression ratio which
+exceeds CR attainable with any ZIP compressor - even spending more time
+and computing power as with WinZip.<br>
             <br>
-            <p style="font-weight: bold;">Synopsis: Compression
+            <p style="font-weight: bold;">Synopsis: Out-of-the-box
+compression
 benchmark. What is the overall best application between 7-Zip,
-BandiZip, PeaZip, WinRar, WinZip for general purpose archiving and
+PeaZip, WinRar, WinZip for general purpose archiving and
 compression in different formats. What is the application providing
-best compression. What is the fastest application. What software
-extracts / decompress faster. Conclusion about file archivers
+best compression out-of-the-box. What is the fastest application. What
+software
+extracts / decompress faster by default. Conclusion about file
+archivers
 performances comparative.<br>
             </p>
             <p style="font-weight: bold;">Topics: PeaZip vs 7-Zip vs
@@ -1390,12 +902,12 @@ Asked Questions</a><br>
             </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
+ alt="best out of the box archive manager" src="titles.png"
  style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+ name="best_out_of_the_box_file_compressor"></a>ABOUT<br
  style="font-style: italic;">
-            <img alt="peazip free archiver utility"
+            <img alt="best default compression settings"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
             </small><small><a href="peazip-tos-privacy.html"

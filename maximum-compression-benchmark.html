@@ -5,18 +5,18 @@
  http-equiv="content-type">
   <meta name="AUTHOR" content="PeaZip Free Archiver Utility">
   <meta name="DESCRIPTION"
- content="Maximum file compression benchmark. 7Z, ARC, ZIPX versus RAR comparison for best, most powerful compressor format.">
+ content="Maximum file compression benchmark. 7Z, ZPAQ versus RAR comparison for best, most powerful compressor format.">
   <meta name="KEYWORDS"
- content="maximum, compression, file, best, top, compression, settings, level, ultra, 7z, rar, arc, zpaq, zipx, format, compressor, vs, versus, ratio, performances, speed, fatsest">
+ content="maximum, compression, file, best, top, compression, settings, level, ultra, 7z, rar, zpaq, format, compressor, vs, versus, ratio, performances, speed, max">
   <meta name="ROBOTS" content="all">
-  <title>Maximum file compression benchmark 7Z ARC ZIPX versus RAR</title>
+  <title>Maximum file compression benchmark 7Z ZPAQ versus RAR</title>
   <meta name="viewport" content="width=device-width">
   <meta property="og:site_name"
  content="PeaZip file archiver utility, free RAR ZIP software">
   <meta property="og:title"
- content="Maximum file compression benchmark RAR versus 7Z ARC ZIPX">
+ content="Maximum file compression benchmark 7Z ZPAQ versus RAR">
   <meta property="og:description"
- content="Maximum file compression benchmark. 7Z, ARC, ZIPX versus RAR comparison for best, most powerful compressor format.">
+ content="Maximum file compression benchmark. 7Z, ZPAQ versus RAR comparison for best, most powerful compressor format.">
   <meta property="og:image" content="maximum-compression-benchmark.png">
   <meta property="og:url"
  content="https://peazip.github.io/maximum-compression-benchmark.html">
@@ -132,7 +132,7 @@
             <h1 style="text-align: center;"><big><big><big><a
  style="font-weight: bold;" name="best_compressor"></a><span
  style="font-weight: bold;">Maximum compression benchmark:
-7z, arc, zpaq vs rar, zipx</span><br>
+7Z, ZPAQ vs RAR</span><br>
             </big></big></big></h1>
             <br>
             </td>
@@ -151,7 +151,7 @@
     <tr>
       <td
  style="vertical-align: top; background-color: rgb(240, 239, 238);"><img
- alt="7Z, ARC, ZIPX versus RAR comparison for best, most powerful compressor format"
+ alt="7Z, ZIPX versus RAR comparison for best, most powerful compressor format"
  src="free-rar/file-compressor.png" style="width: 2px; height: 2px;"><br>
       </td>
     </tr>
@@ -168,21 +168,22 @@
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><a
+ href="maximum-compression-benchmark.html"><small>MAXIMUM COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="fastest-compression-zip-deflate-benchmark.html"><small>FASTEST
+COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
  href="fast-compression-benchmark-brotli-zstandard.html">BROTLI VS
-ZSTANDARD</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="maximum-compression-benchmark.html">MAXIMUM COMPRESSION</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="fastest-compression-zip-deflate-benchmark.html">FASTER THAN ZIP</a><br>
+ZSTANDARD</a><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -210,8 +211,7 @@ COMPRESSION BENCHMARK
 SETTINGS</a></p>
               </li>
               <li>
-                <p><a
- href="maximum-compression-benchmark.html#best_compression_format">MAX
+                <p><a href="#best_file_compression_performances">MAX
 COMPRESSION
 /
 DECOMPRESSION PERFORMANCES TEST</a></p>
@@ -260,13 +260,20 @@ settings</a></big></big></big></h2>
                         <td colspan="1" rowspan="1"
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                         <p><big><span style="font-weight: bold;">Goals</span></big></p>
-                        <p><a name="best_file_compressor"></a>1)
-Compare top compression formats 7Z, ARC, and
-ZPAQ (from PeaZip) with RAR (WinRar) and ZIPX (WinZip) in terms of
-maximum possible compression ratio.</p>
-                        <p>2) Evaluate how each format scales in terms
-of compression ratio improvements versus compression and extraction
-speed reduction, with the increase of compression level.</p>
+                        <p><span style="font-weight: bold;">Test best
+possible compression settings.</span><br>
+                        </p>
+                        <p><a name="best_file_compressor"></a>Compare
+top compression formats 7Z, ZPAQ (PeaZip), RAR (WinRar), all formats
+at&nbsp;<span style="font-weight: bold;"></span>best compression
+settings, in terms of
+maximum possible compression ratio.<br>
+                        </p>
+                        <p>7Z format, always at best available
+compression level, was also tested
+replacing the default compresssion algorithm LZMA2 with Brotli, BZip2,
+and Zstandard algorithms.<br>
+                        </p>
                         </td>
                       </tr>
                     </tbody>
@@ -284,16 +291,12 @@ settings</big><br>
                         </span></p>
                         <a name="best_compression_format"></a>Benchmarks
 are conducted
-on Windows 10 2009 64 bit using 64 bit versions of:<br>
+on Windows 10 64 bit, using 64 bit versions of:<br>
                         <ul>
-                          <li>PeaZip 7.3.1 and 9.5.0 for Addendum
-section<br>
+                          <li>PeaZip 10.6.0<br>
                           </li>
-                          <li>WinRar 5.8</li>
-                          <li>WinZip 24</li>
+                          <li>WinRar 7.11</li>
                         </ul>
-All applications are tested using default,
-out-of-the-box compression settings for the selected archive format.<br>
 No cryptography option is set, since encryption impact on performances
 is out of the scope of
 this benchmark.<br>
@@ -313,7 +316,11 @@ this benchmark.<br>
 settings</span></big></p>
 Notebook with Intel Core i7-8565U CPU, 4
 physical cores with hyper-threading (8 logical cores), 8 GB RAM<br>
-System disk 512 GB PCIe NVMe SSD, NTFS filesystemaaa<br>
+System disk 512 GB PCIe NVMe SSD, NTFS filesystem.<br>
+With 7-Zip benchmark score of 23500, this machine represents an entry
+level specs
+system for today's standards, especially as tested algorithms are
+extremely CPU- and RAM- intensive.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -377,15 +384,27 @@ formats compared in this benchmark</span></big><br>
  style="font-weight: bold;">7Z file
 format</span></a>
 (7-Zip, 1999) Open Source archive format, widely used and well-known
-for excellent compression ratio, tested using default LZMA2 algorithm<br>
-                          </li>
+for excellent compression ratio, tested using default LZMA2 algorithm</li>
                         </ul>
                         <ul>
-                          <li><a href="arc-files-utility.html"><span
- style="font-weight: bold;">ARC file
-format</span></a>
-(FreeArc, 2007) Open Source archive format
-designed aiming to superior compression. performances<br>
+                          <li><a
+ href="brotli-compressed-file-format.html"><span
+ style="font-weight: bold;">Brotli compression algorithm</span></a>
+(Google, 2013) applied to 7Z format in alternative to LZMA2 algorithm
+(in PeaZip, from Advanced tab in compression screen). Brotli is an Open
+Source pure compression standard developed for
+maximum compression and decompression speed, but very flexible and
+capable of also providing high compression ratio.</li>
+                        </ul>
+                        <ul>
+                          <li><a style="font-weight: bold;"
+ href="bzip2-file.html">BZip2 compression algorithm</a> (Julian Seward,
+1996) applied to 7Z format in alternative to LZMA2 algorithm (in
+PeaZip, from Advanced tab in compression screen). Based on
+Burrows&#8211;Wheeler transform, BZip2 provides intermediate compression
+which, in terms of speed/compression ratio tradeoff, is in middle
+ground between fast algorithms like Deflate and powerful ones like PPMd
+and LZMA.<br>
                           </li>
                         </ul>
                         <ul>
@@ -398,46 +417,29 @@ ace formats. Latest RAR5 format revision is being tested.<br>
                           </li>
                         </ul>
                         <ul>
-                          <li><a href="zipx-file-format.html"><span
- style="font-weight: bold;">ZIPX
-file format</span></a>
-(WinZip, 2008) designed to improve compression ratio over ZIP with
-support for more compression algorithms. At minimum and default
-compression level Deflate algorithm is used, at maximum compression
-level WinZip tries to determine the most fit algorithm from supported
-ones, including BZip2, LZMA and PPMd.<br>
-                          </li>
-                        </ul>
-                        <ul>
                           <li><a href="zst-compressed-file-format.html"><span
  style="font-weight: bold;"></span></a><a href="paq-file-format.html"><span
- style="font-weight: bold;">ZPAQ format</span></a> (Matt Mahoney, 2009)
+ style="font-weight: bold;">ZPAQ format</span></a> (Matt Mahoney at
+al., 2009)
 Open Source archive format, computing intensive, providing very high
 compression ratio,
-supersedes previous PAQ format, multiple times Hutter Prize winner.</li>
-                        </ul>
-                        <br>
-                        <span style="font-weight: bold;">ADDENDUM<br>
-                        </span>With PeaZip 9.5.0 BR and ZST compression
-formats were also tested, at maximum compression settings<span
- style="font-weight: bold;"><br>
-                        </span>
-                        <ul>
-                          <li><a
- href="brotli-compressed-file-format.html"><span
- style="font-weight: bold;">Brotli file
-format</span></a>
-(Google, 2013) Open Source pure compression format developed for
-maximum compression and decompression speed, but very flexible and
-capable of also providing high compression ratio.<br>
+supersedes previous PAQ format, multiple times Hutter Prize winner. The
+format is now supported through <a target="_blank"
+ href="https://github.com/fcorbelli/zpaqfranz">Zpaqfranz<img
+ alt="zpaq maximum compression" title="Zpaqfranz"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>
+implementation.<br>
                           </li>
                         </ul>
+                        <span style="font-weight: bold;"> </span>
                         <ul>
                           <li><a href="zst-compressed-file-format.html"><span
- style="font-weight: bold;">Zstandard file
-format</span></a>
-(Yann Collet, Przemys&#322;aw Skibi&#324;ski, Facebook, 2015) Open Source pure
-compression format, Zstd compressor was developed with same scope of
+ style="font-weight: bold;">Zstandard compression algorithm</span></a>
+(Yann Collet, Przemys&#322;aw Skibi&#324;ski, Facebook, 2015) applied to 7Z
+format in alternative to LZMA2 algorithm (in PeaZip, from Advanced tab
+in compression screen). Zstandard is an Open Source pure
+compression standard. Zstd compressor was developed with same scope of
 Brotli, also very
 flexible and being capable of deliver high compression ratio in
 alternative to impressive compression speed.<br>
@@ -482,479 +484,215 @@ disk, same partition, separate directory; the resulting archives are
 then extracted to
 separate directory on same (system) disk/partition.<br>
             <br>
-Each compression and extraction test is repeated 10 times to get an
+Each compression and extraction test is repeated 5 times to get an
 average value; size is expressed in MB, time in seconds.<br>
-Each archive format is is tested with minimum (fastest non-store
-level), default, and maximum
-compression settings.<br>
-Default compression algorithm and default compression settings, as
-pre-set out of the box by file archivers being tested (PeaZip, WinRar,
-and WinZip), are employed for each format / level.<br>
-For Brotli and Zstandard compression, the input data was consolidated
-in a single TAR archive for running the benchmark<br>
             <br>
             <br>
             <h4><span style="font-weight: bold;"><big>Maximum
 compression
 benchmark results
 table, the lower the better for all columns</big></span></h4>
-            <h3><span style="font-weight: bold;"></span></h3>
-            <span style="font-weight: bold;"> <br>
+            <span style="font-weight: bold;"><br>
             </span>
-            <table x:str="" style="border-collapse: collapse;"
- border="0" cellpadding="0" cellspacing="0">
-              <col span="5" style="width: 68pt;" width="90"> <tbody>
-                <tr style="height: 33.75pt;" height="45">
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 20%;"><br>
+                  </td>
                   <td
- style="height: 32px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle; width: 250px;"
- class="xl22">Utility, format, level<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 20%;">Compressed
+size (MB)<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
-SSD (sec)<br>
-                  </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Archive
-size (MB)</td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 20%;">Compression
 ratio<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Extraction
-                  <br>
-SSD (sec)</td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-7Z, fastest<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">3.5<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">92.90<br>
+                  <td
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 20%;">Compression
+time (sec)<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">30.66%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">0.9<br>
-                  </td>
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 20%;">Extraction
+time (sec)</td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-7Z, default<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">39.6<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">73.60<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+RAR best<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">24.29%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">1.0<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-7Z, ultra<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">125.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">71.40<br>
+ style="vertical-align: top; width: 20%; text-align: center;">78.1<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">23.56%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">2.7<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ARC, 1<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">1.4<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">109.00<br>
+ style="vertical-align: top; width: 20%; text-align: center;">25.78%<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">35.97%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">1.9<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ARC, 4<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">17.2<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">71.70<br>
+ style="vertical-align: top; width: 20%; text-align: center;">28.5<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">23.66%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">7.1<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ARC, 9<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">81.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">66.10<br>
-                  </td>
-                  <td
- style="height: 32px; text-align: center; vertical-align: middle;">21.82%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">40.8<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ZPAQ, fast<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">6.3<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">102.00<br>
-                  </td>
-                  <td
- style="height: 32px; text-align: center; vertical-align: middle;">33.66%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">2.1<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ZPAQ, normal<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">37.2<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">68.50<br>
-                  </td>
-                  <td
- style="height: 32px; text-align: center; vertical-align: middle;">22.61%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">26.8<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-ZPAQ, ultra<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">354.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">57.60<br>
-                  </td>
-                  <td
- style="height: 32px; text-align: center; vertical-align: middle;">19.01%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">356.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">1.8<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">PeaZip,
-Brotli (max)<br>
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+ultra<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">190.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">71.2<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">82.60<br>
+ style="vertical-align: top; width: 20%; text-align: center;">23.50%<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">27.26%</td>
+ style="vertical-align: top; width: 20%; text-align: center;">137.0<br>
+                  </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">1.3<br>
+ style="vertical-align: top; width: 20%; text-align: center;">3.4<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">PeaZip
-Zstandard (max)<br>
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+ultra Brotli<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">107.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">75.1<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">76.80<br>
+ style="vertical-align: top; width: 20%; text-align: center;">24.79%<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">25.335%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">208.0<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">1.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">0.8<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
-RAR, fastest<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">2.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">106.00<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+ultra Zstd<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">34.98%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">75.3<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">1.0<br>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">24.85%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">300.0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">1.2<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
-RAR, normal<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">13.8<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">80.40<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+ultra BZip2<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">26.53%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">80.6<br>
                   </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">1.0<br>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">26.60%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">81.0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">7.1<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinRar,
-RAR, best<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">48.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">78.90<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip,
+ZPAQ ultra</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">57.6<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">26.04%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">1.8<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
-ZIPX, fastest<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">3.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">105.00<br>
+ style="vertical-align: top; width: 20%; text-align: center;">19.01%<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">34.65%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">4.5<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
-ZIPX, enhanced deflate<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">21.0<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">94.00<br>
+ style="vertical-align: top; width: 20%; text-align: center;">359.0<br>
                   </td>
                   <td
- style="height: 32px; text-align: center; vertical-align: middle;">31.02%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">5.0<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; width: 250px; height: 32px; text-align: center; vertical-align: middle;">WinZip,
-ZIPX, best method<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="12.1">34.7<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="97.7">70.70<br>
-                  </td>
-                  <td
- style="height: 32px; text-align: center; vertical-align: middle;">23.33%<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; width: 100px; height: 32px; text-align: center; vertical-align: middle;"
- x:num="1.6">46.2<br>
+ style="vertical-align: top; width: 20%; text-align: center;">358.0<br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-style: italic;"></span><br>
+            <span style="font-style: italic;">Archive size in MB (lower
+better), compression ratio of input data, and time in seconds (lower
+better) to complete compression and de-compression of data.</span><br>
+            <br>
             <br>
             <h2 style="font-weight: bold;"><big>Maximum compression
 ratio
 results</big></h2>
             <br>
-ZPAQ reached maximum compression ratio, compressing the 303.00 MB input
-down to 57.60 MB (19.01%), followed by ARC with output reduced to 66.10
-MB. ZIPX and 7Z were able to reduce the input size to 70.70 MB and
-71.40 MB respectively, and RAR scored the most poor compression
-performance with 78.90 MB output employing best compression setting.<br>
-All format shown a significant improvement in compression ratio
-switching from fastest to best compression settings, but for most
-formats most of the advantage emerged switching from fastest to default
-compression settings.<br>
-Especially, 7Z and RAR format shown very small improvements from
-default to ultra settings - which, as you can see in following chapter,
-comes at cost of much longer compression times.<br>
-The exception to this behavior is ZIPX format, providing a mediocre
-deflate based compression unless switching to alternate compression
-algorithms, with maximum compression, comparable to 7Z ultra, being
-attained using "best method" settings.<br>
+ZPAQ reaches the maximum compression ratio, compressing the 303.0 MB
+input
+down to 57.6 MB (19.01%), followed by 7Z ultra (with default LZMA2
+compression algorithm) which is able to reduce the input to 71.2 MB
+(23.50% compression ratio).<br>
             <br>
-Even if usually associated with fast compression, both Brotli and Zstd
-compressors attained quite high compression ratios when used at maximum
-compression settings, with Zstandard being the best of the two and
-compressing slightly better than RAR at best compression level (and
-Brotli slighly worse).<br>
-Both, however, compressed less than 7Z at medium compression level.<br>
+Even if usually associated with real-time compression, both Brotli and
+Zstandard
+algorithms reaches very high compression ratios (quite close, 24,79%
+Brotli, 24,85% Zstd), better than BZip2 and RAR, when set at ultra
+compression level (best possible compresssion settings).<br>
             <br>
-            <h3><img alt="best file compressor"
- title="best compressor 7z, arc, zpaq versus rar, zipx"
+RAR best (WinRar) provides a worse compression
+ratio than other tested algorithms, with the exception of BZip2.<br>
+            <br>
+            <h3 style="text-align: center;"><img
+ alt="best file compressor" title="best compressor: 7Z, ZPAQ vs RAR"
  src="maximum-compression-benchmark.png"
  style="width: 720px; height: 460px;"></h3>
+            <br>
             <br>
             <h2 style="font-weight: bold;"><big>Maximum compression
 speed
 results</big></h2>
             <br>
-Compression times increases for all format with the increase of
-compression settings, generally with best returns (in terms of
-compression ratio improvements) switching from fastest to default
-compression settings, and diminishing returns switching to ultra/best
-settings.<br>
-At maximum compression level, ZIPX is the fastest format, followed by
-RAR, ARC, and 7Z, ZPAQ being the slowest.<br>
-Using moderate compression settings, RAR and ARC emerge as the fastest
-formats.<br>
+RAR best provides fastest compression times of all tested formats.<br>
             <br>
-Brotli suffered a noticeable performance penality when used at maximum
-compression level, being the second slowest compressor.<br>
-Zstandard too took a seizable performance hit, but overall remails
-noticeably faster than Brotly when both are used at maximum compression
-level,<br>
+In the 7Z ultra group, Bzip2 provides the fastest compression, and
+Brotli and Zstd, set at ultra compression level, takes more time to
+complete the test than standard LZMA2 algorithm at same compression
+level, with Zstd being the slowest alternative.<br>
             <br>
-            <h3><img alt="which file compressor compresses the most"
- title="Comparison of compression speed: 7z, arc, zpaq vsrar, zipx"
+ZPAQ ultra was the slowest compresor in this benchmark.<br>
+            <br>
+            <br>
+            <h3 style="text-align: center;"><img
+ alt="which file compressor compresses the most"
+ title="Comparison of compression speed: 7Z, ZPAQ, RAR"
  src="maximum-compression-speed.png"
  style="width: 720px; height: 460px;"></h3>
             <br>
             <h2 style="font-weight: bold;"><big>Maximum compression
 extraction speed results</big></h2>
             <br>
-RAR and 7Z formats shows a clear advantage in terms of extraction speed
-compared to all other formats, with decompression times staying under 3
-seconds even at higher compression levels.<br>
-ARC, ZIPX, and ZPAQ decompression speed increases significantly at high
-compression settings, with ARC being generally comparable or better in
-speed than ZIPX, and ZPAQ being the slowest.<br>
+7Z ultra, with Brotli and Zstd, provides the maximum extraction speed
+in this benchmark (Brotli being the fastest).<br>
             <br>
-It is noteworthy to point out that both Brotli and Zstandard excels in
-extraction speed even for archives created at maximum compression
-settings, and are amongst the fastest extractors in this benchmark,
-with a slight advantage for Zstd in terms of speed.<br>
+RAR best is the third fastest extractor, with 7Z ultra with LZMA2
+being around 2x slower in decompression than RAR, and 7z ultra with
+BZip2 being almost 4x slower than RAR.<br>
             <br>
-            <h3><img
- alt="7z, arc, zipx vs rar, zipx max compression ratio"
- title="Decompression speed benchmark: 7z, arc, zpaq, rar, zipx"
+The slowest format in terms of extraction speed is ZPAQ, with
+extraction time being in the same range of compression time.<br>
+Competing formats, for reference, implement de-compression routines 1
+or 2 orders of magnitude faster than compression routines.<br>
+            <br>
+            <h3 style="text-align: center;"><img
+ alt="7z zpaq vs rar max compression ratio"
+ title="Decompression speed benchmark: 7Z, ZPAQ, RAR"
  src="maximum-decompression-speed.png"
  style="width: 720px; height: 460px;"></h3>
             </td>
@@ -978,52 +716,23 @@ best file compressor</span><br>
             <br>
             <h4><span style="font-weight: bold;"><big>Best format for
 maximum possible compression ratio</big></span></h4>
-            <h4><span style="font-weight: bold;"></span></h4>
-            <span style="font-weight: bold;"><br>
-            </span> <span style="font-weight: bold;">ZPAQ is the
+            <br>
+            <span style="font-weight: bold;"> </span> <span
+ style="font-weight: bold;">ZPAQ ultra is the
 winner in
 terms of maximum attainable compression</span>,
-but is slower than other formats.<br>
-ZPAQ at maximum compression level reached a 19.01% compression ratio
-versus 21.82% reached by ARC at maximum compression level, the second
-best result of the benchmark.<br>
-Anyway, even ZPAQ at default level can compare favorably (in terms of
-compression ratio versus speed tradeoff) with other formats at best
-compression settings - only ARC at highest level surpassing its
-compression ratio - with a 10x speed advantage of ZPAQ default
-vs ZPAQ ultra.<br>
+but is slower than other formats either in compression and, notably, in
+extraction.<br>
             <br>
-For all formats excluding ZIPX, average compression settings
-represented an optimal tradeoff between compression ratio and
-compression speed, with diminishing returns for switching to highest
-compression levels.<br>
-For all format each compression level increase represented an higher
-computational cost (with longer compression times), for smaller
-improvements in compression ratio.<br>
+RAR best is the right choice when it is needed to preserve speed at
+cost
+of compression ratio (which quite defeats the point of this specific
+benchmark)<br>
             <br>
-For this reason it can be recommended to use other methods than
-increasing compression level to keep the output below a desired
-threshold, in example <a href="file-split.html">spanning the outpput
-to
-multiple volumes</a> of fixed size in order to meet maximum size
-constrains, or <a href="duplicates-hash-checksum.html">deduplicate
-input data</a> before
-compression.<br>
-This is even more true when compressing data sets containing
-multimedia, or encrypted files, which generally <a
- href="why-can-not-compress-pdf-avi-mp3-files.html">does not compress
-well</a>, or does not compress at all regardless employed
-algorithm/settings.<br>
-            <br>
-Unlike compression speed, which generally scaled uniformly with
-increasing of compression level, extraction speed was more correlated
-with the archive format nature, with 7Z and RAR decompression times
-remain fast (well below 3 seconds) at any compression level.<br>
-            <br>
-            <br>
-            <h4><big><span style="font-weight: bold;">Benchmark
-conclusions
-in brief:</span></big></h4>
+7Z ultra with LZMA2, Brotli, and Zstd, are viable middle ground
+alternatives to Zpaq, providing significantly slower (but better)
+compression than
+RAR best, and preserving resonable (or even faster) extraction times.<br>
             <br>
             <br>
             <h3 style="font-weight: bold;"><big>What is the most
@@ -1031,6 +740,16 @@ powerful file compressor?</big></h3>
             <br>
 ZPAQ is clearly the top performing format in this benchmark focused on
 maximum attainable compression.<br>
+            <a target="_blank"
+ href="https://github.com/fcorbelli/zpaqfranz">Zpaqfranz<img
+ alt="zpaq maximum file compression utility" title="Zpaqfranz"
+ src="free-rar/extractor.png"
+ style="border: 0px solid ; width: 12px; height: 10px;"></a>, on the
+entry level hardware tested in this
+benchmark, is largely comparable to classic Zpaq implementation in
+terms of speed and compression ratio when set at ultra compression
+level, however in the author's repository are available hardware
+accelerated builds which can improve speed on compatible hardware.<br>
             <br>
             <br>
             <h3><big><span style="font-weight: bold;">What is the
@@ -1040,9 +759,10 @@ best compression format?</span></big></h3>
             <a name="top_file_compressor"></a>It depends on user's
 need, with compression ratio being only one factor
 of the equation.<br>
-ZPAQ and ARC are the best compressors, but 7Z and RAR formats has a
-clear advantage in terms of decompression speed, faster
-than for any other tested format.<br>
+"RAR best" leans on the fast side, "7Z ultra" improves compression
+ratio at
+cost of speed, "ZPAQ ultra" is recommended only in case the only factor
+in account is the max compression ratio.<br>
             <br>
             <br>
             <h3><span style="font-weight: bold;"><big>7Z vs RAR, which
@@ -1050,24 +770,26 @@ is
 the best compressor?</big><br>
             </span></h3>
             <br>
-            <a name="7z_versus_rar"></a>7Z outperformed RAR in terms of
-compression ratio at all compression
-levels, but RAR outperformed 7Z in terms of compression speed. <br>
-Extraction speed is quite similar, and keeps reasonable for both
-formats at all compression levels.<br>
+            <a name="7z_versus_rar"></a>7Z ultra outperforms RAR best
+in terms of
+compression ratio, but RAR outperforms 7Z in terms of compression
+speed. <br>
+Extraction speed is slower, but still reasonable, for 7Z ultra, and can
+be made faster than RAR using Brotli or Zstd algorithms instead of the
+LZMA2.<br>
             <br>
             <br>
             <big><span style="font-weight: bold;">Are Brotli and
 Zstandard suited for max compression?</span></big><br>
             <br>
 Brotli and Zstd can provide surprisingly good compression ratios, even
-if they are designed primarily for fast compression tasks, with
-Zstandard being overall the best choice.<br>
-It must be noted the performance penality is very relevant in terms of
-compression speed, with traditional compression formats like 7Z and RAR
-being more fit for this task.<br>
-However, decompression speed remains very high even extracting BR and
-ZST files compressed at maximum settings.<br>
+if they are designed primarily for fast compression tasks.<br>
+Compression effciency seems lower than for LZMA2 algorithm, which
+produces smaller archives in less time, but extraction speed is better
+for Brotli and Zstd than for LZMA2.<br>
+The two formats tops to very similar max compression ratios, but in
+this benchmark Brotli outperforms Zstd in terms of compression and
+decompression speed.<br>
             <br>
             <br>
             <h3 style="font-weight: bold;"><big>Is it worth to set
@@ -1075,25 +797,33 @@ best /
 maximum / ultra compression settings?</big></h3>
             <br>
 Increasing compression level decreases performances with diminishing
-returns. File spanning and data deduplication are recomended in
-alternative to higher compression settings, and solid compression
-option is a must to attain highest compression ratio when multiple
-similar files are involved - even if single files are not compressible
-(in the traditional sense) taken one by one.<br>
+returns: note for reference that compression times in this test are
+quite similar to ones in the "out-of-the-box" compression benchmark
+which operates on a 4x larger input!<br>
+            <a href="file-split.html">File spanning</a> and <a
+ href="duplicates-hash-checksum.html">data deduplication</a> are
+recomended in
+alternative to trying increasingly higher compression settings, and <a
+ href="what-is-solid-compression.html">solid compression
+option</a> is a must-have to reach highest compression ratio when
+multiple
+similar files are involved - even if single <a
+ href="why-can-not-compress-pdf-avi-mp3-files.html">files are not
+compressible</a>
+(in the traditional sense) one by one.<br>
             <br>
             <br>
 Read more about <a href="7zip-files-utility.html">how to create 7Z
-files</a>, or alternatively <a href="arc-files-utility.html">how to
-create ARC files</a>, or <a href="paq-files-compression-utility.html">how
-to create PAQ / ZPAQ files</a> if maximum compression is needed. Please
+files</a>, <a href="paq-files-compression-utility.html">how
+to create PAQ / ZPAQ files</a>, and <a
+ href="file-compression-performances.html">suggestions if maximum
+compression is needed</a>.<br>
+Please
 note PeaZip is also capable to <a href="free-rar-create.html">create
-RAR files</a> if WinRar is installed in the system, and to <a
- href="zipx-files-software.html">create ZIPX files</a> following the
-new WinZip standard (even if not all allowed algorithms are yet
-supported).<br>
+RAR files</a> if WinRar is installed in the system.<br>
             <br>
             <p style="font-weight: bold;">Synopsis: Maximum file
-compression benchmark. 7Z, ARC, ZIPX versus RAR comparison for best,
+compression benchmark. 7Z, ZPAQ versus RAR comparison for best,
 most powerful compressor format. What algorithm compresses the most.
 What archive format reach highest compression ratio. Which file
 archiver utility compresses better. What are the best compression
@@ -1104,7 +834,7 @@ benchmark, best file compressor, best archive format for max
 compression, 7z vs rar vs zpaq<br>
             </p>
             <p><span style="font-weight: bold;">PeaZip &gt; Compression
-benchmark &gt; Maximum compression benchmark: 7z, arc, zpaq vs rar, zipx</span></p>
+benchmark &gt; Maximum compression benchmark: 7z, zpaq vs rar</span></p>
             </td>
           </tr>
         </tbody>
@@ -1150,7 +880,8 @@ for Windows</a><br>
  alt="best file compressor utility" src="titles.png"
  style="width: 129px; height: 2px;"><br>
             <a name="best_file_compression_format"></a>SUPPORT<br>
-            <img alt="7z, arc, zipx vs rar, zipx max compression ratio"
+            <img
+ alt="lzma2, rar, BZIP2, Brotli, Zstd max compression ratio"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br>
             <a href="peazip-help.html">Online
@@ -1160,12 +891,12 @@ Asked Questions</a><br>
             </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
+ alt="best compressor" src="titles.png"
  style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+ name="most_powerful_compressor"></a>ABOUT<br
  style="font-style: italic;">
-            <img alt="peazip free archiver utility"
+            <img alt="best compression ratio"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
             </small><small><a href="peazip-tos-privacy.html"

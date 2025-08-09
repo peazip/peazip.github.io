@@ -133,7 +133,7 @@
  style="color: rgb(153, 153, 153); font-weight: bold;"
  name="macos_archive_manager"></a><big><big><big><span
  style="font-weight: bold;">PeaZip
-for macOS 10.5.0</span><br>
+for macOS 10.6.0</span><br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -171,7 +171,7 @@ x86_64</small><br>
             <div style="color: rgb(253, 253, 253);">
             <h4 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.DARWIN.aarch64.dmg"><span
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.aarch64.dmg"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for macOS, Mx Apple Silicon architecture"
  alt="open 7z rar tar zip files on macintosh"
@@ -182,7 +182,7 @@ x86_64</small><br>
 Apple Silicon chip</small></small></big><br>
             <small><small>&nbsp;</small></small><br>
             <h4> <a style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.DARWIN.x86_64.dmg"><big
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.x86_64.dmg"><big
  style="font-weight: bold;"><span style="text-decoration: underline;"><img
  title="Download PeaZip for macOS, Intel architecture"
  alt="extract 7z rar tar zip files on mac"
@@ -195,7 +195,7 @@ for Darwin, Intel</big><br>
 Darwin / macOS on </small></small></big><big><small><small>Intel x86_64<br>
             </small></small></big>&nbsp;<small
  style="color: rgb(255, 255, 255);"><br>
-Check 10.5.0 packages <a style="color: rgb(255, 255, 255);"
+Check 10.6.0 packages <a style="color: rgb(255, 255, 255);"
  href="changelog.html">hash values</a><br>
             <br>
             </small><big><small><span style="color: rgb(253, 253, 253);">Download
@@ -363,7 +363,7 @@ are unable to mount compressed DMGs, the
 Intel package is also available as plain ZIP package: after extraction,
 the installation requires the aforementioned steps as for the DMG
 packages <a target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.DARWIN.x86_64.zip"><img
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.x86_64.zip"><img
  alt="apple osx archive manager tool"
  title="Downloaf PeaZip for legacy OSX systems"
  src="free-rar/utility.png"
@@ -413,7 +413,6 @@ system's permission request.<br>
             </big></span>
             <h3><big><span style="font-weight: bold;">Add PeaZip to
 macOS context menu</span></big><span style="font-style: italic;"></span></h3>
-            <h4><span style="font-style: italic;"></span></h4>
             <span style="font-style: italic;"><br>
             </span><a
  name="add_peazip_archive_manager_to_macos_context_menu"></a>To <span
@@ -454,9 +453,26 @@ macOS contextual menu</span><br>
             <span style="font-style: italic;"><br>
             <br>
             </span>
+            <h4><big><span style="font-weight: bold;">Alternative
+compression algorithms for .7z format on macOS<br>
+            </span></big></h4>
+            <br>
+From "Advanced" tab in the archive creation screen, it is possible to
+use alternative compression algorithms for .7z format, provided thorugh
+p7zip fork cielavenir/p7zip: Brotli, FLZMA2, Lizard, LZ4, LZ5, and Zstd.<br>
+Please note that resulting archives will not be compatible with vanilla
+7-Zip standard, so using BZip2, LMZA, LZMA2 or PPMd algorithms is
+recommended if you intend to preserve interoperability with other
+archive managers.<br>
+On macOS, in order to enable support for those algorithms, it is
+currently needed to change &#8220;7z&#8221; binary alias to &#8220;7zalt&#8221; from Options
+&gt; Settings, Advanced tab, &#8220;7z / p7zip alias&#8221; option - which
+redirects the commands to the alternative p7zip binary.<br>
+            <span style="font-style: italic;"><br>
+            <br>
+            </span>
             <h3 style="font-weight: bold;"><big>Features provided by
 PeaZip archive manager utility</big></h3>
-            <h3><span style="font-style: italic;"></span></h3>
             <span style="font-style: italic;"><br>
             </span>PeaZip is a full featured <a
  href="screenshots-peazip-1.html">file

@@ -165,21 +165,22 @@
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="maximum-compression-benchmark.html"><small>MAXIMUM COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="fastest-compression-zip-deflate-benchmark.html"><small>FASTEST
+COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
  href="fast-compression-benchmark-brotli-zstandard.html">BROTLI VS
-ZSTANDARD</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="maximum-compression-benchmark.html">MAXIMUM COMPRESSION</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="fastest-compression-zip-deflate-benchmark.html">FASTER THAN ZIP</a><br>
+ZSTANDARD</a><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -213,7 +214,7 @@ TEST RESULTS<br>
               </li>
               <li>
                 <p><a href="#fastest_archive_opener">CONCLUSIONS:
-WHAT IS THE FASTEST APPLICATION FOR BROWSING ARCHIVES?<br>
+WHAT IS THE FASTEST APP FOR BROWSING ARCHIVES?<br>
                 </a></p>
               </li>
             </ul>
@@ -235,8 +236,7 @@ WHAT IS THE FASTEST APPLICATION FOR BROWSING ARCHIVES?<br>
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <div style="text-align: left; color: rgb(0, 0, 0);">
             <h2><big><big><big><a style="font-weight: bold;"
- name="time_to_open_zip_file"></a><a
- href="peazip-compression-benchmark.html#file_archivers_comparative"><span
+ name="time_to_open_zip_file"></a><a href="#fastest_zip_opener"><span
  style="font-weight: bold;">Benchmark
 settings: list large archive content</span><br>
             </a></big></big></big></h2>
@@ -254,16 +254,23 @@ settings: list large archive content</span><br>
                       <tr>
                         <td colspan="1" rowspan="1"
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <p><big><span style="font-weight: bold;">Goals</span></big></p>
-                        <ol>
-                          <li>Compare mainstream archive managers, on
+                        <p><big><span style="font-weight: bold;">Goals</span></big>
+                        <br>
+                        </p>
+                        <p><span style="font-weight: bold;">Evaluate <span
+ style="font-weight: bold;">GUI frontend responsiveness under heavy
+workload.</span></span><br>
+                        </p>
+                        <p>Compare mainstream archive manager apps,
+on
 multiple Operating Systems, in terms of times needed to open archives
 containing a very large number of files and folders (in the range of
-several thousands).</li>
-                          <li>Identify factors that may influence
-archive browsing performances when listing thousands of items is
-required.<br>
-                          </li>
+several thousands)<span style="font-weight: bold;"></span>. <br>
+                        </p>
+                        <p>Identify factors that may influence
+archive browsing performances when listing thousands of items.<br>
+                        </p>
+                        <ol>
                         </ol>
                         </td>
                       </tr>
@@ -284,28 +291,30 @@ settings</big><br>
                           <li>Windows 10 64 bit using 64 bit versions
 of:</li>
                           <ul>
-                            <li>7-Zip 22.01</li>
-                            <li>PeaZip 9.5.0<br>
+                            <li>7-Zip 25.00</li>
+                            <li>PeaZip 10.6.0<br>
                             </li>
-                            <li>WinRar 6.11</li>
+                            <li>WinRar 7.11</li>
+                            <li>WinZip 76.9<br>
+                            </li>
                             <li>Windows 10 built-in Compressed Folders</li>
                           </ul>
-                          <li>Linux Mint 21 x86_64</li>
+                          <li>Ubuntu Linux 22.04 LTS x86_64</li>
                           <ul>
-                            <li>PeaZip for Linux GTK2 9.5.0</li>
-                            <li>PeaZip for Linux Qt5 9.5.0</li>
+                            <li>PeaZip for Linux GTK2 10.6.0</li>
+                            <li>PeaZip for Linux Qt6 10.6.0</li>
                             <li>Gnome Archive Manager<br>
                             </li>
                           </ul>
-                          <li>macOS 13.6</li>
+                          <li>macOS 15.5</li>
                           <ul>
-                            <li>PeaZip for macOS aarch64 9.6.0</li>
-                            <li>PeaZip for macOS x86_64 9.6.0</li>
+                            <li>PeaZip for macOS aarch64 10.6.0</li>
+                            <li>PeaZip for macOS x86_64 10.6.0</li>
                           </ul>
                           <li>Asahi Linux on aarch64<br>
                           </li>
                           <ul>
-                            <li>PeaZip for Linux GTK2 aarch64 9.6.0</li>
+                            <li>PeaZip for Linux GTK2 aarch64 10.6.0</li>
                           </ul>
                         </ul>
 All applications are tested using default,
@@ -331,18 +340,20 @@ settings</span></big></h4>
 Windows: Notebook with Intel Core i7-8565U CPU, 4
 physical cores with hyper-threading (8 logical cores), 8 GB RAM<br>
 System disk 512 GB PCIe NVMe SSD, NTFS filesystem.<br>
-7-Zip benchmark score 24000<br>
+7-Zip benchmark score 23500<br>
                         <br>
 Linux: virtual machine over previous hardware.<br>
-7-Zip benchmark score 10000<br>
+7-Zip benchmark score 8500<br>
                         <br>
 macOS: 2020 MacBook Air with M1 chip.<br>
-7-Zip benchmark score 45000<br>
+7-Zip benchmark score 46000<br>
 This machine runs both macOS and Asahi Linux aarch64 benchmarks<br>
                         <br>
 Since very different technologies are employed, 7-Zip benchmark score
 is provided as reference, albeit it is mainly correlated with CPU
 performances.<br>
+The reference machines can be consider entry level systems due to
+limted specs for today's standards.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -395,8 +406,7 @@ in size<br>
             <td
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <h2><big><big><big><a style="font-weight: bold;"
- name="time_to_list_archive_content"></a><a
- href="peazip-compression-benchmark.html#file_archivers_comparative"><span
+ name="time_to_list_archive_content"></a><a href="#fastest_zip_opener"><span
  style="font-weight: bold;">Open
 large archive test results</span><br>
             </a></big></big></big></h2>
@@ -407,15 +417,16 @@ large archive test results</span><br>
 Benchmark
 input archives are saved in a fast SSD system disk, and opened by the
 tested applications - which are already started.<br>
-A median time in seconds over 3 tests is reported as time to open the
+A median time in seconds over 5 tests is reported as time to open the
 archive for browsing.<br>
-Since the tests took place on different machines for Windows, Linux,
-and macOS systems, 7-Zip benchmark score (rounded) is reported for
+Since the tests are conducted on different machines for Windows, Linux,
+and macOS systems, 7-Zip benchmark score for each system (rounded) is
+reported for
 reference in "Hardware settings" paragraph.<br>
             <br>
             <big><span style="font-weight: bold;">Caveats</span></big><br>
             <ul>
-              <li>Archives were purposely tested on a fast local SSD
+              <li>Archives are purposely tested on a fast local SSD
 drive to put the focus of the benchmark on the efficiency of the tested
 utilities: a slow disk or, worse, a remote disk over a slow connection,
 will degrade the performances of all applications, adding overhead
@@ -437,19 +448,19 @@ results
             <br>
             </span>
             <table style="width: 100%; text-align: left;" border="0"
- cellpadding="0" cellspacing="0">
+ cellpadding="3" cellspacing="0">
               <tbody>
                 <tr>
                   <td style="vertical-align: top; width: 25%;"><br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">25K<br>
+ style="vertical-align: top; width: 25%; text-align: center; background-color: rgb(255, 255, 204);">25K<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">250K<br>
+ style="vertical-align: top; width: 25%; text-align: center; background-color: rgb(255, 255, 204);">250K<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">25K-flat<br>
+ style="vertical-align: top; width: 25%; text-align: center; background-color: rgb(255, 255, 204);">25K-flat<br>
                   </td>
                 </tr>
                 <tr>
@@ -458,23 +469,23 @@ results
 WIN64<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">2.0<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.8<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">4.8</td>
+ style="vertical-align: top; width: 25%; text-align: center;">3.5</td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">9.8<br>
+ style="vertical-align: top; width: 25%; text-align: center;">1.6<br>
                   </td>
                 </tr>
                 <tr>
                   <td style="vertical-align: top; text-align: right;">PeaZip
 WIN64 (Fast mode)<br>
                   </td>
-                  <td style="vertical-align: top; text-align: center;">0.7<br>
+                  <td style="vertical-align: top; text-align: center;">0.3<br>
                   </td>
-                  <td style="vertical-align: top; text-align: center;">1.3<br>
+                  <td style="vertical-align: top; text-align: center;">1.0<br>
                   </td>
-                  <td style="vertical-align: top; text-align: center;">9,2<br>
+                  <td style="vertical-align: top; text-align: center;">1.2<br>
                   </td>
                 </tr>
                 <tr>
@@ -482,10 +493,10 @@ WIN64 (Fast mode)<br>
  style="vertical-align: top; width: 25%; text-align: right;">7-Zip<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">0.6<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.3<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">0.7<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.8<br>
                   </td>
                   <td
  style="vertical-align: top; width: 25%; text-align: center;">0.6<br>
@@ -499,10 +510,20 @@ WIN64 (Fast mode)<br>
  style="vertical-align: top; width: 25%; text-align: center;">0.7<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">3.3<br>
+ style="vertical-align: top; width: 25%; text-align: center;">4.1<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">5.7<br>
+ style="vertical-align: top; width: 25%; text-align: center;">1.8<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; text-align: right;">WinZip<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">5.4<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">43.0<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">4.1<br>
                   </td>
                 </tr>
                 <tr>
@@ -511,12 +532,12 @@ WIN64 (Fast mode)<br>
 Compressed Folders<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">1.5<br>
+ style="vertical-align: top; width: 25%; text-align: center;">1.2<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">748.0</td>
+ style="vertical-align: top; width: 25%; text-align: center;">750.0</td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">6.0<br>
+ style="vertical-align: top; width: 25%; text-align: center;">3.7<br>
                   </td>
                 </tr>
                 <tr>
@@ -525,10 +546,10 @@ Compressed Folders<br>
 Linux GTK2<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">2.0<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.9<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">4.8<br>
+ style="vertical-align: top; width: 25%; text-align: center;">3.1<br>
                   </td>
                   <td
  style="vertical-align: top; width: 25%; text-align: center;">9.3<br>
@@ -537,16 +558,16 @@ Linux GTK2<br>
                 <tr>
                   <td
  style="vertical-align: top; width: 25%; text-align: right;">PeaZip for
-Linux Qt5<br>
+Linux Qt6<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">2.0<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.8<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">4,7<br>
+ style="vertical-align: top; width: 25%; text-align: center;">3.2<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">3.8<br>
+ style="vertical-align: top; width: 25%; text-align: center;">2.1<br>
                   </td>
                 </tr>
                 <tr>
@@ -555,13 +576,13 @@ Linux Qt5<br>
 Archive Manager<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">1.2<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.9<br>
                   </td>
                   <td
  style="vertical-align: top; width: 25%; text-align: center;">5.0<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">1.7<br>
+ style="vertical-align: top; width: 25%; text-align: center;">1.4<br>
                   </td>
                 </tr>
                 <tr>
@@ -570,13 +591,13 @@ Archive Manager<br>
 macOS aarch64<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">1.1<br>
+ style="vertical-align: top; width: 25%; text-align: center;">0.4<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">3.4<br>
+ style="vertical-align: top; width: 25%; text-align: center;">2.3<br>
                   </td>
                   <td
- style="vertical-align: top; width: 25%; text-align: center;">36.0<br>
+ style="vertical-align: top; width: 25%; text-align: center;">1.2<br>
                   </td>
                 </tr>
                 <tr>
@@ -585,29 +606,32 @@ macOS aarch64<br>
 macOS x86_64<br>
                   </td>
                   <td
+ style="vertical-align: top; width: 25%; text-align: center;">0.8<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 25%; text-align: center;">3.2<br>
+                  </td>
+                  <td
  style="vertical-align: top; width: 25%; text-align: center;">1.6<br>
-                  </td>
-                  <td
- style="vertical-align: top; width: 25%; text-align: center;">4.4<br>
-                  </td>
-                  <td
- style="vertical-align: top; width: 25%; text-align: center;">55.0<br>
                   </td>
                 </tr>
                 <tr>
                   <td style="vertical-align: top; text-align: right;">PeaZip
 for
 Linux GTK2 aarch64</td>
-                  <td style="vertical-align: top; text-align: center;">1.8<br>
+                  <td style="vertical-align: top; text-align: center;">0,6<br>
                   </td>
-                  <td style="vertical-align: top; text-align: center;">3.2<br>
+                  <td style="vertical-align: top; text-align: center;">2,1<br>
                   </td>
-                  <td style="vertical-align: top; text-align: center;">5.2<br>
+                  <td style="vertical-align: top; text-align: center;">4,3<br>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <span style="font-style: italic;"><br>
+Time in seconds (lower better) to complete each benchmark. </span><br>
             <span style="font-weight: bold;"><br>
+            <br>
             <big>Performances opening archives containing an
 increasingly large number
 of items</big><br>
@@ -615,31 +639,37 @@ of items</big><br>
             </span><span style="font-style: italic;"></span>While up to
 a few thousands items per archive the time needed to open the archive
 is
-barely noticeable, for any of the tested apps, on a modern machine,
-with the 25K and 250K items benchmarks it become evident how well each
+barely noticeable, for any of the tested apps on a modern machine,
+with the 25K items and 250K items benchmarks it become evident how well
+each
 application scales in efficiency for listing an increasingly larger
-number of items.<br>
+number of items, in the range of tens of thousands to hundreds of
+thousands files (and folders) in archive.<br>
             <br>
-All applications (excluding 7-Zip) took a significant performance hit
-increasing items per archive from 10s of thousands up to 100s of
-thousands items per archive, with MS Compressed Folders being unable to
-complete the 250K test in under 3 minutes (and was consequently
-stopped).<br>
+At 25K items only WinZip takes a noticeable delay, resulting the
+slowest
+app in this test.<br>
+            <br>
+At 250K items all applications takes a significant performance hit,
+with
+opposite extremes being 7-Zip
+completing the 250K items test in one second and MS Compressed Folders
+completing the same test in over 12 minutes.<br>
             <br>
 With out-of-the-box configuration (default <span
  style="font-weight: bold;">Normal mode</span>), PeaZip shows a
-performance trend
-similar to WinRar and Gnome Archive manager in handling increasingly
-larger archives, but it is slower than both apps and of 7-Zip, which is
+performances profile similar or slightly better than WinRar and Gnome
+Archive Manager, but it is slower than 7-Zip which is
 the fastest tested application.<br>
             <br>
-In <span style="font-weight: bold;">Fast mode</span>, PeaZip becomes
-almost as fast as
-7-Zip in both 25K and 250K tests, significantly faster than other
-tested apps.<br>
+Once set in <span style="font-weight: bold;">Fast mode</span>, PeaZip
+becomes
+significantly faster than WinRar and Gnome Archive Manager, and almost
+as fast as
+7-Zip, which is still the fastes app tested.<br>
             <br>
-            <br>
-            <h3><img alt="fastest app to open large archives"
+            <h3 style="text-align: center;"><img
+ alt="fastest app to open large archives"
  title="Times to open archives containing increasing number of items"
  src="open-large-archives.png" style="width: 740px; height: 380px;"></h3>
             <br>
@@ -655,7 +685,9 @@ performances.<br>
 As tradeoff, this step is meant:<br>
             <ol>
               <li>to warn the user of possible
-archive content integrity issues in advance</li>
+archive content integrity issues in advance of starting any operation
+on archived data<br>
+              </li>
               <li>to reconcile inconsistencies, omissions, and errors /
 corruption in archive's TOC in order to be able to create an usable
 representation of the content for the file browser (and additionally a
@@ -672,10 +704,13 @@ to preserve performances, and can completely skip pre-browsing: this
 behavior can be set in <span style="font-weight: bold;">Options &gt;
 Settings, Browser optimization</span> in the <span
  style="font-weight: bold;">Performance group</span>.<br>
-By default PeaZip is in Normal mode, which pre-.parses up to mdium
-archives (in the range of few 256 K items in archive),
+By default PeaZip is set in Normal mode, which pre-parses archives in
+the range of 256 K items,
 while Fast mode has pre-parsing turned off unless listing issues are
 auto-detected while opening the archive.<br>
+While Fast mode is definitely faster (and most of the possible issues
+are auto-detected anyway), it is not the default mode, as thoroughly
+checking data integrity is a foremost priority for PeaZip project.<br>
             <br>
             <br>
             <big><span style="font-weight: bold;">Performances
@@ -683,53 +718,134 @@ rendering a
 large number of items in the archive browser</span></big><br>
             <br>
 25K-flat test shows mainly the efficiency in displaying a
-large number of items at once in the file / archive manager component.<br>
+large number of items at once in the file / archive manager component,
+i.e. a folder or a search filter containing many thousands files.<br>
             <br>
-In this test the best possible advantage is the implementation of a <span
+In this test the key advantage is the implementation of a <span
  style="font-weight: bold;">virtual list
-view</span>, which is probably the key factor in 7-Zip and Gnome
-Archive Manager performances for
-25K-flat being
-almost identical to 25K case, unlike other applications including
-PeaZip, which lacks this mechanism.<br>
-Swithcing PeaZip to Fast mode does not improve speed much in this
-test, as the rendering part is unaffected.<br>
+view</span>, which was implemeted in PeaZip 10.6.0, improving
+performances to levels comparable to or better than fast apps like
+WinRar and Gnome Archive Manager.<br>
             <br>
-The second most important key factor in this test is the efficieny of
-the underlying
-Operating System's <span style="font-weight: bold;">widget set</span>
-in rendering the list view items.<br>
-This
-become evident with PeaZip, which uses different widget sets on
-Windows,
-Linux, and macOS, with the Linux versions being significantly faster
-than Windows and macOS ones - despising
-the Linux test machine being by far the slowest one
-accordingly to the
-7-Zip benchmark ratings.<br>
-On Linux, Qt5 widget set significantly outperforms GTK2 and provides a
-surprisingly good result, as faster application not implementing a
-virtual treeview.<br>
-On macOS, the rendering times were noticeably slower than on Linux and
-Windows, either because Lazarus (the IDE using to build PeaZip) is
-less mature on this platform or because of performances of Cocoa widget
-set functions involved.<br>
-The difference is even more evident when comparing the app versions
-running on macOS/Cocoa aarch64, and on Asahi Linux/GTK2 arrch64, with
-the latter verion being about 7x faster than the macOS one in this
-specifc UI-intensive test.<br>
+Virtual list view efficiency depends on the widgtset, with PeaZip
+10.6.0 showing over 6x performances enhancements on Windows compared to
+previous releases, over 30x on macOS (Cocoa is the slowest widgetset in
+non-virtual mode), nearly 2x on Qt6 (fastest widgetset in non-virtual
+mode), while with GTK2 widgetset there are few benefits.<br>
+            <div style="text-align: center;"><br>
+            </div>
+            <table style="width: 75%; text-align: left;" border="0"
+ cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 33%;"><br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; background-color: rgb(255, 255, 204);">Virtual<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; background-color: rgb(255, 255, 204);">Non-virtual<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip
+Win64<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; font-weight: bold;">1.6<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">9.9<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip
+(Fast mode)</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; font-weight: bold;">1.2<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">9.4<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip GTK2</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">11.9<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;"><span
+ style="font-weight: bold;">9.3</span><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip Qt6</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; font-weight: bold;">2.1<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">3.2<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip
+aarch64</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; font-weight: bold;">1.2<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">36.0<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip
+x86_64</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center; font-weight: bold;">1.6<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">59.0<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: right;">PeaZip
+aarch64 Linux GTK2</td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;">3.4<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 33%; text-align: center;"><span
+ style="font-weight: bold;">4.3</span><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span style="font-style: italic;"><br>
+Time in seconds to compete
+the 25K-flat test (lower better) on different widgetsets. </span><br
+ style="font-style: italic;">
+            <span style="font-style: italic;">In bold the time with
+out-of-the-box settings of PeaZip; Virtual mode can be set from Option
+&gt; Settings, Performances group.</span><br>
             <br>
-            <h3><img alt="what is the fastest app to open zip files"
- title="Display thousands of files in archive"
+            <h4 style="text-align: center;"><img
+ alt="speed listing thousands of files in archive"
+ title="Virtual list view vs Non-virtual"
  src="archive-containing-thousands-files.png"
- style="width: 740px; height: 380px;"></h3>
+ style="width: 740px; height: 380px;"></h4>
             <br>
             <br>
             <h3><big><big><big><a style="font-weight: bold;"
- name="fastest_archive_opener"></a><a
- href="peazip-compression-benchmark.html#file_archivers_comparative"><span
+ name="fastest_archive_opener"></a><a href="#fastest_zip_opener"><span
  style="font-weight: bold;">Conclusions:
-what is the fastest application for browsing archives?</span><br>
+what is the fastest app for browsing archives?</span><br>
             </a></big></big></big></h3>
             <br>
             <br>
@@ -737,56 +853,47 @@ what is the fastest application for browsing archives?</span><br>
 browse large archives</span><br>
 7-Zip is the fastest application to open / browse large archives in all
 tests.<br>
-Out-of-the-box, PeaZip is slower than better optimized apps as WinRar
-and Gnome Archive Manager, due to a time-consuming full archive
-pre-parsing analysis stage
-meant to detect issues and provide information about
-the archive.<br>
-However, its shows a comparable capability in scaling performances for
-opening in reasonable times archives in the range of 10s thousands to
-100s thousands of items.<br>
+Out-of-the-box, PeaZip is comparable or better than fast apps like
+WinRar
+and Gnome Archive Manager, and can be made nearly as fast as 7-Zip
+using the Fast mode setting.<br>
             <br>
-            <span style="font-weight: bold;">Optimize PeaZip for
-browsing large archives</span><br>
-PeaZip<span style="font-weight: bold;"> <span
- style="font-weight: bold;">in </span>Fast mode</span>
-is almost as fast as 7-Zip, and
-significantly faster than any of the other tested apps, unless it is
-needed to
-display many thousands of items at once in the GUI.<br>
-Lacking a virtual
-list view
-implementation it is inherently limited by the efficiency of
-the underlying OS widget set; in this case Qt5 widgetset provides the
-best performances for PeaZip, being even faster than WinRar and Windows
-Compressed Folders in this test.<br>
-            <br>
-            <span style="font-weight: bold;">Performances comparison of
+            <span style="font-weight: bold;"></span><span
+ style="font-weight: bold;">Performances comparison of
 integrated
 system utilities</span><br>
 As for system utilities, Gnome Archive Manager clearly surpasses MS
-Compressed Folders, and it has comparable performances with PeaZip for
-Linux - faster on 25K archive, slower on 250K archive, fasterto
-represent a very large number of items at once in the GUI.<br>
+Compressed Folders in efficiency, and it has comparable performances
+with PeaZip for
+Linux, even if it is significantly slower on 250K items test (very
+large
+archives).<br>
+            <br>
+            <span style="font-weight: bold;">Performances on different
+widgetset</span><br>
+As expected. displaying many thousands of items at once is the task in
+which PeaZip is most influenced by the choice of a specific widgetset,
+either with list view in virtual and in non-virtual mode.<br>
+Qt6 is the fastest widgetset in non-virtual mode, while Cocoa is the
+slowest.<br>
+Virtual mode brings to all widgetsets a great performances boost,
+except for GTK2.<br>
             <br>
             <span style="font-weight: bold;">Performances on Apple
 Silicon vs Intel</span><br>
 On an M1 Apple Silicon machine, the native macOS aarch64 build
-consistently performed better than the x86_64 build, ranging from 25%
-to 40% faster performances.<br>
+consistently performed better than the x86_64 build, ranging from 30%
+to 50% faster performances.<br>
             <br>
-            <h3 style="font-weight: bold;">macOS vs Linux performances
-on Apple Silicon</h3>
-The first two benchmarks, opening 25K items archive and 250K items
-archive, which mostrly rely on app's own efficiency, shows quite
-siimilar results, with macOS aarch64 version being faster on the
-smaller archive and the Linux aarch64 scaling better on the larger
-archive.<br>
-The last benchmark, which rely heavily on widget-set ability to render
-in the UI a 25K items "flat" archive, shows a clear advantage for the
-Linux/GTK2 version which is about 7 times faster than the macOS/Cocoa
-version, despising the GTK2 widegt set not being the fast one available
-on Linux platform.<br>
+            <h3 style="font-weight: bold;">macOS vs Asahi Linux on
+Apple Silicon</h3>
+Performances in 25K items and 250K items benchmarks are quite similar
+(the latter test showing an advantage for Asahi Linux over macOS),
+while the 25K-flat test shows an advantage for macOS over Asahi due the
+outdated GTK2 widgetset which PeaZip uses on the latter OS.<br>
+In non-virtual mode, however, the GTK2 widgetset is significantly
+faster than Cocoa, completing the 25K-flat test in 4.3 seconds vs over
+half a minute.<br>
             <br>
             <p style="font-weight: bold;">Synopsis: Open large archives
 benchmark. What is the fastest application to open large archives?
@@ -858,12 +965,12 @@ Asked Questions</a><br>
             </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
+ alt="macos archive manager benchmark" src="titles.png"
  style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_tool"></a>ABOUT<br
+ name="cross-platform_archive_manager_benchmark"></a>ABOUT<br
  style="font-style: italic;">
-            <img alt="peazip free archiver utility"
+            <img alt="linux archive manager benchmark"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
             </small><small><a href="peazip-tos-privacy.html"

@@ -249,24 +249,20 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.5.0 brings a major update in the file manager, boosting
-archive browsing performances, improving
-archive editing, adding new
-functions to open file as archive
-from within archives, to prevent running a custom list of file
-extensions without confirmation, and to hide or show hidden files.<br>
-On macOS all file browser styles and icon sizes are now available as on
-other platforms.<br>
-On Windows it is now possible to explore NTFS Alternate Data Streams to
-gather additional information on files, including a dedicated tools to
-batch scan the input for Zone.Identifier (Mark of The Web) to detect
-files coming from remote systems.<br>
-In addition, the option to include the Zone.Identifier metadata in
-archives is now
-enabled by default for all formats supporting it (RAR, WIM).<br>
-Backend were updated to Pea 1.25.<br>
+PeaZip 10.6.0 brings a mayor overhaul of the file/archive browser,
+introducing the dynamic virtual mode which improves performances when
+displaying a very large number of items at once.<br>
+Alongside many updates, archive pre-parsing is improved,
+show/hide hidden files is made easier, and search function is now
+available for Settings.<br>
+Non-Windows versions can now
+report free/disk space, and can automatically locate the RAR binary if
+installed in the system.<br>
+Backed are updated with 7z 25.01, Pea 1.26, and Zpaqfranz which
+replaces Zpaq,
+keeping full compatibility in terms of file format and scripting syntax.<br>
             <br>
-Sources are compiled with Lazarus 4.x, and are still compatible
+Sources are compiled with Lazarus 4.2, and are still compatible
 with Lazarus 3.x and 2.x.<br>
             <br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
@@ -288,8 +284,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/SHA256.txt">SHA256.txt
-10.5.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/SHA256.txt">SHA256.txt
+10.6.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -309,6 +305,118 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2025 08 09<br>
+            <div style="margin-left: 40px;">10.6.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Updated 7z 25.01<br>
+Updated Pea 1.26<br>
+(Windows) Updated McMilk codecs to 24.09-v1.5.7-R1<br>
+(Linux, macOS) Added T.Yamada cielavenir/p7zip 24.09.1 fork to support
+Brotli, Lizard, LZ4, LZ5, Zstd additional codecs for .7z format<br>
+            <div style="margin-left: 40px;">From Options &gt; Settings,
+Advanced tab set "7z / p7zip alias" to "7zalt" to use this alternative
+implementation and support extra codecs for .7z format<br>
+            </div>
+Updated Zpaq interface to support <span style="font-weight: bold;">Zpaqfranz
+            </span>as default binary, keeping compatibility with Zpaq
+7.x<br>
+            <br>
+            </div>
+CODE<br>
+            <div style="margin-left: 40px;">Built with <span
+ style="font-weight: bold;">Lazarus 4.2</span>, compatible with Lazarus
+3.x and 2.x<br>
+Added <span style="font-weight: bold;">Nemo actions</span> for context
+menu integration in <span style="font-weight: bold;">Cinnamon </span>based
+Desktop Environments, in
+(peazip)res/share/batch/freedesktop_integration <br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added Documents directory
+to default Bookmarks<br>
+Added <span style="font-weight: bold;">Search </span>function to
+Options &gt; Settings screen, to quickly find option groups and most
+used settings <br>
+File browser was updated introducing <span style="font-weight: bold;">dynamic
+virtual mode</span> for the ListView component, boosting performances
+when browsing directories and archives containing a very large number
+of items (or using flat view on a very large number of items)<br>
+            <div style="margin-left: 40px;">performances gains depend
+on the widgetset: opening a zip archive containing 25K items in the
+root directory is now over x6 faster on Windows, over x30 faster on
+macOS, near to x2 faster on Qt6 (which is the fastest widgetset in
+non-virtual mode), negligible / variable impact on GTK2 and GTK3<br>
+            </div>
+            <div style="margin-left: 40px;">virtual mode is dynamically
+enabled and disabled over a threshold number of items displayed at once<br>
+            </div>
+            <div style="margin-left: 80px;">this value and can be set
+(or virtual mode can be deactivated) from Options &gt; Settings,
+Performances group<br>
+the default value depends on the widgetset: 8K for Windows, Always for
+macOS (which has biggest performances gain), 16K for Qt6 (most
+efficient in classic mode), disabled for other widgetsets<br>
+(macOS) due to current limitation of the implementation on the Cocoa
+widgetset, the virtual mode should either be always on (Always,
+default) or off (No)<br>
+            </div>
+            <div style="margin-left: 40px;">virtual mode currently
+introduces some limitations in the archive browser, mainly:<br>
+            <div style="margin-left: 40px;">disable showing exe icons
+and images thubnails (Windows, browsing the filesystem)<br>
+disable dynamic content filter typing in the address bar<br>
+disable item rename with mouse click, rename is only reached from F2 or
+from menu<br>
+            </div>
+various other minor performances improvements<br>
+            </div>
+Fixes<br>
+            <div style="margin-left: 40px;">Sizes of multipart archives
+are now reported correctly in the progress screen<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Improved archive pre-parsing</span><br>
+            <div style="margin-left: 40px;">if the archive content
+exceeds the limitations of the current browser optimization level, it
+is applied an alternative quick pre-parsing procedure which can
+reconcile most of the common issues which can be found in archive's
+table of content<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">Option "Keep
+password/keyfile for current session" is now unchecked by default, in
+this way password/keyfile is automatically re-set each time a new
+archive in accessed, as in most other archive managers<br>
+Toggle "<span style="font-weight: bold;">Show hidden files</span> (in
+the
+filesystem)" moved from settings to main menu, Organize for ease of use<br>
+            <div style="margin-left: 40px;">keyboard shortcut Ctrl+. or
+Command+. on macOS<br>
+            </div>
+(BSD, Linux) Added alternative icons (48px and svg) for system
+integration in
+(peazip)res/share/batch/freedesktop_integration/alternative-icons<br>
+(BSD, Linux, macOS) PeaZip can now automatically check if rar binary is
+available in the system, to auto enable creation of RAR files<br>
+(BSD, Linux, macOS) Status bar hint box in file browser and
+archiving/extraction screens now reports free disk space, and % on
+total disk space<br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Added option to limit the
+number of threads for Zpaq, in Advanced tab of archive creation screen<br>
+Updated compression pre-sets (reached from dropdown menu on the right
+of Add button) <br>
+            </div>
+            </div>
+            <div style="margin-left: 40px;">
+            <div style="margin-left: 40px;"> </div>
+            </div>
+            </div>
             <br>
 2025 06 15<br>
             <div style="margin-left: 40px;">10.5.0<br>

@@ -133,7 +133,7 @@
  style="color: rgb(153, 153, 153); font-weight: bold;"
  name="peazip_source_code"></a><big><big><big><span
  style="font-weight: bold;">Sources
-10.5.0</span><br>
+10.6.0</span><br>
             </big></big></big><img alt="free rar zip software"
  title="file archiver utility" src="free-rar/extract-rar.png"
  style="width: 1px; height: 1px;" vspace="3"><br>
@@ -164,7 +164,7 @@ Lazarus/FPC<br>
             <div style="color: rgb(253, 253, 253);">
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.src.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.src.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD" alt="download peazip code base"
  src="free-rar/download-free-software.png"
@@ -175,7 +175,7 @@ requires Lazarus / FreePascal IDE for building and compiling the app<br>
             </small></small></big><br>
             <h3 style="font-weight: bold;"><big> <a
  style="color: rgb(253, 253, 253);" _blank=""
- href="https://github.com/peazip/PeaZip/releases/download/10.5.0/peazip-10.5.0.pack.zip"><span
+ href="https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.pack.zip"><span
  style="text-decoration: underline;"><img
  title="Download PeaZip for FreeBSD"
  alt="peazip deb rpm packages structure"
@@ -914,11 +914,14 @@ the other supported formats (including ISO, RAR, TAR, WIM, ZIP formats)<br>
 vanilla p7zip, can be
 placed as alternative to 7z in (peazip)/res/bin/7z</li>
                 <li><a target="_blank"
- href="https://github.com/szcnick/p7zip">https://github.com/szcnick/p7zip<img
- alt="p7zip packages" src="free-rar/extract-files.png"
+ href="https://github.com/cielavenir/p7zip">https://github.com/cielavenir/p7zip<img
+ alt="p7zip forks" src="free-rar/extract-files.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
-p7zip fork with
-extra algorithms, can be placed as alternative in (peazip)/res/bin/7z<br>
+(Linux, macOS) p7zip fork with
+extra algorithms for .7Z format (Brotli, FLZMA, Lizard, LZ4, LZ5,
+Zstd), placed in (peazip)/res/bin/7z/, can be used instead of vanilla
+7z by setting "7z / p7zip alias" to "7zalt" in Options &gt; Settings,
+Advanced tab<br>
                 </li>
               </ul>
               <ul>
@@ -926,8 +929,8 @@ extra algorithms, can be placed as alternative in (peazip)/res/bin/7z<br>
  href="https://github.com/mcmilk/7-Zip-zstd">https://github.com/mcmilk/7-Zip-zstd<img
  alt="7-zip codecs" src="free-rar/extract-files.png"
  style="border: 0px solid ; width: 12px; height: 10px;"></a>
-codecs for 7Z
-(Windows only), should be placed in (peazip)/res/bin/7z/Codecs</li>
+(Windows) extra algorithms for .7Z format, available as separate codecs
+for vanilla 7z binary which are placed in (peazip)/res/bin/7z/Codecs</li>
               </ul>
               <li><a target="_blank"
  href="http://freearc.sourceforge.net/%20FreeArc">http://freearc.sourceforge.net/

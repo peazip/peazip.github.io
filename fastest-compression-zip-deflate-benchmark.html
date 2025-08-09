@@ -132,8 +132,7 @@
             <td colspan="1" rowspan="1" style="vertical-align: top;"> <br>
             <h1 style="text-align: center;"><big><big><big><a
  style="font-weight: bold;" name="compressor_faster_than_winrar"></a><span
- style="font-weight: bold;">Fast compression: faster than
-fastest ZIP</span><br>
+ style="font-weight: bold;">Fastest compression benchmark: 7Z, RAR, ZIP</span><br>
             </big></big></big></h1>
             <br>
             </td>
@@ -169,21 +168,22 @@ fastest ZIP</span><br>
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
             </small></td>
             <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><a
+ href="maximum-compression-benchmark.html"><small>MAXIMUM COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><a
+ href="fastest-compression-zip-deflate-benchmark.html"><small>FASTEST
+COMPRESSION</small></a></td>
+            <td
+ style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
+            </small></td>
+            <td
  style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
  href="fast-compression-benchmark-brotli-zstandard.html">BROTLI VS
-ZSTANDARD</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(240, 239, 238);"><small><a
- href="maximum-compression-benchmark.html">MAXIMUM COMPRESSION</a></small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
-            </small></td>
-            <td
- style="vertical-align: top; text-align: center; font-weight: bold;"><small><a
- href="fastest-compression-zip-deflate-benchmark.html">FASTER THAN ZIP</a><br>
+ZSTANDARD</a><br>
             </small></td>
             <td
  style="vertical-align: top; text-align: center; font-weight: bold;"><small><br>
@@ -264,13 +264,16 @@ settings</a></big></big></big></h2>
                         <td colspan="1" rowspan="1"
  style="vertical-align: top; background-color: rgb(250, 250, 250);">
                         <p><big><span style="font-weight: bold;">Goals</span></big></p>
+                        <p style="font-weight: bold;">Find fastest
+compression algorithms.</p>
                         <p><a name="what_is_the_fastest_file_compressor"></a>Analyze
-modern compression algorithms capable to provide performances equal or
+modern compression algorithms capable of providing performances equal
+or
 better than fastest commonly available implementation of classic
 Deflate algorithms, employed in obiquitous ZIP format.<br>
-Comparison is conducted, in terms of compression / extraction speed and
-compression ratio, against performances of Deflate ZIP in the range
-from default to fastest compression settings.<br>
+Comparison is conducted in terms of compression / extraction speed and
+compression ratio, with special focus on comparison with best possible
+performances of Deflate ZIP.<br>
                         </p>
                         </td>
                       </tr>
@@ -290,17 +293,12 @@ settings</big><br>
                         <a
  name="faster_than_deflate_compression_benchmark"></a>Benchmarks
 are conducted
-on Windows 10 2009 64 bit using 64 bit versions of:<br>
+on Windows 10 64 bit using 64 bit versions of:<br>
                         <ul>
-                          <li>PeaZip 7.4.1<br>
+                          <li>PeaZip 10.6.0<br>
                           </li>
-                          <li>WinRar 5.8</li>
+                          <li>WinRar 7.11</li>
                         </ul>
-All applications are tested using default,
-out-of-the-box compression settings for the selected archive format.<br>
-No cryptography option is set, since encryption impact on performances
-is out of the scope of
-this benchmark.<br>
                         </td>
                       </tr>
                     </tbody>
@@ -317,8 +315,9 @@ this benchmark.<br>
 settings</span></big></p>
 Notebook with Intel Core i7-8565U CPU, 4
 physical cores with hyper-threading (8 logical cores), 8 GB RAM<br>
-System disk 512 GB PCIe NVMe SSD, NTFS filesystem<br>
-                        </td>
+System disk 512 GB PCIe NVMe SSD, NTFS filesystem.<br>
+The system reaches a score of 23500 on 7-Zip benchmark, which can be
+considered entry level for today's standards. </td>
                       </tr>
                     </tbody>
                   </table>
@@ -352,17 +351,18 @@ by 7-Zip, providing strong and efficient compression and good
 performances on multicore machines, tested with:<br>
                           </li>
                           <ul>
-                            <li><span style="font-weight: bold;">LZMA2 </span>algorithm
-(strong compressor), set at fastest compression level</li>
+                            <li><span style="font-weight: bold;">LZMA2 </span>(strong
+compressor) default algorithm, set at fastest compression level</li>
                             <li><a
  href="brotli-compressed-file-format.html"><span
  style="font-weight: bold;">Brotli</span></a> algorithm (fast
-compressor), set at default compression
+compressor), set at normal and fastest compression
 level</li>
                             <li><a
  href="zst-compressed-file-format.html"><span style="font-weight: bold;">Zstandard</span></a><span
  style="font-weight: bold;"></span> algorithm<span
- style="font-weight: bold;"> </span>(fast compressor), set at default
+ style="font-weight: bold;"> </span>(fast compressor), set at normal
+and fastest
 compression
 level</li>
                           </ul>
@@ -381,12 +381,9 @@ at fastest compression level<br>
                           <li><a href="zip-file-format.html"><span
  style="font-weight: bold;">ZIP file
 format</span></a>
-widely used archive format, tested at default and fastest compression
+widely used archive format, tested at fastest compression
 levels (with
-Deflate algorithm) from
-WinRar, which qualified as the fastest zip compressor in previous batch
-of PeaZip's <a href="peazip-compression-benchmark.html">compression
-benchmarks</a> </li>
+Deflate algorithm) </li>
                         </ul>
                         </td>
                       </tr>
@@ -402,7 +399,7 @@ benchmarks</a> </li>
  style="vertical-align: top; background-color: rgb(250, 250, 250);"> <big><span
  style="font-weight: bold;">Input data</span></big><br>
                         <br>
-Same set of data of previous "Brotli vs Zstandard" benchmark is used:
+Same set of data of "Out-of-the-box" compression benchmark is used:
 input contains 43 files in 4 directories for total 1.22 GB
 (1,318,000,857 bytes), composed by well known reference files
 representative of different data structures, widely used for
@@ -470,20 +467,20 @@ disk, same partition, separate directory; the resulting archives are
 then extracted to
 separate directory on same (system) disk/partition.<br>
             <br>
-Each compression and extraction test is repeated 10 times to get an
+Each compression and extraction test is repeated 5 times to get an
 average value; size is expressed in MB, time in seconds.<br>
-For each tested format, alhgorithm, and compression level, are used
-default compression settings as
-pre-set out of the box by the file archiver applications being tested
-(PeaZip, and
-WinRar).<br>
+Each format is tested at fastest compression level - "Store" level,
+while technically faster, was not employed, as it does not involve
+actual compression.<br>
             <br>
 WinRar is chosen as reference for the fastest commonly available ZIP
-Deflate implementation, due results of previous benchark tests.<br>
-Performance of ZIP Deflate is analized at normal and fastest
-compression levels, and compared with non-Deflate algorithms at
-compression levels which provides comparable compression ratio and
-speed results.<br>
+Deflate implementation, due results of previous "out-of-the-box"
+bencharks.<br>
+            <br>
+A special focus is given to compare performances of ZIP Deflate with
+non-Deflate algorithms as viable alternatives for faster-than-zip
+compression, and possibly for overall more efficient than zip
+compression both in terms of speed and compression ratio.<br>
             <br>
             <br>
             <span style="font-weight: bold;"><big>Faster than zip
@@ -492,164 +489,184 @@ benchmark results
 table, the lower the better for all columns</big><br>
             <br>
             </span>
-            <table x:str="" style="border-collapse: collapse;"
- border="0" cellpadding="0" cellspacing="0">
-              <col span="5" style="width: 68pt;" width="90"> <tbody>
-                <tr style="height: 33.75pt;" height="45">
+            <table style="width: 100%; text-align: left;" border="0"
+ cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 20%;"><br>
+                  </td>
                   <td
- style="height: 32px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle; width: 250px;"
- class="xl22">Utility, format, algorithm, level<br>
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compressed
+size (MB)<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
-(sec)<br>
-                  </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Archive
-size <br>
-(MB)</td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Compression
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
 ratio<br>
                   </td>
-                  <td class="xl23"
- style="border-left: medium none; height: 32px; width: 100px; font-weight: bold; background-color: rgb(240, 240, 240); text-align: center; vertical-align: middle;">Extraction
-                  <br>
-(sec) </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
+time (sec)<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Extraction
+time (sec)</td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
-ZIP normal<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">21.4<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">407<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+ZIP fastest<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">32.58%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">429<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">8.0<br>
-                  </td>
-                </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
-ZIP fastest</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">15.8<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">429<br>
+ style="vertical-align: top; width: 20%; text-align: center;">34.13%<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">34.34%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">15.6<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">7.2<br>
+ style="vertical-align: top; width: 20%; text-align: center;">8.6<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">WinRar,
-RAR PPMd fastest </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">12.1<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">391<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+RAR fastest </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">395<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">31.30%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">31,42%<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">5.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">14.5<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">7.0<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
-7Z LZMA2 fastest<br>
-                  </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">15.7<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">386<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip,
+ZIP fastest </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">426<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">30.90%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">33,89%<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">4.1<br>
+ style="vertical-align: top; width: 20%; text-align: center;">29.5<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">9.6<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
-7Z Zstandard normal</td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">6.5<br>
-                  </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">398<br>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+fastest </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">370<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">31.86%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">29,44%<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">4.1<br>
+ style="vertical-align: top; width: 20%; text-align: center;">28.1<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">3.9<br>
                   </td>
                 </tr>
-                <tr style="height: 24pt;" height="32">
-                  <td class="xl24"
- style="border-top: medium none; height: 32px; text-align: center; vertical-align: middle; width: 250px;">PeaZip,
-7Z Brotli normal </td>
-                  <td class="xl25"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="12.1">6.1<br>
+                <tr>
+                  <td style="vertical-align: top; text-align: right;">PeaZip,
+7Z
+normal Brotli</td>
+                  <td style="vertical-align: top; text-align: center;">410<br>
                   </td>
-                  <td class="xl26"
- style="border-top: medium none; border-left: medium none; height: 32px; width: 100px; text-align: center; vertical-align: middle;"
- x:num="97.7">410<br>
+                  <td style="vertical-align: top; text-align: center;">32.62%<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">5.2<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">2.2<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+fastest Brotli </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">482<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">32.82%<br>
+ style="vertical-align: top; width: 20%; text-align: center;">38,55%<br>
                   </td>
                   <td
- style="text-align: center; vertical-align: middle;">2.0<br>
+ style="vertical-align: top; width: 20%; text-align: center;">2.1<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">2.2<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; text-align: right;">PeaZip,
+7Z
+normal Zstd</td>
+                  <td style="vertical-align: top; text-align: center;">396<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">31,50%<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">5.4<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">2.7<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+fastest Zstd </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">451<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">35,88%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">2.0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center;">3.2<br>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <span style="font-style: italic;"></span><br>
+            <span style="font-style: italic;">Archive size in MB (lower
+better), compression ratio of input data, and time in seconds (lower
+better) to complete compression and de-compression of data.</span><br>
+            <br>
             <br>
             <h2 style="font-weight: bold;"><big>Faster than zip
 compression
 ratio
 results</big></h2>
             <br>
-All alternative formats attained
-better compression ratio results than ZIP Deflate at fastest
-compression levels.<br>
-All formats (except for 7Z Brotli) attained better
-compression ratio than ZIP Delfate at normal compression level, with
-LZMA2 being the best compressor followed by RAR PPMd and Zstandard..<br>
+ZIP Deflate compression ratio is quite similar in WinRar and PeaZip at
+fastest compression settings, with a slight size advantage for PeaZip.<br>
             <br>
-            <h3><img
+RAR and 7Z (with default LZMA2 algorithm) outperforms ZIP in terms of
+compression ratio, with a significant output size advantage for 7Z
+format.<br>
+            <br>
+Both Brotli and Zstandard, at normal compression level, reaches a
+better compression ratio than ZIP Deflate (Zstd providing the best CR).<br>
+Swithcing to fastest compression level, makes Brotli and Zstd reache a
+worse compression ratio than
+Deflate, with Brotli reaching the
+worse compression ratio in the benchmark.<br>
+            <br>
+            <h3 style="text-align: center;"><img
  title="Compression ratio of algorithms comparable or faster than fastest Deflate implementation"
  alt="better compression ratio than WinRar Deflate ZIP"
  src="better-than-zip-compression-ratio.png"
@@ -662,21 +679,23 @@ compression
 speed
 results</big></h2>
             <br>
-            <a name="zip_compression_speed_comparative"></a>All formats
-compressed the input set significantly faster than
-ZIP Deflate normal, and even faster than ZIP Deflate at fastest
-compression level.<br>
-7Z LZMA and RAR PPMd compression times are roughly comparable with ZIP
-Deflate
-at fastest compression level (with RAR being faster), but both
-alternatives provides
-vastly improved compression ratio.<br>
-7Z Zstandard and 7Z Brotli at normal compression level are
-approximatively 3x times
-faster than ZIP Deflate at normal compression level, 2.5x times faster
-than ZIP Deflate fastest level.<br>
+            <a name="zip_compression_speed_comparative"></a>WinRar
+outperforms PeaZip in ZIP fastest compression test with a 2x faster
+speed, and RAR format (slightly faster than ZIP) outperforms 7Z format
+(with LZMA2) by the same margin.<br>
             <br>
-            <h3><img
+            <span style="font-weight: bold;"><a
+ name="zip_vs_brotli_speed_comparative"></a></span>The clear winners of
+the test, however, are Brotli and Zstd algorithms,
+with "PeaZip 7Z fastest Brotli" and "PeaZip 7Z fastest Zstd" being
+almost 8x faster than WinRar's ZIP which is the fastest Deflate
+implementation tested in this benchmark (same holds true in regards of
+RAR, which is almost as fast as ZIP at this compression level).<br>
+            <br>
+At normal compression level Brotli and Zstd stays faster than fastest
+Deflate by almost a 3x factor.<br>
+            <br>
+            <h3 style="text-align: center;"><img
  title="Comparison of compression times faster than fastest Deflate ZIP implementation"
  alt="faster compression than fastest zip implementation"
  src="faster-than-zip-compression.png"
@@ -688,37 +707,22 @@ than ZIP Deflate fastest level.<br>
 extraction
 speed results</big></h2>
             <br>
-            <a name="zip_extraction_speed_comparative"></a>All formats
-decompressed the benchmark data significantly faster than
-ZIP Deflate, either compressed at normal or fastest level.<br>
-For extraction, 7Z LZMA2 at fastest level is nearly 2x faster than ZIP
-Deflate, and slightly faster than RAR PPMd, reversing the performance
-advantage RAR PPMd have in compression speed test.<br>
-7Z Zstandard extraction speed at all levels overlaps with 7Z LZMA2,
-while 7Z Brotli provides significantly faster extraction, the fastest
-of the test, nearly 4x faster than ZIP Deflate range of speed.<br>
+            <a name="zip_extraction_speed_comparative"></a>As for ZIP
+format, WinRar provides a slightly faster extraction than PeaZip.<br>
             <br>
-            <h3><img
+7Z format with LZMA2 performs de-compression nearly twice as faster
+than RAR format, while Ztsd improves slightly decompression time, and
+Brotli&nbsp; wins the benchmark with fastest extraction speed - almost
+4x time faster than Deflate de-compression.<br>
+            <br>
+Extraction times stays fast for Zstd and, especially, for Brotli, even
+switching from fastest to normal compression level.<br>
+            <br>
+            <h3 style="text-align: center;"><img
  title="Comparison of extraction times faster than Deflate ZIP"
  alt="faster extraction than fastest zip implementation"
  src="faster-than-zip-extraction.png"
  style="width: 720px; height: 460px;"></h3>
-            <br>
-            <br>
-            <big><span style="font-weight: bold;">Honorable mention:
-ARC
-format</span></big><br>
-            <br>
-At minimum (1 on 9) compression level PeaZip with ARC format completed
-compression test in 5.5 sec and extraction test in 2,7 sec, but created
-a 447 MB archive which does not fall in the desired range, being larget
-than the 429 MB output created by Deflate at minimum compression level.<br>
-At 2 on 9 compression level ARC completed the compression test in 15.3
-sec creating a 310 MB archive, which is an excellent compression ratio,
-outperforming all other alternatives, but extraction needed 28.4 sec,
-almost 4 times slower than Deflate.<br>
-Due those drawbacks the ARC format was excluded from the test, but it
-remains an extremely interesting archive format.<br>
             </td>
           </tr>
         </tbody>
@@ -747,47 +751,58 @@ in terms of speed, especially for extraction, and compression ratio.<br>
             <br>
             <span style="font-weight: bold;">What formats are faster
 tha ZIP on modern hardware?</span><br>
+            <br>
 With WinRar, creating a RAR (<span style="font-weight: bold;">PPMd </span>algorithm)
 at fastest compression level resulted
-in a smaller archive AND took less time.<br>
-The same holds true with PeaZip with 7Z <span
- style="font-weight: bold;">LZMA2 </span>at fastest compression level,
-with
-extraction being almost twice faster than Deflate and even faster than
-with RAR PPMd, a bonus that is especially
-important for content distribution.<br>
-Switching 7Z compression to Brotli and Zstandard algorithms, which are
-ground up designed for high performances, provides utter speed
-improvements: both algorithms at normal compression level are able to
-compete with ZIP Deflate in terms of compression ratio, but completing
-the benchmark at almost
-3 times faster compression speed.<br>
-            <span style="font-weight: bold;"><a
- name="zip_vs_zstandard_speed_comparative"></a>Zstandard</span>, which
-provides a compression ratio even better than Deflate
-normal, is twice as fast for extraction than ZIP Deflate.<br>
-            <span style="font-weight: bold;"><a
- name="zip_vs_brotli_speed_comparative"></a>Brotli</span>, which
-provides a compression ratio intermediate from Deflate
-normal and Deflate fastest, is almost 4 times faster for extraction
-than ZIP Deflate.<br>
+in a smaller archive AND took slightly less time than creating a ZIP
+archive with same app at same compression setting, with even more
+evident advantage in extraction speed.<br>
             <br>
+The same holds true with PeaZip with 7Z <span
+ style="font-weight: bold;">LZMA2 </span>being faster than ZIP on the
+same app at fastest compression level,
+with
+the additional bonus of 7Z extraction being over twice faster than
+fastest Deflate implementation, a feature that is especially
+important for content distribution.<br>
+            <br>
+            <span style="font-weight: bold;"><a
+ name="zip_vs_zstandard_speed_comparative"></a></span>Switching 7Z
+format from LZMA2 to <span style="font-weight: bold;">Brotli </span>and
+            <span style="font-weight: bold;">Zstandard </span>algorithms,
+which are
+ground up designed for high performances (real-time or near-real-time
+compression), provides utter efficiency improvements.<br>
+At normal compression level, Brotli and Zstd provide better compression
+ratio AND a comprerssion / extraction speed improvement in the range of
+            <span style="font-weight: bold;">3x</span> compared to best
+Deflate implementation at fastest compression level.<br>
+At fastest compression level, Brotli and Zstd provide slightly inferior
+compression ratio and reaches <span style="font-weight: bold;">8x
+faster compression</span> than fastest
+ZIP Deflate implementation, and almost <span style="font-weight: bold;">4x
+faster decompression</span>.<br>
+In this benchmark, Zstandard provides consistently better compression
+than Brotli (at normal and fastest compression settings) but Brotli
+provides consistently faster extraction speeds.<br>
+            <br>
+            <span style="font-weight: bold;"></span><br>
             <big><a style="font-weight: bold;"
  name="what_are_faster_tha_deflate_alternatives"></a><span
  style="font-weight: bold;">Conclusions in
 brief:</span></big><br>
+            <br>
+On modern machines using RAR or 7Z format at fastest
+compression level can provide both compression ratio and speed
+improvements (and especially faster
+extraction) than using traditional ZIP format.<br>
+Switching to Brotli and Zstd, which are also available as optional
+codecs for 7Z format, further increase compression efficiency, with
+large improvements in terms of speed - but in some cases even in
+terms of better compression ratio - even compared to fastest Deflate
+implementations.<br>
+            <br>
             <ol>
-              <li>On modern machines using RAR or 7Z format at fastest
-compression level provide faster compression, and especially faster
-extraction, than using traditional ZIP format -&nbsp; even benchmarking
-the fastest Deflate ZIP implementations and employing fastest
-compression settings for Deflate.</li>
-              <li>While being faster, both RAR and 7Z LZMA2 at fastest
-compression level also provide significantly better compression ratio
-than Deflate ZIP.</li>
-              <li>New Brotli and Zstandard algorithms available in 7Z
-provides further speed advantages over Deflate ZIP, while remaining
-comparable or better in terms of compression ratio.</li>
             </ol>
 Learn more about how to <a href="7zip-files-utility.html">use Brotli
 and Zstandard compression in 7z files</a>, <a
@@ -865,12 +880,12 @@ Asked Questions</a><br>
             </small><br>
             </td>
             <td style="vertical-align: top; width: 25%;"><small><img
- alt="peazip file compression software" src="titles.png"
+ alt="fastest compression format" src="titles.png"
  style="width: 129px; height: 2px;"><br>
             <a style="color: rgb(0, 0, 0);"
- name="peazip_cross_platform_archive_manager_app"></a>ABOUT<br
+ name="fastest_compression_utility"></a>ABOUT<br
  style="font-style: italic;">
-            <img alt="peazip free archiver utility"
+            <img alt="fastest compression app"
  src="free-rar/extract-rar.png" style="width: 1px; height: 1px;"
  vspace="3"><br style="font-style: italic;">
             </small><small><a href="peazip-tos-privacy.html"
