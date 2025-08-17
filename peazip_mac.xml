@@ -34,9 +34,9 @@
 	</Company_Info>
 	<Program_Info>
 		<Program_Name>PeaZip for macOS</Program_Name>
-		<Program_Version>10.6.0</Program_Version>
+		<Program_Version>10.6.1</Program_Version>
 		<Program_Release_Month>08</Program_Release_Month>
-		<Program_Release_Day>09</Program_Release_Day>
+		<Program_Release_Day>17</Program_Release_Day>
 		<Program_Release_Year>2025</Program_Release_Year>
 		<Program_Cost_Dollars>0.00</Program_Cost_Dollars>
 		<Program_Cost_Other_Code />
@@ -46,14 +46,14 @@
 		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
 		<Program_OS_Support>Mac OS X,Mac Other,Unix,Other</Program_OS_Support>
 		<Program_Language>English,Arabic,Bulgarian,Byelorussian,Chinese,ChineseSimplified,ChineseTraditional,Czech,Dutch,French,Galician,German,Greek,Hungarian,Italian,Japanese,Korean,Norwegian,Polish,Portuguese,Romanian,Russian,Singhalese,Spanish,Swedish,Turkish,Ukrainian,Vietnamese</Program_Language>
-		<Program_Change_Info>Improved browser, improved help system, updated backends and pre-sets, fixes</Program_Change_Info>
+		<Program_Change_Info>Fixes, sfx modules</Program_Change_Info>
 		<Program_Specific_Category>Utilities</Program_Specific_Category>
 		<Program_Category_Class>System Utilities::File Compression</Program_Category_Class>
 		<Program_System_Requirements />
 		<File_Info>
-			<File_Size_Bytes>25565003</File_Size_Bytes>
-			<File_Size_K>24965</File_Size_K>
-			<File_Size_MB>24.38</File_Size_MB>
+			<File_Size_Bytes>26243996</File_Size_Bytes>
+			<File_Size_K>25628</File_Size_K>
+			<File_Size_MB>25.03</File_Size_MB>
 		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
@@ -95,9 +95,9 @@ The distinctive trait of PeaZip is the innovative and easy to use compression/ex
 			<Application_XML_File_URL>https://peazip.github.io/peazip_mac.xml</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.x86_64.dmg</Primary_Download_URL>
-			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.aarch64.dmg</Secondary_Download_URL>
-			<Additional_Download_URL_1>https://github.com/peazip/PeaZip/releases/download/10.6.0/peazip-10.6.0.DARWIN.x86_64.zip</Additional_Download_URL_1>
+			<Primary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.6.1/peazip-10.6.1.DARWIN.x86_64.dmg</Primary_Download_URL>
+			<Secondary_Download_URL>https://github.com/peazip/PeaZip/releases/download/10.6.1/peazip-10.6.1.DARWIN.aarch64.dmg</Secondary_Download_URL>
+			<Additional_Download_URL_1>https://github.com/peazip/PeaZip/releases/download/10.6.1/peazip-10.6.1.DARWIN.x86_64.zip</Additional_Download_URL_1>
 			<Additional_Download_URL_2 />
 		</Download_URLs>
 	</Web_Info>

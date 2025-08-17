@@ -261,17 +261,11 @@ installed in the system.<br>
 Backed are updated with 7z 25.01, Pea 1.26, and Zpaqfranz which
 replaces Zpaq,
 keeping full compatibility in terms of file format and scripting syntax.<br>
+10.6.1 update brings bugfixes, updated translations, and an extensive
+revision of packaged components.<br>
             <br>
-            <span style="">UPDATE (2025 08 09) Windows packages were
-repacked on the fly, and SHA256.txt updated accordingly <br>
-- Zpaqfranz 62.5 replaces 61.6 which triggered false positives on some
-AV<br>
-- some of the sfx modules for 7z and Arc were removed for the same
-reason<br>
-- PeaZip 32 bit (legacy packages) were stripped of all offending
-binaries</span><br>
-            <br>
-Sources are compiled with Lazarus 4.2, and are still compatible
+            <span style=""></span>Sources are compiled with Lazarus
+4.2, and are still compatible
 with Lazarus 3.x and 2.x.<br>
             <br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
@@ -314,6 +308,37 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2025 08 17<br>
+            <div style="margin-left: 40px;">10.6.1<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z / p7zip vanilla sxf
+modules replaced by modules from Tino Reichardt fork<br>
+(Windows) PAQ8O and Strip/UPX moved to Additional Formats Plugin
+package v7<br>
+(Windows) Zpaq support updated to Zpaqfranz 62.5 on Win64, freezed on
+Zpaq 7.15 for Win32<br>
+(Windows) removed whenever possible, or replaced if possible, the
+binaries and sfx modules producing false positive detections<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Fixed 7z alias always
+applied for list tasks<br>
+Fixed moving files inside encrypted archives<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Updated translations<br>
+            </div>
+            <br>
+INSTALLERS<br>
+            <div style="margin-left: 40px;">All packages now contains
+sfx modules to create self-extracting archives to be used both on
+Windows and Linux systems<br>
+            </div>
+            </div>
+            </div>
             <br>
 2025 08 09<br>
             <div style="margin-left: 40px;">10.6.0<br>
