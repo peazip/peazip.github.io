@@ -302,6 +302,8 @@ are run on Windows 10 64 bit, using 64 bit versions of:<br>
                           <li>WinZip 76.9<br>
                           </li>
                           <li>Windows 10 built-in Compressed Folders</li>
+                          <li>macOS 15.5 Finder compression tool<br>
+                          </li>
                         </ul>
                         </td>
                       </tr>
@@ -318,13 +320,17 @@ are run on Windows 10 64 bit, using 64 bit versions of:<br>
                         <h4><big><span style="font-weight: bold;">Hardware
 settings</span></big></h4>
                         <br>
-Notebook with Intel Core i7-8565U CPU, 4
+Windows: notebook with Intel Core i7-8565U CPU, 4
 physical cores with hyper-threading (8 logical cores), 8 GB RAM.<br>
 System disk 512 GB
 PCIe NVMe SSD with NTFS filesystem.<br>
 With 7-Zip benchmark score of 23500, this machine represents an entry
 level specs
-system for today's standards. </td>
+system for today's standards.<br>
+                        <br>
+macOS: 2020 MacBook Air with M1 chip.<br>
+7-Zip benchmark score 46000.<br>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -640,9 +646,64 @@ fast<br>
  style="vertical-align: top; width: 20%; text-align: center;">3,9<br>
                   </td>
                 </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+Finder,
+ZIP<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">410,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">32,62%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">38,4<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">3,5<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+PeaZip,
+ZIP fast<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">426,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">33,89%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">16,4<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">5,3<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+PeaZip, 7Z
+fast<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">346,00</td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">27,53%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">25,8<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">1,9<br>
+                  </td>
+                </tr>
               </tbody>
             </table>
-            <span style="font-style: italic;">Archive size in MB (lower
+            <span style="font-style: italic;"><br>
+Archive size in MB (lower
 better), compression ratio of input data, and time in seconds (lower
 better) to complete compression and de-compression of data.</span><br>
             <br>
@@ -666,7 +727,7 @@ an intermediate output size.<br>
             <br>
 As for ZIP compression, WinZip provides the best result, even if it is
 significantly worse (larger output) even of 7Z at fast compression
-level,.<br>
+level.<br>
             <br>
             <br>
             <h3 style="text-align: center;"><img
@@ -689,6 +750,11 @@ Fastest non-zip compressor is PeaZip using 7Z fast, with RAR being
 almost twice as slow, and 7Z medium being almost 6 times slower.<br>
 WinZip notably provides the slowest ZIP compression performance, even
 solwer than RAR compression.<br>
+            <br>
+On macOS, Finder compresses significantly slower than PeaZip, with "ZIP
+fast" compression being over 2x faster that Finder ZIP compression, and
+"7Z fast" compression being 1,5x faster while providing significantly
+better compression ratio (+5%, -64MB output size).<br>
             <br>
             <br>
             <h3 style="text-align: center;"><img
@@ -721,6 +787,11 @@ WinRar (RAR).<br>
 As for ZIP format extraction, 7-Zip, PeaZip, and WinRar performances
 are very close, while WinZip and Windows 10 Compressed Folders are
 significantly slower.<br>
+            <br>
+On macOS, Finder provides remarkably fast extraction of its own ZIp
+archive, outperforming PeaZip "ZIP fast" but being almost 2x slower
+than extraction of PeaZip "7Z fast", due to the .7Z format optimization
+for extraction speed holding true on macOS platform.<br>
             <br>
             <br>
             <h3 style="text-align: center;"><img
@@ -784,7 +855,7 @@ the main
 concerns, with WinRar and PeaZip providing faster ZIP compression
 even
 if at the cost of losing some compression ratio compared to other
-utilities<br>
+utilities.<br>
             <br>
             <span style="font-weight: bold;"><a
  name="best_compression_algorithm"></a></span>RAR and 7Z formats
