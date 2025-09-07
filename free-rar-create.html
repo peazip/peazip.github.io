@@ -281,18 +281,37 @@ its POSIX port p7zip project.<br>
             <br>
             <h3><big><big><span style="font-weight: bold;"><small>Create
 RAR
-files with scripts using Rar.exe backend</small><br>
+files with scripts using Rar backend</small><br>
             </span></big></big></h3>
             <br>
 Additionally,<span style="font-weight: bold;"> PeaZip can automatically
-configure itself to use WinRAR's Rar.exe to create RAR files from
+configure itself to use WinRAR's Rar.exe CLI binary to create RAR files
+from
 PeaZip's own GUI</span>, but only if WinRAR is installed in the system,
 as due RarLab's licensing terms for rar format no third parts utility
 can distribute a rar creation tool, unless asking RarLab for licensing
 the format.<br>
+On non-Windows systems, RarLab provides as alternative a <span
+ style="font-weight: bold;">Rar command line binary for Linux and macOS</span>,
+which PeaZip can automatically configure ro use as backend to create
+RAR archives.<br>
+            <br>
+In case PeaZip is not able to automatically find Rar.exe 32 or 64 bit,
+or the equivalent Rar for Linux /macOS systems, it is possible to <span
+ style="font-weight: bold;">manually set the correct path of the Rar
+binary</span>:<br>
+            <ol>
+              <li>From the Archive creation screen select "Custom/RAR"
+as archive format</li>
+              <li>From the Advanced tab check "RAR" checkbox if not
+already flagged (should be flagged by default)</li>
+              <li>Check "Manually set RAR binary" checkbox to be
+prompted a file picker dialog to manually select Rar.exe or equivalent<br>
+              </li>
+            </ol>
             <br>
             <span style="background-color: rgb(255, 238, 221);"><a
- name="free_rar_compression_software"></a>No
+ name="free_rar_compression_software"></a>Please note no
 alternative Open Source free RAR archiver utility (rar creator) is
 available: UNRAR
 is available
@@ -371,7 +390,8 @@ Wikipedia pages.<br>
  href="free-rar-create.html#create_rar_files">How to use PeaZip as free
 RAR compressor</a></big></big></big></h2>
             <br>
-If WinRar is installed in the system, providing the needed rar archives
+If WinRar (or the alternative CLI Rar tool for Linux or macOS) is
+installed in the system, providing the needed rar archives
 creation routines, it is possible to create rar files from PeaZip,
 which in that way becomes an alternative application for rar
 compression tasks.<br>
@@ -390,9 +410,11 @@ to the syntax the compressor is expecting. <br>
 RAR
 format on/off.</span><br>
 This allows using PeaZip GUI
-as alternative way to create RAR files: if WinRAR 32 or 64 bit is
+as alternative way to create RAR files: if WinRAR or equivalent utility
+is
 installed in the host system PeaZip will display "Custom/RAR" and
-autoconfigure itself, by default, to use Rar.exe as compressor.<br>
+autoconfigure itself, by default, to use Rar/Rar.exe as compressor as
+detailed in the previous chapter.<br>
 Due RarLab licensing / distribution terms, it is not possible to
 autonomously create archives in RAR format distributing, or creating a
 replacement for, Rar.exe, as explained in previous chapter: Rar.exe is
@@ -464,7 +486,7 @@ in example support for two factor authentication (password + keyfile),
 integrated archive conversion tool, secure deletion after archiving,
 easy file manager-like interface for composing the archive layout,
 ability to see, customize, and save task's command line, etc...<br>
-Employing Rar.exe backend allows PeaZip also to edit existing RAR
+Employing Rar CLI backend allows PeaZip also to edit existing RAR
 archives, adding or deleting files, and modifiyng existing files in
 archive.<br>
             <br>
