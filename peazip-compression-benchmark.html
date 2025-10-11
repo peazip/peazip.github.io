@@ -265,7 +265,8 @@ out-of-the-box compression settings.</span><br>
                         </p>
                         <p>Compare mainstream archive manager apps
 (7-Zip, PeaZip, WinRar, WinZip, Windows Compressed
-Folders), over multiple <a href="archive-file-formats-comparison.html">archive
+Folders, macOS Finder, Gnome Archive Manager), over multiple <a
+ href="archive-file-formats-comparison.html">archive
 formats
 (7z, rar, zip)</a>, for
 compression ratio, and
@@ -273,9 +274,11 @@ compression and extraction speed to find <a
  href="file-compression-performances.html">optimal
 compression performances tradeoff</a>.</p>
                         <p>The comparison is meant to simulate the case
-of user
+of an user
 with very basic needs and little knowledge
-about compression. </p>
+about compression, using integrated (or otherwuise very common) archive
+manager tools with out-of-the-box settings.<br>
+                        </p>
                         </td>
                       </tr>
                     </tbody>
@@ -310,35 +313,16 @@ macOS 15.5 (Apple Silicon)<br>
                           <li>Finder compression tool</li>
                           <li>PeaZip for macOS aarch64 10.6.1</li>
                         </ul>
+Ubuntu Linux 22.04 LTS x86_64
+                        <ul>
+                          <li>PeaZip for Linux GTK2 10.6.1</li>
+                          <li>Gnome Archive Manager</li>
+                        </ul>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                   <br>
-                  <table
- style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
- border="0" cellpadding="24" cellspacing="1">
-                    <tbody>
-                      <tr>
-                        <td colspan="1" rowspan="1"
- style="vertical-align: top; background-color: rgb(250, 250, 250);">
-                        <h4><big><span style="font-weight: bold;">Hardware
-settings</span></big></h4>
-                        <br>
-Windows: notebook with Intel Core i7-8565U CPU, 4
-physical cores with hyper-threading (8 logical cores), 8 GB RAM.<br>
-System disk 512 GB
-PCIe NVMe SSD with NTFS filesystem.<br>
-With 7-Zip benchmark score of 23500, this machine represents an entry
-level specs
-system for today's standards.<br>
-                        <br>
-macOS: 2020 MacBook Air with M1 chip.<br>
-7-Zip benchmark score 46000.<br>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
                   </td>
                   <td style="vertical-align: top; width: 24px;"><br>
                   </td>
@@ -388,7 +372,35 @@ most non-Windows systems. </li>
                       </tr>
                     </tbody>
                   </table>
-&nbsp;
+&nbsp; <br>
+                  <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+                    <tbody>
+                      <tr>
+                        <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);">
+                        <h4><big><span style="font-weight: bold;">Hardware
+settings</span></big></h4>
+                        <br>
+Windows: notebook with Intel Core i7-8565U CPU, 4
+physical cores with hyper-threading (8 logical cores), 8 GB RAM.<br>
+System disk 512 GB
+PCIe NVMe SSD with NTFS filesystem.<br>
+With 7-Zip benchmark score of 23500, this machine represents an entry
+level specs
+system for today's standards.<br>
+                        <br>
+Linux: virtual machine over previous hardware.<br>
+7-Zip benchmark score 8500<br>
+                        <br>
+macOS: 2020 MacBook Air with M1 chip.<br>
+7-Zip benchmark score 46000.<br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+&nbsp;&nbsp;
                   <table
  style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
  border="0" cellpadding="24" cellspacing="1">
@@ -463,7 +475,7 @@ compression corpus<img
             <big><span style="font-weight: bold;">Benchmark methods</span></big><br>
             <br>
             <a name="peazip_performances_comparison"></a>Benchmark
-input data is saved in system disk (PCIe <span
+input data is saved in system disk (solid state, <span
  style="font-weight: bold;">SSD</span>) and compressed to system
 disk, same partition, separate directory; the resulting archives are
 then extracted to
@@ -496,213 +508,249 @@ table, the lower the better for all columns</big></span></h4>
  cellpadding="3" cellspacing="0">
               <tbody>
                 <tr>
-                  <td style="vertical-align: top; width: 20%;"><br>
+                  <td style="vertical-align: top; width: 28%;"><br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compressed
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 18%;">Compressed
 size (MB)<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 18%;">Compression
 ratio<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Compression
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 18%;">Compression
 time (sec)<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(255, 255, 204);">Extraction
+ style="vertical-align: top; text-align: center; background-color: rgb(255, 255, 204); width: 18%;">Extraction
 time (sec)</td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">W10
+ style="vertical-align: top; text-align: right; width: 28%;">W10
 Compressed Folders<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">415,00<br>
+ style="vertical-align: top; text-align: center; width: 18%;">415,00<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">33,02%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">33,02%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">48,0<br>
+ style="vertical-align: top; text-align: center; width: 18%;">48,0<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">17,2<br>
+ style="vertical-align: top; text-align: center; width: 18%;">17,2<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+ style="vertical-align: top; text-align: right; width: 28%;">WinRar,
 ZIP default<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">407,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">407,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">32,38%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">32,38%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">24,0<br>
+ style="vertical-align: top; text-align: center; width: 18%;">24,0<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">9,1<br>
+ style="vertical-align: top; text-align: center; width: 18%;">9,1<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">WinRar,
+ style="vertical-align: top; text-align: right; width: 28%;">WinRar,
 RAR default<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">318,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">318,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">25,30%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">25,30%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">106,0<br>
+ style="vertical-align: top; text-align: center; width: 18%;">106,0<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">5,6<br>
+ style="vertical-align: top; text-align: center; width: 18%;">5,6<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">WinZip,
+ style="vertical-align: top; text-align: right; width: 28%;">WinZip,
 ZIP default<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">393,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">393,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">31,26%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">31,26%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">141,5<br>
+ style="vertical-align: top; text-align: center; width: 18%;">141,5<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">11,8<br>
+ style="vertical-align: top; text-align: center; width: 18%;">11,8<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">7-Zip, ZIP
+ style="vertical-align: top; text-align: right; width: 28%;">7-Zip, ZIP
 medium<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">396,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">396,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">31,50%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">31,50%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">118,1<br>
+ style="vertical-align: top; text-align: center; width: 18%;">118,1<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">8,9<br>
+ style="vertical-align: top; text-align: center; width: 18%;">8,9<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">7-Zip, 7Z
+ style="vertical-align: top; text-align: right; width: 28%;">7-Zip, 7Z
 medium<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">286,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">286,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">22,75%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">22,75%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">284,0<br>
+ style="vertical-align: top; text-align: center; width: 18%;">284,0<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">4,4<br>
+ style="vertical-align: top; text-align: center; width: 18%;">4,4<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">PeaZip,
+ style="vertical-align: top; text-align: right; width: 28%;">PeaZip,
 ZIP fast<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">426,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">426,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">33,89%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">33,89%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">28,8<br>
+ style="vertical-align: top; text-align: center; width: 18%;">28,8<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">9,5<br>
+ style="vertical-align: top; text-align: center; width: 18%;">9,5<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right;">PeaZip, 7Z
+ style="vertical-align: top; text-align: right; width: 28%;">PeaZip, 7Z
 fast<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">346,00</td>
+ style="vertical-align: top; text-align: center; width: 18%;">346,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">27,53%<br>
+ style="vertical-align: top; text-align: center; width: 18%;">27,53%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">56,4<br>
+ style="vertical-align: top; text-align: center; width: 18%;">56,4<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center;">3,9<br>
+ style="vertical-align: top; text-align: center; width: 18%;">3,9<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+ style="vertical-align: top; text-align: right; background-color: rgb(204, 255, 255); width: 28%;">macOS
 Finder,
 ZIP<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">410,00</td>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">410,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">32,62%<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">32,62%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">38,4<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">38,4<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">3,5<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">3,5<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+ style="vertical-align: top; text-align: right; background-color: rgb(204, 255, 255); width: 28%;">macOS
 PeaZip,
 ZIP fast<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">426,00</td>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">426,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">33,89%<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">33,89%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">16,4<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">16,4<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">5,3<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">5,3<br>
                   </td>
                 </tr>
                 <tr>
                   <td
- style="vertical-align: top; width: 20%; text-align: right; background-color: rgb(204, 255, 255);">macOS
+ style="vertical-align: top; text-align: right; background-color: rgb(204, 255, 255); width: 28%;">macOS
 PeaZip, 7Z
 fast<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">346,00</td>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">346,00</td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">27,53%<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">27,53%<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">25,8<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">25,8<br>
                   </td>
                   <td
- style="vertical-align: top; width: 20%; text-align: center; background-color: rgb(204, 255, 255);">1,9<br>
+ style="vertical-align: top; text-align: center; background-color: rgb(204, 255, 255); width: 18%;">1,9<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: right; width: 28%;">Linux
+Gnome Archive Manager<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">410,00<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">32,62%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">85,0<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">17,5<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: right; width: 28%;">Linux
+PeaZip, ZIP fast<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">426,00<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">33,89%<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">41,6<br>
+                  </td>
+                  <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255); text-align: center; width: 18%;">12,3<br>
                   </td>
                 </tr>
               </tbody>
@@ -761,6 +809,11 @@ fast" compression being over 2x faster that Finder ZIP compression, and
 "7Z fast" compression being 1,5x faster while providing significantly
 better compression ratio (+5%, -64MB output size).<br>
             <br>
+On Linux results are quite similar, Gnome Archive Manager compresses
+significantly slower (2x) than PeaZip in the default "ZIP fast" mode,
+scoring a modest gain in compression ratio (+1,3%, -16MB output size)
+for Gnome Archive Manager.<br>
+            <br>
             <br>
             <h3 style="text-align: center;"><img
  alt="what is the fastest file archiver software"
@@ -793,10 +846,13 @@ As for ZIP format extraction, 7-Zip, PeaZip, and WinRar performances
 are very close, while WinZip and Windows 10 Compressed Folders are
 significantly slower.<br>
             <br>
-On macOS, Finder provides remarkably fast extraction of its own ZIp
+On macOS, Finder provides remarkably fast extraction of its own ZIP
 archive, outperforming PeaZip "ZIP fast" but being almost 2x slower
 than extraction of PeaZip "7Z fast", due to the .7Z format optimization
 for extraction speed holding true on macOS platform.<br>
+            <br>
+On Linux, PeaZip "ZIP fast" outperforms Gnome Archive Manager in
+extraction speed by a x1,4 factor.<br>
             <br>
             <br>
             <h3 style="text-align: center;"><img
