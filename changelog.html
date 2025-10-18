@@ -249,21 +249,16 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.6.1 update introduces bugfixes, updated translations, and an
-extensive
-revision of packaged components.<br>
-10.6.x line brings a major overhaul of the file/archive browser,
-introducing the dynamic virtual mode which improves performances when
-displaying a very large number of items at once.<br>
-Alongside many updates, archive pre-parsing is improved,
-show/hide hidden files is made easier, and search function is now
-available for Settings.<br>
-Non-Windows versions can now
-report free/disk space, and can automatically locate the RAR binary if
-installed in the system.<br>
-Backed are updated with 7z 25.01, Pea 1.26, and Zpaqfranz which
-replaces Zpaq,
-keeping full compatibility in terms of file format and scripting syntax.<br>
+PeaZip 10.7.0 substantially improves the file manager, with a more
+capable dynamic virtual mode on macOS, the ability to display file's
+thumbnails on all platforms (plus the option to show thumbnails on
+request when automatic thumbnail are turned off), and new integrated
+text and image viewers.<br>
+Alongside many updates and fixes, the new release improves the handling
+of errors and the capability to preview items in archives.<br>
+This update also brings an extensive refactoring of the sources to
+improve readability and maintainability.<br>
+Backed are updated with Pea 1.27.<br>
             <br>
             <span style=""></span>Sources are compiled with Lazarus
 4.2, and are still compatible
@@ -288,8 +283,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.6.1/SHA256.txt">SHA256.txt
-10.6.1</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.7.0/SHA256.txt">SHA256.txt
+10.7.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -309,6 +304,119 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2025 10 18<br>
+            <div style="margin-left: 40px;">10.7.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.27<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Legacy code cleanup<br>
+            <span style="font-weight: bold;">Sources refactored</span>
+to improve readability and maintainability<br>
+            <div style="margin-left: 40px;">Deleted legacy
+ansiutf8_utils unit, functions moved to list_utils<br>
+            </div>
+            <div style="margin-left: 40px;">Improved naming of units
+and items, expanded comments<br>
+Unit peach organized in subsections collecting routines sharing similar
+scope, and unloaded of various routines better suited into other units<br>
+            </div>
+            <div style="margin-left: 80px;">Self-checking hash values,
+and various calls to external routines, moved to unit externalprograms<br>
+Various filenames-related routines moved to unit list_utils<br>
+Various helper routines moved to pea_utils<br>
+            </div>
+Updated crypto/hash library units to apply pure Pascal implementation
+of algorithms for any arbitrary non-x86/x86_64 architecture<br>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed loading compression
+presets from archive conversion screen<br>
+Fixed displaying CRC and folders content analysis in non-Window systems<br>
+Fixed Qt6 performances selecting of large number of items in the file
+browser<br>
+Fixed "Explore path (PeaZip)" now correctly reset search filter<br>
+Fixed file browser no longer steal focus when updated, the behavior
+applied to various Linux/BSD DE<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">(Linux, macOS) Improved
+detection and usage of ClamAV<br>
+(macOS) Improved Dynamic virtual mode<br>
+(macOS) Added Quick Look to "Open with" menu<br>
+Can now preview items in Zpaq archives, if "extract to absolute paths"
+and "extract all revisions" options are unchecked (as by default)<br>
+Improved browsing some types of archives (e.g. .pkg)<br>
+Improved image viewer functions<br>
+            <div style="margin-left: 40px;">Can now <span
+ style="font-weight: bold;">display image thumbnails</span> in the file
+manager on all platforms (previously supported only on Windows)<br>
+            <div style="margin-left: 40px;">Thumbnails are displayed
+when navigating the filesystem, not inside archives (no content is ever
+automatically decompressed, use safer preview function instead), are
+always generated on the fly (no thumbnail is ever saved/cached by the
+application to enhance privacy), and are disabled when file manager is
+in virtual mode<br>
+Thumbnails are displayed automatically when icon size is 48px or
+larger, can be set on/off manually from main menu &gt; Organize &gt;
+Show picture thumbnails option<br>
+            </div>
+Added entry to <span style="font-weight: bold;">view thumbnails on
+request</span>, from context menu &gt; File manager, or Ctrl+Space
+keyboard shortcut (applies same notes as for automatic thumbnails)<br>
+Added new <span style="font-weight: bold;">image viewer</span>
+component to view images on request, from context menu, File
+manager &gt; View images, or Ctrl+Space keyboard shortcut<br>
+            <div style="margin-left: 40px;">Can zoom in (+ or up arrow)
+and out (- or down arrow) from 5% to 1000%, fit to screen (0), screen
+height (Shift+0), screen width (Ctrl+0), jump to 100% to 500% (1..5)
+and down to 20% (Ctrl+2..Ctrl+5)<br>
+Can toggle immersive mode on/off (double click or enter) if supported
+by the platform, Esc exits immersive mode or exits the image viewer if
+not in immersive mode<br>
+Can view previous (back arrow or left active border) and next image
+(forward arrow or space or right active border) the in same directory
+or search filter, or jump to first (Home) or last (End)<br>
+Can rename and delete images from disk with all supported deletion
+routines (move to Trash, quick delete, zero delete, secure delete)<br>
+Can view images when the file manager is in virtual mode, and can <span
+ style="font-weight: bold;">preview images inside archives</span> (in
+this case one preview at time)<br>
+The component is meant primarily as a viewer, most of the file
+management functions (as copy and move, find duplicates, modify the
+image) are featured in the file browser and are not duplicated in the
+viewer<br>
+            </div>
+            </div>
+Improved preview of archived files, added option to explore the path of
+preview with system browser<br>
+Improved <span style="font-weight: bold;">Functions menu</span>, a
+more comprehensive selection of core app's functions are now available
+in the menu, listed alphabetically in order to be easily discovered by
+users<br>
+Improved context menu, File tools &gt; <span style="font-weight: bold;">Text
+preview</span>: can now search, count lines / words / chars, change
+text
+encoding
+(ANSI, ASCII, Unicode, UTF-8), and word wrap <br>
+Updated Line custom Theme<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Fixed progress window, now
+reporting correct compression levels for Brotli and Zpaq<br>
+Improved handling output if extraction ends in error or is cancelled by
+the user<br>
+            <div style="margin-left: 40px;">Added option to keep files
+if extraction is not successful for Zstd backend (in Advanced tab of
+extraction screen) <br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2025 08 17<br>
             <div style="margin-left: 40px;">10.6.1<br>

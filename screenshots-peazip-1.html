@@ -234,7 +234,7 @@ bar, main menu, chnaging file browser style, etc - are showcased in the
  src="peazip.png" title="PeaZip file explorer and archive manager"
  alt="freeware file manager utility"
  style="border: 0px solid ; width: 850px; height: 543px;"></a></h2>
-            <span style="font-style: italic;">Screenshot 1: file
+            <span style="font-style: italic;">Screenshot: file
 manager exploring a path on Windows, in details mode. On the left the
 smart treeview.</span><br>
             <br>
@@ -253,31 +253,71 @@ expanded, and added to Bookmarks from Tab bar's context menu.<br>
  alt="tabbed file manager" title="PeaZip file manager tabs"
  src="tabbed-file-manager.png"
  style="border: 0px solid ; width: 849px; height: 523px;"></a></h2>
-            <span style="font-style: italic;">Screenshot 2: tabbed file
+            <span style="font-style: italic;">Screenshot: tabbed file
 manager, Tool bar and main menu are hidden to focus more on file
 browsing features</span><br>
             <br>
             <br>
             <h3><big style="font-weight: bold;">PeaZip file manager</big></h3>
             <br>
-The file browser can be set to <span style="font-weight: bold;">list
+On all supported systems the file browser can be set to <span
+ style="font-weight: bold;">list
 mode</span> - displaying files in
 multiple columns - or in <span style="font-weight: bold;">Icons and
 images mode</span>, which shows files as large icons and displays
-preview of graphich files (not inside archive, as for security reason
+preview of graphich files.<br>
+            <span style="font-weight: bold;">Thumbnails are shown
+whenever the icon size is set to 48px or larger, s</span>ize of icons
+can be set from Size submenu in Style menu, "..." button on the right
+of the app.<br>
+            <span style="font-weight: bold;">Thumbnails can be
+displayed on request</span>, even when show thumbnails mode is turnd
+off, pressing <span style="font-weight: bold;">Shift+Space</span> or
+from context menu &gt; File manager &gt; View thumbnails.<br>
+Thumbnail preview is not enabled from inside archive, as for security
+reason
 no content is even automatically uncompressed unless explicitly
-requested by the user).<br>
-From main menu &gt; Organize it is possible to set <span
- style="font-weight: bold;">Enlarge file broser icons </span>which is
-especially handy when it is needed to use the app as an image viewer,
-as in the screenshot above.<br>
+requested by the user.<br>
             <br>
-            <h3><a href="peazip-image-viewer.png" target="_blank"><img
- title="Graphic file manager" alt="file explorer"
- src="peazip-image-viewer.png"
- style="border: 0px solid ; width: 850px; height: 543px;"></a></h3>
-            <span style="font-style: italic;">Screenshot 3: the file
-manager in (large) Icons and images mode, showing thumbnails of pictures</span><br>
+            <h3><a href="peazip-image-viewer.png"><img
+ alt="macos image viewer app" title="PeaZip showing image thumbnails"
+ src="peazip-image-viewer-macos.png"
+ style="border: 0px solid ; width: 848px; height: 519px;"></a><a
+ href="peazip-image-viewer.png" target="_blank"><br>
+            </a></h3>
+            <span style="font-style: italic;">Screenshot: PeaZip file
+manager in (large) Icons mode, showing thumbnails of pictures on macOS
+in dark mode<br>
+            <br>
+            </span>It is possible, from filesystem or from archives as
+well, to view the
+selected image in the intrgrated <span style="font-weight: bold;">Image
+viewer</span> pressing the <span style="font-weight: bold;">Space</span>
+key or from context menu &gt; File manager &gt; View images.<br>
+This tool can switch to <span style="font-weight: bold;">immersive mode</span>
+(Enter or double click), <span style="font-weight: bold;">zoom in/out</span>
+(+/-), <span style="font-weight: bold;">navigate images</span> in the
+same directory or search filter (Space, Backspace, arrows), <span
+ style="font-weight: bold;">Rename </span>(F2) or <span
+ style="font-weight: bold;">Delete </span>images.<br>
+The image editing functions, as rotate, crop, transform (resize,
+convert), and find duplicates, are not replicated in the image viewer,
+and can be accessed from the file manager (context menu &gt; File
+manager &gt; Image manager), or setting the toolbar to Image manager in
+"..." Style menu.<br>
+Unlike the thumbnails viewer, the image viewer <span
+ style="font-weight: bold;">can preview compressed images inside
+archives</span>: the operation triggers preview extraction (into a
+temporary work path) for each single file the user opens in the image
+viewer.<span style="font-style: italic;"><br>
+            <br>
+            </span>
+            <h3><img alt="linux image viewer utility"
+ title="PeaZip image viewer" src="peazip-image-viewer-linux.png"
+ style="width: 849px; height: 489px;"></h3>
+            <span style="font-style: italic;">Screenshot: PeaZip image
+viewer; in background the file manager showing thumbnails in Details
+mode (large icons), on Linux with light theme</span><br>
             <br>
             <br>
             <h3><big><span style="font-weight: bold;">PeaZip archive
@@ -372,17 +412,17 @@ Windows Theme with dak color scheme) in Settings &gt; Ease of Access
             <span style="font-style: italic;">Screnshot: PeaZip in dark
 mode on macOS</span><br>
             <br>
-            <h2><a href="bsd-dark.png" target="_blank"><img
+            <h3><a href="bsd-dark.png" target="_blank"><img
  alt="dark mode file manager" title="PeaZip in dark mode on FreeBSD"
  src="bsd-dark.png"
- style="border: 0px solid ; width: 849px; height: 525px;"></a></h2>
+ style="border: 0px solid ; width: 849px; height: 525px;"></a></h3>
             <span style="font-style: italic;">Screnshot: PeaZip in dark
 mode on FreeBSD</span><br>
             <br>
-            <h2><a href="linux-dark-mode.png" target="_blank"><img
+            <h3><a href="linux-dark-mode.png" target="_blank"><img
  alt="dark mode linux file explorer"
  title="PeaZip in dark mode on Linux Mint" src="linux-dark-mode.png"
- style="border: 0px solid ; width: 849px; height: 525px;"></a></h2>
+ style="border: 0px solid ; width: 849px; height: 525px;"></a></h3>
             <span style="font-style: italic;">Screnshot: PeaZip in dark
 mode on Linux</span><br>
             <br>
@@ -427,8 +467,12 @@ limitations)<br>
  alt="open source file browser" title="Windows Dark mode"
  src="peazip-windows-darkmode.png"
  style="border: 0px solid ; width: 850px; height: 557px;"></a></h2>
-            <p><br>
-            <span style="font-weight: bold;"><big>Custom themes</big><br>
+            <span style="font-style: italic;">Screnshot: PeaZip in dark
+mode on Windows</span><br>
+            <span style="font-style: italic;"></span>
+            <p><span style="font-style: italic;"><br>
+            </span></p>
+            <p> <span style="font-weight: bold;"><big>Custom themes</big><br>
             </span></p>
             <p>If it is preferred to change the look &amp; feel of
 PeaZip application only, from PeaZip Options
@@ -456,8 +500,9 @@ gray).<br>
  alt="open source file manager" title="PeaZip Mocha theme"
  src="peazip-dark-mode.png"
  style="border: 0px solid ; height: 558px; width: 850px;"></a></h3>
-            <p><br>
-            </p>
+            <span style="font-style: italic;">Screnshot: PeaZip set
+with gray app color pre-set</span><br>
+            <br>
             <p> <a style="font-weight: bold;"
  name="cross_platform_file_manager"></a><a style="font-weight: bold;"
  href="screenshots-peazip-1.html#file_manager"><big><big><big>Supported
