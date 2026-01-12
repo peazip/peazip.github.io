@@ -490,10 +490,13 @@ volume that will usually be smaller containing only the remaining data
 to complete the content - but if a real error detection control is
 needed to validate integrity of received data, use file hasing (or
 checksum) to verify volumes.</span><br>
+            <br style="font-weight: bold;">
+            <h4 style="font-weight: bold;"><big><big>Merge multi-volume
+archives with PeaZip</big></big></h4>
             <br>
-            <a name="read_split_file"></a>PeaZip can process, only for
-merging, WinZip spanned archives (.Z01)
-and WinRar spanned archives (.R01, or .partX.rar).<br>
+            <a name="read_split_file"></a>PeaZip can join multi volume
+archives: 7-Zip split archives (.001), WinZip spanned archives (.Z01)
+and WinRar spanned archives (.R00, or .PART1.RAR).<br>
             <table style="width: 100%; text-align: left;" border="0"
  cellpadding="24" cellspacing="0">
               <tbody>
@@ -509,8 +512,14 @@ multipart file or archive, to join the data
 back to obtain the original file, <span
  style="font-weight: bold; background-color: rgb(255, 238, 221);">move
 or copy all the parts of the file in the same
-folder before proceeding with extraction</span><br>
-                  </td>
+folder before proceeding with extraction.<br>
+                  </span><span style="font-weight: bold;">Please verify
+that all volumes are available</span>, otherwise data will be missing
+and operation can fail: <span style="font-weight: bold;">each volume
+of the spanned archive is a file with a progressive index number in the
+extension, or in a suffix before the extensio</span>n.<span
+ style="font-weight: bold; background-color: rgb(255, 238, 221);"><br>
+                  </span> </td>
                 </tr>
                 <tr>
                   <td style="width: 48px; vertical-align: top;">
@@ -523,10 +532,14 @@ folder before proceeding with extraction</span><br>
 merge spanned volumes, <span style="font-weight: bold;">open the
 first archive's part</span> with
 PeaZip, i.e. doubleclick on the
-first volume wich is usually identified with extension .001, .Z01, R01,
-.PART1 or similar - please note some times counter may have set to
-start from 000 (R00,
-Z00) instead.<br>
+first volume (the one with lower index counter value) wich is usually
+identified with extension .001, .PART1.RAR or .PART1.ZIP, or
+similar.<br>
+Some archives may instead have .Z01 or .R00 extensions (WinRar's legacy
+volume names), in those cases the first volume - the one to be opened -
+should simply have .ZIP or .RAR extension.<br>
+In some infrequent cases even different naming may have been used, i.e.
+starting from .000, .R01, or .Z00.<br>
 Now you can <span style="font-weight: bold;">extract it</span> with
 "Extract" or "Extract all" from
 PeaZip's tool bar or context menu, or just drag content from PeaZip to
