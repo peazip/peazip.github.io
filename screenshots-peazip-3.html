@@ -324,14 +324,34 @@ operations).<br>
             <big><span style="font-weight: bold;">Two panes drag and
 drop extraction (in-app drag &amp; drop)</span></big><br>
             <br>
-PeaZip can extract items dragging from the file / archive browser area
-to the navigation side bar on the left of the application - which acts
+PeaZip can extract items dragging from the file browser / archive
+browser area
+to the treeview / navigation side bar on the left of the application -
+which acts
 as a second pane in the scope of this operation.<br>
-This drag &amp; drop mechanism <span style="font-weight: bold;">works
-on all supported systems</span>.<br>
-This allows to drag &amp; drop extract items directly to any path in
+            <span style="font-weight: bold;">This drag &amp; drop
+mechanism works
+on all supported systems.</span><br>
+On drop action, the <span style="font-weight: bold;">drag and drop
+context menu</span> is displayed, allowing to select the desired
+function to perform on the dropped item(s): <span
+ style="font-weight: bold;">extract here</span>, extract to smart / new
+folder (entire archives, or selected items from archive), or <span
+ style="font-weight: bold;">copy </span>/ <span
+ style="font-weight: bold;">move files</span> (when browsing the
+filesystem).<br>
+This allows the internal drag and drop implementation to work like in a
+dual pane file manager<br>
+            <ul>
+              <li>archive manager: drag &amp; drop extract items
+directly to any path in
 bookmarks or history (navigation bar) or any path (tree view), and
-works even dropping to the minified compact side bar.<br>
+works even dropping to the minified compact side bar</li>
+              <li>file manager: copy and move items from the file
+browser to any aforementioned path visible in the treeview / navigation
+area, automatically jumping to browse the destination path.<br>
+              </li>
+            </ul>
             <br>
             <br>
             <big style="font-weight: bold;">Drag and drop operations
@@ -670,7 +690,8 @@ click on a screenshot to view it full size in a new tab<br>
             </table>
             <p><span style="font-weight: bold;">Synopsis: Fast drag and
 drop extraction from archives with PeaZip custom drag&amp;drop extract
-implementation. Context menu integration on Windows (and Windows 11
+implementation, internal two pane -style drag and drop action. Context
+menu integration on Windows (and Windows 11
 mini context menu), Linux, and macOS to compress, test and extract
 archives from system's context menu.<br>
             </span></p>

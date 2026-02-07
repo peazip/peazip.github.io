@@ -249,16 +249,17 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.8.0 overhauls previewing items inside archives, enabling
-preview features for more archive formats, and adding option to preview
-items with File tools, and with the integrated image viewer.<br>
-Alongside many other updates and fixes, the new release improves
-handling RAR and TAR archives.<br>
-Backend are updated with Pea 1.28 and Brotli 1.2.0.<br>
+PeaZip 10.9.0 introduces fixes and QOL updates to improve the overall
+user experience.<br>
+The file manager features new alternative context menus and keyboard
+shortcuts, customizable middle mouse button click action, improves
+reactivity, internal drag and drop, handling of rar files and multi
+volume archives, and overhauls Image viewer and Text viewer tools.<br>
+Backend are updated with Pea 1.29 providing renewed GUI interface for
+Pea and Unpea functions.<br>
             <br>
-            <span style=""></span>Sources are compiled with Lazarus
-4.2, and are still compatible
-with Lazarus 3.x and 2.x.<br>
+Sources are compiled with Lazarus 4.2, and are still compatible with
+Lazarus 3.x and 2.x.<br>
             <br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
             <br>
@@ -279,8 +280,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.8.0/SHA256.txt">SHA256.txt
-10.8.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/10.9.0/SHA256.txt">SHA256.txt
+10.9.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -300,6 +301,115 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2024 10 26 ..
 CURRENT </div>
+            <br>
+2026 02 07<br>
+            <div style="margin-left: 40px;">10.9.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">Pea 1.29<br>
+            <div style="margin-left: 40px;">Pea and Unpea GUI updated<br>
+            </div>
+            <div style="margin-left: 80px;">input and output names can
+now be clicked to browse containing folder<br>
+improved readability of sizes, progress percentage, and compression
+ratio<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Code cleanup<br>
+            <div style="margin-left: 40px;">Removed obsolete
+configuration parameters for clarity<br>
+            </div>
+Fixed language file names not following ISO639 standard<br>
+            <div style="margin-left: 40px;">Chinese Simplified changed
+from chs to zh-cn<br>
+Chinese Traditional changed from cht to zh-hant<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Improved <span
+ style="font-weight: bold;">image viewer</span><br>
+            <div style="margin-left: 40px;">on most widgetsets, the
+default fullscreen windowed mode now correctly detects usable vertical
+and horizontal size, and automatically displays vertical and horizontal
+scroll bars if needed<br>
+            </div>
+Improved <span style="font-weight: bold;">internal drag and drop</span>
+(between file browser area and treeview area)<br>
+            <div style="margin-left: 40px;">the action now always
+displays the drag and drop context menu which allows to chose the
+function to perform on items being dragged<br>
+            </div>
+            <div style="margin-left: 40px;">Copy here and Move here
+functions are now available when the action is started while browsing
+the filesystem<br>
+            </div>
+Improved <span style="font-weight: bold;">text viewer</span><br>
+            <div style="margin-left: 40px;">can now detect BOM headers<br>
+can now word wrap (Ctrl+W) and set case sensitive search (Ctrl+S) from
+keyboard shortcut, Ctl+B toggle bold, Ctrl+M toggle monotype font
+(optionally can set custom monotype font), and zoom in/out
+(Ctrl+up/down or +/-, Ctrl+0 to reset)<br>
+options set in the text viewer GUI are now persistent<br>
+hex viewer uses the same monotype font of text viewer (which can be
+optionally customized in the text viewer GUI)<br>
+            </div>
+New <span style="font-weight: bold;">alternative context menus</span>
+for Open with (Ctrl+Alt+Rightclick) and Rename (Shift+Alt+Rightclick)
+actions<br>
+New <span style="font-weight: bold;">keyboard shortcuts</span><br>
+            <div style="margin-left: 40px;">Space is now the general
+internal viewer keyboard shortcut, automatically open Text viewer or
+Image viewer depending on the selected content<br>
+Shift+Space open selected file(s) in Text viewer<br>
+Ctrl+Alt+Space open selected file(s) in Hex viewer<br>
+Ctrl+Shift+Space calculate checskum/hash (default SHA256) of selected
+file(s)<br>
+Shift+E expand/collapse <span style="font-weight: bold;">archive tree</span><br>
+            </div>
+Various QOL improvement<br>
+            <div style="margin-left: 40px;">A few icons updated<br>
+Keyfile size limited to first 100MB to preserve performances (limit can
+be optionally disabled in Settings, Privacy and Security group)<br>
+Improved <span style="font-weight: bold;">automatic rar binary
+detection</span> in non-Windows systems<br>
+Improved <span style="font-weight: bold;">speed and efficiency </span>in
+browsing archives containing a large number of items, -18% RAM and
+-400ms on reference 250K items archive<br>
+Improved information reporting in task progress window<br>
+Improved handling of <span style="font-weight: bold;">multi volume
+archives</span><br>
+Introduced async deletion for temporary preview files while browsing,
+to improve reactivity of the file manager<br>
+It is now possible to delete current archive (instead of selected
+items) from the dropdown menu on the right of "Delete from archive"
+button<br>
+            <span style="font-weight: bold;">Middle mouse button click</span>
+can now be customized (Settings &gt; File manager) to perform up, back,
+rename, open in a new tab (default), open in a new window functions<br>
+Prevented not necessary flashing of the application GUI in some
+instances<br>
+Reorganized closing sequence to assure configuration is timely saved
+even in cases of time-consuming sync deletion of temporary preview files<br>
+Reorganized startup sequence to work more consistently on all widget
+sets, displaying progress bar earlier (if applicable), and reducing
+possible issues<br>
+Updated freedesktop_integration documentation for better integration
+with Flatpak and similar environments<br>
+            </div>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed inconsistencies
+experienced for some archive formats when Test function is invoked from
+from context menu and scripts<br>
+Fixed incorrect alphabetical sorting displayed in some archives<br>
+Fixed incorrect reset of file manager column sizes on Qt6<br>
+Fixed possible extension duplication for some archive formats<br>
+Fixed unexpected lock of archives preventing modification <br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2025 12 06<br>
             <div style="margin-left: 40px;">10.8.0<br>
