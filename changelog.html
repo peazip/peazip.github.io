@@ -221,7 +221,7 @@ RELEASE
 NOTES</a></p>
               </li>
               <li>
-                <p><a href="#bug_fixes_log">PEAZIP 10.X CHANGE LOG
+                <p><a href="#bug_fixes_log">PEAZIP 11.X CHANGE LOG
 (CURRENT
 VERSION)</a></p>
               </li>
@@ -249,14 +249,14 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 10.9.0 introduces fixes and QOL updates to improve the overall
-user experience.<br>
-The file manager features new alternative context menus and keyboard
-shortcuts, customizable middle mouse button click action, improves
-reactivity, internal drag and drop, handling of rar files and multi
-volume archives, and overhauls Image viewer and Text viewer tools.<br>
-Backend are updated with Pea 1.29 providing renewed GUI interface for
-Pea and Unpea functions.<br>
+PeaZip reached the new major version 11.0.0, which consolidates the
+10.x line evolution with bugfixes and code cleanup.<br>
+This release improves archive browsing speed, enhances the file
+manager (Bookmarks, internal app-to-app drag and drop, rendering
+engine...), and
+introduces new functions for password entropy rating,
+and batch archives testing.<br>
+Backend are updated to 7z/p7zip 26.00 and Pea 1.30.<br>
             <br>
 Sources are compiled with Lazarus 4.2, and are still compatible with
 Lazarus 3.x and 2.x.<br>
@@ -280,8 +280,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/10.9.0/SHA256.txt">SHA256.txt
-10.9.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/11.0.0/SHA256.txt">SHA256.txt
+11.0.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -295,1078 +295,85 @@ You can check hash values of current release in <a
  style="background-color: rgb(255, 255, 255); vertical-align: top;">
             <h2><big><big><big><a style="font-weight: bold;"
  name="bug_fixes_log"></a><a href="#peazip_bugfix_log"><span
- style="font-weight: bold;">PeaZip 10 change log
+ style="font-weight: bold;">PeaZip 11 change log
 (current
 version)</span><br>
             </a></big></big></big></h2>
-            <div style="text-align: right;">2024 10 26 ..
+            <div style="text-align: right;">2026 04 06 ..
 CURRENT </div>
             <br>
-2026 02 07<br>
-            <div style="margin-left: 40px;">10.9.0<br>
+2026 04 06<br>
+            <div style="margin-left: 40px;">11.0.0<br>
             <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Pea 1.29<br>
-            <div style="margin-left: 40px;">Pea and Unpea GUI updated<br>
-            </div>
-            <div style="margin-left: 80px;">input and output names can
-now be clicked to browse containing folder<br>
-improved readability of sizes, progress percentage, and compression
-ratio<br>
-            </div>
+            <div style="margin-left: 40px;">7z/p7zip 26.00<br>
+Pea 1.30<br>
             </div>
             <br>
 CODE<br>
-            <div style="margin-left: 40px;">Code cleanup<br>
-            <div style="margin-left: 40px;">Removed obsolete
-configuration parameters for clarity<br>
-            </div>
-Fixed language file names not following ISO639 standard<br>
-            <div style="margin-left: 40px;">Chinese Simplified changed
-from chs to zh-cn<br>
-Chinese Traditional changed from cht to zh-hant<br>
-            </div>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;">Improved <span
- style="font-weight: bold;">image viewer</span><br>
-            <div style="margin-left: 40px;">on most widgetsets, the
-default fullscreen windowed mode now correctly detects usable vertical
-and horizontal size, and automatically displays vertical and horizontal
-scroll bars if needed<br>
-            </div>
-Improved <span style="font-weight: bold;">internal drag and drop</span>
-(between file browser area and treeview area)<br>
-            <div style="margin-left: 40px;">the action now always
-displays the drag and drop context menu which allows to chose the
-function to perform on items being dragged<br>
-            </div>
-            <div style="margin-left: 40px;">Copy here and Move here
-functions are now available when the action is started while browsing
-the filesystem<br>
-            </div>
-Improved <span style="font-weight: bold;">text viewer</span><br>
-            <div style="margin-left: 40px;">can now detect BOM headers<br>
-can now word wrap (Ctrl+W) and set case sensitive search (Ctrl+S) from
-keyboard shortcut, Ctl+B toggle bold, Ctrl+M toggle monotype font
-(optionally can set custom monotype font), and zoom in/out
-(Ctrl+up/down or +/-, Ctrl+0 to reset)<br>
-options set in the text viewer GUI are now persistent<br>
-hex viewer uses the same monotype font of text viewer (which can be
-optionally customized in the text viewer GUI)<br>
-            </div>
-New <span style="font-weight: bold;">alternative context menus</span>
-for Open with (Ctrl+Alt+Rightclick) and Rename (Shift+Alt+Rightclick)
-actions<br>
-New <span style="font-weight: bold;">keyboard shortcuts</span><br>
-            <div style="margin-left: 40px;">Space is now the general
-internal viewer keyboard shortcut, automatically open Text viewer or
-Image viewer depending on the selected content<br>
-Shift+Space open selected file(s) in Text viewer<br>
-Ctrl+Alt+Space open selected file(s) in Hex viewer<br>
-Ctrl+Shift+Space calculate checskum/hash (default SHA256) of selected
-file(s)<br>
-Shift+E expand/collapse <span style="font-weight: bold;">archive tree</span><br>
-            </div>
-Various QOL improvement<br>
-            <div style="margin-left: 40px;">A few icons updated<br>
-Keyfile size limited to first 100MB to preserve performances (limit can
-be optionally disabled in Settings, Privacy and Security group)<br>
-Improved <span style="font-weight: bold;">automatic rar binary
-detection</span> in non-Windows systems<br>
-Improved <span style="font-weight: bold;">speed and efficiency </span>in
-browsing archives containing a large number of items, -18% RAM and
--400ms on reference 250K items archive<br>
-Improved information reporting in task progress window<br>
-Improved handling of <span style="font-weight: bold;">multi volume
-archives</span><br>
-Introduced async deletion for temporary preview files while browsing,
-to improve reactivity of the file manager<br>
-It is now possible to delete current archive (instead of selected
-items) from the dropdown menu on the right of "Delete from archive"
-button<br>
-            <span style="font-weight: bold;">Middle mouse button click</span>
-can now be customized (Settings &gt; File manager) to perform up, back,
-rename, open in a new tab (default), open in a new window functions<br>
-Prevented not necessary flashing of the application GUI in some
-instances<br>
-Reorganized closing sequence to assure configuration is timely saved
-even in cases of time-consuming sync deletion of temporary preview files<br>
-Reorganized startup sequence to work more consistently on all widget
-sets, displaying progress bar earlier (if applicable), and reducing
-possible issues<br>
-Updated freedesktop_integration documentation for better integration
-with Flatpak and similar environments<br>
+            <div style="margin-left: 40px;">Options &gt; Settings,
+Browser optimization levels improved and optimized to better fit more
+user cases, generally <span style="font-weight: bold;">improving speed
+on larger archives</span>, and making performances more uniform for
+different archive types<br>
+            <div style="margin-left: 40px;">Archive folders content
+calculation step is now better matched with browser optimization level<br>
+Archive pre-parsing step (TOC verification) is improved for various
+cases, up to -87% time if archive TOC is not ordered by name, and up to
+-94% for very large archives over 100Ks items regardless TOC order<br>
+Archive treeview rendering step improved, -30% time, and is now better
+matched with browser optimization level<br>
             </div>
 Various fixes<br>
-            <div style="margin-left: 40px;">Fixed inconsistencies
-experienced for some archive formats when Test function is invoked from
-from context menu and scripts<br>
-Fixed incorrect alphabetical sorting displayed in some archives<br>
-Fixed incorrect reset of file manager column sizes on Qt6<br>
-Fixed possible extension duplication for some archive formats<br>
-Fixed unexpected lock of archives preventing modification <br>
-            </div>
-            </div>
-            </div>
-            </div>
-            <br>
-2025 12 06<br>
-            <div style="margin-left: 40px;">10.8.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Brotli 1.2.0<br>
-Pea 1.28<br>
-            </div>
-            <br>
-CODE<br>
-            <div style="margin-left: 40px;">Added new translations and
-expanded language selection menu<br>
-Added option to internally pass to processes a single command line or a
-list of parameters (default off, Options &gt; Settings, Advanced tab),
-to introduce more flexibility in escaping special characters and better
-suit different cases of use on different operating systems<br>
-UTF-8 text files for internal use (configurations, texts, themes) no
-longer strictly needs to have BOM header<br>
-Various fixes<br>
-            <div style="margin-left: 40px;">Fixed .rar extension
-wrongly applied twice in some cases<br>
-Fixed handling of extensions in extraction and conversion of .tar.pea
-archives<br>
-Added auto refresh of TOC-encrypted ARC files when password is provided<br>
-Improved handling of password when it is set to not be kept for the
-current session<br>
+            <div style="margin-left: 40px;">Fixed auto ask password for
+encrypted ARC files<br>
+Fixed inconsistencies of icons for Bookmarks, Session history, and Tabs<br>
+Fixed preserve archive breadcrumb on forced refresh events<br>
+Fixed translation of special folders names in Bookmarks<br>
+Prevented starting multiple "auto open tar" events in compressed tar.*
+archives, unless the archive is closed and re-opened<br>
             </div>
             </div>
             <br>
 FILE MANAGER<br>
             <div style="margin-left: 40px;">Added <span
- style="font-weight: bold;">analisys of header's "magic bytes"</span>
-when opening archives, to gather furter information about the file,
-which is displayed in the app's title bar alongside other archive's
-stats<br>
-(Windows) Added link to Apple sync and backup directory in navigation
-bar, Filesystem &gt; ... section<br>
-Added option keep log of commands (archive, extract, test, list...)
-generated by the scripting engine (default off, Options &gt; Settings,
-Advanced tab) from main menu, Tools submenu <br>
-            <div style="margin-left: 40px;">This option allows to
-inspect command lines generated in the current session by the
-integrated scripting engine, to list, test, create, and extract
-archives, navigate or search content of archives, add, rename/move or
-delete files inside archives<br>
-            </div>
-Improved Image viewer<br>
-            <div style="margin-left: 40px;">Viewer's window now
-automatically snaps to on-screen image size when leaving full screen
-mode, afterwards can be furter manually resized if needed<br>
-            </div>
-            <span style="font-weight: bold;">Improved preview of items
-inside archives</span><br>
+ style="font-weight: bold;">Batch test archives</span>
+function (Test dropdown menu, File manager group) to test multiple
+archives without interruption (except for asking for password, if
+needed) reporting success or failure result in the file manager (CRC
+column)<br>
+            <span style="font-weight: bold;">Improved File manager</span><br>
             <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Image viewer</span> can now be launched
-also within archive types supported through ARC, BCM, Brotli, and
-Zstandard backend (previously 7z/p7zip only)<br>
-Context menu &gt; <span style="font-weight: bold;">Preview</span>
-submenu is now accessible also within archive types supported through
-BCM, Brotli, and Zstandard backend (previously 7z/p7zip, ARC)<br>
-Context menu &gt; <span style="font-weight: bold;">File tools</span>
-submenu is now accessible within archive types supported through
-7z/p7zip, ARC, BCM, Brotli, and Zstandard backend (previously disabled
-for all archive types)<br>
+ style="font-weight: bold;">(</span>GTK2) enabled virtual mode by
+default over 16K items<span style="font-weight: bold;"><br>
+Improved Bookmarks</span>, it is now
+possible to add Search and Flat view bookmars of filesystem items
+(previously working only inside archives)<br>
+Improved keeping, and focusing, selection on navigation operations<br>
+Internal Drag &amp; Drop &gt; Copy to / Move to does no longer change
+directory, consistently with internal Drag &amp; Drop &gt; Extract
+functions<br>
+Internal Drag &amp; Drop (extract, copy, move) now <span
+ style="font-weight: bold;">supports dropping items to the Breadcrumb
+bar </span>and<span style="font-weight: bold;"> to the Tab bar</span><br>
+            </div>
+Minor UI revamp<br>
+            <div style="margin-left: 40px;">Added <span
+ style="font-weight: bold;">alternative icon rendering styles</span>
+(Native, Sharp, and Soft) in Style "..." menu, File manager submenu, to
+improve blending the visual aspect of the app on different widgetsets<br>
+Improved <span style="font-weight: bold;">fractional scaling</span>
+and <span style="font-weight: bold;">zooming</span><br>
+            </div>
+            <div style="margin-left: 40px;">Updated icons and Themes to
+work consistently in all
+widgesets<br>
+            </div>
+Task progress window caption now shows global progress percentage when
+running a batch of multiple archiving or extraction tasks<br>
+Updated Password Manager UI, and added function to <span
+ style="font-weight: bold;">rate password entropy</span> both in
+Password Manager and in Password Prompt screens.<br>
             </div>
-New custom themes line-dark and tux-alt-dark<br>
-            </div>
-            <br>
-EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">Added<span
- style="font-weight: bold;"> -rv Recovery Volumes</span> option for
-multipart RAR archives<br>
-Improved <span style="font-weight: bold;">atomic extraction of
-compressed TAR</span> archives<br>
-Improved task progress window<br>
-            <div style="margin-left: 40px;">Added option to <span
- style="font-weight: bold;">hide task progress window for small
-workloads</span> (default off, Options &gt; Settings, Advanced tab)<br>
-            <div style="margin-left: 40px;">For small amounts of input
-(under 1 MB) archiving, conversion, and extraction tasks does not
-display the progress window unless it is necessary to display errors
-(does not apply to pea backend and to console mode)<br>
-            </div>
-Task progress window can now be set to <span style="font-weight: bold;">compact
-mode</span> (no task icon, minimum window height and width) to minimize
-screen space occupation, the status is remembered in configuration and
-can be toggled on/off from the dropdown menu in the status bar<br>
-            </div>
-Updated compression presets&nbsp;</div>
-            </div>
-            </div>
-            <br>
-2025 10 18<br>
-            <div style="margin-left: 40px;">10.7.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Pea 1.27<br>
-            </div>
-            <br>
-CODE<br>
-            <div style="margin-left: 40px;">Legacy code cleanup<br>
-            <span style="font-weight: bold;">Sources refactored</span>
-to improve readability and maintainability<br>
-            <div style="margin-left: 40px;">Deleted legacy
-ansiutf8_utils unit, functions moved to list_utils<br>
-            </div>
-            <div style="margin-left: 40px;">Improved naming of units
-and items, expanded comments<br>
-Unit peach organized in subsections collecting routines sharing similar
-scope, and unloaded of various routines better suited into other units<br>
-            </div>
-            <div style="margin-left: 80px;">Self-checking hash values,
-and various calls to external routines, moved to unit externalprograms<br>
-Various filenames-related routines moved to unit list_utils<br>
-Various helper routines moved to pea_utils<br>
-            </div>
-Updated crypto/hash library units to apply pure Pascal implementation
-of algorithms for any arbitrary non-x86/x86_64 architecture<br>
-Various fixes<br>
-            <div style="margin-left: 40px;">Fixed loading compression
-presets from archive conversion screen<br>
-Fixed displaying CRC and folders content analysis in non-Window systems<br>
-Fixed Qt6 performances selecting of large number of items in the file
-browser<br>
-Fixed "Explore path (PeaZip)" now correctly reset search filter<br>
-Fixed file browser no longer steal focus when updated, the behavior
-applied to various Linux/BSD DE<br>
-            </div>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;">(Linux, macOS) Improved
-detection and usage of ClamAV<br>
-(macOS) Improved Dynamic virtual mode<br>
-(macOS) Added Quick Look to "Open with" menu<br>
-Can now preview items in Zpaq archives, if "extract to absolute paths"
-and "extract all revisions" options are unchecked (as by default)<br>
-Improved browsing some types of archives (e.g. .pkg)<br>
-Improved image viewer functions<br>
-            <div style="margin-left: 40px;">Can now <span
- style="font-weight: bold;">display image thumbnails</span> in the file
-manager on all platforms (previously supported only on Windows)<br>
-            <div style="margin-left: 40px;">Thumbnails are displayed
-when navigating the filesystem, not inside archives (no content is ever
-automatically decompressed, use safer preview function instead), are
-always generated on the fly (no thumbnail is ever saved/cached by the
-application to enhance privacy), and are disabled when file manager is
-in virtual mode<br>
-Thumbnails are displayed automatically when icon size is 48px or
-larger, can be set on/off manually from main menu &gt; Organize &gt;
-Show picture thumbnails option<br>
-            </div>
-Added entry to <span style="font-weight: bold;">view thumbnails on
-request</span>, from context menu &gt; File manager, or Ctrl+Space
-keyboard shortcut (applies same notes as for automatic thumbnails)<br>
-Added new <span style="font-weight: bold;">image viewer</span>
-component to view images on request, from context menu, File
-manager &gt; View images, or Ctrl+Space keyboard shortcut<br>
-            <div style="margin-left: 40px;">Can zoom in (+ or up arrow)
-and out (- or down arrow) from 5% to 1000%, fit to screen (0), screen
-height (Shift+0), screen width (Ctrl+0), jump to 100% to 500% (1..5)
-and down to 20% (Ctrl+2..Ctrl+5)<br>
-Can toggle immersive mode on/off (double click or enter) if supported
-by the platform, Esc exits immersive mode or exits the image viewer if
-not in immersive mode<br>
-Can view previous (back arrow or left active border) and next image
-(forward arrow or space or right active border) the in same directory
-or search filter, or jump to first (Home) or last (End)<br>
-Can rename and delete images from disk with all supported deletion
-routines (move to Trash, quick delete, zero delete, secure delete)<br>
-Can view images when the file manager is in virtual mode, and can <span
- style="font-weight: bold;">preview images inside archives</span> (in
-this case one preview at time)<br>
-The component is meant primarily as a viewer, most of the file
-management functions (as copy and move, find duplicates, modify the
-image) are featured in the file browser and are not duplicated in the
-viewer<br>
-            </div>
-            </div>
-Improved preview of archived files, added option to explore the path of
-preview with system browser<br>
-Improved <span style="font-weight: bold;">Functions menu</span>, a
-more comprehensive selection of core app's functions are now available
-in the menu, listed alphabetically in order to be easily discovered by
-users<br>
-Improved context menu, File tools &gt; <span style="font-weight: bold;">Text
-preview</span>: can now search, count lines / words / chars, change
-text
-encoding
-(ANSI, ASCII, Unicode, UTF-8), and word wrap <br>
-Updated Line custom Theme<br>
-            </div>
-            <br>
-EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">Fixed progress window, now
-reporting correct compression levels for Brotli and Zpaq<br>
-Improved handling output if extraction ends in error or is cancelled by
-the user<br>
-            <div style="margin-left: 40px;">Added option to keep files
-if extraction is not successful for Zstd backend (in Advanced tab of
-extraction screen) <br>
-            </div>
-            </div>
-            </div>
-            </div>
-            <br>
-2025 08 17<br>
-            <div style="margin-left: 40px;">10.6.1<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">7z / p7zip vanilla sxf
-modules replaced by modules from Tino Reichardt fork<br>
-(Windows) PAQ8O and Strip/UPX moved to Additional Formats Plugin
-package v7<br>
-(Windows) Zpaq support updated to Zpaqfranz 62.5 on Win64, freezed on
-Zpaq 7.15 for Win32<br>
-(Windows) removed whenever possible, or replaced if possible, the
-binaries and sfx modules producing false positive detections<br>
-            </div>
-            <br>
-CODE<br>
-            <div style="margin-left: 40px;">Fixed 7z alias always
-applied for list tasks<br>
-Fixed moving files inside encrypted archives<br>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;">Updated translations<br>
-            </div>
-            <br>
-INSTALLERS<br>
-            <div style="margin-left: 40px;">All packages now contains
-sfx modules to create self-extracting archives to be used both on
-Windows and Linux systems<br>
-            </div>
-            </div>
-            </div>
-            <br>
-2025 08 09<br>
-            <div style="margin-left: 40px;">10.6.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Updated 7z 25.01<br>
-Updated Pea 1.26<br>
-(Windows) Updated McMilk codecs to 24.09-v1.5.7-R1<br>
-(Linux, macOS) Added T.Yamada cielavenir/p7zip 24.09.1 fork to support
-Brotli, Lizard, LZ4, LZ5, Zstd additional codecs for .7z format<br>
-            <div style="margin-left: 40px;">From Options &gt; Settings,
-Advanced tab set "7z / p7zip alias" to "7zalt" to use this alternative
-implementation and support extra codecs for .7z format<br>
-            </div>
-Updated Zpaq interface to support <span style="font-weight: bold;">Zpaqfranz
-            </span>as default binary, keeping compatibility with Zpaq
-7.x<br>
-            <br>
-            </div>
-CODE<br>
-            <div style="margin-left: 40px;">Built with <span
- style="font-weight: bold;">Lazarus 4.2</span>, compatible with Lazarus
-3.x and 2.x<br>
-Added <span style="font-weight: bold;">Nemo actions</span> for context
-menu integration in <span style="font-weight: bold;">Cinnamon </span>based
-Desktop Environments, in
-(peazip)res/share/batch/freedesktop_integration <br>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;">Added Documents directory
-to default Bookmarks<br>
-Added <span style="font-weight: bold;">Search </span>function to
-Options &gt; Settings screen, to quickly find option groups and most
-used settings <br>
-File browser was updated introducing <span style="font-weight: bold;">dynamic
-virtual mode</span> for the ListView component, boosting performances
-when browsing directories and archives containing a very large number
-of items (or using flat view on a very large number of items)<br>
-            <div style="margin-left: 40px;">performances gains depend
-on the widgetset: opening a zip archive containing 25K items in the
-root directory is now over x6 faster on Windows, over x30 faster on
-macOS, near to x2 faster on Qt6 (which is the fastest widgetset in
-non-virtual mode), negligible / variable impact on GTK2 and GTK3<br>
-            </div>
-            <div style="margin-left: 40px;">virtual mode is dynamically
-enabled and disabled over a threshold number of items displayed at once<br>
-            </div>
-            <div style="margin-left: 80px;">this value and can be set
-(or virtual mode can be deactivated) from Options &gt; Settings,
-Performances group<br>
-the default value depends on the widgetset: 8K for Windows, Always for
-macOS (which has biggest performances gain), 16K for Qt6 (most
-efficient in classic mode), disabled for other widgetsets<br>
-(macOS) due to current limitation of the implementation on the Cocoa
-widgetset, the virtual mode should either be always on (Always,
-default) or off (No)<br>
-            </div>
-            <div style="margin-left: 40px;">virtual mode currently
-introduces some limitations in the archive browser, mainly:<br>
-            <div style="margin-left: 40px;">disable showing exe icons
-and images thubnails (Windows, browsing the filesystem)<br>
-disable dynamic content filter typing in the address bar<br>
-disable item rename with mouse click, rename is only reached from F2 or
-from menu<br>
-            </div>
-various other minor performances improvements<br>
-            </div>
-Fixes<br>
-            <div style="margin-left: 40px;">Sizes of multipart archives
-are now reported correctly in the progress screen<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Improved archive pre-parsing</span><br>
-            <div style="margin-left: 40px;">if the archive content
-exceeds the limitations of the current browser optimization level, it
-is applied an alternative quick pre-parsing procedure which can
-reconcile most of the common issues which can be found in archive's
-table of content<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;">Option "Keep
-password/keyfile for current session" is now unchecked by default, in
-this way password/keyfile is automatically re-set each time a new
-archive in accessed, as in most other archive managers<br>
-Toggle "<span style="font-weight: bold;">Show hidden files</span> (in
-the
-filesystem)" moved from settings to main menu, Organize for ease of use<br>
-            <div style="margin-left: 40px;">keyboard shortcut Ctrl+. or
-Command+. on macOS<br>
-            </div>
-(BSD, Linux) Added alternative icons (48px and svg) for system
-integration in
-(peazip)res/share/batch/freedesktop_integration/alternative-icons<br>
-(BSD, Linux, macOS) PeaZip can now automatically check if rar binary is
-available in the system, to auto enable creation of RAR files<br>
-(BSD, Linux, macOS) Status bar hint box in file browser and
-archiving/extraction screens now reports free disk space, and % on
-total disk space<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;">EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">Added option to limit the
-number of threads for Zpaq, in Advanced tab of archive creation screen<br>
-Updated compression pre-sets (reached from dropdown menu on the right
-of Add button) <br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;">
-            <div style="margin-left: 40px;"> </div>
-            </div>
-            </div>
-            <br>
-2025 06 15<br>
-            <div style="margin-left: 40px;">10.5.0<br>
-            </div>
-            <div style="margin-left: 40px;">
-            <div style="margin-left: 40px;">BACKEND<br>
-            </div>
-            <div style="margin-left: 80px;">Pea 1.25<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-CODE<br>
-            </div>
-            <div style="margin-left: 80px;">Code cleanup<br>
-Fixes<br>
-            <div style="margin-left: 40px;">Fixed "Auto open TAR
-archive" triggering errors when opening some archives for browsing<br>
-Fixed breadcrumb navigation which failed for some archives<br>
-Fixed dialog type when setting Custom binary in archiving and
-extraction screens<br>
-Fixed archive listing warning icon, the icon is now properly re-set
-when password request is prompted opening the archive (encrypted
-filenames)<br>
-Various fixes<br>
-            </div>
-Recompiled with <span style="font-weight: bold;">Lazarus 4.0</span>,
-compatibility kept with Lazarus 3.x and 2.x<br>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">(macOS) alternative file manager styles and
-sizes are now available</span>, cursor icon is now correctly handled<br>
-recompiled dragdropfiles.dll for Windows 64 bit and 32 bit<br>
-            </div>
-Updated W11 mini-context menu entries in
-(peazip)/res/share/batch/Windows<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-FILE MANAGER<br>
-            </div>
-            <div style="margin-left: 80px;">Added hints to Settings
-tabs, showing tab's subsections and suggesting most prominent switches
-featured in the tab<br>
-Added option to search SHA256 hash value on Jotti VirusScan to check if
-the selected file matches with known malware<br>
-            <span style="font-weight: bold;">Added warning before
-running file types containing active content</span>, in order to
-improve security of the archive/file browser, from Options, Settings,
-File manager tab<br>
-            <div style="margin-left: 40px;">it is possible to set a
-custom list of extensions to better fit user's security model (the
-default list is tailored for the different supported Operating Systems)<br>
-            </div>
-            <div style="margin-left: 40px;">it is possible to set this
-function for Archive manager (default, when browsing archives only),
-File manager (when browsing the filesystem, not inside archives), both
-or none<br>
-            </div>
-Can now toggle "<span style="font-weight: bold;">Show hidden files and
-folders in the filesystem</span>" on/off (default on) from Options &gt;
-Settings, File manager tab<br>
-            <div style="margin-left: 40px;">hidden files have Hidden
-attribute in Windows, start with . character on non-Windows systems<br>
-            </div>
-            <div style="margin-left: 40px;">this setting only applies
-when browsing the filesystem, will not hide content inside archives<br>
-            </div>
-            <span style="font-weight: bold;">Improved files and
-archives browsing</span><br>
-            <div style="margin-left: 40px;">Improved speed and RAM
-usage opening archives, optimizing some performance critical routines:
--60% time on 25K items archive (-12% memory), -25% time on 250K items
-archive (-25% memory), -5% time to display 25K items in the same view
-(-8% memory)<br>
-            <div style="margin-left: 40px;">Optimized parsing archive
-content for errors, anomalies, and omissions, over x2 performances<br>
-Optimized representation of archive content in side bar treeview,
-approx x2 performances<br>
-Optimized performances of the file manager<br>
-            <div style="margin-left: 40px;">General optimizations of
-sorting routines, memory intensive operations, file manager update,
-with various degree of performances improvement<br>
-            </div>
-            <div style="margin-left: 40px;">De-duplicated file manager
-update when parsing archives, approx x2 performances when applicable<br>
-            </div>
-Optimization of pipe communication routines with performances
-improvements on execution of browsing and other types of tasks<br>
-            </div>
-Improved representation of archives with complex structures<br>
-Improved editing archives and preventing attempts of unsupported
-operations<br>
-            </div>
-Improved filenames smart sorting<br>
-"Open as archive" function is now enabled also from within archives, so
-it is possible to explicitly ask to preview a compressed file trying to
-handle it as archive/container<br>
-Reorganized and de-duplicated the <span style="font-weight: bold;">Functions
-sub-menu</span> of Open menu (in navigation sidebar, and breadcrumb
-button dropdown menu) which shows most used app's function sorted
-alphabetically<br>
-            <div style="margin-left: 40px;">this sub-menu is now
-available also from the main context menu<br>
-            </div>
-Reorganized alternative main context menus<br>
-            <div style="margin-left: 40px;">Ctrl + RightClick shows
-Breadcrumb menu (unchanged)<br>
-Shift + RightClick shows History menu, which now shows both history and
-session history sections<br>
-Ctrl + Shift + RightClick shows Bookmarks menu (new)<br>
-            </div>
-Simplified pre-parse "Browser optimization" setting in Options &gt;
-Settings, Performance group<br>
-(Linux) Added System tools entries<br>
-(Windows) Added functions to display <span style="font-weight: bold;">NTFS
-Alternate Data Streams</span> and <span style="font-weight: bold;">Zone
-Identifier (Mark of The Web)</span> for the selected file<br>
-            <div style="margin-left: 40px;">please note NTFS Alternate
-Data Streams metadata requires the input file being stored on a NTFS
-filesystem<br>
-            </div>
-            <div style="margin-left: 40px;">this function is available
-from main menu File manager &gt; System tools<br>
-            </div>
-(Windows) Added function to <span style="font-weight: bold;">check for
-Mark of The Web in selected files</span> (and, recursively, in selected
-folders), or for currently open archive file<br>
-            <div style="margin-left: 40px;">this function is available
-as first entry in the Test dropdown menu in tool bar, and from main
-menu File manager &gt; File tools submenu in file manager and in
-archiving / extraction screens<br>
-            </div>
-            <div style="margin-left: 40px;">this function is based in
-NTFS Alternate Data Streams metadata and requires the files/folders
-being stored on a NTFS filesystem<br>
-            </div>
-            <div style="margin-left: 40px;">this function is
-recommended before archiving, opening or extracting files, allows to
-detect if at least one of the input files comes from a remote system
-and therefore contains the Zone Identifier (Mark of The Web) in its
-Alternate Data Streams metadata<br>
-            </div>
-            <div style="margin-left: 40px;">the slower "full report"
-variant of the function (in File tools submenus only) tests all input
-files and displays which ones have the MoTW and which one doesn't<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><br>
-EXTRACTION and ARCHIVING<br>
-            </div>
-            <div style="margin-left: 80px;"><span
- style="font-weight: bold;">Improved handling of NTFS Alternate Data
-Streams</span>, including Zone Identifier (Mark of The Web)<br>
-            <div style="margin-left: 40px;">Added note in the info box
-in archive creation screen (clicking on input details in the status
-bar) to highlight formats which support storing NTFS Alternate Data
-Streams in archives created locally<br>
-            </div>
-            <div style="margin-left: 40px;">NTFS Alternate Data Streams
-are now stored (and propagated on extraction) by default for RAR and
-WIM formats, even for archives created locally<br>
-            </div>
-            <div style="margin-left: 40px;">As in previous versions,
-Mark of The Web is also propagated on extraction for all formats
-handled through 7z backend for downloaded archives<br>
-            </div>
-            <div style="margin-left: 40px;">Please note Alternate Data
-Streams, including Zone Identifier (Mark of The Web), relies on NTFS
-filsystem features and are not portable on different filesystems<br>
-            </div>
-Improved task progress window: text layout auto optimizes, better CPU
-efficiency of GUI for Test tasks<br>
-            </div>
-            </div>
-            <br>
-2025 04 14<br>
-            <div style="margin-left: 40px;">10.4.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            </div>
-            <div style="margin-left: 80px;">Zstd 1.5.7<br>
-Pea 1.24<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-CODE<br>
-            </div>
-            <div style="margin-left: 80px;">Expanded script samples for
-CLI usage and system integration in (peazip)/res/share/batch<br>
-Legacy code cleanup<br>
-Various fixes<br>
-            <div style="margin-left: 40px;">Fixed compact side bar
-being invisible at lower zoom levels<br>
-Fixed drag and drop operations failing for some formats<br>
-Fixed script generation (Advanced tab) when "TAR before" and "Delete
-files after archiving" options are both in use<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><br>
-FILE MANAGER<br>
-            </div>
-            <div style="margin-left: 80px;">Added <span
- style="font-weight: bold;">alternative context menus</span> for quick
-navigation in file/archive manager<br>
-            <div style="margin-left: 40px;">Ctrl+RightClick shows
-breadcrumb context menu<br>
-Shift+RightClick shows session history context menu<br>
-Ctrl+Shift+RightClick shows navigation context menu<br>
-            </div>
-Can now sort items in the Password Manager<br>
-File browser popup now provides more information fields: attributes,
-compression/encryption method, content (compressed folders), object
-level comments, creation and last accessed time (compressed files and
-folder, if set), full path (in search and flat mode)<br>
-New <span style="font-weight: bold;">"90s" style</span> in "..." &gt;
-Style menu providing a simple old-school
-layout with treeview sidebar<br>
-Embedded theme will now <span style="font-weight: bold;">automatically
-adapt to light / dark mode</span> changing icons and accent colors <br>
-Updated to <span style="font-weight: bold;">Themes v.6</span><br>
-            <div style="margin-left: 40px;">All in-app icons can now be
-customized in order to create themes optimized for different system
-color schemes, not limited to light or dark but also alternative color
-palettes (grey, cold/warm colors etc...)<br>
-New mac-dark, main-dark, ten-dark, and tux-dark available as custom
-themes, meant to improve app aspect on systems in dark mode (more
-alternative v.6 themes are available from the Custom entry)<br>
-The app can use older revision themes down to v.3, but it is
-recommended to update old theme packages (suggestion: new themes can be
-used as template for icons missing in previous versions of themes)<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><br>
-EXTRACTION and ARCHIVING<br>
-            </div>
-            <div style="margin-left: 80px;">(7z backend) By default <span
- style="font-weight: bold;">symlinks </span>are stored as links,
-option available in Advanced tab of archive creation screen<br>
-Added error check to avoid automatic deletion of the intermediate tar
-archive if the compression step fails with "Delete files after
-archiving" option enabled<br>
-            </div>
-            </div>
-            <br>
-2025 02 22<br>
-            <div style="margin-left: 40px;">10.3.0<br>
-            </div>
-            <div style="margin-left: 40px;">
-            <div style="margin-left: 40px;">BACKEND<br>
-            </div>
-            <div style="margin-left: 80px;">Pea 1.23<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-CODE<br>
-            </div>
-            <div style="margin-left: 80px;">project_pea and
-project_peach updated to optimization and debugging project-level
-options recommended for Lazarus 3.x line<br>
-Optimized app startup reducing 25% time and 20% memory usage<br>
-Various fixes<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-FILE MANAGER<br>
-            </div>
-            <div style="margin-left: 80px;"><span
- style="font-weight: bold;">Auto browse TAR</span> inside compressed
-TAR archives now can be limited to max size (100 MB, 1 GB, 10 GB,
-Always) in order to avoid automatic time consuming operation<br>
-Can now save list of files/search results as csv (with , and ;
-separator), tsv, and txt<br>
-Improved "Analyze content of folders" function, now reporting content
-size in separate column to allow sorting for smallest/largest folder<br>
-            <span style="font-weight: bold;">Improved handling archives
-with errors</span>, or containing extra data, i.e. container formats
-which are variants of archive formats<br>
-            <div style="margin-left: 40px;">With Options &gt; Settings
-&gt; Archive manager, "Browse non-canonical archive types" option
-flagged (default) the app will always try to open for browsing such
-archives<br>
-            </div>
-            <div style="margin-left: 40px;">Unflagging this option
-stops the app from browsing archives if errors are detected, which may
-be more safe, but is less flexible in terms of handling/recovering data<br>
-            </div>
-            <div style="margin-left: 40px;">More cases of warnings and
-errors are recognized and shown (warning icon in the navigation bar)
-for file formats supported through the 7z/p7zip backend<br>
-            </div>
-Smart new folder toggle is now reachable also from quick extraction
-dropdown menu<br>
-Style submenu in "..." style menu allows to quickly change app's file
-manager GUI applying multiple customizations at once to fit one of the <span
- style="font-weight: bold;">pre-set styles</span>: Minimal, Classic,
-Modern, and Postmodern<br>
-            <span style="font-weight: bold;">Updated Themes </span>to
-customize more items (menu dropdown, breadcrumb separator, settings
-icon), legacy themes are still supported<br>
-            <div style="margin-left: 40px;">New Tux-Alt theme for
-alternative look&amp;feel on Linux systems<br>
-            </div>
-(Windows) Improved rendering of exe files' icons<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-EXTRACTION and ARCHIVING<br>
-            </div>
-            <div style="margin-left: 80px;">Improved displaying
-information in the task progress window and in the archive creation /
-extraction screen title<br>
-Improved managing non-ASCII characters in passwords<br>
-            <div style="margin-left: 40px;">Added warning to prevent
-creation of archives using non-ASCII characters if not supported by the
-format (or otherwise not supported due to technical limitations)<br>
-            </div>
-            <div style="margin-left: 40px;">Fixed Windows drag and drop
-extraction not correctly communicating non-ASCII characters in
-passwords through pipe<br>
-            </div>
-When directly sending items to compression without confirmation, file
-spanning (if set) is automatically disabled for the current operation<br>
-Added support for <span style="font-weight: bold;">VmWare </span>.ova
-files, and <span style="font-weight: bold;">Minecraft </span>archive
-file types
-.mcaddon, .mcmeta, .mcpack, .mcproject, .mcstructure, .mctemplate,
-.mcworld (242 file extensions supported)<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-INSTALLERS<br>
-(Linux) <span style="font-weight: bold;">Qt6 </span>installable
-packages updated to
-create needed links to libQt6Pas.so out of the box<br>
-(Linux) Updated information for <span style="font-weight: bold;">context
-menu integration for Gnome and KDE</span> in
-(peazip)/res/share/batch/freedesktop_integration<br>
-            </div>
-            <div style="margin-left: 40px;">
-            <div style="margin-left: 80px;">sh scripts to automate
-context menu integration now available in KDE-servicemenus and
-Nautilus-scripts subfolders<br>
-            </div>
-            </div>
-            <br>
-            </div>
-2025 01 01<br>
-            <div style="margin-left: 40px;">10.2.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            </div>
-            <div style="margin-left: 80px;">7z 24.09, with new
-dictionary size defaults for LZMA/LZMA2<br>
-Pea 1.22 introducing <span style="font-weight: bold;">hybrid KDF</span>
-to further increase the resilience of the KDF stage of triple cascaded
-encryption, requiring multiple unrelated optimizations to mount an
-hardware accelerated attack on the KDF<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-CODE<br>
-            </div>
-            <div style="margin-left: 80px;">Fixes, updated documentation<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-FILE MANAGER<br>
-            </div>
-            <div style="margin-left: 80px;">Archives of suitable types
-(RAR, ZIP, ZIPX) are automatically tested for <span
- style="font-weight: bold;">comment </span>when opened, if archive
-comment is found, "COMMENT" note is displayed in the status bar<br>
-            </div>
-            <div style="margin-left: 120px;">
-            <div style="margin-left: 40px;">Move the mouse over the
-"COMMENT" note to display the comment as hint<br>
-Click the "COMMENT" note to open the comment editing screen<br>
-Alt+M keyboard shortcut is always available as usual to directly open
-the comment editing screen for one or multiple archives at once<br>
-            </div>
-            </div>
-            <div style="margin-left: 80px;">Improved <span
- style="font-weight: bold;">detection of issues in archives</span>, for
-archive types browsed with 7z/p7zip frontend<br>
-            <div style="margin-left: 40px;">If warnings are issued a
-warning icon is displayed in the address bar for better visibility,
-alongside the classic textual warning message in the status bar of
-previous versions<br>
-If further details are available, they will be visible clicking the
-warning icon in the address bar or the textual warning message in the
-status bar<br>
-            </div>
-            </div>
-            <div style="margin-left: 80px;">Improved keyboard shortcuts<br>
-Updated app icon to unify look &amp; feel on all supported platforms<br>
-Updated Tux theme to improve aspect with dark mode / dark themes<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-EXTRACTION and ARCHIVING<br>
-            </div>
-            <div style="margin-left: 80px;"><span
- style="font-weight: bold;">Brotli </span>-q 11 and <span
- style="font-weight: bold;">Zstd </span>--ultra -22 compression levels
-enabled in the GUI<br>
-It is now possible to manually delte input files / folders at the end
-of tasks, from Options tab in the task progress window, i.e. to
-directly delete a faulty archive failing the test procedure<br>
-The progress window's icon now matches the format chosen for compression<br>
-            </div>
-            <div style="margin-left: 40px;"><br>
-INSTALLERS<br>
-            </div>
-            <div style="margin-left: 80px;">(Linux) <span
- style="font-weight: bold;">Qt6 </span>packages supersedes the old Qt5
-packages<br>
-(Linux) <span style="font-weight: bold;">GTK3</span>-alpha package is
-now available for test purpose only (Lazarus support for GTK3 is in
-alpha state), see Lazarus Widgetset wiki for more information
-https://wiki.freepascal.org/Widgetset<br>
-(Linux) <span style="font-weight: bold;">Flatpak </span>package is
-now built for <span style="font-weight: bold;">Wayland</span>, with
-fallback X11 option,
-and compiled for the <span style="font-weight: bold;">Qt6 </span>widgetset<br>
-(macOS) "macOS service menus" entry in the package is now a link
-pointing to the folder with same name within the installed peazip.app
-package, in this way running "xattr -dr com.apple.quarantine
-/Applications/peazip.app" applies the correct attributes to the
-scripts, which can be correctly installed on macOS 15 and following<br>
-            </div>
-            <br>
-            </div>
-2024 11 12<br>
-            <div style="margin-left: 40px;">10.1.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Pea 1.21, introduced <span
- style="font-weight: bold;">scrypt KDF</span> as default option to
-improve resilience to password guessing attacks (increasing memory cost
-per instance) over PBKDF2 implemented in previous versions<br>
-            <div style="margin-left: 40px;">scrypt is now the default
-KDF for all cascaded encryption modes, it can be set to use from 64 MB
-(default) up to 1 GB memory, r set to 8, paralelism 1 to 8 (plus, the
-KDF is repeated for each of the tree layers of the cascaded encryption)<br>
-            </div>
-            </div>
-            <br>
-CODE<br>
-            <div style="margin-left: 40px;">Fixed "Ask before
-overwriting (in console)" extraction option, now
-correctly sets the app in console mode superseding other options<br>
-Fixed directory copy/move on Unix-like systems<br>
-(Windows) Fixed drag and drop bug preventing extraction towards some
-file managers and third party apps, now more file managers are tested
-for compatibility<br>
-(Windows) Fixed drag and drop bug failing extraction at first try on
-some instances<br>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">GUI update</span><br>
-            <div style="margin-left: 40px;">Breadcrumb improvements<br>
-            <div style="margin-left: 40px;">Highlighting of temporary
-paths in the breadcrumb bar is now
-consistent with Theme colors<br>
-New Theme option to optionally underline and highlight address
-breadcrumb<br>
-            </div>
-Navigation bar improvements<br>
-            <div style="margin-left: 40px;">Compact side bar mode is
-now integrated with other navigation
-bar modes (navigation, treeview, and none, which can be toggled with
-Alt+4)<br>
-            </div>
-            <div style="margin-left: 40px;">It is now possible to
-internally drag and drop extract items to
-the navigation bar even whent it is set to Compact mode<br>
-Navigation bar width is now automatically adapted to the zoom
-level of the app<br>
-            </div>
-File browser's column header menu is now more easily accessible
-from the top entry in the navigation menu<br>
-Updated Themes and icons to improve appearance on dark mode /
-dark themes using alpha transparency<br>
-            <div style="margin-left: 40px;">Use of <span
- style="font-weight: bold;">alpha transparency</span> is fully
-supported (but not mandatory)
-when designing Themes' icons, which are PGN images<br>
-            </div>
-            </div>
-            </div>
-            <br>
-EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">Updated <span
- style="font-weight: bold;">compression pre-sets</span><br>
-            </div>
-            </div>
-            </div>
-            <br>
-2024 10 26<br>
-            <div style="margin-left: 40px;">10.0.0<br>
-            <div style="margin-left: 40px;">BACKEND<br>
-            <div style="margin-left: 40px;">Pea 1.20, can now <span
- style="font-weight: bold;">search hash values of files</span> on
-Google and Virustotal for detecting known malware, new command line
-switches to show text preview of files, and to directly <span
- style="font-weight: bold;">save checksum/hash results in GNU Coreutils
--compatible formats</span><br>
-7z 24.08<br>
-            </div>
-            <br>
-CODE<br>
-            <div style="margin-left: 40px;">(macOS) New <span
- style="font-weight: bold;">macOS .icns icons to customize the app</span>
-are now available in (peazip)/res/share/icons folder<br>
-(macOS) Updated Automator scripts for <span style="font-weight: bold;">macOS
-context menu integration</span>,
-fixed empty error message after script execution<br>
-(Windows) Improved Windows native drag and drop implementation (please
-note current implementation still allows a single drag and drop
-instance globally)<br>
-            <div style="margin-left: 40px;">Attempts to launch multiple
-drag and drop instances, from single or multiple instance of the
-application, are now effectively stopped without issues for the running
-drag and drop indtance<br>
-This limitation can be avoided using internal drag and drop extraction
-(which is cross-platform) or unchecking "Use native drag and drop" in
-options to switch to an alternative custom drag and drop implementation<br>
-            </div>
-Legacy code cleanup<br>
-Sorted tab order of UI items<br>
-Various fixes<br>
-            </div>
-            <br>
-FILE MANAGER<br>
-            <div style="margin-left: 40px;">(Linux) Added <span
- style="font-weight: bold;">MTP devices </span>folder (Media Transfer
-Protocol) in Filesystem section of navigation sidebar, to make easier
-to access to mounted devices, i.e. Android phones / tablets<br>
-(Windows) New System settings items, specific for Windows 10 and more
-recent systems Settings app, are now featured in app context menu, File
-manager &gt; System tools for W10+ systems<br>
-            </div>
-            <div style="margin-left: 40px;">Expanded <span
- style="font-weight: bold;">File tools</span> section in file browser
-context menu, archive/extract context menu, and in Test menu in tool
-bar; it is now possible to<br>
-            <div style="margin-left: 40px;">Save hash values in GNU
-Coreutils compatible format<br>
-Search SHA256 hash values on Google and VirusTotal<br>
-Display Text preview of file (attempts to parse file as utf8 text,
-displays linle numbers, text strings and line mumbers can be sorted
-alphabetically)<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Revamped GUI</span><br>
-            <div style="margin-left: 40px;">Hints and tooltips can now
-be turned on/off from Options &gt; Settings, General tab<br>
-Icons used more sparingly to avoid information repetition and overload<br>
-Updated progress screen<br>
-            <div style="margin-left: 40px;">Activity graph moved to the
-button bar, in order to be visible from all tabs<br>
-Global progress bar now correctly take in account different input sizes
-(archiving, conversion tasks)<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;"><span
- style="font-weight: bold;">Updated GUI rendering engine</span> to be
-more flexible and memory efficient (up to 30% depending on the icon
-mode)<br>
-            <div style="margin-left: 40px;">7 sizes are now available:
-Small, Medium, Large, Large +, and Large ++<br>
-            <div style="margin-left: 40px;">For details and list modes
-16, 24, 32, 48, 64, 72, and 96px<br>
-For icons mode 48, 64, 72, 96, 128, 144, and 192px<br>
-Show thumbnails (filesystem only) is automatically set for any icon
-sized 48px or more, and can be turned on/off for any size from main
-menu, Organize<br>
-(Windows) exe icons are now scaled to fit the file browser size<br>
-            </div>
-All file browser styles and sizes are now supported on Linux / BSD<br>
-Special folders icons are now displayed for all modes and sizes<br>
-            </div>
-            </div>
-            <div style="margin-left: 40px;">Updated Style menu<br>
-            <div style="margin-left: 40px;">Shows compact side bar
-moved to main menu, Organize<br>
-It is now possible to change breadcrumb style from Style menu (text
-only, Windows/KDE, Gnome, macOS -style)<br>
-It is now possible to toggle file browser icons size from Style menu
-(new keybowrd shortcut Alt+7)<br>
-            </div>
-Updated Themes and embedded icons<br>
-            <div style="margin-left: 40px;">Mac, Main, Ten, and Tux
-themes updated, new theme format does not longer need 48px icons<br>
-            </div>
-Updated context menu<br>
-            <div style="margin-left: 40px;">Added menu item to explore
-Trash folder, in context menu, File browser
-submenu<br>
-Moved items: ZIP filename encoding is now in More submenu, File tools
-is now in the root of the menu, Image manager is now in File manager
-submenu<br>
-            </div>
-            </div>
-            </div>
-            <br>
-EXTRACTION and ARCHIVING<br>
-            <div style="margin-left: 40px;">From Options &gt; Settings,
-Advanced tab it is possible to set "7z / p7zip syntax level" back to
-17.05 and 16.02 releases, to <span style="font-weight: bold;">improve
-compatibility with the syntaxt of legacy 7z / p7zip versions</span><br>
-            <span style="font-weight: bold;">Improved quick "Extract
-here" link</span> in the toolbar is now also shown when one or more
-archives are selected in the file browser<br>
-            <span style="font-weight: bold;">Updated compression presets</span><br>
-            </div>
-            <div style="margin-left: 80px;">Added tar.gz, tar.xz, and
-tar.zst presets<br>
-Revoved some less frequently used presets, which are still available in
-(peazip)/res/share/presets/alt subfolder<br>
-            </div>
-&nbsp;&nbsp;&nbsp; <br>
             </div>
             </div>
             </td>
@@ -1391,6 +398,7 @@ versions' change log</span><br>
               <tbody>
                 <tr>
                   <td style="vertical-align: top; width: 448px;">&nbsp;<br>
+                  <br>
                   <table
  style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
  border="0" cellpadding="24" cellspacing="1">
@@ -1472,6 +480,20 @@ versions' change log</span><br>
                   <td style="vertical-align: top; width: 24px;"><br>
                   </td>
                   <td style="vertical-align: top; width: 448px;">&nbsp;<br>
+                  <table
+ style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
+ border="0" cellpadding="24" cellspacing="1">
+                    <tbody>
+                      <tr>
+                        <td colspan="1" rowspan="1"
+ style="vertical-align: top; background-color: rgb(250, 250, 250);"><a
+ name="peazip-8_new_features"></a><a href="peazip10-changelog.txt">PeaZip
+10</a><br>
+2024 10 26 .. 2026 02 07<br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 &nbsp;<br>
                   <table
  style="background-color: rgb(240, 240, 240); width: 100%; text-align: left;"
