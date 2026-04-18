@@ -925,6 +925,106 @@ for GTK2/3 and Qt6.<br>
  style="width: 740px; height: 380px;"></h4>
             <big><span style="font-weight: bold;"></span></big><br>
             <br>
+            <big><span style="font-weight: bold;">Extra test: open
+large archives with TOC not sorted by name</span></big><br>
+            <br>
+Some archive types introduces an additional challenge to parsing: input
+files are archived <span style="font-weight: bold;">grouped by
+extension</span> rather than <span style="font-weight: bold;">sorted
+by name</span>.<br>
+This option is available, for example, when creating 7Z and RAR
+archives: it makes senses to group input by extension so most similar
+data would be probably processed in the same context window, or solid
+block, leading to possibly better compression ratio.<br>
+As downside this complicates the parsing of the archive's Table Of
+Content (TOC) to retrieve data, compared to archives with input sorted
+by name where the TOC is the exact representation of the archive
+directories tree.<br>
+            <br>
+PeaZip <span style="font-weight: bold;">pre-parsing stage</span>
+implemented, version after version, various
+strategies to reduce the overhead of this non-optimal case, with
+release
+11 reaching almost the parity with the optimal case: 0.8 sec to open a
+.7z archive containing 25K items grouped by extension vs 0.6 sec to
+open a .zip archive containing 25K items sorted by name (WIN64 on
+reference benchmark machine, out-of-the box settings).<br>
+            <br>
+Below, the evolution of performances for opening the non-optimal case
+.7z archive, on the reference benchmark machine for PeaZip WIN64
+releases, default settings, since release 7.0.0, the first major
+version with a full implementation of archive pre-parsing:<br>
+            <br>
+            <table style="width: 50%; text-align: left;" border="0"
+ cellpadding="3" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; width: 50%;"><br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 50%; background-color: rgb(255, 255, 204); text-align: center;">Time
+to open .7z archive containing 25K items sorted by extension<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top; width: 50%;">PeaZip
+11.0.0 (2026)<br>
+                  </td>
+                  <td
+ style="vertical-align: top; width: 50%; text-align: center;">0.8<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">PeaZip 10.9.0 (2026)<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">1.5<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">PeaZip 10.4.0 (2025)<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">3.5<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">PeaZip 9.0.0 (2022)<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">4.5<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">PeaZip 8.0.0 (2021)<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">46.3<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: top;">PeaZip 7.0.0 (2019)<br>
+                  </td>
+                  <td style="vertical-align: top; text-align: center;">47.7<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <span style="font-style: italic;"><br>
+Time in seconds to open the 25K .7Z archive, TOC sorted by extension
+(lower better)</span><br>
+            <br>
+Rightmost image shows the huge over 10x optimization during the
+transition from 8.x to 9.x line, and the leftmost image highlights the
+over 4x optimization of 11.0.0 compared to the early 10.x line (nearly
+closing the gap from optimal and non-optimal cases), with pre-parsing
+stage global performance gain of nearly <span
+ style="font-weight: bold;">60x</span>
+since the 7.0.0 release in 2019.<br>
+            <br>
+            <div style="text-align: center;"><img
+ title="Time to open 25K items .7Z archive, input grouped by extension rather than sorted by name"
+ alt="peazip performances evolution" src="toc-sorted-by-extension.png"
+ style="width: 740px; height: 380px;"><br>
+            </div>
+            <br>
+            <br>
             <h3><big><big><big><a style="font-weight: bold;"
  name="fastest_archive_opener"></a><a href="#fastest_zip_opener"><span
  style="font-weight: bold;">Conclusions:
