@@ -978,34 +978,51 @@ manage user's passwords.<br>
             <br>
             <div style="text-align: justify;">
             <h3 style="font-weight: bold;"><big>FAQ: does
-PeaZip supports drag and drop?</big></h3>
+PeaZip supports <a href="screenshots-peazip-3.html">drag and drop</a>?</big></h3>
             <big> <br>
             </big> </div>
-            <a href="screenshots-peazip-3.html">Drag and drop</a> is
-supported on MS Windows systems. <br>
-PeaZip can perform drag and drop <span style="font-weight: bold;">from
-the
-system to the
-application</span>, for adding files to new archive layout or for
-opening existing archives dragged to the application, and drag and drop
-            <span style="font-weight: bold;">from the application to
-the system</span>, for file copy and for extraction form archives.<br>
-By default the application uses improved native Windows drag and drop
-mechanism,
-but optionally it can use its own custom drag and drop implementation,
-from Options &gt; Settings &gt; General.<br>
-Advantage of PeaZip's drag and drop (both types) is that the
-application doesn't need to copy
-files to system's temporary path on drag&amp;drop operations, speeding
-up the operation if large files are involved (especially noticeable
-if files are not in the same volume of system's temp directory) and
-don't risking to lowen the security of the operation if the system's
-temp folder has security policies different from the ones of the
-intended output destination.<br>
-PeaZip free archiving utility is not yet integrated with Windows drag
-and drop's context menu
-handler (but it is integrated with rightclick's context menu for
-zipping, unzipping and advanced operations).<br>
+Drag and drop <span style="font-weight: bold;">from system to
+application</span> is supported on all systems.<br>
+Drag and drop <span style="font-weight: bold;">from application to
+system</span> (e.g. drag&amp;drop extraction) is currently supported
+only on Windows.<br>
+PeaZip can also extract and copy/move items on all platforms with <span
+ style="font-weight: bold;">internal drag</span> and drop from
+different application panes, e.g. drag files from file manager to
+navigation sidebar (filesystem tree, bookmarks, history), or open tabs,
+or breadcrumb paths.<br>
+            <br>
+            <br>
+            <h3><big><span style="font-weight: bold;"><a
+ name="how_to_archive_links_metadata"></a>FAQ: how to
+archive hard links or soft links, metadata, open files...</span></big></h3>
+            <br>
+PeaZip archive creation screen Advanced tab containins archive format
+-specific options to manage links, metadata, alternate data streams
+etc, if the option is supported by the chosen archive format.<br>
+            <span style="font-weight: bold;">Compress files open for
+writing</span> force adding open for writing files in archive, which is
+useful (if saving possibly incomplete / unfinished files is acceptable
+for the task) if the filesystem is under active use during the
+operation (i.e. a backup).<br>
+            <span style="font-weight: bold;">Include NT security
+information</span> and <span style="font-weight: bold;">Include NTFS
+Alternate Data Streams</span> are WIM format -only options useful for
+backing up Windows systems.<br>
+            <span style="font-weight: bold;">Store owner/group IDs</span>
+and <span style="font-weight: bold;">Store owner/group names</span>
+are TAR format -only feature which can be useful backing up Unix-like
+systems.<br>
+            <span style="font-weight: bold;">Store hard liks as links</span>
+(default off) and <span style="font-weight: bold;">Store symbolic liks
+as links</span> (default on) does not follow the hard or soft
+(symbolic) links to add the linked
+content to archive.<br>
+With the option flagged for the hard or symbolic links, the archive
+will contain a simple link to data on
+disk rather than the linked content - which can be useful especially on
+Linux and macOS to avoid
+adding redundant data.<br>
             <br>
             <br>
             <h4 style="font-weight: bold;"><big>FAQ: is PeaZip
@@ -1105,7 +1122,7 @@ archives (needed time depends on the size of the objects and
 compression options), or querying the system about files and folders
 to be added to archive layout.<br>
 Any time a potentially lengthy operation is requested the cursor is
-changed to horglass and, when possible, an animation is performed to
+changed to hourglass and, when possible, an animation is performed to
 inform the user that the operation is running and is needing some time
 to be completed.<br>
 On startup, PeaZip query the mounted units, so it can be slowed down
@@ -1282,7 +1299,8 @@ replaced with respective 64 bit counterpart, but please remember that
 any 32 bit executable
 will need <span style="font-weight: bold;">ia32-libs</span> to be
 installed in order to to run on a 64 bit system.<br>
-On ARM systems PeaZip can be compiled as ASM parts featured in some
+On ARM / aarch64 systems PeaZip can be compiled as ASM parts featured
+in some
 units for performances, can be replaced by pure Pascal alternative
 code, see <a href="peazip-linux-arm.html">PeaZip for ARM Linux</a>
 for
@@ -1302,13 +1320,15 @@ modern look and feel and very functional system dialogs. <br>
 PeaZip Portable for Linux can be used as alternative to native packages
 on BSD systems, due to binary compatibility provided by BSD systems to
 Linux executables.<br>
-PeaZip Portable for BSD contains natively compiled (i386, GTK2) peazip,
-pea, pealauncher, and p7zip executables, providing most of the
+PeaZip Portable for BSD contains natively compiled (x86_64, GTK2)
+peazip,
+pea, and p7zip executables, providing most of the
 program's funtions are performed by native binaries, for other
 backends, Linux binaries are used.<br>
 Many other operating systems and widgetsets are supported by Lazarus,
 the IDE used for
-PeaZip's development, including GTK1, WindCE, fpGUI and Carbon. <br>
+PeaZip's development, including GTK, GTK2, GTK3, Qt4, Qt5, Qt6, WindCE,
+fpGUI, Cocoa and Carbon. <br>
 If
 you want to compile PeaZip from sources see notes for developers <a
  href="peazip-sources.html">on PeaZip sources page</a>.<br>
@@ -1317,18 +1337,18 @@ you want to compile PeaZip from sources see notes for developers <a
 version may require to install some components of gtk/gdk
 libraries, like libgdk_pixbuf,
 those components are quite common and can be usually found in
-repositories of each distribution.<br>
+repositories of each distribution. GTK3 version is currenlty
+experimental and available as alpha.<br>
             <br>
 ** Qt widgetset packages
-requires Qt
-4.5 or
-more recent, and needs libQt4Pas.so
+requires Qt6 or
+more recent, and needs libQtPas.so
 installed in /usr/local/lib or equivalent directory (copy the
 file and run ldconfig; it is done automatically in installable
 packages), such as
 /usr/lib or /usr/lib32 on some 64 bit distributions.<br>
 A copy of
-libQt4Pas.so is available in PeaZip's directory,
+libQtPas.so is available in PeaZip's directory,
 ./usr/local/share/PeaZip/ for the installable packages.<br>
 If the Qt version
 does not start on some systems, as some system's visual styles may
@@ -1372,13 +1392,10 @@ binary on a console to get a more detailed error report.</span><br>
             <br>
             <span style="font-weight: bold;">What
 are hardware/software prerequisites?</span><br>
-PeaZip should run on x86-compatible CPU due to some performance
-critical sections written in ASM, but pure Pascal replacements exists
-for those units, allowing to port PeaZip to other architectures (i.e.
-ARM).<br>
 CPU and, mainly, RAM requisites are
 bound top the chosen algorithm and compression level, ranging to few KB
-for simpler algorithms (like when storing files without compression in
+RAM for simpler algorithms (like when storing files without compression
+in
 tar/gz/zip formats) to above than a GB for most powerful and complex
 algorithms at highest compression level, like LZMA, PPMd and PAQ).
 Needless to say, it is the choice of the file compression algorithm the
@@ -1391,7 +1408,7 @@ frontend is included in PeaZip packages (being available under suitable
 licenses, as open source or royalty free) so no custom package is
 needed to be installed to make PeaZip work (with the possible exception
 of some standard gtk/gdk related libraries needed to run PeaZip,
-PeaLauncher and Pea binaries, which may miss in some system, but are
+and Pea binaries, which may miss in some system, but are
 well known,
 trustable and widely available).<br>
 If you don't want non open source software in your system, like
@@ -1399,26 +1416,21 @@ unrar.so (which brings specific license restrictions about reverse
 engineering) or unace binary (closed source, royalty free), you simply
 need to delete them from /res/ path in program's folder.<br>
             <a href="peazip-linux.html">PeaZip archive manager for Linux</a>
-is available for x86_64 architecture, and <a
- href="peazip-linux-x86.html">PeaZip for Linux x86</a> packages are
-available for legacy / reduced resources systems. If you are interested
-in ARM / aarch64 architecture porting (including
-support
-for Google Android / ChromeOS) you can refer to <a
- href="peazip-linux-arm.html">Linux for ARM</a> page.<br>
+is available for x86_64 architecture (<a href="peazip-linux-x86.html">PeaZip
+for Linux x86</a> packages are
+available for legacy / reduced resources systems), and also for ARM /
+aarch64 architecture, see <a href="peazip-linux-arm.html">Linux for ARM</a>
+page.<br>
             <br>
             <a href="peazip-bsd.html">PeaZip Portable for BSD</a>
-contains natively compiled peazip, pea,
-pealauncher, and p7zip executables, providing most of the program's
-funtions are performed by native binaries.<br>
-For other backends, Linux binaries are used due to binary compatibility
-provided by BSD systems to Linux executables.<br>
+contains natively compiled peazip, pea, and p7zip executables,
+providing most of the program's
+funtions are performed by native BSD binaries.<br>
 It is a Portable version of PeaZip, that means no installation is
 required: the Portable application is autocontained, so the software
 can be unpacked and used starting peazip executable, see next paragraph
 for more information.<br>
-BSD binaries are precompiled for i386 and GTK2; ia-32 libs needs to be
-installed in ia64 systems.<br>
+BSD binaries are precompiled for x86_64 and GTK2.<br>
             <br>
             <br>
             <h3><big><a style="font-weight: bold;"
@@ -1438,10 +1450,12 @@ PeaZip can be built from sources, with <a target="_blank"
 or more
 recent, as native application for
 Darwin / macOS, both for Intel x86-64 CPU (OSX up to macOS 10.15
-Catalina), and for Apple Silicon M1 aarch64 ARM SoC (for macOS 11 Big
+Catalina), and for Apple Silicon M1 aarch64 ARM SoC or newer Mx cpus
+(for macOS 11 Big
 Sur and more revent systems), targeting Cocoa widgetset in both cases.<br>
 Official binary macOS DMG packages are now available for download on <a
- href="peazip-macos.html">PeaZip for macOS page</a>. <br>
+ href="peazip-macos.html">PeaZip for macOS page</a>.which also contains
+instructions to run its self-signed binaries.<br>
             <br>
             <br>
             <h3><big style="font-weight: bold;"><a
