@@ -249,14 +249,11 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip reached the new major version 11.0.0, which consolidates the
-10.x line evolution with bugfixes and code cleanup.<br>
-This release improves archive browsing speed, enhances the file
-manager (Bookmarks, internal app-to-app drag and drop, rendering
-engine...), and
-introduces new functions for password entropy rating,
-and batch archives testing.<br>
-Backend are updated to 7z/p7zip 26.00 and Pea 1.30.<br>
+PeaZip 11.1.0 improves direct extraction from app's file manager,
+overhauling the Extract to context menu group.<br>
+This release is focused on QOL enhancements and security fixes.<br>
+Backend are updated to 7z/p7zip 26.01, non-Windows alternative 7z/p7zip
+updated to Tino Reichardt's 7-Zip ZS 25.01, and Pea 1.31.<br>
             <br>
 Sources are compiled with Lazarus 4.2, and are still compatible with
 Lazarus 3.x and 2.x.<br>
@@ -264,7 +261,7 @@ Lazarus 3.x and 2.x.<br>
 A total of 242 file extensions can now be opened as archives by PeaZip.<br>
             <br>
 Translations are
-available in over than 30 languages, any help is welcome to translate
+available in over than 40 languages, any help is welcome to translate
 PeaZip
 to new languages and to maintain current localizations up to date, so
 please consider taking the time to give a look to <a
@@ -280,8 +277,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/11.0.0/SHA256.txt">SHA256.txt
-11.0.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/11.1.0/SHA256.txt">SHA256.txt
+11.1.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -301,6 +298,64 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2026 04 06 ..
 CURRENT </div>
+            <br>
+2026 05 11<br>
+            <div style="margin-left: 40px;">11.1.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z/p7zip backed updated to
+26.01<br>
+(Linux, aarch64 and x86_64) Replaced 7zalt with Tino Reichardt 7-Zip ZS
+25.01 - v1.5.7 - Release 4<br>
+Pea 1.31<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Legacy code cleanup<br>
+QOL improvements<br>
+            <div style="margin-left: 40px;">Added info popup if Browser
+optimization (Options &gt; Settings, Performances group) is set to fast
+or no pre-parse, to inform some archive TOC and data issues may go
+unnoticed, even preventing archive content to be correctly displayed in
+some cases.<br>
+Minor performances optimization in pre-parsing step for very large
+archives, up to -15% time for reference 250K items archive<br>
+Modal forms are now positioned centered to main form, consistently with
+most apps<br>
+Modal forms confirm and cancel action made as consistent as possible
+with standard OK/Cancel buttons and Esc/Enter keys<br>
+            </div>
+Various fixes<br>
+            <div style="margin-left: 40px;">Fixed browsing archives
+when 7z alias is set<br>
+Fixed hiding comment label in status bar when archive comment is deleted<br>
+Fixed Windows context menu direct archive creation entries, now
+enumerate directory content consistently with other functions<br>
+            </div>
+Security fixes<br>
+            <div style="margin-left: 40px;">(.pea format) Fixed path
+traversal
+evasion on extraction, vulnerability and poc reported by Harshit Gupta<br>
+(Windows) Fixed
+sanitization of input for functions invoking PowerShell, vulnerability
+and poc reported by Harshit Gupta<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;"><span
+ style="font-weight: bold;">Context menu &gt; Extract to... submenu</span>
+now mimics the output path picker menu in archiving / extraction
+screens for ease of use<br>
+            <div style="margin-left: 40px;">Added extract to Last used
+and Selected item's path entries<br>
+Added Filesystem submenu containing the entries for most common
+filesystem destinations<br>
+Moved bookmarks entries in the Bookmarks submenu<br>
+Moved units in root level of Filesystem submenu <br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2026 04 06<br>
             <div style="margin-left: 40px;">11.0.0<br>
