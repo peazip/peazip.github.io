@@ -336,7 +336,8 @@ On drop action, the <span style="font-weight: bold;">drag and drop
 context menu</span> is displayed, allowing to select the desired
 function to perform on the dropped item(s): <span
  style="font-weight: bold;">extract here</span>, extract to smart / new
-folder (entire archives, or selected items from archive), or <span
+folder (entire archives, or selected items from archive), <span
+ style="font-weight: bold;">add to new archive</span> or <span
  style="font-weight: bold;">copy </span>/ <span
  style="font-weight: bold;">move files</span> (when browsing the
 filesystem).<br>
@@ -344,14 +345,19 @@ This allows the internal drag and drop implementation to work like in a
 dual pane file manager<br>
             <ul>
               <li>archive manager: drag &amp; drop extract items
-directly to any path in
-bookmarks or history (navigation bar) or any path (tree view), and
-works even dropping to the minified compact side bar</li>
-              <li>file manager: copy and move items from the file
+from archives directly to any path in
+bookmarks or history (navigation bar) or any path (tree view); works
+even dropping to the minified compact side bar</li>
+              <li>file manager: add to archive, extract, copy and move
+items from the file
 browser to any aforementioned path visible in the treeview / navigation
-area, automatically jumping to browse the destination path.<br>
-              </li>
+area, automatically jumping to browse the destination path.</li>
             </ul>
+            <h4><img alt="In-app drag and drop"
+ title="Internal drag and drop simulating two panel file manager"
+ src="internal-drag-drop.png" style="width: 850px; height: 543px;"></h4>
+            <span style="font-style: italic;">Drag and drop from file
+manager to treeview (Bookmarks in current picture)</span><br>
             <br>
             <br>
             <big style="font-weight: bold;">Drag and drop operations
@@ -461,6 +467,7 @@ and <a href="7zip-files-utility.html">Add to .7Z</a> / <a
 extraction or archive creation in the selected format, applying default
 options, without requiring further user's interaction after right click.<br>
             <br>
+            <br>
             <h3><big><span style="font-weight: bold;">Add PeaZip to
 Windows context menu and SendTo menu<br>
             </span></big></h3>
@@ -483,6 +490,7 @@ customized during
 installation or from Options &gt; System integration, to select
 favourite
 compression, decompression, testing, encryption entries.<br>
+            <br>
             <br>
             <h3 style="font-weight: bold;"><big>Add PeaZip to Windows
 11 mini-context menu</big></h3>

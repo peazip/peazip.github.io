@@ -249,16 +249,20 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 11.1.0 improves direct extraction from app's file manager,
-overhauling the Extract to context menu group.<br>
-This release is focused on QOL enhancements and security fixes.<br>
-Backend are updated to 7z/p7zip 26.01, non-Windows alternative 7z/p7zip
-updated to Tino Reichardt's 7-Zip ZS 25.01, and Pea 1.31.<br>
+PeaZip 11.2.0 provides multiple QOL improvements, as overhauled
+keyboard
+shortcuts, F12
+Functions picker allowing to search supported functions (and apply
+function to selected items), improved drag and drop, and file manager's
+auto-refresh.<br>
+Backend are updated to 7z/p7zip 26.02 and Pea 1.32.<br>
             <br>
-Sources are compiled with Lazarus 4.2, and are still compatible with
+Sources are compiled with Lazarus 4.x, and are still compatible with
 Lazarus 3.x and 2.x.<br>
             <br>
-A total of 242 file extensions can now be opened as archives by PeaZip.<br>
+A total of 243 file extensions can now be opened as archives by PeaZip
+with addition of .ZIM files (Wikipedia and Project Gutenberg data
+dumps).<br>
             <br>
 Translations are
 available in over than 40 languages, any help is welcome to translate
@@ -277,8 +281,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/11.1.0/SHA256.txt">SHA256.txt
-11.1.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/11.2.0/SHA256.txt">SHA256.txt
+11.2.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -298,6 +302,71 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2026 04 06 ..
 CURRENT </div>
+            <br>
+2026 07 12<br>
+            <div style="margin-left: 40px;">11.2.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z/p7zip 26.02<br>
+Pea 1.32 hardened against timing attack on verification of integrity
+tags<br>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Code review with various
+fixes and quality improvements<br>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added read support for Zeno
+IMproved <span style="font-weight: bold;">.ZIM</span> archives, used
+for Wikipedia and Project Gutenberg data dumps<br>
+Fixed some inconsistencies in icons representation for special folders
+and search filters<br>
+            <span style="font-weight: bold;">Keyboard shortcuts</span>
+updated and made fully working when the main menu is set to hidden<br>
+            <div style="margin-left: 40px;">F12 shortcut remapped to <span
+ style="font-weight: bold;">Functions</span>, which allows to type, or
+select from dropdown menu, any of the supported app's function (and run
+it on the selected files, if applicable for the selected function)<br>
+Ctrl+F12 new shortcut for Run<br>
+            </div>
+Improved auto-refresh of the file manager<br>
+Improved <span style="font-weight: bold;">Drag and drop</span><br>
+            <div style="margin-left: 40px;">(cross-platform) <span
+ style="font-weight: bold;">Drag and
+drop from system/apps to PeaZip</span> with Shift or Ctrl key pressed -
+to make
+it compatible with more Operating Systems - shows menu to choose
+special actions on dragged files (copy/move here, extract, add to
+archive, open as archive)<br>
+(cross-platform) Improved <span style="font-weight: bold;">internal
+drag and drop menu</span>, now featuring Add to archive and Extract
+entries - dropped items are sent to archiving or extraction screens,
+with output set to drop target directory<br>
+(Windows) Improved drag and drop between two instances of the app<br>
+            <div style="margin-left: 40px;">Drag and drop extract is
+now possible<br>
+Drag and drop files/folders now displays the menu to choose
+action to perform, consistently with internal drag and drop behavior<br>
+            </div>
+            </div>
+Refreshing a non correctly displayed archive (i.e. wrong TOC password)
+now triggers a new password request prompt, if applicable<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">".part1" string (multi
+volumes .rar archives) removed from the output
+name after extraction in new folder or smart new folder<br>
+Added hint to Output button to document preservation of original
+filename and extension when pure compression format (Brotli, BZip2,
+GZip, XZ, Zstd...) is used<br>
+Context menu of the extraction screen now shows archive's name, for
+information, when extracting content from single archive<br>
+Improved handling of errors in archive creation procedure<br>
+            </div>
+            </div>
+            </div>
             <br>
 2026 05 11<br>
             <div style="margin-left: 40px;">11.1.0<br>
