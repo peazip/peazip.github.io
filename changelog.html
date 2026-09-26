@@ -249,13 +249,15 @@ release notes</a></big></big></big></h2>
             <br>
             <div style="text-align: left;"> </div>
             <div style="text-align: left;"> </div>
-PeaZip 11.2.0 provides multiple QOL improvements, as overhauled
-keyboard
-shortcuts, F12
-Functions picker allowing to search supported functions (and apply
-function to selected items), improved drag and drop, and file manager's
-auto-refresh.<br>
-Backend are updated to 7z/p7zip 26.02 and Pea 1.32.<br>
+PeaZip 11.3.0 provides improved ZPAQ support, new test function for PEA
+archives, mandatory master password for the integrated Password
+Manager, and usability
+improvements as the new "Open with" picker screen (Shift+F12).<br>
+Backend are updated with Pea 1.33 and 7z/p7zip 26.03.<br>
+            <br>
+Due to the multiple security fixes and improvements, the update to the
+new
+version is recommended.<br>
             <br>
 Sources are compiled with Lazarus 4.x, and are still compatible with
 Lazarus 3.x and 2.x.<br>
@@ -281,8 +283,8 @@ Hash values of each package are now published in the SHA256.txt file in
 each release on GitHub.<br>
 You can check hash values of current release in <a
  style="font-weight: bold;" target="_blank"
- href="https://github.com/peazip/PeaZip/releases/download/11.2.0/SHA256.txt">SHA256.txt
-11.2.0</a>.<br>
+ href="https://github.com/peazip/PeaZip/releases/download/11.3.0/SHA256.txt">SHA256.txt
+11.3.0</a>.<br>
             </td>
           </tr>
         </tbody>
@@ -302,6 +304,101 @@ version)</span><br>
             </a></big></big></big></h2>
             <div style="text-align: right;">2026 04 06 ..
 CURRENT </div>
+            <br>
+2026 09 26<br>
+            <div style="margin-left: 40px;">11.3.0<br>
+            <div style="margin-left: 40px;">BACKEND<br>
+            <div style="margin-left: 40px;">7z/p7zip 26.03<br>
+Pea 1.33<br>
+            <div style="margin-left: 40px;">Added <span
+ style="font-weight: bold;">Test mode for PEA archives</span><br>
+Fixed erroneously reporting some PEA archives as containing relative
+paths<br>
+Fixed "invalid password length" error triggered by some interactive
+modes<br>
+Fixed unchecked size of first compressed block in PEA archives<br>
+UNPEA procedure now extracts to a random named temporary work folder
+first, in case of successful validation the work folder is renamed to
+actual output name, in case of falied validation it is automatically
+deleted<br>
+            </div>
+            </div>
+            <br>
+CODE<br>
+            <div style="margin-left: 40px;">Added instructions to
+create system-wide Windows hotkeys for PeaZip functions, in
+(peazip)/res/share/batch/Windows<br>
+Improved handling of invalid filenames and interoperability of
+filenames between different Operating Systems<br>
+Updated some app colors to improve blending with supported systems<br>
+Various fixes<br>
+            <div style="margin-left: 40px;">(Windows)
+dragdropfilesdll.dll is now loaded at runtime from absolute path, after
+hash validation<br>
+Extended the default list of security-sensitive extensions requiring
+for user confirmation before being launched, the check is now also
+applied to
+"Open/Preview with associated application" other than to doubleclick
+action<br>
+Fixed crash on command line export for compressed tar formats<br>
+Fixed crash/hang operating on encrypted ZPAQ archives without providing
+password in advance<br>
+Fixed some keys not working due to incorrect maping into keyboard
+shortcuts<br>
+(Windows) Fixed syntax for checking MoTW and Alternate Data Streams<br>
+Improved detection of user's temp path on non-Windows systems<br>
+Improved handling of metacharacters in different stages of the
+scripting engine (filename validation, command line sanitization)<br>
+            </div>
+            </div>
+            <br>
+FILE MANAGER<br>
+            <div style="margin-left: 40px;">Added Shift+F12 keyboard
+shortcut to open the <span style="font-weight: bold;">new "Open with"
+screen</span>, displaying custom
+applications and common options (open with associated app, custom app,
+new PeaZip instance); custom apps, scripts, and
+web services can be defined as usual in Options &gt; Settings &gt;
+Applications<br>
+It is now <span style="font-weight: bold;">mandatory to set a master
+password for the integrated
+Password Manager</span><br>
+            <div style="margin-left: 40px;">if you are using the
+Password Manager it is recommended to backup your passwords with
+previous version of PeaZip (set a master password, rightclick on
+password list screen and use Export &gt; Encrypted), and import in the
+new version (use the exported pm file to replace the pm file in
+PeaZip's configuration path)<br>
+            </div>
+New Blue and Blue-Dark themes, can be set from Option &gt; Themes,
+Custom<br>
+Various usability improvements<br>
+            </div>
+            <br>
+EXTRACTION and ARCHIVING<br>
+            <div style="margin-left: 40px;">Archive creation screen can
+now display compression percentage (default) or compression ratio<br>
+            <div style="margin-left: 40px;">preference is set from
+Options &gt; Settings &gt; Archive manager tab, "Archive" group<br>
+            </div>
+            <div style="margin-left: 40px;">compression percentage (or
+compression ratio) is now shown in the second row of the task's screen<br>
+            </div>
+            <span style="font-weight: bold;">Improved ZPAQ support</span><br>
+            <div style="margin-left: 40px;">ZPAQ format now supports
+"Force typing password interactively" option<br>
+            </div>
+New option to automatically explore output path with PeaZip after task
+is completed in Options &gt; Settings &gt; Archive manager tab, "After
+archiving / extraction" group<br>
+            <div style="margin-left: 40px;">this option also changes
+the behavior of internal drag and drop copy/move actions to explore
+destination path, so they behave consistently with archiving /
+extraction actions<br>
+            </div>
+            </div>
+            </div>
+            </div>
             <br>
 2026 07 12<br>
             <div style="margin-left: 40px;">11.2.0<br>
