@@ -315,7 +315,15 @@ supporting AES, Serpent and Twofish (128 and 256 bit) EAX-mode
 authenticated encryption, enforcing
 cryptographically strong data secrecy and verifiable autenticity. Also,
 PEA format can use cascaded AES, Serpent and Twofish - all the data
-will be encrypted and authenticated by all the trhree cyphers.<br>
+will be encrypted and authenticated by all the three cyphers.</li>
+                <li>Please note that when PEA format is using cascaded
+encryption, it also supports PBKDF2,
+scrypt (default), or both (hybrid KDF) as key derivation function to
+harden the encryption against password brute-forcing, making key
+derivation process arbitrarily costly in terms of CPU and memory; red
+more on <a
+ href="file:///C:/Users/Giorgio/Desktop/11.5.0/peazip-web/pea_help.pdf">PEA
+file format specs (.pdf)</a> documetation.<br>
                 </li>
               </ul>
               <li>RAR, if WinRar is installed in the system<br>
